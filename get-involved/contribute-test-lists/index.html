@@ -1,0 +1,168 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>| OONI</title><link rel=canonical href=https://ooni.org/get-involved/contribute-test-lists/><meta name=description content="The test list methodology Censorship findings are only as interesting as the sites and services that you test.
+We encourage you to suggest sites and services to test for censorship.
+Please read the documentation below to contribute to community resources for censorship measurement research.
+ What are test lists?
+ What aren&rsquo;t test lists?
+ Why contribute to test lists?
+ Contributing to test lists
+ Test list research"><meta property=og:title content><meta property=og:description content="The test list methodology Censorship findings are only as interesting as the sites and services that you test.
+We encourage you to suggest sites and services to test for censorship.
+Please read the documentation below to contribute to community resources for censorship measurement research.
+ What are test lists?
+ What aren&rsquo;t test lists?
+ Why contribute to test lists?
+ Contributing to test lists
+ Test list research"><meta property=og:type content=article><meta property=og:url content=https://ooni.org/get-involved/contribute-test-lists/><meta name=twitter:card content=summary><meta name=twitter:title content><meta name=twitter:description content="The test list methodology Censorship findings are only as interesting as the sites and services that you test.
+We encourage you to suggest sites and services to test for censorship.
+Please read the documentation below to contribute to community resources for censorship measurement research.
+ What are test lists?
+ What aren&rsquo;t test lists?
+ Why contribute to test lists?
+ Contributing to test lists
+ Test list research"><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class=mb-4><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/ class=active>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="col content"><h1 id=the-test-list-methodology>The test list methodology</h1><p>Censorship findings are only as interesting as the sites and services that you test.</p><p>We encourage you to suggest sites and services to test for censorship.</p><p>Please read the documentation below to contribute to community resources for censorship measurement research.</p><ul><li><p><a href=#what-are-test-lists>What are test lists?</a></p></li><li><p><a href=#what-aren-t-test-lists>What aren&rsquo;t test lists?</a></p></li><li><p><a href=#why-contribute-to-test-lists>Why contribute to test lists?</a></p></li><li><p><a href=#contributing-to-test-lists>Contributing to test lists</a></p><ul><li><p><a href=#test-list-research>Test list research</a></p><ul><li><p><a href=#background-research>Background research</a></p></li><li><p><a href=#drawing-inspiration-from-30-categories>Drawing inspiration from 30 categories</a></p></li><li><p><a href=#research-on-previous-cases-of-reported-censorship>Research on previous cases of reported censorship</a></p></li></ul></li><li><p><a href=#reviewing-test-lists>Reviewing test lists</a></p></li><li><p><a href=#creating-new-test-lists>Creating new test lists</a></p></li></ul></li><li><p><a href=#important-tips>Important tips</a></p></li></ul><h2 id=what-are-test-lists>What are test lists?</h2><p>Test lists are machine-readable <a href=https://en.wikipedia.org/wiki/Comma-separated_values>CSV files</a> that include URLs that are tested for
+censorship.</p><p>Censorship measurement projects like <a href=https://ooni.org/>OONI</a> rely on a global community of
+volunteers who run censorship detection tests from local vantage points. In
+light of bandwidth constraints, testing most websites available on the internet
+is not practical (nor possible in many cases). Instead, our measurements focus
+on a <em>sample</em> of websites provided in “test lists”: machine-readable CSV files
+with a set of curated, interesting domains. There are two types of test lists:</p><ul><li><p><a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>Global test list</a>: Includes a wide range of internationally relevant websites (e.g. facebook.com), most of which are in English</p></li><li><p><a href=https://github.com/citizenlab/test-lists/tree/master/lists>Country-specific test lists</a>: Include websites that are only relevant to a
+specific country (e.g. Brazilian media websites), many of which are in local languages</p></li></ul><p>To maximize the breadth of coverage while reducing research bias, test list URLs
+are broken down into <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 diverse categories</a>:</p><ul><li><strong>ALDR</strong> (Alcohol &amp; Drugs): &ldquo;Sites devoted to the use, paraphernalia, and sale of drugs and alcohol irrespective of the local legality.&rdquo;</li><li><strong>REL</strong> (Religion): &ldquo;Sites devoted to discussion of religious issues, both supportive and critical, as well as discussion of minority religious groups.&rdquo;</li><li><strong>PORN</strong> (Pornography): Hard-core and soft-core pornography.</li><li><strong>PROV</strong> (Provocative Attire): &ldquo;Websites which show provocative attire and portray women in a sexual manner, wearing minimal clothing. &ldquo;</li><li><strong>POLR</strong> (Political Criticism): &ldquo;Content that offers critical political viewpoints. Includes critical authors and bloggers, as well as oppositional political organizations. Includes pro-democracy content, anti-corruption content as well as content calling for changes in leadership, governance issues, legal reform. Etc.&rdquo;</li><li><strong>HUMR</strong> (Human Rights Issues): Sites dedicated to discussing human rights issues in various forms. Includes women&rsquo;s rights and rights of minority ethnic groups.</li><li><strong>ENV</strong> (Environment): &ldquo;Pollution, international environmental treaties, deforestation, environmental justice, disasters, etc.&rdquo;</li><li><strong>MILX</strong> (Terrorism and Militants): &ldquo;Sites promoting terrorism, violent militant or separatist movements.&rdquo;</li><li><strong>HATE</strong> (Hate Speech): &ldquo;Content that disparages particular groups or persons based on race, sex, sexuality or other characteristics&rdquo;</li><li><strong>NEWS</strong> (News Media): &ldquo;This category includes major news outlets (BBC, CNN, etc.) as well as regional news outlets and independent media.&rdquo;</li><li><strong>XED</strong> (Sex Education): &ldquo;Includes contraception, abstinence, STDs, healthy sexuality, teen pregnancy, rape prevention, abortion, sexual rights, and sexual health services.&rdquo;</li><li><strong>PUBH</strong> (Public Health): &ldquo;HIV, SARS, bird flu, centers for disease control, World Health Organization, etc&rdquo;</li><li><strong>GMB</strong> (Gambling): &ldquo;Online gambling sites. Includes casino games, sports betting, etc.&rdquo;</li><li><strong>ANON</strong> (Anonymization and circumvention tools): &ldquo;Sites that provide tools used for anonymization, circumvention, proxy-services and encryption.&rdquo;</li><li><strong>DATE</strong> (Online Dating): &ldquo;Online dating services which can be used to meet people, post profiles, chat, etc&rdquo;</li><li><strong>GRP</strong> (Social Networking): Social networking tools and platforms.</li><li><strong>LGBT</strong> (LGBT): A range of gay-lesbian-bisexual-transgender queer issues. (Excluding pornography)</li><li><strong>FILE</strong> (File-sharing): &ldquo;Sites and tools used to share files, including cloud-based file storage, torrents and P2P file-sharing tools.&rdquo;</li><li><strong>HACK</strong> (Hacking Tools): &ldquo;Sites dedicated to computer security, including news and tools. Includes malicious and non-malicious content.&rdquo;</li><li><strong>COMT</strong> (Communication Tools): &ldquo;Sites and tools for individual and group communications. Includes webmail, VoIP, instant messaging, chat and mobile messaging applications.&rdquo;</li><li><strong>MMED</strong> (Media sharing): &ldquo;Video, audio or photo sharing platforms.&rdquo;</li><li><strong>HOST</strong> (Hosting and Blogging Platforms): &ldquo;Web hosting services, blogging and other online publishing platforms.&rdquo;</li><li><strong>SRCH</strong> (Search Engines): Search engines and portals.</li><li><strong>GAME</strong> (Gaming): &ldquo;Online games and gaming platforms, excluding gambling sites.&rdquo;</li><li><strong>CULTR</strong> (Culture): &ldquo;Content relating to entertainment, history, literature, music, film, books, satire and humour&rdquo;</li><li><strong>ECON</strong> (Economics): &ldquo;General economic development and poverty related topics, agencies and funding opportunities&rdquo;</li><li><strong>GOVT</strong> (Government): &ldquo;Government-run websites, including military sites.&rdquo;</li><li><strong>COMM</strong> (E-commerce): &ldquo;Websites of commercial services and products.&rdquo;</li><li><strong>CTRL</strong> (Control content): &ldquo;Benign or innocuous content used as a control.&rdquo;</li><li><strong>IGO</strong> (Intergovernmental Organizations): &ldquo;Websites of intergovernmental organizations such as the United Nations.&rdquo;</li></ul><p>These categories range from news
+media, culture, and human rights issues to more provocative or objectionable
+categories, like pornography (the latter are included because they are more
+likely to be blocked, enabling the detection of censorship techniques adopted by
+ISPs).</p><p>Creating test lists requires local knowledge, an understanding of which sites
+are commonly accessed and more likely to be blocked in light of a country’s
+social and political environment. The <a href=https://citizenlab.ca/>Citizen Lab</a> (which manages the test list
+project) has, therefore, made the lists publicly available on <a href=https://github.com/citizenlab/test-lists>GitHub</a>,
+encouraging community contributions.</p><h2 id=what-aren-t-test-lists>What aren&rsquo;t test lists?</h2><p><strong>1. A list of thousands of sites scraped from Alexa</strong></p><p>Creating (or contributing to existing) test lists is not a question of scraping
+“the top 1,000 sites” from Alexa. Rather, it requires <em>research</em>, an understanding
+of a country’s social and political environment, and how that may motivate
+information controls.</p><p><strong>2. Blocklists</strong></p><p>Some governments occasionally publish official blocklists (or they get leaked)
+which contain lists of websites that are legally prohibited in a country.
+Internet Service Providers (ISPs) are then ordered to block access to all
+websites included in such blocklists, commonly involving hundreds (or thousands)
+of URLs that contain content illegal in that country (such as gambling, file sharing, adult content, etc.).</p><p>Test lists, on the other hand, are <em>not</em> meant to be limited to blocked websites.
+Rather, they serve the purpose of monitoring when policies change - what&rsquo;s most
+likely to be blocked or unblocked. While test lists may include <em>some</em> websites
+that are known to be blocked (and that is useful for detecting censorship
+techniques adopted by ISPs), most sites are not censored locally when they are
+added to test lists. The aim of using the test list methodology is to not only
+identify censorship, but to also confirm the accessibility of sites. Unlike
+blocklists (which can include thousands of URLs), each test list is usually
+limited to up to 1,000 sites (due to the aforementioned bandwidth constraints).</p><h2 id=why-contribute-to-test-lists>Why contribute to test lists?</h2><p><strong>1. Censorship findings are only as interesting as the sites you test</strong></p><p>When measuring censorship through the use of software like <a href=https://ooni.org/install/>OONI Probe</a>,
+censorship findings are only as interesting as the sites that are tested. If
+bbc.com, for example, is blocked in China, OONI Probe is only likely to detect
+that if bbc.com was included in the Chinese test list to begin with.</p><p>It’s therefore important to ensure that test lists are representative of many
+types of online content and reflect the country’s social, economic, and
+political environment.</p><p><strong>2. You can provide local insight</strong></p><p>Examining internet censorship in a country requires local knowledge, an understanding of which sites and services are:</p><ul><li>commonly accessed;</li><li>more likely to be blocked;</li><li>interesting to test in light of a country&rsquo;s social and political environment.</li></ul><p>To ensure that test lists include a variety of different types of URLs that are updated on an ongoing basis, we encourage community contributions from around the world.</p><p><strong>3. Potential risks</strong></p><p>When running OONI Probe, you will connect to and download data from the websites
+included in the global test list and in the test list which is specific to the
+country that you are running OONI Probe from.</p><p>We therefore encourage you to review all of the URLs included in these lists carefully, prior to running OONI Probe, as connecting to some of these websites might be legally questionable (or illegal) in some jurisdictions.</p><p>If you are uncertain of the potential implications of connecting to and
+downloading data from the websites listed in the test lists, you can pass your
+<em>own</em> test list with the following type of command line option:</p><p><code>ooniprobe &lt;test-name&gt; -f &lt;your-test-list&gt;</code></p><h2 id=contributing-to-test-lists>Contributing to test lists</h2><p>You can contribute to test lists in 2 ways:</p><ul><li><p>Review <em>existing</em> test lists;</p></li><li><p>Create <em>new</em> test lists for countries that don&rsquo;t have test lists yet.</p></li></ul><p>This requires a bit of research. We provide some recommended research practices for
+compiling (or contributing to existing) test lists in the following section.</p><h3 id=test-list-research>Test list research</h3><h4 id=background-research>Background research</h4><p>Understanding information controls in a country requires an understanding of the
+country itself. Some background research on the country in question is therefore
+essential to identifying websites that are worth testing for censorship.</p><p>In-depth PhD style research is not required. In fact, many online resources with
+country profiles that you can refer to already exist, such as <a href=https://www.cia.gov/library/publications/the-world-factbook/>The World Factbook</a>, the <a href=https://opennet.net/research/profiles>OpenNet Initiative</a>, and <a href=https://freedomhouse.org/>Freedom House</a>, among others. Your
+background research probably shouldn’t be limited to such resources. Rather,
+these resources can serve as a <em>starting point</em> for identifying sites to add to
+test lists (in which case, you can even refer to a country’s <a href=https://en.wikipedia.org/wiki/Lists_of_countries_and_territories>Wikipedia</a> page).</p><p>Knowing that a country has many ethnic minorities, for example, is a starting
+point for subsequently exploring which sites represent the voices of those
+groups. Due to their sensitive nature, such sites might be more likely to get
+blocked (now or in the future), and so it might make sense to add them to your
+test list. By reading news websites from that country, you may come across the
+names of political activists. Similarly, it may be worth exploring whether those
+activists have websites and adding them to your test list.</p><p>By researching the main economic, political, and social issues of a country, you
+can search for a variety of different types of sites that address them and
+present different opinions. Those are the types of sites that are worth adding
+to test lists to monitor their accessibility over time. The process of
+identifying sites to add to your test list can also be guided by the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 categories</a> of the test list methodology.</p><h4 id=drawing-inspiration-from-30-categories>Drawing inspiration from 30 categories</h4><p>The Citizen Lab’s test list methodology relies on <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 diverse categories</a> for
+URLs. These categories serve the following main purposes:</p><ul><li><p>Ensuring that the testing sample of URLs is as diverse as possible</p></li><li><p>Enabling the characterization of information controls</p></li></ul><p>The more diverse the testing sample, the more likely researchers are to identify
+different forms of internet censorship. By categorizing URLs, researchers can
+more easily characterize internet censorship depending on what is blocked. In
+Iran, for example, the breadth and scale of internet censorship appears to be
+pervasive since many <a href=https://ooni.org/post/iran-internet-censorship/#key-findings>different types of websites</a> were found to be <a href=https://ooni.org/post/iran-internet-censorship/>blocked</a>.</p><p>When working on a test list, you can refer to the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 categories</a> and search for
+local websites that fall under each one. Ideally, a test list includes multiple
+URLs for each of the 30 categories, though we recognize that this is not always
+possible.</p><h4 id=research-on-previous-cases-of-reported-censorship>Research on previous cases of reported censorship</h4><p>Has censorship been reported in the country that you’re compiling a test list
+for? If so, which websites were reportedly blocked?</p><p>As part of your research for identifying sites to add to a test list, it’s
+important to explore whether previous censorship events have been reported in
+the country. Those sites might <em>still</em> be blocked, even if their ban has been
+lifted. We, for example, found <a href=https://ooni.org/post/indonesia-internet-censorship/>Vimeo and Reddit to be blocked in Indonesia</a>, even though their ban was lifted more than two years ago.
+Furthermore, certain sites might only be blocked in certain networks, rather
+than on a nationwide level. By adding sites that have reportedly been blocked to
+your test list, <a href=https://ooni.org/install/>OONI Probe</a> users can collect network measurement data examining
+the accessibility of those sites over time (and may even be able to corroborate
+media reports).</p><p>Previous censorship cases can also help with identifying:</p><ul><li><p>The <strong>types of information</strong> that the country’s government censors (for example, if
+political opposition sites were blocked in the past, it might be worth adding
+them to test lists to examine if they’re blocked in the present or future);</p></li><li><p>The <strong>motivations</strong> behind censorship (for example, if a government has previously
+blocked sites for political reasons, it may be worth searching for other sites
+that could trigger politically-motivated censorship).</p></li></ul><p>To identify censorship cases, you can start off by searching for relevant media
+articles (where you’re likely to find the most recent cases). In addition to
+international news websites, it’s important to search for censorship reports
+through local media outlets as well. You can then refer to a variety of research
+reports published by a number of digital rights organizations, including (but
+not limited to) <a href=https://citizenlab.ca/category/research/>Citizen Lab</a>, <a href=https://freedomhouse.org/reports>Freedom on the Net (Freedom House)</a>, <a href=https://opennet.net/research/profiles>OpenNet Initiative</a>, <a href=https://rsf.org/en/ranking>Reporters Without Borders</a>, and <a href=https://www.article19.org/>ARTICLE 19</a>.</p><p>Given that economic, social, and political systems change over time (and the
+motivations of governments change along with them), it’s important to update
+test lists on an ongoing basis through the above recommended practices.</p><h3 id=reviewing-test-lists>Reviewing test lists</h3><p>All test lists that OONI Probe is designed to test for censorship are hosted in
+the <a href=https://github.com/citizenlab/test-lists>Citizen Lab&rsquo;s test-list repository on GitHub</a>.</p><p>To review country-specific test lists, please follow the steps below:</p><p><strong>Step 1.</strong> Find the <em>csv</em> file which is specific to the country that you want
+to run OONI Probe from (based on that country&rsquo;s code)
+<strong><a href=https://github.com/citizenlab/test-lists/tree/master/lists>here</a></strong>.</p><p>If you don&rsquo;t find a csv file for your country, that&rsquo;s probably because it
+doesn&rsquo;t exist yet. In this case, please refer to the next section on <em>&ldquo;Creating new test lists&rdquo;</em>.</p><p><strong>Step 2.</strong> Add <em>new</em> URLs to the csv file under the &ldquo;url&rdquo; column.</p><p>Some criteria for adding new URLs can include the following:</p><ul><li><p>The URLs cover topics of socio-political interest within the country;</p></li><li><p>The URLs are likely to be blocked because they include sensitive content (for
+example, they touch upon sensitive issues or express political criticism);</p></li><li><p>The URLs have been blocked in the past;</p></li><li><p>You have faced difficulty connecting to those URLs.</p></li></ul><p>For further criteria, please view the URL categories
+<strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>here</a></strong>.</p><p>Please try to add URLs which fall under as many (if not all) of these categories as possible.</p><p><strong>Step 3.</strong> Every time you add a URL, please add the following in the csv file for
+each new URL:</p><ul><li><p><strong>Category code:</strong> Add the code of the category that each URL falls under.
+This can be added under the &ldquo;category_code&rdquo; column of the csv file. The
+category codes can be found <strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>here</a></strong>.</p></li><li><p><strong>Category description:</strong> Add the description of the category that each URL
+falls under. This can be added under the &ldquo;category_description&rdquo; column of
+the csv file. The category descriptions can be found
+<strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>here</a></strong>.</p></li><li><p><strong>Date:</strong> Add the date of when you added each URL. This can be added under the
+&ldquo;date_added&rdquo; column of the csv file.</p></li><li><p><strong>Contributor:</strong> <em>Optional:</em> Add the name of the organization that you are
+affiliated with, in terms of contributing to the test list. This can be
+added under the &ldquo;source&rdquo; column of the csv file.</p></li><li><p><strong>Notes:</strong> <em>Optional:</em> Here you can add notes for each URL under the &ldquo;notes&rdquo;
+column of the csv file. This column, in particular, can be useful for describing
+the type of URL added, particularly since the standardized categories are quite
+broad. As an example, you can write &ldquo;Site of the political opposition, reported
+to be blocked during 2016 elections&rdquo; in the &ldquo;notes&rdquo; column, to provide more
+meaning than the standardized POLR category (and to provide context that may be
+useful to researchers).</p></li></ul><p><strong>Step 4.</strong> Change the category codes and descriptions for URLs (included under
+the &ldquo;category_code&rdquo; and &ldquo;category_description&rdquo; columns of the csv file) <em>only
+if</em> you think that those URLs have been allocated to wrong category codes and
+descriptions. In this case, please replace the category codes and descriptions
+with ones (from the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>recommended categories</a> that you think are more
+suitable. We would also appreciate a comment on
+<a href=https://github.com/citizenlab/test-lists>GitHub</a> or via email explaining the
+proposed changes.</p><p><strong>Step 5.</strong> Once you have reviewed a test list based on the above, please submit
+your changes to us. If you&rsquo;re a GitHub user, you can do so through a pull
+request. If you&rsquo;re <em>not</em> a GitHub user, please send us a <em>spreadsheet</em>
+(including the same format as github csv files) by dropping us an email at
+contact@openobservatory.org (PGP Key Fingerprint: 4C15 DDA9 96C6 C0CF 48BD
+3309 6B29 43F0 0CB1 77B7).</p><h3 id=creating-new-test-lists>Creating new test lists</h3><p>If you can&rsquo;t find a test list specific to your country
+<a href=https://github.com/citizenlab/test-lists/tree/master/lists>here</a>, then it
+probably does not exist yet. Please help us create a test list for your country
+through the steps below:</p><p><strong>Step 1.</strong> Create a csv file and name it based on an ISO-3166 two-letter country
+code which is specific to the country that URLs are being added for. You can
+find a reference for international standards for country codes
+<strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-country_codes.csv>here</a></strong>. An example would include a csv file created for Andora, named <em>ad.csv</em>.</p><p><strong>Step 2.</strong> Include the following columns in the newly created csv file:</p><ul><li><p>url</p></li><li><p>category_code</p></li><li><p>category_description</p></li><li><p>date_added</p></li><li><p>source</p></li><li><p>notes</p></li></ul><p><strong>Step 3.</strong> Add URLs under the &ldquo;url&rdquo; column of the csv file.</p><p>Some criteria for adding new URLs can include the following:</p><ul><li><p>The URLs cover topics of socio-political interest within the country;</p></li><li><p>The URLs are likely to be blocked because they include sensitive content (for
+example, they touch upon sensitive issues or express political criticism);</p></li><li><p>The URLs have been blocked in the past;</p></li><li><p>You have faced difficulty connecting to those URLs.</p></li></ul><p>For further criteria, please view URL categories
+<strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>here</a></strong>.</p><p><strong>Step 4.</strong> Every time you add a URL, please add the following in the csv file for
+each new URL:</p><ul><li><p><strong>Category code:</strong> Add the code of the category that each URL falls under.
+This can be added under the &ldquo;category_code&rdquo; column of the csv file. The
+category codes can be found <strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>here</a></strong>.</p></li><li><p><strong>Category description:</strong> Add the description of the category that each URL
+falls under. This can be added under the &ldquo;category_description&rdquo; column of
+the csv file. The category descriptions can be found
+<strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>here</a></strong>.</p></li><li><p><strong>Date:</strong> Add the date of when you added each URL. This can be added under the
+&ldquo;date_added&rdquo; column of the csv file.</p></li><li><p><strong>Contributor:</strong> <em>Optional:</em> Add the name of the organization that you are
+affiliated with, in terms of contributing to the test list. This can be
+added under the &ldquo;source&rdquo; column of the csv file.</p></li><li><p><strong>Notes:</strong> <em>Optional:</em> Here you can add notes for each URL under the &ldquo;notes&rdquo;
+column of the csv file. This column, in particular, can be useful for describing
+the type of URL added, particularly since the standardized categories are quite
+broad. As an example, you can write &ldquo;Site of the political opposition, reported
+to be blocked during 2016 elections&rdquo; in the &ldquo;notes&rdquo; column, to provide more
+meaning than the standardized POLR category (and to provide context that may be
+useful to researchers).</p></li></ul><p><strong>Step 5.</strong> Once you have created a new test list based on the above, please
+submit your csv file to us. If you&rsquo;re a GitHub user, you can do so through a
+pull request. If you&rsquo;re <em>not</em> a GitHub user, please send us your csv file by
+dropping us an email at contact@openobservatory.org (PGP Key Fingerprint: 4C15
+DDA9 96C6 C0CF 48BD 3309 6B29 43F0 0CB1 77B7).</p><h2 id=important-tips>Important tips</h2><ol><li><p><strong>Always include the full URL, including the HTTP or HTTPS prefix, exactly as it appears when you type it into a browser.</strong> If you include <code>example.com</code> in a test list, OONI Probe won&rsquo;t be able to test it. Rather, it should be included as <code>http://www.example.com</code>, if that is what it looks like in a browser.</p></li><li><p><strong>Always use the format described in the sections above.</strong> The test lists are meant to be machine-readable, and OONI Probe will not parse test lists that don&rsquo;t strictly follow the prescribed format.</p></li><li><p><strong>Please use the categories provided <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>here</a> and refrain from adding your own categories.</strong> The categories may not be perfect, and we welcome your suggestions for additional/alternative categories. But if you don&rsquo;t use the prescribed category codes, OONI Probe will not be able to test those URLs, since test lists are meant to be machine-readable.</p></li><li><p><strong>Please do not scrape and add &ldquo;the top 1,000 Alexa sites&rdquo;.</strong> Community contributions are more useful when they include URLs that (a) fall under these <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 diverse categories</a> and (b) reflect local insight. Given that many OONI Probe users around the world have bandwidth constraints, we favour <em>quality</em> over quantity in terms of what is tested.</p></li></ol><p>Thanks for contributing!</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pb-1><a href=/about/>OONI</a></div><div class=pb-1><a href=/about/data-policy/>Data Policy</a></div><div class=pb-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pb-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pb-1><a href=https://ooni.org/install/>Install</a></div><div class=pb-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pb-1><a href=https://github.com/ooni>Source code</a></div><div class=pb-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pb-1><a href=/post/>Blog</a></div><div class=pb-1><a href=https://twitter.com/OpenObservatory>Twitter</a></div><div class=pb-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pb-1><a href=https://slack.ooni.org/>Slack</a></div></div></div></div></div></div></footer></body></html>

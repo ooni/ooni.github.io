@@ -1,0 +1,582 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>| OONI</title><link rel=canonical href=https://ooni.org/support/faq/><meta name=description content="Frequently Asked Questions (FAQ) This Frequently Asked Questions (FAQ) section aims to address the questions that we are frequently asked by the community.
+Are there other questions you would like us to address? Please let us know.
+ About OONI
+ What is OONI?
+ Why OONI?
+ What does OONI do?
+ Why measure internet censorship?
+ How is OONI funded?
+ What is OONI&rsquo;s relationship with The Tor Project?"><meta property=og:title content><meta property=og:description content="Frequently Asked Questions (FAQ) This Frequently Asked Questions (FAQ) section aims to address the questions that we are frequently asked by the community.
+Are there other questions you would like us to address? Please let us know.
+ About OONI
+ What is OONI?
+ Why OONI?
+ What does OONI do?
+ Why measure internet censorship?
+ How is OONI funded?
+ What is OONI&rsquo;s relationship with The Tor Project?"><meta property=og:type content=article><meta property=og:url content=https://ooni.org/support/faq/><meta name=twitter:card content=summary><meta name=twitter:title content><meta name=twitter:description content="Frequently Asked Questions (FAQ) This Frequently Asked Questions (FAQ) section aims to address the questions that we are frequently asked by the community.
+Are there other questions you would like us to address? Please let us know.
+ About OONI
+ What is OONI?
+ Why OONI?
+ What does OONI do?
+ Why measure internet censorship?
+ How is OONI funded?
+ What is OONI&rsquo;s relationship with The Tor Project?"><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class=mb-4><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="col content"><h1 id=frequently-asked-questions-faq>Frequently Asked Questions (FAQ)</h1><p>This Frequently Asked Questions (FAQ) section aims to address the
+questions that we are frequently asked by the community.</p><p>Are there other questions you would like us to address? Please <a href=https://ooni.org/about/#contact>let us know</a>.</p><ul><li><p><a href=#about-ooni>About OONI</a></p><ul><li><p><a href=#what-is-ooni>What is OONI?</a></p></li><li><p><a href=#why-ooni>Why OONI?</a></p></li><li><p><a href=#what-does-ooni-do>What does OONI do?</a></p></li><li><p><a href=#why-measure-internet-censorship>Why measure internet censorship?</a></p></li><li><p><a href=#how-is-ooni-funded>How is OONI funded?</a></p></li><li><p><a href=#what-is-oonis-relationship-with-the-tor-project>What is OONI&rsquo;s relationship with The Tor Project?</a></p></li><li><p><a href=#how-can-i-get-involved>How can I get involved?</a></p></li></ul></li><li><p><a href=#ooni-probe>OONI Probe</a></p><ul><li><p><a href=#what-is-ooni-probe>What is OONI Probe?</a></p></li><li><p><a href=#but-my-country-doesnt-have-censorship-why-run-ooni-probe>But my country doesn&rsquo;t have censorship. Why run OONI Probe?</a></p></li><li><p><a href=#what-do-ooni-probe-tests-do>What do OONI Probe tests do?</a></p></li><li><p><a href=#how-do-ooni-probe-tests-measure-internet-censorship>How do OONI Probe tests measure internet censorship?</a></p></li><li><p><a href=#i-am-not-a-techie-can-i-run-ooni-probe>I am not a techie. Can I run OONI Probe?</a></p></li><li><p><a href=#how-can-i-run-ooni-probe>How can I run OONI Probe?</a></p></li><li><p><a href=#i-ran-ooni-probe-should-i-send-you-the-results>I ran OONI Probe. Should I send you the results?</a></p></li><li><p><a href=#how-often-should-i-run-ooni-probe>How often should I run OONI Probe?</a></p></li><li><p><a href=#how-can-i-run-ooni-probe-daily>How can I run OONI Probe daily?</a></p></li><li><p><a href=#for-how-long-should-i-run-ooni-probe>For how long should I run OONI Probe?</a></p></li><li><p><a href=#i-found-blocked-websites-how-can-i-circumvent-their-blocking>I found blocked websites. How can I circumvent their blocking?</a></p></li><li><p><a href=#ooni-probe-found-a-middlebox-on-my-network-does-that-mean-i-am-under-surveillance>OONI Probe found a middlebox on my network. Does that mean I am under surveillance?</a></p></li><li><p><a href=#can-i-measure-internet-censorship-remotely-in-another-country>Can I measure internet censorship remotely in another country?</a></p></li><li><p><a href=#what-types-of-data-does-ooni-probe-collect>What types of data does OONI Probe collect?</a></p></li><li><p><a href=#how-can-i-opt-out-from-sending-ooni-measurements>How can I opt-out from sending OONI measurements?</a></p></li><li><p><a href=#what-are-the-risks-of-running-ooni-probe>What are the risks of running OONI Probe?</a></p></li><li><p><a href=#how-can-i-reduce-the-risks-associated-with-running-ooni-probe>How can I reduce the risks associated with running OONI Probe?</a></p></li><li><p><a href=#can-i-run-ooni-probe-over-a-vpn>Can I run OONI Probe over a VPN?</a></p></li><li><p><a href=#can-ooni-provide-legal-advice>Can OONI provide legal advice?</a></p></li></ul></li><li><p><a href=#testing-websites>Testing websites</a></p><ul><li><p><a href=#which-websites-will-i-test-for-censorship-with-ooni-probe>Which websites will I test for censorship with OONI Probe?</a></p></li><li><p><a href=#what-are-test-lists>What are test lists?</a></p></li><li><p><a href=#why-does-ooni-probe-use-test-lists>Why does OONI Probe use test lists?</a></p></li><li><p><a href=#why-doesnt-the-ooni-probe-mobile-app-test-all-of-the-websites-in-test-lists>Why doesn’t the OONI Probe mobile app test all of the websites in test lists?</a></p></li><li><p><a href=#how-can-i-change-the-testing-duration-in-the-ooni-probe-mobile-app-to-test-more-websites>How can I change the testing duration in the OONI Probe mobile app to test more websites?</a></p></li><li><p><a href=#how-can-i-find-my-countrys-test-list>How can I find my country’s test list?</a></p></li><li><p><a href=#why-doesnt-my-country-have-a-test-list>Why doesn’t my country have a test list?</a></p></li><li><p><a href=#who-decides-which-websites-are-included-in-test-lists>Who decides which websites are included in test lists?</a></p></li><li><p><a href=#how-can-i-contribute-to-test-lists>How can I contribute to test lists?</a></p></li><li><p><a href=#im-not-a-github-user-but-id-still-like-to-submit-urls-for-testing-how-can-i-do-so>I’m not a GitHub user, but I’d still like to submit URLs for testing. How can I do so?</a></p></li><li><p><a href=#what-is-the-difference-between-a-test-list-and-a-blocklist>What is the difference between a test list and a blocklist?</a></p></li><li><p><a href=#how-can-i-test-all-the-urls-included-in-an-official-blocklist>How can I test all the URLs included in an official blocklist?</a></p></li><li><p><a href=#what-types-of-websites-will-ooni-probe-test>What types of websites will OONI Probe test?</a></p></li><li><p><a href=#how-can-i-choose-which-types-of-websites-to-test>How can I choose which types of websites to test?</a></p></li><li><p><a href=#how-can-i-choose-which-websites-to-test>How can I choose which websites to test?</a></p></li><li><p><a href=#how-can-i-test-a-custom-list-of-urls>How can I test a custom list of URLs?</a></p></li></ul></li><li><p><a href=#ooni-data>OONI data</a></p><ul><li><p><a href=#what-is-ooni-data>What is OONI data?</a></p></li><li><p><a href=#why-does-ooni-publish-data>Why does OONI publish data?</a></p></li><li><p><a href=#where-does-ooni-publish-data>Where does OONI publish data?</a></p></li><li><p><a href=#how-can-i-interpret-ooni-data>How can I interpret OONI data?</a></p></li><li><p><a href=#how-can-i-fetch-and-analyze-ooni-data>How can I fetch and analyze OONI data?</a></p></li></ul></li><li><p><a href=#ooni-explorer>OONI Explorer</a></p><ul><li><p><a href=#what-is-ooni-explorer>What is OONI Explorer?</a></p></li><li><p><a href=#how-can-i-find-blocked-websites-via-ooni-explorer>How can I find blocked websites via OONI Explorer?</a></p></li><li><p><a href=#how-can-i-access-measurements>How can I access measurements?</a></p></li><li><p><a href=#how-can-i-find-ooni-data-via-ooni-explorer>How can I find OONI data via OONI Explorer?</a></p></li><li><p><a href=#how-can-i-find-evidence-of-internet-censorship-in-a-measurement>How can I find “evidence of internet censorship” in a measurement?</a></p></li><li><p><a href=#how-can-i-find-blocked-websites-in-my-country>How can I find blocked websites in my country?</a></p></li><li><p><a href=#how-can-i-check-if-a-specific-website-is-blocked>How can I check if a specific website is blocked?</a></p></li><li><p><a href=#why-cant-i-find-results-for-a-specific-website>Why can’t I find results for a specific website?</a></p></li><li><p><a href=#how-can-i-check-the-blocking-of-websites-during-a-specific-time-period>How can I check the blocking of websites during a specific time period?</a></p></li><li><p><a href=#what-do-you-mean-by-confirmed>What do you mean by “Confirmed”?</a></p></li><li><p><a href=#i-know-of-many-other-websites-that-are-blocked-why-doesnt-ooni-explorer-show-them-when-i-select-confirmed>I know of many other websites that are blocked. Why doesn’t OONI Explorer show them when I select “confirmed”?</a></p></li><li><p><a href=#why-does-ooni-confirm-censorship-when-a-block-page-is-served>Why does OONI confirm censorship when a block page is served?</a></p></li><li><p><a href=#why-doesnt-ooni-confirm-other-cases-of-internet-censorship-beyond-block-pages>Why doesn’t OONI confirm other cases of internet censorship (beyond block pages)?</a></p></li><li><p><a href=#what-do-you-mean-by-anomalies>What do you mean by “Anomalies”?</a></p></li><li><p><a href=#why-does-ooni-explorer-suggest-that-a-site-or-app-that-i-can-access-is-blocked-in-my-country>Why does OONI Explorer suggest that a site or app that I can access is blocked in my country?</a></p></li><li><p><a href=#what-are-false-positives>What are false positives?</a></p></li><li><p><a href=#why-do-false-positives-occur>Why do false positives occur?</a></p></li><li><p><a href=#how-can-i-distinguish-false-positives>How can I distinguish false positives?</a></p></li><li><p><a href=#how-can-i-check-results-from-other-ooni-probe-tests>How can I check results from other OONI Probe tests?</a></p></li><li><p><a href=#why-doesnt-my-country-have-any-recent-measurements-on-ooni-explorer>Why doesn’t my country have any recent measurements on OONI Explorer?</a></p></li></ul></li></ul><h2 id=about-ooni>About OONI</h2><h3 id=what-is-ooni>What is OONI?</h3><p>The <a href=https://ooni.org/>Open Observatory of Network Interference (OONI)</a> is a free software project that aims to
+empower decentralized efforts in increasing transparency of internet
+censorship around the world.</p><p>Since 2012, OONI has released several <a href=https://ooni.org/install/>censorship measurement apps (OONI Probe)</a> and <a href=https://ooni.org/data/>openly published millions of network measurements</a> on internet
+censorship worldwide.</p><h3 id=why-ooni>Why OONI?</h3><p>You can use our <a href=https://github.com/ooni>free software tools</a>,
+<a href=https://ooni.org/docs/>open methodologies</a>, and <a href=https://ooni.org/data/>open data</a> to <em>verify</em> our findings, reproduce our
+studies, and investigate internet censorship in your country.</p><p>We created OONI to <strong>support public debate, and evidence-based reporting
+and advocacy</strong> on information controls.</p><h3 id=what-does-ooni-do>What does OONI do?</h3><p>To empower decentralized efforts in increasing transparency of internet
+censorship worldwide, we:</p><ul><li><p><strong>Build free and open source software for detecting
+internet censorship.</strong> <a href=https://ooni.org/install/>OONI Probe</a>
+is a network measurement tool that you can run to measure various forms of internet censorship, as well as network speed and performance.</p></li><li><p><strong>Analyze and openly publish network measurements.</strong> Every day, we
+analyze and openly publish measurements on <a href=https://explorer.ooni.org/>OONI Explorer</a>, a website hosting
+millions of network measurements from more than 200 countries from
+2012 to date.</p></li><li><p><strong>Publish research reports on internet censorship worldwide.</strong> Based
+on the analysis of OONI measurements, we publish <a href=https://ooni.org/post/>research reports</a> (often in collaboration with our
+local <a href=https://ooni.org/get-involved/partnership-program/>partners</a>)
+documenting cases of internet censorship around the world.</p></li></ul><h3 id=why-measure-internet-censorship>Why measure internet censorship?</h3><p>Internet censorship can constitute a violation of human rights (such as
+the right to freedom of expression and the right to access information).</p><p>However, identifying the <em>intentional</em> blocking of sites and services
+can be tricky. Below are some reasons why:</p><ol><li><p><strong>It’s harder to notice the blocking of less popular sites
+and services.</strong> Internet censorship is easier to notice when it
+affects services that we commonly use, or when their blocking
+receives media coverage. The <a href=https://ooni.org/post/2018-iran-protests/>blocking of Telegram and Instagram in Iran</a>, for example,
+received a fair amount of <a href=http://www.bbc.com/news/world-middle-east-42529576>media coverage</a> and
+international attention, whereas the <a href=https://ooni.org/post/iran-internet-censorship/#human-rights-issues>blocking of religious and ethnic minority sites</a>
+may be less known.</p></li><li><p><strong>Internet censorship often differs from network to network within
+a country.</strong> In many countries around the world, Internet Service
+Providers (ISPs) block access to different websites, often as a result of vague government orders. A site
+that may be accessible in your network may be blocked in another.</p></li><li><p><strong>Most censorship techniques are quite subtle.</strong> When an ISP serves
+a block page, they inform you that a site is intentionally
+censored (and they often include a legal justification). Some
+ISPs, however, serve <em>blank</em> block pages which can potentially
+create ambiguity on whether a site is intentionally blocked or
+inaccessible due to other reasons (such as bad connectivity). In
+many countries, ISPs don’t serve block pages at all. Rather, they
+block sites by entirely different means (such as DNS tampering,
+TCP/IP blocking, or RST injection) which don’t inform users, nor
+provide a justification for the censorship. In these cases, it’s
+harder to determine whether a site is intentionally blocked, or if
+it’s inaccessible due to other reasons (such as a transient
+network failure or a <a href=https://ooni.org/post/not-quite-network-censorship/>case of DNS misconfiguration</a>).</p></li><li><p><strong>Some ISPs adopt a combination of different
+censorship techniques.</strong> While your ISP may serve a block page for
+some sites (informing you that those sites are intentionally
+blocked), they may block different sites with different techniques
+&ndash; limiting your ability to notice the blocking of those
+other sites. In some countries, ISPs even <a href=https://ooni.org/post/iran-internet-censorship/#blocked-domains-and-tools>block the same sites with different techniques</a>.</p></li><li><p><strong>Over-blocking and collateral damage.</strong> In Indonesia, for example,
+<a href=https://ooni.org/post/indonesia-internet-censorship/>Vimeo and Reddit were found to be blocked even though their ban was lifted</a>
+more than 2 years ago. In Egypt, a number of sites that were
+hosted on the same CDN as The New Arab were
+<a href=https://ooni.org/post/egypt-network-interference/#collateral-damage>blocked</a>
+as well.</p></li><li><p><strong>The fact that a site or service is inaccessible doesn’t
+necessarily mean that it’s blocked by your ISP.</strong> Maybe it’s
+hosted on an unreliable server, or maybe the site/service owner is
+blocking all IP addresses originating from the country that you
+are trying to access it from (in compliance with laws
+and regulations).</p></li></ol><p>Measuring internet censorship is, therefore, important because it allows
+us to <strong>inspect a network</strong> and to examine the reasons as to why and how
+we are (or aren’t) able to connect to an internet service.</p><p>When inspecting a network we observe, for example, that our ISP is
+spoofing the IP address of the website that we’re trying to access, this
+information can potentially <strong>serve as evidence of intentional
+interference</strong> with our ability to access the intended website.</p><p>Through the use of <a href=https://ooni.org/install/>OONI Probe</a>, you can
+measure networks and collect data that shows what is blocked, how, when,
+and by whom.</p><h3 id=how-is-ooni-funded>How is OONI funded?</h3><p>Like most projects in the nonprofit world, OONI is primarily supported
+by foundations.</p><p>The <a href=https://www.opentech.fund/>Open Technology Fund (OTF)</a> has been
+our main funder over the years, originally <a href=https://www.opentech.fund/results/supported-projects/ooni-open-observatory-of-network-interference/>supporting the creation of OONI back in 2012</a>.
+The OTF has
+<a href=https://www.opentech.fund/results/supported-projects/>supported</a>
+some of the most prominent free software projects that advance human
+rights on the internet, such as
+<a href=https://www.opentech.fund/results/supported-projects/tor-project/>Tor</a>
+and
+<a href=https://www.opentech.fund/results/supported-projects/open-whisper-systems/>Signal</a>.</p><p>We have received support from Mozilla (<a href=https://www.mozilla.org/en-US/moss/>Mozilla Open Source Support</a>) to <a href=https://ooni.org/post/next-generation-ooni-explorer/>revamp OONI Explorer</a>. The
+initial creation of OONI Explorer (originally <a href=https://blog.torproject.org/ooni-explorer-censorship-and-other-network-anomalies-around-world>launched in March 2016</a>)
+was supported by the <a href=https://www.auswaertiges-amt.de>German Foreign Ministry</a>. Over the years, we have
+received support from several other foundations as well, such as the
+<a href=https://mediademocracyfund.org/>Media Democracy Fund (MDF)</a> and the <a href=https://www.nsf.gov/>National Science Foundation (NSF)</a>.</p><p>We have also received other forms of support, such as donations from
+companies like <a href=https://airvpn.org/>AirVPN</a> and
+<a href=https://www.vpncompare.co.uk/>VPNCompare</a>. We have received
+infrastructure support from <a href=https://greenhost.net/>Greenhost</a> (who
+have been providing us servers since 2016) and Amazon (for <a href=https://ooni-data.s3.amazonaws.com/>hosting OONI measurements on Amazon S3</a>
+and for <a href=https://aws.amazon.com/research-credits/>using their big data tooling</a> for analyzing
+measurements).</p><h3 id=what-is-ooni-s-relationship-with-the-tor-project>What is OONI’s relationship with The Tor Project?</h3><p>OONI was born out of <a href=https://www.torproject.org/>The Tor Project</a>.</p><p>Back in 2011, Tor Project developers started creating open methodologies
+and frameworks with the goal of measuring various forms of network
+interference, resulting in the creation of OONI.</p><p>OONI has since been <a href=https://2019.www.torproject.org/projects/projects.html.en>one of the projects hosted under The Tor Project Inc.</a>.</p><h3 id=how-can-i-get-involved>How can I get involved?</h3><p>There are many ways you can get involved!</p><ul><li><p><strong><a href=https://ooni.org/install/>Run OONI Probe</a></strong>. The more
+networks are measured, the more likely we (OONI and the public)
+are to detect internet censorship and other forms of
+network interference. Even if you don’t detect censorship,
+contributing measurements is still very useful (for data analysis
+and historical purposes).</p></li><li><p><strong><a href=https://ooni.org/get-involved/contribute-test-lists/>Suggest URLs for testing</a></strong>.
+The censorship findings are only as interesting as the websites
+that are tested. Please help us improve the quality of
+measurements by adding websites that you think should be tested!</p></li><li><p><strong><a href=https://wiki.localizationlab.org/index.php/OONI_Probe>Translate the OONI Probe apps</a></strong>.
+By <a href=https://www.transifex.com/otf/ooniprobe/>translating the OONI Probe apps</a>, you are enabling
+more communities to measure internet censorship.</p></li><li><p><strong>Participate in community discussions.</strong> Join us on our
+<a href=https://slack.ooni.org/>Slack</a> or IRC (ircs://irc.oftc.net:6697/#ooni) channel for real-time discussions,
+and sign-up on our <a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>mailing list</a>
+to receive updates and share news.</p></li><li><p><strong>Facilitate OONI workshops.</strong> Engage your local communities with
+the use of <a href=https://ooni.org/install/>OONI Probe</a> and <a href=https://ooni.org/data/>OONI data</a>. Spread the word!</p></li><li><p><strong>Coordinate censorship testing with OONI Probe users around
+the world.</strong> Use the <a href=https://run.ooni.io/>OONI Run platform</a>
+to generate links based on the websites you want to test, and
+share those links with OONI Probe users around the world!</p></li><li><p><strong>Use OONI data in your research.</strong> OONI provides <a href=https://ooni.org/install/>free software</a>, <a href=https://ooni.org/docs/>open methodologies</a>, and <a href=https://ooni.org/data/>open data</a> that you can use as part of
+your research. View some of our <a href=https://ooni.org/post/>research reports</a> to see examples of what you can
+uncover through OONI data!</p></li><li><p><strong>Use OONI data in your journalistic reporting.</strong> Enhance the credibility of your stories by referencing network measurement
+data as evidence of censorship events. <a href=https://cpj.org/blog/2019/09/qa-ooni-explorer-team-unlock-the-webs-untold-censo.php>Discover untold censorship stories</a>
+through <a href=https://explorer.ooni.org>OONI data</a> and share them with the public.</p></li><li><p><strong>Use OONI data in your advocacy.</strong> Inform your advocacy efforts
+based on censorship events and trends identified around the world
+through <a href=https://ooni.org/data/>OONI data</a>.</p></li><li><p><strong>Examine the legality of censorship events identified through
+OONI data.</strong> Share your legal analysis with the public and
+consider using OONI data as evidence in court cases.</p></li><li><p><strong><a href=https://ooni.org/post/mining-ooni-data/>Analyze OONI data</a></strong>. OONI data
+is a goldmine, consisting of millions of measurements collected
+from more than 200 countries since 2012. Every day, hundreds of
+thousands of new measurements are published. Dig through <a href=https://ooni.org/data/>OONI data</a> and discover cases of internet
+censorship!</p></li><li><p><strong>Visualize data</strong>. Communicate OONI censorship findings through the
+creation of data visualizations.</p></li><li><p><strong><a href=https://ooni.org/get-involved/partnership-program/>Join the OONI Partnership Program</a></strong>.
+Collaborate with us on the study of internet censorship. Engage
+your local communities with <a href=https://ooni.org/install/>OONI Probe</a>, <a href=https://ooni.org/get-involved/contribute-test-lists/>update test lists</a>, and
+<a href=https://ooni.org/post/>report</a> on censorship findings.</p></li><li><p><strong><a href=https://github.com/ooni>Help improve OONI software</a></strong>. We
+develop and maintain many software projects that power the
+OONI ecosystem. All of our code is open source and we encourage
+you to review and/or contribute to it!</p></li><li><p><strong><a href=https://ooni.org/docs/writing_tests.html>Write a network measurement test for OONI Probe</a></strong>. OONI
+Probe was created based on open methodologies and frameworks to
+enable community members to contribute their own network
+measurement tests. If this interests you, <a href=https://ooni.org/about/#contact>please reach out</a> so that we can coordinate.</p></li></ul><h2 id=ooni-probe>OONI Probe</h2><h3 id=what-is-ooni-probe>What is OONI Probe?</h3><p>OONI Probe is <a href=https://github.com/ooni/probe>free and open source software</a> designed to measure internet
+censorship and other forms of network interference.</p><h3 id=but-my-country-doesn-t-have-censorship-why-run-ooni-probe>But my country doesn’t have censorship. Why run OONI Probe?</h3><p>We think it’s important to measure networks for censorship in every
+country of the world (regardless of whether cases of internet censorship
+have been reported or not) because:</p><ul><li><p>Censorship is often <a href=https://explorer.ooni.org/>politically motivated</a> and can therefore change
+depending on those in power and political events.</p></li><li><p>If censorship starts taking place in your country, you’ll have data
+to prove it (and previous data to compare it against).</p></li><li><p>Many cases of internet censorship can go unnoticed, such as the
+blocking of minority group websites.</p></li><li><p>Internet censorship can differ from network to network within
+a country. Perhaps internet services that are accessible on your
+network are blocked on others.</p></li><li><p>It’s not always clear if an internet service is <em>intentionally</em>
+blocked, or if it’s inaccessible due to other reasons (such as
+network issues).</p></li><li><p>As long as there is no transparency, governments and Internet
+Service Providers (ISPs) can potentially seek <em>plausible
+deniability</em> (especially if it’s not clear that a service is
+intentionally blocked).</p></li><li><p>We consider it <strong>good democratic practice to keep those in power to
+account</strong>.</p></li><li><p>By contributing measurements, you are helping to <strong>create a public
+archive on network interference worldwide</strong>. <strong>You will enable
+future generations to see what was happening on the network level
+of the internet.</strong></p></li></ul><h3 id=what-do-ooni-probe-tests-do>What do OONI Probe tests do?</h3><p><a href=https://ooni.org/install/>OONI Probe</a> consists of <a href=https://github.com/ooni/spec/tree/master/nettests>multiple free software tests</a>
+designed to measure:</p><ul><li><p>Blocking of websites;</p></li><li><p>Blocking of instant messaging apps (WhatsApp, Facebook Messenger,
+Telegram);</p></li><li><p>Blocking of censorship circumvention tools (such as Tor, Psiphon, and pluggable transports);</p></li><li><p>Presence of middleboxes (i.e. systems that could be responsible for
+censorship or surveillance);</p></li><li><p>Speed and performance of networks.</p></li></ul><h3 id=how-do-ooni-probe-tests-measure-internet-censorship>How do OONI Probe tests measure internet censorship?</h3><p>To measure the blocking of a website, <a href=https://ooni.org/install/>OONI Probe</a> automatically performs <a href=https://ooni.org/nettest/web-connectivity/>certain checks</a> towards that
+website from two networks:</p><ul><li><p>The network of the user (which may be censored)</p></li><li><p>A control network (which is <em>not</em> censored)</p></li></ul><p>The results from the two networks are automatically compared. If they
+are the same, the tested website is considered accessible. However, if
+the results differ, it’s possible that access to the tested website is
+blocked.</p><p>You can learn how each OONI Probe test works through the links provided
+below:</p><ul><li><p>Web Connectivity test: <a href=https://ooni.org/nettest/web-connectivity/>https://ooni.org/nettest/web-connectivity/</a></p></li><li><p>WhatsApp test: <a href=https://ooni.org/nettest/whatsapp/>https://ooni.org/nettest/whatsapp/</a></p></li><li><p>Facebook Messenger test: <a href=https://ooni.org/nettest/facebook-messenger/>https://ooni.org/nettest/facebook-messenger/</a></p></li><li><p>Telegram test: <a href=https://ooni.org/nettest/telegram/>https://ooni.org/nettest/telegram/</a></p></li><li><p>HTTP Invalid Request Line test: <a href=https://ooni.org/nettest/http-invalid-request-line/>https://ooni.org/nettest/http-invalid-request-line/</a></p></li><li><p>HTTP Header Field Manipulation test: <a href=https://ooni.org/nettest/http-header-field-manipulation/>https://ooni.org/nettest/http-header-field-manipulation/</a></p></li><li><p>NDT: <a href=https://ooni.org/nettest/ndt/>https://ooni.org/nettest/ndt/</a></p></li><li><p>DASH: <a href=https://ooni.org/nettest/dash/>https://ooni.org/nettest/dash/</a></p></li></ul><p>You can also view the test specifications here: <a href=https://github.com/ooni/spec/tree/master/nettests>https://github.com/ooni/spec/tree/master/nettests</a></p><h3 id=i-am-not-a-techie-can-i-run-ooni-probe>I am not a techie. Can I run OONI Probe?</h3><p>Absolutely! You can install the OONI Probe mobile app (for
+<a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android</a>
+and <a href=https://itunes.apple.com/us/app/id1199566366>iOS</a>), which is the
+easiest way to run OONI Probe. You can run tests with the tap of a
+button!</p><p>We’re generally working towards making OONI Probe as easy to install and
+run as possible. This includes a <a href=https://github.com/ooni/probe-desktop/releases>new OONI Probe desktop app for Windows and macOS</a> with
+similar design, UX, and features as the mobile app.</p><h3 id=how-can-i-run-ooni-probe>How can I run OONI Probe?</h3><p>You can run OONI Probe on the following platforms:</p><ul><li><p>Android: <a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe</a></p></li><li><p>iOS: <a href=https://itunes.apple.com/us/app/id1199566366>https://itunes.apple.com/us/app/id1199566366</a></p></li><li><p>F-Droid: <a href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe</a></p></li><li><p>Windows &amp; macOS: <a href=https://github.com/ooni/probe-desktop/releases>https://github.com/ooni/probe-desktop/releases</a> (new and experimental)</p></li><li><p>Linux: <a href=https://github.com/ooni/probe-cli/releases>https://github.com/ooni/probe-cli/releases</a> (new and experimental)</p></li></ul><p>Older versions of OONI Probe (which are no longer updated) are available
+for:</p><ul><li><p>Linux &amp; macOS: <a href=https://ooni.org/install/ooniprobe>https://ooni.org/install/ooniprobe</a></p></li><li><p>Raspberry Pi: <a href=https://ooni.org/install/lepidopter/>https://ooni.org/install/lepidopter/</a></p></li></ul><h3 id=i-ran-ooni-probe-should-i-send-you-the-results>I ran OONI Probe. Should I send you the results?</h3><p>No need to. OONI Probe is designed to automatically send us your results
+as soon as you run a test (unless if you have opted-out in the
+settings). Your results will automatically get
+<a href=https://github.com/ooni/pipeline>processed</a> and
+<a href=https://ooni.org/data/>published</a>.</p><h3 id=how-often-should-i-run-ooni-probe>How often should I run OONI Probe?</h3><p>As often as possible. Internet censorship can emerge abruptly, while the
+blocking and unblocking of internet services may change over time.</p><p>To more effectively track internet censorship, you would ideally run
+OONI Probe every day.</p><h3 id=how-can-i-run-ooni-probe-daily>How can I run OONI Probe daily?</h3><p>We are adding support for <a href=https://github.com/ooni/probe/issues/916>automatic daily testing</a>. Stay tuned!</p><h3 id=for-how-long-should-i-run-ooni-probe>For how long should I run OONI Probe?</h3><p>As long as possible. Internet censorship can emerge abruptly, while the
+blocking and unblocking of internet services may change over time.</p><p>Every time you run OONI Probe, you contribute measurements to a <a href=https://explorer.ooni.org/>public archive on network interference</a> (since
+your measurements get published).</p><p>To more effectively track internet censorship over time, you would
+ideally run OONI Probe for as long as possible (years).</p><h3 id=i-found-blocked-websites-how-can-i-circumvent-their-blocking>I found blocked websites. How can I circumvent their blocking?</h3><p>You can circumvent the blocking of websites or apps through the use of
+<a href=https://www.torproject.org/download/>Tor Browser</a> or a VPN (such as
+<a href=https://psiphon.ca/en/download.html?psiphonca>Psiphon</a>).</p><h3 id=ooni-probe-found-a-middlebox-on-my-network-does-that-mean-i-am-under-surveillance>OONI Probe found a middlebox on my network. Does that mean I am under surveillance?</h3><p>No, not necessarily.</p><p>Many Internet Service Providers (ISPs) use middleboxes for a wide range
+of networking purposes (such as caching), many of which have nothing to
+do with surveillance or implementing internet censorship.</p><h3 id=can-i-measure-internet-censorship-remotely-in-another-country>Can I measure internet censorship remotely in another country?</h3><p>OONI Probe tests are designed with the goal of measuring internet
+censorship as a user would experience it within a country. OONI Probe is
+designed to measure the network it connects to, in the country that that
+network is located.</p><p>If you perform tests remotely (without physically being located in that
+specific country) &ndash; for example, through the use of a VPS &ndash; you will
+likely receive inaccurate results because the OONI Probe heuristics are
+not designed for that.</p><p>For remote testing, we would recommend other tools, such as
+<a href=https://censoredplanet.org/projects/satellite>Satellite</a>, which
+scans the internet for open DNS resolvers and performs queries to them
+in an attempt to identify DNS based blocking.</p><h3 id=what-types-of-data-does-ooni-probe-collect>What types of data does OONI Probe collect?</h3><p>OONI Probe was built with the privacy and security of its users in mind,
+but it’s <em>not</em> a privacy tool. We therefore try to limit data collection
+to types of data that are necessary for measuring various forms of
+internet censorship.</p><p>By default, OONI Probe collects:</p><ul><li><p>The <strong>date and time</strong> of a measurement (such as “2019-10-30,
+14:00 UTC”)</p></li><li><p><strong>Country code</strong> (such as “IT” for Italy)</p></li><li><p><strong>Information about your network:</strong> This includes the AS Number (for example,
+“AS30722” if a test was performed on Vodafone Italia) and the type of network
+you are on (wifi or mobile).</p></li><li><p><strong>Network measurement data</strong> (which varies depending on the specific
+<a href=https://github.com/ooni/spec/tree/master/nettests>test</a> performed)</p></li></ul><p>By default, OONI Probe does <strong>not</strong> collect your IP address. You can,
+however, opt-in to submit your IP address (via the settings in the OONI
+Probe apps) if you would like to enhance the accuracy of information.</p><p>We <strong>might unintentionally</strong> collect your IP address and other
+personally-identifiable information if this is included in the HTTP
+headers or other metadata of measurements. This data might be collected
+if the websites OONI Probe is testing employ tracking technologies or
+contain custom content. We take measures to remove IP addresses and
+other potentially personally-identifiable information from our database
+of collected measurements to reduce the risk to you.</p><p>Learn more about our data practices through the OONI Data Policy:
+<a href=https://ooni.org/about/data-policy/>https://ooni.org/about/data-policy/</a></p><h3 id=how-can-i-opt-out-from-sending-ooni-measurements>How can I opt-out from sending OONI measurements?</h3><p>Through the settings of the OONI Probe apps, you can:</p><ul><li><p>Disable the “<strong>Include Network Info</strong>” setting to <strong>opt-out from
+submitting the ASN</strong> (such as “AS30722” for Vodafone Italia) of
+the network are running OONI Probe from.</p></li><li><p>Disable the “<strong>Include Country Code</strong>” setting to <strong>opt-out from
+submitting the code of the country</strong> (such as “IT” for Italy) you
+are running OONI Probe from.</p></li><li><p>Disable the “<strong>Automatically Publish Results</strong>” setting to <strong>opt-out
+from sharing (and publishing) any measurements</strong> at all.</p></li></ul><h3 id=what-are-the-risks-of-running-ooni-probe>What are the risks of running OONI Probe?</h3><p>To our knowledge, no one has ever gotten into trouble as a result of
+running OONI Probe. That said, running OONI Probe can potentially be
+risky.</p><p>Some things to take into account:</p><ul><li><p><strong>OONI Probe is <em>not</em> a privacy tool.</strong> Anyone monitoring your
+internet activity (e.g. government, ISP, employer) may see that
+you are running OONI Probe (just the way they can probably see all
+other software you run).</p></li><li><p><strong>OONI Probe is an investigatory tool.</strong> Some OONI Probe tests are
+explicitly designed to uncover internet censorship.</p></li><li><p><strong><a href=https://www.eff.org/keeping-your-site-alive/evaluating-your-threat-model>Your threat model</a></strong>.
+A high-profile activist already under heavy surveillance, for
+example, might attract more attention when running OONI Probe.</p></li><li><p><strong>The laws and regulations of the country you’re running OONI
+Probe from.</strong> Best to consult with local lawyers.</p></li><li><p><strong>The types of websites you test.</strong> You might test legally banned
+(in some countries), provocative or objectionable websites through
+the use of OONI Probe.</p></li><li><p><strong>The types of OONI Probe tests you run.</strong> Not all OONI Probe tests
+carry the same weight in terms of potential risk. OONI Probe, for
+example, includes the <a href=https://ooni.org/nettest/ndt/>NDT test</a>
+(designed to measure the speed and performance of a network) which
+may be viewed as less political or controversial in comparison to
+other tests designed to measure the blocking of websites or apps.</p></li><li><p><strong>Whether you publish your measurements or not.</strong> OONI <a href=https://ooni.org/data/>openly publishes measurements</a> collected from
+OONI Probe users to increase transparency of internet censorship
+around the world. We do our best not to publish your IP address or
+any other potentially personally-identifiable information.</p></li></ul><p>To learn more about potential risks associated with the use of OONI
+Probe, please refer to our documentation: <a href=https://ooni.org/about/risks/>https://ooni.org/about/risks/</a></p><h3 id=how-can-i-reduce-the-risks-associated-with-running-ooni-probe>How can I reduce the risks associated with running OONI Probe?</h3><p>We aim to provide you with as much <em>choice</em> as possible, so that you can
+mitigate potential risks and customize your usage of OONI Probe
+depending on what you feel comfortable with.</p><p>You can:</p><ul><li><p><strong>Limit your testing to the websites of your choice.</strong> The “Choose
+websites” button inside the OONI Probe mobile app enables you to
+test specific websites of your choice. You can also test a custom
+list of sites using the <a href=https://run.ooni.io/>OONI Run platform</a>, and you can influence which URLs
+are measured by OONI Probe users by <a href=https://ooni.org/get-involved/contribute-test-lists/>contributing to test lists</a>.</p></li><li><p><strong>Limit your testing to the tests you feel more comfortable with.</strong>
+Through the OONI Probe mobile and (new) desktop apps, you need to
+initiate a test by tapping or clicking on it (i.e. tests don’t run
+automatically be default).</p></li><li><p><strong>Opt-out from sharing certain data.</strong> Through the settings of the
+OONI Probe apps, you can disable the submission of network
+information (the Autonomous System Number (ASN) of the network
+where you’re running tests) and country code (for example, GR
+for Greece). In this case, you would be submitting
+(for publication) a measurement which cannot be attributed to a
+specific network and/or country.</p></li><li><p><strong>Opt-out from sharing any measurements.</strong> Through the settings of
+the OONI Probe apps, you can opt-out from sending OONI any
+measurements at all. In this case, the results of your tests would
+not be published (only you would have access to them through
+your app).</p></li><li><p><strong>Choose how to share your measurements.</strong> If you run the <a href=https://ooni.org/install/ooniprobe/>older version of OONI Probe for Linux and macOS</a>, you have the
+(more secure) option to upload your measurements to OONI servers through the use of <a href=https://2019.www.torproject.org/docs/onion-services.html.en>onion services</a>. This OONI Probe version though is no longer updated, as we’re
+<a href=https://github.com/ooni/probe-desktop/releases>building a new OONI Probe desktop app</a> (that will
+also support onion services in the future).</p></li></ul><h3 id=can-i-run-ooni-probe-over-a-vpn>Can I run OONI Probe over a VPN?</h3><p>We advise against running OONI Probe over a VPN because you wouldn’t be
+measuring your network. You would, instead, be measuring the network
+provider by your VPN, which is probably uncensored.</p><p>To capture internet censorship (as experienced by a local internet
+user), turn-off your VPN (or any other circumvention software) prior to
+running OONI Probe tests.</p><h3 id=can-ooni-provide-legal-advice>Can OONI provide legal advice?</h3><p>No. We are a team of software developers, and therefore cannot provide
+any legal advice.</p><p>We do, however, share some questions that you can ask your lawyers
+relating to the use of OONI Probe: <a href=https://ooni.org/about/risks/#seeking-legal-advice>https://ooni.org/about/risks/#seeking-legal-advice</a></p><h2 id=testing-websites>Testing websites</h2><h3 id=which-websites-will-i-test-for-censorship-with-ooni-probe>Which websites will I test for censorship with OONI Probe?</h3><p>When you tap “Run” in the OONI Probe apps, you will test the websites
+included in the following two lists:</p><ul><li><p><strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>Global test list</a></strong>:
+Includes internationally relevant websites (such as facebook.com),
+most of which are in English;</p></li><li><p><strong><a href=https://github.com/citizenlab/test-lists/tree/master/lists>Country-specific test list</a></strong>:
+Includes websites that are only relevant to a specific country,
+many of which are in local languages.</p></li></ul><p>No matter which country you’re running OONI Probe from, you will always
+test websites from the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global test list</a>.</p><p>OONI Probe will automatically determine which country-specific list to
+pick for testing based on the country you’re running OONI Probe from.
+For example, if you run OONI Probe in Brazil, you will test websites
+from the global test list and from the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/br.csv>Brazilian test list</a>.
+If you travel to Germany and run OONI Probe, it will test the websites
+from the global and
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/de.csv>German</a>
+test lists.</p><h3 id=what-are-test-lists>What are test lists?</h3><p>A <a href=https://ooni.org/get-involved/contribute-test-lists/#what-are-test-lists>test list</a>
+is a list of websites tested for censorship.</p><h3 id=why-does-ooni-probe-use-test-lists>Why does OONI Probe use test lists?</h3><p>Testing all of the websites hosted on the internet is not feasible,
+especially since OONI Probe is run by users with bandwidth constraints.
+We therefore need to limit the testing to a selection of websites.</p><p><a href=https://github.com/citizenlab/test-lists/tree/master/lists>Test lists</a>
+offer the following main advantages:</p><ul><li><p>They include a selection of <strong>internationally relevant</strong> websites
+(global test list);</p></li><li><p>They include a selection of <strong>websites that are relevant to the
+country of the user</strong> (country test lists);</p></li><li><p>They are <strong>diverse</strong> (including URLs that can fall under <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 categories</a>), providing
+the opportunity to <em>discover</em> cases of censorship;</p></li><li><p>They are public, which means that <strong>users can check which websites
+they will test</strong> (prior to running tests);</p></li><li><p>They are publicly hosted on GitHub, <strong>encouraging community review
+and contributions</strong>;</p></li><li><p>Because they are hosted on GitHub, <strong>new websites are reviewed
+carefully</strong> before being integrated for testing (this, for
+example, can help ensure that malicious sites don’t get added);</p></li><li><p>They are <strong>machine-readable</strong> and as a result, OONI Probe can easily
+use them for testing.</p></li></ul><h3 id=why-doesn-t-the-ooni-probe-mobile-app-test-all-of-the-websites-in-test-lists>Why doesn’t the OONI Probe mobile app test all of the websites in test lists?</h3><p>Due to bandwidth constraints, default website testing via the OONI Probe
+mobile app is limited to 90 seconds. OONI Probe will select a <strong>random
+sample of websites</strong> (from the
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global</a>
+and
+<a href=https://github.com/citizenlab/test-lists/tree/master/lists>country-specific</a>
+list) and <strong>connect to as many of them as it can within 90 seconds</strong>.</p><p>The OONI Probe desktop app tests all websites (from the
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global</a>
+and
+<a href=https://github.com/citizenlab/test-lists/tree/master/lists>country-specific</a>
+list) in one go and you can limit the number of tested websites in the app settings.</p><h3 id=how-can-i-change-the-testing-duration-in-the-ooni-probe-mobile-app-to-test-more-websites>How can I change the testing duration in the OONI Probe mobile app to test more websites?</h3><p>To test more websites, change the testing duration via the following
+steps:</p><ol><li><p>Tap on the <strong>Websites card</strong> in your OONI Probe mobile app</p></li><li><p>Tap on the <strong>menu icon on the top right corner</strong> (inside the
+Websites card)</p></li><li><p>Tap on “<strong>Test duration</strong>”</p></li><li><p>The default is 90 (seconds). Change this number to allow for
+longer testing.</p></li><li><p>Tap “OK”</p></li></ol><h3 id=how-can-i-find-my-country-s-test-list>How can I find my country’s test list?</h3><p>The test list of each country is saved as a CSV file in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab’s test list repository on GitHub</a>.</p><p>These files have been saved in the following format: <strong>country code dot
+csv.</strong> For example, the Brazilian test list has been saved as
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/br.csv>br.csv</a>
+(since “BR” is the country code for Brazil).</p><p>You can find your country’s test list by searching for a <a href=https://github.com/citizenlab/test-lists/tree/master/lists>CSV file with its country code</a>.</p><h3 id=why-doesn-t-my-country-have-a-test-list>Why doesn’t my country have a test list?</h3><p>If you can’t find a test list for your country, that’s probably because
+it doesn’t exist yet. In this case, OONI Probe would only test the
+websites included in the
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global</a>
+test list.</p><p>Please <a href=https://ooni.org/get-involved/contribute-test-lists/#creating-new-test-lists>help us create a test list</a>
+for your country.</p><h3 id=who-decides-which-websites-are-included-in-test-lists>Who decides which websites are included in test lists?</h3><p>Anyone can! Test lists are publicly <a href=https://github.com/citizenlab/test-lists>hosted on GitHub by the Citizen Lab</a> to encourage community
+review and contributions.</p><p>We encourage you to <a href=https://ooni.org/get-involved/contribute-test-lists/#reviewing-test-lists>review which websites are included in test lists and to propose additional URLs</a>.</p><h3 id=how-can-i-contribute-to-test-lists>How can I contribute to test lists?</h3><p>Detailed information explaining how to contribute to test lists is
+available through our guide: <a href=https://ooni.org/get-involved/contribute-test-lists/>https://ooni.org/get-involved/contribute-test-lists/</a></p><p>If you’re a GitHub user, you can contribute to test lists by <a href=https://github.com/citizenlab/test-lists>opening a pull request</a>.</p><h3 id=i-m-not-a-github-user-but-i-d-still-like-to-submit-urls-for-testing-how-can-i-do-so>I’m not a GitHub user, but I’d still like to submit URLs for testing. How can I do so?</h3><p>Some of the greatest test list contributions come from people who don’t
+use GitHub (such as social scientists), particularly since updating test
+lists requires an understanding of the country’s social and political
+environment.</p><p>If you’re not a GitHub user and would like to contribute to test lists,
+please refer to our
+<a href=https://ooni.org/get-involved/contribute-test-lists/>guide</a> and send
+us your updates by dropping us an email at
+<a href=mailto:contact@openobservatory.org>contact@openobservatory.org</a>.</p><h3 id=what-is-the-difference-between-a-test-list-and-a-blocklist>What is the difference between a test list and a blocklist?</h3><p>A test list is a <strong>list of sites that we test</strong> to check whether they
+are blocked.</p><p>A blocklist, on the other hand, is a list of (legally) prohibited
+websites, all of which are often blocked.</p><p>Some governments occasionally publish official blocklists (or they get
+leaked) which contain lists of websites that are legally prohibited in a
+country. Internet Service Providers (ISPs) are then ordered to block
+access to all websites included in such blocklists, commonly involving
+hundreds (or thousands) of URLs that contain content illegal in that
+country (such as gambling, file sharing, adult content, etc.).</p><p>Test lists, on the other hand, are <em>not</em> meant to be limited to blocked
+websites. Rather, they serve the purpose of monitoring when policies
+change - what’s most likely to be blocked or unblocked.</p><p>While test lists may include <em>some</em> websites that are known to be
+blocked (and that is useful for detecting censorship techniques adopted
+by ISPs), most sites are not censored locally when they are added to
+test lists.</p><p>With test lists, we aim to <strong>discover internet censorship</strong> (by
+identifying the blocking of sites that were previously accessible), not
+only confirm it.</p><h3 id=how-can-i-test-all-the-urls-included-in-an-official-blocklist>How can I test all the URLs included in an official blocklist?</h3><p>Blocklists often include thousands of URLs and due to bandwidth
+constraints, we refrain from including all of those websites in <a href=https://github.com/citizenlab/test-lists>test lists</a> (though we do add a
+few). We generally try to limit test lists to around 1,000 URLs, and we
+try to ensure that the URLs are as diverse as possible.</p><p>You can test an entire blocklist through the following steps:</p><ol><li><p>Install the <a href=https://ooni.org/install/>OONI Probe mobile app</a></p></li><li><p><strong>Save the URLs of the blocklist in a text file</strong> and ensure that:</p><ul><li><p>Each URL is included in a separate line.</p></li><li><p>URLs are formatted properly (i.e. they include the HTTP or HTTPS
+prefix, depending on how they would appear when accessed from a
+normal browser): This is particularly important since URLs in
+blocklists are often <em>not</em> formatted properly and this would
+influence the testing.</p></li></ul></li><li><p>Access the <a href=https://run.ooni.io/>OONI Run website</a></p></li><li><p>Copy your (saved) list of blocklist URLs and paste it into the first
+URL slot in the <a href=https://run.ooni.io/>OONI Run website</a>.</p></li></ol><p>The URL slots should now be populated with the blocklist URLs.</p><ol><li>Click on the “<strong>Generate</strong>” button (in the OONI Run page) at the end
+of all the URLs.</li></ol><p>You have now generated a link (and widget code) for OONI Probe testing
+of the blocklist URLs.</p><ol><li><strong>Open the generated link with your OONI Probe mobile app</strong> (not
+with a web browser!).</li></ol><p>You should now view the blocklist URLs in your OONI Probe mobile app.</p><ol><li>Tap “<strong>Run</strong>” to test the blocklist URLs.</li></ol><p>Once the testing has been completed, you will find the results in the
+<strong>Test Results</strong> section of your OONI Probe mobile app. The results will
+also automatically be published on <a href=https://explorer.ooni.org/>OONI Explorer</a> within 24 hours (unless if you
+disable publication in the app settings).</p><h3 id=what-types-of-websites-will-ooni-probe-test>What types of websites will OONI Probe test?</h3><p>OONI Probe tests websites (included in the <a href=https://github.com/citizenlab/test-lists>Citizen Lab test lists</a>) that fall under <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 diverse categories</a>.</p><p>These categories range from news media, culture, and human rights issues
+to more provocative or objectionable categories, like pornography (the
+latter are included because they are more likely to be blocked, enabling
+the detection of censorship techniques adopted by ISPs).</p><h3 id=how-can-i-choose-which-types-of-websites-to-test>How can I choose which types of websites to test?</h3><p>By default, OONI Probe will test websites that fall under <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 standardized categories</a>.</p><p>You can limit your testing to specific types of websites (for example,
+only test media websites) through the following steps:</p><ul><li><p>Tap on the <strong>Websites card</strong> in your OONI Probe mobile app</p></li><li><p>Tap on the <strong>menu icon on the top right corner</strong> (inside the
+Websites card)</p></li><li><p>Tap on “<strong>Website categories to test</strong>”</p></li><li><p>All website categories are enabled by default. Enable/disable
+categories to customize your testing.</p></li></ul><h3 id=how-can-i-choose-which-websites-to-test>How can I choose which websites to test?</h3><p>You can test websites of your choice (rather than the websites included
+in <a href=https://github.com/citizenlab/test-lists/tree/master/lists>test lists</a>)
+through the following steps:</p><ol><li><p>Tap on the <strong>Websites card</strong> in your OONI Probe mobile app</p></li><li><p>Tap on the <strong>“Choose websites”</strong> button (inside the Websites card)</p></li><li><p>Add the websites you want to test in the URL slots (ensure each
+website is formatted properly)</p></li><li><p>Tap “<strong>Run</strong>”</p></li></ol><p>Once the testing has been completed, you will find the results in the
+<strong>Test Results</strong> section of your OONI Probe mobile app. The results will
+also automatically be published on <a href=https://explorer.ooni.org/>OONI Explorer</a> within 24 hours (unless if you
+disable publication in the app settings).</p><h3 id=how-can-i-test-a-custom-list-of-urls>How can I test a custom list of URLs?</h3><p>If you would like to test a long list of websites, adding them one by
+one via the “Choose websites” button in the OONI Probe mobile app might
+not be a pleasant option.</p><p>You can test your own custom list of URLs through the following steps:</p><ol><li><p>Install the <a href=https://ooni.org/install/>OONI Probe mobile app</a></p></li><li><p><strong>Save the URLs of your list in a text file</strong> and ensure that:</p><ul><li><p>Each URL is included in a separate line</p></li><li><p>URLs are formatted properly (i.e. they include the HTTP or HTTPS
+prefix, depending on how they would appear when accessed from a
+normal browser)</p></li></ul></li><li><p>Access the <a href=https://run.ooni.io/>OONI Run website</a></p></li><li><p>Copy your list of URLs and paste it into the first URL slot in the
+<a href=https://run.ooni.io/>OONI Run website</a>.</p></li></ol><p>The URL slots should now be populated with your list of URLs.</p><ol><li>Click on the “<strong>Generate</strong>” button (in the OONI Run page) at the end
+of all the URLs.</li></ol><p>You have now generated a link (and widget code) for OONI Probe testing
+of your URL list.</p><ol><li><strong>Open the generated link with your OONI Probe mobile app</strong> (not
+with a web browser!).</li></ol><p>You should now view your list of URLs in your OONI Probe mobile app.</p><ol><li>Tap “<strong>Run</strong>” to test the URLs.</li></ol><p>Once the testing has been completed, you will find the results in the
+<strong>Test Results</strong> section of your OONI Probe mobile app. The results will
+also automatically be published on <a href=https://explorer.ooni.org/>OONI Explorer</a> within 24 hours (unless if you
+disable publication in the app settings).</p><h2 id=ooni-data>OONI data</h2><h3 id=what-is-ooni-data>What is OONI data?</h3><p><a href=https://ooni.org/data/>OONI data</a> are network measurements collected
+through <a href=https://github.com/ooni/spec/tree/master/nettests>OONI Probe tests</a>.</p><h3 id=why-does-ooni-publish-data>Why does OONI publish data?</h3><p>Every day, we openly publish all measurements we collect from <a href=https://ooni.org/install/>OONI Probe</a> users around the world to:</p><ul><li><p>Increase <strong>transparency of internet censorship</strong> and other forms of
+network interference;</p></li><li><p>Share <strong>evidence of internet censorship</strong> and other forms of network
+interference;</p></li><li><p>Enable the <strong>independent verification</strong> of our findings;</p></li><li><p>Support <strong>reproducible research;</strong></p></li><li><p>Support <strong>research, policy, legal, and advocacy efforts</strong> around the
+world;</p></li><li><p>Support <strong>public debate</strong> on information controls.</p></li></ul><h3 id=where-does-ooni-publish-data>Where does OONI publish data?</h3><p>Every day, we publish measurements from around the world via the
+following two resources:</p><ul><li><p><strong><a href=https://explorer.ooni.org/>OONI Explorer</a>:</strong> Web interface for
+exploring OONI measurements</p></li><li><p><strong><a href=https://api.ooni.io/>OONI API</a>:</strong> Download the raw data in
+JSON format</p></li></ul><h3 id=how-can-i-interpret-ooni-data>How can I interpret OONI data?</h3><p>Each OONI measurement is generated from an OONI Probe test. Depending on
+<a href=https://github.com/ooni/spec/tree/master/nettests>how each OONI Probe test functions</a>, each
+OONI measurement has a very <a href=https://github.com/ooni/spec>specific data format</a>. This therefore varies from test
+to test.</p><p>Generally, OONI Probe tests will present one of the following three
+types of results:</p><ul><li><p><strong>Normal.</strong> A “normal” measurement is a testing result with the
+expected outcome, where nothing is out of the ordinary. When
+websites and apps are tested, a “normal” measurement is when they
+are considered accessible. In the case of middlebox tests, a
+“normal” measurement is when no middleboxes have been detected,
+and there are therefore no clear signs of network tampering.</p></li><li><p><strong>Anomalous.</strong> An “anomalous” measurement is a testing result which
+is flagged because it presents <em>signs of potential network
+interference</em> (such as the blocking of a website or app, or the
+presence of a middlebox). An anomalous measurement <em>does not
+necessarily contain evidence of internet censorship</em>, as it might
+be a false positive. Essentially, an anomalous measurement signals
+that something is wrong and that we should look deeper into the
+measurement data to determine what is happening.</p></li><li><p><strong>Confirmed blocked.</strong> A measurement is “confirmed blocked” when we
+are absolutely sure that the tested resource is blocked. Based on
+our current heuristics, this can only apply to websites when an
+Internet Service Provider (ISP) <strong>serves a block page</strong> (which
+notifies the user that the website is intentionally blocked).</p></li></ul><h3 id=how-can-i-fetch-and-analyze-ooni-data>How can I fetch and analyze OONI data?</h3><p>You have the following options:</p><ul><li><p><strong>OONI PostgreSQL Metadb.</strong> This system enables you to set-up your
+own instance (and to have an always in sync version) of the OONI
+measurement database that powers the <a href=https://api.ooni.io/>OONI API</a> and <a href=https://explorer.ooni.org/>OONI Explorer</a>. Learn how to set-up your
+own copy of the OONI metadb through this <a href=https://github.com/ooni/sysadmin/blob/metadb-share/docs/metadb-sharing.md>documentation</a>.</p></li><li><p><strong>Amazon S3.</strong> Thanks to the <a href=https://aws.amazon.com/government-education/open-data/>Amazon Open Data program</a>,
+the whole OONI dataset can be fetched from the <a href=https://ooni-data.s3.amazonaws.com/>ooni-data Amazon S3 bucket</a>. Learn more through
+our relevant <a href=https://ooni.org/post/mining-ooni-data/>blog post</a>.</p></li><li><p><strong>OONI API.</strong> You can download all OONI measurements in JSON format
+via the <a href=https://api.ooni.io/>OONI API</a>. Learn how to query the
+API through our <a href=https://api.ooni.io/api/>documentation</a>.</p></li></ul><p>We <strong>recommend the first two options</strong> if you plan on working with
+large volumes of OONI data (including, for example, downloading all the
+measurements from a country to perform queries).</p><p>Given that other tools (such as <a href=https://explorer.ooni.org/>OONI Explorer</a>) depend on the OONI API, it’s
+best to limit the use of the API to light-weight queries (to avoid
+affecting the performance of the other tools that rely on it).</p><h2 id=ooni-explorer>OONI Explorer</h2><h3 id=what-is-ooni-explorer>What is OONI Explorer?</h3><p><a href=https://explorer.ooni.org/>OONI Explorer</a> is an open data resource
+on internet censorship around the world. It hosts millions of OONI
+measurements collected from more than 200 countries since 2012. Every
+day, hundreds of thousands of new OONI measurements are openly published
+on OONI Explorer from around the world.</p><h3 id=how-can-i-find-blocked-websites-via-ooni-explorer>How can I find blocked websites via OONI Explorer?</h3><p>You can view the most recently blocked websites around the world via the
+following steps:</p><ol><li><p>Access <a href=https://explorer.ooni.org/>OONI Explorer</a></p></li><li><p>Click on “<strong>Search</strong>” (top right corner)</p></li><li><p>Select “<strong>Confirmed</strong>” (under “Status” in the filter options on
+the left)</p></li><li><p>Click “<strong>Filter Results</strong>”</p></li></ol><p>All of the OONI Explorer measurements will now be filtered to only show
+you those where <strong>websites have been confirmed blocked</strong> around the
+world (based on OONI Probe testing).</p><p>To view websites that are <strong>possibly</strong> blocked:</p><ol><li><p>Click on “<strong>Search</strong>” (top right corner of <a href=https://explorer.ooni.org/>OONI Explorer</a>)</p></li><li><p>Select “<strong>Anomalies</strong>” (under “Status” in the filter options on
+the left)</p></li><li><p>Click “<strong>Filter Results</strong>”</p></li></ol><p>However, interpret these results with caution, as they may contain false
+positives.</p><h3 id=how-can-i-access-measurements>How can I access measurements?</h3><p>You can find OONI measurements (i.e. OONI Probe test results) through
+the following steps:</p><ol><li><p>Access <a href=https://explorer.ooni.org/>OONI Explorer</a></p></li><li><p>Click on “<strong>Search</strong>” (top right corner)</p></li></ol><p>Every row you will now see (in the Search page) &ndash; containing country
+codes, ASNs, dates, and test names &ndash; is each an individual measurement
+(OONI Probe test result).</p><p>For example:</p><p><img src=/faq/measurement.png alt="OONI measurement"></p><ol><li><strong>Click on each measurement</strong> to access it.</li></ol><p>An example of a measurement page:</p><p><img src=/faq/measurement-page.png alt="OONI measurement page"></p><h3 id=how-can-i-find-ooni-data-via-ooni-explorer>How can I find OONI data via OONI Explorer?</h3><p>If you scroll down in any OONI measurement page (<a href="https://explorer.ooni.org/measurement/20191030T235810Z_AS11878_Den5kggBp6SDiUHQVvFBzEF4jwknUrn1wzd8XavOs4ZjMY8QoJ?input=https://www.reddit.com/">example measurement page</a>),
+you will view the <strong>raw network measurement data</strong> &ndash; which you can also
+<strong>download in JSON format</strong>.</p><p>The network measurement data will differ depending on the <a href=https://github.com/ooni/spec/tree/master/nettests>OONI Probe test</a> from which it
+was generated.</p><h3 id=how-can-i-find-evidence-of-internet-censorship-in-a-measurement>How can I find “evidence of internet censorship” in a measurement?</h3><p>First, there are two things to consider:</p><ul><li><p>A measurement may contain evidence of internet censorship <em>only</em> if
+the specific <a href=https://ooni.org/nettest/>OONI Probe test</a> was
+designed to measure internet censorship in the first place.</p></li><li><p>Based on our current heuristics, we only confirm internet censorship
+automatically if an ISP serves a block page for a website.</p></li></ul><p>Based on this, you can easily find evidence of internet censorship
+through the following steps:</p><ol><li><p>Click on “<strong>Search</strong>” (top right corner of <a href=https://explorer.ooni.org/>OONI Explorer</a>)</p></li><li><p>Select “<strong>Confirmed</strong>” (under “Status” in the filter options on
+the left)</p></li><li><p>Click “<strong>Filter Results</strong>”</p></li></ol><p>All OONI measurements will now be filtered to only show you those where
+ISPs around the world served block pages for websites. The results will
+be listed from the most recent cases, and they will automatically be
+updated with new measurements every day.</p><ol><li><strong>Click on a measurement</strong></li></ol><p>Example of a “confirmed blocked” measurement:</p><p><img src=/faq/confirmed-blocked-measurement.png alt="Confirmed blocked measurement"></p><ol><li>Scroll down to view the raw network measurement data</li></ol><p><img src=/faq/raw-data-blocked.png alt="Raw measurement data"></p><p>You can download the data in JSON format.</p><p>Similarly to the steps shared above, you can also find cases of internet
+censorship by selecting “Anomalies” (instead of “Confirmed”) under the
+“Status” section of the OONI Explorer search tool. However, confirming
+those cases is more tricky and it’s probably best to consult with an
+engineer.</p><h3 id=how-can-i-find-blocked-websites-in-my-country>How can I find blocked websites in my country?</h3><p>You can find the websites that are blocked in your country through the
+following steps:</p><ol><li><p>Access <a href=https://explorer.ooni.org/>OONI Explorer</a></p></li><li><p>Click on “<strong>Search</strong>” (top right corner)</p></li><li><p><strong>Select your country</strong> via the “Country” drop-down menu on the left</p></li><li><p>Select “<strong>Web Connectivity</strong>” via the “Test Name” drop-down menu on
+the left</p></li><li><p>Select “<strong>Anomalies</strong>” and/or “<strong>Confirmed</strong>” (under “Status”)</p></li><li><p>Click “<strong>Filter Results</strong>”</p></li></ol><p>Please interpret the “anomalous” results with caution, as they may
+contain false positives.</p><p>“Confirmed” blocked results will only appear if the tested ISPs served
+block pages for those specific websites.</p><h3 id=how-can-i-check-if-a-specific-website-is-blocked>How can I check if a specific website is blocked?</h3><p>You can check whether a specific website (such as twitter.com) is
+blocked through the following steps:</p><ol><li><p>Access <a href=https://explorer.ooni.org/>OONI Explorer</a></p></li><li><p>Click on “<strong>Search</strong>” (top right corner)</p></li><li><p><strong>Select a country</strong> via the “Country” drop-down menu on the left</p></li><li><p>Select “<strong>Web Connectivity</strong>” via the “Test Name” drop-down menu on
+the left</p></li><li><p><strong>Type the domain (e.g. twitter.com)</strong> of the website in the
+“Domain” slot</p></li><li><p>Select “<strong>Anomalies</strong>” and/or “<strong>Confirmed</strong>” (under “Status”)</p></li><li><p>Click “<strong>Filter Results</strong>”</p></li></ol><p>Please interpret the “anomalous” results with caution, as they may
+contain false positives.</p><p>“Confirmed” blocked results will only appear if the tested ISPs served
+block pages for those specific websites.</p><h3 id=why-can-t-i-find-results-for-a-specific-website>Why can’t I find results for a specific website?</h3><p>If you search for the results pertaining to a specific website (based on
+the instructions shared in the previous answer) and you don’t find any
+results, that’s likely due to one of the following reasons:</p><ul><li><p><strong>The specific website has <em>not</em> been tested in the country
+you selected.</strong> You can check which websites are generally tested
+in each country by reviewing the URLs included in the
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global</a>
+and <a href=https://github.com/citizenlab/test-lists/tree/master/lists>country-specific</a>
+list (if the latter exists).</p></li><li><p><strong>The domain has been mistyped.</strong> If you mistype the domain (for
+example, <code>bbc.com</code> instead of <code>www.bbc.com</code>), OONI Explorer
+will not be able to render the requested results. We recommend
+accessing the website from a browser (or from <a href=https://www.torproject.org/download/>Tor Browser</a> if access to the
+website is blocked in your location) to check how the domain is
+format (it’s the part of the website, excluding the HTTP or
+HTTPS prefix).</p></li></ul><h3 id=how-can-i-check-the-blocking-of-websites-during-a-specific-time-period>How can I check the blocking of websites during a specific time period?</h3><p>To narrow down the results to a specific time frame, use <a href=https://explorer.ooni.org/>OONI Explorer</a> in the following way:</p><ol><li><p>Click on “<strong>Search</strong>” (top right corner)</p></li><li><p><strong>Select a country</strong> via the “Country” drop-down menu on the left</p></li><li><p>Select “<strong>Web Connectivity</strong>” via the “Test Name” drop-down menu on
+the left</p></li><li><p><strong>Specify the time period by selecting dates</strong> through the “From”
+and “Until” calendars</p></li><li><p>Select “<strong>Anomalies</strong>” and/or “<strong>Confirmed</strong>” (under “Status”)</p></li><li><p>Click “<strong>Filter Results</strong>”</p></li></ol><p>Please interpret the “anomalous” results with caution, as they may
+contain false positives.</p><p>“Confirmed” blocked results will only appear if the tested ISPs served
+block pages for those specific websites.</p><h3 id=what-do-you-mean-by-confirmed>What do you mean by “Confirmed”?</h3><p>A measurement is “confirmed blocked” when we are absolutely sure that
+the tested resource is blocked. Based on our current heuristics, this
+can <strong>only apply to websites when an Internet Service Provider (ISP)
+serves a block page</strong> (which notifies the user that the website is
+intentionally blocked).</p><p>By selecting “Confirmed” via OONI Explorer, you will view all the OONI
+Probe testing results where we confirmed the blocking of websites around
+the world.</p><h3 id=i-know-of-many-other-websites-that-are-blocked-why-doesn-t-ooni-explorer-show-them-when-i-select-confirmed>I know of many other websites that are blocked. Why doesn’t OONI Explorer show them when I select “confirmed”?</h3><p>The “Confirmed” option will only render results (blocked websites) for
+cases when <strong>all of the following</strong> apply:</p><ul><li><p><strong>An ISP blocked a website by serving a block page.</strong> A block page
+(or “Access Denied” page) is a web page that is displayed when a
+user attempts to access a website they are not permitted to view.
+If an ISP blocks access to a website using <em>different censorship
+techniques</em> (which is often the case), those cases will <em>not</em> show
+up under the “Confirmed” option on OONI Explorer.</p></li><li><p><strong>We (the OONI team) have detected that block page and added its
+fingerprint to the OONI database (and updated OONI Explorer).</strong>
+There are probably many block pages out there that we haven’t
+detected yet. If you come across block pages that aren’t flagged
+on OONI Explorer, please <a href=https://github.com/ooni/pipeline/issues/new>share them with us</a>.</p></li><li><p><strong>The website in question has been tested by OONI Probe in the
+specific country and on the specific network where it is blocked
+(and the relevant measurement has been published).</strong> Internet
+censorship can differ from network to network within a country. If
+a website is not tested on the specific network which blocks
+access to it, and if the OONI Probe users opt-outs from submitting
+measurements, we will not have the measurements available for the
+specific website.</p></li></ul><p>As we are always working on improving our censorship detection heuristics on an
+ongoing basis, these cases will likely change over time. For more technical
+insight, check out the code for the
+<a href=https://github.com/ooni/pipeline>ooni/pipeline</a>.</p><h3 id=why-does-ooni-confirm-censorship-when-a-block-page-is-served>Why does OONI confirm censorship when a block page is served?</h3><p>A block page is a web page that <strong>informs the user that the intended
+website is intentionally blocked.</strong> Often, a block page even cites the
+relevant legal justification for the blocking. There is, therefore, no
+ambiguity around this form of censorship, as <strong>even the ISP is
+transparent about the intentional blocking involved</strong>.</p><p>Example of a block page served by ISPs in Indonesia:</p><p><img src=/faq/indonesian-blockpage.png alt="Indonesian block page"></p><p>Furthermore, block pages contain <strong>fingerprints which enable their
+automated detection</strong>. Once we have detected a block page fingerprint
+and added it to our database, we can scan measurements in search of all
+other measurements that contain the same fingerprint. As a result, we
+can automatically detect the blocking of many other websites.</p><h3 id=why-doesn-t-ooni-confirm-other-cases-of-internet-censorship-beyond-block-pages>Why doesn’t OONI confirm other cases of internet censorship (beyond block pages)?</h3><p>Other censorship cases (such as DNS tampering or TCP/IP blocking) are
+more subtle, since the ISP doesn’t explicitly inform the user that they
+are intentionally blocking access to a specific website (as they do in
+the case of a block page).</p><p>Furthermore, <strong>there are many reasons why those cases might <em>look</em> like
+censorship, but actually not be (which makes their automatic detection
+trickier)</strong>. For example, tests run on an unstable network may generate
+TCP/IP errors, which may have nothing to do with intentional TCP/IP
+blocking. It may also be the case that a tested website is hosted on an
+unreliable server, or that the website owner is blocking access to IP
+addresses that originate from that specific country. Or perhaps DNS
+anomalies show up as a result of <a href=https://ooni.org/post/not-quite-network-censorship/>DNS misconfiguration</a>,
+rather than due to intentional DNS-based blocking.</p><p>It’s therefore often necessary to examine each measurement on a
+case-by-case basis in order to inspect the data carefully and determine
+the precise reason why its testing didn’t succeed.</p><p>Automatically distinguishing cases of intentional censorship from the
+countless other reasons why network anomalies can occur has been an
+ongoing challenge, though we continue to make improvements to our
+heuristics on an ongoing basis and plan to automatically confirm more
+forms of internet censorship soon.</p><h3 id=what-do-you-mean-by-anomalies>What do you mean by “Anomalies”?</h3><p>An “anomalous” measurement is a testing result which is flagged because
+it presents <em>signs of potential network interference</em> (such as the
+blocking of a website or app, or the presence of a middlebox).</p><p>When a block page is detected, OONI flags that measurement as
+“confirmed”. All other cases of internet censorship (such as DNS
+tampering or TCP/IP blocking) are included in “anomalous” measurements.</p><p>However, an anomalous measurement <em>does not necessarily contain evidence
+of internet censorship</em>, as it might be a false positive.</p><p>Essentially, an anomalous measurement <strong>signals that something is wrong
+and that we should look deeper into the measurement data</strong> to determine
+what is happening.</p><h3 id=why-does-ooni-explorer-suggest-that-a-site-or-app-that-i-can-access-is-blocked-in-my-country>Why does OONI Explorer suggest that a site or app that I can access is blocked in my country?</h3><p>There are two reasons why this may happen:</p><ol><li><p>Perhaps the website or app in question was blocked by other Internet
+Service Provider(s) in your country, and not by your ISP.</p></li><li><p>The testing result is a <strong>false positive</strong>. The following two
+questions and answers address this further.</p></li></ol><h3 id=what-are-false-positives>What are false positives?</h3><p><strong>False positives are OONI Probe test results (flagged as &ldquo;anomalous&rdquo;)
+which incorrectly indicate the presence of network interference (such as
+the blocking of a website or app).</strong></p><p>When measuring the accessibility of websites, OONI Probe compares the results
+from your network with the results from a non-censored network. If the results
+don&rsquo;t match, then the OONI Probe test result in question is flagged as an
+&ldquo;anomaly&rdquo;, indicating potential network interference. Many of these anomalies
+are in fact cases of network interference, while some may be false positives.</p><h3 id=why-do-false-positives-occur>Why do false positives occur?</h3><p>False positives can occur due a number of reasons.</p><p>Below are some reasons which may trigger false positives in <strong>website testing</strong>:</p><ul><li><p><strong>Transient network failures.</strong> If OONI Probe tests are performed on
+an unstable network, the test results may show signs of potential
+TCP/IP interference, when in fact network errors can cause the TCP
+connection to drop.</p></li><li><p><strong>Unreliable servers.</strong> If a website is hosted on an unreliable
+server or otherwise encounters server issues, the tested website
+may return failures (even though it&rsquo;s not interfered with) and the
+OONI Probe test may fail.</p></li><li><p><strong>DNS resolution.</strong> If the DNS resolver of an OONI Probe user (such
+as Google or their local ISP) provides an IP addresses that is
+closest to the user geographically, that IP address may differ
+from the IP address resolved from a control vantage point,
+potentially incorrectly indicating the presence of DNS tampering.</p></li><li><p><strong>Geographical distribution of content.</strong> Many websites serve
+different content depending on the country that the user is
+connecting from. In these cases, the HTTP responses from the
+network of the OONI Probe user and from the control vantage point
+will differ, potentially incorrectly indicating the presence of
+HTTP based interference.</p></li></ul><p>When running the OONI Probe <strong>instant messaging tests</strong> (WhatsApp, Facebook
+Messenger, Telegram), false positives may occur when the instant messaging app
+vendor makes changes to their infrastructure that affect how our tests run.</p><p>When running the OONI Probe <strong>middlebox tests</strong>, false positives may occur due to issues
+with the OONI Probe backend infrastructure.</p><p>When running <strong>any OONI Probe test</strong>, false positives may be caused by software bugs which are triggered by your
+particular device and network configuration.</p><h3 id=how-can-i-distinguish-false-positives>How can I distinguish false positives?</h3><p>Distinguishing false positives can often be tricky, even for engineers.
+It requires examining the network measurement data carefully, having a
+good understanding of <a href=https://github.com/ooni/spec/tree/master/nettests>how OONI Probe tests work</a>, analyzing the
+data over a long period of time (to check whether the tested resource
+consistently presents the same anomalies on the same network), and
+evaluating and ruling out other possible reasons that could have
+triggered the anomaly (for example, by checking the global failure rates
+of a site).</p><p>As part of the <a href=https://ooni.org/get-involved/partnership-program/>OONI Partnership Program</a>, we offer
+data analysis support to the human rights organizations that we
+collaborate with. All <a href=https://ooni.org/data/>OONI data and methodologies</a> are openly available with the
+hope that other data analysis will support communities as well.</p><p>We encourage you to <a href=https://ooni.org/about/#contact>reach out (via email or Slack)</a> if you’re unsure of a
+measurement and planning on using it (for example) as part of reporting.</p><p>In general, <strong>we recommend looking at results over a timeline, rather
+than individually</strong> (unless if they are tagged as “confirmed”). For
+example, if you observe that a tested website presents the same anomaly
+(e.g. DNS tampering) every time it is tested on a specific network in a
+country, it’s more likely the case that access to it is being interfered
+with. If, however, a single measurement (for example) presents a TCP
+anomaly, but all other measurements testing that website on the same
+network were successful, it’s likely the case that that TCP anomaly is a
+false positive.</p><h3 id=how-can-i-check-results-from-other-ooni-probe-tests>How can I check results from other OONI Probe tests?</h3><p>You can filter <a href=https://explorer.ooni.org/>OONI Explorer</a> to find
+results from <a href=https://ooni.org/nettest/>other OONI Probe tests</a>
+through the following steps:</p><ol><li><p>Click on “<strong>Search</strong>” (top right corner)</p></li><li><p>Optional: Select a country via the “Country” drop-down menu on the
+left</p></li><li><p><strong>Select an OONI Probe test via the “Test Name” drop-down menu</strong> on
+the left</p></li><li><p>Optional: Select “Anomalies”</p></li><li><p>Click “<strong>Filter Results</strong>”</p></li></ol><p>Please interpret the “anomalous” results with caution, as they may
+contain false positives.</p><h3 id=why-doesn-t-my-country-have-any-recent-measurements-on-ooni-explorer>Why doesn’t my country have any recent measurements on OONI Explorer?</h3><p>OONI Explorer automatically publishes the test results (measurements) of OONI
+Probe users in <em>near-real time</em>, within minutes of tests having been run.</p><p>If there are no recent measurements from your country, that means that:</p><ul><li><p>No OONI Probe tests have been run in your country recently; <em>or</em></p></li><li><p>OONI Probe users in your country have opted-out from submitting
+measurements for publication.</p></li></ul><p>You can contribute measurements by <a href=https://ooni.org/install/>running OONI Probe</a> in your country. The easiest way to
+run tests is through the <strong>OONI Probe mobile app</strong> for
+<a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android</a>
+and <a href=https://itunes.apple.com/us/app/id1199566366>iOS</a>.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pb-1><a href=/about/>OONI</a></div><div class=pb-1><a href=/about/data-policy/>Data Policy</a></div><div class=pb-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pb-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pb-1><a href=https://ooni.org/install/>Install</a></div><div class=pb-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pb-1><a href=https://github.com/ooni>Source code</a></div><div class=pb-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pb-1><a href=/post/>Blog</a></div><div class=pb-1><a href=https://twitter.com/OpenObservatory>Twitter</a></div><div class=pb-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pb-1><a href=https://slack.ooni.org/>Slack</a></div></div></div></div></div></div></footer></body></html>

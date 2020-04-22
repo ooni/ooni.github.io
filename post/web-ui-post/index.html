@@ -1,0 +1,109 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>OONI releases new Web UI: Run censorship tests from your web browser! | OONI</title><link rel=canonical href=https://ooni.org/post/web-ui-post/><meta name=description content="Today we are excited to announce the beta release of our new web-based user interface (WUI) that enables OONI Probe users to run censorship tests from a web browser!
+Whether you’re running OONI Probe from your desktop or a Raspberry Pi, you can now easily choose which tests you want to run through OONI’s web UI and run them with the click of a button. These tests are designed to examine the following:"><meta property=og:title content="OONI releases new Web UI: Run censorship tests from your web browser!"><meta property=og:description content="Today we are excited to announce the beta release of our new web-based user interface (WUI) that enables OONI Probe users to run censorship tests from a web browser!
+Whether you’re running OONI Probe from your desktop or a Raspberry Pi, you can now easily choose which tests you want to run through OONI’s web UI and run them with the click of a button. These tests are designed to examine the following:"><meta property=og:type content=article><meta property=og:url content=https://ooni.org/post/web-ui-post/><meta property=article:published_time content=2016-12-13T00:00:00+00:00><meta property=article:modified_time content=2016-12-13T00:00:00+00:00><meta name=twitter:card content=summary><meta name=twitter:title content="OONI releases new Web UI: Run censorship tests from your web browser!"><meta name=twitter:description content="Today we are excited to announce the beta release of our new web-based user interface (WUI) that enables OONI Probe users to run censorship tests from a web browser!
+Whether you’re running OONI Probe from your desktop or a Raspberry Pi, you can now easily choose which tests you want to run through OONI’s web UI and run them with the click of a button. These tests are designed to examine the following:"><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class=mb-4><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>OONI releases new Web UI: Run censorship tests from your web browser!</h1><div class=byline><span class=author>Maria Xynou, Arturo Filastò, Vasilis Ververis</span>
+<span class=date>2016-12-13</span></div><p><img src=/post/wui-screenshots/wui-01.png alt=Image></p><p>Today we are excited to announce the beta release of our <em>new</em> web-based user interface
+(WUI) that enables OONI Probe users to run censorship tests from a web browser!</p><p>Whether you’re running OONI Probe from your desktop or a Raspberry Pi, you can
+now easily choose which tests you want to run through OONI’s web UI and run them
+with the click of a button. These <a href=https://ooni.org/nettest/>tests</a>
+are designed to examine the following:</p><ul><li><p>Blocking of websites</p></li><li><p>Reachability of the Tor network</p></li><li><p>Presence of systems that could be responsible for censorship and surveillance</p></li></ul><p>Once you have run the tests of your choice, you can then view the results of
+your measurements in the web UI. The results will illustrate whether and what
+types of censorship events have occurred in your network, and you will be
+provided with tips on how to circumvent those specific types of censorship.
+OONI’s new web UI also includes an informed consent procedure and provides users
+with data <em>opt-out</em> choices.</p><p>Below we provide a <em>guide</em> on how to access OONI’s web UI and run tests from it.</p><ul><li><p><a href=#install-ooniprobe-or-copy-an-image><em>Install ooniprobe or copy an image</em></a></p><ul><li><p><a href=#ooniprobe-desktop-version><em>ooniprobe desktop version (Mac OS &amp; Linux users)</em></a></p></li><li><p><a href=#ooniprobe-distribution-for-raspberry-pis><em>ooniprobe distribution for Raspberry Pis</em></a></p></li></ul></li><li><p><a href=#setup-wizard><em>Setup Wizard</em></a></p><ul><li><p><a href=#risks-things-you-should-know-before-running-ooniprobe><em>Risks: Things you should know before running ooniprobe</em></a></p></li><li><p><a href=#quiz-how-well-do-you-understand-potential-risks><em>Quiz: How well do you understand potential risks?</em></a></p></li><li><p><a href=#configuration-options-choose-the-decks-you-want-to-run><em>Configuration options: Choose the decks you want to run</em></a></p></li><li><p><a href=#opt-out-data-choices-you-can-make><em>Opt-out: Data choices you can make</em></a></p></li></ul></li><li><p><a href=#running-ooniprobe-through-oonis-web-ui><em>Running ooniprobe through OONI’s web UI</em></a></p></li><li><p><a href=#viewing-your-measurements><em>Viewing your measurements</em></a></p></li></ul><h1 id=install-ooniprobe-or-copy-an-image>Install ooniprobe or copy an image</h1><p>Currently <a href=https://github.com/TheTorProject/ooni-probe>ooniprobe</a> is designed
+for Mac OS and Linux operating systems. If you’re a Windows user eager to run
+ooniprobe, then you might be interested in running our <a href=https://ooni.org/install/lepidopter/>distribution for Raspberry Pis</a>.</p><h2 id=ooniprobe-desktop-version-mac-os-linux-users>ooniprobe desktop version (Mac OS &amp; Linux users)</h2><p>Learn how to install ooniprobe, depending on your operation system,
+<strong><a href=https://ooni.org/install/ooniprobe/>here</a></strong>.</p><h2 id=ooniprobe-distribution-for-raspberry-pis>ooniprobe distribution for Raspberry Pis</h2><p>Copy ooniprobe’s distribution for Raspberry Pis onto an SD card. You can find a
+guide on how to do so <strong><a href=https://ooni.org/install/lepidopter/>here</a></strong>.</p><p>Then insert your SD card (containing ooniprobe’s distribution) into a Raspberry
+Pi and connect it to power and to the internet (with an ethernet cable).</p><h1 id=setup-wizard>Setup Wizard</h1><p>If you plan on running ooniprobe’s <em>desktop</em> version, type the following in your
+terminal:</p><pre><code>ooniprobe-agent start 
+</code></pre><p>This should present you with the following URL: <strong>127.0.0.1:8842</strong></p><p>By clicking on it, you will be directed to OONI’s web UI Setup Wizard:</p><p><img src=/post/wui-screenshots/wui-02.png alt=Screenshot></p><p>If you plan on running OONI Probe from a <em>Raspberry Pi</em>, type the following URL in
+your web browser: <strong><a href=http://lepidopter.local>http://lepidopter.local</a></strong></p><p><strong>Note:</strong> Type the above URL only once your Raspberry Pi is connected to <em>both</em> power
+and the internet, and it has started (this usually takes about a minute).</p><p>You should now be presented with OONI’s web UI Setup Wizard.</p><p>If this doesn’t work, try accessing the web UI by typing <strong><a href=http://lepidopter>http://lepidopter</a></strong> in
+your web browser. And if that also doesn’t work, please find more information
+<strong><a href=https://ooni.org/install/lepidopter/>here</a></strong>.</p><p>Upon clicking <strong>Next</strong> in the Setup Wizard, you will view information about
+potential risks associated with running OONI Probe.</p><h2 id=risks-things-you-should-know-before-running-ooni-probe>Risks: Things you should know before running OONI Probe</h2><p>Running OONI Probe can potentially be a risky activity. To our knowledge, no one
+has ever gotten into any trouble as a result of running OONI Probe. Nonetheless,
+we strongly encourage you to read this documentation carefully and to consult
+with a lawyer, if needed.</p><p><img src=/post/wui-screenshots/wui-03.png alt=Screenshot></p><p>Once you have read and understood the potential risks associated with running
+OONI Probe, click <strong>Next</strong>.</p><p><img src=/post/wui-screenshots/wui-04.png alt=Screenshot></p><h2 id=quiz-how-well-do-you-understand-potential-risks>Quiz: How well do you understand potential risks?</h2><p>You didn’t read the somewhat long Risks documentation for nothing. To make
+things fun, you will be presented with a quiz including a set of questions that
+you need to answer correctly, demonstrating that you have a basic understanding
+of potential risks associated with the use of OONI Probe.</p><p><img src=/post/wui-screenshots/wui-05.png alt=Screenshot></p><p>Don’t worry if you don’t answer the questions correctly the first time, the
+wizard will redirect you back to the Risks documentation so that you can have
+another chance to read through the relevant information. Once you have answered
+the questions correctly, you will then be directed to the wizard’s Configuration
+page.</p><h2 id=configuration-options-choose-the-decks-you-want-to-run>Configuration options: Choose the decks you want to run</h2><p>By default, all sets of tests (called <em>decks</em>) are enabled. This means that upon
+clicking <strong>Configure</strong>, tests will automatically be run daily (from your computer or
+Raspberry Pi) to examine the following:</p><ul><li><p>Reachability of the <a href=https://www.torproject.org/>Tor</a> network</p></li><li><p>Blocking of <a href=https://github.com/citizenlab/test-lists/tree/master/lists>websites</a></p></li><li><p>Blocking of instant messaging (IM) apps</p></li><li><p>Presence of systems that could be responsible for censorship or surveillance</p></li></ul><p><img src=/post/wui-screenshots/wui-06.png alt=Screenshot></p><p>To prevent any of these tests from automatically being run, <strong>uncheck</strong> their
+associated boxes. You can also re-configure your decks through OONI’s web UI
+once you have completed all the steps in the setup wizard.</p><p>To make further choices, click <strong>Show advanced options</strong>.</p><h2 id=opt-out-data-choices-you-can-make>Opt-out: Data choices you can make</h2><p><img src=/post/wui-screenshots/wui-07.png alt=Screenshot></p><p>Here you have choices in terms of what types of data to disclose, whether to
+have your measurements published and if so, how to upload them to OONI’s
+measurement collector.</p><p>We recommend the <em>default</em> options included in the configuration settings.</p><p><strong>ASN and country name</strong></p><p>We encourage users to enable the collection of identifiers based on their
+network (ASN) and the country that they are running OONI Probe from because
+without this information, we cannot attribute specific measurements to a
+specific country and network. In other words, without this information we are
+<em>not</em> in a position to know where the measurements are coming from, limiting the
+objectives of this research.</p><p><strong>IP address</strong></p><p>The inclusion of IP addresses is <em>disabled</em> by default because this information
+can potentially help third parties identify OONI Probe users. However, including
+your IP address can help improve the analysis of measurements.</p><p><strong>Uploading measurements</strong></p><p>We also enable users to choose whether they would like their measurements to be
+uploaded to OONI’s measurement collector by default or not. If your measurements
+are collected by OONI, they will be processed and published on <a href=https://explorer.ooni.org/>OONI Explorer</a> and on <a href=https://measurements.ooni.org/>OONI’s list of measurements</a>.</p><p>OONI publishes all network measurement data that it collects and
+processes because open data allows third parties to conduct independent studies,
+to verify OONI findings and/or to answer other research questions. If you choose
+to opt-out from sending data to OONI’s measurement collector your results will
+not be publicly available, and you will need to process them yourself. This
+option is sometimes chosen by users who prefer to not have their measurements
+published due to potential risks that could emerge as a result of such
+publication.</p><p><strong>How to upload measurements</strong></p><p>If you decide to have your measurements sent for processing and publication, you
+can subsequently choose <em>how</em> you would like to have them sent to OONI’s
+measurement collector.</p><p><img src=/post/wui-screenshots/wui-08.png alt=Screenshot></p><p>Here you have three choices:</p><ul><li><p>Tor hidden services</p></li><li><p>HTTPS collectors</p></li><li><p>Cloud-fronting</p></li></ul><p>Tor hidden services should be the <em>best option</em> for most users because it prevents
+OONI from seeing your IP address and it makes it harder for a network adversary
+to fingerprint your use of OONI Probe. This however requires the installation of
+<a href=https://www.torproject.org/>tor</a> software and you should expect connections to
+OONI’s measurement collector to be slower.</p><p>If you would rather <em>not</em> use tor software but you would also like to make it
+harder for a network adversary to identify you as an OONI Probe user, you can
+choose to submit your measurements via cloud-fronting. But if you don’t care
+about your ISP knowing that you are running OONI Probe and you want better
+performance, you can choose to submit your measurements via HTTPS collectors.</p><h1 id=running-ooni-probe-through-ooni-s-web-ui>Running OONI Probe through OONI’s web UI</h1><p>Upon configuration of your settings you will be presented with OONI’s web UI.</p><p><img src=/post/wui-screenshots/wui-09.png alt=Screenshot></p><p>By clicking on <strong>decks</strong> you will be able to re-configure the sets of tests that you
+want to run automatically, as explained in the previous section.</p><p><img src=/post/wui-screenshots/wui-10.png alt=Screenshot></p><p>By clicking on <strong>nettests</strong> you will be presented with OONI software tests that you
+can choose from.</p><p><img src=/post/wui-screenshots/wui-11.png alt=Screenshot></p><p>The three main tests (web connectivity, HTTP header field manipulation and HTTP
+invalid request line) are included in OONI Probe’s main software suite. <a href=https://ooni.org/nettest/web-connectivity/>Web connectivity</a> allows you
+to test a <a href=https://github.com/citizenlab/test-lists/tree/master/lists>set of URLs</a> to examine whether and how they are blocked. The <a href=https://ooni.org/nettest/http-header-field-manipulation/>HTTP header field manipulation</a> and <a href=https://ooni.org/nettest/http-invalid-request-line/>HTTP invalid request line</a> tests, on
+the other hand, examine whether systems that could potentially be responsible
+for censorship and surveillance are present in your network. Prior to running
+these tests, we urge you to read relevant
+<a href=https://ooni.org/nettest/>documentation</a> carefully and to
+understand what each software test does.</p><p>By clicking <strong>Run</strong> next to the test of your choice, that test will start running.
+If you have, for example, chosen to run the Web Connectivity test, add the URL
+that you want to test and/or select the “<a href="https://github.com/citizenlab/test-
+lists/blob/master/lists/global.csv">list of globally accessed
+websites</a>” in the file drop-down menu.</p><p><img src=/post/wui-screenshots/wui-12.png alt=Screenshot></p><p>Then click <strong>Start Net Test</strong>.</p><h1 id=viewing-your-measurements>Viewing your measurements</h1><p>Once you have started running tests, click on <strong>measurements</strong> to view a list
+containing the results for each test that you ran.</p><p><img src=/post/wui-screenshots/wui-13.png alt=Screenshot></p><p>You can view the results of your measurements by clicking on <strong>Show measurements</strong>
+next to each type of test. The Web Connectivity measurements, for example, will
+show the results pertaining to the various URLs that you tested for censorship.</p><p><img src=/post/wui-screenshots/wui-14.png alt=Screenshot></p><p>To <em>only</em> view the results for the URLs that presented network
+anomalies, click <strong>Hide normal</strong>.</p><p><img src=/post/wui-screenshots/wui-15.png alt=Screenshot></p><p>To view the collected data illustrating how and why the testing of a specific
+URL presented network anomalies, click <strong>View measurements</strong>. Below we illustrate an
+example where casino.com appeared to be censored.</p><p><img src=/post/wui-screenshots/wui-16.png alt=Screenshot></p><p>The start of the page presents you with the key findings on whether a site was
+accessible and/or censored when it was tested. If the site was found to be
+censored, you will be presented with a concise explanation of how it was blocked
+(for example, based on a difference in HTTP responses). Further information
+about this can be found towards the end of the page in the published network
+measurement data.</p><p>If censorship has been detected, you will be presented with <em>tips</em> on how to
+circumvent that specific type of censorship and access the site in question.</p><p><img src=/post/wui-screenshots/wui-17.png alt=Screenshot></p><p>It’s worth noting though that you might come across false positives and false
+negatives in the data due to a number of reasons. DNS resolvers (operated by
+Google or a local ISP) often provide users with IP addresses that are closest to
+them geographically. While this might appear to be a case of DNS tampering, it
+is actually done with the intention of providing users with faster access to
+websites. Similarly, you might come across false positives when tested websites
+serve different content depending on the country that the user is connecting
+from, or in the cases when websites return failures even though they are not
+tampered with. Moreover, measurements indicating HTTP or TCP/IP blocking might
+actually be due to temporary HTTP or TCP/IP failures, and might not conclusively
+be a sign of network interference.</p><p>Therefore it’s important to remember that the web UI provides you with access to
+measurement data that was flagged as anomalous, and that not every anomalous
+measurement is a confirmed case of censorship. Unless a measurement presents a
+block page in the HTTP response body, data should be cross-correlated across
+time to reach more accurate conclusions.</p><p>Feedback? <a href=https://ooni.org/about/>Contact</a> us, we’d love to hear from you!</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pb-1><a href=/about/>OONI</a></div><div class=pb-1><a href=/about/data-policy/>Data Policy</a></div><div class=pb-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pb-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pb-1><a href=https://ooni.org/install/>Install</a></div><div class=pb-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pb-1><a href=https://github.com/ooni>Source code</a></div><div class=pb-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pb-1><a href=/post/>Blog</a></div><div class=pb-1><a href=https://twitter.com/OpenObservatory>Twitter</a></div><div class=pb-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pb-1><a href=https://slack.ooni.org/>Slack</a></div></div></div></div></div></div></footer></body></html>

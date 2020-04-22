@@ -1,0 +1,67 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>OONI releases new Web Connectivity test for detecting online censorship | OONI</title><link rel=canonical href=https://ooni.org/post/web-connectivity/><meta name=description content="Today the Open Observatory of Network Interference (OONI) is excited to be releasing a brand new test, called Web Connectivity, which is designed to detect three different types of censorship: DNS tampering, TCP/IP blocking and HTTP blocking.
+Advantages of running Web Connectivity This test allows us to see which websites are blocked and how, more accurately than ever before!
+Previously we relied on running separate (http_request, dns_consistency and tcp_connect) tests with the aim of identifying various forms of censorship."><meta property=og:title content="OONI releases new Web Connectivity test for detecting online censorship"><meta property=og:description content="Today the Open Observatory of Network Interference (OONI) is excited to be releasing a brand new test, called Web Connectivity, which is designed to detect three different types of censorship: DNS tampering, TCP/IP blocking and HTTP blocking.
+Advantages of running Web Connectivity This test allows us to see which websites are blocked and how, more accurately than ever before!
+Previously we relied on running separate (http_request, dns_consistency and tcp_connect) tests with the aim of identifying various forms of censorship."><meta property=og:type content=article><meta property=og:url content=https://ooni.org/post/web-connectivity/><meta property=article:published_time content=2016-06-03T00:00:00+00:00><meta property=article:modified_time content=2016-06-03T00:00:00+00:00><meta name=twitter:card content=summary><meta name=twitter:title content="OONI releases new Web Connectivity test for detecting online censorship"><meta name=twitter:description content="Today the Open Observatory of Network Interference (OONI) is excited to be releasing a brand new test, called Web Connectivity, which is designed to detect three different types of censorship: DNS tampering, TCP/IP blocking and HTTP blocking.
+Advantages of running Web Connectivity This test allows us to see which websites are blocked and how, more accurately than ever before!
+Previously we relied on running separate (http_request, dns_consistency and tcp_connect) tests with the aim of identifying various forms of censorship."><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class=mb-4><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>OONI releases new Web Connectivity test for detecting online censorship</h1><div class=byline><span class=author>Arturo Filastò, Maria Xynou</span>
+<span class=date>2016-06-03</span></div><p>Today the Open Observatory of Network Interference (OONI) is excited to be
+releasing a brand new test, called
+<em><a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a></em>,
+which is designed to detect three different types of censorship: <em>DNS
+tampering</em>, <em>TCP/IP blocking</em> and <em>HTTP blocking</em>.</p><h2 id=advantages-of-running-web-connectivity>Advantages of running Web Connectivity</h2><p>This test allows us to see which websites are blocked and how, more accurately
+than ever before!</p><p>Previously we relied on running separate (http_request, dns_consistency and
+tcp_connect) tests with the aim of identifying various forms of censorship. We
+then had to correlate measurements across different tests to identify whether
+and how websites were blocked. This process was not only tedious, but it also
+led to more false positives.</p><p>Now with Web Connectivity we can test for various aspects of censorship all
+within one test! This not only enables us to identify which content is being
+blocked, but it also helps us pinpoint the exact reason of blocking. This is
+particularly useful because it makes the process of analyzing why a website is
+not reachable easier, faster and more accurate.</p><p>The heuristics used by Web Connectivity are also a bit more advanced. Contrary
+to previous tests, Web Connectivity allows us to clearly distinguish between
+censorship and accessibility, in the sense that we are able to determine whether
+a website is actually blocked, or if it is just (temporarily) down. Furthermore,
+collected measurements are no longer compared over Tor, because the
+discrimination of exit nodes (by CloudFlare, for example) led to many false
+positives. We now compare collected measurements over a control server which is
+less likely to be discriminated.</p><h2 id=how-web-connectivity-works>How Web Connectivity works</h2><p>This test examines whether websites are blocked by performing the steps below
+<em>both</em> over a control server and over the network of the user. The collected
+results are then compared with the aim of identifying whether and how tested
+websites are tampered with. If the compared results do <em>not</em> match, then there
+is a sign of censorship.</p><p><strong>1. Resolver identification</strong></p><p>The domain name system (DNS) is what is responsible for transforming a host name
+(e.g. torproject.org) into an IP address (e.g. 38.229.72.16). Internet Service
+Providers (ISPs), amongst others, run DNS resolvers which map host names to IP
+addresses. In some circumstances though, ISPs map the requested host names to
+the wrong IP addresses, which is a form of tampering.</p><p>As a first step, the Web Connectivity test attempts to identify which DNS
+resolver is being used by the user. It does so by performing a DNS query to
+special domains (such as whoami.akamai.com) which will disclose the IP address
+of the resolver. This is an important step because it allows us to see if the
+user&rsquo;s resolver is one that is unlikely to perform censorship (such as Google
+DNS), or that of a local ISP (which is more likely to perform censorship).</p><p><strong>2. DNS lookup</strong></p><p>Once the Web Connectivity test has identified the DNS resolver of the user, it
+then attempts to identify which addresses are mapped to the tested host names by
+the resolver. It does so by performing a DNS lookup, which asks the resolver to
+disclose which IP addresses are mapped to the tested host names, as well as
+which other host names are linked to the tested host names under DNS queries.</p><p>If the DNS responses (such as the IP addresses mapped to host names) do <em>not</em>
+match when comparing those collected over the network of the user and over a
+control server, then there is a clear sign of DNS blocking.</p><p><strong>3. TCP connect</strong></p><p>The Web Connectivity test will then try to connect to the tested websites by
+attempting to establish a TCP session on port 80 (or port 443 for URLs that
+begin with HTTPS) for the list of IP addresses that were identified in the
+previous step (DNS lookup).</p><p>If a TCP session to connect to websites was <em>not</em> established over the network
+of the user, then those websites are probably blocked.</p><p><strong>4. HTTP GET request</strong></p><p>As the Web Connectivity test connects to tested websites (through the previous
+step), it sends requests through the HTTP protocol to the servers which are
+hosting those websites. A server normally responds to an HTTP GET request with
+the content of the webpage that is requested.</p><p>However, the requested websites are most likely blocked if the HTTP request over
+the user&rsquo;s network failed, or the HTTP status codes don&rsquo;t match, or all of the
+following apply:</p><ul><li><p>The body length of compared websites (over the control server and the network
+of the user) differs by some percentage</p></li><li><p>The HTTP headers names do not match</p></li><li><p>The HTML title tags do not match</p></li></ul><h2 id=how-to-run-web-connectivity>How to run Web Connectivity</h2><p>If you&rsquo;ve ever run OONI tests before, then you&rsquo;re probably familiar with
+<code>oonideckgen</code>: OONI&rsquo;s software suite which includes multiple tests. Now
+Web Connectivity has been added to oonideckgen, replacing the previous
+http_request and dns_consistency tests (which are included in Web Connectivity
+anyway).</p><p>You can run Web Connectivity by either running <code>oonideckgen</code> or by simply
+running the following command with a file containing a list of URLs to test
+(this can either be 1 URL per line or a CSV from the
+<a href=https://github.com/citizenlab/test-lists/tree/master/lists>citizenlab test-lists repository</a>):</p><p><code>ooniprobe blocking/web_connectivity -f ~/.ooni/resources/citizenlab-test-lists/global.csv</code></p><p>or by testing your URL of choice:</p><p><code>ooniprobe blocking/web_connectivity --url http://torproject.org/</code></p><p>Learn more about how to run OONI tests (and their associated
+<a href=https://github.com/TheTorProject/ooni-spec/blob/master/informed-consent/risks.md>risks</a>)
+<a href=https://github.com/TheTorProject/ooni-probe#ooni-in-5-minutes>here</a>.</p><p>Happy testing!</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pb-1><a href=/about/>OONI</a></div><div class=pb-1><a href=/about/data-policy/>Data Policy</a></div><div class=pb-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pb-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pb-1><a href=https://ooni.org/install/>Install</a></div><div class=pb-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pb-1><a href=https://github.com/ooni>Source code</a></div><div class=pb-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pb-1><a href=/post/>Blog</a></div><div class=pb-1><a href=https://twitter.com/OpenObservatory>Twitter</a></div><div class=pb-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pb-1><a href=https://slack.ooni.org/>Slack</a></div></div></div></div></div></div></footer></body></html>
