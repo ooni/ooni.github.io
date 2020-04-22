@@ -1,0 +1,125 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>OONI Team Meeting: Montreal 2017 | OONI</title><link rel=canonical href=https://ooni.org/post/ooni-team-meeting-montreal-2017/><meta name=description content="Last week, right before the Tor meeting, the OONI team gathered in Montreal for a 4-day meeting to reflect, regroup, hack, and plan.
+This post shares information from our meeting and future plans with the broader community. All session notes are available on GitHub.
+ Summary: What OONI is working on
+ Sessions
+ Day 1 - 7th October 2017
+ Day 2 - 8th October 2017
+ Day 3 - 9th October 2017"><meta property=og:title content="OONI Team Meeting: Montreal 2017"><meta property=og:description content="Last week, right before the Tor meeting, the OONI team gathered in Montreal for a 4-day meeting to reflect, regroup, hack, and plan.
+This post shares information from our meeting and future plans with the broader community. All session notes are available on GitHub.
+ Summary: What OONI is working on
+ Sessions
+ Day 1 - 7th October 2017
+ Day 2 - 8th October 2017
+ Day 3 - 9th October 2017"><meta property=og:type content=article><meta property=og:url content=https://ooni.org/post/ooni-team-meeting-montreal-2017/><meta property=article:published_time content=2017-10-20T00:00:00+00:00><meta property=article:modified_time content=2017-10-20T00:00:00+00:00><meta name=twitter:card content=summary><meta name=twitter:title content="OONI Team Meeting: Montreal 2017"><meta name=twitter:description content="Last week, right before the Tor meeting, the OONI team gathered in Montreal for a 4-day meeting to reflect, regroup, hack, and plan.
+This post shares information from our meeting and future plans with the broader community. All session notes are available on GitHub.
+ Summary: What OONI is working on
+ Sessions
+ Day 1 - 7th October 2017
+ Day 2 - 8th October 2017
+ Day 3 - 9th October 2017"><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class=mb-4><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>OONI Team Meeting: Montreal 2017</h1><div class=byline><span class=author>Will Scott, Maria Xynou</span>
+<span class=date>2017-10-20</span></div><p><img src=/post/montreal-meeting/ooni-team.jpg alt="OONI team meeting in Montreal"></p><p>Last week, right before the <a href=https://trac.torproject.org/projects/tor/wiki/org/meetings/2017Montreal>Tor meeting</a>,
+the OONI team gathered in Montreal for a 4-day meeting to reflect,
+regroup, hack, and plan.</p><p>This post shares information from our meeting and future plans with the
+broader community. All session notes are available on
+<a href=https://github.com/OpenObservatory/gatherings/tree/master/internal/2017-10-montreal>GitHub</a>.</p><ul><li><p><a href=#summary-what-ooni-is-working-on>Summary: What OONI is working on</a></p></li><li><p><a href=#sessions>Sessions</a></p><ul><li><p><a href=#day-1-7th-october-2017>Day 1 - 7th October 2017</a></p></li><li><p><a href=#day-2-8th-october-2017>Day 2 - 8th October 2017</a></p></li><li><p><a href=#day-3-9th-october-2017>Day 3 - 9th October 2017</a></p></li><li><p><a href=#day-4-10th-october-2017>Day 4 - 10th October 2017</a></p></li></ul></li><li><p><a href=#meeting-outcomes>Meeting outcomes</a></p></li></ul><h1 id=summary-what-ooni-is-working-on>Summary: What OONI is working on</h1><p>We have our toes in many metaphorical pools. The major development
+efforts underway include:</p><ul><li><p><strong>OONI Probe desktop apps for Windows and macOS:</strong> Developing native desktop apps that are easy to install and run.</p></li><li><p><strong>OONI Probe mobile apps:</strong> Implementing new features based on community feedback, integrating more OONI Probe tests, and improving the design and usability.</p></li><li><p><strong>Data analysis pipeline:</strong> Improving our data analysis techniques to detect censorship events faster and more accurately.</p></li><li><p><strong>Censorship Alert System:</strong> Disseminating timely alerts of emergent censorship events worldwide based on OONI data.</p></li><li><p><strong>Research reports:</strong> Publishing research reports based on the analysis of OONI data.</p></li><li><p><strong>Partnerships:</strong> Expanding our collaboration with more groups and organizations around the world on the study of internet censorship.</p></li><li><p><strong>Probe Orchestration:</strong> Creating a feedback loop for follow-up measurements and for collecting data when emergent censorship events occur.</p></li><li><p><strong>OONI Explorer:</strong> Revamping <a href=https://explorer.ooni.org/world/>OONI Explorer</a> to make it more usable by community members, data scientists, researchers, journalists, and policy makers.</p></li><li><p><strong>Internet blackouts:</strong> Creating the first methodology for the automatic detection and examination of internet blackouts around the world.</p></li><li><p><strong>New censorship detection tests:</strong> Designing and developing methodologies for deeper and more diverse testing of internet censorship.</p></li></ul><h1 id=sessions>Sessions</h1><p>Below we outline the sessions we held during our Montreal team meeting
+and link to relevant notes.</p><h2 id=day-1-7th-october-2017>Day 1 - 7th October 2017</h2><ul><li><strong>Session 1:</strong> Time for reflection!</li></ul><p>A stronger team makes a stronger project. This session included a
+discussion of what worked well over the last year, and what didn’t.
+Based on this discussion, we developed strategies for improving the
+(horizontal) management of our project, intra-team collaboration, and
+for re-distributing work among team members.</p><ul><li><strong>Session 2:</strong> Building native OONI Probe apps for Windows and macOS</li></ul><p>Over the next year, we will be developing native OONI Probe apps for
+Windows and macOS. This session involved a discussion of the design and
+development choices and next steps towards implementation. The session
+notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/ooniprobe-desktop-apps.md>here</a>.</p><ul><li><strong>Session 3:</strong> OONI Probe mobile apps: Feature requests &amp; next steps</li></ul><p><img src=/post/montreal-meeting/mobile-apps.png alt="Navigation flow"></p><p>Most of the global OONI community runs OONI Probe through our mobile
+apps. This session involved a discussion of some of the next steps in
+terms of feature requests and their implementation. The session notes
+are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/mobile-apps.md>here</a>.</p><ul><li><strong>Session 4:</strong> OONI Partnership Program: Next 2 years</li></ul><p>Over the next 2 years, we aim to expand OONI’s network of partners to
+work with many more organizations around the world on the study of
+internet censorship. This means that we need to ensure that we are
+better equipped to meet expanding community needs in terms of data
+analysis, censorship measurement testing coordination, and report
+writing, among other things. The session notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/partnership-program.md>here</a>.</p><h2 id=day-2-8th-october-2017>Day 2 - 8th October 2017</h2><ul><li><strong>Session 1:</strong> Revamping OONI Explorer</li></ul><p><img src=/post/montreal-meeting/explorer.jpg alt="Revamping OONI Explorer"></p><p>No doubt, OONI Explorer needs to be revamped to be more useful to
+community members. As part of this session, we discussed what the
+“ideal” OONI Explorer would look like based on all the feedback that we
+have collected from community members over the last year and we
+discussed what’s required in terms of development and design. The
+session notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/revamping-ooni-explorer.md>here</a>.</p><ul><li><strong>Session 2:</strong> Revamping the OONI website</li></ul><p>Our current website can be better presented to better engage
+journalists, advocacy groups, and other new members of our community. As
+part of this session, we brainstormed on the new information
+architecture, design, and next steps towards implementation. The session
+notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/revamping-the-website.md>here</a>.</p><ul><li><strong>Session 3:</strong> Community needs and priorities</li></ul><p>Through our partnership program, the <a href=https://ooni.org/post/ooni-partner-gathering-2017/>OONI Partner Gathering</a>,
+and other community engagement activities, we have been receiving
+feedback from community members on an ongoing basis. As part of this
+session, we discussed some of the top, recurring community needs and
+priorities that we have identified. We also discussed strategies and
+development tasks for meeting those needs. The session notes are
+available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/community-needs.md>here</a>.</p><ul><li><strong>Session 4:</strong> OONI data processing pipeline knowledge share</li></ul><p><img src=/post/montreal-meeting/pipeline.png alt="Pipeline architecture"></p><p>Over the last year, OONI’s Leonid has been re-engineering our data
+processing pipeline to analyze data faster and more accurately. As part
+of this session, he shared his knowledge with the rest of the team.
+Documentation from the knowledge share is available
+<a href=https://github.com/TheTorProject/ooni-pipeline/blob/master/Readme.md>here</a>.</p><ul><li><strong>Session 5:</strong> Creating a Censorship Alert System</li></ul><p><img src=/post/montreal-meeting/cas.jpg alt="Censorship Alert System"></p><p>Over the next year we aim to create the first Censorship Alert System
+which will disseminate timely alerts of emergent censorship events based
+on OONI data. As part of this session, we discussed some of the next
+steps (and the questions to consider) towards creating the prototype.
+The session notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/censorship-alert-system.md>here</a>.</p><ul><li><strong>Session 6:</strong> Detecting internet blackouts: Next steps</li></ul><p>We also aim to create the first methodology for the automatic
+examination and detection of internet blackouts around the world. As
+part of this session, we discussed some of the next steps towards
+designing and implementing this methodology, as well as foreseeable
+challenges and ways to mitigate them. The session notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/tracking-internet-blackouts.md>here</a>.</p><h2 id=day-3-9th-october-2017>Day 3 - 9th October 2017</h2><ul><li><strong>Session 1:</strong> Probe Orchestration: Next steps</li></ul><p>Over the last months we have been working on “Probe Orchestration”, the
+instruction of OONI Probe tests (for cases where OONI Probe users have
+opted-in). This can be particularly useful for collecting network
+measurements when emergent censorship events occur around the world.
+While Probe Orchestration has already been designed and developed, we’re
+still addressing security questions, which we discussed as part of this
+session. The session notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/probe-orchestration.md>here</a>.</p><ul><li><strong>Session 2:</strong> Measurement-kit: Next steps</li></ul><p><a href=https://github.com/measurement-kit>Measurement-kit (MK)</a> is the
+network measurement library that powers OONI Probe mobile apps. We are
+in the process of integrating more OONI Probe tests into MK and it will
+provide support for OONI’s upcoming desktop apps. As part of this
+session, we discussed all the new development tasks for MK over the next
+year. The session notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/measurement-kit.md>here</a>.</p><ul><li><strong>Session 3:</strong> The future of Lepidopter</li></ul><p><a href=https://ooni.org/install/lepidopter/>Lepidopter</a> is an
+OONI Probe distribution for Raspberry Pis that has been used by many of
+our partners over the last year for the stable collection of
+measurements. However, we have learned that shipping hardware can be
+time-consuming, challenging, and expensive, without always leading to
+the desired outcomes. As part of this session, we discussed questions
+around continuing to maintain this distribution, as well as potential
+next steps. The session notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/the-future-of-lepidopter.md>here</a>.</p><ul><li><strong>Session 4:</strong> Roles and responsibilities</li></ul><p>As part of this session, we discussed what each team member is most
+passionate about, and what they found less enjoyable over the last year.
+We subsequently mapped out and assigned roles and responsibilities among
+team members for all the various moving components of the OONI project.
+The aim of this session was to reflect on team members’ performance and
+to ensure that responsibilities are reasonably distributed among team
+members.</p><ul><li><strong>Session 5:</strong> Avoiding Single Points of Failure (SPOF)</li></ul><p>As a follow up to the previous session, we mapped out and identified
+many of the SPOFs in terms of human resources, infrastructure, code,
+etc. The aim of this session was to ensure that we have backup
+strategies for most (if not all) components of our project.</p><ul><li><strong>Session 6:</strong> What do you want OONI to be?</li></ul><p>We are often overly consumed by that latest bug and striving to meet
+tight deliverable deadlines. As part of this session, we stepped back
+and tried to think about the big picture, together as a team. More
+specifically, we discussed OONI’s mission, what we want to achieve in
+the long-run, and what we should be doing to achieve those goals. The
+session notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/ooni-future.md>here</a>.</p><h2 id=day-4-10th-october-2017>Day 4 - 10th October 2017</h2><ul><li><strong>Session 1:</strong> Grants</li></ul><p>As part of this session, we discussed current grants that support OONI’s
+work, as well as the deliverables assigned to them. We also brainstormed
+on all the other things we want to be working on, but don’t currently
+have funding for (and mapped out relevant potential funders).</p><ul><li><strong>Session 2:</strong> New censorship testing methodologies</li></ul><p>We discussed the limitations to current OONI Probe tests and all the
+other questions that we would like to answer. Based on this, we
+brainstormed on new censorship testing methodologies and <a href="https://github.com/measurement-kit/measurement-kit/issues?q=is%3Aissue+is%3Aopen+label%3A%22new+test%22">filed 15 tickets</a>.</p><ul><li><strong>Session 3:</strong> Collaboration with Censored Planet</li></ul><p>Will Scott, an Oonitarian and researcher with <a href=http://www.cs.princeton.edu/~rensafi/projects/Censored-Planet/>Censored Planet</a>,
+joined our meeting and provided us an overview of the project’s next
+steps. Based on this, we identified areas for collaboration on the study
+of internet censorship. The session notes are available
+<a href=https://github.com/OpenObservatory/gatherings/blob/master/internal/2017-10-montreal/censored-planet.md>here</a>.</p><ul><li><strong>Session 4:</strong> Roadmap!</li></ul><p>All of the previous sessions enabled us to gain a better understanding
+of our goals and priorities over the next year, based on which we had a
+two-hour road-mapping session for the next 12 months. We mapped out our
+activities for each month and assigned team members.</p><ul><li><strong>Session 5:</strong> Code hackathon: Deep-dive!</li></ul><p>We spent the rest of the day hacking on OONI Probe and Measurement-Kit.</p><h1 id=meeting-outcomes>Meeting outcomes</h1><p>There were several concrete outcomes from the gathering, including:</p><ul><li><p>Detailed roadmap for the next 12 months.</p></li><li><p>Assigning point people responsible for each track of deliverables, and mapping dependencies to make sure we understand the critical path for meeting goals.</p></li><li><p>15 bugs for &ldquo;new testing methodologies&rdquo; added to <a href="https://github.com/measurement-kit/measurement-kit/issues?q=is%3Aissue+is%3Aopen+label%3A%22new+test%22">Measurement-Kit</a> as opportunities for collaboration, pulling in new contributors, and development.</p></li><li><p>Progress on <a href=https://github.com/measurement-kit/measurement-kit-node/tree/feature/base-tests>Node bindings</a> for Measurement-Kit as a basis for desktop applications.</p></li><li><p>Scoping our planned Censorship Alert System, and clarifying our first step of extracting potential events as a new pipeline table for interactive analysis to better understand what events should be broadcast.</p></li><li><p>Scoping the next steps for the development of the desktop apps, improvements to the mobile apps, and the methodology for examining internet blackouts.</p></li></ul></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pb-1><a href=/about/>OONI</a></div><div class=pb-1><a href=/about/data-policy/>Data Policy</a></div><div class=pb-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pb-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pb-1><a href=https://ooni.org/install/>Install</a></div><div class=pb-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pb-1><a href=https://github.com/ooni>Source code</a></div><div class=pb-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pb-1><a href=/post/>Blog</a></div><div class=pb-1><a href=https://twitter.com/OpenObservatory>Twitter</a></div><div class=pb-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pb-1><a href=https://slack.ooni.org/>Slack</a></div></div></div></div></div></div></footer></body></html>

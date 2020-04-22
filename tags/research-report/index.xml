@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>research-report on OONI: Open Observatory of Network Interference</title><link>https://ooni.org/tags/research-report/</link><description>Recent content in research-report on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 12 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.org/tags/research-report/index.xml" rel="self" type="application/rss+xml"/><item><title>Jordan: Measuring Facebook live-streaming interference during protests</title><link>https://ooni.org/post/jordan-measuring-facebook-interference/</link><pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate><guid>https://ooni.org/post/jordan-measuring-facebook-interference/</guid><description>Last December, anti-austerity protests erupted in Jordan against a controversial fiscal reform bill. The protests ensued once a week for several weeks thereafter. Amid the protests, locals reported that they were unable to view live-streaming from Facebook. But they also reported that viewing live-streaming was otherwise possible when protests were not taking place.
+Therefore, our first hypothesis was that perhaps people in Jordan couldn’t load videos on Facebook because they were using overloaded networks (rather than Facebook live streaming being interfered with).</description></item><item><title>Nigeria’s 2019 elections through the lens of network measurements</title><link>https://ooni.org/post/2019-nigeria-internet-censorship/</link><pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate><guid>https://ooni.org/post/2019-nigeria-internet-censorship/</guid><description>Censorship events are increasingly being reported during political events in Africa (and elsewhere around the world). A few examples include the social media disruptions in Mali amid its 2018 presidential election, the blocking of social media in Uganda during its 2016 general elections, and the complete internet blackout in The Gambia during its 2016 presidential election.
+Leading up to and during Nigeria’s 2019 general elections, we collaborated with our local partner, Paradigm Initiative, on measuring networks in the country to monitor potential censorship events.</description></item><item><title>Uganda&#39;s Social Media Tax through the lens of network measurements</title><link>https://ooni.org/post/uganda-social-media-tax/</link><pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate><guid>https://ooni.org/post/uganda-social-media-tax/</guid><description>Image by @neemascribbles.
+Probed ISPs: MTN (AS20294), Africell (AS36991), Airtel (AS37075), Smile Telecom (AS37122), Africa Online Uganda (AS29039), DATANET (AS29032), Sombha Solutions (AS328015), Roke (AS37063), Airtel (AS36977), Uganda Telecom (AS21491)
+OONI tests: Web Connectivity, HTTP Invalid Request Line, HTTP Header Field Manipulation, WhatsApp, Facebook Messenger, Telegram, Vanilla Tor. Testing/analysis period: 1st July 2018 to 24th October 2018
+Censorship methods: HTTP blocking (resetting connections) and TCP/IP blocking
+Key Findings</description></item><item><title>The State of Internet Censorship in Venezuela</title><link>https://ooni.org/post/venezuela-internet-censorship/</link><pubDate>Thu, 16 Aug 2018 00:00:00 +0000</pubDate><guid>https://ooni.org/post/venezuela-internet-censorship/</guid><description>A study by IPYS Venezuela, Venezuela Inteligente, and the Open Observatory of Network Interference (OONI).
+Update (2018-10-19): The section on Tor becoming accessible was added.
+Key Findings
+Introduction
+Background
+Political environment
+Legal environment
+Reported cases of internet censorship
+Methodology: Measuring internet censorship in Venezuela
+Acknowledgement of limitations Findings
+Blocked websites
+Media
+Political criticism
+Zello
+Currency exchange</description></item><item><title>The State of Internet Censorship in Egypt</title><link>https://ooni.org/post/egypt-internet-censorship/</link><pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate><guid>https://ooni.org/post/egypt-internet-censorship/</guid><description>The report uncovers anomalies on Egyptian networks, including censorship and the hijacking of unencrypted HTTP connections for advertising and cryptocurrency mining.
+Read full report in English Read full report in Arabic Read the summary of the report in Arabic
+Last year, Egypt ordered the blocking of 21 news websites. OONI, a censorship measurement project under the Tor Project, responded by publishing a report on the blocking of (at least) 10 media websites, including Mada Masr and Al Jazeera.</description></item><item><title>Nigeria: Measuring Internet Censorship</title><link>https://ooni.org/post/nigeria-internet-censorship/</link><pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate><guid>https://ooni.org/post/nigeria-internet-censorship/</guid><description>Last October, Nigeria’s National Communications Commission (NCC) reportedly ordered the blocking of 21 websites. In response, we collaborated with Nigeria’s Paradigm Initiative to test those websites and collect network measurement data that can shed light on whether and how they’re blocked.
+Our findings are included in a joint research report that we published today with Paradigm Initiative. The full report, titled “Tightening the Noose on Freedom of Expression: Status of Internet Freedom in Nigeria 2018”, can be downloaded here.</description></item><item><title>Internet Censorship in Pakistan: Findings from 2014-2017</title><link>https://ooni.org/post/pakistan-internet-censorship/</link><pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.org/post/pakistan-internet-censorship/</guid><description>Islamabad: Political dissent in Pakistan under threat, government censors online content - PC: Haroon Baloch
+A research study by the Open Observatory of Network Interference (OONI) and Bytes for All Pakistan.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy and digital surveillance
+Censorship
+Reported cases of internet censorship and surveillance</description></item><item><title>Internet Censorship in Iran: Network Measurement Findings from 2014-2017</title><link>https://ooni.org/post/iran-internet-censorship/</link><pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate><guid>https://ooni.org/post/iran-internet-censorship/</guid><description>Image: Blockpage in Iran
+A research study by the Open Observatory of Network Interference (OONI), ASL19, ARTICLE 19, and Small Media.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape
+Internet use
+Legal environment
+Reported cases of internet censorship
+Methodology: Measuring internet censorship in Iran
+Review of the Citizen Lab&amp;rsquo;s test list for Iran
+OONI network measurement testing</description></item><item><title>Measuring Internet Censorship in Cuba&#39;s ParkNets</title><link>https://ooni.org/post/cuba-internet-censorship-2017/</link><pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate><guid>https://ooni.org/post/cuba-internet-censorship-2017/</guid><description>Image by Arturo Filastò (CC-BY-SA-3.0) A research study by the Open Observatory of Network Interference (OONI)
+View the pdf version of the report here.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+ETECSA
+ParkNets
+Joven Club
+StreetNets
+El Paquete
+Summary
+Measuring Internet Censorship in Cuba
+Methodology
+Collection and analysis of OONI Probe network measurements</description></item><item><title>The State of Internet Censorship in Indonesia</title><link>https://ooni.org/post/indonesia-internet-censorship/</link><pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate><guid>https://ooni.org/post/indonesia-internet-censorship/</guid><description>Image: Block page in Indonesia
+A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Reported cases of internet censorship and surveillance
+Examining internet censorship in Indonesia</description></item><item><title>The State of Internet Censorship in Myanmar</title><link>https://ooni.org/post/myanmar-report/</link><pubDate>Wed, 29 Mar 2017 13:31:00 +0000</pubDate><guid>https://ooni.org/post/myanmar-report/</guid><description>A research study by the Open Observatory of Network Interference (OONI), Sinar Project, and the Myanmar ICT for Development Organization (MIDO).
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Reported cases of internet censorship and surveillance
+Examining internet censorship in Myanmar</description></item><item><title>The State of Internet Censorship in Thailand</title><link>https://ooni.org/post/thailand-internet-censorship/</link><pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate><guid>https://ooni.org/post/thailand-internet-censorship/</guid><description>Image: Block page in Thailand
+A research study by the Open Observatory of Network Interference (OONI), Sinar Project, and the Thai Netizen Network.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Reported cases of internet censorship and surveillance
+Examining internet censorship in Thailand</description></item><item><title>The State of Internet Censorship in Malaysia</title><link>https://ooni.org/post/malaysia-report/</link><pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.org/post/malaysia-report/</guid><description>Block page in Malaysia
+A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Previous cases of internet censorship and surveillance
+Examining internet censorship in Malaysia</description></item><item><title>Ethiopia: Evidence of social media blocking and internet censorship</title><link>https://ooni.org/post/ethiopia-report/</link><pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.org/post/ethiopia-report/</guid><description>Youth in Addis trying to get Wi-Fi Connection. Credit Addis Fortune Newspaper
+Recently we published a post about what appeared to be a possible internet shutdown in Ethiopia during a wave of ongoing protests by ethnic groups. Today, in collaboration with Amnesty International we are releasing a report that includes evidence of recent censorship events during Ethiopia’s political upheaval.
+See the Amharic translation of the report. Translated by Wolete Mariam.</description></item><item><title>Zambia: Internet censorship during the 2016 general elections?</title><link>https://ooni.org/post/zambia-election-monitoring/</link><pubDate>Tue, 11 Oct 2016 10:52:00 +0000</pubDate><guid>https://ooni.org/post/zambia-election-monitoring/</guid><description>A research study by the Open Observatory of Network Interference (OONI) and Strathmore University’s Centre for Intellectual Property and Information Technology Law (CIPIT).
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Previous cases of internet censorship and surveillance
+Zambia’s 2016 general elections and constitutional referendum</description></item></channel></rss>

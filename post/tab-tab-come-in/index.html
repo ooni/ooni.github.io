@@ -1,0 +1,154 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Tab-Tab, Come in! Bypassing Internet blocking to categorize DPI devices | OONI</title><link rel=canonical href=https://ooni.org/post/tab-tab-come-in/><meta name=description content="Analysis of censorship in Turkmenistan and Uzbekistan"><meta property=og:title content="Tab-Tab, Come in! Bypassing Internet blocking to categorize DPI devices"><meta property=og:description content="Analysis of censorship in Turkmenistan and Uzbekistan"><meta property=og:type content=article><meta property=og:url content=https://ooni.org/post/tab-tab-come-in/><meta property=article:published_time content=2013-05-14T00:00:00+00:00><meta property=article:modified_time content=2013-05-14T00:00:00+00:00><meta name=twitter:card content=summary><meta name=twitter:title content="Tab-Tab, Come in! Bypassing Internet blocking to categorize DPI devices"><meta name=twitter:description content="Analysis of censorship in Turkmenistan and Uzbekistan"><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class=mb-4><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>Tab-Tab, Come in! Bypassing Internet blocking to categorize DPI devices</h1><div class=byline><span class=author>Arturo Filastò and T.</span>
+<span class=date>2013-05-14</span></div><h1 id=motivation>Motivation</h1><p>During the past two years, we have been following the technical developments in
+Internet filtering in Uzbekistan and Turkmenistan. Internet users were
+reporting that some websites were blocked, connections were reseted and in some
+cases users were redirected to another website.</p><p>Apart from our technical curiosity of how Internet filtering is implemented at
+large scale and how it can be circumvented, we are interested in providing
+technical facts of how blocking is taking place. The lack of technical
+information in this field has an interesting collateral effect in Internet
+users. Lack of information, help rumours to spread and consolidate the idea
+that governments have unlimited capabilities, that not only monitor all
+communications but that ultimately nothing can be done to stop their control.
+Understanding how Internet filtering is taking place is an important task as it
+allows to discover mechanisms to bypass it and fingerprint and ultimately
+expose the companies that provide technology and know-how to governments that
+want to surpress the free flow of information in the Net.</p><h1 id=our-findings>Our findings</h1><p>The general Internet blocking architecture in Turkmenistan and Uzbekistan takes
+places in two basic stages. The first stage is responsible to identify which
+web/HTTP sessions are trying to reach a blacklisted website. This first stage
+is hence responsible of matching if a certain user is trying to reach a website
+that is blacklisted. Once the positive matching has taken place, the blocking
+or filtering is implemented. We will refer to the first stage as &ldquo;matching&rdquo; and
+the second as &ldquo;blocking&rdquo;.</p><h2 id=matching>Matching</h2><p>During our technical investigation we found out that a key element in the
+matching stage is the &ldquo;Host header&rdquo; in a HTTP session. Once the initial
+handshake between user and the final webserver is established (TCP/IP
+handshake) the browser will send a HTTP packet with a content like:</p><pre><code>GET / HTTP/1.1 Host: www.youtube.com
+</code></pre><p>This first packet tells to the webserver that we want to request the homepage
+of the website www.youtube.com</p><p>The Host header was introduced to be able to specify which domain we are
+requesting in the common scenario that a single IP address is serving different
+websites (think here in shared/virtual hosting). The Host header is optional in
+HTTP 1.0 but mandatory in HTTP 1.1. According the standards, the GET request
+line and the Host header must end with carriage return character followed by a
+line feed character <code>&lt;CR&gt;&lt;LF&gt;</code>.</p><p>Independently of which type of interception technology is used, matching takes
+place by observing the HTTP Host header field. There are some good technical
+reasons to implement the matching in this way. Filtering gear does not need to
+keep track of IP addresses, can operate in stealth mode as it does not need to
+perform any name resolution and inspecting packets for this header is as
+technically challenging as keeping track of the content of the full HTTP
+sessions.</p><p>This matching method is simple and even more effective with the current trend
+of webservers or websites to force users to use the correct domain name when
+requesting resources from the server.</p><h2 id=filtering>Filtering</h2><p>Once the matching is positive, blocking can take place if desired. We have
+identified three basic methods used to block a session. Reset, Proxying and
+Active Redirection.</p><h3 id=reset>Reset</h3><p>In the reset method, two RST packets will be send to both ends of the
+communication. By injecting these two packets between the communicating
+parties, both the Internet user/browser and the blacklisted webserver will be
+instructed to terminate the connection. This blocking method is present in
+Turkmenistan when we could effectively trigger RST traffic as a result of a
+domain name present in the Host Header.</p><p>To verify if the traffic between the browser and the blocked website was fully
+blocked, we decided to ignore RST packets in both ends of the communication.
+The result of the experiment is that it was possible to visit the blocked
+website and the interception gear was not implementing a full blocking of all
+traffic. Unfortunately ignoring all RST packets is not possible and makes this
+method to bypass the blocking unpractical.</p><p>There are some good technical reasons why filtering is implemented using RST
+packets. The filtering gear does not need to keep track of each of the sessions
+(stateless) and the blocking can take place without major changes in an
+existing network infrastructure. The fact that reset blocking limits itself to
+inject bogus traffic without modifying legitimate traffic facilitates its
+implementation and scalability.</p><p>An interesting collateral effect of RST blocking is passive redirection. Due to
+backward compatibility with HTTP/1.0, when browsers receive a RST packet that
+instruct them to close the connection, a new browser connection is initiated
+against the same website but this time without the Host header. When the
+browser receives the RST, it believes it is communicating to an old webserver
+that does not support HTTP/1.1 and hence initiates a HTTP/1.0 session. This
+session will not be &ldquo;matched&rdquo; by the interception gear and will not be blocked.
+The website receiving the HTTP/1.0 connection will then send a redirection to
+the default domain hosted at its IP address. For example, a HTTP/1.0 connection
+to youtube.com will respond with a redirection to google.com. The user might
+believe that the redirection is implemented by the filtering infrastructure
+when in fact is a collateral results of the RST traffic.</p><h3 id=proxying>Proxying</h3><p>The second mechanism to block the websites is by means of semi or fully
+transparent proxies. In both cases the HTTP proxy is placed between the users
+and the Internet. All outgoing web connections are intercepted by the proxy.
+Depending on the technology used, the proxy can hide its presence to the
+end-user (semi transparent), the webserver or both (fully transparent). The
+most common transparent proxy implementation is the semi-transparent; this
+implementation intercepts the HTTP requests from the users and places the
+outbound connection on the users&rsquo; behalf but does not hide the web proxy IP
+address from the webserver i.e. the webserver can see that the connections do
+not come from the user directly but from the IP address of the proxy.</p><p>A fully transparent web proxy hides both from the user and the webserver that
+the sessions are intercepted. The webserver cannot determine if the connection
+comes directly from the end-user or the proxy itself. Semi-transparent proxies
+are commonly used in combination with caching to speed up connections while
+fully transparent proxies are typically implemented for surveillance.</p><p>The basic matching mechanism in any case is performed looking into the Host
+Header. Opposite to the RST blocking mechanism, the web proxy has full access
+to the data stream and can perform most complex string matching, for example:
+blocking certain articles or random pages based on keywords. The transparent
+webproxy can perform more complex filtering but requires the processing of all
+web requests in the infrastructure.</p><p>This blocking method is present in Uzbekistan and Turkmenistan where we
+could effectively identify proxy headers when requesting blocked websites.</p><h3 id=active-redirection>Active redirection</h3><p>In the same way that a RST packets can be injected in the datastream to
+teardown a connection, we have seen another type of injected traffic towards
+the client. In this scenario the interception gear sends a HTTP 302
+redirection packet informing to the browser that the website has been &ldquo;Moved&rdquo;
+to another location.</p><p>Instead of having a full web proxy implementation to perform the redirection,
+we could determine that this type of redirection is performed without the need
+of keep any session state. As in the case of the RST blocking, once the Host
+header is found a packet with a redirection to www.msn.com is sent to the
+client.</p><pre><code>GET / HTTP/1.1
+User-Agent: TLT/2.6.4 (linux-gnu)
+Accept: */*
+Host: www.uznews.net
+Connection: Keep-Alive 
+
+HTTP/1.1 302 Found
+Location: http://www.msn.com/
+Content-Type: text/html; charset=utf-8
+Content-Length: 136
+Connection: close
+
+&lt;html&gt;&lt;head&gt;&lt;title&gt;Object moved&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;h2&gt;Object moved to &lt;a
+href='http://www.msn.com/'&gt;here&lt;/a&gt;.&lt;/h2&gt; &lt;/body&gt;&lt;/html&gt;
+</code></pre><p>This redirection method is highly scalable and users are aware that blocking
+is talking place.</p><h2 id=how-we-manage-to-bypass-the-blocking>How we manage to bypass the blocking?</h2><p>During our investigation we discovered that it is possible to bypass the
+filtering by tampering the Host header so the matching stage is not
+triggered.</p><p>The basic idea is to use the <code>\t</code> (TAB) and <code>\n</code> (linefeed) characters in the
+basic HTTP requests headers. We could test and verify that webservers
+sanitize the requests headers and appending a tab character at the end of the
+Host Header will not have an impact in the webserver side but will bypass the
+detection-matching phase of the blocking gear.</p><p>So instead of sending <code>Host: www.youtube.com\n</code> our requests look like <code>Host:
+www.youtube.com\t\n</code>.</p><p>We also discovered that the Active Redirection Method could be bypassed by
+pre-pending a linefeed to the GET header. So instead of sending <code>GET /
+HTTP/1.1</code>, our requests look like <code>\nGET / HTTP/1.1</code>.</p><h1 id=ooni-testing>OONI Testing</h1><p>We ran from inside of TM and UZ a set of OONI Probe tests to collect some data
+on how the filtering was happening and confirm our hypothesis of censorship
+bypassing strategies.</p><p>Inside of Uzbekistan we ran the following tests:</p><h3 id=http-header-field-manipulation>HTTP Header Field Manipulation</h3><p><a href=https://ooni.org/reports/0.1/TM/http_header_field_manipulation-2013-01-28T195727Z-AS20661.yamloo>https://ooni.org/reports/0.1/TM/http_header_field_manipulation-2013-01-28T195727Z-AS20661.yamloo</a></p><p>Through such test we were able to determine that no extra HTTP header were
+being appended to our outgoing requests. As we can see the response body
+contains the same headers that have been sent by the client.</p><h3 id=http-invalid-request-line-test>HTTP Invalid Request Line test</h3><p><a href=https://ooni.org/reports/0.1/TM/http_invalid_request_line-2013-01-30T214938Z-AS20661.yamloo>https://ooni.org/reports/0.1/TM/http_invalid_request_line-2013-01-30T214938Z-AS20661.yamloo</a></p><p>Through such test we were able to determine that the DPI device does not
+misbehave when receiving an invalid request line. This leads us to believe that
+the device in question is not a bluecoat device since such devices usually
+crash on &lsquo;test_random_invalid_version_number&rsquo; and
+&lsquo;test_random_invalid_field_count&rsquo; as is shown in the measurements done in
+Myanmar (<a href=https://ooni.org/reports/0.1/MM/http_invalid_request_line-2012-12-06T162217Z-AS18399.yamloo>https://ooni.org/reports/0.1/MM/http_invalid_request_line-2012-12-06T162217Z-AS18399.yamloo</a>).</p><h3 id=http-host-test>HTTP Host test</h3><p><a href=https://ooni.org/reports/0.1/TM/http_host-2013-01-30T224041Z-AS20661.yamloo>https://ooni.org/reports/0.1/TM/http_host-2013-01-30T224041Z-AS20661.yamloo</a></p><p>Through this test we were able to confirm that the above described filtering
+bypassing strategies do indeed work as is shown by
+&lsquo;test_filtering_prepend_newline_to_method&rsquo; and
+&lsquo;test_filtering_add_tab_to_host&rsquo;. We were also able to determine that filtering
+also occurs on subdomains of the target hostname as is shown by
+&lsquo;test_filtering_of_subdomain&rsquo;. Notes: The &lsquo;response_never_received&rsquo; error code
+is due to a TCP RST.</p><p>Inside of Turkmenistan we ran the same tests and obtained very similar results:</p><h3 id=http-header-field-manipulation-1>HTTP Header Field Manipulation</h3><p><a href=https://ooni.org/reports/0.1/UZ/http_header_field_manipulation-2013-01-29T222932Z-AS31203.yamloo>https://ooni.org/reports/0.1/UZ/http_header_field_manipulation-2013-01-29T222932Z-AS31203.yamloo</a></p><h3 id=http-invalid-request-line-test-1>HTTP Invalid Request Line test</h3><p><a href=https://ooni.org/reports/0.1/UZ/http_invalid_request_line-2013-02-02T183110Z-AS31203.yamloo>https://ooni.org/reports/0.1/UZ/http_invalid_request_line-2013-02-02T183110Z-AS31203.yamloo</a></p><h3 id=http-host-test-1>HTTP Host test</h3><p><a href=https://ooni.org/reports/0.1/UZ/http_host-2013-02-02T183406Z-AS31203.yamloo>https://ooni.org/reports/0.1/UZ/http_host-2013-02-02T183406Z-AS31203.yamloo</a></p><p>Also here censorship of subdomains is occurring, though the filtering strategy
+is to reply with a 302 redirect to &lsquo;<a href="http://www.msn.com'">http://www.msn.com'</a>.</p><p>Such results are particularly interesting, because we are now able to test for
+these bypassing strategies in the future. If it&rsquo;s possible to circumvent
+censorship by means of these two strategies we can infer that the DPI device we
+are facing could be similar to these. If we continue doing this we will be
+developing a heuristic for categorizing DPI devices.</p><p>Something similar was done in the case of Bluecoat in Burma, where we
+discovered that by sending an invalid HTTP method in the Request Line would
+cause a bluecoat device to output an error message. The same thing happens to
+bluecoat, though with a different error message, when sending an invalid number
+of parts in the HTTP request line.</p><h1 id=lessons-learned>Lessons learned</h1><p>We learned that censorship software is not perfect and that sometimes it can be
+trivially bypassed. The fact that it can be bypassed is not of interest to who
+deploys such software, because they are mainly interested in affecting a large
+portion of their userbase and even if a select few is able to access restricted
+content it is generally not a problem.
+This means that they accept the fact that there is an imbalance in knowledge
+amongst their population and this strengthens social inequality.</p><p>What is of interest to the OONI project is the fact that by detecting such
+imperfections in filtering software we are able to classify the kind of product
+being used. The next time we will see a device that can be bypassed by append
+tab characters to the <code>Host</code> header field we can infer that it may be the same
+used in UZ and TZ.</p><p>You can help us detect censorship by running ooni-probe. For more details see
+the <a href=https://github.com/thetorproject/ooni-probe#ooniprobe---open-observatory-of-network-interference>install guide</a></p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pb-1><a href=/about/>OONI</a></div><div class=pb-1><a href=/about/data-policy/>Data Policy</a></div><div class=pb-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pb-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pb-1><a href=https://ooni.org/install/>Install</a></div><div class=pb-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pb-1><a href=https://github.com/ooni>Source code</a></div><div class=pb-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pb-1><a href=/post/>Blog</a></div><div class=pb-1><a href=https://twitter.com/OpenObservatory>Twitter</a></div><div class=pb-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pb-1><a href=https://slack.ooni.org/>Slack</a></div></div></div></div></div></div></footer></body></html>
