@@ -1,0 +1,184 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Measuring SNI based blocking in Iran | OONI</title><link rel=canonical href=https://ooni.org/post/2020-iran-sni-blocking/><meta name=description content="We evaluate our new SNI blocking experiment in Iran"><meta property=og:title content="Measuring SNI based blocking in Iran"><meta property=og:description content="We evaluate our new SNI blocking experiment in Iran"><meta property=og:type content=article><meta property=og:url content=https://ooni.org/post/2020-iran-sni-blocking/><meta property=og:image content=https://ooni.org/post/2020-iran-sni-blocking/images/sniblocking.png><meta property=article:published_time content=2020-04-28T00:00:00+00:00><meta property=article:modified_time content=2020-04-28T00:00:00+00:00><meta name=twitter:card content=summary_large_image><meta name=twitter:image content=https://ooni.org/post/2020-iran-sni-blocking/images/sniblocking.png><meta name=twitter:title content="Measuring SNI based blocking in Iran"><meta name=twitter:description content="We evaluate our new SNI blocking experiment in Iran"><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class=mb-4><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>Measuring SNI based blocking in Iran</h1><div class=byline><span class=author>Simone Basso</span>
+<span class=date>2020-04-28</span></div><p>In this blog post we start evaluating <a href=https://github.com/ooni/spec/blob/adf9537c43ef848b96792f8dea99fbd7f93fe608/nettests/ts-024-sni-blocking.md>OONI&rsquo;s new SNI blocking
+experiment</a>.
+To this end, we will use measurements performed in Iran, where this
+blocking technique is implemented.</p><p>OONI&rsquo;s SNI blocking experiment discovers cases where <a href=https://tls.ulfheim.net/>a Client Hello
+packet</a> carrying a specific SNI
+triggers blocking. In this context, SNI means <a href=https://en.wikipedia.org/wiki/Server_Name_Indication>Server Name
+Indication</a>.
+It is an extension to the <a href=https://en.wikipedia.org/wiki/Transport_Layer_Security>Transport Layer
+Security</a>
+(TLS) protocol that allows a client to specify the domain name that it
+wants an HTTP server to serve. This extension is used in many TLS use
+cases. For example, when you access
+<a href=https://www.google.com>https://www.google.com</a> with your
+browser, the code will send a Client Hello packet containing the string
+<code>www.google.com</code> in the SNI extension.</p><p>The SNI blocking experiment works as illustrated by the following
+diagram:</p><p><img src=images/sniblocking.png alt="SNI blocking experiment"></p><p>The experiment uses a test helper; in this example
+<a href=https://ipinfo.io/93.184.216.34>93.184.216.34</a>. As of
+24th April 2020, this is the IP address of a web server serving, among
+others, the <a href=http://www.example.com>www.example.com</a>
+website. We start the first TLS handshake sending a Client Hello
+containing the <code>www.example.com</code> SNI. Since
+<a href=http://www.example.com>www.example.com</a> is typically not
+blocked in most countries, and because the test helper serves such a
+domain, we expect the first handshake to nearly always
+succeed.</p><p>The second TLS handshake instead is for an SNI that (1) we think could
+be blocked and (2) is not served by <code>93.184.216.34</code>. We therefore expect
+this second handshake to fail with the server telling us that it cannot
+serve <a href=http://www.blocked.com>www.blocked.com</a>. However,
+if the network between the Probe and the test helper implements a rule
+saying &ldquo;no matter what, block any TLSHello where the SNI extension
+contains www.blocked.com&rdquo;, then the TLS handshake will instead
+fail.</p><p>If we cannot perform the first TLS handshake, the experiment is
+inconclusive. Otherwise, the result of the second TLS handshake tells us
+whether there was network interference. For more information on the
+algorithm used, please refer to <a href=https://github.com/ooni/spec/blob/adf9537c43ef848b96792f8dea99fbd7f93fe608/nettests/ts-024-sni-blocking.md>the specification of our SNI
+experiment</a>.</p><p>To evaluate this methodology, we ran experiments in Iran because we
+know that Iran implements SNI based blocking. We tested 112 domains for
+signs of SNI based blocking across three different autonomous systems:
+<a href=https://ipinfo.io/AS197207>AS197207</a> (Mobile
+Communication Company of Iran, PLC),
+<a href=https://ipinfo.io/AS12880>AS12880</a> (Information
+Technology Company), and
+<a href=https://ipinfo.io/AS58224>AS58224</a> (Iran
+Telecommunication Company PJS). Since the results of the SNI blocking
+experiment are not exposed through <a href=https://explorer.ooni.org/>OONI
+Explorer</a> yet, <a href=https://gist.github.com/bassosimone/ad8eb608b42135dcae287de5d62f8551>we also
+published a script to download the
+measurements</a>.</p><p>The following table shows all the domains (and hence SNIs) for which
+we noticed signs of network interference for at least one of the three
+tested ASNs:</p><table><thead><tr><th>DOMAIN</th><th>ASN</th><th>RESULT</th></tr></thead><tbody><tr><td>d1vq87e9lcf771.cloudfront.net</td><td>AS197207</td><td>interference.reset</td></tr><tr><td>i.pinimg.com</td><td>AS197207</td><td>interference.reset</td></tr><tr><td>log.quora.com</td><td>AS197207</td><td>interference.reset</td></tr><tr><td>www.quora.com</td><td>AS197207</td><td>interference.reset</td></tr><tr><td>9gag.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>d1vq87e9lcf771.cloudfront.net</td><td>AS12880</td><td>anomaly.timeout</td></tr><tr><td>d1vq87e9lcf771.cloudfront.net</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>d3kwyfyztuo0xs.cloudfront.net</td><td>AS12880</td><td>anomaly.timeout</td></tr><tr><td>ifacetimeapp.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>instinctmagazine.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>isaalmasih.net</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>openvpn.net</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>pridesource.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>psiphon.ca</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>twitpic.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.eurogrand.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.jdate.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.monife.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.partypoker.net</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.pinkcupid.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.scruff.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.ucc.org</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.vice.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.vonage.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.xroxy.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>xhamster.com</td><td>AS58224</td><td>anomaly.timeout</td></tr></tbody></table><p>We observe that connections are reset on the AS197207 network, while we
+only observe a timeout anomaly on the other two tested ASNs. To further
+understand the nature of the interference, we discuss two specific
+measurements. We start with a measurement blocked with RST, whose JSON
+has of course been trimmed to increase clarity and
+readability.</p><pre><code class=language-JavaScript>{
+  &quot;test_keys&quot;: {
+    &quot;target&quot;: {
+      &quot;sni&quot;: &quot;d1vq87e9lcf771.cloudfront.net&quot;,
+      &quot;network_events&quot;: [
+        {
+          &quot;proto&quot;: &quot;tcp&quot;,
+          &quot;dial_id&quot;: 4,
+          &quot;conn_id&quot;: 1,
+          &quot;failure&quot;: null,
+          &quot;t&quot;: 0.312834468,
+          &quot;address&quot;: &quot;93.184.216.34:443&quot;,
+          &quot;operation&quot;: &quot;connect&quot;                    // (1)
+        },
+        {
+          &quot;proto&quot;: &quot;tcp&quot;,
+          &quot;num_bytes&quot;: 281,
+          &quot;conn_id&quot;: 1,
+          &quot;failure&quot;: null,
+          &quot;t&quot;: 0.31307321,
+          &quot;operation&quot;: &quot;write&quot;                      // (2)
+        },
+        {
+          &quot;failure&quot;: &quot;connection_reset&quot;,            // (3)
+          &quot;operation&quot;: &quot;read&quot;,
+          &quot;proto&quot;: &quot;tcp&quot;,
+          &quot;t&quot;: 0.431875659,
+          &quot;conn_id&quot;: 1
+        }
+      ],
+      &quot;th_address&quot;: &quot;example.com:443&quot;               // (4)
+    }
+  },
+  &quot;probe_asn&quot;: &quot;AS197207&quot;,
+  &quot;resolver_network_name&quot;: &quot;Cloudflare, Inc.&quot;,      // (5)
+  &quot;report_id&quot;: &quot;20200411T155627Z_AS197207_VlF35wOyEbESrCD4T0c8KpiKdsexqrdMwH5cqkL9OYLLY3040f&quot;
+}
+</code></pre><p>We can see from this measurement that the connection is reset after we
+have successfully established the connection (1), and we have written
+the 281 bytes of the Client Hello (2). The reset, in particular, is
+received when we&rsquo;re reading the response to the Hello (3). The test
+helper we are using is example.com:443 (4), and the IP address we&rsquo;re
+connecting to has been resolved using Cloudflare DNS over HTTPS resolver
+(5).</p><p>Also, the following experiment performed on 24th April 2020, clearly shows
+that the IP address is valid for example.com:</p><pre><code class=language-text>% curl -svo/dev/null --connect-to example.com:443:93.184.216.34:443 https://example.com
+* Connecting to hostname: 93.184.216.34
+[...]
+* Server certificate:
+*  subject: C=US; ST=California; L=Los Angeles; O=Internet Corporation for Assigned Names and Numbers; OU=Technology; CN=www.example.org
+*  start date: Nov 28 00:00:00 2018 GMT
+*  expire date: Dec  2 12:00:00 2020 GMT
+*  subjectAltName: host &quot;example.com&quot; matched cert's &quot;example.com&quot;
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert SHA2 Secure Server CA
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+</code></pre><p>In fact, &ldquo;SSL certificate verify ok&rdquo; means that curl has successfully
+connected to the specified address and successfully negotiated a TLS
+connection for the given domain name. Also, the &ldquo;--connect-to&rdquo; option
+ensures that we bypass the DNS and use 93.184.216.34
+directly.</p><p>Let us now discuss a measurement where we see a timeout
+anomaly:</p><pre><code class=language-JavaScript>{
+  &quot;test_keys&quot;: {
+    &quot;target&quot;: {
+      &quot;sni&quot;: &quot;psiphon.ca&quot;,
+      &quot;network_events&quot;: [
+        {
+          &quot;proto&quot;: &quot;tcp&quot;,
+          &quot;dial_id&quot;: 15,
+          &quot;conn_id&quot;: 13,
+          &quot;failure&quot;: null,
+          &quot;t&quot;: 0.254239264,
+          &quot;address&quot;: &quot;93.184.216.34:443&quot;,
+          &quot;operation&quot;: &quot;connect&quot;                   // (1)
+        },
+        {
+          &quot;proto&quot;: &quot;tcp&quot;,
+          &quot;num_bytes&quot;: 262,
+          &quot;conn_id&quot;: 13,
+          &quot;failure&quot;: null,
+          &quot;t&quot;: 0.254566734,
+          &quot;operation&quot;: &quot;write&quot;                     // (2)
+        },
+        {
+          &quot;failure&quot;: &quot;unknown_failure: [...] use of closed network connection&quot;,
+          &quot;operation&quot;: &quot;read&quot;,
+          &quot;proto&quot;: &quot;tcp&quot;,
+          &quot;t&quot;: 10.264251304,                       // (4)
+          &quot;conn_id&quot;: 13
+        }
+      ],
+      &quot;th_address&quot;: &quot;example.com:443&quot;,
+      &quot;tls_handshakes&quot;: [
+        {
+          &quot;tls_version&quot;: &quot;&quot;,
+          &quot;conn_id&quot;: 3,
+          &quot;peer_certificates&quot;: null,
+          &quot;cipher_suite&quot;: &quot;&quot;,
+          &quot;failure&quot;: &quot;generic_timeout_error&quot;,     // (3)
+          &quot;negotiated_protocol&quot;: &quot;&quot;,
+          &quot;t&quot;: 10.264170017
+        }
+      ]
+    }
+  },
+  &quot;probe_asn&quot;: &quot;AS58224&quot;,
+  &quot;resolver_network_name&quot;: &quot;Cloudflare, Inc.&quot;,
+  &quot;report_id&quot;: &quot;20200418T105440Z_AS58224_GguWqwSThCto4VAEZRXIvcYMK7QILkHt9LFAed09mTBLM2LsgX&quot;
+}
+</code></pre><p>What we see happening here is that we can successfully connect to the
+test helper (1), and we can successfully write the Client Hello (2).
+However, the TLS handshake process terminates with timeout after ten
+seconds (3). A few microseconds after that, the read operation that was
+waiting for the response to the Client Hello also terminates with an
+error (4). The IP address that we&rsquo;re connecting to is legitimate, since
+it&rsquo;s exactly the same as what we validated before.</p><p>Similar patterns are observed for the other measurements, but we omit
+the results from this discussion for brevity. The presence of the
+<code>tls_handshakes</code> array for all the measurements presented here, which is
+also not shown for brevity, indicates that all the measurements reached
+the phase in which the TLS Handshake was being performed. That is, we
+know that the interference happened <em>during</em> the handshake, not before
+it.</p><p>We therefore conclude that our SNI blocking experiment works as
+intended in a scenario where SNI based blocking is implemented. Blocking
+is detected when connecting to a test helper that is unrelated with the
+SNI we want to measure. Different ASNs implement blocking differently:
+the mobile AS197207 autonomous system resets the connection; AS12880 and
+AS58224 likely discard packets, causing the TLS handshake process to
+timeout. We have strong evidence that the interference occurred when the
+code was performing the TLS handshake.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://twitter.com/OpenObservatory>Twitter</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div></div></div></div></div></div></footer></body></html>
