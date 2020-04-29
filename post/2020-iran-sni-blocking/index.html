@@ -37,21 +37,21 @@ whether there was network interference. For more information on the
 algorithm used, please refer to <a href=https://github.com/ooni/spec/blob/adf9537c43ef848b96792f8dea99fbd7f93fe608/nettests/ts-024-sni-blocking.md>the specification of our SNI
 experiment</a>.</p><p>To evaluate this methodology, we ran experiments in Iran because we
 know that Iran implements SNI based blocking. We tested 112 domains for
-signs of SNI based blocking across three different autonomous systems:
-<a href=https://ipinfo.io/AS197207>AS197207</a> (Mobile
-Communication Company of Iran, PLC),
-<a href=https://ipinfo.io/AS12880>AS12880</a> (Information
-Technology Company), and
-<a href=https://ipinfo.io/AS58224>AS58224</a> (Iran
-Telecommunication Company PJS). Since the results of the SNI blocking
-experiment are not exposed through <a href=https://explorer.ooni.org/>OONI
-Explorer</a> yet, <a href=https://gist.github.com/bassosimone/ad8eb608b42135dcae287de5d62f8551>we also
-published a script to download the
-measurements</a>.</p><p>The following table shows all the domains (and hence SNIs) for which
+signs of SNI based blocking across three different autonomous systems:</p><ol><li><p><a href=https://ipinfo.io/AS12880>AS12880</a> (Information
+Technology Company), henceforth indicated as DCI;</p></li><li><p><a href=https://ipinfo.io/AS58224>AS58224</a> (Iran
+Telecommunication Company PJS), henceforth TCI;</p></li><li><p><a href=https://ipinfo.io/AS197207>AS197207</a> (Mobile
+Communication Company of Iran, PLC), henceforth MCI.</p></li></ol><p>Since the results of the SNI blocking experiment are not exposed through
+<a href=https://explorer.ooni.org/>OONI Explorer</a> yet, <a href=https://gist.github.com/bassosimone/ad8eb608b42135dcae287de5d62f8551>we also published the scripts
+to download and process the measurements</a>.</p><p>The following table shows all the domains (and hence SNIs) for which
 we noticed signs of network interference for at least one of the three
-tested ASNs:</p><table><thead><tr><th>DOMAIN</th><th>ASN</th><th>RESULT</th></tr></thead><tbody><tr><td>d1vq87e9lcf771.cloudfront.net</td><td>AS197207</td><td>interference.reset</td></tr><tr><td>i.pinimg.com</td><td>AS197207</td><td>interference.reset</td></tr><tr><td>log.quora.com</td><td>AS197207</td><td>interference.reset</td></tr><tr><td>www.quora.com</td><td>AS197207</td><td>interference.reset</td></tr><tr><td>9gag.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>d1vq87e9lcf771.cloudfront.net</td><td>AS12880</td><td>anomaly.timeout</td></tr><tr><td>d1vq87e9lcf771.cloudfront.net</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>d3kwyfyztuo0xs.cloudfront.net</td><td>AS12880</td><td>anomaly.timeout</td></tr><tr><td>ifacetimeapp.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>instinctmagazine.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>isaalmasih.net</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>openvpn.net</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>pridesource.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>psiphon.ca</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>twitpic.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.eurogrand.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.jdate.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.monife.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.partypoker.net</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.pinkcupid.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.scruff.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.ucc.org</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.vice.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.vonage.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>www.xroxy.com</td><td>AS58224</td><td>anomaly.timeout</td></tr><tr><td>xhamster.com</td><td>AS58224</td><td>anomaly.timeout</td></tr></tbody></table><p>We observe that connections are reset on the AS197207 network, while we
-only observe a timeout anomaly on the other two tested ASNs. To further
-understand the nature of the interference, we discuss two specific
+tested ASNs:</p><table><thead><tr><th>DOMAIN</th><th>AS12880 (DCI)</th><th>AS58224 (TCI)</th><th>AS197207 (MCI)</th></tr></thead><tbody><tr><td>9gag.com</td><td></td><td>timeout</td><td></td></tr><tr><td>d1vq87e9lcf771.cloudfront.net</td><td>timeout</td><td>timeout</td><td>reset</td></tr><tr><td>d3kwyfyztuo0xs.cloudfront.net</td><td>timeout</td><td></td><td>got_server_hello</td></tr><tr><td>i.pinimg.com</td><td>got_server_hello</td><td></td><td>reset</td></tr><tr><td>ifacetimeapp.com</td><td></td><td>timeout</td><td></td></tr><tr><td>instinctmagazine.com</td><td></td><td>timeout</td><td></td></tr><tr><td>isaalmasih.net</td><td></td><td>timeout</td><td></td></tr><tr><td>log.quora.com</td><td></td><td></td><td>reset</td></tr><tr><td>openvpn.net</td><td></td><td>timeout</td><td></td></tr><tr><td>pridesource.com</td><td></td><td>timeout</td><td></td></tr><tr><td>psiphon.ca</td><td></td><td>timeout</td><td></td></tr><tr><td>twitpic.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.eurogrand.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.jdate.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.monife.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.partypoker.net</td><td></td><td>timeout</td><td></td></tr><tr><td>www.pinkcupid.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.quora.com</td><td>got_server_hello</td><td></td><td>reset</td></tr><tr><td>www.scruff.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.ucc.org</td><td></td><td>timeout</td><td></td></tr><tr><td>www.vice.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.vonage.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.xroxy.com</td><td></td><td>timeout</td><td></td></tr><tr><td>xhamster.com</td><td></td><td>timeout</td><td></td></tr></tbody></table><p>An empty cell indicates that there is no measurement for a
+specific network; <code>timeout</code> indicates that the TLS handshake timed out;
+<code>reset</code> means that the handshake was interrupted by a reset; and
+<code>got_server_hello</code> means that we received the Server Hello as expected
+(i.e. there was no interference).</p><p>We observe that connections are reset on the MCI network, while we
+only observe timeout anomalies on the other two tested ASNs. We also
+observe that in some cases there is interference in some networks and
+no blocking in other networks.</p><p>To further understand the nature of the interference, we discuss two specific
 measurements. We start with a measurement blocked with RST, whose JSON
 has of course been trimmed to increase clarity and
 readability.</p><pre><code class=language-JavaScript>{
