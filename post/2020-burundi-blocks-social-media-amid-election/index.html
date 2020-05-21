@@ -1,0 +1,164 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Burundi blocks social media amid 2020 general election | OONI</title><link rel=canonical href=https://ooni.org/post/2020-burundi-blocks-social-media-amid-election/><meta name=description content="This report shares OONI measurements on the blocking of social media in Burundi amid its 2020 general election."><meta property=og:title content="Burundi blocks social media amid 2020 general election"><meta property=og:description content="This report shares OONI measurements on the blocking of social media in Burundi amid its 2020 general election."><meta property=og:type content=article><meta property=og:url content=https://ooni.org/post/2020-burundi-blocks-social-media-amid-election/><meta property=og:image content=https://ooni.org/post/2020-burundi-blocks-social-media-amid-election/images/2020-bi-chart.png><meta property=article:published_time content=2020-05-21T00:00:00+00:00><meta property=article:modified_time content=2020-05-21T00:00:00+00:00><meta name=twitter:card content=summary_large_image><meta name=twitter:image content=https://ooni.org/post/2020-burundi-blocks-social-media-amid-election/images/2020-bi-chart.png><meta name=twitter:title content="Burundi blocks social media amid 2020 general election"><meta name=twitter:description content="This report shares OONI measurements on the blocking of social media in Burundi amid its 2020 general election."><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class=mb-4><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>Burundi blocks social media amid 2020 general election</h1><div class=byline><span class=author>Maria Xynou, Arturo Filastò</span>
+<span class=date>2020-05-21</span></div><p>Yesterday, access to <a href=https://www.bbc.com/news/world-africa-52737081>social media was reportedly blocked in Burundi</a> amid its 2020
+general election.</p><p>The lead-up to the election was <a href=https://www.aljazeera.com/news/2020/05/lead-up-burundi-election-marred-unrest-200517163130410.html>marred by violence and unrest</a>,
+as seven candidates vied to replace Incumbent President Nkurunziza, who
+has been in power over the last 15 years. Despite <a href=https://www.theguardian.com/world/2015/may/07/burundi-protests-deaths-man-set-ablaze>widespread deadly protests</a>
+and a <a href=https://www.bbc.com/news/world-africa-32724083>coup attempt</a>,
+President Nkurunziza won a third term in 2015 following <a href=https://www.theguardian.com/world/2015/jul/24/burundi-pierre-nkurunziza-wins-third-term-disputed-election>disputed elections</a>.
+While President Nkurunziza <a href=https://www.dandc.eu/en/article/burundi-will-hold-presidential-parliamentary-and-municipal-elections-2020>reportedly announced</a>
+that he would not contest the next elections, he is set to become a
+“<a href=https://www.bbc.com/news/world-africa-52682171>supreme guide to patriotism</a>” as he
+steps down now in 2020.</p><p>Burundi’s 2020 general election has not only been <a href=https://www.aljazeera.com/programmes/insidestory/2019/11/burundi-2020-elections-free-fair-191124182430057.html>questioned in terms of being free and fair</a>,
+but it has also been
+<a href=https://www.bbc.com/news/world-africa-52682171>criticized</a> for
+taking place during the <a href=https://www.who.int/emergencies/diseases/novel-coronavirus-2019/>COVID-19 pandemic</a>
+without adequate safeguards. Meanwhile, Access Now
+<a href=https://www.accessnow.org/keepiton-burundi-silences-the-majority-on-election-day/>reported</a>
+that social media platforms were blocked in Burundi on election day,
+starting in the morning of 20th May 2020.</p><p>In this report, we share <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;only=anomalies">OONI network measurement data</a>
+on the blocking of social media in Burundi amid its 2020 general
+election.</p><ul><li><p><a href=#methods>Methods</a></p></li><li><p><a href=#blocking-of-social-media-websites>Blocking of social media websites</a></p></li><li><p><a href=#blocking-of-instant-messaging-apps>Blocking of instant messaging apps</a></p><ul><li><p><a href=#whatsapp>WhatsApp</a></p></li><li><p><a href=#telegram>Telegram</a></p></li><li><p><a href=#facebook-messenger>Facebook Messenger</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li></ul><h1 id=methods>Methods</h1><p>OONI Probe is <a href=https://github.com/ooni>free and open source software</a>
+designed to measure internet censorship and other forms of network
+interference. The <a href=https://ooni.org/install/>OONI Probe app</a>
+(available for both <a href=https://ooni.org/install/mobile>mobile</a> and
+<a href=https://ooni.org/install/desktop>desktop</a> platforms) includes tests
+designed to <a href=https://ooni.org/nettest/web-connectivity/>measure the blocking of websites</a> and instant
+messaging apps (<a href=https://ooni.org/nettest/whatsapp/>WhatsApp</a>,
+<a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger</a>,
+and <a href=https://ooni.org/nettest/telegram/>Telegram</a>).</p><p>More specifically, the OONI Probe <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity test</a> is designed to
+measure the blocking of
+<a href=https://ooni.org/support/faq/#which-websites-will-i-test-for-censorship-with-ooni-probe>websites</a>
+by attempting to perform a DNS lookup, TCP connection, and HTTP request
+(to the URLs included in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a>)
+from both a control vantage point and the local vantage point of the
+user. The measurements collected from both vantage points are
+automatically compared and if they differ, the result is flagged as
+“anomalous”. Depending on the type of anomaly detected (DNS, TCP/IP,
+HTTP), we can infer the type of blocking. The OONI Probe
+<a href=https://ooni.org/nettest/whatsapp/>WhatsApp</a>, <a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger</a>, and
+<a href=https://ooni.org/nettest/telegram/>Telegram</a> tests are designed to
+measure the blocking of these apps through DNS lookups and by attempting
+to establish TCP connections to the app endpoints.</p><p>Unless an OONI Probe user opts-out, their test results are automatically
+sent to OONI’s servers, <a href=https://github.com/ooni/pipeline>processed</a>,
+and <a href=https://ooni.org/data/>openly published</a>. Since April 2016,
+<a href=https://explorer.ooni.org/country/BI>hundreds of thousands of OONI Probe tests have been run in Burundi</a> from 9 local networks.</p><p>As part of this study, we examined <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI">recent OONI measurements</a>
+collected over the last months from Burundi in an attempt to corroborate
+<a href=https://www.bbc.com/news/world-africa-52737081>reports</a> on the
+blocking of social media with network measurement data. As most OONI
+measurements were collected on Econet (AS37336) over the last few days,
+our findings are primarily limited to this network.</p><h1 id=blocking-of-social-media-websites>Blocking of social media websites</h1><p>Numerous social media websites were found to be blocked in Burundi on
+20th May 2020, amid the 2020 general election.</p><p>The following chart illustrates the social media websites that we found
+to be blocked in Burundi on Econet (AS37336) on 20th May 2020.</p><div><a href=/post/2020-burundi-blocks-social-media-amid-election/images/2020-bi-chart.png><img src=/post/2020-burundi-blocks-social-media-amid-election/images/2020-bi-chart_huee69100e64a76ae1528361f122adff96_86423_1000x800_fit_box_2.png srcset="/post/2020-burundi-blocks-social-media-amid-election/images/2020-bi-chart_huee69100e64a76ae1528361f122adff96_86423_2000x1600_fit_box_2.png 2x" title="Blocking of social media in Burundi" alt="Blocking of social media in Burundi"></a></div><p><strong>Source:</strong> OONI measurements collected from Burundi, <a href="https://explorer.ooni.org/search?until=2020-05-22&amp;probe_cc=BI&amp;test_name=web_connectivity">https://explorer.ooni.org/search?until=2020-05-22&amp;probe_cc=BI&amp;test_name=web_connectivity</a></p><p>What is evident from the above chart is that all of the tested social
+media websites consistently presented network anomalies every time they
+were tested on 20th May 2020. The fact that each of these sites was
+tested multiple times on that day on Econet (AS37336), and that their
+testing always presented anomalies, provides a strong signal of
+potential blocking. When looking into the details of these anomalous
+measurements, we observe that the HTTP requests consistently fail with a
+<a href="https://explorer.ooni.org/measurement/20200520T121941Z_AS37336_YrcLDykB6682Vba7pJp3ZlXXGDKtfu3NU5kxFdwK6HVc7FRG8j?input=https%3A%2F%2Ftieba.baidu.com%2F">connection reset error</a>.</p><p>Furthermore, when comparing the anomalous measurements of 20th May 2020
+with all the other OONI Probe measurements collected from the testing of
+those sites in Burundi (prior to 20th May 2020), we observe that those
+social media sites were previously accessible in the country. OONI
+measurements show that many of these sites were consistently accessible
+every time they were tested over the last years, and that they only
+started to present anomalies on 20th May 2020. This sudden change &ndash;
+which is evident in the measurements of many social media platforms &ndash;
+strongly suggests that the blocking of these social media websites in
+Burundi started at around the time of the 2020 general election.</p><p>More specifically, OONI measurements show that these social media
+websites were blocked from the morning of the election day, <a href="https://explorer.ooni.org/measurement/20200520T093759Z_AS37336_aYBHGgTX5D1QoNDZAMHK92ZRkgWP3Y2ExDAN6pOBOFN1mPER6N?input=https%3A%2F%2Fwww.facebook.com%2F">at least from 09:37 UTC</a>
+on 20th May 2020. The absence of relevant OONI measurements from 19th
+May 2020 limits our ability to determine if the blocking started before
+the elections, though all measurements from 18th May 2020
+<a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity">show</a>
+that these social media sites were accessible at the time.</p><p>The fact that the interference towards these websites only occurs when
+we attempt to establish an HTTPS connection, as opposed to the IPs being
+blocked or the DNS queries being interfered with, is a strong indication
+of some form of Deep Packet Inspection (DPI) technology being used,
+perhaps targeting the SNI field of the TLS connection.</p><p>As no previous OONI measurements (before 20th May 2020) were collected
+for <code>www.weibo.com</code>, <code>www.wechat.com</code>, <code>www.snapchat.com</code>,
+<code>hangouts.google.com</code>, <code>web.whatsapp.com</code>, <code>telegram.org</code>,
+<code>web.telegram.org</code>, and <code>tieba.baidu.com</code>, we are unable to compare
+their testing in Burundi over time.</p><p>The following table shares the relevant OONI measurements for each of
+the blocked social media sites, as well as all other OONI measurements
+collected from the testing of each site in Burundi.</p><table><thead><tr><th>Domain</th><th>Status on 20th May 2020</th><th>OONI measurements</th></tr></thead><tbody><tr><td>www.skype.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.skype.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.skype.com</a></td></tr><tr><td>www.linkedin.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.linkedin.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.linkedin.com</a></td></tr><tr><td>www.youtube.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.youtube.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.youtube.com</a></td></tr><tr><td>www.whatsapp.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.whatsapp.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.whatsapp.com</a></td></tr><tr><td>web.whatsapp.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=web.whatsapp.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=web.whatsapp.com</a></td></tr><tr><td>www.instagram.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.instagram.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.instagram.com</a></td></tr><tr><td>twitter.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=twitter.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=twitter.com</a></td></tr><tr><td>www.facebook.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.facebook.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.facebook.com</a></td></tr><tr><td>www.weibo.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.weibo.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.weibo.com</a></td></tr><tr><td>www.wechat.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.wechat.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.wechat.com</a></td></tr><tr><td>www.pinterest.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.pinterest.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.pinterest.com</a></td></tr><tr><td>www.tumblr.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.tumblr.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.tumblr.com</a></td></tr><tr><td>www.viber.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.viber.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.viber.com</a></td></tr><tr><td>www.snapchat.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.snapchat.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.snapchat.com</a></td></tr><tr><td>hangouts.google.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=hangouts.google.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=hangouts.google.com</a></td></tr><tr><td>fr.yahoo.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=fr.yahoo.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=fr.yahoo.com</a></td></tr><tr><td>telegram.org</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=telegram.org">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=telegram.org</a></td></tr><tr><td>web.telegram.org</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=web.telegram.org">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=web.telegram.org</a></td></tr><tr><td>www.reddit.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.reddit.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.reddit.com</a></td></tr><tr><td>tieba.baidu.com</td><td>Blocked</td><td><a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=tieba.baidu.com">https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=tieba.baidu.com</a></td></tr></tbody></table><h1 id=blocking-of-instant-messaging-apps>Blocking of instant messaging apps</h1><p>Both WhatsApp and Telegram were blocked in Burundi on election day, as
+suggested by relevant OONI measurements.</p><h2 id=whatsapp>WhatsApp</h2><p>On 20th May 2020, the WhatsApp app was
+<a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=whatsapp">measured</a>
+on 3 local networks in Burundi: Econet (AS37336), Viettel Burundi
+(AS327799), and Lacell Burundi (AS327720).</p><p>Starting at 04:06 UTC on 20th May 2020, we observe the <a href=https://explorer.ooni.org/measurement/20200520T040618Z_AS37336_g09tNCucQnJYy6DBcySo95NUJ46ppTJKYCWFToTm0IkyWSg6iN>blocking of the WhatsApp app</a>
+on Econet (AS37336). Similarly to the <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;only=anomalies&amp;domain=web.whatsapp.com">Web Connectivity results</a>
+(discussed previously), we not only observe the blocking of WhatsApp’s
+web interface (web.whatsapp.com), but we also see that it presents the
+<a href=https://explorer.ooni.org/measurement/20200520T040618Z_AS37336_g09tNCucQnJYy6DBcySo95NUJ46ppTJKYCWFToTm0IkyWSg6iN>exact same connection reset errors</a>.
+Furthermore, the measurements show that access to the WhatsApp mobile
+app was blocked as well, since HTTP requests to WhatsApp’s registration
+service consistently resulted in <a href=https://explorer.ooni.org/measurement/20200520T165341Z_AS37336_8GxKiHgXj5NLow9zvLV32lv2U1w8C2jgiHpe8Qivgq075bZwSb>connection reset errors</a>.
+As all <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=whatsapp&amp;probe_asn=AS37336">measurements collected from this network</a>
+on 20th May 2020 consistently show the same failures, they strongly
+suggest that WhatsApp was blocked in Burundi amid the 2020 general
+election.</p><p>We do not observe blocking of the WhatsApp application endpoints when
+doing a DNS resolution for eN.whatsapp.net or attempting to establish a
+TCP connection to it. This is, however, a bit of a limitation in the
+implementation of the <a href=https://ooni.org/nettest/whatsapp>OONI WhatsApp test</a>, as it does not send or
+receive data from the app endpoints, which might be necessary in order
+to trigger the DPI based blocking. The registration service blocking is
+detected because, in that case, the test performs a full HTTPS request
+to it.</p><p>We also observe the blocking of WhatsApp on Viettel Burundi (AS327799)
+in the morning of 20th May 2020. Fewer <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=whatsapp&amp;probe_asn=AS327799">measurements were collected on this network</a>,
+but they show the same connection reset errors for both web.whatsapp.com
+and WhatsApp’s registration service. WhatsApp was <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=whatsapp&amp;probe_asn=AS327720">only tested once on
+Lacell Burundi (AS327720)</a>
+on 20th May 2020 (at 16:56 UTC), and that one measurement shows that the
+app was
+<a href=https://explorer.ooni.org/measurement/20200520T165601Z_AS327720_F14jOSUWWuHIe8yVRr6MMkl3mEhjXgdAfDWn3aEgAWPM4TXBFe>accessible</a>.
+It remains unclear, though, if WhatsApp was blocked on this network
+earlier in the day.</p><h2 id=telegram>Telegram</h2><p>Similarly to the testing of WhatsApp, Telegram was
+<a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=telegram">tested</a>
+on 3 local networks in Burundi: Econet (AS37336), Viettel Burundi
+(AS327799), and Lacell Burundi (AS327720).</p><p>Starting from 09:42 UTC on 20th May 2020, we observe the <a href=https://explorer.ooni.org/measurement/20200520T094236Z_AS37336_b9gSRqT3noTS3T2EwOhyIdzUwlVE4AsHlMKIkeGe8ZWvtlMMZr>blocking of Telegram</a>
+on Econet (AS37336). More specifically, we see that HTTP requests to
+web.telegram.org result in <a href=https://explorer.ooni.org/measurement/20200520T094236Z_AS37336_b9gSRqT3noTS3T2EwOhyIdzUwlVE4AsHlMKIkeGe8ZWvtlMMZr>connection reset errors</a>
+(similarly to the <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=web.telegram.org">Web Connectivity testing of web.telegram.org</a>),
+but HTTP POST requests and TCP connections to the tested Telegram
+endpoints are successful. All other <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=telegram&amp;probe_asn=AS37336">measurements collected from this network</a>
+consistently present the same failures, strongly suggesting that
+Telegram was blocked in Burundi on 20th May 2020. In contrast,
+measurements collected from this network before 20th May 2020 show that
+web.telegram.org was previously
+<a href=https://explorer.ooni.org/measurement/20200517T170013Z_AS37336_6ybbYI1al5rovNrIpwcCLDVfB8Lbrd52F4ydKmBe5jvsQhFw23>accessible</a>.</p><p>Telegram also provided <a href=https://explorer.ooni.org/measurement/20200520T073724Z_AS327799_rsWlgbMcEpk7d3oHaRNrvLv6Z3sJWclxbVuQDtbfKbQSRAQsIR>signs of blocking on Viettel Burundi (AS327799)</a>,
+where we observe that HTTP requests to web.telegram.org result in
+connection reset errors. And similarly to the testing of WhatsApp,
+Telegram was only tested once on Lacell Burundi (AS327720) on 20th May
+2020 (at 16:56 UTC) and that measurement shows that the app was
+<a href=https://explorer.ooni.org/measurement/20200520T165624Z_AS327720_Nx2QH3PwbT8VKhE3GYVocPSmENSVEhbcTmCYaXIUfdJUHSGx8L>accessible</a>.
+It remains unclear, though, if Telegram was blocked on this network
+earlier in the day.</p><h2 id=facebook-messenger>Facebook Messenger</h2><p>While OONI’s Web Connectivity test clearly <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;domain=www.facebook.com">shows the blocking of facebook.com</a>,
+we only observe <a href=https://explorer.ooni.org/measurement/20200520T165651Z_AS327720_FFjn0eg7OzuZs2CvcHZycyIhFONqQdwF4SZJo4qDsInSXt7YUM>Facebook Messenger interference on the Lacell Burundi (AS327720)</a>
+network.</p><p>OONI’s <a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger test</a> is designed to
+measure the reachability of the app through DNS lookups to domains
+associated with Facebook and by attempting to establish TCP connections
+to Facebook’s endpoints. Almost all <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=facebook_messenger">measurements collected from Burundi</a>
+on 20th May 2020 consistently show that the DNS lookups and TCP
+connections were successful.</p><p>This is consistent with the hypothesis that Internet Service Providers
+(ISPs) in Burundi appear to be using DPI technology to implement the
+blocks (as discussed previously), which would therefore not have any
+effect on the DNS lookups or the establishment of a TCP connection.</p><p>As a result, the OONI <a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger test</a> would not be able
+to detect this sort of blocking. But even if the Facebook Messenger app
+was not blocked, the blocking of facebook.com would likely result in the
+interference of the app.</p><p>We have a <a href=https://explorer.ooni.org/measurement/20200520T165651Z_AS327720_FFjn0eg7OzuZs2CvcHZycyIhFONqQdwF4SZJo4qDsInSXt7YUM>single measurement from Lacell Burundi (AS327720)</a>
+which presents signs of DNS based interference. In particular, DNS
+resolutions for hostnames corresponding to Facebook services resolve to
+IP addresses in the 240.0.0.0/8 range, which is an IP space <a href=https://en.wikipedia.org/wiki/IPv4#Special-use_addresses>reserved for future use</a>. We
+notice the same pattern of DNS based blocking for another <a href="https://explorer.ooni.org/measurement/20200520T165011Z_AS327720_hZxfUw75ZzgTwDmSh0kWMHT7XOcgfKdUr2VAvCE7STz93d72r0?input=http%3A%2F%2Fwww.luwaran.net%2F">blocked website on the same network</a>.</p><h1 id=conclusion>Conclusion</h1><p>OONI measurements have been <a href=https://explorer.ooni.org/country/BI>collected from Burundi since 2016</a>, and this is the first time
+that we observe the <a href="https://explorer.ooni.org/search?until=2020-05-21&amp;probe_cc=BI&amp;test_name=web_connectivity&amp;only=anomalies">blocking of social media</a>
+in the country.</p><p>It is quite likely the case that internet censorship on the Econet
+(AS37336) and Viettel Burundi (AS327799) networks is applied through the
+use of some form of Deep Packet Inspection (DPI) technology, as the
+block is not implemented at the DNS or IP level.</p><p>It is also interesting to note that the blocks on the Lacell Burundi
+(AS327720) network were implemented on a DNS level by returning an IP
+address in the DNS answer which is in the “reserved for future use”
+240.0.0.0/8 IP space.</p><p>While the measurements clearly show a censorship change in comparison to
+previous measurements, there is still the need to expand the
+longitudinal measurement coverage in order to detect and confirm
+censorship cases with greater confidence.</p><p>As this study was carried out through the use of <a href=https://ooni.org/install/>free and open source software</a>, <a href=https://ooni.org/nettest/>open methodologies</a>, and <a href=https://ooni.org/data/>open data</a>, it can be expanded upon.</p><p>We thank all OONI Probe users in Burundi who contributed measurements,
+making this study possible.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://twitter.com/OpenObservatory>Twitter</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div></div></div></div></div></div></footer></body></html>
