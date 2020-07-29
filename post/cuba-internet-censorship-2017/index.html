@@ -590,7 +590,7 @@ network location.</p><p><strong>Network measurements</strong></p><p>The types of
 of tests that are run. Specifications about each OONI test can be viewed
 through its <a href=https://github.com/TheTorProject/ooni-spec/tree/master/test-specs>git repository</a>,
 and details about what collected network measurements entail can be
-viewed through <a href=https://explorer.ooni.org/world/>OONI Explorer</a> or <a href=https://measurements.ooni.org/>OONI’s measurement API</a>.</p><p>OONI processes the above types of data with the aim of deriving meaning
+viewed through <a href=https://explorer.ooni.org/world/>OONI Explorer</a> or <a href=https://api.ooni.io/>OONI’s measurement API</a>.</p><p>OONI processes the above types of data with the aim of deriving meaning
 from the collected measurements and, specifically, in an attempt to
 answer the following types of questions:</p><ul><li><p>Which types of OONI tests were run?</p></li><li><p>In which countries were those tests run?</p></li><li><p>In which networks were those tests run?</p></li><li><p>When were tests run?</p></li><li><p>What types of network interference occurred?</p></li><li><p>In which countries did network interference occur?</p></li><li><p>In which networks did network interference occur?</p></li><li><p>When did network interference occur?</p></li><li><p>How did network interference occur?</p></li></ul><p>To answer such questions, OONI’s pipeline is designed to process data
 which is automatically sent to OONI’s measurement collector by default.
@@ -954,7 +954,7 @@ from Cuba. In other words, we found that Google was blocking access to
 Google App Engine from Cuba.</p><p>We later worked around the problem by manually specifying the test
 servers connected to by NDT. This allowed us to avoid using M-Lab
 services which rely on Google App Engine (which was blocked), and to
-directly connect to test servers instead.</p><h2 id=acknowledgement-of-limitations>Acknowledgement of limitations</h2><p>The findings of this study present various limitations.</p><p>While <a href=https://measurements.ooni.org/files/by_country/CU>OONI network measurements</a>
+directly connect to test servers instead.</p><h2 id=acknowledgement-of-limitations>Acknowledgement of limitations</h2><p>The findings of this study present various limitations.</p><p>While <a href=https://api.ooni.io/files/by_country/CU>OONI network measurements</a>
 have been collected from Cuba since January 2016, this study only
 analyzes recent network measurements collected between 29th May 2017 to
 10th June 2017. As such, censorship events which may have occurred

@@ -51,7 +51,7 @@ AS59587, AS59628, AS60054, AS61173, AS61248, AS8571 (60 ISPs in total)</p><p><st
 <a href=https://ooni.org/nettest/whatsapp/>WhatsApp test</a>,
 <a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger test</a>,
 <a href=https://ooni.org/nettest/telegram/>Telegram test</a></p><p><strong>Testing period:</strong> 22nd September 2014 to 4th September 2017 (3 years)</p><p><strong>Censorship method:</strong> DNS injection of blockpages, HTTP transparent
-proxies serving blockpages</p><h1 id=key-findings>Key Findings</h1><p>Thousands of <a href=https://measurements.ooni.org/files/by_country/IR>OONI Probe network measurements</a>
+proxies serving blockpages</p><h1 id=key-findings>Key Findings</h1><p>Thousands of <a href=https://api.ooni.io/files/by_country/IR>OONI Probe network measurements</a>
 collected from 60 local networks across Iran over the last three years
 <strong>have confirmed the blocking of 886 domains</strong> (and <a href=/post/iran/ir-blocked-urls.csv>1,019 URLs</a> in
 total), listed <a href=/post/iran/ir-blocked-domains.csv>here</a>.</p><p>The breadth and scale of internet censorship in Iran is pervasive.
@@ -79,7 +79,7 @@ with <a href=https://asl19.org/>ASL19</a>, <a href=https://www.article19.org/>AR
 the analysis of <a href=https://explorer.ooni.org/country/IR>thousands of network measurements</a>
 collected from 60 networks in Iran over the last three years.</p><p>The aim of this study is to increase the transparency of information
 controls in Iran through the interpretation of empirical
-<a href=https://measurements.ooni.org/files/by_country/IR>data</a>.</p><p>The following sections of this report provide information about Iran’s
+<a href=https://api.ooni.io/files/by_country/IR>data</a>.</p><p>The following sections of this report provide information about Iran’s
 network landscape and internet use, its legal environment with respect
 to freedom of expression, as well as about cases of censorship that have
 previously been reported in the country. The remainder of the report
@@ -571,7 +571,7 @@ location.</p><p><strong>Network measurements</strong></p><p>The types of network
 of tests that are run. Specifications about each OONI test can be viewed
 through its <a href=https://github.com/TheTorProject/ooni-spec/tree/master/test-specs>git repository</a>,
 and collected network measurements can be viewed through <a href=https://explorer.ooni.org/world/>OONI Explorer</a> or through
-OONI’s <a href=https://measurements.ooni.org/>measurement API</a>.</p><p>OONI processes reports with the aim of deriving meaning from data and,
+OONI’s <a href=https://api.ooni.io/>measurement API</a>.</p><p>OONI processes reports with the aim of deriving meaning from data and,
 specifically, to answer the following types of questions:</p><ul><li><p>Which types of OONI tests were run?</p></li><li><p>In which countries were those tests run?</p></li><li><p>In which networks were those tests run?</p></li><li><p>When were tests run?</p></li><li><p>What types of network interference occurred?</p></li><li><p>In which countries did network interference occur?</p></li><li><p>In which networks did network interference occur?</p></li><li><p>When did network interference occur?</p></li><li><p>How did network interference occur?</p></li></ul><p>To answer these questions, OONI’s pipeline is designed to process data
 which is automatically sent to OONI’s measurement collector. The initial
 processing of network measurements enables the following:</p><ul><li><p>Attributing measurements to a specific country.</p></li><li><p>Attributing measurements to a specific network within a country.</p></li><li><p>Distinguishing measurements based on the specific tests that were
@@ -608,7 +608,7 @@ of censorship or traffic manipulation, as such systems are often used in
 networks for caching purposes.</p><p>Upon collection of more network measurements, OONI continues to develop
 its data analysis heuristics, based on which it attempts to accurately
 identify censorship events.</p><h1 id=findings>Findings</h1><p>Thousands of network measurements
-<a href=https://measurements.ooni.org/files/by_country/IR>collected</a>
+<a href=https://api.ooni.io/files/by_country/IR>collected</a>
 from 60 local networks over the last three years reveal <em>pervasive</em>
 levels of internet censorship in Iran.</p><p>We confirm the <strong>blocking of 886 unique domains</strong> (and of 1,019 URLs in
 total) due to the presence of block pages. Some Iranian ISPs served
@@ -662,7 +662,7 @@ are not accessible in Iran because the sites are blocking IP addresses
 originating from Iran. <a href="https://explorer.ooni.org/measurement/20170612T031742Z_AS16322_Gg0hUk9p5DTeHdBDj0jy7vywseo6RK4JgfPt4CtRgHEgZvKsHl?input=https:%2F%2Fwww.virustotal.com">Virus Total was also found to be inaccessible</a>,
 because it uses Google App Engine, access to which is blocked by Google.
 These censorship cases appear to be due to U.S. export laws.</p><p>Below, we provide more information on <em>some</em> of the findings of this
-study. We encourage researchers to explore the <a href=https://measurements.ooni.org/files/by_country/IR>published data</a> for
+study. We encourage researchers to explore the <a href=https://api.ooni.io/files/by_country/IR>published data</a> for
 additional analysis on interesting findings that we have not highlighted
 in the following sections.</p><h2 id=blocked-domains-and-tools>Blocked domains and tools</h2><p>The levels of internet censorship in Iran are pervasive since a variety
 of different types of sites were <a href=/post/iran/ir-blocked-urls.csv>found to be blocked</a>, expanding beyond
@@ -1204,7 +1204,7 @@ Google from accessing GAE, rendering virustotal.com inaccessible in the
 country. This has been <a href=https://groups.google.com/forum/#!topic/google-appengine/ZPhRvtcf8l0>known since (at least) 2010</a>
 and, similarly to Norton and GraphicRiver, Google blocks access to GAE
 from Iran in compliance with U.S. export laws.</p><h2 id=acknowledgement-of-limitations>Acknowledgement of limitations</h2><p>The findings of this study present various limitations.</p><p>The first limitation is associated to the testing period. This study
-includes an analysis of <a href=https://measurements.ooni.org/files/by_country/IR>thousands of network measurements</a>
+includes an analysis of <a href=https://api.ooni.io/files/by_country/IR>thousands of network measurements</a>
 that were collected from 60 vantage points in Iran over the last three
 years, between 22nd September 2014 to 4th September 2017. Censorship
 events that may have occurred before and/or after the testing period are
@@ -1226,7 +1226,7 @@ consistently across all networks. Stable measurements were collected
 from certain vantage points throughout the testing period, but less
 stable measurements were also collected from a number of other vantage
 points.</p><h1 id=conclusion>Conclusion</h1><p>This study reveals and confirms censorship events in Iran through the
-analysis of <a href=https://measurements.ooni.org/files/by_country/IR>thousands of network measurements</a>
+analysis of <a href=https://api.ooni.io/files/by_country/IR>thousands of network measurements</a>
 that were collected from 60 local vantage points in Iran over the last
 three years. The network measurement data clearly shows how ISPs blocked
 sites and services and can therefore serve as <strong>evidence of information

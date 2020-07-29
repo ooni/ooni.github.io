@@ -52,7 +52,7 @@ TELECOM Public Company Ldt. (AS131090), UIH/ BB Broadband (AS38794), TRUE
 INTERNET Co., Ldt. (AS7470), SBN-ISP/AWN-ISP, maintained by Advanced Wireless
 Network Company Limited (AS45458), DTAC Broadband (AS132032), The Communication
 Authority of Thailand, CAT (AS9931), TOT Public Company Limited (AS56120).</p><p><strong>OONI tests:</strong> Web Connectivity, HTTP Invalid Request Line, HTTP Header Field
-Manipulation, Vanilla Tor, WhatsApp, Facebook Messenger.</p><p><strong>Testing period:</strong> 6th November 2016 - 27th February 2017.</p><p><strong>Censorship method:</strong> DNS hijacking, HTTP transparent proxies (delivering block pages).</p><h1 id=key-findings>Key Findings</h1><p>New <a href=https://measurements.ooni.org/files/by_country/TH>OONI data</a>
+Manipulation, Vanilla Tor, WhatsApp, Facebook Messenger.</p><p><strong>Testing period:</strong> 6th November 2016 - 27th February 2017.</p><p><strong>Censorship method:</strong> DNS hijacking, HTTP transparent proxies (delivering block pages).</p><h1 id=key-findings>Key Findings</h1><p>New <a href=https://api.ooni.io/files/by_country/TH>OONI data</a>
 reveals the blocking of <strong>13 websites</strong> in Thailand across 6 different ISPs, between
 6th November 2016 and 27th February 2017. Thai ISPs appear to primarily be
 implementing censorship through DNS hijacking and through the use of middle boxes (HTTP transparent
@@ -60,7 +60,7 @@ proxies) which serve block pages.</p><p>The blocked sites include:</p><ul><li><p
 were run, service providers in Thailand may be in a position to filter online
 content at their own discretion.</p><p>WhatsApp, Facebook Messenger, and the <a href=https://www.torproject.org/>Tor network</a>
 appear to have been
-<a href=https://measurements.ooni.org/files/by_country/TH>accessible</a>
+<a href=https://api.ooni.io/files/by_country/TH>accessible</a>
 across all tested networks throughout the testing period. Previously blocked
 sites, such as prachatai.com, were also found to be <a href="https://explorer.ooni.org/measurement/20170223T005210Z_AS45758_CCQCtyEmEwYl3Q2TikmZVaLlzr3Y4XpTjy4wyWMsQfSB3d90yT?input=http:%2F%2Fprachatai.com%2Fenglish%2F">accessible</a>.</p><h1 id=introduction>Introduction</h1><p>Multiple censorship events in Thailand have been reported over the last decade.
 More than 10,000 URLs were <a href=https://thainetizen.org/wp-content/uploads/2013/11/netizen-report-2011-en.pdf>reportedly blocked</a> in 2010 on the grounds of
@@ -481,7 +481,7 @@ based on a user’s network location.</p><p><strong>Network measurements</strong
 tests that are run. Specifications about each OONI test can be viewed through
 its <a href=https://github.com/TheTorProject/ooni-spec/tree/master/test-specs>git repository</a>, and details about what collected network measurements entail can
 be viewed through <a href=https://explorer.ooni.org/world/>OONI Explorer</a>
-or through <a href=https://measurements.ooni.org/>OONI’s measurement API</a>.</p><p>OONI processes the above types of data with the aim of deriving meaning from the
+or through <a href=https://api.ooni.io/>OONI’s measurement API</a>.</p><p>OONI processes the above types of data with the aim of deriving meaning from the
 collected measurements and, specifically, in an attempt to answer the following
 types of questions:</p><ul><li><p>Which types of OONI tests were run?</p></li><li><p>In which countries were those tests run?</p></li><li><p>In which networks were those tests run?</p></li><li><p>When were tests run?</p></li><li><p>What types of network interference occurred?</p></li><li><p>In which countries did network interference occur?</p></li><li><p>In which networks did network interference occur?</p></li><li><p>When did network interference occur?</p></li><li><p>How did network interference occur?</p></li></ul><p>To answer such questions, OONI’s pipeline is designed to process data which is
 automatically sent to OONI’s measurement collector by default. The initial
@@ -519,14 +519,14 @@ censorship events.</p><h2 id=findings>Findings</h2><p>As part of this study, <a 
 through <a href=https://github.com/TheTorProject/ooni-probe>OONI Probe software tests</a>
 performed across 16 different local vantage points in Thailand between 6th
 November 2016 to 27th February 2017.</p><p>Upon analysis of the collected data, the
-<a href=https://measurements.ooni.org/files/by_country/TH>findings</a>
+<a href=https://api.ooni.io/files/by_country/TH>findings</a>
 illustrate that ISPs in Thailand are primarily implementing censorship through DNS hijacking and through
 the use of middle boxes (HTTP transparent proxies) which serve block pages.
 OONI’s <a href=https://ooni.org/nettest/http-invalid-request-line/>HTTP invalid request line test</a>, in particular,
-<a href=https://measurements.ooni.org/files/by_country/TH>revealed</a> the
+<a href=https://api.ooni.io/files/by_country/TH>revealed</a> the
 presence of middle boxes in many networks, which intercepted the HTTP requests
 that were sent to echo servers. OONI’s <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity test</a>, on the other hand,
-<a href=https://measurements.ooni.org/files/by_country/TH>revealed</a> that
+<a href=https://api.ooni.io/files/by_country/TH>revealed</a> that
 many ISPs served block pages for <em>13 different sites</em>.</p><p>The types of sites that were found to be blocked as part of this study include:</p><ul><li><p>News media</p></li><li><p>Anonymity and censorship circumvention tools</p></li><li><p>Pornography</p></li></ul><p>The table below illustrates all of the sites that we confirmed to be blocked
 across ISPs as part of our testing and data analysis.</p><table><thead><tr><th>Internet Service Providers (ISPs)</th><th>Blocked websites</th><th>Categories</th><th>Date of blocking</th></tr></thead><tbody><tr><td>DTAC (AS24378)</td><td><code>http://www.nypost.com</code></td><td>News media</td><td>2/23/2017</td></tr><tr><td>DTAC (AS24378)</td><td><code>http://xhamster.com</code></td><td>Pornography</td><td>2/10/2017</td></tr><tr><td>TOT 3BB (AS23969)</td><td><code>http://www.dailymail.co.uk</code></td><td>News media</td><td>2/20/2017</td></tr><tr><td>TOT 3BB (AS23969)</td><td><code>http://www.hotspotshield.com</code></td><td>Anonymity and censorship circumvention</td><td>2/20/2017</td></tr><tr><td>Realmove Company Limited (AS132061)</td><td><code>http://www.wikileaks.org</code></td><td>News media</td><td>2/14/2017</td></tr><tr><td>Realmove Company Limited (AS132061)</td><td><code>http://anonymouse.org</code></td><td>Anonymity and censorship circumvention</td><td>2/14/2017</td></tr><tr><td>Triple-T Internet Co., Ldt (AS45758)</td><td><code>http://ultrasurf.us</code></td><td>Anonymity and censorship circumvention</td><td>2/22/2017</td></tr><tr><td>Triple-T Internet Co., Ldt (AS45758)</td><td><code>http://pridetube.com</code></td><td>Pornography</td><td>2/14/2017</td></tr><tr><td>Triple-T Internet Co., Ldt (AS45758)</td><td><code>http://www.naughty.com</code></td><td>Pornography</td><td>2/22/2017</td></tr><tr><td>Triple-T Internet Co., Ldt (AS45758)</td><td><code>http://www.livejasmin.com</code></td><td>Pornography</td><td>2/24/2017</td></tr><tr><td>True Internet CO., LDT (AS17552)</td><td><code>http://redtube.com</code></td><td>Pornography</td><td>2/22/2017</td></tr><tr><td>True Internet CO., LDT (AS17552)</td><td><code>http://xhamster.com</code></td><td>Pornography</td><td>2/16/2017</td></tr><tr><td>JasTel Network International Gateway (AS45629)</td><td><code>http://youjizz.com</code></td><td>Pornography</td><td>2/14/2017</td></tr></tbody></table><p>Following a meeting in early 2015 between Thailand’s National Broadcasting and
 Telecommunications Commission (NBTC), various Internet Service Providers (ISPs),
@@ -540,7 +540,7 @@ by one provider (Realmove Company Limited). This indicates that ISPs were
 probably not ordered to block WikiLeaks on the grounds of “national security”,
 but rather that one provider likely chose to block the site at its own
 discretion.</p><p>Anonymouse.org was <a href="https://explorer.ooni.org/measurement/20170214T071323Z_AS132061_NAhYzN5e108gx29cwCcF90v3hyepWKTMYZO0G6G37rUQ3JVNyu?input=http:%2F%2Fanonymouse.org">found to be blocked</a> twice, while the rest of the sites in
-the table above were <a href=https://measurements.ooni.org/files/by_country/TH>found to be blocked</a> only
+the table above were <a href=https://api.ooni.io/files/by_country/TH>found to be blocked</a> only
 once. However, as the measurements were run quite sporadically across different
 networks, it remains quite unclear whether and to what extent some of these
 sites remain blocked.</p><p>On a positive note, OONI’s
@@ -560,7 +560,7 @@ Wikileaks.org was subsequently
 <a href=http://www.telegraph.co.uk/news/worldnews/asia/thailand/7951959/Thailand-blocks-Wikileaks-website.html>blocked</a> in Thailand less than two years later
 under the 2005 emergency decree.</p><p>Our findings show that while wikileaks.org was accessible across 15 ISPs during
 our testing, it was recently found to be <a href="https://explorer.ooni.org/measurement/20170214T023413Z_AS132061_uOj4NMFvbADZII8Sp2cmuZbgnozyuePra6Dyp5i16tQRblJYDW?input=http:%2F%2Fwww.wikileaks.org">blocked</a> in February 2017 by Realmove Company Limited.</p><h3 id=anonymity-and-censorship-circumvention>Anonymity and censorship circumvention</h3><p>On a positive note, the <a href=https://www.torproject.org/>Tor network</a> appeared to
-be accessible across all ISPs in Thailand where <a href=https://ooni.org/nettest/vanilla-tor/>OONI tests</a> were run as part of this study.</p><p>Other sites, however, for anonymity and censorship circumvention were <a href=https://measurements.ooni.org/files/by_country/TH>found to be blocked</a>, as
+be accessible across all ISPs in Thailand where <a href=https://ooni.org/nettest/vanilla-tor/>OONI tests</a> were run as part of this study.</p><p>Other sites, however, for anonymity and censorship circumvention were <a href=https://api.ooni.io/files/by_country/TH>found to be blocked</a>, as
 illustrated in the table below.</p><table><thead><tr><th>Internet Service Providers (ISPs)</th><th>Blocked anonymity &amp; circumvention sites</th><th>Date of blocking</th></tr></thead><tbody><tr><td>TOT 3BB (AS23969)</td><td><code>http://www.hotspotshield.com</code></td><td>2/20/2017</td></tr><tr><td>Realmove Company Limited (AS132061)</td><td><code>http://anonymouse.org</code></td><td>2/14/2017</td></tr><tr><td>Triple-T Internet Co., Ldt (AS45758)</td><td><code>http://ultrasurf.us</code></td><td>2/22/2017</td></tr></tbody></table><p>HotSpot Shield is a free Virtual Private Network (VPN) that enables its users to
 enhance their online privacy and to circumvent online censorship. The testing of
 hotspotshield.com showed that TOT 3BB <a href="https://explorer.ooni.org/measurement/20170220T132942Z_AS23969_BwA1Bn7QQCigePMY4Fk9N7UvyyYcudRfR97uA2yBQLJMIZKqwO?input=http:%2F%2Fwww.hotspotshield.com">served a block page</a> in February
@@ -570,7 +570,7 @@ pages.</p><h3 id=pornography>Pornography</h3><p>Thailand’s <a href=http://prac
 pornography. As part of our testing, we found the following pornographic sites
 to be blocked in Thailand.</p><table><thead><tr><th>Internet Service Providers (ISPs)</th><th>Blocked porn sites</th><th>Date of blocking</th></tr></thead><tbody><tr><td>Triple-T Internet Co., Ldt (AS45758)</td><td><code>http://pridetube.com</code></td><td>2/14/2017</td></tr><tr><td>Triple-T Internet Co., Ldt (AS45758)</td><td><code>http://www.naughty.com</code></td><td>2/22/2017</td></tr><tr><td>Triple-T Internet Co., Ldt (AS45758)</td><td><code>http://www.livejasmin.com</code></td><td>2/24/2017</td></tr><tr><td>True Internet CO., LDT (AS17552)</td><td><code>http://redtube.com</code></td><td>2/22/2017</td></tr><tr><td>True Internet CO., LDT (AS17552)</td><td><code>http://xhamster.com</code></td><td>2/16/2017</td></tr><tr><td>JasTel Network International Gateway (AS45629)</td><td><code>http://youjizz.com</code></td><td>2/14/2017</td></tr><tr><td>DTAC (AS24378)</td><td><code>http://xhamster.com</code></td><td>2/10/201</td></tr></tbody></table><h2 id=acknowledgement-of-limitations>Acknowledgement of limitations</h2><p>The findings of this study present various limitations and do not necessarily
 reflect a comprehensive view of internet censorship in Thailand.</p><p>The first limitation is associated with the testing period. While OONI network
-measurements have been <a href=https://measurements.ooni.org/files/by_country/TH>collected from Thailand since 2014</a> and continue
+measurements have been <a href=https://api.ooni.io/files/by_country/TH>collected from Thailand since 2014</a> and continue
 to be collected on the day of the publication of this report, this study only
 takes into account and analyzes network measurements that were collected between
 6th November 2016 and 27th February 2017. This study is limited to this time
@@ -607,8 +607,8 @@ messaging apps, and censorship circumvention tools were blocked. Some of the
 examine whether systems (“middle boxes”) that could be responsible for
 censorship, surveillance, and traffic manipulation were present in the tested
 networks. Overall, the accessibility of <a href=https://github.com/citizenlab/test-lists/tree/master/lists>1,525 sites</a> was tested,
-and the <a href=https://measurements.ooni.org/files/by_country/TH>network measurement data</a> collected
-between 6th November 2016 to 27th February 2017 was analyzed.</p><p>The key <a href=https://measurements.ooni.org/files/by_country/TH>findings</a>
+and the <a href=https://api.ooni.io/files/by_country/TH>network measurement data</a> collected
+between 6th November 2016 to 27th February 2017 was analyzed.</p><p>The key <a href=https://api.ooni.io/files/by_country/TH>findings</a>
 of this study show that Thai ISPs appear to primarily be implementing censorship
 through DNS hijacking and through the use of middle boxes (HTTP transparent proxies) which serve block
 pages, while in fewer cases, ISPs appear to be implementing DNS-based censorship
@@ -624,12 +624,12 @@ service providers may be filtering content based on broad government orders to
 block content that is deemed to violate lese majeste rules. On a positive note,
 WhatsApp, Facebook Messenger, and the <a href=https://www.torproject.org/>Tor network</a>
 appeared to be
-<a href=https://measurements.ooni.org/files/by_country/TH>accessible</a>
+<a href=https://api.ooni.io/files/by_country/TH>accessible</a>
 across 16 networks throughout the testing period.</p><p>Given the limited transparency around information controls in Thailand and the
 potential implications they may have on human rights, we encourage ISPs to
 disclose their motivation and justification behind the blocking of sites and
 services. We also encourage public debate based on the
-<a href=https://measurements.ooni.org/files/by_country/TH>findings</a> of this
+<a href=https://api.ooni.io/files/by_country/TH>findings</a> of this
 study around the necessity and proportionality of information controls.</p><h1 id=acknowledgements>Acknowledgements</h1><p>We thank the <a href=https://www.opentech.fund/>Open Technology Fund (OTF)</a> and
 <a href=https://www.accessnow.org/>Access Now</a> for funding this research. We also
 thank all the anonymous and brave volunteers in Thailand who have run and
