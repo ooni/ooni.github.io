@@ -1,10 +1,10 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Investigating TLS blocking in India | OONI</title><link rel=canonical href=https://ooni.org/post/2020-tls-blocking-india/><meta name=description content="We ran experimental TLS blocking measurements in India"><meta property=og:title content="Investigating TLS blocking in India"><meta property=og:description content="We ran experimental TLS blocking measurements in India"><meta property=og:type content=article><meta property=og:url content=https://ooni.org/post/2020-tls-blocking-india/><meta property=og:image content=https://ooni.org/post/2020-tls-blocking-india/images/figure1.png><meta property=article:published_time content=2020-07-08T00:00:00+00:00><meta property=article:modified_time content=2020-07-08T00:00:00+00:00><meta name=twitter:card content=summary_large_image><meta name=twitter:image content=https://ooni.org/post/2020-tls-blocking-india/images/figure1.png><meta name=twitter:title content="Investigating TLS blocking in India"><meta name=twitter:description content="We ran experimental TLS blocking measurements in India"><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4"><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
-                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>Investigating TLS blocking in India</h1><div class=byline><span class=author>Simone Basso (OONI), Gurshabad Grover and Kushagra Singh (Centre for Internet and Society, India)</span>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Investigating TLS blocking in India | OONI</title><link rel=canonical href=https://ooni.org/post/2020-tls-blocking-india/><meta name=description content="We ran experimental TLS blocking measurements in India"><meta property="og:title" content="Investigating TLS blocking in India"><meta property="og:description" content="We ran experimental TLS blocking measurements in India"><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.org/post/2020-tls-blocking-india/"><meta property="og:image" content="https://ooni.org/post/2020-tls-blocking-india/images/figure1.png"><meta property="article:published_time" content="2020-07-08T00:00:00+00:00"><meta property="article:modified_time" content="2020-07-08T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.org/post/2020-tls-blocking-india/images/figure1.png"><meta name=twitter:title content="Investigating TLS blocking in India"><meta name=twitter:description content="We ran experimental TLS blocking measurements in India"><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.eea8b4fc7fc3a0fb28a6ae9bf723bde9f4ee7a602514aacd85ba56e6fbaea756.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4"><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+/images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>Investigating TLS blocking in India</h1><div class=byline><span class=author>Simone Basso (OONI), Gurshabad Grover and Kushagra Singh (Centre for Internet and Society, India)</span>
 <span class=date>2020-07-08</span></div><p>This report investigates Transport Layer Security
 (<a href=https://en.wikipedia.org/wiki/Transport_Layer_Security>TLS</a>)-based
 blocking in India. <a href=https://cis-india.org/internet-governance/blog/reliance-jio-is-using-sni-inspection-to-block-websites>Previous
 research</a>
-by the <a href=https://cis-india.org/>Centre for Internet &amp;
+by the <a href=https://cis-india.org/>Centre for Internet &
 Society, India</a> (CIS) has already
 exposed TLS blocking based on the value of the <a href=https://en.wikipedia.org/wiki/Server_Name_Indication>SNI
 field</a>.
@@ -37,7 +37,7 @@ several vantage points and control measurements. Yet, in Reliance Jio,
 we see cases where the connections to such endpoints complete
 successfully and a timeout occurs during the TLS handshake. We believe
 this is caused by some kind of proxy that terminates the TCP connection
-and performs the TLS handshake.</p><h2 id=index>Index</h2><p><a href=#tls-blocking-measurements>TLS Blocking Measurements</a></p><p><a href=#web-censorship-in-india>Web Censorship in India</a></p><p><a href=#aladdin-our-experimental-implementation>Aladdin: our Experimental Implementation</a></p><p><a href=#description-of-the-experiments>Description of the Experiments</a></p><p><a href=#results-analysis-discussion>Results Analysis &amp; Discussion</a></p><p><a href=#conclusion-future-work>Conclusion &amp; Future Work</a></p><h2 id=tls-blocking-measurements>TLS Blocking Measurements</h2><p>Transport Layer Security
+and performs the TLS handshake.</p><h2 id=index>Index</h2><p><a href=#tls-blocking-measurements>TLS Blocking Measurements</a></p><p><a href=#web-censorship-in-india>Web Censorship in India</a></p><p><a href=#aladdin-our-experimental-implementation>Aladdin: our Experimental Implementation</a></p><p><a href=#description-of-the-experiments>Description of the Experiments</a></p><p><a href=#results-analysis-discussion>Results Analysis & Discussion</a></p><p><a href=#conclusion-future-work>Conclusion & Future Work</a></p><h2 id=tls-blocking-measurements>TLS Blocking Measurements</h2><p>Transport Layer Security
 (<a href=https://tools.ietf.org/html/rfc5246>TLS</a>) is a
 cryptographic protocol that provides communication with end-to-end
 security with guarantees of confidentiality and authenticity, which is
@@ -177,7 +177,7 @@ channels</a>.</p><p>Because Aladdin is based on the <a href=https://github.com/o
 Engine</a>, all
 experiment results are submitted to the OONI collector and
 <a href=https://ooni.org/data/>automatically published</a> as part
-of OONI S3 buckets.</p><h3 id=sni-check>sni_check</h3><p>The first experiment we discuss is called <code>sni_check</code>. It is similar to
+of OONI S3 buckets.</p><h3 id=sni_check>sni_check</h3><p>The first experiment we discuss is called <code>sni_check</code>. It is similar to
 <a href=https://github.com/ooni/spec/blob/master/nettests/ts-024-sni-blocking.md>the OONI experiment called
 sni_blocking</a>,
 except that sni_check does not check whether the helper website being
@@ -200,7 +200,7 @@ should emit the <code>ssl_invalid_hostname</code> error indicating that the serv
 returned a certificate that is not valid for the requested SNI. In such
 a case, we can inspect the returned certificate to have further
 confidence that we are indeed speaking with the legitimate server that
-handles the <code>example.org</code> domain.</p><h3 id=dns-check>dns_check</h3><p>The second experiment is called <code>dns_check</code>. It is conceptually similar
+handles the <code>example.org</code> domain.</p><h3 id=dns_check>dns_check</h3><p>The second experiment is called <code>dns_check</code>. It is conceptually similar
 to <a href=https://github.com/ooni/spec/blob/master/nettests/ts-002-dns-consistency.md>the dns_consistency OONI
 experiment</a>.
 The following diagram illustrates the <code>dns_check</code> experiment.</p><p><img src=images/figure2.png alt="Description of the dns\_check experiment"></p><p><strong>Figure 2</strong>: description of the dns_check experiment.</p><p>We basically resolve the same domain (e.g. <code>blocked.com</code>) using the system
@@ -219,7 +219,7 @@ private addresses (e.g. <code>10.0.0.1</code>), the corresponding error is
 return two lists: a list of IP addresses for the domain obtained using
 the system resolver and a similar list obtained instead using the
 trusted DoH resolver. As we will see in the following sections, we will
-then use the IP addresses from both lists to perform further checks.</p><h3 id=system-resolver-validation>system_resolver_validation</h3><p>The third experiment we discuss is called <code>system_resolver_validation</code>.
+then use the IP addresses from both lists to perform further checks.</p><h3 id=system_resolver_validation>system_resolver_validation</h3><p>The third experiment we discuss is called <code>system_resolver_validation</code>.
 This experiment is roughly a subset of the <a href=https://ooni.org/nettest/web-connectivity/>OONI&rsquo;s Web Connectivity
 experiment</a>.</p><p><img src=images/figure3.png alt="Description of the system\_resolver\_validation experiment"></p><p><strong>Figure 3</strong>: description of the system_resolver_validation experiment.</p><p>It is called <code>system_resolver_validation</code> because we use the IP
 addresses collected by the system resolver in the previous step to
@@ -236,7 +236,7 @@ likely interference. All the failures described previously may occur
 during the handshake. It is worth noting that, in this context,
 <code>ssl_invalid_hostname</code> is an error, because we should be able to
 establish a TLS connection with the domain, given that we are attempting
-to speak to a web server serving such a domain.</p><h3 id=doh-resolver-validation>doh_resolver_validation</h3><p>The fourth experiment we discuss is called <code>doh_resolver_validation</code>.
+to speak to a web server serving such a domain.</p><h3 id=doh_resolver_validation>doh_resolver_validation</h3><p>The fourth experiment we discuss is called <code>doh_resolver_validation</code>.
 This experiment is basically the same as the previous one, except that
 here we are using the results returned by the DoH resolver as opposed to
 the results returned by the system resolver. This experiment gives us an
@@ -244,7 +244,7 @@ opportunity to run our test with a valid IP for the domain, which is
 useful for cases wherein the system resolver returns an error, or a list
 of IPs not related to the domain. This experiment can therefore help us
 measure SNI-based blocking when the test network is also blocking
-websites using DNS poisoning or injections.</p><h3 id=psiphon-check>psiphon_check</h3><p>The fifth experiment we discuss is called <code>psiphon_check</code>. This
+websites using DNS poisoning or injections.</p><h3 id=psiphon_check>psiphon_check</h3><p>The fifth experiment we discuss is called <code>psiphon_check</code>. This
 experiment uses <a href=https://en.wikipedia.org/wiki/Psiphon>the Psiphon
 network</a> to fetch
 the input domain over HTTPS. It consists of the following two steps.</p><p>The first step establishes an encrypted tunnel to one of the thousands
@@ -290,7 +290,7 @@ attempted to measure four domains for TLS blocking: <code>facebook.com</code> an
 <code>google.com</code> (both accessible in India via all ISPs); and <code>collegehumor.com</code>
 and <code>pornhub.com</code> (both usually blocked by Indian ISPs). We ran
 experiments on May 11st, 12nd, 14th, and 19th, 2020 using
-<a href=https://github.com/bassosimone/aladdin/tree/547139068147a9fdc89045988d00ef869ddf5c86>github.com/bassosimone/aladdin\@5471390</a>.
+<a href=https://github.com/bassosimone/aladdin/tree/547139068147a9fdc89045988d00ef869ddf5c86>github.com/bassosimone/aladdin@5471390</a>.
 We also ran follow-up experiments on June 22nd and 23rd, 2020.</p><p>According to the latest Telecom Regulatory Authority of India&rsquo;s
 <a href=https://trai.gov.in/sites/default/files/PIR_08012020_0.pdf>report</a>
 (Table 1.30), the three ISPs we tested together constitute 74.5% of the
@@ -300,12 +300,12 @@ Reliance Jio and Bharti Airtel were run via mobile internet connections.
 As ACT Fibernet does not provide a retail mobile connection, we used a
 fixed internet connection to run tests for their network. As far as this
 report is concerned, we assume that ISPs do not alter their behaviour
-based on the type of connection (mobile or fixed).</p><h2 id=results-analysis-discussion>Results Analysis &amp; Discussion</h2><p>This section describes the results of all the experiments we performed.
+based on the type of connection (mobile or fixed).</p><h2 id=results-analysis--discussion>Results Analysis & Discussion</h2><p>This section describes the results of all the experiments we performed.
 We <a href=https://gist.github.com/bassosimone/d354508447e9a1d0fc2d6857767cdca6#file-fetch_measurements-sh>fetched measurements from OONI&rsquo;s
 S3</a>.
 For brevity, we are going to include only the results for
 <code>collegehumor.com</code> and <code>pornhub.com</code>, since <code>facebook.com</code> and <code>google.com</code> were
-not blocked in any of the experiments that we ran.</p><h3 id=sni-check-1>sni_check</h3><p>The following table shows the sni_check experiment results. In this
+not blocked in any of the experiments that we ran.</p><h3 id=sni_check-1>sni_check</h3><p>The following table shows the sni_check experiment results. In this
 experiment we performed a TLS handshake with the web server serving
 <code>example.org</code> using the SNI indicated in the table, to detect cases
 where the presence of this SNI was sufficient to trigger blocking. The
@@ -315,52 +315,52 @@ using specific SNIs.</p><p>As mentioned above, the <code>eof_error</code> result
 was closed during the TLS handshake, likely because some middlebox
 rejected the provided SNI. The following JSON snippet shows a
 <a href=https://explorer.ooni.org/measurement/20200519T080507Z_AS45609_RnakXZPQFjEaLZDn64vWuoslK8KVtfhLHJkywOCzRsYzK78RLk>measurement</a>
-for collegehumor.com from Bharti Airtel:</p><pre><code class=language-JSON>{
-  &quot;test_keys&quot;: {
-    &quot;network_events&quot;: [
+for collegehumor.com from Bharti Airtel:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON>{
+  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
+    <span style=color:#f92672>&#34;network_events&#34;</span>: [
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;connect&quot;,
-        &quot;address&quot;: &quot;93.184.216.34:443&quot;,        // (1)
-        &quot;t&quot;: 0.3199562,
-        &quot;proto&quot;: &quot;tcp&quot;
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
+        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;93.184.216.34:443&#34;</span>,        <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(1)</span>
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.3199562</span>,
+        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
       },
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;tls_handshake_start&quot;,    // (2)
-        &quot;t&quot;: 0.3199999
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_start&#34;</span>,    <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(2)</span>
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.3199999</span>
       },
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;write&quot;,                  // (3)
-        &quot;num_bytes&quot;: 286,
-        &quot;t&quot;: 0.3213545
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;write&#34;</span>,                  <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(3)</span>
+        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>286</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.3213545</span>
       },
       {
-        &quot;failure&quot;: &quot;eof_error&quot;,                // (4)
-        &quot;operation&quot;: &quot;read&quot;,
-        &quot;t&quot;: 0.382416
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,                <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(4)</span>
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;read&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.382416</span>
       },
       {
-        &quot;failure&quot;: &quot;eof_error&quot;,
-        &quot;operation&quot;: &quot;tls_handshake_done&quot;,
-        &quot;t&quot;: 0.383602
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_done&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.383602</span>
       }
     ]
   },
-  &quot;resolver_asn&quot;: &quot;AS9498&quot;,
-  &quot;probe_cc&quot;: &quot;IN&quot;,
-  &quot;probe_network_name&quot;: &quot;Bharti Airtel Ltd. AS for GPRS Service&quot;,
-  &quot;input&quot;: &quot;tlshandshake://93.184.216.34:443&quot;,
-  &quot;probe_asn&quot;: &quot;AS45609&quot;,
-  &quot;annotations&quot;: {
-    &quot;step&quot;: &quot;sni_blocking&quot;,
-    &quot;session&quot;: &quot;38c221ed-5fc6-4897-984d-b612bc43dd24&quot;
+  <span style=color:#f92672>&#34;resolver_asn&#34;</span>: <span style=color:#e6db74>&#34;AS9498&#34;</span>,
+  <span style=color:#f92672>&#34;probe_cc&#34;</span>: <span style=color:#e6db74>&#34;IN&#34;</span>,
+  <span style=color:#f92672>&#34;probe_network_name&#34;</span>: <span style=color:#e6db74>&#34;Bharti Airtel Ltd. AS for GPRS Service&#34;</span>,
+  <span style=color:#f92672>&#34;input&#34;</span>: <span style=color:#e6db74>&#34;tlshandshake://93.184.216.34:443&#34;</span>,
+  <span style=color:#f92672>&#34;probe_asn&#34;</span>: <span style=color:#e6db74>&#34;AS45609&#34;</span>,
+  <span style=color:#f92672>&#34;annotations&#34;</span>: {
+    <span style=color:#f92672>&#34;step&#34;</span>: <span style=color:#e6db74>&#34;sni_blocking&#34;</span>,
+    <span style=color:#f92672>&#34;session&#34;</span>: <span style=color:#e6db74>&#34;38c221ed-5fc6-4897-984d-b612bc43dd24&#34;</span>
   },
-  &quot;resolver_network_name&quot;: &quot;BHARTI Airtel Ltd.&quot;,
-  &quot;measurement_start_time&quot;: &quot;2020-05-19 08:05:07&quot;
+  <span style=color:#f92672>&#34;resolver_network_name&#34;</span>: <span style=color:#e6db74>&#34;BHARTI Airtel Ltd.&#34;</span>,
+  <span style=color:#f92672>&#34;measurement_start_time&#34;</span>: <span style=color:#e6db74>&#34;2020-05-19 08:05:07&#34;</span>
 }
-</code></pre><p>Here we basically (1) connect to <code>example.org</code>&rsquo;s IP address, (2) start the
+</code></pre></div><p>Here we basically (1) connect to <code>example.org</code>&rsquo;s IP address, (2) start the
 TLS handshake, (3) write the ClientHello, and (4) observe that the
 connection is closed.</p><p>It is also interesting to note that in one specific case we could
 complete the TLS handshake with <code>example.org</code>&rsquo;s IP address with the
@@ -390,20 +390,20 @@ unique</a>,
 and <a href=https://gist.github.com/bassosimone/d354508447e9a1d0fc2d6857767cdca6#file-sni_blocking_cert_fingerprint-sh>computed its
 fingerprint</a>.
 In all cases, we received the following <a href=https://en.wikipedia.org/wiki/X.509>X.509
-certificate</a>:</p><pre><code class=language-bash>Certificate:
+certificate</a>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Certificate:
     Data:
-        Version: 3 (0x2)
+        Version: <span style=color:#ae81ff>3</span> <span style=color:#f92672>(</span>0x2<span style=color:#f92672>)</span>
         Serial Number:
             0f:d0:78:dd:48:f1:a2:bd:4d:0f:2b:a9:6b:60:38:fe
     Signature Algorithm: sha256WithRSAEncryption
-        Issuer: C=US, O=DigiCert Inc, CN=DigiCert SHA2 Secure Server CA
+        Issuer: C<span style=color:#f92672>=</span>US, O<span style=color:#f92672>=</span>DigiCert Inc, CN<span style=color:#f92672>=</span>DigiCert SHA2 Secure Server CA
         Validity
-            Not Before: Nov 28 00:00:00 2018 GMT
-            Not After : Dec  2 12:00:00 2020 GMT
-        Subject: C=US, ST=California, [...] CN=www.example.org
-[...]
-SHA1 Fingerprint=7B:B6:98:38:69:70:36:3D:29:19:CC:57:72:84:69:84:FF:D4:A8:89
-</code></pre><p>This certificate is indeed the one used by <code>example.org</code>. We can therefore
+            Not Before: Nov <span style=color:#ae81ff>28</span> 00:00:00 <span style=color:#ae81ff>2018</span> GMT
+            Not After : Dec  <span style=color:#ae81ff>2</span> 12:00:00 <span style=color:#ae81ff>2020</span> GMT
+        Subject: C<span style=color:#f92672>=</span>US, ST<span style=color:#f92672>=</span>California, <span style=color:#f92672>[</span>...<span style=color:#f92672>]</span> CN<span style=color:#f92672>=</span>www.example.org
+<span style=color:#f92672>[</span>...<span style=color:#f92672>]</span>
+SHA1 Fingerprint<span style=color:#f92672>=</span>7B:B6:98:38:69:70:36:3D:29:19:CC:57:72:84:69:84:FF:D4:A8:89
+</code></pre></div><p>This certificate is indeed the one used by <code>example.org</code>. We can therefore
 conclude that, in all these cases, we were able to speak to the test
 helper without interference.</p><h3 id=establishing-a-baseline>Establishing a baseline</h3><p>In the following sections, we are going to comment on the experiments
 where we attempt to connect to the target websites using HTTPS. Before
@@ -446,7 +446,7 @@ measurement</a>
 using OONI Probe 1.2 that timed out when attempting to connect to
 <code>collegehumor.com</code> on port <code>443</code> from the <a href=https://ipinfo.io/AS36086>Telx ISP</a> in the United States in
 2015. However, we also
-<a href="https://transparencyreport.google.com/https/certificates?hl=en&amp;cert_search_auth=&amp;cert_search_cert=&amp;cert_search=include_subdomains:false;domain:collegehumor.com&amp;lu=cert_search">found</a>
+<a href="https://transparencyreport.google.com/https/certificates?hl=en&cert_search_auth=&cert_search_cert=&cert_search=include_subdomains:false;domain:collegehumor.com&lu=cert_search">found</a>
 that <a href=https://transparencyreport.google.com/https/certificates/n%2BcofU0GqxQZKyhwSOyronS4gYsHeCEjdPaBA0FlrME%3D>records of an X.509 certificate for this website exist in the
 Certificate Transparency
 Log</a>.</p><p>We concluded that <code>collegehumor.com</code> was quite likely not reachable on
@@ -455,7 +455,7 @@ censorship any failure in connecting to it on port <code>443</code> that we may
 encounter in the following sections. At the same time, it is interesting
 to note that Bharti Airtel was censoring the <code>collegehumor.com</code> SNI (as we
 have seen in the previous section) even though it was not a properly
-working HTTPS website during our measurements.</p><h3 id=dns-check-1>dns_check</h3><p>The following table shows the domain names resolved using the system
+working HTTPS website during our measurements.</p><h3 id=dns_check-1>dns_check</h3><p>The following table shows the domain names resolved using the system
 resolver. For each target domain in the <em>Domain</em> column, we performed a
 DNS resolution using the resolver configured in the operating system.
 The ISP owning the resolver is indicated in the <em>Resolver</em> column. The
@@ -479,13 +479,13 @@ two domains we are testing are hosted by ACT Fibernet itself and it also
 claims that they share the same IP addresses. We say that Bharti
 Airtel&rsquo;s resolver is lying because it claims that the two tested domains
 do not exist (<code>dns_nxdomain_error</code>), but in fact they do. This is
-consistent with the findings in CIS&rsquo; recent
+consistent with the findings in CIS' recent
 <a href=https://arxiv.org/pdf/1912.08590.pdf>study</a>, which found
 ACT Fibernet and Bharti Airtel to be tampering with DNS responses in
 this precise way.</p><p>While Bharti Airtel&rsquo;s resolver&rsquo;s answer prevents us from accessing these
 websites, we cannot exclude that ACT Fibernet&rsquo;s answer is just directing
 us to some cache. To investigate this hypothesis, we will need to
-attempt to use such IPs and see what happens.</p><h3 id=system-resolver-validation-1>system_resolver_validation</h3><p>The following table shows the results of the
+attempt to use such IPs and see what happens.</p><h3 id=system_resolver_validation-1>system_resolver_validation</h3><p>The following table shows the results of the
 <code>system_resolver_validation experiment</code>. This means that we used the IP
 addresses previously resolved using the system resolver to connect to
 the specific websites to which they belong, according to such a
@@ -496,45 +496,45 @@ using the HTTPS protocol.</p><p>Of course, the table does not include Bharti Air
 Bharti Airtel&rsquo;s resolver told us that the domains we were looking for do
 not exist.</p><p>The following snippet shows the recorded
 <a href=https://explorer.ooni.org/measurement/20200511T163755Z_AS24309_aYTZ16a6lIKdVxHBD51kGsdjBb5t1vlAUN5iLF2McmwJxPmp38>measurement</a>
-for pornhub.com from ACT Fibernet:</p><pre><code class=language-JSON>{
-  &quot;test_keys&quot;: {
-    &quot;dns_cache&quot;: [
-      &quot;www.pornhub.com 49.205.75.6&quot;                   // (1)
+for pornhub.com from ACT Fibernet:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON>{
+  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
+    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
+      <span style=color:#e6db74>&#34;www.pornhub.com 49.205.75.6&#34;</span>                   <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(</span><span style=color:#ae81ff>1</span><span style=color:#960050;background-color:#1e0010>)</span>
     ],
-    &quot;network_events&quot;: [
+    <span style=color:#f92672>&#34;network_events&#34;</span>: [
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;connect&quot;,
-        &quot;address&quot;: &quot;49.205.75.6:443&quot;,                 // (2)
-        &quot;t&quot;: 0.002680552,
-        &quot;proto&quot;: &quot;tcp&quot;
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
+        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;49.205.75.6:443&#34;</span>,                 <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(2)</span>
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.002680552</span>,
+        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
       },
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;tls_handshake_start&quot;,           // (3)
-        &quot;t&quot;: 0.00271161
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_start&#34;</span>,           <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(3)</span>
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.00271161</span>
       },
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;write&quot;,                         // (4)
-        &quot;num_bytes&quot;: 285,
-        &quot;t&quot;: 0.003049326
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;write&#34;</span>,                         <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(4)</span>
+        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>285</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.003049326</span>
       },
       {
-        &quot;failure&quot;: &quot;eof_error&quot;,                       // (5)
-        &quot;operation&quot;: &quot;read&quot;,
-        &quot;t&quot;: 0.005205896
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,                       <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(5)</span>
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;read&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.005205896</span>
       }
     ]
   },
-  &quot;input&quot;: &quot;https://www.pornhub.com/&quot;,
-  &quot;probe_asn&quot;: &quot;AS24309&quot;,
-  &quot;annotations&quot;: {
-    &quot;step&quot;: &quot;system_resolver_validation&quot;,
-    &quot;session&quot;: &quot;c44b5e74-ecb4-4310-b5d8-f9d6b27a1599&quot;
+  <span style=color:#f92672>&#34;input&#34;</span>: <span style=color:#e6db74>&#34;https://www.pornhub.com/&#34;</span>,
+  <span style=color:#f92672>&#34;probe_asn&#34;</span>: <span style=color:#e6db74>&#34;AS24309&#34;</span>,
+  <span style=color:#f92672>&#34;annotations&#34;</span>: {
+    <span style=color:#f92672>&#34;step&#34;</span>: <span style=color:#e6db74>&#34;system_resolver_validation&#34;</span>,
+    <span style=color:#f92672>&#34;session&#34;</span>: <span style=color:#e6db74>&#34;c44b5e74-ecb4-4310-b5d8-f9d6b27a1599&#34;</span>
   }
 }
-</code></pre><p>We see that (1) we use the DNS cache to force the previously discovered
+</code></pre></div><p>We see that (1) we use the DNS cache to force the previously discovered
 IP, (2) we connect successfully to such IP on port 443, (3) we start the
 TLS handshake and then (4) write the ClientHello message, and (5) after
 that the connection is closed. Because we know that the IP address we
@@ -545,48 +545,48 @@ misconfigured cache.</p><p>The same could of course be said for <code>collegehum
 on ACT Fibernet. Because the IP address is suspicious, it may either be
 blocking or a misconfigured cache.</p><p>The following snippet shows a <code>collegehumor.com</code>
 <a href=https://explorer.ooni.org/measurement/20200514T090849Z_AS55836_lrjnVphrogat2vgKJzOvwMOlzut94sAoCnrVXEeTZFRqijOTUK>measurement</a>
-inside Reliance Jio:</p><pre><code class=language-JSON>{
-  &quot;test_keys&quot;: {
-    &quot;dns_cache&quot;: [
-      &quot;collegehumor.com 52.8.26.172 54.193.47.52&quot;     // (1)
+inside Reliance Jio:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON>{
+  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
+    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
+      <span style=color:#e6db74>&#34;collegehumor.com 52.8.26.172 54.193.47.52&#34;</span>     <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(</span><span style=color:#ae81ff>1</span><span style=color:#960050;background-color:#1e0010>)</span>
     ],
-    &quot;network_events&quot;: [
+    <span style=color:#f92672>&#34;network_events&#34;</span>: [
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;connect&quot;,
-        &quot;address&quot;: &quot;52.8.26.172:443&quot;,                 // (2)
-        &quot;t&quot;: 0.0405582,
-        &quot;proto&quot;: &quot;tcp&quot;
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
+        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;52.8.26.172:443&#34;</span>,                 <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(2)</span>
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0405582</span>,
+        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
       },
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;tls_handshake_start&quot;,           // (3)
-        &quot;t&quot;: 0.0406031
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_start&#34;</span>,           <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(3)</span>
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0406031</span>
       },
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;write&quot;,                         // (4)
-        &quot;num_bytes&quot;: 286,
-        &quot;t&quot;: 0.0418597
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;write&#34;</span>,                         <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(4)</span>
+        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>286</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0418597</span>
       },
       {
-        &quot;failure&quot;: &quot;generic_timeout_error&quot;,           // (5)
-        &quot;operation&quot;: &quot;tls_handshake_done&quot;,
-        &quot;t&quot;: 10.0432773
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;generic_timeout_error&#34;</span>,           <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(5)</span>
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_done&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>10.0432773</span>
       }
     ]
   },
-  &quot;probe_cc&quot;: &quot;IN&quot;,
-  &quot;probe_network_name&quot;: &quot;Reliance Jio Infocomm Limited&quot;,
-  &quot;test_runtime&quot;: 10.0446836,
-  &quot;input&quot;: &quot;https://collegehumor.com/&quot;,
-  &quot;probe_asn&quot;: &quot;AS55836&quot;,
-  &quot;annotations&quot;: {
-    &quot;step&quot;: &quot;system_resolver_validation&quot;,
-    &quot;session&quot;: &quot;40504ce1-94e0-4d6d-a4e5-6ede4272e385&quot;
+  <span style=color:#f92672>&#34;probe_cc&#34;</span>: <span style=color:#e6db74>&#34;IN&#34;</span>,
+  <span style=color:#f92672>&#34;probe_network_name&#34;</span>: <span style=color:#e6db74>&#34;Reliance Jio Infocomm Limited&#34;</span>,
+  <span style=color:#f92672>&#34;test_runtime&#34;</span>: <span style=color:#ae81ff>10.0446836</span>,
+  <span style=color:#f92672>&#34;input&#34;</span>: <span style=color:#e6db74>&#34;https://collegehumor.com/&#34;</span>,
+  <span style=color:#f92672>&#34;probe_asn&#34;</span>: <span style=color:#e6db74>&#34;AS55836&#34;</span>,
+  <span style=color:#f92672>&#34;annotations&#34;</span>: {
+    <span style=color:#f92672>&#34;step&#34;</span>: <span style=color:#e6db74>&#34;system_resolver_validation&#34;</span>,
+    <span style=color:#f92672>&#34;session&#34;</span>: <span style=color:#e6db74>&#34;40504ce1-94e0-4d6d-a4e5-6ede4272e385&#34;</span>
   }
 }
-</code></pre><p>The sequence of events we see here is basically the same as above. The
+</code></pre></div><p>The sequence of events we see here is basically the same as above. The
 two main differences are that (1) the IP addresses we are using seem
 legitimate and (5) the TLS handshake fails with a timeout rather than
 with the connection being closed.</p><p>What is particularly interesting here, though, is that we should not
@@ -614,52 +614,52 @@ consistently with what we observed from other ISPs. We will further
 investigate this behavior as part of our future work.</p><p>The failure we see for <code>pornhub.com</code>, instead, is more suspicious. The
 following is a relevant snippet of the JSON
 <a href=https://explorer.ooni.org/measurement/20200514T090719Z_AS55836_G4LeqeqNc3bM3BAX3KDGCEFZdbFZZBlbS523YKlIo9Jn5wD7bI>measurement</a>
-archived at OONI&rsquo;s S3:</p><pre><code class=language-JSON>{
-  &quot;test_keys&quot;: {
-    &quot;dns_cache&quot;: [
-      &quot;pornhub.com 66.254.114.41&quot;
+archived at OONI&rsquo;s S3:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON>{
+  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
+    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
+      <span style=color:#e6db74>&#34;pornhub.com 66.254.114.41&#34;</span>
     ],
-    &quot;network_events&quot;: [
+    <span style=color:#f92672>&#34;network_events&#34;</span>: [
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;connect&quot;,
-        &quot;address&quot;: &quot;66.254.114.41:443&quot;,
-        &quot;t&quot;: 0.0369444,
-        &quot;proto&quot;: &quot;tcp&quot;
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
+        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;66.254.114.41:443&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0369444</span>,
+        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
       },
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;tls_handshake_start&quot;,
-        &quot;t&quot;: 0.0369909
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_start&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0369909</span>
       },
       {
-        &quot;failure&quot;: null,
-        &quot;operation&quot;: &quot;write&quot;,
-        &quot;num_bytes&quot;: 281,
-        &quot;t&quot;: 0.0380669
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;write&#34;</span>,
+        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>281</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0380669</span>
       },
       {
-        &quot;failure&quot;: &quot;eof_error&quot;,
-        &quot;operation&quot;: &quot;read&quot;,
-        &quot;t&quot;: 0.2627324
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;read&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.2627324</span>
       },
       {
-        &quot;failure&quot;: &quot;eof_error&quot;,
-        &quot;operation&quot;: &quot;tls_handshake_done&quot;,
-        &quot;t&quot;: 0.2640703
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_done&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.2640703</span>
       }
     ]
   },
-  &quot;probe_cc&quot;: &quot;IN&quot;,
-  &quot;probe_network_name&quot;: &quot;Reliance Jio Infocomm Limited&quot;,
-  &quot;input&quot;: &quot;https://pornhub.com/&quot;,
-  &quot;probe_asn&quot;: &quot;AS55836&quot;,
-  &quot;annotations&quot;: {
-    &quot;step&quot;: &quot;system_resolver_validation&quot;,
-    &quot;session&quot;: &quot;285e6728-8c92-4034-8c0d-5c62034a71bd&quot;
+  <span style=color:#f92672>&#34;probe_cc&#34;</span>: <span style=color:#e6db74>&#34;IN&#34;</span>,
+  <span style=color:#f92672>&#34;probe_network_name&#34;</span>: <span style=color:#e6db74>&#34;Reliance Jio Infocomm Limited&#34;</span>,
+  <span style=color:#f92672>&#34;input&#34;</span>: <span style=color:#e6db74>&#34;https://pornhub.com/&#34;</span>,
+  <span style=color:#f92672>&#34;probe_asn&#34;</span>: <span style=color:#e6db74>&#34;AS55836&#34;</span>,
+  <span style=color:#f92672>&#34;annotations&#34;</span>: {
+    <span style=color:#f92672>&#34;step&#34;</span>: <span style=color:#e6db74>&#34;system_resolver_validation&#34;</span>,
+    <span style=color:#f92672>&#34;session&#34;</span>: <span style=color:#e6db74>&#34;285e6728-8c92-4034-8c0d-5c62034a71bd&#34;</span>
   },
 }
-</code></pre><p>We see the same events as before, except that the TLS handshake fails
+</code></pre></div><p>We see the same events as before, except that the TLS handshake fails
 with <code>eof_error</code>. This failure is similar to the one Magma
 <a href=https://blog.magma.lavafeld.org/post/women-on-web-blocking/>noticed</a>
 in Spain and OONI
@@ -678,7 +678,7 @@ and
 <a href=https://explorer.ooni.org/measurement/20200624T143150Z_AS55836_1MDV6ZYBtfYRK9I9GA9Ua99ElqC4aDVulU4LAQPLMj1KBFEwVN>#6</a>).</p><p>Regarding ACT Fibernet and Bharti Airtel, we need to check what happens
 when using the IP addresses returned by the DoH resolver before drawing
 any conclusion concerning TLS blocking. We will do that in the following
-subsection.</p><h3 id=doh-resolver-validation-1>doh_resolver_validation</h3><p>The following table shows the results of the <code>doh_resolver_validation</code>
+subsection.</p><h3 id=doh_resolver_validation-1>doh_resolver_validation</h3><p>The following table shows the results of the <code>doh_resolver_validation</code>
 experiment. This means we used the IP addresses returned by Google&rsquo;s DoH
 resolver to connect to the websites to which they belong to, according
 to this resolver. We assume that Google&rsquo;s DoH resolver is not returning
@@ -693,35 +693,35 @@ reachable. The failure for <code>collegehumor.com</code> matches the following
 pattern (the full
 <a href=https://explorer.ooni.org/measurement/20200511T164245Z_AS24309_ZSXOkWQRZwpp8PWIcLOpRIiUp0ah1CKeAZJxEpMQhtTE2I9rKl>measurement</a>
 can of course be accessed on <a href=https://explorer.ooni.org/>OONI
-Explorer</a>):</p><pre><code class=language-JSON>{
-  &quot;test_keys&quot;: {
-    &quot;dns_cache&quot;: [
-      &quot;collegehumor.com 52.8.26.172 54.193.47.52&quot;  // (1)
+Explorer</a>):</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON>{
+  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
+    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
+      <span style=color:#e6db74>&#34;collegehumor.com 52.8.26.172 54.193.47.52&#34;</span>  <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(</span><span style=color:#ae81ff>1</span><span style=color:#960050;background-color:#1e0010>)</span>
     ],
-    &quot;network_events&quot;: [
+    <span style=color:#f92672>&#34;network_events&#34;</span>: [
       {
-        &quot;failure&quot;: &quot;generic_timeout_error&quot;,
-        &quot;operation&quot;: &quot;connect&quot;,
-        &quot;address&quot;: &quot;52.8.26.172:443&quot;,              // (2)
-        &quot;t&quot;: 30.001980387,
-        &quot;proto&quot;: &quot;tcp&quot;
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;generic_timeout_error&#34;</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
+        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;52.8.26.172:443&#34;</span>,              <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(2)</span>
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>30.001980387</span>,
+        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
       },
       {
-        &quot;failure&quot;: &quot;generic_timeout_error&quot;,
-        &quot;operation&quot;: &quot;connect&quot;,
-        &quot;address&quot;: &quot;54.193.47.52:443&quot;,             // (3)
-        &quot;t&quot;: 60.002742623,
-        &quot;proto&quot;: &quot;tcp&quot;
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;generic_timeout_error&#34;</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
+        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;54.193.47.52:443&#34;</span>,             <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(3)</span>
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>60.002742623</span>,
+        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
       }
     ]
   },
-  &quot;probe_asn&quot;: &quot;AS24309&quot;,
-  &quot;annotations&quot;: {
-    &quot;step&quot;: &quot;doh_resolver_validation&quot;,
-    &quot;session&quot;: &quot;1ada324e-736e-45ab-8127-d1066b23c5f5&quot;
+  <span style=color:#f92672>&#34;probe_asn&#34;</span>: <span style=color:#e6db74>&#34;AS24309&#34;</span>,
+  <span style=color:#f92672>&#34;annotations&#34;</span>: {
+    <span style=color:#f92672>&#34;step&#34;</span>: <span style=color:#e6db74>&#34;doh_resolver_validation&#34;</span>,
+    <span style=color:#f92672>&#34;session&#34;</span>: <span style=color:#e6db74>&#34;1ada324e-736e-45ab-8127-d1066b23c5f5&#34;</span>
   }
 }
-</code></pre><p>Here we see that (1) we are using the DNS cache to force the correct IPs
+</code></pre></div><p>Here we see that (1) we are using the DNS cache to force the correct IPs
 and we timeout when we attempt to connect to both IP addresses for the
 domain (2, 3). This is consistent with our previous observation that
 <code>collegehumor.com:443</code> is misconfigured and attempting to reach it fails
@@ -730,35 +730,35 @@ with a connection timeout when using
 from vantage points in which it should be censored (e.g. Vodafone Italy
 and Google Cloud).</p><p>In Bharti Airtel <code>collegehumor.com:443</code> is also failing with a connect
 timeout as expected, as shown by the following
-<a href=https://explorer.ooni.org/measurement/20200519T080633Z_AS45609_9oEmuDI0dbCRUq3GDp2e9pfGERbC4F9uHyw4NHOtBCd3uQ4HFn>measurement</a>:</p><pre><code class=language-JSON>{
-  &quot;test_keys&quot;: {
-    &quot;dns_cache&quot;: [
-      &quot;collegehumor.com 52.8.26.172 54.193.47.52&quot;
+<a href=https://explorer.ooni.org/measurement/20200519T080633Z_AS45609_9oEmuDI0dbCRUq3GDp2e9pfGERbC4F9uHyw4NHOtBCd3uQ4HFn>measurement</a>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON>{
+  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
+    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
+      <span style=color:#e6db74>&#34;collegehumor.com 52.8.26.172 54.193.47.52&#34;</span>
     ],
-    &quot;network_events&quot;: [
+    <span style=color:#f92672>&#34;network_events&#34;</span>: [
       {
-        &quot;failure&quot;: &quot;generic_timeout_error&quot;,
-        &quot;operation&quot;: &quot;connect&quot;,
-        &quot;address&quot;: &quot;52.8.26.172:443&quot;,
-        &quot;t&quot;: 30.0091558,
-        &quot;proto&quot;: &quot;tcp&quot;
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;generic_timeout_error&#34;</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
+        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;52.8.26.172:443&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>30.0091558</span>,
+        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
       },
       {
-        &quot;failure&quot;: &quot;generic_timeout_error&quot;,
-        &quot;operation&quot;: &quot;connect&quot;,
-        &quot;address&quot;: &quot;54.193.47.52:443&quot;,
-        &quot;t&quot;: 60.014621,
-        &quot;proto&quot;: &quot;tcp&quot;
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;generic_timeout_error&#34;</span>,
+        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
+        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;54.193.47.52:443&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>60.014621</span>,
+        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
       }
     ]
   },
-  &quot;probe_asn&quot;: &quot;AS45609&quot;,
-  &quot;annotations&quot;: {
-    &quot;step&quot;: &quot;doh_resolver_validation&quot;,
-    &quot;session&quot;: &quot;38c221ed-5fc6-4897-984d-b612bc43dd24&quot;
+  <span style=color:#f92672>&#34;probe_asn&#34;</span>: <span style=color:#e6db74>&#34;AS45609&#34;</span>,
+  <span style=color:#f92672>&#34;annotations&#34;</span>: {
+    <span style=color:#f92672>&#34;step&#34;</span>: <span style=color:#e6db74>&#34;doh_resolver_validation&#34;</span>,
+    <span style=color:#f92672>&#34;session&#34;</span>: <span style=color:#e6db74>&#34;38c221ed-5fc6-4897-984d-b612bc43dd24&#34;</span>
   }
 }
-</code></pre><p>What we see here is again consistent with the results of the
+</code></pre></div><p>What we see here is again consistent with the results of the
 <code>psiphon_check</code> experiment. The <code>collegehumor.com:443/tcp</code> endpoint, in
 fact, is not working correctly and consistently fails with a timeout
 when attempting to connect to it from several vantage points.</p><p><code>Pornhub.com</code> is blocked by Bharti Airtel during the TLS handshake. This
@@ -769,89 +769,89 @@ when discussing <code>sni_check</code> measurements for Bharti Airtel. Yet, in o
 specific instance, we were able to perform a handshake for <code>pornhub.com</code>,
 only to be redirected to <code>www.pornhub.com</code>, for which the TLS handshake
 failed with <code>eof_error</code>. The following is the relevant snippet of the
-<a href=https://explorer.ooni.org/measurement/20200514T091743Z_AS45609_6XhCx0CFPprL06fprzU9okAyUJqWKodJ8Rv0gVZl40E9aw4hSK>measurement</a>:</p><pre><code class=language-JSON>{
-  &quot;test_keys&quot;: {
-    &quot;dns_cache&quot;: [
-      &quot;pornhub.com 66.254.114.41&quot;
+<a href=https://explorer.ooni.org/measurement/20200514T091743Z_AS45609_6XhCx0CFPprL06fprzU9okAyUJqWKodJ8Rv0gVZl40E9aw4hSK>measurement</a>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON>{
+  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
+    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
+      <span style=color:#e6db74>&#34;pornhub.com 66.254.114.41&#34;</span>
     ],
-    &quot;requests&quot;: [{
-        &quot;failure&quot;: &quot;eof_error&quot;,
-        &quot;request&quot;: {
-          &quot;headers_list&quot;: [[
-              &quot;Referer&quot;,
-              &quot;https://pornhub.com/&quot;
+    <span style=color:#f92672>&#34;requests&#34;</span>: [{
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,
+        <span style=color:#f92672>&#34;request&#34;</span>: {
+          <span style=color:#f92672>&#34;headers_list&#34;</span>: [[
+              <span style=color:#e6db74>&#34;Referer&#34;</span>,
+              <span style=color:#e6db74>&#34;https://pornhub.com/&#34;</span>
             ], [
-              &quot;Host&quot;,
-              &quot;www.pornhub.org&quot;
+              <span style=color:#e6db74>&#34;Host&#34;</span>,
+              <span style=color:#e6db74>&#34;www.pornhub.org&#34;</span>
             ]
           ],
-          &quot;url&quot;: &quot;https://www.pornhub.org/&quot;,
-          &quot;method&quot;: &quot;GET&quot;
+          <span style=color:#f92672>&#34;url&#34;</span>: <span style=color:#e6db74>&#34;https://www.pornhub.org/&#34;</span>,
+          <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;GET&#34;</span>
         }
     }, {
-        &quot;failure&quot;: null,
-        &quot;request&quot;: {
-          &quot;headers_list&quot;: [[
-              &quot;Host&quot;,
-              &quot;pornhub.com&quot;
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;request&#34;</span>: {
+          <span style=color:#f92672>&#34;headers_list&#34;</span>: [[
+              <span style=color:#e6db74>&#34;Host&#34;</span>,
+              <span style=color:#e6db74>&#34;pornhub.com&#34;</span>
             ]
           ],
-          &quot;url&quot;: &quot;https://pornhub.com/&quot;,
-          &quot;method&quot;: &quot;GET&quot;
+          <span style=color:#f92672>&#34;url&#34;</span>: <span style=color:#e6db74>&#34;https://pornhub.com/&#34;</span>,
+          <span style=color:#f92672>&#34;method&#34;</span>: <span style=color:#e6db74>&#34;GET&#34;</span>
         },
-        &quot;response&quot;: {
-          &quot;headers_list&quot;: [[
-              &quot;Location&quot;,
-              &quot;https://www.pornhub.org/&quot;
+        <span style=color:#f92672>&#34;response&#34;</span>: {
+          <span style=color:#f92672>&#34;headers_list&#34;</span>: [[
+              <span style=color:#e6db74>&#34;Location&#34;</span>,
+              <span style=color:#e6db74>&#34;https://www.pornhub.org/&#34;</span>
           ]],
-          &quot;code&quot;: 302
+          <span style=color:#f92672>&#34;code&#34;</span>: <span style=color:#ae81ff>302</span>
         }
     }],
-    &quot;tls_handshakes&quot;: [
+    <span style=color:#f92672>&#34;tls_handshakes&#34;</span>: [
       {
-        &quot;tls_version&quot;: &quot;TLSv1.2&quot;,
-        &quot;no_tls_verify&quot;: false,
-        &quot;server_name&quot;: &quot;pornhub.com&quot;,
-        &quot;peer_certificates&quot;: [
+        <span style=color:#f92672>&#34;tls_version&#34;</span>: <span style=color:#e6db74>&#34;TLSv1.2&#34;</span>,
+        <span style=color:#f92672>&#34;no_tls_verify&#34;</span>: <span style=color:#66d9ef>false</span>,
+        <span style=color:#f92672>&#34;server_name&#34;</span>: <span style=color:#e6db74>&#34;pornhub.com&#34;</span>,
+        <span style=color:#f92672>&#34;peer_certificates&#34;</span>: [
           {
-            &quot;data&quot;: &quot;...&quot;,
-            &quot;format&quot;: &quot;base64&quot;
+            <span style=color:#f92672>&#34;data&#34;</span>: <span style=color:#e6db74>&#34;...&#34;</span>,
+            <span style=color:#f92672>&#34;format&#34;</span>: <span style=color:#e6db74>&#34;base64&#34;</span>
           },
           {
-            &quot;data&quot;: &quot;...&quot;,
-            &quot;format&quot;: &quot;base64&quot;
+            <span style=color:#f92672>&#34;data&#34;</span>: <span style=color:#e6db74>&#34;...&#34;</span>,
+            <span style=color:#f92672>&#34;format&#34;</span>: <span style=color:#e6db74>&#34;base64&#34;</span>
           }
         ],
-        &quot;cipher_suite&quot;: &quot;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&quot;,
-        &quot;failure&quot;: null,                // (1)
-        &quot;negotiated_protocol&quot;: &quot;&quot;,
-        &quot;t&quot;: 0.4989724
+        <span style=color:#f92672>&#34;cipher_suite&#34;</span>: <span style=color:#e6db74>&#34;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&#34;</span>,
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,                <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(1)</span>
+        <span style=color:#f92672>&#34;negotiated_protocol&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.4989724</span>
       },
       {
-        &quot;tls_version&quot;: &quot;&quot;,
-        &quot;no_tls_verify&quot;: false,
-        &quot;server_name&quot;: &quot;www.pornhub.org&quot;,
-        &quot;peer_certificates&quot;: null,
-        &quot;cipher_suite&quot;: &quot;&quot;,
-        &quot;failure&quot;: &quot;eof_error&quot;,         // (2)
-        &quot;negotiated_protocol&quot;: &quot;&quot;,
-        &quot;t&quot;: 0.956141
+        <span style=color:#f92672>&#34;tls_version&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+        <span style=color:#f92672>&#34;no_tls_verify&#34;</span>: <span style=color:#66d9ef>false</span>,
+        <span style=color:#f92672>&#34;server_name&#34;</span>: <span style=color:#e6db74>&#34;www.pornhub.org&#34;</span>,
+        <span style=color:#f92672>&#34;peer_certificates&#34;</span>: <span style=color:#66d9ef>null</span>,
+        <span style=color:#f92672>&#34;cipher_suite&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,         <span style=color:#960050;background-color:#1e0010>//</span> <span style=color:#960050;background-color:#1e0010>(2)</span>
+        <span style=color:#f92672>&#34;negotiated_protocol&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.956141</span>
       }
     ]
   }
-  &quot;probe_asn&quot;: &quot;AS45609&quot;,
-  &quot;annotations&quot;: {
-    &quot;step&quot;: &quot;doh_resolver_validation&quot;,
-    &quot;session&quot;: &quot;f0cfc2f4-ea96-4e99-bf35-8a283db9d3e9&quot;
+  <span style=color:#e6db74>&#34;probe_asn&#34;</span>: <span style=color:#e6db74>&#34;AS45609&#34;</span>,
+  <span style=color:#f92672>&#34;annotations&#34;</span>: {
+    <span style=color:#f92672>&#34;step&#34;</span>: <span style=color:#e6db74>&#34;doh_resolver_validation&#34;</span>,
+    <span style=color:#f92672>&#34;session&#34;</span>: <span style=color:#e6db74>&#34;f0cfc2f4-ea96-4e99-bf35-8a283db9d3e9&#34;</span>
   }
 }
-</code></pre><p>The <code>tls_handshakes</code> field of the above measurement shows, in particular,
+</code></pre></div><p>The <code>tls_handshakes</code> field of the above measurement shows, in particular,
 that the <code>eof_error</code> occurs indeed when attempting to perform a TLS
 handshake for <code>www.pornhub.com</code>. In fact, we see that the first handshake
 is successful (1) and the second fails (2).</p><p>Regarding Reliance Jio, we see exactly the same results of the
 <code>system_resolver_validation</code> experiment, since Reliance Jio&rsquo;s resolver
 returned IP addresses consistent with Google&rsquo;s DoH resolver&rsquo;s answer.
-This result, therefore, confirms previous findings.</p><h2 id=conclusion-future-work>Conclusion &amp; Future Work</h2><p>We investigated
+This result, therefore, confirms previous findings.</p><h2 id=conclusion--future-work>Conclusion & Future Work</h2><p>We investigated
 <a href=https://en.wikipedia.org/wiki/Transport_Layer_Security>TLS</a>
 blocking in India. The research question was to understand whether there
 were cases of TLS blocking caused not only by the value of the <a href=https://en.wikipedia.org/wiki/Server_Name_Indication>Server

@@ -1,5 +1,5 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Measuring SNI based blocking in Iran | OONI</title><link rel=canonical href=https://ooni.org/post/2020-iran-sni-blocking/><meta name=description content="We evaluate our new SNI blocking experiment in Iran."><meta property=og:title content="Measuring SNI based blocking in Iran"><meta property=og:description content="We evaluate our new SNI blocking experiment in Iran."><meta property=og:type content=article><meta property=og:url content=https://ooni.org/post/2020-iran-sni-blocking/><meta property=og:image content=https://ooni.org/post/2020-iran-sni-blocking/images/sniblocking.png><meta property=article:published_time content=2020-04-28T00:00:00+00:00><meta property=article:modified_time content=2020-04-28T00:00:00+00:00><meta name=twitter:card content=summary_large_image><meta name=twitter:image content=https://ooni.org/post/2020-iran-sni-blocking/images/sniblocking.png><meta name=twitter:title content="Measuring SNI based blocking in Iran"><meta name=twitter:description content="We evaluate our new SNI blocking experiment in Iran."><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.b805712033614b1078c3d1d1c4f8144b2345a0a5fcb7b09ee27ab92454ddfc87.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4"><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
-                   /images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>Measuring SNI based blocking in Iran</h1><div class=byline><span class=author>Simone Basso</span>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Measuring SNI based blocking in Iran | OONI</title><link rel=canonical href=https://ooni.org/post/2020-iran-sni-blocking/><meta name=description content="We evaluate our new SNI blocking experiment in Iran."><meta property="og:title" content="Measuring SNI based blocking in Iran"><meta property="og:description" content="We evaluate our new SNI blocking experiment in Iran."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.org/post/2020-iran-sni-blocking/"><meta property="og:image" content="https://ooni.org/post/2020-iran-sni-blocking/images/sniblocking.png"><meta property="article:published_time" content="2020-04-28T00:00:00+00:00"><meta property="article:modified_time" content="2020-04-28T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.org/post/2020-iran-sni-blocking/images/sniblocking.png"><meta name=twitter:title content="Measuring SNI based blocking in Iran"><meta name=twitter:description content="We evaluate our new SNI blocking experiment in Iran."><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.eea8b4fc7fc3a0fb28a6ae9bf723bde9f4ee7a602514aacd85ba56e6fbaea756.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4"><div class="container pt-2"><div class="row align-items-center"><div class=col-lg-3><a href=/ class=logo><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+/images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-9 nav-menu"><div class=row><div class=col-lg><a href=/about/>About</a></div><div class=col-lg><a href=/install/>Install</a></div><div class=col-lg><a href=/nettest/>Tests</a></div><div class=col-lg><a href=/data/>Data</a></div><div class=col-lg><a href=/get-involved/>Get Involved</a></div><div class=col-lg><a href=/reports/>Reports</a></div><div class=col-lg><a href=/blog/>Blog</a></div></div></div></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>Measuring SNI based blocking in Iran</h1><div class=byline><span class=author>Simone Basso</span>
 <span class=date>2020-04-28</span></div><p>In this blog post we start evaluating <a href=https://github.com/ooni/spec/blob/adf9537c43ef848b96792f8dea99fbd7f93fe608/nettests/ts-024-sni-blocking.md>OONI&rsquo;s new SNI blocking
 experiment</a>.
 To this end, we will use measurements performed in Iran, where the
@@ -30,7 +30,7 @@ this second handshake to fail with the server telling us that it cannot
 serve <a href=http://www.blocked.com>www.blocked.com</a>. However,
 if the network between the Probe and the test helper implements a rule
 saying &ldquo;no matter what, block any TLSHello where the SNI extension
-contains www.blocked.com&rdquo;, then the TLS handshake will instead
+contains <a href=http://www.blocked.com>www.blocked.com</a>&rdquo;, then the TLS handshake will instead
 fail.</p><p>If we cannot perform the first TLS handshake, the experiment is
 inconclusive. Otherwise, the result of the second TLS handshake tells us
 whether there was network interference. For more information on the
@@ -44,7 +44,7 @@ Communication Company of Iran, PLC), henceforth MCI.</p></li></ol><p>Since the r
 <a href=https://explorer.ooni.org/>OONI Explorer</a> yet, <a href=https://gist.github.com/bassosimone/ad8eb608b42135dcae287de5d62f8551>we also published the scripts
 to download and process the measurements</a>.</p><p>The following table shows all the domains (and hence SNIs) for which
 we noticed signs of network interference for at least one of the three
-tested ASNs:</p><table><thead><tr><th>DOMAIN</th><th>AS12880 (DCI)</th><th>AS58224 (TCI)</th><th>AS197207 (MCI)</th></tr></thead><tbody><tr><td>9gag.com</td><td></td><td>timeout</td><td></td></tr><tr><td>d1vq87e9lcf771.cloudfront.net</td><td>timeout</td><td>timeout</td><td>reset</td></tr><tr><td>d3kwyfyztuo0xs.cloudfront.net</td><td>timeout</td><td></td><td>got_server_hello</td></tr><tr><td>i.pinimg.com</td><td>got_server_hello</td><td></td><td>reset</td></tr><tr><td>ifacetimeapp.com</td><td></td><td>timeout</td><td></td></tr><tr><td>instinctmagazine.com</td><td></td><td>timeout</td><td></td></tr><tr><td>isaalmasih.net</td><td></td><td>timeout</td><td></td></tr><tr><td>log.quora.com</td><td></td><td></td><td>reset</td></tr><tr><td>openvpn.net</td><td></td><td>timeout</td><td></td></tr><tr><td>pridesource.com</td><td></td><td>timeout</td><td></td></tr><tr><td>psiphon.ca</td><td></td><td>timeout</td><td></td></tr><tr><td>twitpic.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.eurogrand.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.jdate.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.monife.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.partypoker.net</td><td></td><td>timeout</td><td></td></tr><tr><td>www.pinkcupid.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.quora.com</td><td>got_server_hello</td><td></td><td>reset</td></tr><tr><td>www.scruff.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.ucc.org</td><td></td><td>timeout</td><td></td></tr><tr><td>www.vice.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.vonage.com</td><td></td><td>timeout</td><td></td></tr><tr><td>www.xroxy.com</td><td></td><td>timeout</td><td></td></tr><tr><td>xhamster.com</td><td></td><td>timeout</td><td></td></tr></tbody></table><p>An empty cell indicates that there is no measurement for a
+tested ASNs:</p><table><thead><tr><th>DOMAIN</th><th>AS12880 (DCI)</th><th>AS58224 (TCI)</th><th>AS197207 (MCI)</th></tr></thead><tbody><tr><td>9gag.com</td><td></td><td>timeout</td><td></td></tr><tr><td>d1vq87e9lcf771.cloudfront.net</td><td>timeout</td><td>timeout</td><td>reset</td></tr><tr><td>d3kwyfyztuo0xs.cloudfront.net</td><td>timeout</td><td></td><td>got_server_hello</td></tr><tr><td>i.pinimg.com</td><td>got_server_hello</td><td></td><td>reset</td></tr><tr><td>ifacetimeapp.com</td><td></td><td>timeout</td><td></td></tr><tr><td>instinctmagazine.com</td><td></td><td>timeout</td><td></td></tr><tr><td>isaalmasih.net</td><td></td><td>timeout</td><td></td></tr><tr><td>log.quora.com</td><td></td><td></td><td>reset</td></tr><tr><td>openvpn.net</td><td></td><td>timeout</td><td></td></tr><tr><td>pridesource.com</td><td></td><td>timeout</td><td></td></tr><tr><td>psiphon.ca</td><td></td><td>timeout</td><td></td></tr><tr><td>twitpic.com</td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.eurogrand.com>www.eurogrand.com</a></td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.jdate.com>www.jdate.com</a></td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.monife.com>www.monife.com</a></td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.partypoker.net>www.partypoker.net</a></td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.pinkcupid.com>www.pinkcupid.com</a></td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.quora.com>www.quora.com</a></td><td>got_server_hello</td><td></td><td>reset</td></tr><tr><td><a href=http://www.scruff.com>www.scruff.com</a></td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.ucc.org>www.ucc.org</a></td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.vice.com>www.vice.com</a></td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.vonage.com>www.vonage.com</a></td><td></td><td>timeout</td><td></td></tr><tr><td><a href=http://www.xroxy.com>www.xroxy.com</a></td><td></td><td>timeout</td><td></td></tr><tr><td>xhamster.com</td><td></td><td>timeout</td><td></td></tr></tbody></table><p>An empty cell indicates that there is no measurement for a
 specific network; <code>timeout</code> indicates that the TLS handshake timed out;
 <code>reset</code> means that the handshake was interrupted by a reset; and
 <code>got_server_hello</code> means that we received the Server Hello as expected
@@ -54,115 +54,115 @@ observe that in some cases there is interference in some networks and
 no blocking in other networks.</p><p>To further understand the nature of the interference, we discuss two specific
 measurements. We start with a measurement blocked with RST, whose JSON
 has of course been trimmed to increase clarity and
-readability.</p><pre><code class=language-JavaScript>{
-  &quot;test_keys&quot;: {
-    &quot;target&quot;: {
-      &quot;sni&quot;: &quot;d1vq87e9lcf771.cloudfront.net&quot;,
-      &quot;network_events&quot;: [
+readability.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript>{
+  <span style=color:#e6db74>&#34;test_keys&#34;</span><span style=color:#f92672>:</span> {
+    <span style=color:#e6db74>&#34;target&#34;</span><span style=color:#f92672>:</span> {
+      <span style=color:#e6db74>&#34;sni&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;d1vq87e9lcf771.cloudfront.net&#34;</span>,
+      <span style=color:#e6db74>&#34;network_events&#34;</span><span style=color:#f92672>:</span> [
         {
-          &quot;proto&quot;: &quot;tcp&quot;,
-          &quot;dial_id&quot;: 4,
-          &quot;conn_id&quot;: 1,
-          &quot;failure&quot;: null,
-          &quot;t&quot;: 0.312834468,
-          &quot;address&quot;: &quot;93.184.216.34:443&quot;,
-          &quot;operation&quot;: &quot;connect&quot;                    // (1)
-        },
+          <span style=color:#e6db74>&#34;proto&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;tcp&#34;</span>,
+          <span style=color:#e6db74>&#34;dial_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>4</span>,
+          <span style=color:#e6db74>&#34;conn_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span>,
+          <span style=color:#e6db74>&#34;failure&#34;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>null</span>,
+          <span style=color:#e6db74>&#34;t&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>0.312834468</span>,
+          <span style=color:#e6db74>&#34;address&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;93.184.216.34:443&#34;</span>,
+          <span style=color:#e6db74>&#34;operation&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;connect&#34;</span>                    <span style=color:#75715e>// (1)
+</span><span style=color:#75715e></span>        },
         {
-          &quot;proto&quot;: &quot;tcp&quot;,
-          &quot;num_bytes&quot;: 281,
-          &quot;conn_id&quot;: 1,
-          &quot;failure&quot;: null,
-          &quot;t&quot;: 0.31307321,
-          &quot;operation&quot;: &quot;write&quot;                      // (2)
-        },
+          <span style=color:#e6db74>&#34;proto&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;tcp&#34;</span>,
+          <span style=color:#e6db74>&#34;num_bytes&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>281</span>,
+          <span style=color:#e6db74>&#34;conn_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span>,
+          <span style=color:#e6db74>&#34;failure&#34;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>null</span>,
+          <span style=color:#e6db74>&#34;t&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>0.31307321</span>,
+          <span style=color:#e6db74>&#34;operation&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;write&#34;</span>                      <span style=color:#75715e>// (2)
+</span><span style=color:#75715e></span>        },
         {
-          &quot;failure&quot;: &quot;connection_reset&quot;,            // (3)
-          &quot;operation&quot;: &quot;read&quot;,
-          &quot;proto&quot;: &quot;tcp&quot;,
-          &quot;t&quot;: 0.431875659,
-          &quot;conn_id&quot;: 1
+          <span style=color:#e6db74>&#34;failure&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;connection_reset&#34;</span>,            <span style=color:#75715e>// (3)
+</span><span style=color:#75715e></span>          <span style=color:#e6db74>&#34;operation&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;read&#34;</span>,
+          <span style=color:#e6db74>&#34;proto&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;tcp&#34;</span>,
+          <span style=color:#e6db74>&#34;t&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>0.431875659</span>,
+          <span style=color:#e6db74>&#34;conn_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span>
         }
       ],
-      &quot;th_address&quot;: &quot;example.com:443&quot;               // (4)
-    }
+      <span style=color:#e6db74>&#34;th_address&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;example.com:443&#34;</span>               <span style=color:#75715e>// (4)
+</span><span style=color:#75715e></span>    }
   },
-  &quot;probe_asn&quot;: &quot;AS197207&quot;,
-  &quot;resolver_network_name&quot;: &quot;Cloudflare, Inc.&quot;,      // (5)
-  &quot;report_id&quot;: &quot;20200411T155627Z_AS197207_VlF35wOyEbESrCD4T0c8KpiKdsexqrdMwH5cqkL9OYLLY3040f&quot;
+  <span style=color:#e6db74>&#34;probe_asn&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;AS197207&#34;</span>,
+  <span style=color:#e6db74>&#34;resolver_network_name&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Cloudflare, Inc.&#34;</span>,      <span style=color:#75715e>// (5)
+</span><span style=color:#75715e></span>  <span style=color:#e6db74>&#34;report_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;20200411T155627Z_AS197207_VlF35wOyEbESrCD4T0c8KpiKdsexqrdMwH5cqkL9OYLLY3040f&#34;</span>
 }
-</code></pre><p>We can see from this measurement that the connection is reset after we
+</code></pre></div><p>We can see from this measurement that the connection is reset after we
 have successfully established the connection (1), and we have written
 the 281 bytes of the Client Hello (2). The reset, in particular, is
 received when we&rsquo;re reading the response to the Hello (3). The test
 helper we are using is example.com:443 (4), and the IP address we&rsquo;re
 connecting to has been resolved using Cloudflare DNS over HTTPS resolver
 (5).</p><p>Also, the following experiment performed on 24th April 2020, clearly shows
-that the IP address is valid for example.com:</p><pre><code class=language-text>% curl -svo/dev/null --connect-to example.com:443:93.184.216.34:443 https://example.com
+that the IP address is valid for example.com:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text>% curl -svo/dev/null --connect-to example.com:443:93.184.216.34:443 https://example.com
 * Connecting to hostname: 93.184.216.34
 [...]
 * Server certificate:
 *  subject: C=US; ST=California; L=Los Angeles; O=Internet Corporation for Assigned Names and Numbers; OU=Technology; CN=www.example.org
 *  start date: Nov 28 00:00:00 2018 GMT
 *  expire date: Dec  2 12:00:00 2020 GMT
-*  subjectAltName: host &quot;example.com&quot; matched cert's &quot;example.com&quot;
+*  subjectAltName: host &#34;example.com&#34; matched cert&#39;s &#34;example.com&#34;
 *  issuer: C=US; O=DigiCert Inc; CN=DigiCert SHA2 Secure Server CA
 *  SSL certificate verify ok.
 * Using HTTP2, server supports multi-use
-</code></pre><p>In fact, &ldquo;SSL certificate verify ok&rdquo; means that curl has successfully
+</code></pre></div><p>In fact, &ldquo;SSL certificate verify ok&rdquo; means that curl has successfully
 connected to the specified address and successfully negotiated a TLS
 connection for the given domain name. Also, the &ldquo;--connect-to&rdquo; option
 ensures that we bypass the DNS and use 93.184.216.34
 directly.</p><p>Let us now discuss a measurement where we see a timeout
-anomaly:</p><pre><code class=language-JavaScript>{
-  &quot;test_keys&quot;: {
-    &quot;target&quot;: {
-      &quot;sni&quot;: &quot;psiphon.ca&quot;,
-      &quot;network_events&quot;: [
+anomaly:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript>{
+  <span style=color:#e6db74>&#34;test_keys&#34;</span><span style=color:#f92672>:</span> {
+    <span style=color:#e6db74>&#34;target&#34;</span><span style=color:#f92672>:</span> {
+      <span style=color:#e6db74>&#34;sni&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;psiphon.ca&#34;</span>,
+      <span style=color:#e6db74>&#34;network_events&#34;</span><span style=color:#f92672>:</span> [
         {
-          &quot;proto&quot;: &quot;tcp&quot;,
-          &quot;dial_id&quot;: 15,
-          &quot;conn_id&quot;: 13,
-          &quot;failure&quot;: null,
-          &quot;t&quot;: 0.254239264,
-          &quot;address&quot;: &quot;93.184.216.34:443&quot;,
-          &quot;operation&quot;: &quot;connect&quot;                   // (1)
-        },
+          <span style=color:#e6db74>&#34;proto&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;tcp&#34;</span>,
+          <span style=color:#e6db74>&#34;dial_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>15</span>,
+          <span style=color:#e6db74>&#34;conn_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>13</span>,
+          <span style=color:#e6db74>&#34;failure&#34;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>null</span>,
+          <span style=color:#e6db74>&#34;t&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>0.254239264</span>,
+          <span style=color:#e6db74>&#34;address&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;93.184.216.34:443&#34;</span>,
+          <span style=color:#e6db74>&#34;operation&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;connect&#34;</span>                   <span style=color:#75715e>// (1)
+</span><span style=color:#75715e></span>        },
         {
-          &quot;proto&quot;: &quot;tcp&quot;,
-          &quot;num_bytes&quot;: 262,
-          &quot;conn_id&quot;: 13,
-          &quot;failure&quot;: null,
-          &quot;t&quot;: 0.254566734,
-          &quot;operation&quot;: &quot;write&quot;                     // (2)
-        },
+          <span style=color:#e6db74>&#34;proto&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;tcp&#34;</span>,
+          <span style=color:#e6db74>&#34;num_bytes&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>262</span>,
+          <span style=color:#e6db74>&#34;conn_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>13</span>,
+          <span style=color:#e6db74>&#34;failure&#34;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>null</span>,
+          <span style=color:#e6db74>&#34;t&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>0.254566734</span>,
+          <span style=color:#e6db74>&#34;operation&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;write&#34;</span>                     <span style=color:#75715e>// (2)
+</span><span style=color:#75715e></span>        },
         {
-          &quot;failure&quot;: &quot;unknown_failure: [...] use of closed network connection&quot;,
-          &quot;operation&quot;: &quot;read&quot;,
-          &quot;proto&quot;: &quot;tcp&quot;,
-          &quot;t&quot;: 10.264251304,                       // (4)
-          &quot;conn_id&quot;: 13
+          <span style=color:#e6db74>&#34;failure&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;unknown_failure: [...] use of closed network connection&#34;</span>,
+          <span style=color:#e6db74>&#34;operation&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;read&#34;</span>,
+          <span style=color:#e6db74>&#34;proto&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;tcp&#34;</span>,
+          <span style=color:#e6db74>&#34;t&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>10.264251304</span>,                       <span style=color:#75715e>// (4)
+</span><span style=color:#75715e></span>          <span style=color:#e6db74>&#34;conn_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>13</span>
         }
       ],
-      &quot;th_address&quot;: &quot;example.com:443&quot;,
-      &quot;tls_handshakes&quot;: [
+      <span style=color:#e6db74>&#34;th_address&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;example.com:443&#34;</span>,
+      <span style=color:#e6db74>&#34;tls_handshakes&#34;</span><span style=color:#f92672>:</span> [
         {
-          &quot;tls_version&quot;: &quot;&quot;,
-          &quot;conn_id&quot;: 3,
-          &quot;peer_certificates&quot;: null,
-          &quot;cipher_suite&quot;: &quot;&quot;,
-          &quot;failure&quot;: &quot;generic_timeout_error&quot;,     // (3)
-          &quot;negotiated_protocol&quot;: &quot;&quot;,
-          &quot;t&quot;: 10.264170017
+          <span style=color:#e6db74>&#34;tls_version&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;&#34;</span>,
+          <span style=color:#e6db74>&#34;conn_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>3</span>,
+          <span style=color:#e6db74>&#34;peer_certificates&#34;</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>null</span>,
+          <span style=color:#e6db74>&#34;cipher_suite&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;&#34;</span>,
+          <span style=color:#e6db74>&#34;failure&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;generic_timeout_error&#34;</span>,     <span style=color:#75715e>// (3)
+</span><span style=color:#75715e></span>          <span style=color:#e6db74>&#34;negotiated_protocol&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;&#34;</span>,
+          <span style=color:#e6db74>&#34;t&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>10.264170017</span>
         }
       ]
     }
   },
-  &quot;probe_asn&quot;: &quot;AS58224&quot;,
-  &quot;resolver_network_name&quot;: &quot;Cloudflare, Inc.&quot;,
-  &quot;report_id&quot;: &quot;20200418T105440Z_AS58224_GguWqwSThCto4VAEZRXIvcYMK7QILkHt9LFAed09mTBLM2LsgX&quot;
+  <span style=color:#e6db74>&#34;probe_asn&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;AS58224&#34;</span>,
+  <span style=color:#e6db74>&#34;resolver_network_name&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Cloudflare, Inc.&#34;</span>,
+  <span style=color:#e6db74>&#34;report_id&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;20200418T105440Z_AS58224_GguWqwSThCto4VAEZRXIvcYMK7QILkHt9LFAed09mTBLM2LsgX&#34;</span>
 }
-</code></pre><p>What we see happening here is that we can successfully connect to the
+</code></pre></div><p>What we see happening here is that we can successfully connect to the
 test helper (1), and we can successfully write the Client Hello (2).
 However, the TLS handshake process terminates with timeout after ten
 seconds (3). A few microseconds after that, the read operation that was
