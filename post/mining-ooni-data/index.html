@@ -15,15 +15,15 @@ per report with median file size around 4kb that makes it unsuitable for speedy
 data transfers</li></ul><p>In each of these prefixes you will find one directory (a &ldquo;daily bucket&rdquo;) for
 every day of the year (example: <code>s3://ooni-data/autoclaved/jsonl/2017-11-23</code>). It&rsquo;s worth noting that the &ldquo;daily bucket&rdquo; dates are not necessarily the dates of the measurements, but the dates of when particular sets of measurements
 were processed by the pipeline.</p><p>There is also the legacy <code>sanitised/</code> prefix in the bucket, but it hasn&rsquo;t been updated since 2017-10-02 and is scheduled for removal.</p><p>You can find information about the base data formats inside of
-<a href=https://github.com/TheTorProject/ooni-spec/tree/master/data-formats>ooni-spec/data-formats</a>.</p><p>The data format for every test is also specified inside of
-<a href=https://github.com/TheTorProject/ooni-spec/tree/master/test-specs>ooni-spec/test-specs</a>.</p><p>Note: The JSON schema is not entirely enforced on data ingestion, so there may
+<a href=https://github.com/ooni/spec/tree/master/data-formats>ooni-spec/data-formats</a>.</p><p>The data format for every test is also specified inside of
+<a href=https://github.com/ooni/spec/tree/master/nettests>ooni-spec/test-specs</a>.</p><p>Note: The JSON schema is not entirely enforced on data ingestion, so there may
 be some slight difference between the schema specification and the actual data.</p><p>The command-line <code>lz4</code> tool supporting LZ4 format is packaged as <code>liblz4-tool</code> for
 <em>Debian 9 (stretch)</em> and <em>Ubuntu 16.04 (xenial)</em>, older versions may fail with the following error message: <code>Error 64 : Does not support stream size</code>.</p><h3 id=jsonl>jsonl</h3><p>Each file inside of the <code>jsonl</code> &ldquo;daily bucket&rdquo; has the following format:</p><pre><code>${UTCTIMESTAMP}-${COUNTRY_CODE}-AS${AS_NUMBER}-${TEST_NAME}-${REPORT_ID}-0.2.0-probe.json
 </code></pre><p>Example:</p><pre><code>20171123T012056Z-YE-AS30873-ndt-20171122T162015Z_AS30873_AkAI5sg9XxaVlGlGaGO1fiab5M03iu7ntXEiT2uN5ojtBXIdzr-0.2.0-probe.json
 </code></pre><p>You can list the files related to a particular date using the <a href=https://aws.amazon.com/cli/>AWS CLI</a>:</p><pre><code>aws s3 --no-sign-request ls s3://ooni-data/autoclaved/jsonl/2017-11-23/
 </code></pre><h3 id=jsonltarlz4>jsonl.tar.lz4</h3><p>The <code>jsonl.tar.lz4</code> &ldquo;daily buckets&rdquo; contain one or more LZ4 compressed
 files for every
-<a href=https://github.com/TheTorProject/ooni-spec/tree/master/test-specs>OONI Probe test type</a>.</p><p>The file format is: <code>${TEST_NAME}.${NUM}.tar.lz4</code> for small sets of files.</p><p>Example:</p><pre><code>...
+<a href=https://github.com/ooni/spec/tree/master/nettests>OONI Probe test type</a>.</p><p>The file format is: <code>${TEST_NAME}.${NUM}.tar.lz4</code> for small sets of files.</p><p>Example:</p><pre><code>...
 2017-11-24 02:29:10    1485166 tcp_connect.0.tar.lz4
 2017-11-24 02:29:01      18463 telegram.0.tar.lz4
 2017-11-24 02:29:01      86817 vanilla_tor.0.tar.lz4
