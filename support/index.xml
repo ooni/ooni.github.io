@@ -1,12 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.org/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://ooni.org/support/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.org/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/support/faq/</guid><description>Frequently Asked Questions (FAQ) This Frequently Asked Questions (FAQ) section aims to address the questions that we are frequently asked by the community.
-Are there other questions you would like us to address? Please let us know.
-About OONI
-What is OONI?
-Why OONI?
-What does OONI do?
-Why measure internet censorship?
-How is OONI funded?
-What is OONI&amp;rsquo;s relationship with The Tor Project?</description></item><item><title/><link>https://ooni.org/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/support/glossary/</guid><description>OONI Glossary This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.org/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://ooni.org/support/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.org/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/support/glossary/</guid><description>OONI Glossary This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports.
 If you would like to see additional terms in this glossary, please open a pull request or send us an email.
 API
 AS
@@ -17,4 +9,12 @@ Block page
 Caching
 Circumvention tools
 Client
-Data processing pipeline</description></item></channel></rss>
+Data processing pipeline</description></item><item><title>Frequently Asked Questions (FAQ)</title><link>https://ooni.org/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/support/faq/</guid><description>This Frequently Asked Questions (FAQ) section aims to address the questions that we are frequently asked by the community.
+Are there other questions you would like us to address? Please let us know.
+About OONI
+What is OONI?
+Why OONI?
+What does OONI do?
+Why measure internet censorship?
+How is OONI funded?
+What is OONI&amp;rsquo;s relationship with The Tor Project?</description></item></channel></rss>
