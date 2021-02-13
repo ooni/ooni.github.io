@@ -389,18 +389,7 @@ Just like Tor users, the developers, researchers, and founders who&amp;rsquo;ve 
 The Tor network, which is free and open source, provides its users with online anonymity, privacy, and censorship circumvention.</description></item><item><title/><link>https://ooni.org/partners/tuwindi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/partners/tuwindi/</guid><description>Tuwindi is a non-partisan, non-profit Malian law organization. Their goal is to use information and communication technologies to support social and economic development. Their mission is to propell economic and social development through the innovative use of ICT communication and information technologies.</description></item><item><title/><link>https://ooni.org/partners/venezuela-inteligente/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/partners/venezuela-inteligente/</guid><description>Venezuela Inteligente is a non-profit organization that aims to facilitate information, communication and collaboration between citizens and civil society organizations to create impact from a non-partisan perspective. They promote, facilitate and develop digital tools, improving access to information, collaboration and responsiveness, empowering organizations, activists and citizens. They fight for the rights of Venezuelans online and offline.
 Through their VEsinFiltro project, Venezuela Inteligente investigate and document internet censorship in Venezuela, using (along with custom scripts and tools) OONI Probe and OONI data.</description></item><item><title/><link>https://ooni.org/retired/labs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/retired/labs/</guid><description>OONI labs has been retired The OONI Labs host has been retired for the time being as we plan to integrate work from it in OONI Explorer.
 You can still find all the code for it here: https://github.com/ooni/labs
-If you have any questions you can reach the OONI team on our slack or #ooni at irc.oftc.net.</description></item><item><title/><link>https://ooni.org/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/support/glossary/</guid><description>OONI Glossary This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports.
-If you would like to see additional terms in this glossary, please open a pull request or send us an email.
-API
-AS
-ASN
-BGP
-Blocklist
-Block page
-Caching
-Circumvention tools
-Client
-Data processing pipeline</description></item><item><title>DNS consistency</title><link>https://ooni.org/nettest/dns-consistency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/nettest/dns-consistency/</guid><description>DNS consistency This test compares the DNS query results from a DNS resolver which is considered to be reliable with one that is tested for tampering.
+If you have any questions you can reach the OONI team on our slack or #ooni at irc.oftc.net.</description></item><item><title>DNS consistency</title><link>https://ooni.org/nettest/dns-consistency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/nettest/dns-consistency/</guid><description>DNS consistency This test compares the DNS query results from a DNS resolver which is considered to be reliable with one that is tested for tampering.
 The domain name system (DNS) is what is responsible for transforming a host name (e.g. torproject.org) into an IP address (e.g. 38.229.72.16). ISPs, amongst others, run DNS resolvers which map IP addresses to host names. In certain circumstances though, ISPs map the wrong IP addresses to the wrong host names.</description></item><item><title>Download OONI Probe Desktop</title><link>https://ooni.org/install/desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/install/desktop/</guid><description>Download OONI Probe for Windows Download OONI Probe for macOS Other Platforms &amp;raquo;</description></item><item><title>Facebook Messenger test</title><link>https://ooni.org/nettest/facebook-messenger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/nettest/facebook-messenger/</guid><description>Facebook Messenger test This test is designed to examine the reachability of Facebook Messenger within a tested network.
 OONI&amp;rsquo;s Facebook Messenger test attempts to perform a TCP connection and DNS lookup to Facebook&amp;rsquo;s endpoints over the vantage point of the user.
 Based on this methodology, Facebook Messenger is likely blocked if one or both of the following apply:
@@ -429,7 +418,18 @@ Version: 1.4.2
 This Data Policy discloses and explains what data the Open Observatory of Network Interference (OONI) project (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) collects, processes, stores and publishes relating to the users of its OONI Probe software (&amp;ldquo;you&amp;rdquo; or &amp;ldquo;your&amp;rdquo;). This Data Policy also outlines the data principles that govern OONI&amp;rsquo;s data practices.
 Data Principles
 1. Purpose Limitation
-2. User Safety</description></item><item><title>OONI Partnership Program</title><link>https://ooni.org/get-involved/partnership-program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/get-involved/partnership-program/</guid><description>What is the OONI Partnership Program?
+2. User Safety</description></item><item><title>OONI Glossary</title><link>https://ooni.org/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/support/glossary/</guid><description>This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports.
+If you would like to see additional terms in this glossary, please open a pull request or send us an email.
+API
+AS
+ASN
+BGP
+Blocklist
+Block page
+Caching
+Circumvention tools
+Client
+Data processing pipeline</description></item><item><title>OONI Partnership Program</title><link>https://ooni.org/get-involved/partnership-program/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.org/get-involved/partnership-program/</guid><description>What is the OONI Partnership Program?
 What is the aim of the OONI Partnership Program?
 What does the OONI Partnership Program entail?
 Collecting OONI Probe network measurements
