@@ -1,5 +1,5 @@
 <!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>OONI Data Policy | OONI</title><link rel=canonical href=https://ooni.org/about/data-policy/><meta name=description content="This Data Policy discloses and explains what data the OONI project collects, processes, stores and publishes relating to the users of its OONI Probe software."><meta property="og:title" content="OONI Data Policy"><meta property="og:description" content="This Data Policy discloses and explains what data the OONI project collects, processes, stores and publishes relating to the users of its OONI Probe software."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.org/about/data-policy/"><meta name=twitter:card content="summary"><meta name=twitter:title content="OONI Data Policy"><meta name=twitter:description content="This Data Policy discloses and explains what data the OONI project collects, processes, stores and publishes relating to the users of its OONI Probe software."><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.eea8b4fc7fc3a0fb28a6ae9bf723bde9f4ee7a602514aacd85ba56e6fbaea756.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['disableCookies']);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4"><div class="container pt-2"><div class="row align-items-center"><div class="col-lg-2 nav-menu-brand"><a href=/><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
-/images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-8 nav-menu"><div class=row><div class="col-lg nav-menu-item"><a href=/about/>About</a></div><div class="col-lg nav-menu-item"><a href=/nettest/>Tests</a></div><div class="col-lg nav-menu-item"><a href=/data/>Data</a></div><div class="col-lg nav-menu-item"><a href=/get-involved/>Get Involved</a></div><div class="col-lg nav-menu-item"><a href=/reports/>Reports</a></div><div class="col-lg nav-menu-item"><a href=/blog/>Blog</a></div></div></div><div class="col-lg-2 nav-menu-install"><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></nav><div class=container><main class="col content"><h1 class=article-title>OONI Data Policy</h1><p><strong>Last modified:</strong> February 12, 2021</p><p><strong>Version:</strong> 1.4.2</p><p>This Data Policy discloses and explains what data the <a href=https://ooni.org/>Open Observatory of
+/images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-8 nav-menu"><div class=row><div class="col-lg nav-menu-item"><a href=/about/>About</a></div><div class="col-lg nav-menu-item"><a href=/nettest/>Tests</a></div><div class="col-lg nav-menu-item"><a href=/data/>Data</a></div><div class="col-lg nav-menu-item"><a href=/get-involved/>Get Involved</a></div><div class="col-lg nav-menu-item"><a href=/reports/>Reports</a></div><div class="col-lg nav-menu-item"><a href=/blog/>Blog</a></div></div></div><div class="col-lg-2 nav-menu-install"><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></nav><div class=container><main class="col content"><h1 class=article-title>OONI Data Policy</h1><p><strong>Last modified:</strong> April 13, 2021</p><p><strong>Version:</strong> 1.4.3</p><p>This Data Policy discloses and explains what data the <a href=https://ooni.org/>Open Observatory of
 Network Interference (OONI) project</a> (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;)
 collects, processes, stores and publishes relating to the users of
 its OONI Probe software (&ldquo;you&rdquo; or &ldquo;your&rdquo;). This Data Policy also outlines the
@@ -26,38 +26,19 @@ measurements.</p><p>We therefore do our best to preserve a <a href=https://ooni.
 measurements</a> that we collect and openly publish.</p><p>As a result, we refrain from deleting OONI measurements (unless there are
 user safety concerns), and we continuously work towards improving our analysis
 and storage capabilities for the public archival of all OONI measurements
-collected from around the world.</p><h2 id=analytics>Analytics</h2><p>Through the use of analytics, our goal is to better understand how our apps are
-used, improve our understanding of user needs, improve OONI tools, and better
-serve the OONI community.</p><p>We also use analytics to receive crash reports, which enables us to identify and
+collected from around the world.</p><h2 id=analytics>Analytics</h2><p>We primarily use analytics to receive crash reports, which enables us to identify and
 fix bugs, and to improve the performance of the OONI Probe apps.</p><h3 id=ooni-probe-apps>OONI Probe apps</h3><p>For the <a href=https://ooni.org/install/mobile>OONI Probe mobile app</a>, we use:</p><ul><li><p><a href=https://count.ly/>Countly (self-hosted)</a>. We use open source Countly
-analytics (which we host ourselves) for:</p><ul><li><p><strong>Sending push notifications.</strong> If
-you have opted in to push notifications on OONI Probe Android, we will collect
+analytics (which we host ourselves) for <strong>sending push notifications</strong>. If
+you opt in to push notifications on OONI Probe Android, we will collect
 information necessary for sending push notifications (see “Data We Collect”
-section for more details).</p></li><li><p><strong>Collecting app usage metrics.</strong> If you opt in to
-the collection of app usage metrics, we will collect aggregate app usage data
-(such as how many users tap on specific buttons), as this information can help
-us better understand user needs and improve the app. We do not collect the IP
-address of the user.</p></li></ul></li><li><p><a href=https://firebase.google.com/docs/crashlytics>Google Firebase Crashlytics</a>. If
-you opt in to sharing crash reports with us, we will collect sanitized technical
-data, including device identifier information, which will help us understand why
-the OONI Probe app has crashed. We do not collect the IP address or a unique
-identifier of the user (though Google may collect this).</p></li><li><p><a href=https://sentry.io/>Sentry</a>. If you opt in to sharing crash reports with us, we
+section for more details).</p></li><li><p><a href=https://sentry.io/>Sentry</a>. If you opt in to sharing <strong>crash reports</strong> with us, we
 will collect sanitized technical data, including device identifier information,
 which will help us understand why the OONI Probe app has crashed. We do not
-collect the IP address or a unique identifier of the user.</p></li></ul><p>We are currently evaluating whether to keep <a href=https://sentry.io/>Sentry</a> or <a href=https://firebase.google.com/docs/crashlytics>Google Firebase Crashlytics</a> (or use an entirely different solution) for the collection of crash
-reports. We will update this Data Policy once we have removed or changed one of
-these analytics tools for crash reporting.</p><p>On <a href=https://f-droid.org/packages/org.openobservatory.ooniprobe/>F-Droid</a>, we only use <a href=https://count.ly/>Countly</a> (which is open source and self-hosted) for the
-collection of aggregate app usage metrics. You can opt in to this during the
-onboarding process, and you can opt out through the settings of the app.</p><p>For the <a href=https://ooni.org/install/desktop>OONI Probe desktop app</a>, we use:</p><ul><li><p><a href=https://matomo.org/>Matomo (self-hosted)</a>. We host this open source analytics
-platform ourselves and are therefore responsible for the data collected. If you
-opt in to the collection of app usage metrics, we
-will collect <em>aggregate app usage data</em> (such as how many users click on specific
-buttons), as this information can help us better understand user needs and
-improve the app. We do not collect the IP address of the user.</p></li><li><p><a href=https://sentry.io/>Sentry</a>. If you opt in to sharing crash reports with us, we will collect
+collect the IP address or a unique identifier of the user.</p></li></ul><p>On <a href=https://f-droid.org/packages/org.openobservatory.ooniprobe/>F-Droid</a>, we do <em>not</em> use any analytics.</p><p>For the <a href=https://ooni.org/install/desktop>OONI Probe desktop app</a>, we use:</p><ul><li><a href=https://sentry.io/>Sentry</a>. If you opt in to sharing <strong>crash reports</strong> with us, we will collect
 sanitized technical data, including device identifier information, which will
 help us understand why the OONI Probe app has crashed. We do not collect the IP
-address or a unique identifier of the user.</p></li></ul><p>Details about our specific setup can be found in <a href=https://github.com/ooni/sysadmin>ooni/sysadmin</a>.</p><p>On both the OONI Probe mobile and desktop apps, you can opt in to the collection
-of app usage metrics and crash reports during the onboarding process. If you
+address or a unique identifier of the user.</li></ul><p>Details about our specific setup can be found in <a href=https://github.com/ooni/sysadmin>ooni/sysadmin</a>.</p><p>On both the OONI Probe mobile and desktop apps, you can opt in to sharing
+crash reports during the onboarding process. If you
 change your mind, you can opt out through the settings of the apps.</p><h3 id=ooni-website>OONI website</h3><p>We use the open source <a href=https://matomo.org/>Matomo</a> analytics platform (which we host ourselves) to
 collect data on how many visits <a href=https://explorer.ooni.org/>OONI Explorer</a> and our <a href=https://ooni.org/>website</a> receive. This is
 done <strong>without the use of cookies</strong>. Since we do not use cookies or track any
@@ -84,7 +65,7 @@ from, limiting its value).</p><h4 id=network-information>Network information</h4
 when you run OONI Probe.</p><p>Collecting ASNs helps our work by revealing the identity
 of network providers that engage in censorship or other forms of network
 interference. For example, if you run OONI Probe on Vodafone Italia, we would collect
-&ldquo;AS30722&rdquo;, which is the corresponding ASN.</p><p>We also collect information to identify if an OONI Probe user is on a <strong>WiFi network</strong> or
+<code>AS30722</code>, which is the corresponding ASN.</p><p>We also collect information to identify if an OONI Probe user is on a <strong>WiFi network</strong> or
 using <strong>mobile data</strong>.</p><p>This information can be useful for distinguishing measurements collected from
 mobile and fixed-line networks, as well as for sending out push notifications
 and encouraging automatic OONI Probe testing. For example, if you are on WiFi
@@ -100,15 +81,7 @@ reports. This information is essential for identifying bugs and improving the
 performance of the OONI Probe apps.</p><p>These crash reports include the OONI Probe software version, device identifier
 information, and information about why and how a specific OONI Probe function
 failed to work as expected.</p><p>You can opt in or opt out of sending us crash reports by enabling or disabling
-this option in the privacy settings of the OONI Probe apps.</p><h4 id=app-usage-statistics>App usage statistics</h4><p>During the onboarding process, you can opt in to share OONI Probe app usage
-statistics with us. This information can help us better understand how our apps
-are used, improve our understanding of user needs, improve OONI Probe apps, and
-better serve the OONI community.</p><p>We use open source, self-hosted analytics platforms (<a href=https://count.ly/>Countly</a> in the OONI Probe
-mobile app, and <a href=https://matomo.org/>Matomo</a> in the OONI Probe desktop app) to collect <em>aggregate app
-usage</em> statistics. Details about our specific setup can be found in
-<a href=https://github.com/ooni/sysadmin>ooni/sysadmin</a>.</p><p>You can opt in or opt out of our use of analytics by enabling or disabling the
-collection of app usage statistics in the privacy settings of the OONI Probe
-apps.</p><h4 id=ip-addresses-and-other-information>IP addresses and other information</h4><p>We do <em>not</em> aim to collect or store your IP addresses. In fact, we take measures
+this option in the settings of the OONI Probe apps.</p><h4 id=ip-addresses-and-other-information>IP addresses and other information</h4><p>We do <em>not</em> aim to collect or store your IP addresses. In fact, we take measures
 to remove them from our database of collected measurements to reduce the risk to
 you.</p><p>However, we <strong>might unintentionally</strong> collect your IP addresses and other
 personally-identifiable information if this data is included in the HTTP headers
@@ -127,7 +100,7 @@ metadb that hosts OONI Probe measurements).</p><h3 id=data-we-publish>Data We Pu
 and stored to allow third parties to conduct independent studies, verify our
 findings, and answer other research questions.</p><p>Currently, we publish all OONI measurement data both through our <a href=https://api.ooni.io/>OONI API</a> and through an interactive
 web interface, called <a href=https://explorer.ooni.org/>OONI Explorer</a>.</p><p>For more information on the license under which the data is released, see
-<a href=https://github.com/ooni/license/tree/master/data>github.com/ooni/license/data</a>.</p><p>We will <em>not</em> publish data related to app analytics and push notification support, both of which are securely stored separately from the public measurement metadb.</p><h3 id=third-party-services>Third-party services</h3><p>The performance tests included in the OONI Probe apps are conducted against third-party servers
+<a href=https://github.com/ooni/license/tree/master/data>github.com/ooni/license/data</a>.</p><p>We will <em>not</em> publish data related to analytics and push notification support, both of which are securely stored separately from the public measurement metadb.</p><h3 id=third-party-services>Third-party services</h3><p>The performance tests included in the OONI Probe apps are conducted against third-party servers
 provided by <a href=https://www.measurementlab.net/>Measurement Lab (M-Lab)</a>. M-Lab&rsquo;s
 services require the retention and disclosure of IP addresses for research
 purposes. Learn more about M-Lab&rsquo;s data governance through its <a href=https://www.measurementlab.net/privacy/>privacy statement</a>.</p><p>We reserve all rights to make future changes to this Data Policy at our sole
