@@ -1,0 +1,122 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Making the OONI Probe Android app more resilient | OONI</title><link rel=canonical href=https://ooni.org/post/making-ooni-probe-android-more-resilient/><meta name=description content="We describe how we made OONI Probe Android more resilient to blocking."><meta property="og:title" content="Making the OONI Probe Android app more resilient"><meta property="og:description" content="We describe how we made OONI Probe Android more resilient to blocking."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.org/post/making-ooni-probe-android-more-resilient/"><meta property="og:image" content="https://ooni.org/post/making-ooni-probe-android-more-resilient/images/image-1.png"><meta property="article:published_time" content="2021-05-27T00:00:00+00:00"><meta property="article:modified_time" content="2021-05-27T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.org/post/making-ooni-probe-android-more-resilient/images/image-1.png"><meta name=twitter:title content="Making the OONI Probe Android app more resilient"><meta name=twitter:description content="We describe how we made OONI Probe Android more resilient to blocking."><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.eea8b4fc7fc3a0fb28a6ae9bf723bde9f4ee7a602514aacd85ba56e6fbaea756.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['disableCookies']);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4"><div class="container pt-2"><div class="row align-items-center"><div class="col-lg-2 nav-menu-brand"><a href=/><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+/images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-8 nav-menu"><div class=row><div class="col-lg nav-menu-item"><a href=/about/>About</a></div><div class="col-lg nav-menu-item"><a href=/nettest/>Tests</a></div><div class="col-lg nav-menu-item"><a href=/data/>Data</a></div><div class="col-lg nav-menu-item"><a href=/get-involved/>Get Involved</a></div><div class="col-lg nav-menu-item"><a href=/reports/>Reports</a></div><div class="col-lg nav-menu-item"><a href=/blog/>Blog</a></div></div></div><div class="col-lg-2 nav-menu-install"><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>Making the OONI Probe Android app more resilient</h1><div class=byline><span class=author>Simone Basso</span>
+<span class=date>2021-05-27</span></div><p>We recently made <a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">OONI Probe Android</a>
+more robust against accidental or deliberate blocking of our backend
+services. Specifically, we implemented support for specifying a proxy
+that speaks with OONI’s backend services. We also improved the build
+process to influence the TLS Client Hello fingerprint, which helps with
+avoiding accidental blocking.</p><ul><li><p><a href=#adding-support-for-a-proxy>Adding support for a proxy</a></p></li><li><p><a href=#changing-our-android-tls-fingerprint>Changing our Android TLS fingerprint</a></p></li><li><p><a href=#future-improvements>Future improvements</a></p></li></ul><h1 id=adding-support-for-a-proxy>Adding support for a proxy</h1><p>Since late 2020, community members have been reporting specific OONI
+Probe Android failures. The symptom is that all tests fail with the “all
+available probe services failed” error. This issue has been publicly
+documented, for example, in
+<a href=https://github.com/ooni/probe/issues/1324>ooni/probe#1324</a>. The
+following screenshot shows what a user would see under this specific
+error condition.</p><div><a href=/post/making-ooni-probe-android-more-resilient/images/image-1.png><img src=/post/making-ooni-probe-android-more-resilient/images/image-1_hu11b6f6f482f58dfa917bcfa8de3b0916_361392_1000x800_fit_box_2.png srcset="/post/making-ooni-probe-android-more-resilient/images/image-1_hu11b6f6f482f58dfa917bcfa8de3b0916_361392_2000x1600_fit_box_2.png 2x" title="OONI Probe Android error" alt="OONI Probe Android error"></a></div><p>The error in the above screenshot means that OONI Probe <em>attempted</em> to
+contact all the public OONI API endpoints (which we call “probe
+services”), but to no avail.</p><p>We first discussed implementing a proxy during the January 2020 OONI
+community meeting. After this meeting, we opened
+<a href=https://github.com/ooni/probe/issues/985>ooni/probe#985</a> to
+describe the implementation of this work. My <a href=https://github.com/ooni/probe/issues/985#issuecomment-683645984>initial thought</a>
+on this matter was that we could automatically start a
+<a href=https://psiphon.ca/>Psiphon</a> tunnel upon failure.</p><p>But after discussing this with a few advanced users (thank you!), I
+refined my view on this issue. There will always be an advanced user who
+knows the local context better than us. These users will already have
+well-configured circumvention technology in place (e.g., an instance of
+Orbot running on the same device using bridges and pluggable
+transports).</p><p>These discussions and the urgency to solve the “all available probe
+services failed” issue also convinced me that we wanted to provide users
+with options <em>first</em>. Automatically detecting whether the ISP is
+censoring the probe services would then be implemented <em>later</em>.</p><p>The result of these conversations was <a href=https://github.com/ooni/probe/issues/1324#issuecomment-777294472>a plan</a>
+to allow users to <em>choose</em> whether they wanted to:</p><ul><li><p>Use <a href=https://psiphon.ca/>Psiphon</a>; or</p></li><li><p>Manually specify a SOCSK5 proxy; or</p></li><li><p>Not use a proxy at all.</p></li></ul><p>You can read through
+<a href=https://github.com/ooni/probe/issues/985>ooni/probe#985</a> and
+<a href=https://github.com/ooni/probe/issues/1324>ooni/probe#1324</a> for more
+low-level details on what we did to make this possible. Here, for
+brevity, I will just mention the two most significant moments. <a href=https://github.com/ooni/probe/issues/1324#issuecomment-812836285>On
+April 3, 2021, we added support for embedding an encrypted Psiphon
+config file into OONI Probe builds</a>.
+This improvement enabled us to start a Psiphon tunnel without depending
+on the probe services for fetching this configuration file. <a href=https://github.com/ooni/probe/issues/1324#issuecomment-819566311>On April
+19, 2021, we discovered what was likely the root cause of the blocking</a>.
+As I will further explain in the next section, it was the TLS Client
+Hello fingerprint. We needed to change how we build OONI Probe’s support
+libraries for Android devices to remediate this problem.</p><p>With these low-level details out of the way, my colleague Lorenzo and I
+started working on the user interface for configuring a proxy on Android
+(<a href=https://github.com/ooni/probe-android/pull/423>ooni/probe-android#423</a>).
+A few Android users also assisted us, providing feedback, testing, and
+code patches.</p><p>This work resulted in adding an <strong>OONI backend proxy</strong> section in the
+settings of the OONI Probe app:</p><div><a href=/post/making-ooni-probe-android-more-resilient/images/image-2.jpg><img src=/post/making-ooni-probe-android-more-resilient/images/image-2_hu783b4269f01cb79164ba62efadafd575_30857_1000x800_fit_q75_box.jpg srcset="/post/making-ooni-probe-android-more-resilient/images/image-2_hu783b4269f01cb79164ba62efadafd575_30857_2000x1600_fit_q75_box.jpg 2x" title="OONI Probe backend proxy settings" alt="OONI Probe backend proxy settings"></a></div><p>By tapping on the “OONI backend proxy” row, we will direct you to
+another screen, which allows you to choose which proxy you want to use:</p><div><a href=/post/making-ooni-probe-android-more-resilient/images/image-3.jpg><img src=/post/making-ooni-probe-android-more-resilient/images/image-3_huca3b85e7f14f18fb585d724bcdb24775_30080_1000x800_fit_q75_box.jpg srcset="/post/making-ooni-probe-android-more-resilient/images/image-3_huca3b85e7f14f18fb585d724bcdb24775_30080_2000x1600_fit_q75_box.jpg 2x" title="Choosing a proxy" alt="Choosing a proxy"></a></div><p>The default (<code>None</code>) is that no proxy is being used. If you choose
+<code>Psiphon</code>, OONI Probe will create a <a href=https://psiphon.ca/>Psiphon</a>
+tunnel using the encrypted configuration file. If you select <code>Custom</code>,
+you can set the hostname and port of a SOCKS5 proxy. I have filled the
+hostname and port with <code>127.0.0.1</code> and <code>9050</code> in the above
+screenshot. These are the settings you can use if you have an
+<a href="https://play.google.com/store/apps/details?id=org.torproject.android">Orbot</a>
+instance running on your device (or tor inside Termux). Instead, if you
+are running <a href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser">Tor Browser</a>,
+the IP address is <code>127.0.0.1</code> and the port is <code>9150</code>.</p><h1 id=changing-our-android-tls-fingerprint>Changing our Android TLS fingerprint</h1><p>In mid-April 2021, we discovered the likely cause of blocking. V2Ray
+developers previously documented this issue in
+<a href=https://github.com/v2fly/v2ray-core/issues/557>v2fly/v2ray-core#557</a>.</p><p>The root cause is that the TLS Client Hello generated by Golang on
+Android devices changes depending on Golang’s understanding of the
+hardware capabilities. Golang’s TLS library <a href=https://github.com/golang/go/blob/go1.16.4/src/crypto/aes/cipher_asm.go#L30>uses a hardware
+implementation of AES when possible</a>.
+Otherwise, it falls back to AES code written in pure Go. According to
+<a href=https://github.com/golang/go/blob/go1.16.4/src/crypto/aes/const.go#L8>the official docs</a>,
+such code is not constant over time. Probably, for this reason, when
+Golang thinks that there is no hardware support for AES, it <a href=https://github.com/golang/go/blob/go1.16.4/src/crypto/tls/common.go#L1449>reorders
+the preferred cipher list in the Client Hello</a>.
+This reordering aims to significantly reduce the probability that the
+server will select AES ciphers by moving such ciphers towards the bottom
+of the list.</p><p>As documented by V2Ray developers in the aforementioned
+<a href=https://github.com/v2fly/v2ray-core/issues/557>issue</a>, some ISPs
+only allow <a href=https://github.com/v2fly/v2ray-core/issues/557#issuecomment-775004211>specific TLS Client Hello fingerprinting</a>.
+When AES algorithms sit at the top of the preferred ciphers list, TLS
+works. Instead, when they are near the bottom, TLS fails.</p><p>We noticed this issue when debugging OONI Probe Android on one such
+network. Very interestingly, the symptom was that a debug build of our
+app was working. At the same time, a release build with “all the
+available probe services" <a href=https://github.com/ooni/probe/issues/1444>failed</a>. Our analysis of
+the problem is documented more in detail in the
+<a href=https://github.com/ooni/probe/issues/1444#issue-854499026>ooni/probe#1444</a>
+issue. Golang fails to read the hardware capabilities because
+<code>/proc/self/auxv</code> is not readable on Android in release mode.</p><p>(At the moment of writing this blog post, it is unclear whether
+<code>/proc/self/auxv</code> is not readable on all arm64 Android devices or
+whether we were just lucky with our devices.)</p><p>To fix this issue for OONI Probe, we <a href=https://github.com/ooni/go>forked Golang</a>. We <a href=https://github.com/ooni/go/commit/62177de2b42c35bee645909cc074a2b6c4b67d5a>modified</a> the <code>src/runtime</code>
+to call the C library’s <code>getauxval</code> function to get the correct
+hardware information. This patch seems a bit hacky and does not necessarily feel right in
+general. Golang’s <code>src/runtime</code> should not depend on the C library.
+Still, our solution works for us because we need to link the C library
+on Android anyway.</p><p>When reviewing the diff, my colleague Arturo suggested that a better way
+to fix this issue is patching the
+<a href=https://github.com/golang/mobile>golang/mobile</a> repository instead.
+Patching <a href=https://github.com/golang/mobile>golang/mobile</a> feels like
+a more proper solution for this problem, but we have not had time to
+explore it yet.</p><p>For now, <a href=https://github.com/ooni/probe-cli/blob/v3.10.0-beta.3/mk#L421>our <code>mk</code> build script uses ooni/go when building for Android</a>.
+While this may not be the best solution, it nonetheless provides us a
+way to ship this crucial fix to users within a reasonable time frame.</p><h1 id=future-improvements>Future improvements</h1><p>Regarding the proxy functionality, we are also planning on implementing
+proxy support for OONI Probe iOS
+(<a href=https://github.com/ooni/probe/issues/1470>ooni/probe#1470</a>), the
+OONI Probe Command Line Interface
+(<a href=https://github.com/ooni/probe/issues/1488>ooni/probe#1488</a>), and
+the OONI Probe desktop app
+(<a href=https://github.com/ooni/probe/issues/1489>ooni/probe#1489</a>). We
+chose to prioritize Android because Android users have been impacted by
+this issue the most, as far as we know. If you see the “all available
+probe services failed” error on other platforms (beyond Android), please <a href=https://ooni.org/about/#contact>get in touch</a>! (So far, we have received a
+single report of a similar problem occurring on iOS. If you also see
+this issue, please let us know by commenting on the
+<a href=https://github.com/ooni/probe/issues/1491>ooni/probe#1491</a> issue.)</p><p>We are also planning on enabling users to choose HTTP proxies. We are
+considering the possibility of enabling users to specify a username and
+a password for SOCKS5/HTTP proxies. We are also discussing the option of
+passing Psiphon a downstream SOCKS5 proxy with optional authentication.
+We documented these future changes in
+<a href=https://github.com/ooni/probe/issues/1465>ooni/probe#1465</a>. If you
+have specific proxy needs, please let us know (perhaps on our
+<a href=https://slack.openobservatory.org/>Slack channel</a>), and we will plan for them!</p><p>Regarding the fix for Golang, we need to figure out whether we can fix
+the issue inside of the
+<a href=https://github.com/golang/mobile>golang/mobile</a> repository
+(<a href=https://github.com/ooni/probe/issues/1486>ooni/probe#1486</a>). We
+also need to explore what happens on older arm devices
+(<a href=https://github.com/ooni/probe/issues/1487>ooni/probe#1487</a>). If
+you have insight on how we can fix the
+<a href=https://github.com/golang/mobile>golang/mobile</a> issue or ways to
+test old Android arm-based devices, please ping us!</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>
