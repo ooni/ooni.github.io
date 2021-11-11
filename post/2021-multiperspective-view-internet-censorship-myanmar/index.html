@@ -1,0 +1,158 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>A multi-perspective view of Internet censorship in Myanmar | OONI</title><link rel=canonical href=https://ooni.org/post/2021-multiperspective-view-internet-censorship-myanmar/><meta name=description content="This research paper examines internet censorship in Myanmar following the 2021 military coup."><meta property="og:title" content="A multi-perspective view of Internet censorship in Myanmar"><meta property="og:description" content="This research paper examines internet censorship in Myanmar following the 2021 military coup."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.org/post/2021-multiperspective-view-internet-censorship-myanmar/"><meta property="og:image" content="https://ooni.org/post/2021-multiperspective-view-internet-censorship-myanmar/images/01.png"><meta property="article:published_time" content="2021-11-11T00:00:00+00:00"><meta property="article:modified_time" content="2021-11-11T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.org/post/2021-multiperspective-view-internet-censorship-myanmar/images/01.png"><meta name=twitter:title content="A multi-perspective view of Internet censorship in Myanmar"><meta name=twitter:description content="This research paper examines internet censorship in Myanmar following the 2021 military coup."><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.org/css/bootstrap.min.eea8b4fc7fc3a0fb28a6ae9bf723bde9f4ee7a602514aacd85ba56e6fbaea756.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['disableCookies']);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4"><div class="container pt-2"><div class="row align-items-center"><div class="col-lg-2 nav-menu-brand"><a href=/><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+/images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-8 nav-menu"><div class=row><div class="col-lg nav-menu-item"><a href=/about/>About</a></div><div class="col-lg nav-menu-item"><a href=/nettest/>Tests</a></div><div class="col-lg nav-menu-item"><a href=/data/>Data</a></div><div class="col-lg nav-menu-item"><a href=/get-involved/>Get Involved</a></div><div class="col-lg nav-menu-item"><a href=/reports/>Reports</a></div><div class="col-lg nav-menu-item"><a href=/blog/>Blog</a></div></div></div><div class="col-lg-2 nav-menu-install"><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>A multi-perspective view of Internet censorship in Myanmar</h1><div class=byline><span class=author>Maria Xynou</span>
+<span class=date>2021-11-11</span></div><p>In the wake of a <a href=https://www.bbc.com/news/world-asia-55882489>military coup</a> in February 2021,
+Myanmar experienced unprecedented levels of internet censorship.</p><p>In response, we collaborated with CAIDA’s <a href=https://ooni.org/partners/ioda/>Internet Outage Detection and Analysis (IODA)</a> team and
+<a href=https://ooni.org/partners/mido/>Myanmar ICT for Development Organization (MIDO)</a> on publishing a <a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/>research report</a>
+which documents a <a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#internet-outages>series of nightly internet outages</a>
+and the
+<a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#findings>blocking</a>
+of social media, Wikipedia, and circumvention tool sites in Myanmar
+following the military coup.</p><p>In the months that followed, we continued to examine internet censorship
+in Myanmar quite closely. We collaborated with
+<a href=https://ioda.caida.org/>IODA</a>, <a href=https://www.kentik.com/>Kentik</a>,
+and other researchers from <a href=https://ucsd.edu/>UC San Diego</a> and the
+<a href=https://umich.edu/>University of Michigan</a> to expand our analysis.
+We used diverse datasets and measurement methods to offer a holistic
+view into the censorship events in Myanmar that occurred since the coup
+and show how internet censorship <em>evolved</em> between <strong>1st February 2021
+to 30th April 2021</strong>.</p><p>As an outcome, we produced a <a href=https://dl.acm.org/doi/pdf/10.1145/3473604.3474562>research paper</a> (“A
+multi-perspective view of Internet censorship in Myanmar”) which we
+submitted to the <a href=https://conferences.sigcomm.org/sigcomm/2021/workshop-foci.html>ACM SIGCOMM 2021 Workshop on Free and Open Communications on the Internet (FOCI 2021)</a>.
+Our paper was
+<a href=https://dl.acm.org/doi/10.1145/3473604.3474562>published</a> by FOCI
+2021 and CAIDA’s Ramakrishna Padmanabhan
+<a href=https://conferences.sigcomm.org/sigcomm/2021/workshop-foci.html>presented</a>
+our research findings at the workshop.</p><p><strong><a href=https://dl.acm.org/doi/pdf/10.1145/3473604.3474562>READ RESEARCH PAPER</a></strong></p><p>Below we summarize the key findings of our paper.</p><ul><li><p><a href=#summary-of-findings>Summary of findings</a></p><ul><li><p><a href=#internet-outages>Internet outages</a></p></li><li><p><a href=#website-and-social-media-blocking>Website and social media blocking</a></p></li><li><p><a href=#twitter-hijack-and-collateral-damage>Twitter hijack and collateral damage</a></p></li><li><p><a href=#conclusion>Conclusion</a></p></li></ul></li></ul><h1 id=summary-of-findings>Summary of findings</h1><p>You can learn about the findings of our <a href=https://dl.acm.org/doi/pdf/10.1145/3473604.3474562>research paper</a> by viewing
+the following video produced by <a href=https://www.caida.org/>CAIDA</a>’s
+Ramakrishna Padmanabhan.</p><iframe width=560 height=315 src=https://www.youtube-nocookie.com/embed/ABcswfBO2RY frameborder=0 allow="autoplay; encrypted-media" allowfullscreen></iframe><h2 id=internet-outages>Internet outages</h2><p>Following the military coup on 1st February 2021, Myanmar experienced a
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/MM&lastView=overview&from=1612175543&until=1614508343">series of internet outages</a>
+until 28th April 2021.</p><div><a href=/post/2021-multiperspective-view-internet-censorship-myanmar/images/01.png><img src=/post/2021-multiperspective-view-internet-censorship-myanmar/images/01_hu862f847b139629042938f7c4fc253609_179115_1000x800_fit_box_2.png srcset="/post/2021-multiperspective-view-internet-censorship-myanmar/images/01_hu862f847b139629042938f7c4fc253609_179115_2000x1600_fit_box_2.png 2x" title="Internet outages in Myanmar" alt="Internet outages in Myanmar"></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), IODA Signals
+for Myanmar, <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/MM&lastView=overview&from=1613125943&until=1615545143">https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/MM&lastView=overview&from=1613125943&until=1615545143</a></p><p>In summary, these include:</p><ul><li><p><strong>Coup-day outage.</strong> On 1st February 2021, IODA data
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/MM&lastView=overview&from=1612089143&until=1612261943">shows</a>
+that Myanmar experienced a significant internet outage, starting
+at 03:30 AM local time. Notably, there were several differences in
+the extent to which ISPs were affected by the outage and in timing
+patterns, suggesting the <em>lack of an internet kill switch</em>.</p></li><li><p><strong>Weekend-after-coup outage.</strong> On 6th February 2021, IODA data
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/MM&lastView=overview&from=1612434743&until=1612866743">shows</a>
+that Myanmar experienced a <em>28-hour long internet outage that
+affected most ISPs</em> in Myanmar. The outage end-times were similar
+across most ISPs, suggesting synchronization and improved
+planning, coordination, and execution of the shutdown.</p></li><li><p><strong>Nightly outages.</strong> Starting from the night of 14th February 2021,
+Myanmar experienced <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/MM&lastView=overview&from=1613125943&until=1615545143">nightly internet outages</a>
+(which affected most ISPs) for <em>72 nights</em>, until <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/MM&lastView=overview&from=1617273143&until=1619778743">28th April 2021</a>.
+These outages began at the same time (01:00 local time) and lasted
+8 hours for most nights. In contrast to the coup-day outage, the
+nightly outages occurred in a <em>highly synchronized</em> manner, with
+outages beginning and ending at identical times for most ISPs.</p></li><li><p><strong>Cellular outages.</strong> As of 15th March 2021, Kentik traffic data
+shows that cellular connectivity has been heavily restricted in
+Myanmar. The cellular restrictions were ongoing, as of
+mid-May 2021.</p></li></ul><h2 id=website-and-social-media-blocking>Website and social media blocking</h2><p>Starting from 4th February 2021 (3 days after the coup), ISPs in Myanmar
+started <a href="https://explorer.ooni.org/search?until=2021-02-28&since=2021-02-01&probe_cc=MM&test_name=web_connectivity&only=anomalies">blocking access to a number of websites</a>
+&ndash; including
+<a href="https://explorer.ooni.org/search?until=2021-02-28&since=2021-02-01&probe_cc=MM&test_name=web_connectivity&only=anomalies&domain=www.wikipedia.org">Wikipedia</a>,
+social media (such as
+<a href="https://explorer.ooni.org/search?until=2021-02-28&since=2021-02-01&probe_cc=MM&test_name=web_connectivity&domain=www.facebook.com">facebook.com</a>
+and
+<a href="https://explorer.ooni.org/search?until=2021-02-28&since=2021-02-01&probe_cc=MM&test_name=web_connectivity&domain=twitter.com">twitter.com</a>),
+and circumvention tool websites. These blocks remain
+<a href="https://explorer.ooni.org/search?until=2021-11-12&since=2021-10-13&probe_cc=MM&test_name=web_connectivity&only=anomalies">ongoing</a>.</p><p>We share these blocked websites through the following chart, which
+summarizes <a href="https://explorer.ooni.org/search?until=2021-02-28&since=2021-02-01&probe_cc=MM&test_name=web_connectivity&only=anomalies">OONI measurement findings</a>
+between February 2021 to April 2021.</p><div><a href=/post/2021-multiperspective-view-internet-censorship-myanmar/images/02.png><img src=/post/2021-multiperspective-view-internet-censorship-myanmar/images/02_hu6cd5ae1251e0a360c6e1887930e00b24_658950_1000x800_fit_box_2.png srcset="/post/2021-multiperspective-view-internet-censorship-myanmar/images/02_hu6cd5ae1251e0a360c6e1887930e00b24_658950_2000x1600_fit_box_2.png 2x" title="Website blocks in Myanmar" alt="Website blocks in Myanmar"></a></div><p><strong>Source:</strong> Blocking of websites in Myanmar from February 2021 to April
+2021 based on OONI measurements.</p><p>In terms of censorship techniques, we found:</p><ul><li><p><strong>IP blocking became more prevalent after the coup.</strong> We primarily
+observed IP-based blocking of websites, as most OONI measurements
+(across ASes) <a href="https://explorer.ooni.org/search?until=2021-02-28&since=2021-02-01&probe_cc=MM&test_name=web_connectivity&only=anomalies">show</a>
+that TCP connections to the resolved IP addresses failed (when
+resolution succeeded in providing the right IP address for the
+website). This censorship technique is primarily seen in OONI data
+<em>after</em> the coup, as our <a href=https://ooni.org/post/2020-myanmar-blocks-websites-amid-covid19/>analysis in Myanmar in 2020</a>
+showed that DNS based interference was previously more prevalent.</p></li><li><p><strong>Collateral damage as a result of IP blocks.</strong> IP based blocking
+can potentially lead to collateral damage, affecting the
+accessibility of other domains hosted on a blocked IP address. We
+found 2 such cases:</p><ul><li><p><strong>Domains hosted on the IP 172.217.194.121.</strong> This IP address
+belongs to the Google hosting network and includes domains
+such as <code>www.snapchat.com</code>, <code>www.getoutline.org</code>,
+<code>www.paganpride.org</code>, and <code>www.privaterra.org</code>, all of
+which presented TCP/IP anomalies between 24th-27th February
+2021 (as illustrated in the above chart). This suggests that
+some of these domains may have been <em>blocked unintentionally</em>
+as a result of collateral damage.</p></li><li><p><strong>Domains hosted on the IP 151.101.1.195.</strong> This address belongs
+to the Fastly network and includes the domains
+<code>coronavirus.app</code> and <code>getintra.org</code>, both of which
+started to present TCP/IP anomalies on 2nd March 2021. Reverse
+IP lookups indicate that the blocking of this IP may lead to
+the blocking of more than 10,000 websites, showing the
+severity of collateral damage due to IP blocking.</p></li></ul></li><li><p><strong>Ongoing DNS based tampering.</strong> Even though ISPs in Myanmar
+primarily appear to implement IP-based blocks following the coup,
+we continue to observe cases of DNS based interference as well.
+Many ISPs in Myanmar showed evidence of <a href="https://explorer.ooni.org/search?until=2021-11-12&since=2021-10-13&probe_cc=MM&only=confirmed">confirmed DNS blocking</a>
+(as illustrated in the previous chart), usually resolving to an IP
+address that hosted a blockpage. Some ISPs responded with
+<a href="https://explorer.ooni.org/measurement/20210329T050836Z_webconnectivity_MM_9988_n1_bBaISuXqutQl4AWs?input=http%3A%2F%2Fwww.facebook.com%2F">NXDOMAIN responses</a>
+for domains like <code>www.facebook.com</code>. DNS interference was <em>not
+consistent inside an ISP</em>; some DNS resolvers implemented DNS
+blocking while others in the same ISP did not.</p></li></ul><p>Overall, we found:</p><ul><li><p><strong>Censorship variance across networks.</strong> We found <a href="https://explorer.ooni.org/search?until=2021-02-28&since=2021-02-01&probe_cc=MM&test_name=web_connectivity&only=anomalies">different websites blocked on different networks</a>,
+and different censorship methods used by different ISPs in
+Myanmar. This suggests that internet censorship in Myanmar is
+<em>not</em> centralized and that local ISPs may implement blocking at
+their own discretion.</p></li><li><p><strong>Non-deterministic censorship.</strong> OONI measurements show that IP
+blocks are not implemented consistently, offering additional signs
+that ISPs operate independently and (sometimes) arbitrarily.
+Within the same AS, we do not observe IP blocking for all the
+addresses associated with a domain. One cause of this
+inconsistency could potentially be the result of ISPs using
+incomplete addresslists for blocking. For example, OONI
+measurements collected from the testing of <code>facebook.com</code> on
+Frontiir (AS58952) show the <a href="https://explorer.ooni.org/measurement/20210317T005357Z_webconnectivity_MM_58952_n1_MteMb1KXYXhoLrai?input=http%3A%2F%2Fwww.facebook.com%2F">blocking of Facebook’s IP</a>
+<code>157.240.15.35</code>, but <a href="https://explorer.ooni.org/measurement/20210309T055405Z_webconnectivity_MM_58952_n1_zecC0byweotbcOw5?input=http%3A%2F%2Fwww.facebook.com%2F">not</a>
+of Facebook’s IP <code>31.13.64.35</code>.</p></li></ul><h2 id=twitter-hijack-and-collateral-damage>Twitter hijack and collateral damage</h2><p>On 5th February 2021 —the same day that Twitter was blocked in Myanmar—
+Myanmar’s Campana Mythic (AS136168) announced the 104.244.42.0/24
+prefix, belonging to Twitter. The proximity of this hijacking event in
+time to the blocking of Twitter in other Myanmar ISPs suggests that the
+original intent was to blackhole traffic to Twitter for users of this
+Myanmar ISP1. However, this route accidentally leaked to the global
+Internet, appearing as if AS136168 owned/hosted Twitter’s address space.
+This accidental event offers additional evidence that providers used
+various ways to perform IP-level blocking to censor domains.</p><p>Our analysis of BGP data collected by the Routeviews and RIPE RIS
+projects shows the illegitimate route propagated (at least) to operators
+in Singapore (AS4844, AS56300, AS24482, AS132132) and Vietnam (AS45903)
+who received, accepted, and further propagated it. This resulted in
+collateral damage for Twitter users outside Myanmar.</p><p>We quantify the extent of this collateral damage in the following graph,
+which shows that a small volume of traffic from Kentik’s customers
+outside Myanmar was directed towards the hijacker AS136168 instead of
+AS13414 (Twitter).</p><div><a href=/post/2021-multiperspective-view-internet-censorship-myanmar/images/03.png><img src=/post/2021-multiperspective-view-internet-censorship-myanmar/images/03_hu7d22a67e5c4cf3c006d437fad0a9149a_329671_1000x800_fit_box_2.png srcset="/post/2021-multiperspective-view-internet-censorship-myanmar/images/03_hu7d22a67e5c4cf3c006d437fad0a9149a_329671_2000x1600_fit_box_2.png 2x" title="Twitter hijack and collateral damage" alt="Twitter hijack and collateral damage"></a></div><p><strong>Source:</strong> Collateral damage to Twitter users outside Myanmar as a
+result of the BGP hijack event affecting Twitter’s address space. The
+figure shows Twitter traffic observed by Kentik from different source
+ASes (indicated by different colors) that was being routed towards
+Campana Mythic (AS136168).</p><h2 id=conclusion>Conclusion</h2><p>The following timeline summarizes the main internet censorship events
+that we detected in Myanmar following the February 2021 military coup.</p><div><a href=/post/2021-multiperspective-view-internet-censorship-myanmar/images/04.png><img src=/post/2021-multiperspective-view-internet-censorship-myanmar/images/04_hu3bbc9cd6eb8255308301f6f50d8e47f2_113418_1000x800_fit_box_2.png srcset="/post/2021-multiperspective-view-internet-censorship-myanmar/images/04_hu3bbc9cd6eb8255308301f6f50d8e47f2_113418_2000x1600_fit_box_2.png 2x" title="Timeline of censorship events in Myanmar" alt="Timeline of censorship events in Myanmar"></a></div><p><strong>Image:</strong> Timeline of censorship events in Myanmar.</p><p>Collectively, these are among the most disruptive, long-lasting, and
+widespread censorship events in recent times.</p><p>The censorship events in Myanmar reflect <a href=https://ooni.org/reports/>emerging patterns</a> of <strong>politically inspired
+censorship</strong> and offer insight into the ways in which authoritarian
+regimes combine censorship approaches strategically to achieve their
+immediate goals. The <em>timing of censorship events</em> in Myanmar coincided
+with the <a href=https://www.bbc.com/news/world-asia-55882489>military coup</a>, which is
+consistent with many other studies which have shown that internet
+censorship is targeted during sensitive political time periods and
+periods of potential power transitions, such as
+<a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/>elections</a>
+and <a href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/>large-scale protests</a>.</p><p>The fact that the initial outages were implemented by the challenger
+rather than the incumbent government suggests that Internet censorship
+during a coup attempt can increase the probability of a successful coup.
+Conspirators in a coup may benefit from shutting communications quickly,
+to prevent public or government coordination against their coup attempt.
+Yet, the haphazard nature of the outages during the initial coup in
+Myanmar may reflect the difficulty of the challenger in implementing
+this censorship, and could be a reflection of their initial lack of
+political control.</p><p>After consolidating power, the new junta in Myanmar began imposing
+internet curfews, shutting down the internet during the night while
+keeping it on in the day. Like physical curfews, regimes may implement
+internet curfews to target organization of political dissent while
+minimizing the impact on the economy, as many sectors require internet access
+during the day.</p><p>While nightly outages in Myanmar have now ended, the <a href="https://explorer.ooni.org/search?until=2021-11-12&since=2021-10-13&probe_cc=MM&only=confirmed">social media and website blocking</a>
+we described that has persisted since February 2021 may indicate a move
+toward more selective methods of censorship. This shift is consistent
+with a pattern in authoritarian regimes of engaging in <a href=https://ooni.org/reports/>targeted censorship</a> to maximize political impact
+while <a href=https://web.archive.org/web/20210513221939/https://asia.nikkei.com/Spotlight/Myanmar-Coup/Myanmar-junta-builds-walled-garden-of-internet-services>minimizing its cost</a>.</p><p>We hope this
+<a href=https://dl.acm.org/doi/pdf/10.1145/3473604.3474562>paper</a> can
+provide a template of combining internet measurements to provide a
+broader understanding of digital strategy of autocrats, an effort that
+could be scaled and replicated cross-nationally in future work.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2020 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>
