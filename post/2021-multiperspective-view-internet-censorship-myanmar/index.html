@@ -104,13 +104,13 @@ incomplete addresslists for blocking. For example, OONI
 measurements collected from the testing of <code>facebook.com</code> on
 Frontiir (AS58952) show the <a href="https://explorer.ooni.org/measurement/20210317T005357Z_webconnectivity_MM_58952_n1_MteMb1KXYXhoLrai?input=http%3A%2F%2Fwww.facebook.com%2F">blocking of Facebook’s IP</a>
 <code>157.240.15.35</code>, but <a href="https://explorer.ooni.org/measurement/20210309T055405Z_webconnectivity_MM_58952_n1_zecC0byweotbcOw5?input=http%3A%2F%2Fwww.facebook.com%2F">not</a>
-of Facebook’s IP <code>31.13.64.35</code>.</p></li></ul><h2 id=twitter-hijack-and-collateral-damage>Twitter hijack and collateral damage</h2><p>On 5th February 2021 —the same day that Twitter was blocked in Myanmar—
-Myanmar’s Campana Mythic (AS136168) announced the 104.244.42.0/24
+of Facebook’s IP <code>31.13.64.35</code>.</p></li></ul><h2 id=twitter-hijack-and-collateral-damage>Twitter hijack and collateral damage</h2><p>On 5th February 2021 —the same day that <a href="https://explorer.ooni.org/measurement/20210205T174630Z_webconnectivity_MM_132686_n1_6TBGxfWH0KJlHkQH?input=https%3A%2F%2Ftwitter.com">Twitter was blocked</a> in Myanmar—
+Myanmar’s Campana Mythic (AS136168) announced the <code>104.244.42.0/24</code>
 prefix, belonging to Twitter. The proximity of this hijacking event in
 time to the blocking of Twitter in other Myanmar ISPs suggests that the
 original intent was to blackhole traffic to Twitter for users of this
-Myanmar ISP1. However, this route accidentally leaked to the global
-Internet, appearing as if AS136168 owned/hosted Twitter’s address space.
+Myanmar ISP. However, this route accidentally leaked to the global
+internet, appearing as if AS136168 owned/hosted Twitter’s address space.
 This accidental event offers additional evidence that providers used
 various ways to perform IP-level blocking to censor domains.</p><p>Our analysis of BGP data collected by the Routeviews and RIPE RIS
 projects shows the illegitimate route propagated (at least) to operators
@@ -118,8 +118,8 @@ in Singapore (AS4844, AS56300, AS24482, AS132132) and Vietnam (AS45903)
 who received, accepted, and further propagated it. This resulted in
 collateral damage for Twitter users outside Myanmar.</p><p>We quantify the extent of this collateral damage in the following graph,
 which shows that a small volume of traffic from Kentik’s customers
-outside Myanmar was directed towards the hijacker AS136168 instead of
-AS13414 (Twitter).</p><div><a href=/post/2021-multiperspective-view-internet-censorship-myanmar/images/03.png><img src=/post/2021-multiperspective-view-internet-censorship-myanmar/images/03_hu7d22a67e5c4cf3c006d437fad0a9149a_329671_1000x800_fit_box_2.png srcset="/post/2021-multiperspective-view-internet-censorship-myanmar/images/03_hu7d22a67e5c4cf3c006d437fad0a9149a_329671_2000x1600_fit_box_2.png 2x" title="Twitter hijack and collateral damage" alt="Twitter hijack and collateral damage"></a></div><p><strong>Source:</strong> Collateral damage to Twitter users outside Myanmar as a
+outside Myanmar was directed towards the hijacker (AS136168) instead of
+Twitter (AS13414).</p><div><a href=/post/2021-multiperspective-view-internet-censorship-myanmar/images/03.png><img src=/post/2021-multiperspective-view-internet-censorship-myanmar/images/03_hu7d22a67e5c4cf3c006d437fad0a9149a_329671_1000x800_fit_box_2.png srcset="/post/2021-multiperspective-view-internet-censorship-myanmar/images/03_hu7d22a67e5c4cf3c006d437fad0a9149a_329671_2000x1600_fit_box_2.png 2x" title="Twitter hijack and collateral damage" alt="Twitter hijack and collateral damage"></a></div><p><strong>Source:</strong> Collateral damage to Twitter users outside Myanmar as a
 result of the BGP hijack event affecting Twitter’s address space. The
 figure shows Twitter traffic observed by Kentik from different source
 ASes (indicated by different colors) that was being routed towards
@@ -135,7 +135,7 @@ censorship is targeted during sensitive political time periods and
 periods of potential power transitions, such as
 <a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/>elections</a>
 and <a href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/>large-scale protests</a>.</p><p>The fact that the initial outages were implemented by the challenger
-rather than the incumbent government suggests that Internet censorship
+rather than the incumbent government suggests that internet censorship
 during a coup attempt can increase the probability of a successful coup.
 Conspirators in a coup may benefit from shutting communications quickly,
 to prevent public or government coordination against their coup attempt.
@@ -147,8 +147,8 @@ internet curfews, shutting down the internet during the night while
 keeping it on in the day. Like physical curfews, regimes may implement
 internet curfews to target organization of political dissent while
 minimizing the impact on the economy, as many sectors require internet access
-during the day.</p><p>While nightly outages in Myanmar have now ended, the <a href="https://explorer.ooni.org/search?until=2021-11-12&since=2021-10-13&probe_cc=MM&only=confirmed">social media and website blocking</a>
-we described that has persisted since February 2021 may indicate a move
+during the day.</p><p>While nightly outages in Myanmar have now ended, the <a href="https://explorer.ooni.org/search?until=2021-11-12&since=2021-10-13&probe_cc=MM&only=confirmed">ongoing blocking of social media and circumvention tool websites</a>
+(which has persisted since February 2021) may indicate a move
 toward more selective methods of censorship. This shift is consistent
 with a pattern in authoritarian regimes of engaging in <a href=https://ooni.org/reports/>targeted censorship</a> to maximize political impact
 while <a href=https://web.archive.org/web/20210513221939/https://asia.nikkei.com/Spotlight/Myanmar-Coup/Myanmar-junta-builds-walled-garden-of-internet-services>minimizing its cost</a>.</p><p>We hope this
