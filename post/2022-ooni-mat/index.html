@@ -1,0 +1,106 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>New Launch: OONI Measurement Aggregation Toolkit (MAT) | OONI</title><link rel=canonical href=https://ooni.org/post/2022-ooni-mat/><meta name=description content="OONI launched the new Measurement Aggregation Toolkit (MAT), which you can use to create custom charts based on aggregate views of real-time OONI data collected from around the world."><meta property="og:title" content="New Launch: OONI Measurement Aggregation Toolkit (MAT)"><meta property="og:description" content="OONI launched the new Measurement Aggregation Toolkit (MAT), which you can use to create custom charts based on aggregate views of real-time OONI data collected from around the world."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/2022-ooni-mat/"><meta property="og:image" content="https://ooni.github.io/post/2022-ooni-mat/images/01.png"><meta property="article:published_time" content="2022-04-12T00:00:00+00:00"><meta property="article:modified_time" content="2022-04-12T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.github.io/post/2022-ooni-mat/images/01.png"><meta name=twitter:title content="New Launch: OONI Measurement Aggregation Toolkit (MAT)"><meta name=twitter:description content="OONI launched the new Measurement Aggregation Toolkit (MAT), which you can use to create custom charts based on aggregate views of real-time OONI data collected from around the world."><link rel=stylesheet type=text/css href=/fonts/fonts.css><link rel=stylesheet type=text/css href=https://ooni.github.io/css/bootstrap.min.eea8b4fc7fc3a0fb28a6ae9bf723bde9f4ee7a602514aacd85ba56e6fbaea756.css><link rel=stylesheet type=text/css href=/css/master.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=/js/zepto.min.js defer></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['disableCookies']);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4"><div class="container pt-2" style=position:relative><div class="row align-items-center"><div class="col-lg-1 nav-menu-brand"><a href=/><img src=/images/logos/OONI-HorizontalMonochromeInverted.png srcset="/images/logos/OONI-HorizontalMonochromeInverted.png 1x,
+/images/logos/OONI-HorizontalMonochromeInverted@2x.png 2x"></a></div><div class="col-lg-10 nav-menu"><div class=row><div class="col-lg nav-menu-item about"><a href=/about/>About</a></div><div class="col-lg nav-menu-item about"><a href=/nettest/>Tests</a></div><div class="col-lg nav-menu-item about"><a href=/data/>Data</a></div><div class="col-lg nav-menu-item about"><a href=/get-involved/>Get Involved</a></div><div class="col-lg nav-menu-item about"><a href=/reports/>Reports</a></div><div class="col-lg nav-menu-item about"><a href=/blog/>Blog</a></div><div class="col-lg nav-menu-item about"><a href=/donate/>Donate</a></div></div></div><div class="col-lg-1 nav-menu-install"><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></nav><div class=container><main class="blog-post col"><h1 class=article-title>New Launch: OONI Measurement Aggregation Toolkit (MAT)</h1><div class=byline><span class=author>Maria Xynou</span>
+<span class=date>2022-04-12</span></div><div><a href=/post/2022-ooni-mat/images/01.png><img src=/post/2022-ooni-mat/images/01_hu4abc7219fe69bc741f1d0ef0c9602f03_257975_1000x800_fit_box_2.png srcset="/post/2022-ooni-mat/images/01_hu4abc7219fe69bc741f1d0ef0c9602f03_257975_2000x1600_fit_box_2.png 2x" title=MAT alt=MAT></a></div><p>Today the Open Observatory of Network Interference (OONI) team is
+thrilled to announce the public launch of the <strong><a href=https://explorer.ooni.org/chart/mat>OONI Measurement Aggregation Toolkit (MAT)</a></strong>!</p><p>The <a href=https://explorer.ooni.org/chart/mat>MAT</a> is a tool that enables
+you to <strong>create your own custom charts based on aggregate views of
+real-time OONI data</strong> collected from around the world.</p><p>Use the MAT to <strong>track internet censorship worldwide</strong> based on
+real-time OONI data!</p><ul><li><p><a href=#about-the-mat>About the MAT</a></p><ul><li><p><a href=#what-is-ooni-data>What is OONI data?</a></p></li><li><p><a href=#why-use-the-mat>Why use the MAT?</a></p></li></ul></li><li><p><a href=#using-the-mat>Using the MAT</a></p><ul><li><a href=#interpreting-mat-charts>Interpreting MAT charts</a></li></ul></li><li><p><a href=#acknowledgements>Acknowledgements</a></p></li></ul><h1 id=about-the-mat>About the MAT</h1><div><a href=/post/2022-ooni-mat/images/02.png><img src=/post/2022-ooni-mat/images/02_hu0f7b1299bb10111fa69b2cc537d7ae54_156555_1000x800_fit_box_2.png srcset="/post/2022-ooni-mat/images/02_hu0f7b1299bb10111fa69b2cc537d7ae54_156555_2000x1600_fit_box_2.png 2x" title=MAT alt=MAT></a></div><p>Are you a researcher, journalist, or human rights defender interested in
+investigating internet censorship around the world? OONI’s new
+<a href=https://explorer.ooni.org/chart/mat>Measurement Aggregation Toolkit (MAT)</a> was built for you!</p><p>The MAT enables you to track internet censorship around the world and
+create your own custom charts based on real-time OONI network
+measurement data.</p><h2 id=what-is-ooni-data>What is OONI data?</h2><p>Since 2012, OONI has built a <a href=https://github.com/ooni/probe>free and open source app</a> (called <a href=https://ooni.org/install/>OONI Probe</a>) that you can install and run to
+measure various forms of internet censorship. Through the <a href=https://ooni.org/install/>OONI Probe app</a>, you can run tests on your network to
+<a href=https://ooni.org/nettest/web-connectivity/>measure the blocking of websites</a>, the blocking of
+instant messaging apps
+(<a href=https://ooni.org/nettest/whatsapp/>WhatsApp</a>, <a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger</a>,
+<a href=https://ooni.org/nettest/telegram/>Telegram</a>,
+<a href=https://ooni.org/nettest/signal/>Signal</a>), and to measure the
+reachability of censorship circumvention tools (such as
+<a href=https://ooni.org/nettest/psiphon/>Psiphon</a> and
+<a href=https://ooni.org/nettest/tor/>Tor</a>), among many other
+<a href=https://ooni.org/nettest/>tests</a>. By default, all OONI Probe test
+results are automatically sent to OONI servers, processed, and
+<strong>published as <a href=https://ooni.org/data/>open data</a> in real-time</strong>.</p><p>In short, <strong>OONI data is OONI Probe test results</strong>. And OONI Probe test
+results contain network measurements on the testing of websites and apps
+around the world, often containing <strong>evidence of internet censorship</strong>.</p><p>Since 2012, OONI has <a href=https://explorer.ooni.org/>openly published more than 808 million network measurements</a> collected from 24 thousand
+networks in 240 countries and territories. Every minute, as OONI Probe
+users around the world run more tests, <em>new measurements</em> are
+automatically published in real-time. The OONI database is therefore
+<strong>one of the largest open datasets on internet censorship</strong> to date.</p><h2 id=why-use-the-mat>Why use the MAT?</h2><p>To enable the public to explore OONI data and to investigate internet
+censorship around the world, we created <a href=https://explorer.ooni.org/>OONI Explorer</a>, which is a web platform that
+enables users to <a href=https://ooni.org/post/next-generation-ooni-explorer/#search-tool>explore OONI measurements through a search tool</a>.
+However, OONI Explorer lists <a href=https://explorer.ooni.org/search>individual measurements</a>, requiring users to
+inspect each measurement one by one. This can make it difficult to
+observe <em>trends and patterns</em>, as identifying and confirming the
+blocking of services often requires <strong>looking at many measurements at
+once</strong> (“in aggregate”).</p><p>We have therefore provided data analysis support to our partners and
+broader community over the years, analyzing OONI data in order to answer
+key questions such as the following:</p><ul><li><p>Does the testing of a service (e.g. Facebook) present <strong>signs of
+blocking every time that it is tested</strong> in a country? This can be
+helpful for ruling out <a href=https://ooni.org/support/faq/#what-are-false-positives>false positives</a>.</p></li><li><p>What types of websites (e.g. LGBTQI websites) are blocked in each
+country?</p></li><li><p>In which countries is a specific website (e.g. `bbc.com`) blocked?</p></li><li><p>How does the blocking of different apps (e.g. WhatsApp or Telegram)
+vary across countries?</p></li><li><p>How does the blocking of a service vary across countries and
+networks?</p></li><li><p>How does the blocking of a service change over time?</p></li></ul><p>The <a href=https://explorer.ooni.org/chart/mat>MAT</a> incorporates our data
+analysis techniques, enabling you to answer such questions <em>without</em> any
+data analysis skills, simply with the click of a button! <strong>You can also
+generate your own custom charts based on aggregate views of real-time
+OONI data, which you can then share on social media and use as part of
+your research and/or advocacy.</strong></p><h1 id=using-the-mat>Using the MAT</h1><div><a href=/post/2022-ooni-mat/images/03.png><img src=/post/2022-ooni-mat/images/03_hu6b9208a9393fb8ec757785811527c785_88589_1000x800_fit_box_2.png srcset="/post/2022-ooni-mat/images/03_hu6b9208a9393fb8ec757785811527c785_88589_2000x1600_fit_box_2.png 2x" title=MAT alt=MAT></a></div><p>The <a href=https://explorer.ooni.org/chart/mat>MAT</a> provides filters that
+enable you to select the parameters you care about in order to plot
+charts based on aggregate views of OONI data.</p><p>Specifically, the MAT includes the following filters:</p><ul><li><p><strong>Countries:</strong> Select a country through the drop-down menu
+(the &ldquo;All Countries&rdquo; option will show global coverage)</p></li><li><p><strong>Test Name:</strong> Select an <a href=https://ooni.org/nettest/>OONI Probe test</a> based on which you would like to get
+measurements (for example, select <code>Web Connectivity</code> to view the
+testing of websites)</p></li><li><p><strong>Domain:</strong> Type the domain for the website you would like to
+get measurements (e.g. <code>twitter.com</code>)</p></li><li><p><strong>Website categories:</strong> Select the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>website category</a>
+for which you would like to get measurements (e.g. <code>News Media</code> for
+news media websites)</p></li><li><p><strong>ASN:</strong> Type the <a href=https://ooni.org/support/glossary/#asn>ASN</a> of the network for
+which you would like to get measurements (e.g. <code>AS30722</code> for Vodafone
+Italia)</p></li><li><p><strong>Date range:</strong> Select the date range of the measurements by
+adjusting the <code>From</code> and <code>Until</code> filters</p></li><li><p><strong>X axis:</strong> Select the values that you would like to appear
+on the horizontal axis of your chart</p></li><li><p><strong>Y axis:</strong> Select the values that you would like to appear
+on the vertical axis of your chart</p></li></ul><p>Depending on what you would like to explore, adjust the MAT filters
+accordingly and click <strong>Show Chart</strong> to generate a chart.</p><p>For example, if you would like to check the testing of BBC in all
+countries around the world:</p><ul><li><p>Type <code>www.bbc.com</code> under <code>Domain</code></p></li><li><p>Select <code>Countries</code> under the <code>Y axis</code></p></li><li><p>Click <code>Show Chart</code></p></li></ul><p>This will plot numerous charts based on the OONI Probe testing of
+<code>www.bbc.com</code> worldwide, as illustrated below.</p><div><a href=/post/2022-ooni-mat/images/04.png><img src=/post/2022-ooni-mat/images/04_hu7338ae1d2eabcc227bb467625ce2af53_202764_1000x800_fit_box_2.png srcset="/post/2022-ooni-mat/images/04_hu7338ae1d2eabcc227bb467625ce2af53_202764_2000x1600_fit_box_2.png 2x" title=MAT alt=MAT></a></div><h2 id=interpreting-mat-charts>Interpreting MAT charts</h2><p>The <a href=https://explorer.ooni.org/chart/mat>MAT</a> charts (and associated
+tables) include the following values:</p><ul><li><p><strong>OK count:</strong> Successful measurements (i.e. no sign of internet
+censorship)</p></li><li><p><strong>Confirmed count:</strong> Measurements from automatically
+<strong>confirmed blocked websites</strong> (e.g. a <a href=https://ooni.org/support/glossary/#block-page>block page</a> was served)</p></li><li><p><strong>Anomaly count:</strong> Measurements that provided <strong>signs of
+potential blocking</strong> (however, <a href=https://ooni.org/support/faq/#what-are-false-positives>false positives</a> can
+occur)</p></li><li><p><strong>Failure count:</strong> Failed experiments that should be discarded</p></li><li><p><strong>Measurement count:</strong> Total volume of OONI measurements
+(pertaining to the selected country, resource, etc.)</p></li></ul><p>When trying to identify the blocking of a service (e.g.
+<code>twitter.com</code>), check whether:</p><ul><li><p>Measurements are annotated as <code>confirmed</code>, automatically confirming
+the blocking of websites</p></li><li><p>A large volume of measurements (in comparison to the overall
+measurement count) present <code>anomalies</code> (i.e. signs of potential
+censorship)</p></li></ul><p>For example, if you would like to check the potential blocking of
+Instagram in Russia through the MAT:</p><ul><li><p>Select <code>Russia</code> under <code>Countries</code></p></li><li><p>Type <code>www.instagram.com</code> under <code>Domain</code></p></li><li><p>Click <code>Show Chart</code></p></li></ul><p>This will generate the following MAT chart.</p><div><a href=/post/2022-ooni-mat/images/05.png><img src=/post/2022-ooni-mat/images/05_hud77c4220b3b1841e8460f12ba512f2fa_144623_1000x800_fit_box_2.png srcset="/post/2022-ooni-mat/images/05_hud77c4220b3b1841e8460f12ba512f2fa_144623_2000x1600_fit_box_2.png 2x" title=MAT alt=MAT></a></div><p>From the above chart, we can see that <code>www.instagram.com</code> was
+previously accessible in Russia, and only started to present signs of
+blocking on 13th March 2022. From 14th March 2022 onwards, we observe a
+large volume of anomalies which has persisted ever since, providing a
+strong signal of blocking. We are also able to see that the blocking of
+Instagram is confirmed on some networks (where measurements show that
+the blocking of <code>www.instagram.com</code> was automatically confirmed).
+Moreover, the fact that some measurements over the last month show that
+<code>www.instagram.com</code> was accessible suggests that the block is not
+implemented on all networks in Russia. To explore how the blocking of
+<code>www.instagram.com</code> varies across networks in the country, select
+<code>ASN</code> under the <code>Y axis</code> of the MAT.</p><p>Please note that the presence of anomalies is <em>not</em> always indicative of
+blocking, as <a href=https://ooni.org/support/faq/#what-are-false-positives>false positives</a> can
+occur. A large volume of anomalies can provide a signal of potential
+blocking, but it’s useful to corroborate such data with other relevant
+resources (when possible). For example, when looking at measurements
+pertaining to the reachability testing of circumvention tools like
+<a href=https://ooni.org/nettest/tor/>Tor</a> and
+<a href=https://ooni.org/nettest/psiphon/>Psiphon</a>, it’s worth looking at
+<a href=https://metrics.torproject.org/>Tor Metrics</a> and the <a href=https://psix.ca/>Psiphon Data Engine</a> (both of which share usage stats) as well.
+Quite similarly, OONI data on the testing of <code>www.youtube.com</code> can be
+cross-referenced with <a href="https://transparencyreport.google.com/traffic/overview?hl=en&fraction_traffic=start:1646611200000;end:1649289599999;product:21;region:US&lu=fraction_traffic">YouTube traffic data from the Google Transparency Report</a>.
+OONI data on the testing of websites can also generally be compared with
+data collected from <a href=https://data.censoredplanet.org/raw>Censored Planet</a>.</p><p>You can access raw OONI data by clicking on the bars of
+<a href=https://explorer.ooni.org/chart/mat>MAT</a> charts, and subsequently
+clicking on the relevant measurement links.</p><div><a href=/post/2022-ooni-mat/images/06.png><img src=/post/2022-ooni-mat/images/06_hudf89ac2c729068bc87ec0ee039d00ca2_80089_1000x800_fit_box_2.png srcset="/post/2022-ooni-mat/images/06_hudf89ac2c729068bc87ec0ee039d00ca2_80089_2000x1600_fit_box_2.png 2x" title=MAT alt=MAT></a></div><p>We hope the internet freedom community finds the
+<a href=https://explorer.ooni.org/chart/mat>MAT</a> useful for investigating
+and responding to internet censorship events around the world.</p><p>If you have any questions, feedback, or feature requests, we’d love to
+hear from you! You can <a href=https://github.com/ooni/explorer/issues/>open a ticket</a> or <a href=https://ooni.org/about/#contact>write us an email</a>.</p><h1 id=acknowledgements>Acknowledgements</h1><p>We thank all <a href=https://ooni.org/install/>OONI Probe</a> users worldwide
+who have contributed (and continue to contribute) measurements,
+supporting the <a href=https://explorer.ooni.org/chart/mat>MAT</a>. We also
+thank our community members for their invaluable feedback.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/OONI-HorizontalMonochromeInverted.svg height=32px></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>
