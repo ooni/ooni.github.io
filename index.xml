@@ -531,12 +531,12 @@ OONI Probe CLI version: 3.9.2
 OONI Probe is free and open source software that you can run to measure internet censorship and other forms of network interference.
 This user guide provides step-by-step instructions on how to install and use the OONI Probe Command Line Interface (CLI).
 You can run OONI Probe CLI on macOS, Debian/Ubuntu Linux, and on Raspberry Pis.
-What you will get from this guide:</description></item><item><title>User Guide: OONI Probe Desktop App</title><link>https://ooni.github.io/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-desktop/</guid><description>Last updated: 21st April 2021
-OONI Probe Desktop version: 3.4.0
+What you will get from this guide:</description></item><item><title>User Guide: OONI Probe Desktop App</title><link>https://ooni.github.io/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-desktop/</guid><description>Last updated: 6th September 2022
+OONI Probe Desktop version: 3.7.0
 OONI Probe is a free and open source app that you can use to measure internet censorship and other forms of network interference. This user guide provides step-by-step instructions on how to install, run, and customize your use of the OONI Probe desktop app.
 What you will get from this guide:
-Learn how to run OONI Probe Desktop to:</description></item><item><title>User Guide: OONI Probe Mobile App</title><link>https://ooni.github.io/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-mobile/</guid><description>Last updated: 20th April 2021
-OONI Probe Mobile version: 2.11.0
+Learn how to run OONI Probe Desktop to:</description></item><item><title>User Guide: OONI Probe Mobile App</title><link>https://ooni.github.io/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-mobile/</guid><description>Last updated: 6th September 2022
+OONI Probe Mobile version: 3.7.1
 OONI Probe is a free and open source app that you can use to measure internet censorship and other forms of network interference. This user guide provides step-by-step instructions on how to install, run, and customize your use of the OONI Probe mobile app.
 What you will get from this guide:
 Learn how to run OONI Probe Mobile to: Test the blocking of websites Test the blocking of instant messaging apps Test the blocking of circumvention tools Measure your network speed and performance Customize your OONI Probe testing to websites of your choice Learn how to access and share your OONI Probe test results Configure your OONI Probe app settings Upon reading this guide, we hope you will feel empowered to share your OONI Probe knowledge and skills with others!</description></item><item><title>Vanilla Tor</title><link>https://ooni.github.io/nettest/vanilla-tor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/vanilla-tor/</guid><description>This test measures the reachability of the Tor network (which is designed for online anonymity and censorship circumvention).
