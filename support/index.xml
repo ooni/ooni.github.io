@@ -7,7 +7,7 @@ Why OONI?
 What does OONI do?
 Why measure internet censorship?
 How is OONI funded?</description></item><item><title>GitHub: Updating the Citizen Lab test lists</title><link>https://ooni.github.io/support/github-test-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/github-test-lists/</guid><description>This guide is meant for GitHub users and provides information related to updating the Citizen Lab test lists for website censorship testing. If you are not a GitHub user, please refer to our Test Lists Editor.
-By contributing to the [Citizen Lab test lists] (https://github.com/citizenlab/test-lists), you can support website censorship testing by OONI Probe users around the world.
+By contributing to the Citizen Lab test lists, you can support website censorship testing by OONI Probe users around the world.
 Before getting started, please refer to our documentation to learn all about test lists.</description></item><item><title>OONI Glossary</title><link>https://ooni.github.io/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/glossary/</guid><description>This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports.
 If you would like to see additional terms in this glossary, please open a pull request or send us an email.
 API
