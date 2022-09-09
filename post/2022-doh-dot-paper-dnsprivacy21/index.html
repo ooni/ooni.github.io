@@ -66,7 +66,7 @@ and would use the unencrypted DNS to obtain IP addresses for
 <code>8.8.8.8</code> and <code>8.8.4.4</code>. Then, <code>dnscheck</code> will measure both
 <code>https://8.8.8.8/dns-query</code> and <code>https://8.8.4.4/dns-query</code>.</p><p>The second case is more immediate. If you ask <code>dnscheck</code> to measure
 <code>https://8.8.8.8/dns-query</code>, it will notice that <code>8.8.8.8</code> is already
-and IP address, and it will just measure <code>https://8.8.8.8/dns-query</code>.</p><p>What happens, though, if there&rsquo;s DNS blocking of the <code>dns.google</code>
+an IP address, and it will just measure <code>https://8.8.8.8/dns-query</code>.</p><p>What happens, though, if there&rsquo;s DNS blocking of the <code>dns.google</code>
 domain name?</p><p>In its most simplistic configuration, <code>dnscheck</code> would conclude
 that the service endpoint&rsquo;s domain name is blocked and will stop
 the measurement. However, it is also possible to tell <code>dnscheck</code>
@@ -100,7 +100,10 @@ service endpoints blocking in selected countries. So, in December
 services and, with help from volunteer users, we ran measurements
 in Kazakhstan (<a href=https://ipinfo.io/AS48716>AS48716</a>), Iran
 (<a href=https://ipinfo.io/AS197207>AS197207</a>), and China
-(<a href=https://ipinfo.io/AS45090>AS45090</a>).</p><p>We were surprised to discover that there was no interference when
+(<a href=https://ipinfo.io/AS45090>AS45090</a>).</p><p>Most endpoints failed or succeeded consistently. That is, if an
+endpoint failed for a given OONI Probe user, it failed all the time
+with the same failure. There were just a couple of exceptions to
+this general trend, which are documented in the research paper.</p><p>We were surprised to discover that there was no interference when
 mapping the service endpoint&rsquo;s domain name (e.g., <code>dns.google</code>) to
 IP addresses (e.g., <code>8.8.8.8</code> and <code>8.8.4.4</code>). The only exception
 to this trend was Iran, where <code>dns.adguard.com</code> mapped to <code>10.10.34.36</code>,
@@ -119,7 +122,7 @@ Quad9):</p><table><thead><tr><th>Company</th><th>KZ DoT</th><th>KZ DoH</th><th>I
 we tested. In the other networks, especially in Iran, blocking is
 more spread across companies. Again, this probably happens because
 we measured from a consumer-facing network in Iran.</p><p>Each network implemented distinct blocking policies. The following
-table summarizes the reason for blocking for blocked DoH lookups:</p><table><thead><tr><th>Interference</th><th>Kazakhstan</th><th>Iran</th><th>China</th></tr></thead><tbody><tr><td>timeout after the TLS handshake</td><td>2701 (77%)</td><td>160 (41%)</td><td>3 (~0%)</td></tr><tr><td>TLS handshake timeout</td><td>331 (9%)</td><td>1 (~0%)</td><td>61 (5%)</td></tr><tr><td>TCP connect timeout</td><td>397 (11%)</td><td>72 (19%)</td><td>813 (72%)</td></tr><tr><td>Reset during TLS handshake</td><td>1 (~0%)</td><td>77 (20%)</td><td>152 (14%)</td></tr><tr><td>Other</td><td>92 (3%)</td><td>79 (20%)</td><td>93 (9%)</td></tr></tbody></table><p>In China, there&rsquo;s a prevalence of TCP/IP blocking. Iran and Kazahkstan,
+table summarizes the reason for blocking for blocked DoH lookups:</p><table><thead><tr><th>Interference</th><th>Kazakhstan</th><th>Iran</th><th>China</th></tr></thead><tbody><tr><td>timeout after the TLS handshake</td><td>2701 (77%)</td><td>160 (41%)</td><td>3 (~0%)</td></tr><tr><td>TLS handshake timeout</td><td>331 (9%)</td><td>1 (~0%)</td><td>61 (5%)</td></tr><tr><td>TCP connect timeout</td><td>397 (11%)</td><td>72 (19%)</td><td>813 (72%)</td></tr><tr><td>Reset during TLS handshake</td><td>1 (~0%)</td><td>77 (20%)</td><td>152 (14%)</td></tr><tr><td>Other</td><td>92 (3%)</td><td>79 (20%)</td><td>93 (9%)</td></tr></tbody></table><p>In China, there&rsquo;s a prevalence of TCP/IP blocking. Iran and Kazakhstan,
 there&rsquo;s interference with the TLS sessions.</p><p>In the Kazakhstan network we tested, TLS interference seemed to
 depend on the name of the service we&rsquo;re accessing as shown by the
 following table (which shows DoH measurements):</p><table><thead><tr><th>Address</th><th>Server Name</th><th>Result</th><th>Frequency</th></tr></thead><tbody><tr><td>2606:4700::6810:f8f9</td><td>cloudflare-dns.com</td><td>Timeout after the TLS handshake</td><td>85 (99%)</td></tr><tr><td>2606:4700::6810:f8f9</td><td>cloudflare-dns.com</td><td>Connect timeout</td><td>1 (1%)</td></tr><tr><td>2606:4700::6810:f8f9</td><td>mozilla.cloudflare-dns.com</td><td>Success</td><td>88 (100%)</td></tr></tbody></table><p>These measurements used the same IPv6 address (<code>2606:4700::6810:f8f9</code>).
@@ -135,7 +138,7 @@ name yields the same result: a timeout during the TLS handshake.
 Yet, using another IP address (<code>8.8.8.8</code>) with the <code>8888.google</code>
 server name does not cause any blocking, suggesting there was
 <code>8.8.4.4</code>-specific blocking.</p><h2 id=concluding-remarks>Concluding remarks</h2><p>As far as we know, this research was the first account of DoT
-and DoH blocking. Since our measurement campaign in late 2020,
+and DoH blocking. Since our initial measurement campaign in late 2020,
 <a href=https://arxiv.org/pdf/2202.00663.pdf>other researchers started studying encrypted DNS blocking</a>. As <code>dnscheck</code> is now
 integrated into <a href=https://ooni.org/install/>OONI Probe</a>, we can continue to collect DoT/DoH blocking
 information and hopefully produce more comprehensive
