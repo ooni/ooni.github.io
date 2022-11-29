@@ -1,0 +1,700 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Technical multi-stakeholder report on Internet shutdowns: The case of Iran amid autumn 2022 protests | OONI</title><link rel=canonical href=https://ooni.org/post/2022-iran-technical-multistakeholder-report/><meta name=description content="This report shares empirical technical findings on the recent Internet shutdown events that emerged in Iran following the death of Jhina (Mahsa) Amini in September 2022. The report is intended to be the first among a series of multi-stakeholder reports aimed at shedding light on what is becoming a widespread and increasingly sophisticated practice of certain governments around the world. The stakeholders participating in the report share a concern about the global trend in Internet shutdowns, but are contributing to the analysis only on the basis of their technical expertise."><meta property="og:title" content="Technical multi-stakeholder report on Internet shutdowns: The case of Iran amid autumn 2022 protests"><meta property="og:description" content="This report shares empirical technical findings on the recent Internet shutdown events that emerged in Iran following the death of Jhina (Mahsa) Amini in September 2022. The report is intended to be the first among a series of multi-stakeholder reports aimed at shedding light on what is becoming a widespread and increasingly sophisticated practice of certain governments around the world. The stakeholders participating in the report share a concern about the global trend in Internet shutdowns, but are contributing to the analysis only on the basis of their technical expertise."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/2022-iran-technical-multistakeholder-report/"><meta property="og:image" content="https://ooni.github.io/post/2022-iran-technical-multistakeholder-report/images/01.png"><meta property="article:published_time" content="2022-11-29T00:00:00+00:00"><meta property="article:modified_time" content="2022-11-29T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.github.io/post/2022-iran-technical-multistakeholder-report/images/01.png"><meta name=twitter:title content="Technical multi-stakeholder report on Internet shutdowns: The case of Iran amid autumn 2022 protests"><meta name=twitter:description content="This report shares empirical technical findings on the recent Internet shutdown events that emerged in Iran following the death of Jhina (Mahsa) Amini in September 2022. The report is intended to be the first among a series of multi-stakeholder reports aimed at shedding light on what is becoming a widespread and increasingly sophisticated practice of certain governments around the world. The stakeholders participating in the report share a concern about the global trend in Internet shutdowns, but are contributing to the analysis only on the basis of their technical expertise."><link rel=stylesheet type=text/css href=https://ooni.github.io/css/bootstrap.min.81b4d12aba2a7e6a5f8e3e496074a5578a97d68594de67c864b99e97b582ac12.css><link rel=stylesheet type=text/css href=https://ooni.github.io/css/index.min.6826b3059897f8fc73022e760c178eaa1e712bc01c3173b8fdfff7672272936a.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['disableCookies']);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar");var menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener('click',function handleClick(event){navbar.classList.toggle('navbar_opened');});</script><div class=container><main class="blog-post col"><h1 class=article-title>Technical multi-stakeholder report on Internet shutdowns: The case of Iran amid autumn 2022 protests</h1><div class=byline><span class=author>OONI, IODA, M-Lab, Cloudflare, Kentik, Censored Planet, ISOC, Article19</span>
+<span class=date>2022-11-29</span></div><p>This report shares empirical technical findings on the recent Internet
+shutdown events that emerged in Iran following the death of Jhina
+(Mahsa) Amini in September 2022. The report is intended to be the first
+among a series of multi-stakeholder reports aimed at shedding light on
+what is becoming a widespread and increasingly sophisticated practice of
+certain governments around the world. The stakeholders participating in
+the report share a concern about the global trend in Internet shutdowns,
+but are contributing to the analysis only on the basis of their
+technical expertise.</p><p>Over the years, Iranian authorities have followed a pattern of
+<a href=https://ooni.org/post/2018-iran-protests/>blocking social media apps</a>, <a href="https://explorer.ooni.org/search?since=2022-08-25&until=2022-09-25&failure=false&probe_cc=IR&test_name=web_connectivity&only=confirmed">numerous websites</a>
+and even resorting to <a href=https://ooni.org/post/2019-iran-internet-blackout/>shutting networks entirely</a>,
+implementing overall pervasive <a href=https://ooni.org/post/iran-internet-censorship/>levels of Internet control</a>. The latest
+shutdown events that emerged in Iran in September 2022 amid <a href=https://www.theguardian.com/world/2022/sep/17/iran-protests-death-kurdish-woman-mahsaa-amini-morality-police>ongoing protests</a>
+follow the same pattern, but show a wider range of technical strategies
+to prevent censorship circumvention.</p><ul><li><p><a href=#summary-of-key-findings>Summary of Key Findings</a></p></li><li><p><a href=#disruptions-to-network-infrastructure>Disruptions to Network Infrastructure</a></p><ul><li><p><a href=#mobile-network-outages>Mobile Network Outages</a></p><ul><li><a href=#comparison-to-previous-outages>Comparison to Previous Outages</a></li></ul></li><li><p><a href=#regional-outages>Regional Outages</a></p></li><li><p><a href=#http3-and-quic-traffic-drop>HTTP/3 and QUIC Traffic Drop</a></p></li><li><p><a href=#ipv6-disruption-on-irancell>IPv6 disruption on Irancell</a></p></li><li><p><a href=#increased-blocking-of-encrypted-dns>Increased blocking of encrypted DNS</a></p></li><li><p><a href=#impact-on-internet-speed-tests>Impact on Internet Speed Tests</a></p></li></ul></li><li><p><a href=#targeted-disruptions-to-apps-and-services>Targeted Disruptions to Apps and Services</a></p><ul><li><p><a href=#blocking-of-whatsapp-instagram-skype-viber-and-linkedin>Blocking of WhatsApp, Instagram, Skype, Viber and Linkedin</a></p></li><li><p><a href=#blocking-of-google-play-store-and-apple-app-store>Blocking of Google Play Store and Apple App Store</a></p></li><li><p><a href=#blocking-of-browser-extension-repositories>Blocking of Browser Extension Repositories</a></p></li><li><p><a href=#circumvention-tools>Circumvention Tools</a></p></li></ul></li><li><p><a href=#the-economic-impact-of-irans-internet-shutdowns>The Economic Impact of Iran&rsquo;s Internet Shutdowns</a></p><ul><li><p><a href=#measuring-economic-activity-with-light-output>Measuring Economic Activity with Light Output</a></p></li><li><p><a href=#stock-market-indicators>Stock Market Indicators</a></p></li><li><p><a href=#iran-importexport-indicators>Iran Import/Export Indicators</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li><li><p><a href=#annex-methods>Annex: Methods</a></p><ul><li><p><a href=#technical-details-of-blocking-analyses>Technical Details of Blocking Analyses</a></p><ul><li><p><a href=#ooni>OONI</a></p></li><li><p><a href=#censored-planet>Censored Planet</a></p></li></ul></li><li><p><a href=#technical-details-of-outage-analyses>Technical Details of Outage Analyses</a></p><ul><li><p><a href=#ioda>IODA</a></p></li><li><p><a href=#cloudflare-radar>Cloudflare Radar</a></p></li><li><p><a href=#kentik>Kentik</a></p></li></ul></li><li><p><a href=#technical-details-of-the-economic-impact-analysis>Technical Details of the Economic Impact Analysis</a></p></li><li><p><a href=#acknowledgement-of-limitations>Acknowledgement of limitations</a></p></li></ul></li></ul><h1 id=summary-of-key-findings>Summary of Key Findings</h1><p>Iran has implemented <a href=https://ooni.org/post/iran-internet-censorship/>pervasive Internet censorship</a> for years.
+Following the death of Jhina (Mahsa) Amini and widespread protests, new
+forms of Internet censorship and shutdowns emerged in Iran. This report
+combines multiple network measurement datasets to investigate the recent
+Internet censorship and shutdown events in Iran. The findings of this
+report are based on the analysis of measurements between <strong>16th
+September 2022 to 16th October 2022</strong>.</p><p>Public measurement datasets show the following new censorship events in
+Iran:</p><table><thead><tr><th><strong>Disruption</strong></th><th><strong>Timing</strong></th><th><strong>Details</strong></th><th><strong>Impact</strong></th></tr></thead><tbody><tr><td><strong>Mobile network outages</strong> (IODA, Cloudflare, Kentik)</td><td>Between 21st Sept. to 3rd Oct. from 4 PM to midnight daily, and again on 8th, 12th, and 15th Oct.</td><td>The Iranian government enacted a “digital curfew” by shutting down access to 3 major mobile networks (Irancell, Rightel, and MCCI) in the evenings.</td><td>Users on these networks lost all Internet connectivity. They could access the Internet only through fixed-line or satellite providers. This may have had a severe impact on protest documentation.</td></tr><tr><td><strong>Regional Internet outages</strong> (IODA, Cloudflare)</td><td>Kurdistan province: 19th Sept and 8th-9th Oct (afternoon/ evening) Khuzestan province: 16th Oct (all day)</td><td>Disruptions to Internet services were observed on multiple days in September and October in Kordestan and Khuzestan. Protests following Jhina Amini’s death were particularly heavy in this province, and protest repression is always treated with <a href=https://www.article19.org/resources/iran-bullets-detention-and-shutdowns-the-authorities-response-to-protests-in-khuzestan/>far higher levels of severity in these regions dominated by Iran’s ethnic minorities</a> (Iran’s Kurdish and Ahwazi minorities).</td><td>Users on affected networks in the affected regions lost all Internet connectivity. They could access the Internet only through alternative providers. This, too, may have had a severe impact on protest documentation.</td></tr><tr><td><strong>Blocking of HTTP/3 and QUIC traffic</strong> (Cloudflare)</td><td>22nd Sept. onward</td><td>HTTP/3 is the latest version of the protocol for transferring web data. It relies on QUIC, a similarly recent low-level protocol. Both QUIC and HTTP/3 traffic dropped to near zero, suggesting a blanket block on QUIC.</td><td>When these protocols are blocked, users lose the performance and security benefits that they offer. Existing tools may be better at inspecting and filtering traffic on older protocols, so blocking them would also make users more vulnerable to targeted filtering.</td></tr><tr><td><strong>IPv6 disruption</strong> (OONI, Cloudflare)</td><td>22nd Sept. to 2nd Oct.</td><td>Traffic using the newer IPv6 networking protocol dropped substantially on Irancell, which could indicate the protocol was blocked.</td><td>It is unclear what implications this would have for most users.</td></tr><tr><td><strong>Increased blocking of encrypted DNS</strong> (OONI)</td><td>20th Sept. onward</td><td>Many ISPs in Iran increased the blocking of <a href="https://explorer.ooni.org/search?since=2022-09-22&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=dns.google&failure=false">secure domain name resolution servers</a> (DNS over HTTPS, or DoH) by several technical means (interference with <a href="https://explorer.ooni.org/search?since=2022-09-16&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=cloudflare-dns.com&failure=false">DNS</a> and <a href="https://explorer.ooni.org/search?since=2022-09-07&until=2022-09-08&probe_cc=IR&test_name=web_connectivity&domain=dns.google&failure=false">TLS</a>).</td><td>DoH helps circumvent censorship by encrypting the names of the websites a user is visiting. Network administrators then cannot see when a website or service they want to block is being accessed by name. Blocking DoH thus makes circumvention harder.</td></tr><tr><td><strong>Increased throughput for mobile networks</strong> (M-Lab)</td><td>21st Sept. onward</td><td>Throughput of mobile networks (Mobile Communication Company of Iran PLC and Irancell) increased from 10-15 Mbps to 20 Mbps.</td><td>Mobile users experienced higher transfer speeds, potentially as the result of increased cellular base station infrastructure (which may also be used for finer grained surveillance).</td></tr><tr><td><strong>Blocking of social media and messaging platforms</strong> (OONI)</td><td>WhatsApp and Instagram: 21st Sept. onward Skype, Viber and LinkedIn: 23rd Sept. onward</td><td>Many ISPs in Iran started blocking <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=whatsapp&since=2022-08-24&until=2022-09-24&axis_x=measurement_start_day">WhatsApp</a> and <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.instagram.com&since=2022-08-25&until=2022-09-25&axis_x=measurement_start_day">Instagram</a>. A few days later, they also started blocking <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.skype.com&since=2022-08-25&until=2022-09-25&axis_x=measurement_start_day">Skype</a>, <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.viber.com&since=2022-08-25&until=2022-09-27&axis_x=measurement_start_day">Viber</a>, and <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.linkedin.com&since=2022-08-24&until=2022-09-25&axis_x=measurement_start_day&axis_y=probe_asn">Linkedin</a>.</td><td>Even when Internet connectivity was available, users could not use these communication services without circumvention tools (e.g., VPNs).</td></tr><tr><td><strong>Blocking of app stores</strong> (OONI)</td><td>22nd Sept. onward</td><td>Multiple ISPs in Iran started blocking access to the domain names for the <a href="https://explorer.ooni.org/search?since=2022-09-22&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=play.googleapis.com&failure=false">Google Play Store</a> and <a href="https://explorer.ooni.org/search?since=2022-09-22&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=iosapps.itunes.apple.com&failure=false">Apple App Store</a>.</td><td>Affected Iranians would have had difficulty installing or updating apps, including apps that provide relevant socio-economic services and censorship circumvention tools.</td></tr><tr><td><strong>Blocking of browser extension repositories</strong> (OONI)</td><td>26th Sept. (or earlier) and onward</td><td>Multiple ISPs in Iran blocked the browser extension repository URLs for <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=addons.mozilla.org&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Firefox</a>, <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&input=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fcategory%2Fextensions&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Chrome</a>, <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&input=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2FMicrosoft-Edge-Extensions-Home&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Microsoft Edge</a> and <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&input=https%3A%2F%2Faddons.opera.com%2Fen%2Fextensions%2F&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Opera</a>.</td><td>Affected Iranians would have had limited ability to install and update browser extensions, including extensions that provide privacy protection and censorship circumvention capabilities.</td></tr></tbody></table><p>These findings are visualized through the following image, which
+provides a timeline of shutdown events in Iran (between 16th September
+and 16th October 2022) following the death of Jhina (Mahsa) Amini.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/timeline.png><img src=/post/2022-iran-technical-multistakeholder-report/images/timeline_hue93f399133b11a96e85be83e1b0b5f72_346371_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/timeline_hue93f399133b11a96e85be83e1b0b5f72_346371_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Image:</strong> Timeline of events in Iran between 16th September 2022 to
+16th October 2022.</p><p>Economic indicators (gathered
+by <a href=https://www.internetsociety.org/>ISOC</a>) make clear that Iran’s
+economy suffered during the period of the shutdowns. Nighttime light
+output was down, the stock market saw a steady decline, and
+imports/exports were down slightly.</p><p>These economic changes <em>may</em> have been caused or exacerbated by the
+shutdowns themselves. All of these data points are correlational, not
+causal. Drawing strong conclusions about causality would require far
+more data over an extended period. In the case of Iran, some of this
+data is hard, if not impossible, to obtain. For example, in this case
+public opinion data about the shutdown would be valuable to gauge the
+on-the-ground effects, but that data is not currently available. Still,
+the shutdowns present a plausible explanation for at least some of the
+economic variation, which future analysis may be able to confirm.</p><p>The evidence demonstrating these events and conclusions is described in
+detail in the sections below.</p><h1 id=disruptions-to-network-infrastructure>Disruptions to Network Infrastructure</h1><h2 id=mobile-network-outages>Mobile Network Outages</h2><p>In the wake of the death of Jhina (Mahsa) Amini on 16th September 2022,
+protests
+<a href=https://www.theguardian.com/world/2022/sep/17/iran-protests-death-kurdish-woman-mahsaa-amini-morality-police>erupted</a>
+in Iran. With this mobilization came daily shutdowns to Iran&rsquo;s top 3
+mobile network providers: Irancell, Rightel, and MCCI.</p><p>For 13 consecutive days, from 21st September 2022 to 3rd October 2022,
+the Iranian government enacted a “digital curfew” by shutting down
+access to mobile networks from 4:00 PM local time until around midnight.
+Over the 13 day period, Iranians experienced ~100 hours without access
+to mobile networks. Mobile networks were again shut down on 8th, 12th
+and 15th October 2022.</p><p>These outages are visible through telemetry provided by the <a href="https://ioda.inetintel.cc.gatech.edu/country/IR?from=1663542000&until=1665788399">Internet Outage Detection and Analysis (IODA)</a>
+project, shown in Figure 1.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/01.png><img src=/post/2022-iran-technical-multistakeholder-report/images/01_huce994231f115f7c347c8fcf53bc08fe8_485483_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/01_huce994231f115f7c347c8fcf53bc08fe8_485483_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 1:</strong> IODA data showing Internet outages in Iran between 16th
+September 2022 to 16th October 2022 (source:
+<a href="https://ioda.inetintel.cc.gatech.edu/country/IR?from=1663542000&until=1665788399">IODA</a>).
+The red vertical bands indicate outages, which are detected as abnormal
+drops in the green “BGP” signal. The BGP data source represents routing
+announcements or global routing information that each ISP router
+exchanges with other routers, and it is usually quite stable. An
+abnormal drop can indicate a disruption in Internet connectivity. During
+the digital curfews, the blue Active Probing and purple Google search
+signals (see Methods below) are not reaching the maximums
+they normally would. (IODA’s “telescope” signal is removed from the time
+series for this view as it does not provide additional information.)</p><p>The IODA chart in Figure 2
+<a href="https://ioda.inetintel.cc.gatech.edu/asn/57218?from=1663560000&until=1665028799">shows</a>
+the daily outages observed on RighTel between 18th September 2022 to 5th
+October 2022.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/02.png><img src=/post/2022-iran-technical-multistakeholder-report/images/02_hua8201244ab896a0e4ad6dee5e022cc68_150855_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/02_hua8201244ab896a0e4ad6dee5e022cc68_150855_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 2:</strong> IODA data showing BGP signal for mobile operator RightTel
+between 18th September 2022 to 5th October 2022 (source:
+<a href="https://ioda.inetintel.cc.gatech.edu/asn/57218?from=1663560000&until=1665028799">IODA</a>).
+As in the previous figure, the red vertical bands indicate outages as
+evidenced by abnormal drops in the green BGP signal.</p><p>Similarly, IODA data
+<a href="https://ioda.inetintel.cc.gatech.edu/asn/44244?from=1663714800&until=1665097199">shows</a>
+daily outages on Irancell between 18th September 2022 to 5th October
+2022.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/03.png><img src=/post/2022-iran-technical-multistakeholder-report/images/03_huea32b3d5edd17e6920b28599fee60365_259963_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/03_huea32b3d5edd17e6920b28599fee60365_259963_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 3:</strong> IODA data showing the “Telescope” signal for mobile
+operator IranCell between 18th September 2022 to 5th October 2022
+(source:
+<a href="https://ioda.inetintel.cc.gatech.edu/asn/44244?from=1663714800&until=1665097199">IODA</a>).
+The graph shows red vertical bands for abnormal drops in the Telescope
+signal. Telescope is a measure of unsolicited network traffic on a
+network (see Methods). An abnormal decrease in Telescope could indicate a drop in Internet
+connectivity.</p><p>The timing and the networks affected by outages in Iran are corroborated
+by <a href=https://blog.cloudflare.com/protests-internet-disruption-ir/>Cloudflare Radar data</a>
+(Figure 4), which also shows traffic drops from Irancell, RighTel and
+MCCI.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/04.png><img src=/post/2022-iran-technical-multistakeholder-report/images/04_hu744b38bcd6bcb5c2d3ea024e4c360774_102085_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/04_hu744b38bcd6bcb5c2d3ea024e4c360774_102085_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 4:</strong> Graph showing Cloudflare traffic volumes for Irancell
+(green), Rightel (yellow), and MCCI (red) between 18th September 2022
+and 16th October 2022 (source: <a href=https://radar.cloudflare.com/ir>Cloudflare Radar</a>).</p><p>The Cloudflare Radar graph shows not only that traffic on these network
+providers was
+<a href=https://blog.cloudflare.com/protests-internet-disruption-ir/>disrupted</a>
+for several hours each day, but also that traffic was significantly
+higher than pre-shutdown levels each day after connectivity returned.</p><p>The mobile network outages are further corroborated by Kentik data
+(Figure 5), which shows daily drops in traffic from Irancell, MCCI, and
+RighTel during the same date range.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/05.png><img src=/post/2022-iran-technical-multistakeholder-report/images/05_hub50924875d70ccdc5326f928e31a023a_180342_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/05_hub50924875d70ccdc5326f928e31a023a_180342_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 5:</strong> Graph showing Kentik traffic volumes for the Iranian three
+mobile carriers Irancell (dark green), Rightel (yellow), and MCI (light
+green) between 18th September 2022 and 5th October 2022 (source:
+<a href=http://www.kentik.com/>Kentik</a>).</p><p>Additionally, Kentik’s data show increases in traffic on fixed-line
+services in Iran during the outages of mobile networks (Figure 6),
+suggesting that a small portion of the Internet traffic lost due to
+mobile blockages was rerouted over fixed-line services.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/06.png><img src=/post/2022-iran-technical-multistakeholder-report/images/06_hu6d0cf588fa432e144d13a9bfe56ab9a2_138000_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/06_hu6d0cf588fa432e144d13a9bfe56ab9a2_138000_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 6:</strong> Graph showing Kentik traffic volumes for Iran’s largest
+wireline carrier (TCI, in blue) surging during shutdowns of Iran’s
+largest mobile carrier (Irancell, in green) between 22nd September 2022
+and 28th September 2022 (source: <a href=http://www.kentik.com/>Kentik</a>).</p><h3 id=comparison-to-previous-outages>Comparison to Previous Outages</h3><p>Iran has previously experienced Internet outages during protests. Amid
+the <a href=https://www.nytimes.com/2019/11/15/world/middleeast/iran-gasoline-prices-rations.html>November 2019 protests</a>,
+Iran implemented a <a href=https://ooni.org/post/2019-iran-internet-blackout/>nationwide Internet shutdown</a>. During
+the shutdown, most Iranians were barred from connecting to the global
+Internet, but they still had <em>access to Iran’s national intranet</em> (the
+domestic network hosting Iranian websites and services).</p><p>The main differences between the recent Internet outages in Iran with
+the nationwide Internet shutdown in November 2019 are:</p><ul><li><p><strong>Impacted networks.</strong> The recent outages affected the top three
+mobile network providers. While the 2022 shutdown had an extensive
+impact, it affected fewer networks in Iran in comparison to the
+2019 Internet shutdown.</p></li><li><p><strong>Duration.</strong> The 2019 Internet shutdown lasted for 5 continuous
+days, whereas the recent outages spanned over several weeks,
+mainly affecting networks between 4:00 PM local time until around
+midnight.</p></li></ul><h2 id=regional-outages>Regional Outages</h2><p>In addition to above network shutdowns with country-wide scale, IODA
+data, corroborated by Cloudflare data, demonstrates signs of Internet
+disruption impacting the Kordestan and Khuzestan provinces (see dates
+and times in table below with hyperlinked images to IODA data views).
+The <a href="https://ioda.inetintel.cc.gatech.edu/region/1846?from=1663473600&until=1663732799">IODA graphs</a>
+show BGP (green), Active Probing (blue), and Telescope (orange) signals;
+the <a href=https://radar.cloudflare.com/ir>Cloudflare</a> graphs show HTTP
+requests per second. The dip in traffic in the last Cloudflare graph is
+indicated by the red arrow.</p><p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/reg-1.png><img src=/post/2022-iran-technical-multistakeholder-report/images/reg-1_hu1ec87611cfccb7f3f7823281ff8639df_96170_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/reg-1_hu1ec87611cfccb7f3f7823281ff8639df_96170_2000x1600_fit_box_2.png 2x"></a></div><div><a href=/post/2022-iran-technical-multistakeholder-report/images/reg-2.png><img src=/post/2022-iran-technical-multistakeholder-report/images/reg-2_hu822879941c52eb67a02992755116bfda_87894_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/reg-2_hu822879941c52eb67a02992755116bfda_87894_2000x1600_fit_box_2.png 2x"></a></div></p><h2 id=http3-and-quic-traffic-drop>HTTP/3 and QUIC Traffic Drop</h2><p>HTTP, the foundation of the World Wide Web that allows users to request
+data and documents from servers, rests on many underlying protocols for
+lower-level functionality (e.g., transmitting raw data). HTTP/3 is the
+latest revision of this protocol. Instead of using the more traditional
+TCP and TLS protocols for transport and security, HTTP/3 is based on UDP
+and QUIC. Since it is relatively new and uses a quite different
+networking stack, it is likely that existing filtering equipment is not
+as effective at blocking it.</p><p>On 22nd September 2022, Cloudflare Radar data shows a drop to near-zero
+level of HTTP/3 and QUIC traffic coming from Iran, as shown in Figure 7.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/07.png><img src=/post/2022-iran-technical-multistakeholder-report/images/07_hu56e5e1a6afdf0dba467e17bcb7678af2_89352_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/07_hu56e5e1a6afdf0dba467e17bcb7678af2_89352_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 7:</strong> Cloudflare Radar graphs showing distribution of traffic by
+the three different HTTP versions and distribution of secure traffic by
+protocol for Iran (source: <a href="https://radar.cloudflare.com/adoption-and-usage/ir?range=28d">Cloudflare Radar</a>).</p><p>This strongly suggests that QUIC, which HTTP/3 relies on, was blocked
+entirely, perhaps by blocking UDP port 443. It is possible that network
+operators in Iran found it easier to block all QUIC traffic than to
+effectively implement targeted filtering on the newer QUIC protocol.
+This is supported by <em>previous research</em> that shows a difference in
+blocking for HTTP/3 vs HTTPS traffic.</p><h2 id=ipv6-disruption-on-irancell>IPv6 disruption on Irancell</h2><p>IPv6 is the latest version of the Internet Protocol, the low-level
+protocol that enables computers to find each other by their “IP address”
+and send and receive data. It supersedes the older IPv4. OONI
+measurements
+<a href="https://explorer.ooni.org/search?since=2022-09-27&until=2022-09-28&probe_cc=IR&test_name=web_connectivity&probe_asn=AS44244&domain=www.wikipedia.org&failure=false&only=anomalies">suggest</a>
+that Irancell may have interfered with IPv6 traffic from 22nd September
+2022 to at least 29th September 2022. Within this period, OONI
+measurements collected from Irancell (Figure 8) show that while attempts
+to connect to IPv4 addresses succeeded, attempts to connect to IPv6
+addresses failed.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/08.png><img src=/post/2022-iran-technical-multistakeholder-report/images/08_hubc189914379c8c6f9ff1f6c90968d1d8_36102_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/08_hubc189914379c8c6f9ff1f6c90968d1d8_36102_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 8:</strong> OONI attempts to make TCP connections using IPv6 in
+Irancell, showing failures starting on 22nd September 2022.The few
+measurements annotated in purple pertain to cases where OONI Probe users
+did not have IPv6 support.</p><p>Figure 8 shows that before 22nd September 2022, the majority of the
+attempts succeed, but from 22nd September 2022 onwards, the majority of
+the attempts result in connection timeouts. This suggests that IPv6 was
+not reachable on Irancell.</p><p>This is further suggested by <a href="https://radar.cloudflare.com/adoption-and-usage/as44244?range=28d">Cloudflare Radar data</a>
+(Figure 9), which shows a drop in IPv6 traffic on Irancell during the
+same period.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/09.png><img src=/post/2022-iran-technical-multistakeholder-report/images/09_hu17c7e85db89dcab20e8279f115c682dc_26981_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/09_hu17c7e85db89dcab20e8279f115c682dc_26981_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 9:</strong> Cloudflare Radar graph showing distribution of traffic by
+IP version for Irancell (source: <a href="https://radar.cloudflare.com/adoption-and-usage/as44244?range=28d">Cloudflare Radar</a>).</p><p>These results are further corroborated by “ping” measurements of a
+<a href=https://atlas.ripe.net/probes/33779>RIPE Atlas probe</a> towards the
+IPv6 address of a root DNS resolver (Figure 10). These measurements
+indicate how long it took a device in Iran to reach a server providing a
+core global service for IPv6.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/10.png><img src=/post/2022-iran-technical-multistakeholder-report/images/10_hu964493e1858a4589dd33993052988ab4_91441_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/10_hu964493e1858a4589dd33993052988ab4_91441_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 10:</strong> Ping measurements towards the IPv6 address of one of the
+a.root-servers.net root DNS resolver (source: <a href=https://atlas.ripe.net/probes/33779>RIPE Atlas</a>). Red blocks indicate times
+when the resolver’s IPv6 address could not be reached.</p><p>Kentik data shows similar disruptions in traffic volume to IPv6
+addresses (Figure 11).</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/11.png><img src=/post/2022-iran-technical-multistakeholder-report/images/11_hu8c54a0f2e0d092ba78fb9c13065751d1_106633_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/11_hu8c54a0f2e0d092ba78fb9c13065751d1_106633_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 11:</strong> Graph showing Kentik traffic volumes for IPv6 only for
+the Iranian three mobile carriers Irancell (dark green), Rightel (light
+green), and MCI (yellow) between 18th September 2022 and 5th October
+2022 (source: <a href=http://www.kentik.com/>Kentik</a>).</p><p>It remains unclear what implications IPv6 blocking would have had for
+users.</p><h2 id=increased-blocking-of-encrypted-dns>Increased blocking of encrypted DNS</h2><p>The Domain Name Service (DNS) is how Internet devices map from names
+(e.g., <code>www.example.com</code>) to IP addresses. In
+recent years, encrypted DNS was introduced to make users’ Internet
+traffic more private and secure, and to make it harder for governments
+to monitor and block access to Internet services. Encrypted DNS works by
+exchanging the DNS data over secure protocols such as TLS and HTTPS,
+preventing authorities or others from seeing the names of requested
+websites and services or interfering with the DNS results.</p><p>In 2020, however, OONI reported that <a href=https://ooni.org/post/2020-iran-dot/>Iran blocked DNS over TLS (DoT)</a>. At the time, OONI found
+that 57% of the tested endpoints were blocked on at least one ISP, and
+that most blocking was implemented by interfering with the TLS
+handshake, i.e., ISPs were preventing a secure connection from being
+established. A subsequent OONI study
+<a href=https://ooni.org/post/2022-doh-dot-paper-dnsprivacy21/>found</a> that
+50% of tested DoT endpoints were blocked in Iran, while 92% of tested
+DNS over HTTPS (DoH) endpoints worked in Iran. These studies involved
+users within Iran testing publicly available DoH and DoT servers that
+were operated globally outside of Iran.</p><p>The situation changed in September 2022, when OONI data started to show
+increased blocking of encrypted DNS in Iran. As of 20th September 2022,
+OONI data shows that ISPs in Iran started <a href="https://explorer.ooni.org/search?since=2022-09-22&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=dns.google&failure=false">blocking DNS over HTTPS (DoH) endpoints</a>
+by means of DNS based tampering, in addition to implementing <a href="https://explorer.ooni.org/search?since=2022-09-07&until=2022-09-08&probe_cc=IR&test_name=web_connectivity&domain=dns.google&failure=false">TLS level interference</a>.
+Previously reachable DoH endpoints (such as cloudflare-dns.com) are now
+<a href="https://explorer.ooni.org/search?since=2022-09-16&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=cloudflare-dns.com&failure=false">blocked</a>.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/12.png><img src=/post/2022-iran-technical-multistakeholder-report/images/12_huad11e13bb6805ef761392b9d979ed66b_347215_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/12_huad11e13bb6805ef761392b9d979ed66b_347215_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 12:</strong> OONI data on the blocking of popular DNS over HTTPS
+endpoints in Iran between August 2022 to September 2022 (source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&since=2022-08-25&until=2022-09-25&axis_x=measurement_start_day&axis_y=domain">OONI MAT</a>).</p><p>Figure 12 aggregates OONI measurement coverage from the testing in Iran
+of multiple DoH endpoints. These measurements are aggregated from
+multiple tested networks in Iran. OONI measurements are annotated as
+“OK” (green) when the tested URL is considered to be accessible on a
+tested network according to OONI’s <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a> methodology.</p><p>Measurements are annotated as “anomalous” (orange) when the tested URL
+fails to meet the <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a> methodology
+requirements for accessibility, indicating potential blocking.
+Measurements are annotated as “confirmed” (red) when blocking is
+automatically confirmed. OONI is able to automatically confirm blocking
+based on the fingerprints of blockpages, or when DNS resolution returns
+an IP known to be associated with censorship. When URLs are blocked
+through the use of other censorship techniques, those measurements are
+annotated as “anomalous” (because their blocking cannot be confirmed
+automatically). Finally, OONI measurements are annotated as “failed”
+when the experiment fails (this can be due to blocking, bugs, or other
+reasons).</p><p>As of 20th September 2022, <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&since=2022-08-25&until=2022-09-25&axis_x=measurement_start_day&axis_y=domain">OONI data collected from Iran</a>
+shows a noticeable <em>change</em> in how the blocking of encrypted DNS is
+implemented. Previously, OONI data showed TLS level interference
+(annotated in orange as “anomalous”), whereas now, most (tested) ISPs
+implement DNS based blocking of DoH endpoints as well. These blocking
+cases are <a href="https://explorer.ooni.org/search?since=2022-09-24&until=2022-09-25&probe_cc=IR&test_name=web_connectivity&domain=dns.google&failure=false">automatically confirmed</a>
+(and annotated in red). OONI data also shows that this block has been
+expanded to more DoH endpoints than in previous months.</p><p>The <a href=https://blog.cloudflare.com/protests-internet-disruption-ir/>impact of DoH blocking</a>
+in Iran is also evident through Cloudflare data (Figure 13), which also
+shows that it started on 20th September 2022.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/13.png><img src=/post/2022-iran-technical-multistakeholder-report/images/13_hu3331ed4063e85590a192c2998adfd69a_41493_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/13_hu3331ed4063e85590a192c2998adfd69a_41493_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 13:</strong> Traffic to Cloudflare 1.1.1.1 resolver from clients in
+Iran (source: Cloudflare).</p><p>As a result of the increased blocking of encrypted DNS services,
+circumventing Internet censorship in Iran – a heavily censored
+environment – may now be harder.</p><h2 id=impact-on-internet-speed-tests>Impact on Internet Speed Tests</h2><p>When users had at least some Internet connectivity, they were able to
+connect to network diagnostic tests such as M-Lab’s. Since mid-September
+2022, M-Lab data shows a marked increase in daily tests from 5 Iranian
+ISPs, particularly for Iran Telecommunication Company PJS and Irancell.
+Figure 14 shows the daily diagnostic test volumes for the five Iranian
+providers with the most tests observed in the M-Lab dataset.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/14.png><img src=/post/2022-iran-technical-multistakeholder-report/images/14_huaa6450c7f0e1c10f8b9b5cb41bf63470_35606_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/14_huaa6450c7f0e1c10f8b9b5cb41bf63470_35606_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 14:</strong> Number of speed tests per day since September 1, 2022 for
+five ISPs. Iran Telecommunication Company PJS (AS58224) is shown in
+orange; Irancell (AS44244) is shown in purple. (Source:
+<a href=https://www.measurementlab.net/data/>M-Lab</a>).</p><p>Zooming in on tests per hour for these five networks reveals the impact
+of periodic shutdowns on test activity. The figure below shows hourly
+test volume for mobile networks (left) and fixed-line ISPs (right). Both
+types of networks exhibit periodic shutdown behavior, but with differing
+periodicity.</p><p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/15-1.png><img src=/post/2022-iran-technical-multistakeholder-report/images/15-1_hu0085d28cea4813fb76daf3b4f2cdb365_42141_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/15-1_hu0085d28cea4813fb76daf3b4f2cdb365_42141_2000x1600_fit_box_2.png 2x"></a></div><div><a href=/post/2022-iran-technical-multistakeholder-report/images/15-2.png><img src=/post/2022-iran-technical-multistakeholder-report/images/15-2_hu1edeb5fe8625e7f98cf10eb2763cb535_51188_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/15-2_hu1edeb5fe8625e7f98cf10eb2763cb535_51188_2000x1600_fit_box_2.png 2x"></a></div></p><p><strong>Figure 15:</strong> Hourly test volume for speed tests
+(9/25/2022-10/05/2022), separating out mobile networks (top chart) and fixed
+line ISPs (bottom chart). (Source:
+<a href=https://www.measurementlab.net/data/>M-Lab</a>).</p><p>Based on the quantity of speed tests, it can be inferred that users are
+concerned about their network connectivity and navigate to the speed
+test to check their access. However, despite reports of network
+interference, M-Lab data shows that when users were able to connect to
+the global Internet to run the speed test, they saw a sustained increase
+in network throughput on Irancell and Mobile Communication Company of
+Iran PLC, both cellular network providers (Figure 16). This could be as
+a result of increased deployment of cell towers (e.g., to make more
+precise observations of mobile subscriber IDs), but we are currently
+unable to verify this hypothesis.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/16.png><img src=/post/2022-iran-technical-multistakeholder-report/images/16_hu3f4a2ae72337e4765b65fdd7372a91a1_40614_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/16_hu3f4a2ae72337e4765b65fdd7372a91a1_40614_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 16:</strong> Median daily throughput for speed tests from Iran, 2022.
+There is an increase in median throughput for cellular carriers Mobile
+Communication Company of Iran PLC (AS197207) and Irancell (AS44244).
+(Source: <a href=https://www.measurementlab.net/data/>M-Lab</a>).</p><p>M-Lab data does <em>not</em> show discernible changes in network latency or
+loss for Iranian clients of the speed test.</p><h1 id=targeted-disruptions-to-apps-and-services>Targeted Disruptions to Apps and Services</h1><p>Iran has blocked numerous websites and apps over the past decade,
+implementing some of the most <a href=https://ooni.org/post/iran-internet-censorship/>pervasive forms of Internet censorship</a> in the
+world. In 2017, OONI published a
+<a href=https://ooni.org/post/iran-internet-censorship/>report</a> based on the
+analysis of network measurements collected from Iran between 2014 to
+2017. This study found numerous <em>news media websites</em>, <em>human rights
+websites</em>, and <em>political websites</em> blocked in the country. Subsequent
+studies also show the <a href=https://ooni.org/post/2021-no-access-lgbtiq-website-censorship-six-countries/>blocking of numerous LGBTIQ websites</a>
+in Iran.</p><p>Amid <a href=https://www.theguardian.com/world/2018/jan/02/iran-protests-how-did-they-start-and-where-are-they-heading>anti-government protests</a>
+between December 2017 to January 2018, OONI
+<a href=https://ooni.org/post/2018-iran-protests/>reported</a> on the blocking
+of Telegram, Facebook Messenger, and Instagram in Iran. In March 2020,
+Iran <a href=https://ooni.org/post/2020-iran-blocks-farsi-wikipedia/>temporarily blocked access to the Farsi language edition of Wikipedia</a>. In
+January 2021, Iran started <em>blocking access to the Signal Private
+Messenger app</em>. While many of these (and other) blocks remain
+<a href="https://explorer.ooni.org/search?since=2022-09-05&until=2022-10-06&failure=false&probe_cc=IR&only=confirmed">ongoing</a>,
+OONI data shows that Iran <em>increased</em> the levels of Internet censorship
+following the September 2022 protests: more ISPs now block access to
+more platforms, as shown below.</p><h2 id=blocking-of-whatsapp-instagram-skype-viber-and-linkedin>Blocking of WhatsApp, Instagram, Skype, Viber and Linkedin</h2><p>As of 21st September 2022, OONI data shows that many ISPs in Iran
+started <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=whatsapp&since=2022-08-24&until=2022-09-24&axis_x=measurement_start_day">blocking access to WhatsApp endpoints</a>,
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=web.whatsapp.com&since=2022-08-25&until=2022-09-25&axis_x=measurement_start_day">web.whatsapp.com</a>,
+and
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.instagram.com&since=2022-08-25&until=2022-09-25&axis_x=measurement_start_day">www.instagram.com</a>.
+In most cases, OONI data shows signs of <em>TCP/IP blocking</em> (disrupting
+connections with and data transfer to/from the server), with additional
+blocking via <em>DNS</em> (preventing users from retrieving an IP address for
+the server’s domain name) and <em>TLS</em> (preventing users from securing
+their connections with the server). As of 23rd September 2022, OONI data
+shows the <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.skype.com&since=2022-08-25&until=2022-09-25&axis_x=measurement_start_day">blocking of Skype</a>
+and
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.viber.com&since=2022-08-25&until=2022-09-27&axis_x=measurement_start_day">Viber</a>,
+while the <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.linkedin.com&since=2022-08-24&until=2022-09-25&axis_x=measurement_start_day&axis_y=probe_asn">blocking of Linkedin is automatically confirmed on at least 10 networks</a>
+in Iran.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/17.png><img src=/post/2022-iran-technical-multistakeholder-report/images/17_hu5217da8b2a5501a974741f5b494cdf6f_120232_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/17_hu5217da8b2a5501a974741f5b494cdf6f_120232_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 17:</strong> OONI data on the testing of WhatsApp Web, Instagram,
+Viber, Linkedin and Skype in Iran between September 2022 to October 2022
+(source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day&axis_y=domain">OONI MAT</a>).</p><p>Figure 17 aggregates OONI measurement coverage from the testing of
+WhatsApp Web, Instagram, Linkedin and Skype on multiple networks in Iran
+between 6th September 2022 to 5th October 2022. As is evident from the
+chart, both <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=web.whatsapp.com&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">WhatsApp Web</a>
+and
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.instagram.com&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Instagram</a>
+were previously accessible on most tested networks in Iran, and only
+started to present signs of blocking from 21st September 2022 onwards.
+Meanwhile, the testing of
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.skype.com&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Skype</a>,
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.viber.com&since=2022-08-25&until=2022-09-27&axis_x=measurement_start_day">Viber</a>,
+and
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.linkedin.com&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Linkedin</a>
+started presenting signs of blocking on multiple networks two days
+later, on 23rd September 2022.</p><p>Similarly, OONI data suggests that Iran <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=whatsapp&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">started blocking access to the WhatsApp app</a>
+on 21st September 2022 (Figure 18).</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/18.png><img src=/post/2022-iran-technical-multistakeholder-report/images/18_hu3306101836dd3fdc89cd6e3decefb022_56269_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/18_hu3306101836dd3fdc89cd6e3decefb022_56269_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 18:</strong> OONI data on the testing of WhatsApp in Iran between
+September 2022 to October 2022 (source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=whatsapp&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">OONI MAT</a>).</p><p>The figure aggregates OONI measurement coverage from the testing of
+WhatsApp endpoints on multiple networks in Iran between 6th September
+2022 to 5th October 2022. It is evident that while WhatsApp was
+previously accessible on most tested networks in Iran, it started
+presenting signs of blocking on almost all tested networks from 21st
+September 2022 onwards.</p><p>Kentik data confirms that traffic volume from Facebook’s network, which
+would include WhatsApp traffic, dropped substantially on 21st September
+2022 (Figure 19).</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/19.png><img src=/post/2022-iran-technical-multistakeholder-report/images/19_hud717039b81d2008c01f88e012e3e2fe1_91757_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/19_hud717039b81d2008c01f88e012e3e2fe1_91757_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 19:</strong> Graph showing Kentik traffic volumes from Facebook
+(AS32934) to the Iranian three mobile carriers Irancell (dark green),
+Rightel (yellow), and MCI (light green) between 18th September 2022 and
+5th October 2022 (source: <a href=http://www.kentik.com/>Kentik</a>).</p><h2 id=blocking-of-google-play-store-and-apple-app-store>Blocking of Google Play Store and Apple App Store</h2><p>As of 22nd September 2022, OONI data shows that multiple ISPs in Iran
+started <a href="https://explorer.ooni.org/search?since=2022-09-22&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=play.googleapis.com&failure=false">blocking access to Google Play Store</a>
+and <a href="https://explorer.ooni.org/search?since=2022-09-22&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=iosapps.itunes.apple.com&failure=false">Apple App Store</a>
+domains, limiting Iranians’ ability to install or update apps.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/20.png><img src=/post/2022-iran-technical-multistakeholder-report/images/20_hu582018dcec59673750b592b01077c4f0_126561_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/20_hu582018dcec59673750b592b01077c4f0_126561_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 20:</strong> OONI data on the testing of Google Play Store and Apple
+App Store domains in Iran between September 2022 to October 2022
+(source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day&axis_y=domain">OONI MAT</a>).</p><p>Figure 20 aggregates OONI measurement coverage from the testing of
+Google Play Store and Apple App Store domains on multiple networks in
+Iran between 6th September 2022 to 5th October 2022. From 22nd September
+2022 onwards, OONI data
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day&axis_y=domain">shows</a>
+a spike in measurements presenting both “<em>anomalies</em>” (signs of
+blocking) and those where the block is <em>automatically confirmed</em>.
+Notably, the blocked domains include play.googleapis.com, which is <a href=https://www.netify.ai/resources/applications/google-play>one of the key domains used</a> by
+Google Play Store.</p><h2 id=blocking-of-browser-extension-repositories>Blocking of Browser Extension Repositories</h2><p>Beyond the blocking of app stores, OONI data suggests that Iran started
+blocking several browser extension repositories, limiting Iranians’
+ability to install and update browser extensions.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/21.png><img src=/post/2022-iran-technical-multistakeholder-report/images/21_hu1e0bb4ca45cf384961705c45c5495848_110816_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/21_hu1e0bb4ca45cf384961705c45c5495848_110816_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 21:</strong> OONI data on the testing of browser extensions in Iran
+between September 2022 to October 2022 (source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day&axis_y=input">OONI MAT</a>).</p><p>Figure 21 aggregates OONI measurement coverage from the testing of the
+browser extension repository URLs for
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=addons.mozilla.org&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Firefox</a>,
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&input=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fcategory%2Fextensions&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Chrome</a>,
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&input=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2FMicrosoft-Edge-Extensions-Home&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Microsoft Edge</a>
+and
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&input=https%3A%2F%2Faddons.opera.com%2Fen%2Fextensions%2F&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">Opera</a>
+from multiple networks in Iran between 6th September 2022 to 5th October
+2022. Most URLs from the figure lack testing coverage before 26th
+September 2022 because they were only added to the list of tested
+websites on that date. Given that access to <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=addons.mozilla.org&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">addons.mozilla.org was blocked on 24th September 2022</a>,
+it is possible that ISPs may have started blocking access to the other
+URLs on the same day (if they synchronized the blocking of browser
+extension repositories).</p><p>It is worth highlighting that all of the above tested URLs were
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day&axis_y=input">automatically confirmed blocked</a>
+when tested on multiple networks in Iran from 26th September 2022
+onwards.</p><h2 id=circumvention-tools>Circumvention Tools</h2><p>Internet censorship can be evaded through the use of circumvention
+tools. However, numerous circumvention tool websites have been <em>blocked
+in Iran over the past years</em>, as demonstrated through <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&category_code=ANON&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day&axis_y=domain">OONI data</a>.</p><p>Figure 22 aggregates <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&category_code=ANON&since=2022-08-18&until=2022-10-18&axis_x=measurement_start_day&axis_y=domain">OONI measurement coverage</a>
+from the testing of circumvention tool websites on multiple networks in
+Iran between 18th August 2022 to 17th October 2022.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/22.png><img src=/post/2022-iran-technical-multistakeholder-report/images/22_huc7d7b039b94480823cef0a425d39bdf4_255492_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/22_huc7d7b039b94480823cef0a425d39bdf4_255492_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 22:</strong> OONI data on the blocking of circumvention tool websites
+in Iran between 18th August 2022 to 17th October 2022 (source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&category_code=ANON&since=2022-08-18&until=2022-10-18&axis_x=measurement_start_day&axis_y=domain">OONI MAT</a>).</p><p>As is evident from the chart, numerous circumvention tool websites have
+been blocked in Iran <em>before</em> the recent protests.</p><p>The blocking of circumvention tool websites in Iran is further
+corroborated by <a href=https://censoredplanet.org/data/raw>Censored Planet data</a> (Figure 23).</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/23.png><img src=/post/2022-iran-technical-multistakeholder-report/images/23_hub30c428d9c3b1ac5e38a9312f2cb0ba0_487404_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/23_hub30c428d9c3b1ac5e38a9312f2cb0ba0_487404_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 23:</strong> Censored Planet data on the blockage of circumvention and
+VPN provider websites in Iran as of October 14, 2022 (source: <a href=https://censoredplanet.org/data/raw>Censored Planet</a>).</p><p>Censored Planet measured the reachability of these circumvention tool
+providers’ secure websites, as of 14th October 2022, from 13 vantage
+points behind 7 ISPs inside Iran. Probes trying to reach popular
+circumvention websites such as the torproject.org and VPN provider
+websites have all been blocked across the tested networks. While the
+majority of the networks block webpages by timing out the low-level TCP
+request, the AFRANET network performs the blocking by resetting TCP
+requests.</p><p>While <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&category_code=ANON&since=2022-08-18&until=2022-10-18&axis_x=measurement_start_day&axis_y=domain">circumvention tool websites have been blocked in Iran</a>
+for years, the extent to which ISPs in Iran are able to successfully
+block the actual circumvention tools is less clear – particularly since
+some circumvention tools include built-in techniques for evading
+censors.</p><p>OONI data suggests that the <a href=https://psiphon.ca/>Psiphon</a> and <a href=https://snowflake.torproject.org/>Tor Snowflake</a> circumvention tools <a href="https://explorer.ooni.org/chart/circumvention?since=2022-09-05&until=2022-10-06&probe_cc=IR">may work</a>
+in Iran, and can potentially be used for <a href=https://forum.torproject.net/t/iran-circumventing-censorship-with-tor/4590>censorship circumvention</a>.
+While OONI tests indicate that it is possible to bootstrap these tools
+from Iran and use them to fetch a small webpage, there is no public data
+available on whether these tools are effective in providing
+circumvention for long periods of time. It is worth noting though that
+both
+<a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&var-region=IR">Psiphon</a>
+and <a href="https://metrics.torproject.org/userstats-bridge-country.html?start=2022-09-11&end=2022-10-04&country=ir">Tor Metrics</a>
+show a spike in the number of users connecting from Iran in September
+2022, suggesting increased circumvention attempts following more
+pervasive forms of Internet censorship in Iran.</p><h1 id=the-economic-impact-of-irans-internet-shutdowns>The Economic Impact of Iran’s Internet Shutdowns</h1><p>Measuring the impact of a shutdown like the ones in Iran presents a
+unique challenge. There are many kinds of “impact,” ranging from
+economic to social to, political, to daily-life in Iran. This section
+will focus on the economic impact, which itself has many facets.</p><h2 id=measuring-economic-activity-with-light-output>Measuring Economic Activity With Light Output</h2><p>One dataset that economists have been using recently to measure economic
+activity is satellite imagery of the nighttime light output of a given
+geographic area. Nighttime light output has been found to correlate with
+how economically active a region’s population is during the timeframe
+observed.</p><p>ISOC’s data comes from the low-light imaging sensor on <a href=https://worldview.earthdata.nasa.gov/>NASA&rsquo;s Suomi National Polar-orbiting Partnership (S-NPP)</a> satellite. This is part
+of the Visible Infrared Imaging Radiometer Suite (VIIRS), and is called
+the Day/Night Band (DNB).</p><p>The video below shows that nighttime light intensified from 16th
+September 2022 through 3rd October 2022 in Tehran. Over the following
+days, nighttime lighting dropped below its initial levels, which could
+indicate Iranians became less active as the government crackdown
+intensified and movement was restricted in the region. The drop in
+lighting could be a lagging indicator of reduced economic activity due
+to both Internet shutdowns and night curfews on movement, though the
+nature and timing of these effects is confounded by potential lighting
+increases from widespread nighttime protests.</p><iframe width=560 height=315 src=https://www.youtube-nocookie.com/embed/h2JsTsioFw4 frameborder=0 allow="autoplay; encrypted-media" allowfullscreen></iframe><p><strong>Video:</strong> ISOC Impact Shutdown - Tehran (Night-time lights data 16th Sept.-16th Oct).</p><p>This analysis demonstrates the difficulties in measuring the impact of a
+shutdown. Nighttime lights provide valuable insights where robust
+statistical systems may be absent, and economists typically <a href=https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-8268.12528>use them</a>
+to map impacts of sudden policy changes (e.g., COVID-19 restrictions).
+Since this is the first attempt to link nighttime lights in the context
+of an Internet shutdown, various confounding effects cannot be ruled
+out. However, without this analysis we would be uncertain about the
+potential of nighttime lights to explore potential correlation with
+shutdowns. While we can infer from the reduction in light that Iranians
+are changing their use of personal appliances (e.g., lights, mobile
+phones, TVs) and public lighting (e.g., street lights), there is no way
+to make a causal link directly to the shutdown, and simultaneous events
+muddy the analysis. In order to conclude that there was a drop in
+economic productivity, we would also need information on the
+“business-as-usual” number of productive hours (e.g., if economic
+activity is not regulated during the night time, as it may be in certain
+jurisdictions).</p><p>A second <strong><a href=https://vimeo.com/765587406>video from the Sistan and Baluchestan region</a></strong> shows a similar
+pattern. This is the region that has seen the most fatalities in Iran
+during the recent protests and associated shutdowns. There is a marked
+decline in luminosity as of 3rd October 2022. This is a capture of a
+larger region than the Tehran image above, and shows certain areas
+within the province going completely dark following a period of
+intensified activity leading up to 3rd October 2022.</p><h2 id=stock-market-indicators>Stock Market Indicators</h2><p>The stock market is another commonly used indicator of a country’s
+economic output and health. This data is theoretically available yet at
+a finer-grained timescale: even within a day, any stock market can have
+swings between the opening and closing bell. The charts in Figure 24
+show only day-level data, but they clearly indicate that Iran witnessed
+a steady drop in stock market performance during the shutdowns. Again,
+the shutdowns plausibly played a role here, although it is difficult to
+disentangle their impact from other factors such as general political
+instability.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/24.png><img src=/post/2022-iran-technical-multistakeholder-report/images/24_hub1b314cd8583f8aaeaf1701f502d68f3_40278_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/24_hub1b314cd8583f8aaeaf1701f502d68f3_40278_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 24:</strong> Changes in Stock Market Performance in Iran between 10th
+September 2022 to 12th October 2022 (Source: <a href=https://mondovisione.com/>Tehran Stock Exchange Main Index (TEDPIX)</a>,
+<a href=https://isoc.app.box.com/s/adh1n5nk68dk1iz8w6ivb8rykb44lhro>ISOC</a>).
+See the Technical Details section below for individual datasets.</p><h2 id=iran-importexport-indicators>Iran Import/Export Indicators</h2><p>Another indicator of the health of a country’s economy is trade data.
+One way to measure trade in a region is to measure how many cargo ships
+deliver and receive goods at major ports. In the case of Iran, there are
+many major ports whose data we can explore to understand economic
+activity. This can add information beyond stock market data, which is
+subject to fluctuations and may only capture a component of the impact
+of business and corporate activity in the country.</p><p>Data on exports and imports by volume of goods is presented in Figure
+25. Viewing just the data for September 2022 or October 2022 may provide
+an incomplete picture, since we need to know how much trade has changed
+relative to business-as-usual. To capture this, we need to look at how
+much trade is taking place following the shutdown relative to how much
+trade would normally take place during this time.</p><p>The data presented below shows the ratio of the current imports and
+exports data to their values averaged during the 2017-19 period. There
+is a decline in shipping containers moving out from Iran, and a decline
+in bulk and food coming into the country’s ports. As with earlier data,
+this is correlational, not necessarily causal, as we see changes in the
+types of exports (e.g., more oil and chemicals being exported), and a
+small increase in overall container imports following the current
+Internet shutdown in Iran. This suggests that Internet shutdowns may
+have hampered logistics associated with trade (e.g., lack of timely
+communication about arrivals at ports), where certain trade in specific
+trade operations were more adversely affected than others in Iran.</p><div><a href=/post/2022-iran-technical-multistakeholder-report/images/25.png><img src=/post/2022-iran-technical-multistakeholder-report/images/25_hu663432664e2786538826c2682953df17_119205_1000x800_fit_box_2.png srcset="/post/2022-iran-technical-multistakeholder-report/images/25_hu663432664e2786538826c2682953df17_119205_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Figure 25:</strong> Trade Data on Imports and Exports in Metric Tons
+(Relative to 2017-2019) for Iran. See the Technical Details section for individual datasets.</p><h1 id=conclusion>Conclusion</h1><p>Iran has had a tight grip on the Internet for years, implementing
+<a href=https://ooni.org/post/iran-internet-censorship/>pervasive levels of Internet censorship</a>
+(<a href="https://explorer.ooni.org/search?since=2022-08-25&until=2022-09-25&failure=false&probe_cc=IR&test_name=web_connectivity&only=confirmed">blocking numerous websites</a>
+and major apps). Over the years, as anti-government protests emerged
+(such as the <a href=https://www.theguardian.com/world/2018/jan/02/iran-protests-how-did-they-start-and-where-are-they-heading>protests in late 2017</a>
+and <a href=https://www.aljazeera.com/news/2019/11/20/irans-protests-all-you-need-to-know-in-600-words/>November 2019</a>),
+Iranian authorities have followed a pattern of <a href=https://ooni.org/post/2018-iran-protests/>blocking social media apps</a> that Iranians rely on
+for communication, information sharing, and coordination—even resorting
+to <a href=https://ooni.org/post/2019-iran-internet-blackout/>shutting networks down entirely</a>.</p><p>Amid the ongoing protests following the death of Jhina (Mahsa) Amini,
+the Internet shutdown events in Iran have followed the same pattern,
+involving the blocking of social media platforms and mobile network
+outages. <strong>What differs, though, is the duration and scale of the
+impact, as well as the fact that these shutdowns were implemented in an
+<em>already heavily censored</em> environment.</strong></p><p>While major instant messaging platforms (such as
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=telegram&since=2022-06-19&until=2022-10-19&axis_x=measurement_start_day">Telegram</a>,
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=facebook_messenger&since=2022-06-19&until=2022-10-19&axis_x=measurement_start_day">Facebook Messenger</a>,
+and <a href=https://ooni.org/post/2021-how-signal-private-messenger-blocked-around-the-world/#iran>Signal</a>) were already blocked <em>prior</em> to the protests, the
+additional blocking of
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=whatsapp&since=2022-09-13&until=2022-10-19&axis_x=measurement_start_day">WhatsApp</a>,
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.instagram.com&since=2022-09-13&until=2022-10-19&axis_x=measurement_start_day">Instagram</a>,
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.skype.com&since=2022-09-13&until=2022-10-19&axis_x=measurement_start_day">Skype</a>,
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.viber.com&since=2022-08-25&until=2022-09-27&axis_x=measurement_start_day">Viber</a>
+and
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.linkedin.com&since=2022-09-13&until=2022-10-19&axis_x=measurement_start_day">Linkedin</a>
+means that Iranians’ have fewer options for communicating, coordinating,
+sharing and accessing information. While Iran <a href=https://ooni.org/post/2020-iran-dot/>started blocking encrypted DNS services in 2020</a>,
+the <a href="https://explorer.ooni.org/search?since=2022-09-22&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=dns.google&failure=false">increased blocking of encrypted DNS endpoints in September 2022</a>
+means that circumventing Internet censorship will be harder. And the
+recent <a href="https://explorer.ooni.org/search?since=2022-09-22&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=play.googleapis.com&failure=false">blocking of Google Play Store</a>,
+<a href="https://explorer.ooni.org/search?since=2022-09-22&until=2022-09-23&probe_cc=IR&test_name=web_connectivity&domain=iosapps.itunes.apple.com&failure=false">Apple App Store</a>,
+and <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&input=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fcategory%2Fextensions&since=2022-09-06&until=2022-10-06&axis_x=measurement_start_day">browser extension repositories</a>
+means that installing and updating apps and browser extensions
+(including circumvention tools) will be harder.</p><p>When comparing the recent Internet outages in Iran with the <a href=https://ooni.org/post/2019-iran-internet-blackout/>nationwide Internet shutdown in November 2019</a>, we see that
+they differ in terms of impacted networks and duration. In 2019,
+multiple networks were impacted for 5 continuous days, whereas the
+recent outages mainly affected three mobile networks (primarily as part
+of “digital curfews”) over the span of several weeks.</p><p>Iran’s recent “digital curfews” are reminiscent of the <em>nightly Internet
+outages (“digital curfews”) that Myanmar experienced for several months</em>
+following the military coup in February 2021. In both cases, several
+independent network measurement data sets show that while Internet
+outages occurred almost like clockwork for specific hours each day, the
+blocking of major social media apps and circumvention tools remained
+ongoing. This shift towards targeted censorship (observed in both
+Myanmar and Iran) suggests that authorities may be attempting to
+minimize the cost of Internet outages (limiting them to specific
+networks and timings), while maximizing the political impact by
+maintaining the pattern of blockages for long periods.</p><p>Independent researchers can continue to monitor and investigate Internet
+shutdowns in Iran through publicly available datasets, such as
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&since=2022-09-18&until=2022-10-18&axis_x=measurement_start_day">OONI</a>,
+<a href=https://ioda.inetintel.cc.gatech.edu/country/IR>IODA</a>, <a href=https://radar.cloudflare.com/ir>Cloudflare Radar</a>, <a href=https://data.censoredplanet.org/raw>Censored Planet</a>, and
+<a href=https://www.measurementlab.net/data/>M-Lab</a>.</p><h1 id=annex-methods>Annex: Methods</h1><p>This study aims to investigate the breadth and extent of Internet
+shutdown events reported in Iran amid protests, following the death of
+Jhina (Mahsa) Amini on 16th September 2022.</p><p>For the purpose of this study, we have limited the <strong>analysis period to
+16th September 2022 to 16th October 2022</strong>. This is the period
+immediately following Mahsa Amini’s death during which protests and
+censorship and shutdown events occurred. Several charts in this report
+provide longer date ranges (depending on the findings that they attempt
+to communicate), but the core findings of this analysis are between 16th
+September 2022 to 16th October 2022.</p><p>We analyze and compare relevant network measurement datasets that can
+help answer the following main questions:</p><ul><li><p>Which websites and apps were blocked in Iran <em>after</em> 16th September
+2022? How did ISPs in Iran implement these blocks?</p></li><li><p>Which networks in Iran were affected by outages <em>after</em> 16th
+September 2022? When and for how long did these outages occur?</p></li><li><p>Did the network disruptions have an impact on Iran’s economy?</p></li></ul><p>To examine the above questions, we refer to the following datasets:</p><ul><li><p><strong>Blocking:</strong></p><ul><li><p><strong>OONI.</strong> The <a href=https://ooni.org/>Open Observatory of Network Interference (OONI)</a> project builds free software
+(called <a href=https://ooni.org/install/>OONI Probe</a>) designed to
+<a href=https://ooni.org/nettest/>measure</a> various forms of
+Internet censorship, such as the blocking of websites, instant
+messaging apps, and circumvention tools. Since 2012, OONI
+Probe users have contributed <a href=https://explorer.ooni.org/>more than 1 billion network measurements</a> collected from 25
+thousand unique local networks in 241 countries and
+territories. OONI measurements collected from around the world
+are published as <a href=https://explorer.ooni.org/chart/mat>open data in real-time</a>.</p></li><li><p><strong>Censored Planet.</strong> <a href=https://censoredplanet.org/>Censored Planet</a> is a censorship
+measurement platform that continuously measures reachability
+to over 2,000 websites from more than 95,000 vantage points in
+221 countries. It uses remote measurement techniques that do
+not require users in Iran to run tests.</p></li></ul></li><li><p><strong>Network performance:</strong></p><ul><li><strong>M-Lab.</strong> <a href=https://ccronline.sigcomm.org/2022/ccr-january-2022/m-lab-user-initiated-internet-data-for-the-research-community/>Measurement Lab (M-Lab)</a>
+is an open, distributed server platform comprising hundreds of
+servers located in 70+ cities in 40+ countries globally. M-Lab
+analysis in this report focuses on <a href=https://www.measurementlab.net/tests/ndt/>Network Diagnostic Test (NDT)</a> speed test
+data. NDT is the most popular measurement service running on
+M-Lab, with ~3 million measurements each day globally. It
+tests a user’s network connectivity by downloading and
+uploading an object and measuring the time it takes. In
+technical terms, it uses a WebSocket over TLS to measure how
+fast a user’s device can send/receive data using a single TCP
+connection (bulk transport as defined in IETF’s <a href=https://www.rfc-editor.org/rfc/rfc3148.html>RFC 3148</a>).</li></ul></li><li><p><strong>Outages:</strong></p><ul><li><p><strong>IODA.</strong> <a href=http://ioda.live/>Internet Outage Detection and Analysis</a> (IODA) is an operational
+prototype system that monitors the connectivity of the
+Internet infrastructure, in near-real time, to identify
+Internet outages affecting networks, nations, and subnational
+regions. It is run out of the <a href=https://inetintel.notion.site/Internet-Intelligence-Research-Lab-d186184563d345bab51901129d812ed6>Internet Intelligence Lab</a>
+at Georgia Tech’s College of Computing, in the School of
+Computer Science.</p></li><li><p><strong>Cloudflare Radar.</strong> <a href=https://radar.cloudflare.com/>Cloudflare Radar</a> is a hub that showcases
+global Internet traffic, attacks, and technology trends and
+insights. Cloudflare Radar is powered by data from
+Cloudflare&rsquo;s global network, as well as aggregated and
+anonymized data from Cloudflare&rsquo;s 1.1.1.1 public DNS resolver.</p></li><li><p><strong>Kentik.</strong> <a href=https://www.kentik.com/>Kentik</a> is a network
+monitoring vendor that offers a Software-as-a-Service (SaaS)
+platform to help companies and organizations analyze the
+traffic data captured by their network routers. The graphs in
+this report are based on aggregated NetFlow data from
+customers.</p></li></ul></li></ul><p>Each of the above datasets has its strengths and limitations, and they
+are designed to address different questions. They thus offer
+complementary insights when attempting to examine and corroborate
+Internet shutdown events.</p><p>In addition to network measurement data,
+<a href=https://www.internetsociety.org/>ISOC</a> also analyzed a variety of
+proxies for economic impact, as described below.</p><h2 id=technical-details-of-blocking-analyses>Technical Details of Blocking Analyses</h2><p>To examine the blocking of apps and services, we refer to
+<a href=https://ooni.org/data/>OONI</a> and <a href=https://censoredplanet.org/data/raw>Censored Planet</a> data. While both OONI and
+Censored Planet measure the blocking of websites, the measurement
+techniques and collection methods vary. OONI relies on volunteers in
+Iran and elsewhere to run <a href=https://ooni.org/install/>OONI Probe</a> to
+contribute <a href=https://explorer.ooni.org/country/IR>measurements</a> from
+local vantage points, while Censored Planet performs <a href=https://censoredplanet.org/projects>testing remotely</a> from a centralized
+location.</p><h3 id=ooni>OONI</h3><p>OONI measures website blocking through its <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity experiment</a>, which is
+designed to measure the accessibility of URLs by performing the
+following steps:</p><ul><li><p>Resolver identification</p></li><li><p>DNS lookup</p></li><li><p>TCP connect to the resolved IP addresses</p></li><li><p>TLS handshake to the resolved IP addresses</p></li><li><p>HTTP(s) GET request following redirects</p></li></ul><p>The above steps are automatically performed from both the local network
+of the user, and from a control vantage point. If the results from both
+networks are the same, the tested URL is annotated as accessible. If the
+results differ, the tested URL is annotated as <em>anomalous</em>, and the type
+of anomaly is further characterized depending on the reason that caused
+the failure (for example, if the TCP connection fails, the measurement
+is annotated as a TCP/IP anomaly).</p><p>Each Web Connectivity measurement provides further network information
+(such as information pertaining to TLS handshakes) that helps with
+evaluating whether an anomalous measurement presents signs of blocking.
+Based on its heuristics, OONI is often able to automatically confirm the
+blocking of websites. In recent years, Iranian ISPs have blocked
+websites by serving block pages and by returning IPs associated with
+censorship (which may have previously hosted block pages). By adding
+such fingerprints to their database, OONI has been able to
+<a href="https://explorer.ooni.org/search?since=2022-09-18&until=2022-10-19&failure=false&probe_cc=IR&only=confirmed">automatically confirm the blocking of numerous websites in Iran</a>.
+Moreover, the overall <a href=https://explorer.ooni.org/country/IR>OONI measurement coverage in Iran is relatively high</a> (in
+<a href=https://explorer.ooni.org/countries>comparison</a> to many other
+countries), increasing confidence in OONI findings.</p><p>Beyond website testing, the <a href=https://ooni.org/install>OONI Probe app</a>
+also includes experiments for measuring the blocking of the
+<a href=https://ooni.org/nettest/whatsapp/>WhatsApp</a>, <a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger</a>,
+<a href=https://ooni.org/nettest/telegram/>Telegram</a>, and
+<a href=https://ooni.org/nettest/signal/>Signal</a> apps. OONI Probe also
+includes experiments for measuring the reachability of
+<a href=https://ooni.org/nettest/psiphon/>Psiphon</a>,
+<a href=https://ooni.org/nettest/tor/>Tor</a>, and <a href=https://ooni.org/nettest/tor-snowflake/>Tor Snowflake</a>, which are
+censorship circumvention tools. The <a href=https://ooni.org/nettest>methodology of each of these tests</a> varies, as they measure different
+properties depending on the tool. Unlike Web Connectivity measurements,
+the measurements from all these other tests cannot be annotated as
+“confirmed blocked”, as OONI does not have heuristics for
+<em>automatically</em> detecting and confirming blocking. Instead, measurements
+pertaining to blocking are annotated as “anomalous”, and require data
+analysis to rule out false positives. This involves analyzing anomalous
+measurements in aggregate, comparing the overall volume of anomalies
+with the overall measurement count (on each network, for a specific date
+range), and evaluating whether the reasons that caused the anomalies are
+consistent. This analysis helps provide confidence levels regarding the
+likelihood of blocking.</p><h3 id=censored-planet>Censored Planet</h3><p><a href=https://censoredplanet.org/>Censored Planet</a> detects interference on
+HTTP(S) traffic by making use of publicly accessible web servers with
+consistent behavior as vantage points. Censored Planet first builds a
+template of a public web server’s typical response by requesting bogus
+domains that are not hosted on the server. After that requests are sent
+out with the HTTP &ldquo;Host&rdquo; header or TLS SNI extension set to a domain of
+interest. If there is a censor blocking the domain on the path between
+the measurement machine and the public web server, the measurement
+machine will receive a TCP RST, a blockpage, or experience a connection
+timeout that does not match the web server’s typical response.</p><h2 id=technical-details-of-outage-analyses>Technical Details of Outage Analyses</h2><p>To examine Internet outages, we refer to IODA, Cloudflare Radar, and
+Kentik data.</p><h3 id=ioda>IODA</h3><p><a href=https://ioda.inetintel.cc.gatech.edu/>IODA</a> measures connectivity of
+Internet infrastructure through three measurements: BGP, Active Probing,
+and Internet Pollution.</p><ul><li><p>Every 5 minutes, IODA fetches updated Internet routing data from
+public data collection projects such as RouteViews and RIPE RIS.
+From this data, IODA calculates the percentage of BGP routers that
+observe each network prefix. It then aggregates the prefix
+visibility statistics by country, region, and provider (ASN).</p></li><li><p>To create the Active Probing signal, IODA continuously pings
+networks using the Trinocular technique from ISI/USC. It probes a
+few million /24 blocks at least once every 10 minutes from 20
+probers currently located at Georgia Tech. Most networks are
+designed to automatically respond to these pings by echoing them
+back to the sender. IODA collects these responses and calculates
+the number of responses for each /24 block. These are then used to
+generate aggregated statistics for each country, region and
+provider (ASN).</p></li><li><p>Internet Pollution or Internet Background Radiation (IBR) is
+background noise traffic generated by hundreds of thousands of
+Internet hosts worldwide. IODA is the only outage detection system
+using IBR, thanks to a methodology published by CAIDA in
+collaboration with RIPE NCC. IODA processes IBR traffic collected
+by the Merit Network Telescope applying anti-spoofing heuristics
+and noise reduction filters. For each packet that passes the
+filters, it performs geolocation and ASN lookups on the source IP
+address, and then computes the number of unique source IPs per
+minute, aggregated by country, region, and provider (ASN).</p></li></ul><p>IODA has also integrated Google usage data, which is only available at
+the country level. These measurements are described further in the
+<a href=https://transparencyreport.google.com/>Google Transparency Report</a>.</p><h3 id=cloudflare-radar>Cloudflare Radar</h3><p>Based on its global network and the Internet traffic handled for
+millions of customers, <a href=https://radar.cloudflare.com/>Cloudflare</a>
+aggregates this traffic data at both geographical (country/region/city)
+and network (ASN) levels. Internet outages are measured/inferred based
+on observed and sustained drops in traffic volume for a given geography
+or network, and we generally work to correlate these traffic changes
+with real-world events.</p><h3 id=kentik>Kentik</h3><p><a href=https://www.kentik.com/>Kentik</a> is a popular cloud-based NetFlow
+analytics platform. Outage conclusions in this report are based on
+NetFlow from customers who have agreed to allow the use of their data in
+aggregate form. These customers include network service providers,
+content providers, and other types of major digital businesses whose use
+of the Internet is central to their business. Because this NetFlow data
+is from numerous sources, it represents a composite view of the Internet
+from multiple perspectives. NetFlow-based analysis is weakest when there
+is little or no traffic exchanged with a particular network or
+geography.</p><h2 id=technical-details-of-the-economic-impact-analysis>Technical Details of the Economic Impact Analysis</h2><p>The economic information available about any country comes on many
+different time scales. For example, a common way to measure a country’s
+economic output is Gross Domestic Product (GDP). However, GDP is
+calculated on an annual basis, and a month-long period of shutdowns
+would likely not affect Iran’s total GDP in the short term. In addition,
+as GDP is designed to calculate macroeconomic changes, the effects of a
+shutdown could be too subtle to show up in a country-level measure. For
+example, the blocking of specific apps like WhatsApp would affect the ability of many Iranians to make transactions and/or
+interact with businesses, but it is unlikely that the effect of any of
+these could be identified easily in a GDP measure in the short term.</p><p>Instead, our goal is to collect as many economic indicators as possible
+that vary on the timeframe of days to weeks and that could show the
+effects of the shutdowns. None of these data points are causal, and any
+could be caused by myriad factors other than the shutdown (political
+instability, global markets in turmoil, low oil prices, etc.). We do,
+however, see some data points that suggest the shutdown has had an
+effect on economic activity in Iran, even as measuring the magnitude of
+that impact remains difficult.</p><p>As noted above, <a href=https://www.internetsociety.org/>ISOC</a>’s approach to
+measuring the impact of the shutdown in Iran relies on gathering many
+data points, none of which are causal, but paint a broad picture of how
+the shutdown may have affected the population of Iran’s economic
+activity. There are certainly many other ways to measure impact, but
+given how rapidly this shutdown evolved it would take further analysis
+to obtain useful data. Below are the sources of all of the data cited
+above.</p><p><strong>Night-time lights data:</strong></p><p>Suomi NPP / VIIRS Imagery from the NASA Worldview application
+(<a href=https://worldview.earthdata.nasa.gov/>https://worldview.earthdata.nasa.gov</a>),
+part of the NASA Earth Observing System Data and Information System
+(EOSDIS).</p><p><strong>Financial markets data:</strong></p><p><a href=https://mondovisione.com/>Mondo Visione Weekly Market Reviews</a> for
+Tehran Stock Exchange (10 September to 12 October)</p><ul><li><p>TSE Weekly Market Review (10.09.2022 - 14.09.2022):
+<a href=https://mondovisione.com/_assets/files/TSE_Weekly-Market-Review-Ended-on-14-September-2022.pdf>Link</a></p></li><li><p>TSE Weekly Market Review (01.10.2022 - 04.10.2022):
+<a href=https://mondovisione.com/_assets/files/TSE_Weekly-Market-Review-Ended-on-4-October-2022.pdf>Link</a></p></li><li><p>TSE Weekly Market Review (08.10.2022 - 12.10.2022):
+<a href=https://mondovisione.com/_assets/files/TSE_Weekly-Market-Review-Ended-on-12-October-2022.pdf>Link</a></p></li></ul><p><strong>Trade data:</strong></p><p>Imports and Exports data from UN COMTRADE Monitor:
+<a href=https://comtrade.un.org/data/monitor>Link</a>.</p><p><a href=https://www.imf.org/en/Publications/WP/Issues/2020/05/14/World-Seaborne-Trade-in-Real-Time-A-Proof-of-Concept-for-Building-AIS-based-Nowcasts-from-49393>Cerdeiro, Komaromi, Liu and Saeed (2020)</a>;
+AIS data collected by MarineTraffic; available at <a href=https://comtrade.un.org/data/monitor>UN COMTRADE Monitor</a>.</p><p>Cerdeiro, D., Komáromi, A., Liu, Y., & Saeed, M. (2020). <em>World Seaborne
+Trade in Real Time: A Proof of Concept for Building AIS-based Nowcasts
+from Scratch</em> (No. 2020/057). International Monetary Fund.</p><h2 id=acknowledgement-of-limitations>Acknowledgement of limitations</h2><p>This study includes several limitations. First, the date range of the
+analysis period is limited to 16th September 2022 to 16th October 2022.
+As a result, any Internet censorship and shutdown events that occurred
+before or after this date range are excluded from the findings of this
+study. Second, this study focuses on <em>new</em> Internet censorship events
+that emerged after 16th September 2022, and does not report on the
+<a href="https://explorer.ooni.org/search?since=2022-09-18&until=2022-10-19&failure=false&probe_cc=IR&only=confirmed">many other ongoing blocks</a>
+that have been in place in Iran for years.</p><p>Moreover, each dataset used as part of this study has its own
+limitations. For example, <a href=https://ooni.org/data/>OONI data</a> depends
+on when, where, and how often people in Iran choose to run <a href=https://ooni.org/install>OONI Probe</a>. As a result, OONI measurement
+coverage in Iran varies from network to network and over time, and it
+also varies in terms of testing targets. This means that the findings
+may exclude censorship events that occurred on networks that were not
+tested, or if blocked services were not tested within the analysis
+period. Additionally, <a href=https://ioda.inetintel.cc.gatech.edu/>IODA</a>
+limitations currently include limited visibility into cellular networks,
+inability to measure throttling, and challenges in the accurate
+geolocation of providers (ASes) that operate in multiple
+countries/sub-national regions. These limitations are part of ongoing
+research for improvement. <a href=https://censoredplanet.org/>Censored Planet</a>’s vantage points are not
+fine-grained enough to measure every local instance of censorship,
+especially those applied very close to end-users, such as in schools or
+workplaces. Additionally, Censored Planet uses off-the-shelf geolocation
+databases that are known to sometimes be inaccurate.</p><p>Regarding the economic analysis, a general caveat on using nighttime
+lighting data to infer economic activity is that the data may be
+confounded by light-emitting phenomena (e.g., fires) that do not
+correlate with economic activity. Additionally, as noted above,
+causation is difficult to establish.</p><p>In general, the Internet is now a technically very complex network of
+networks which is key to organizing socio-economic and cultural
+activities of many different societies. Accordingly, the process of
+shutting down the communication processes of the Internet is equally
+complex, and the impacts pervasive. The participants of this report will
+continue working to improve the process of bringing transparency to
+Internet shutdowns and their impacts as rapidly and comprehensively as
+possible.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>
