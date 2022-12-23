@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2022 on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/2022/</link><description>Recent content in 2022 on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/2022/index.xml" rel="self" type="application/rss+xml"/><item><title>Year in Review: OONI in 2022</title><link>https://ooni.github.io/post/ooni-in-2022/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2022/</guid><description>As the end of 2022 approaches, we publish this post to share some OONI highlights from the last year. We also share some of the things we’ll be working on in 2023!
+OONI Team
+OONI Probe
+New OONI Probe experiments
+New Test Lists Editor
+OONI Run improvements
+OONI Probe Web prototype
+OONI data
+1 billion measurements</description></item></channel></rss>
