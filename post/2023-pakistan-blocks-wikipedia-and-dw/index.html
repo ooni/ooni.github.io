@@ -1,0 +1,144 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Pakistan: Blocking of Wikipedia and Deutsche Welle (DW) | OONI</title><link rel=canonical href=https://ooni.org/post/2023-pakistan-blocks-wikipedia-and-dw/><meta name=description content="This report shares OONI data on the blocking of Wikipedia and DW in Pakistan."><meta property="og:title" content="Pakistan: Blocking of Wikipedia and Deutsche Welle (DW)"><meta property="og:description" content="This report shares OONI data on the blocking of Wikipedia and DW in Pakistan."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/2023-pakistan-blocks-wikipedia-and-dw/"><meta property="og:image" content="https://ooni.github.io/post/2023-pakistan-blocks-wikipedia-and-dw/images/01.png"><meta property="article:published_time" content="2023-02-15T00:00:00+00:00"><meta property="article:modified_time" content="2023-02-15T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.github.io/post/2023-pakistan-blocks-wikipedia-and-dw/images/01.png"><meta name=twitter:title content="Pakistan: Blocking of Wikipedia and Deutsche Welle (DW)"><meta name=twitter:description content="This report shares OONI data on the blocking of Wikipedia and DW in Pakistan."><link rel=stylesheet type=text/css href=https://ooni.github.io/css/bootstrap.min.81b4d12aba2a7e6a5f8e3e496074a5578a97d68594de67c864b99e97b582ac12.css><link rel=stylesheet type=text/css href=https://ooni.github.io/css/index.min.6826b3059897f8fc73022e760c178eaa1e712bc01c3173b8fdfff7672272936a.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(['disableCookies']);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//matomo.ooni.org/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar");var menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener('click',function handleClick(event){navbar.classList.toggle('navbar_opened');});</script><div class=container><main class="blog-post col"><h1 class=article-title>Pakistan: Blocking of Wikipedia and Deutsche Welle (DW)</h1><div class=byline><span class=author>Maria Xynou, Arturo Filastò</span>
+<span class=date>2023-02-15</span></div><p>Over the past weeks, access to Wikipedia and Deutsche Welle’s (DW)
+website was <a href=https://time.com/6253154/wikipedia-blocked-pakistan-blasphemy/>reportedly</a>
+blocked in Pakistan.</p><p>As part of this report, we share OONI data from Pakistan that provides
+signals of these blocks. Specifically, OONI data shows that access to
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day">Wikipedia was temporarily restricted</a>
+between 1st to 6th February 2023, while access to <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.dw.com&since=2023-01-01&until=2023-02-15&axis_x=measurement_start_day">Deutsche Welle (DW) remains blocked</a>
+since (at least) 16th January 2023.</p><ul><li><p><a href=#blocking-of-deutsche-welle>Blocking of Deutsche Welle</a></p></li><li><p><a href=#blocking-of-wikipedia>Blocking of Wikipedia</a></p></li><li><p><a href=#conclusion>Conclusion</a></p></li></ul><h1 id=blocking-of-deutsche-welle>Blocking of Deutsche Welle</h1><p>As of 16th January 2023, OONI data suggests that access to Deutsche
+Welle’s (DW) website (which provides an <a href=https://www.dw.com/ur/>Urdu language service</a> for Pakistan) has been
+<a href="https://explorer.ooni.org/search?since=2023-01-01&until=2023-02-14&failure=false&domain=www.dw.com&probe_cc=PK">blocked</a>
+on multiple networks in Pakistan – <em>and that the block remains ongoing</em>.
+This was brought to our attention by Oliver Linow, an Internet Freedom
+Specialist working with DW, who
+<a href=https://twitter.com/OliverLinow/status/1619282417629675522>tweeted</a>
+about it sharing OONI data.</p><p>The following
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.dw.com&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day">chart</a>
+aggregates OONI measurement coverage from the <a href=https://ooni.org/install>OONI Probe</a> testing of DW’s website
+(<code>www.dw.com</code>) on all tested networks (10 ASNs) in Pakistan. As is
+evident, almost all measurements collected between 16th January 2023 to
+13th February 2023 (excluding a few failed measurements on 7th and 8th
+February 2023) presented anomalies, providing signs of blocking.</p><div><a href=/post/2023-pakistan-blocks-wikipedia-and-dw/images/01.png><img src=/post/2023-pakistan-blocks-wikipedia-and-dw/images/01_hu1bbd09acf014e78cf620483231fc4fad_49745_1000x800_fit_box_2.png srcset="/post/2023-pakistan-blocks-wikipedia-and-dw/images/01_hu1bbd09acf014e78cf620483231fc4fad_49745_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Chart:</strong> OONI Probe testing of Deutsche Welle’s website
+(<code>www.dw.com</code>) on multiple networks in Pakistan between 1st January
+2023 to 13th February 2023 (source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.dw.com&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day">OONI MAT</a>).</p><p>The fact that <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.dw.com&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day">most measurements from 16th January 2023 onwards presented anomalies</a>
+(along with the fact that previous measurements in early January 2023
+were successful) provides an indication of blocking. Moreover, we
+observe that these anomalies occurred during the same period (between
+16th January 2023 to 13th February 2023) on <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.dw.com&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day&axis_y=probe_asn">most tested networks</a>
+in Pakistan. Out of the 10 tested ASNs, we observe anomalies on 8
+networks. On the other 2 ASNs (AS138910 and AS9260), there is no data
+available from 16th January onwards to draw any conclusions (on AS138910
+<code>www.dw.com</code> was <a href="https://explorer.ooni.org/search?since=2023-01-01&until=2023-01-02&probe_cc=PK&test_name=web_connectivity&probe_asn=138910&domain=www.dw.com&failure=true">not tested after 1st January 2023</a>,
+while on AS9260 the site was only tested once on 7th February 2023, and
+that experiment
+<a href="https://explorer.ooni.org/search?since=2023-02-07&until=2023-02-08&probe_cc=PK&test_name=web_connectivity&probe_asn=9260&domain=www.dw.com&failure=true">failed</a>).</p><p>The following
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.dw.com&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day&axis_y=probe_asn">chart</a>
+provides a per-ASN breakdown of the OONI Probe measurement coverage of
+<code>www.dw.com</code> within this period, limited to the 8 ASNs where we
+observe anomalies.</p><div><a href=/post/2023-pakistan-blocks-wikipedia-and-dw/images/02.png><img src=/post/2023-pakistan-blocks-wikipedia-and-dw/images/02_hube24291db2d6e85e351c1a8a033a5afb_123557_1000x800_fit_box_2.png srcset="/post/2023-pakistan-blocks-wikipedia-and-dw/images/02_hube24291db2d6e85e351c1a8a033a5afb_123557_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Chart:</strong> ASNs in Pakistan where the OONI Probe testing of
+<code>www.dw.com</code> presented anomalies between 1st January 2023 to 13th
+February 2023 (source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.dw.com&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day&axis_y=probe_asn">OONI MAT</a>).</p><p>We can see that the testing of <code>www.dw.com</code> started to present
+anomalies on 16th January 2023 on Pakistan Telecommunication Company
+(AS17557) – which is the <a href=https://en.wikipedia.org/wiki/PTCL>largest</a>
+ISP in Pakistan. This is also the network which received the largest
+testing coverage in the following weeks. We observe <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.dw.com&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day&axis_y=probe_asn">most anomalies on all tested networks</a>
+from 2nd February 2023 onwards, which is also when <code>www.dw.com</code> was
+tested on more networks. However, it remains unclear if the potential
+block started before 16th January 2023, as <code>www.dw.com</code> was not tested
+by <a href=https://ooni.org/install>OONI Probe</a> users in Pakistan between
+7th to 15th January 2023.</p><p>By looking at the <a href="https://explorer.ooni.org/search?since=2023-01-01&until=2023-02-14&failure=false&domain=www.dw.com&probe_cc=PK">anomalous measurements</a>,
+we can see that almost the totality of failing measurements result in
+<a href="https://explorer.ooni.org/measurement/20230213T103324Z_webconnectivity_PK_17557_n1_EPJNY37yvMFY5dMT?input=https%3A%2F%2Fwww.dw.com%2F">connection reset</a>
+errors.</p><div><a href=/post/2023-pakistan-blocks-wikipedia-and-dw/images/03.png><img src=/post/2023-pakistan-blocks-wikipedia-and-dw/images/03_hu9ccc5cca4eb09d8f71d9a2f82e4bfde1_29037_1000x800_fit_box_2.png srcset="/post/2023-pakistan-blocks-wikipedia-and-dw/images/03_hu9ccc5cca4eb09d8f71d9a2f82e4bfde1_29037_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Chart:</strong> Measurement failures that occurred when <code>www.dw.com</code> was
+tested in Pakistan between 16th January 2023 to 14th February 2023
+(source: <a href="https://explorer.ooni.org/search?since=2023-01-01&until=2023-02-14&failure=false&domain=www.dw.com&probe_cc=PK">OONI data</a>).</p><p>When we do observe a connection reset, this always occurs right after
+the ClientHello message during the TLS handshake.</p><p>Overall, the blocking of DW’s website in Pakistan is suggested by OONI
+data because:</p><ul><li><p>Almost all measurements collected from most tested networks in
+Pakistan presented anomalies between 16th January 2023 to 13th
+February 2023;</p></li><li><p>Most anomalies measurements (across networks) present connection
+reset errors;</p></li><li><p>Consistent anomaly patterns usually indicate blocking.</p></li></ul><h1 id=blocking-of-wikipedia>Blocking of Wikipedia</h1><p>On 1st February 2023, Pakistan’s Telecommunication Authority (PTA)
+<a href=https://twitter.com/PTAofficialpk/status/1620748000246251521>announced</a>
+that they had degraded Wikipedia services in the country as a result of
+non-compliance by Wikipedia with their request to block or remove
+sacrilegious content. PTA
+<a href=https://twitter.com/PTAofficialpk/status/1620748003954028545>specified</a>
+that they would degrade Wikipedia services for 48 hours, noting that a
+block could follow if Wikimedia Foundation did not comply with the
+takedown requests.</p><p>On 3rd February 2023, Wikimedia Foundation published a
+<a href=https://wikimediafoundation.org/news/2023/02/03/wikimedia-foundation-urges-pakistan-telecommunications-authority-to-restore-access-to-wikipedia-in-pakistan/>statement</a>
+notifying the public of PTA’s decision, stating that (as of that day)
+their internal traffic reports indicated that Wikipedia and Wikimedia
+projects were no longer available to users in Pakistan, and urging PTA
+to restore access to their services. This statement was updated on 6th
+February 2023 with a notification that PTA had been directed to restore
+access to Wikipedia in Pakistan, and that this was confirmed by their
+internal traffic team.</p><p>Interestingly, both the timing and nature of this reported block appears
+to be corroborated by OONI data collected from Pakistan.</p><p>The following
+<a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day">chart</a>
+aggregates OONI measurement coverage from the testing of Wikipedia
+(<code>www.wikipedia.org</code>) on multiple networks in Pakistan between 1st
+January 2023 to 13th February 2023. As is evident, we only observe
+anomalies between 1st to 6th February 2023, which coincides with the
+aforementioned period when access to Wikipedia was interfered with.</p><div><a href=/post/2023-pakistan-blocks-wikipedia-and-dw/images/04.png><img src=/post/2023-pakistan-blocks-wikipedia-and-dw/images/04_hudd791ddfc8874a156e7a0947fbb55e28_47107_1000x800_fit_box_2.png srcset="/post/2023-pakistan-blocks-wikipedia-and-dw/images/04_hudd791ddfc8874a156e7a0947fbb55e28_47107_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Chart:</strong> OONI Probe testing of Wikipedia (<code>www.wikipedia.org</code>) on
+multiple networks in Pakistan between 1st January 2023 to 13th February
+2023 (source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day">OONI MAT</a>).</p><p>Between 1st to 6th February 2023, <code>www.wikipedia.org</code> was <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day&axis_y=probe_asn">tested on 5 ASNs</a>
+in Pakistan, and presented anomalies on all networks, as illustrated
+below.</p><div><a href=/post/2023-pakistan-blocks-wikipedia-and-dw/images/05.png><img src=/post/2023-pakistan-blocks-wikipedia-and-dw/images/05_hu3a5e93b03c7ef43fc224e03e80440f56_98536_1000x800_fit_box_2.png srcset="/post/2023-pakistan-blocks-wikipedia-and-dw/images/05_hu3a5e93b03c7ef43fc224e03e80440f56_98536_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Chart:</strong> ASNs in Pakistan which received OONI Probe testing of
+<code>www.wikipedia.org</code> between 1st January 2023 to 13th February 2023
+(source: <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day&axis_y=probe_asn">OONI MAT</a>).</p><p>Similarly to the testing of <code>www.dw.com</code> (discussed previously), we
+observe that most <code>www.wikipedia.org</code> testing was carried out on
+Pakistan Telecommunication Company (AS17557) – which is also the
+country’s largest ISP. Most measurements from that network presented
+anomalies between 1st to 6th February 2023, and we also observed
+anomalies when <code>www.wikipedia.org</code> was tested on 4 other ASNs during
+this period.</p><p>Wikipedia blocking is indicated by the fact that we observe <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&since=2023-01-01&until=2023-02-14&axis_x=measurement_start_day&axis_y=probe_asn">anomalies on multiple networks</a>
+during the same period, while all measurements (excluded measurements
+from failed experiments) from 7th February 2023 onwards were successful.
+The latter also suggests that access to Wikipedia was <a href="https://explorer.ooni.org/search?since=2023-02-06&until=2023-02-07&probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&failure=false">unblocked on 6th February 2023</a>,
+particularly since we start to observe many successful measurements that
+day.</p><p>By looking at the <a href="https://explorer.ooni.org/search?since=2023-02-01&until=2023-02-06&probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&failure=false">anomalous measurements</a>,
+we observe that most measurements collected on 1st and 2nd February
+resulted in <a href="https://explorer.ooni.org/measurement/20230202T045219Z_webconnectivity_PK_23674_n1_I8KQnsRiR1H58RFF?input=https%3A%2F%2Fwww.wikipedia.org%2F">timeout errors</a>,
+which is consistent with PTA’s
+<a href=https://twitter.com/PTAofficialpk/status/1620748003954028545>announced</a>
+48-hour degradation of Wikipedia services. Between 3rd to 6th February
+2023, we observe that most measurements resulted in <a href="https://explorer.ooni.org/measurement/20230205T200537Z_webconnectivity_PK_17557_n1_QIGM5lFlD4abHEzm?input=https%3A%2F%2Fwww.wikipedia.org%2F">connection reset errors</a>
+(which is consistent with what we observed in the
+<a href="https://explorer.ooni.org/measurement/20230213T103324Z_webconnectivity_PK_17557_n1_EPJNY37yvMFY5dMT?input=https%3A%2F%2Fwww.dw.com%2F">blocking</a>
+of <code>www.dw.com</code>), suggesting that ISPs switched to blocking access to
+Wikipedia on 3rd February 2023 (which is what both PTA and <a href=https://wikimediafoundation.org/news/2023/02/03/wikimedia-foundation-urges-pakistan-telecommunications-authority-to-restore-access-to-wikipedia-in-pakistan/>Wikimedia Foundation</a>
+announced). This was also
+<a href=https://twitter.com/vinifortuna/status/1621648126372085760>reported</a>
+by Vinicius Fortuna (Lead of Google’s
+<a href=https://jigsaw.google.com/>Jigsaw</a> team), who analyzed OONI data and
+shared these findings on social media.</p><div><a href=/post/2023-pakistan-blocks-wikipedia-and-dw/images/06.png><img src=/post/2023-pakistan-blocks-wikipedia-and-dw/images/06_hu54ea7918e94d1567ad2e28918a492b0f_39388_1000x800_fit_box_2.png srcset="/post/2023-pakistan-blocks-wikipedia-and-dw/images/06_hu54ea7918e94d1567ad2e28918a492b0f_39388_2000x1600_fit_box_2.png 2x"></a></div><p><strong>Chart:</strong> Measurement failures that occurred when <code>www.wikipedia.org</code>
+and <code>en.wikipedia.org</code> were tested in Pakistan between 1st January
+2023 to 14th February 2023 (source: <a href="https://explorer.ooni.org/search?since=2023-02-01&until=2023-02-06&probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&failure=false">OONI data</a>).</p><p>From the above chart, we can also see that the testing of
+<code>en.wikipedia.org</code> presents similar results to the testing of
+<code>www.wikipedia.org</code>. Moreover, we observe that both
+<code>en.wikipedia.org</code> and <code>www.wikipedia.org</code> presented the same
+failures between 1st to 6th February 2023, with both domains presenting
+connection timeouts during the TLS handshake on 1st and 2nd February
+2023, and connection resets between 3rd to 6th February 2023. The
+consistent pattern observed for both domains provides a stronger signal
+of blocking.</p><p>Similarly to what was
+<a href=https://wikimediafoundation.org/news/2023/02/03/wikimedia-foundation-urges-pakistan-telecommunications-authority-to-restore-access-to-wikipedia-in-pakistan/>reported</a>
+by Wikimedia Foundation, OONI data shows that access to Wikipedia was
+<a href="https://explorer.ooni.org/search?since=2023-02-06&until=2023-02-07&probe_cc=PK&test_name=web_connectivity&domain=www.wikipedia.org&failure=false">restored</a>
+on 6th February 2023.</p><h1 id=conclusion>Conclusion</h1><p>Over the years, Wikipedia has been blocked in several other countries as
+well, including
+<a href=https://ooni.org/post/2019-china-wikipedia-blocking/>China</a>,
+<a href=https://ooni.org/post/venezuela-blocking-wikipedia-and-social-media-2019/>Venezuela</a>,
+and <a href=https://ooni.org/post/2020-iran-blocks-farsi-wikipedia/>Iran</a>.</p><p>Past <a href=https://ooni.org/post/pakistan-internet-censorship/#religious-criticism>OONI research</a>
+(involving the analysis of OONI data collected between 2014 to 2017) has
+shown that ISPs in Pakistan censored content that was viewed as
+blasphemous, serving as a precedent for the recent blocking of
+Wikipedia. While OONI data has previously shown the <a href=https://ooni.org/post/how-pakistan-blocked-social-media/#blocking-of-news-websites>blocking of news media websites in Pakistan</a>
+during Islamist protests in November 2017, this is likely the first time
+that we are noticing the blocking of an international media website
+(Deutsche Welle) in Pakistan.</p><p>We thank <a href=https://ooni.org/install>OONI Probe</a> users in Pakistan who
+contributed measurements, supporting this study. You can continue to
+monitor the testing of services in Pakistan through the <a href="https://explorer.ooni.org/chart/mat?probe_cc=PK&test_name=web_connectivity&since=2023-01-16&until=2023-02-16&axis_x=measurement_start_day">OONI Measurement Aggregation Toolkit (MAT)</a>,
+which publishes OONI measurements as open data in real-time.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>
