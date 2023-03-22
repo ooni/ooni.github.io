@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/ru/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://ooni.github.io/ru/support/index.xml" rel="self" type="application/rss+xml"/><item><title>Инструкция по использованию приложения OONI Probe Desktop</title><link>https://ooni.github.io/ru/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/ooni-probe-desktop/</guid><description>Последнее обновление: 6 сентября 2022
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/ru/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://ooni.github.io/ru/support/index.xml" rel="self" type="application/rss+xml"/><item><title>«Часто задаваемые вопросы» (FAQ)</title><link>https://ooni.github.io/ru/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/faq/</guid><description>Этот раздел «Часто задаваемые вопросы» (FAQ) предназначен для ответа на вопросы, которые нам часто задают участники нашего сообщества.
+Оригинал:
+English, Frequently Asked Questions (FAQ) На русский язык документ переведен Татьяной Болдыревой.
+Если есть другие вопросы, на которые вы хотели бы получить ответ, то пожалуйста, свяжитесь с нами.
+Про OONI
+Что такое OONI?
+Почему OONI?
+Что делает OONI?
+Зачем нужно измерять интернет-цензуру?</description></item><item><title>Глоссарий OONI</title><link>https://ooni.github.io/ru/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/glossary/</guid><description>Этот глоссарий содержит краткие пояснения терминов, используемых в приложениях, методологии и исследовательских отчетах OONI.
+Если вы хотите, чтобы в глоссарий были включены дополнительные термины, пожалуйста, создайте запрос на добавление или отправьте нам письмо.
+API
+AS
+ASN
+BGP
+Блок-лист
+Страница блокировки
+Кэширование
+Инструменты обхода блокировок
+Клиент
+Конвейер обработки данных (Data processing pipeline)</description></item><item><title>Инструкция по использованию приложения OONI Probe Desktop</title><link>https://ooni.github.io/ru/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/ooni-probe-desktop/</guid><description>Последнее обновление: 6 сентября 2022
 Версия OONI Probe Desktop: 3.7.0
 OONI Probe – это бесплатное оупенсорсное приложение, с помощью которого вы можете отслеживать интернет-цензуру и другие формы вмешательства в ваше интернет-соединение. В этом документе содержится пошаговая инструкция по установке, запуску и настройкам OONI Probe desktop app.
 С помощью этой инструкции вы научитесь:
