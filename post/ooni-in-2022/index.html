@@ -21,7 +21,7 @@ while Mehul worked on <a href=https://summerofcode.withgoogle.com/programs/2022/
 Meeting</strong> (in Rome, Italy) since the start of the COVID-19 pandemic.
 During this 3-day meeting, we improved our roadmaps and discussed
 strategic priorities and implementation details for many new systems
-we’ll be building over the next few years.</p><h1 id=ooni-probe>OONI Probe</h1><h2 id=new-ooni-probe-experiments>New OONI Probe experiments</h2><div><a href=/post/ooni-in-2022/images/02.png><img src=/post/ooni-in-2022/images/02_huc80757d9b0752d457a42d6f432088b05_90471_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/02_huc80757d9b0752d457a42d6f432088b05_90471_2000x1600_fit_box_2.png 2x"></a></div><p>In 2022, we shipped the following new experiments:</p><ul><li><p><a href=https://ooni.org/nettest/tor-snowflake/>Tor Snowflake</a></p></li><li><p><a href=https://ooni.org/nettest/vanilla-tor/>Vanilla Tor</a></p></li><li><p><a href=https://github.com/ooni/spec/blob/master/nettests/ts-028-dnscheck.md>DNS Check</a></p></li></ul><p>You can run these experiments through the <a href=https://ooni.org/install>OONI Probe</a> apps. The <a href=https://ooni.org/nettest/tor-snowflake/>Tor Snowflake</a> experiment provides
+we’ll be building over the next few years.</p><h1 id=ooni-probe>OONI Probe</h1><h2 id=new-ooni-probe-experiments>New OONI Probe experiments</h2><div><a href=/post/ooni-in-2022/images/02.png><img src=/post/ooni-in-2022/images/02_huc80757d9b0752d457a42d6f432088b05_90471_1000x800_fit_box_2.png></a></div><p>In 2022, we shipped the following new experiments:</p><ul><li><p><a href=https://ooni.org/nettest/tor-snowflake/>Tor Snowflake</a></p></li><li><p><a href=https://ooni.org/nettest/vanilla-tor/>Vanilla Tor</a></p></li><li><p><a href=https://github.com/ooni/spec/blob/master/nettests/ts-028-dnscheck.md>DNS Check</a></p></li></ul><p>You can run these experiments through the <a href=https://ooni.org/install>OONI Probe</a> apps. The <a href=https://ooni.org/nettest/tor-snowflake/>Tor Snowflake</a> experiment provides
 an automated way of measuring whether the <a href=https://snowflake.torproject.org/>Tor Snowflake pluggable transport</a> works on a tested
 network, while the <a href=https://ooni.org/nettest/vanilla-tor/>Vanilla Tor</a> experiment measures the
 reachability of the <a href=https://www.torproject.org/>Tor network</a>. Our
@@ -37,7 +37,7 @@ improve how we measure website blocking. Our new methods enumerate all
 forms of website blocking, including support for HTTP/3, enabling the
 collection of richer data. We aim to incrementally ship these new
 methods as part of our <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a> experiment
-over the next year.</p><h2 id=new-test-lists-editor>New Test Lists Editor</h2><div><a href=/post/ooni-in-2022/images/03.png><img src=/post/ooni-in-2022/images/03_hu999ab452d884560e8cb1b290dc00f979_68740_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/03_hu999ab452d884560e8cb1b290dc00f979_68740_2000x1600_fit_box_2.png 2x"></a></div><p>In July 2022, we
+over the next year.</p><h2 id=new-test-lists-editor>New Test Lists Editor</h2><div><a href=/post/ooni-in-2022/images/03.png><img src=/post/ooni-in-2022/images/03_hu999ab452d884560e8cb1b290dc00f979_68740_1000x800_fit_box_2.png></a></div><p>In July 2022, we
 <a href=https://ooni.org/post/2022-test-lists-editor/>launched</a> a new <a href=https://test-lists.ooni.org/>Test Lists Editor</a>! This platform enables the
 public to <strong>review and contribute to the lists of websites</strong> (“<a href=https://ooni.org/get-involved/contribute-test-lists>test lists</a>”) that are
 tested for censorship by <a href=https://ooni.org/install/>OONI Probe</a> users
@@ -48,7 +48,7 @@ categorization or to update a URL), or propose the deletion of URLs. By
 enabling community members to dynamically contribute to and update the
 <a href=https://ooni.org/support/faq#what-are-test-lists>test lists</a>, we aim
 to improve the quality of website censorship testing, supporting rapid
-response efforts to emergent censorship events.</p><h2 id=ooni-run-improvements>OONI Run improvements</h2><div><a href=/post/ooni-in-2022/images/04.png><img src=/post/ooni-in-2022/images/04_hu906b0c1a4ba01ff66a89b8ac912ebaca_71088_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/04_hu906b0c1a4ba01ff66a89b8ac912ebaca_71088_2000x1600_fit_box_2.png 2x"></a></div><p>Based on <a href=https://ooni.org/post/2020-06-09-ooni-run-usability-study-findings/>community feedback</a>,
+response efforts to emergent censorship events.</p><h2 id=ooni-run-improvements>OONI Run improvements</h2><div><a href=/post/ooni-in-2022/images/04.png><img src=/post/ooni-in-2022/images/04_hu906b0c1a4ba01ff66a89b8ac912ebaca_71088_1000x800_fit_box_2.png></a></div><p>Based on <a href=https://ooni.org/post/2020-06-09-ooni-run-usability-study-findings/>community feedback</a>,
 we made a series of improvements to <a href=https://run.ooni.io/>OONI Run</a>:
 a platform that you can use to generate mobile deep links and widget
 code to coordinate <a href=https://ooni.org/install>OONI Probe</a> testing. We
@@ -64,17 +64,17 @@ users with the goal of enabling community members to start experimenting
 with this new OONI Run version and collect feedback that can support
 further development and design decisions. We also <a href=https://github.com/ooni/probe-cli/pull/819>introduced a command line flag</a> which enables
 users to repeat a measurement every given number of seconds.</p><p>We aim to continue to make improvements to OONI Run over the next year
-to further address <a href=https://ooni.org/post/2020-06-09-ooni-run-usability-study-findings/>community feedback</a>.</p><h2 id=ooni-probe-web-prototype>OONI Probe Web prototype</h2><div><a href=/post/ooni-in-2022/images/05.png><img src=/post/ooni-in-2022/images/05_hu4c62fa49ef2fe04d80ac4428579d9a70_110125_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/05_hu4c62fa49ef2fe04d80ac4428579d9a70_110125_2000x1600_fit_box_2.png 2x"></a></div><p>In response to community requests, we built a browser-based version of
+to further address <a href=https://ooni.org/post/2020-06-09-ooni-run-usability-study-findings/>community feedback</a>.</p><h2 id=ooni-probe-web-prototype>OONI Probe Web prototype</h2><div><a href=/post/ooni-in-2022/images/05.png><img src=/post/ooni-in-2022/images/05_hu4c62fa49ef2fe04d80ac4428579d9a70_110125_1000x800_fit_box_2.png></a></div><p>In response to community requests, we built a browser-based version of
 OONI Probe (“OONI Probe Web”). Given that OONI Probe Web does not
 require the installation of software and can be run from a web browser,
-we hope that it can help support rapid response efforts.</p><p>We plan to launch OONI Probe Web in 2023. Stay tuned!</p><h1 id=ooni-data>OONI data</h1><h2 id=1-billion-measurements>1 billion measurements</h2><div><a href=/post/ooni-in-2022/images/06.png><img src=/post/ooni-in-2022/images/06_hue0e43ef81f01115f8ac8489ec92858cf_530240_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/06_hue0e43ef81f01115f8ac8489ec92858cf_530240_2000x1600_fit_box_2.png 2x"></a></div><p>On 6th October 2022, OONI published the 1 billionth measurement!</p><p>Since 2012, the OONI community has contributed <a href=https://explorer.ooni.org/>more than 1 billion measurements</a> from 25 thousand networks in
+we hope that it can help support rapid response efforts.</p><p>We plan to launch OONI Probe Web in 2023. Stay tuned!</p><h1 id=ooni-data>OONI data</h1><h2 id=1-billion-measurements>1 billion measurements</h2><div><a href=/post/ooni-in-2022/images/06.png><img src=/post/ooni-in-2022/images/06_hue0e43ef81f01115f8ac8489ec92858cf_530240_1000x800_fit_box_2.png></a></div><p>On 6th October 2022, OONI published the 1 billionth measurement!</p><p>Since 2012, the OONI community has contributed <a href=https://explorer.ooni.org/>more than 1 billion measurements</a> from 25 thousand networks in
 241 countries and territories. All such measurements are published as
 <a href=https://ooni.org/data>open data</a> in real-time, shedding light on
 <a href=https://ooni.org/reports/>censorship events</a> worldwide.</p><p>In 2022, we completed the
 <a href="https://github.com/ooni/pipeline/pulls?q=is%3Apr+clickhouse+is%3Aclosed">migration</a>
 of our infrastructure to the <a href=https://clickhouse.com/>ClickHouse</a>
 database, which enables the real-time processing and publication of OONI
-Probe measurements collected from around the world.</p><h2 id=new-ooni-measurement-aggregation-toolkit-mat>New OONI Measurement Aggregation Toolkit (MAT)</h2><div><a href=/post/ooni-in-2022/images/07.png><img src=/post/ooni-in-2022/images/07_hu586277536a91e5ba8adee49454fcce86_123575_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/07_hu586277536a91e5ba8adee49454fcce86_123575_2000x1600_fit_box_2.png 2x"></a></div><p>In April 2022, we <a href=https://ooni.org/post/2022-ooni-mat/>launched</a> the
+Probe measurements collected from around the world.</p><h2 id=new-ooni-measurement-aggregation-toolkit-mat>New OONI Measurement Aggregation Toolkit (MAT)</h2><div><a href=/post/ooni-in-2022/images/07.png><img src=/post/ooni-in-2022/images/07_hu586277536a91e5ba8adee49454fcce86_123575_1000x800_fit_box_2.png></a></div><p>In April 2022, we <a href=https://ooni.org/post/2022-ooni-mat/>launched</a> the
 OONI <a href=https://explorer.ooni.org/chart/mat>Measurement Aggregation Toolkit (MAT)</a>! This tool enables you to
 <strong>track internet censorship worldwide in real-time and create charts</strong>
 based on aggregate views of OONI data.</p><p>Through the <a href=https://explorer.ooni.org/chart/mat>MAT</a>, you can plot
@@ -89,7 +89,7 @@ and apps globally or in specific countries, and you can check which
 each country.</p><p>Earlier this year, for example, the MAT
 <a href="https://explorer.ooni.org/chart/mat?probe_cc=IR&test_name=web_connectivity&domain=www.instagram.com&since=2022-08-25&until=2022-09-25&axis_x=measurement_start_day">showed</a>
 that Iran started blocking Instagram on 21st September 2022, during the
-ongoing protests.</p><div><a href=/post/ooni-in-2022/images/08.png><img src=/post/ooni-in-2022/images/08_hu29aa9a05830118d17bfd7b99167e6ca3_38655_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/08_hu29aa9a05830118d17bfd7b99167e6ca3_38655_2000x1600_fit_box_2.png 2x"></a></div><p>Over the past year, the MAT has enabled OONI and other internet freedom
+ongoing protests.</p><div><a href=/post/ooni-in-2022/images/08.png><img src=/post/ooni-in-2022/images/08_hu29aa9a05830118d17bfd7b99167e6ca3_38655_1000x800_fit_box_2.png></a></div><p>Over the past year, the MAT has enabled OONI and other internet freedom
 community members to monitor and rapidly respond to many other
 censorship events. Examples include the blocking of
 <a href="https://explorer.ooni.org/experimental/mat?probe_cc=LK&test_name=web_connectivity&domain=twitter.com&since=2022-03-06&until=2022-04-06&axis_x=measurement_start_day">Twitter</a>,
@@ -106,7 +106,7 @@ in Sri Lanka (April 2022), as well as the blocking of
 <a href="https://explorer.ooni.org/chart/mat?probe_cc=ID&test_name=web_connectivity&domain=epicgames.com&since=2022-04-02&until=2022-08-02&axis_x=measurement_start_day">Epic Games</a>,
 and
 <a href="https://explorer.ooni.org/chart/mat?probe_cc=ID&test_name=web_connectivity&domain=www.dota2.com&since=2022-04-02&until=2022-08-02&axis_x=measurement_start_day">Dota2</a>
-in Indonesia (July 2022).</p><h2 id=new-circumvention-tool-reachability-dashboard>New Circumvention Tool Reachability Dashboard</h2><div><a href=/post/ooni-in-2022/images/09.png><img src=/post/ooni-in-2022/images/09_hu9aba283bff680688a2cf74aab8346e23_159960_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/09_hu9aba283bff680688a2cf74aab8346e23_159960_2000x1600_fit_box_2.png 2x"></a></div><p>In 2022, we launched a new <a href=https://explorer.ooni.org/chart/circumvention>Circumvention Tool Reachability Dashboard</a>! This tool
+in Indonesia (July 2022).</p><h2 id=new-circumvention-tool-reachability-dashboard>New Circumvention Tool Reachability Dashboard</h2><div><a href=/post/ooni-in-2022/images/09.png><img src=/post/ooni-in-2022/images/09_hu9aba283bff680688a2cf74aab8346e23_159960_1000x800_fit_box_2.png></a></div><p>In 2022, we launched a new <a href=https://explorer.ooni.org/chart/circumvention>Circumvention Tool Reachability Dashboard</a>! This tool
 provides charts with aggregate views of real-time OONI data from the
 reachability testing of <a href=https://ooni.org/nettest/psiphon/>Psiphon</a>,
 <a href=https://ooni.org/nettest/tor/>Tor</a>, and <a href=https://ooni.org/nettest/tor-snowflake/>Tor Snowflake</a>. Through this
@@ -180,7 +180,7 @@ that emerged during sensitive political time periods in
 <a href=https://ooni.org/post/ethiopia-report/>Ethiopia</a>,
 <a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/>Myanmar</a>,
 and
-<a href=https://ooni.org/post/venezuela-blocking-wikipedia-and-social-media-2019/>Venezuela</a>.</p><h1 id=community>Community</h1><h2 id=new-online-ooni-training-course>New online OONI training course</h2><div><a href=/post/ooni-in-2022/images/10.png><img src=/post/ooni-in-2022/images/10_hu58be413dadddb22a37765b00665e90a7_75970_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/10_hu58be413dadddb22a37765b00665e90a7_75970_2000x1600_fit_box_2.png 2x"></a></div><p>To support OONI community engagement efforts worldwide, we created an
+<a href=https://ooni.org/post/venezuela-blocking-wikipedia-and-social-media-2019/>Venezuela</a>.</p><h1 id=community>Community</h1><h2 id=new-online-ooni-training-course>New online OONI training course</h2><div><a href=/post/ooni-in-2022/images/10.png><img src=/post/ooni-in-2022/images/10_hu58be413dadddb22a37765b00665e90a7_75970_1000x800_fit_box_2.png></a></div><p>To support OONI community engagement efforts worldwide, we created an
 online OONI training course which was <a href=https://ooni.org/post/2022-ooni-training-course-advocacy-assembly/>launched on Small Media’s Advocacy Assembly platform</a>.</p><p>This 90-minute free, <a href=https://advocacyassembly.org/en/courses/63/#/chapter/1/lesson/1>online training course</a>
 provides a deep-dive into measuring internet censorship with <a href=https://ooni.org/install>OONI Probe</a>, and using <a href=https://explorer.ooni.org/>OONI Explorer</a> to access and interpret real-time
 OONI data collected from around the world. Designed for human rights
@@ -202,7 +202,7 @@ community, we created a <a href=https://ooni.org/get-involved/code-of-conduct/#w
 with the goal of improving OONI’s Code of Conduct (CoC) and addressing
 any CoC violations when they occur. In collaboration with the Committee
 and based on community feedback collected from several meetings, we
-re-wrote and published a new version of <strong><a href=https://ooni.org/get-involved/code-of-conduct/>OONI’s Code of Conduct (CoC)</a></strong>.</p><h2 id=localization>Localization</h2><div><a href=/post/ooni-in-2022/images/11.png><img src=/post/ooni-in-2022/images/11_hu5ff396e2a360d519475a1c1c9538505d_62533_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/11_hu5ff396e2a360d519475a1c1c9538505d_62533_2000x1600_fit_box_2.png 2x"></a></div><p>Thanks to the <a href=https://www.localizationlab.org/>Localization Lab</a>
+re-wrote and published a new version of <strong><a href=https://ooni.org/get-involved/code-of-conduct/>OONI’s Code of Conduct (CoC)</a></strong>.</p><h2 id=localization>Localization</h2><div><a href=/post/ooni-in-2022/images/11.png><img src=/post/ooni-in-2022/images/11_hu5ff396e2a360d519475a1c1c9538505d_62533_1000x800_fit_box_2.png></a></div><p>Thanks to the <a href=https://www.localizationlab.org/>Localization Lab</a>
 community, <a href=https://ooni.org/install>OONI Probe</a> has been
 <a href=https://explore.transifex.com/otf/ooniprobe/>translated to numerous languages</a>, including
 Farsi, Arabic, Chinese, Russian, Hindi, Thai, Indonesian, Swahili,
@@ -220,7 +220,7 @@ and <a href=https://www.transifex.com/otf/ooni-probe-desktop-user-guide/>OONI Pr
 user guides to Transifex, both of which have already been fully
 translated to <a href=https://ooni.org/fa/support/ooni-probe-mobile>Farsi</a>
 and <a href=https://ooni.org/ru/support/ooni-probe-mobile>Russian</a>.</p><p>We thank the <a href=https://www.localizationlab.org/>Localization Lab</a> for
-bringing OONI censorship measurement to communities worldwide!</p><h2 id=oonis-10th-anniversary>OONI’s 10th Anniversary</h2><div><a href=/post/ooni-in-2022/images/12.png><img src=/post/ooni-in-2022/images/12_hu62f08b76aaeafb528184d747ab7e481a_497049_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/12_hu62f08b76aaeafb528184d747ab7e481a_497049_2000x1600_fit_box_2.png 2x"></a></div><p>On 5th December 2022, we celebrated OONI’s 10th Anniversary!</p><p>Ten years ago, on 5th December 2012, we published the first OONI
+bringing OONI censorship measurement to communities worldwide!</p><h2 id=oonis-10th-anniversary>OONI’s 10th Anniversary</h2><div><a href=/post/ooni-in-2022/images/12.png><img src=/post/ooni-in-2022/images/12_hu62f08b76aaeafb528184d747ab7e481a_497049_1000x800_fit_box_2.png></a></div><p>On 5th December 2022, we celebrated OONI’s 10th Anniversary!</p><p>Ten years ago, on 5th December 2012, we published the first OONI
 measurement. Thanks to our global community, we have now published
 <a href=https://explorer.ooni.org/>more than a billion measurements</a>
 collected from 25 thousand networks in 241 countries and territories,
@@ -457,7 +457,7 @@ the internet during protests in September 2017, and ordered the
 Respondent State of Togo to take measures to guarantee the
 “non-occurrence” of a future similar situation. The ECOWAS court
 ruling on the September 2017 internet shutdown in Togo won the
-Columbia University <a href=https://globalfreedomofexpression.columbia.edu/prizewinners2022/>Global Freedom of Expression 2022 Significant Legal Ruling Award</a>.</p></li></ul><p>We thank our community for their amazing efforts!</p><h1 id=2023>2023</h1><div><a href=/post/ooni-in-2022/images/13.png><img src=/post/ooni-in-2022/images/13_hu7ec13866ab53439c6352e05ad8e106d3_654467_1000x800_fit_box_2.png srcset="/post/ooni-in-2022/images/13_hu7ec13866ab53439c6352e05ad8e106d3_654467_2000x1600_fit_box_2.png 2x"></a></div><p>We have many exciting projects lined up for 2023!</p><p>Some highlights include:</p><ul><li><p><strong>Automating censorship detection and characterization based on OONI
+Columbia University <a href=https://globalfreedomofexpression.columbia.edu/prizewinners2022/>Global Freedom of Expression 2022 Significant Legal Ruling Award</a>.</p></li></ul><p>We thank our community for their amazing efforts!</p><h1 id=2023>2023</h1><div><a href=/post/ooni-in-2022/images/13.png><img src=/post/ooni-in-2022/images/13_hu7ec13866ab53439c6352e05ad8e106d3_654467_1000x800_fit_box_2.png></a></div><p>We have many exciting projects lined up for 2023!</p><p>Some highlights include:</p><ul><li><p><strong>Automating censorship detection and characterization based on OONI
 measurements.</strong> We will expand our ability to automatically
 confirm blocks based on fingerprints, and we will develop new
 metrics for the automatic characterization of more forms of

@@ -58,7 +58,7 @@ an additional header to the transmitted data (see figure below).</p><p>HTTP is a
 websites from the world wide web into web browsers. The main
 difference between traditional HTTPS (HTTP/1.1, HTTP/2) and HTTP/3
 is in their underlying protocol stacks. This means that HTTP/3 uses
-different network protocols than the prior versions of HTTP:</p><p><div><a href=/post/2022-quick-look-quic-censorship/1_protocol_stacks.png><img src=/post/2022-quick-look-quic-censorship/1_protocol_stacks_hu8b05436713ba7843db98b48e98b1374b_28003_1000x800_fit_box_2.png srcset="/post/2022-quick-look-quic-censorship/1_protocol_stacks_hu8b05436713ba7843db98b48e98b1374b_28003_2000x1600_fit_box_2.png 2x" title="Protocol stacks" alt="Protocol stacks"></a></div><em>Left: HTTP/2 protocol stack. Right: HTTP/3 protocol stack.</em></p><p>HTTP/3 data travels over the network in QUIC packets which are
+different network protocols than the prior versions of HTTP:</p><p><div><a href=/post/2022-quick-look-quic-censorship/1_protocol_stacks.png><img src=/post/2022-quick-look-quic-censorship/1_protocol_stacks_hu8b05436713ba7843db98b48e98b1374b_28003_1000x800_fit_box_2.png title="Protocol stacks" alt="Protocol stacks"></a></div><em>Left: HTTP/2 protocol stack. Right: HTTP/3 protocol stack.</em></p><p>HTTP/3 data travels over the network in QUIC packets which are
 encapsulated in UDP datagrams. Meanwhile, traditional HTTPS data
 is contained in TLS frames which are packed in TCP packets.</p><p>UDP provides unreliable transport between ports on source and
 destination host, so it only has a subset of the functionality of
@@ -141,7 +141,7 @@ of a given packet is on the blacklist, it cannot pass this filter.</p></li></ul>
 reports</a> from other
 networks in Russia: Users indicated that their ISPs use Deep Packet
 Inspection to parse the SNI from the initial packet and block certain
-domain names.</p><p><div><a href=/post/2022-quick-look-quic-censorship/2_russia_censorship.png><img src=/post/2022-quick-look-quic-censorship/2_russia_censorship_hu411efafaf2bab2edee8bd82d1c73a0b9_96790_1000x800_fit_box_2.png srcset="/post/2022-quick-look-quic-censorship/2_russia_censorship_hu411efafaf2bab2edee8bd82d1c73a0b9_96790_2000x1600_fit_box_2.png 2x" title="Russia's censorship" alt="Russia's censorship"></a></div><em>Depiction of a potential setup of HTTP/3 censorship in Russia. While the location
+domain names.</p><p><div><a href=/post/2022-quick-look-quic-censorship/2_russia_censorship.png><img src=/post/2022-quick-look-quic-censorship/2_russia_censorship_hu411efafaf2bab2edee8bd82d1c73a0b9_96790_1000x800_fit_box_2.png title="Russia's censorship" alt="Russia's censorship"></a></div><em>Depiction of a potential setup of HTTP/3 censorship in Russia. While the location
 and order of filters is unknown, this structure is in line with the observed measurements
 in AS31213 and user reports from other networks.</em></p><p><a href=https://github.com/kelmenhorst/quic-censorship/issues/4>More info on HTTP/3 censorship in Russia.</a></p><h3 id=india-as133694>India (AS133694)</h3><p>Between the 21st and 25th of February, I ran measurements in India
 using a VPN service connected to network AS133694.</p><p>The results suggest that there is systematic censorship of HTTP/3
@@ -178,7 +178,7 @@ traffic is affected by these blocks as well (a large portion of
 QUIC-supporting hosts belong to Google).</p><p>This form of IP-blocking affects all protocols that use IP, so any
 connection attempt over HTTPS or HTTP/3 to a blocked IP address
 will not work. However, I found no evidence that the Great Firewall
-<em>specifically</em> targets QUIC or HTTP/3.</p><p><div><a href=/post/2022-quick-look-quic-censorship/3_ip_blocking.png><img src=/post/2022-quick-look-quic-censorship/3_ip_blocking_huef1ede414dfb96db7e3bfd6cad20038d_103393_1000x800_fit_box_2.png srcset="/post/2022-quick-look-quic-censorship/3_ip_blocking_huef1ede414dfb96db7e3bfd6cad20038d_103393_2000x1600_fit_box_2.png 2x" title="IP blocking" alt="IP blocking"></a></div><em>Exemplified depiction of how IP censorship affects both HTTPS and HTTP/3: Such
+<em>specifically</em> targets QUIC or HTTP/3.</p><p><div><a href=/post/2022-quick-look-quic-censorship/3_ip_blocking.png><img src=/post/2022-quick-look-quic-censorship/3_ip_blocking_huef1ede414dfb96db7e3bfd6cad20038d_103393_1000x800_fit_box_2.png title="IP blocking" alt="IP blocking"></a></div><em>Exemplified depiction of how IP censorship affects both HTTPS and HTTP/3: Such
 firewalls inspect only the IP header and block every packet with a blacklisted
 destination (or source) address.</em></p><p>It may seem surprising that the Great Firewall, which is known to
 apply very restrictive and rather sophisticated blocking, does not

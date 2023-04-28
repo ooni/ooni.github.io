@@ -12,7 +12,7 @@ available probe services failed” error. This issue has been publicly
 documented, for example, in
 <a href=https://github.com/ooni/probe/issues/1324>ooni/probe#1324</a>. The
 following screenshot shows what a user would see under this specific
-error condition.</p><div><a href=/post/making-ooni-probe-android-more-resilient/images/image-1.png><img src=/post/making-ooni-probe-android-more-resilient/images/image-1_hu11b6f6f482f58dfa917bcfa8de3b0916_361392_1000x800_fit_box_2.png srcset="/post/making-ooni-probe-android-more-resilient/images/image-1_hu11b6f6f482f58dfa917bcfa8de3b0916_361392_2000x1600_fit_box_2.png 2x" title="OONI Probe Android error" alt="OONI Probe Android error"></a></div><p>The error in the above screenshot means that OONI Probe <em>attempted</em> to
+error condition.</p><div><a href=/post/making-ooni-probe-android-more-resilient/images/image-1.png><img src=/post/making-ooni-probe-android-more-resilient/images/image-1_hu11b6f6f482f58dfa917bcfa8de3b0916_361392_1000x800_fit_box_2.png title="OONI Probe Android error" alt="OONI Probe Android error"></a></div><p>The error in the above screenshot means that OONI Probe <em>attempted</em> to
 contact all the public OONI API endpoints (which we call “probe
 services”), but to no avail.</p><p>We first discussed implementing a proxy during the January 2020 OONI
 community meeting. After this meeting, we opened
@@ -45,8 +45,8 @@ started working on the user interface for configuring a proxy on Android
 (<a href=https://github.com/ooni/probe-android/pull/423>ooni/probe-android#423</a>).
 A few Android users also assisted us, providing feedback, testing, and
 code patches.</p><p>This work resulted in adding an <strong>OONI backend proxy</strong> section in the
-settings of the OONI Probe app:</p><div><a href=/post/making-ooni-probe-android-more-resilient/images/image-2.jpg><img src=/post/making-ooni-probe-android-more-resilient/images/image-2_hu783b4269f01cb79164ba62efadafd575_30857_1000x800_fit_q75_box.jpg srcset="/post/making-ooni-probe-android-more-resilient/images/image-2_hu783b4269f01cb79164ba62efadafd575_30857_2000x1600_fit_q75_box.jpg 2x" title="OONI Probe backend proxy settings" alt="OONI Probe backend proxy settings"></a></div><p>By tapping on the “OONI backend proxy” row, we will direct you to
-another screen, which allows you to choose which proxy you want to use:</p><div><a href=/post/making-ooni-probe-android-more-resilient/images/image-3.jpg><img src=/post/making-ooni-probe-android-more-resilient/images/image-3_huca3b85e7f14f18fb585d724bcdb24775_30080_1000x800_fit_q75_box.jpg srcset="/post/making-ooni-probe-android-more-resilient/images/image-3_huca3b85e7f14f18fb585d724bcdb24775_30080_2000x1600_fit_q75_box.jpg 2x" title="Choosing a proxy" alt="Choosing a proxy"></a></div><p>The default (<code>None</code>) is that no proxy is being used. If you choose
+settings of the OONI Probe app:</p><div><a href=/post/making-ooni-probe-android-more-resilient/images/image-2.jpg><img src=/post/making-ooni-probe-android-more-resilient/images/image-2_hu783b4269f01cb79164ba62efadafd575_30857_1000x800_fit_q75_box.jpg title="OONI Probe backend proxy settings" alt="OONI Probe backend proxy settings"></a></div><p>By tapping on the “OONI backend proxy” row, we will direct you to
+another screen, which allows you to choose which proxy you want to use:</p><div><a href=/post/making-ooni-probe-android-more-resilient/images/image-3.jpg><img src=/post/making-ooni-probe-android-more-resilient/images/image-3_huca3b85e7f14f18fb585d724bcdb24775_30080_1000x800_fit_q75_box.jpg title="Choosing a proxy" alt="Choosing a proxy"></a></div><p>The default (<code>None</code>) is that no proxy is being used. If you choose
 <code>Psiphon</code>, OONI Probe will create a <a href=https://psiphon.ca/>Psiphon</a>
 tunnel using the encrypted configuration file. If you select <code>Custom</code>,
 you can set the hostname and port of a SOCKS5 proxy. I have filled the
