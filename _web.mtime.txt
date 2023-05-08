@@ -1,3 +1,3 @@
 # HELP ooni_web_mtime UNIX Time of the commit used to build website.
 # TYPE ooni_web_mtime gauge
-ooni_web_mtime 1683273481
+ooni_web_mtime 1683535114
