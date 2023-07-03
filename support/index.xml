@@ -8,15 +8,14 @@ About OONI</description></item><item><title>GitHub: Updating the Citizen Lab tes
 By contributing to the Citizen Lab test lists, you can support website censorship testing by OONI Probe users around the world.
 Before getting started, please refer to our documentation to learn all about test lists.</description></item><item><title>Interpreting OONI data</title><link>https://ooni.github.io/support/interpreting-ooni-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/interpreting-ooni-data/</guid><description>This documentation explains how you can interpret OONI data. It’s primarily intended for researchers interested in investigating internet censorship around the world. Knowledge of some internet basics (i.e how the internet works) is required, though you can also refer to the OONI Glossary for the explanation of relevant terms.
 We also recommend referring to the OONI Explorer user guide for accessing OONI data.
-OONI data What is OONI data?</description></item><item><title>OONI Glossary</title><link>https://ooni.github.io/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/glossary/</guid><description>This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports.
+OONI data What is OONI data?</description></item><item><title>OONI Glossary</title><link>https://ooni.github.io/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/glossary/</guid><description>Last updated: 3rd July 2023
+This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports.
 Translations:
 Español, OONI Glosario العربية, OONI Glossary فارسی, OONI Glossary Kiswahili, OONI Faharasa Русский, OONI Глоссарий If you would like to see additional terms in this glossary, please open a pull request or send us an email.
 API
 AS
 ASN
-BGP
-Blocklist
-Block page</description></item><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-outreach-kit/</guid><description>Community engagement is at the heart of OONI’s work, as OONI data on internet censorship depends on people running OONI Probe around the world.
+BGP</description></item><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-outreach-kit/</guid><description>Community engagement is at the heart of OONI’s work, as OONI data on internet censorship depends on people running OONI Probe around the world.
 Interested in engaging your communities with OONI censorship measurement?
 The OONI Outreach Kit includes materials that you are encouraged to use as part of your OONI community engagement efforts.
 OONI Brochures OONI Probe Flyers and Leaflets OONI Explorer Flyers Internet Censorship Flyers OONI Screencasts OONI Workshop Slides OONI Resources OONI Brochures We provide 2 OONI brochures that include information about using OONI tools and data for investigating internet censorship around the world.</description></item><item><title>User Guide: OONI Explorer</title><link>https://ooni.github.io/support/ooni-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-explorer/</guid><description>Last updated: 15th March 2023
