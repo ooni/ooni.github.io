@@ -602,11 +602,10 @@ This user guide provides step-by-step instructions on how to install and use the
 You can run OONI Probe CLI on macOS, Debian/Ubuntu Linux, and on Raspberry Pis.
 What you will get from this guide:</description></item><item><title>User Guide: OONI Probe Desktop App</title><link>https://ooni.github.io/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-desktop/</guid><description>Last updated: 25th October 2022
 OONI Probe Desktop version: 3.7.0
-Access the OONI Probe Desktop user guide in other languages: فارسی, Русский
-OONI Probe is a free and open source app that you can use to measure internet censorship and other forms of network interference. This user guide provides step-by-step instructions on how to install, run, and customize your use of the OONI Probe desktop app.
-What you will get from this guide:</description></item><item><title>User Guide: OONI Probe Mobile App</title><link>https://ooni.github.io/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-mobile/</guid><description>Last updated: 19th October 2022
+Access the OONI Probe Desktop user guide in other languages: فارسی, Русский, Deutsch
+OONI Probe is a free and open source app that you can use to measure internet censorship and other forms of network interference. This user guide provides step-by-step instructions on how to install, run, and customize your use of the OONI Probe desktop app.</description></item><item><title>User Guide: OONI Probe Mobile App</title><link>https://ooni.github.io/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-mobile/</guid><description>Last updated: 19th October 2022
 OONI Probe Mobile version: 3.7.1
-Access the user guide in other languages: فارسی, Русский
+Access the user guide in other languages: فارسی, Русский, Deutsch
 OONI Probe is a free and open source app that you can use to measure internet censorship and other forms of network interference. This user guide provides step-by-step instructions on how to install, run, and customize your use of the OONI Probe mobile app.
 What you will get from this guide:</description></item><item><title>User Guide: OONI Test Lists Editor</title><link>https://ooni.github.io/support/test-lists-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/test-lists-editor/</guid><description>Last updated: 7th September 2022
 The OONI Test Lists Editor enables the public to review and contribute to the lists of websites (“test lists”) that are tested for censorship by OONI Probe users around the world.
