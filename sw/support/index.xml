@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>/sw/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>sw</language><atom:link href="/sw/support/index.xml" rel="self" type="application/rss+xml"/><item><title>Maswali Yanayoulizwa Mara kwa Mara (MYM)</title><link>/sw/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/sw/support/faq/</guid><description>Hati hiyo imetafsiriwa kwa Kiswahili na Zaina Foundation.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/sw/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>sw</language><atom:link href="https://ooni.github.io/sw/support/index.xml" rel="self" type="application/rss+xml"/><item><title>Maswali Yanayoulizwa Mara kwa Mara (MYM)</title><link>https://ooni.github.io/sw/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/sw/support/faq/</guid><description>Hati hiyo imetafsiriwa kwa Kiswahili na Zaina Foundation.
 Hati asili: Frequently Asked Questions (FAQ)
 Kipengele hiki kimelenga kuonyesha Maswali Yanayoulizwa Mara kwa Mara (MYM) na jamii.
 Kuna maswali mengine ambayo ungependa tuyajibu? Tafadhali tujulishe.
@@ -10,7 +10,7 @@ Kwa nini kupima udhibiti wa mtandao?
 Ni kwa namna gani OONI inafadhiliwa?
 Kuna uhusiano gani kati ya OONI na Tor?
 OONI inapatikana wapi?
-OONI inatambulika kisheria?</description></item><item><title>OONI Faharasa</title><link>/sw/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/sw/support/glossary/</guid><description>Hati hiyo imetafsiriwa kwa Kiswahili na Zaina Foundation.
+OONI inatambulika kisheria?</description></item><item><title>OONI Faharasa</title><link>https://ooni.github.io/sw/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/sw/support/glossary/</guid><description>Hati hiyo imetafsiriwa kwa Kiswahili na Zaina Foundation.
 Hati asili: OONI Glossary
 Faharasa hii imekusanya maelezo mafupi ya maneno yaliyotumika kwenye programu ya OONI, njia na tafiti za taarifa.
 Kama ungependa kufahamu maneno ya ziada katika faharasa hii tafadhali fungua hapa au tutumie barua pepe.
@@ -26,7 +26,7 @@ Mtumiaji
 Mfumo unaochakata data
 DNS
 Utekaji wa DNS
-Utambuzi wa DNS</description></item><item><title>Seti ya huduma ya OONI</title><link>/sw/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/sw/support/ooni-outreach-kit/</guid><description>Ushiriki wa jamii ni moyo wa kazi za OONI, kama OONI data kwenye udhibiti wa mtandao inategemea na upimaji wa watu OONI Probe ulimwenguni.
+Utambuzi wa DNS</description></item><item><title>Seti ya huduma ya OONI</title><link>https://ooni.github.io/sw/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/sw/support/ooni-outreach-kit/</guid><description>Ushiriki wa jamii ni moyo wa kazi za OONI, kama OONI data kwenye udhibiti wa mtandao inategemea na upimaji wa watu OONI Probe ulimwenguni.
 Umevutiwa kushirikisha jamii yako na kipimo cha udhibiti cha OONI?
 Seti ya huduma ya OONI inajumuisha nyenzo ambazo unavutiwa kuzitumia kama sehemu ya juhudi za ushiriki za jumuiya ya OONI.
 Vipeperushi vya OONI Kanzi data ya OONI Probe Kanzi data ya OONI Explorer Kipeperushi cha Udhibiti wa mtandao Maudhui ya semina za OONI Rasilimali za OONI Vipeperushi vya OONI Tumetoa Vipeperushi vya OONI viwili 2 ambavyo vina taarifa kuhusu utumiaji wa vifaa vya OONI na data kwa ajili ya kuchunguza udhibiti wa mtandao ulimwenguni.</description></item></channel></rss>
