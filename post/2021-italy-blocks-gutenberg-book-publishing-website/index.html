@@ -1,0 +1,269 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Italy blocks Gutenberg book publishing website | OONI</title>
+<link rel=canonical href=https://ooni.org/post/2021-italy-blocks-gutenberg-book-publishing-website/><meta name=description content="This report shares OONI measurements on the blocking of the Gutenberg book publishing website in Italy."><meta property="og:title" content="Italy blocks Gutenberg book publishing website"><meta property="og:description" content="This report shares OONI measurements on the blocking of the Gutenberg book publishing website in Italy."><meta property="og:type" content="article"><meta property="og:url" content="/post/2021-italy-blocks-gutenberg-book-publishing-website/"><meta property="og:image" content="/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-1.png"><meta property="article:published_time" content="2021-09-10T00:00:00+00:00"><meta property="article:modified_time" content="2021-09-10T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-1.png"><meta name=twitter:title content="Italy blocks Gutenberg book publishing website"><meta name=twitter:description content="This report shares OONI measurements on the blocking of the Gutenberg book publishing website in Italy."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Italy blocks Gutenberg book publishing website</h1><div class=byline><span class=author>D. Brunello (Independent researcher), Arturo Filastò (OONI), Maria Xynou (OONI), Simone Basso (OONI)</span>
+<span class=date>2021-09-10</span></div><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-1.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-1_hufb6f4d14ed6cd93bbb09c22fbcac1ef5_29127_1000x800_fit_box_3.png title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p>Cases of internet censorship (that affect public interest) are rarely reported
+in Europe. Yet, <code>www.gutenberg.org</code>, a book-publishing website run by
+a non-profit organization, has been <a href=https://www.wired.it/internet/web/2020/06/30/progetto-gutenberg-sequestro/>blocked in Italy since May 2020</a>.</p><p>In this report, we share <a href="https://explorer.ooni.org/search?until=2021-09-08&amp;since=2021-08-09&amp;domain=www.gutenberg.org&amp;probe_cc=IT">OONI network measurement data</a>
+on the ongoing blocking of <code>www.gutenberg.org</code> across networks in
+Italy.</p><ul><li><p><a href=#background>Background</a></p></li><li><p><a href=#methods>Methods</a></p></li><li><p><a href=#findings>Findings</a></p><ul><li><p><a href=#blocking-methods-by-isp>Blocking methods by ISP</a></p><ul><li><p><a href=#vodafone-italia-as30722>Vodafone Italia (AS30722)</a></p></li><li><p><a href=#fastweb-as12874>Fastweb (AS12874)</a></p></li><li><p><a href=#wind-as1267>Wind (AS1267)</a></p></li><li><p><a href=#tim-as16232>TIM (AS16232)</a></p></li><li><p><a href=#telecom-italia-as3269>Telecom Italia (AS3269)</a></p></li><li><p><a href=#tiscali-as8612>Tiscali (AS8612)</a></p></li><li><p><a href=#iliad-as29447>Iliad (AS29447)</a></p></li></ul></li><li><p><a href=#additional-measurement-analysis-between-may-2020-to-august-2021>Additional measurement analysis between May 2020 to August 2021</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li></ul><h1 id=background>Background</h1><p>The gutenberg.org website is maintained by the Project Gutenberg
+Literary Archive Foundation (PGLAF), a non-profit organization active
+since 1971. Micheal Hart, founder of gutenberg.org, created the project
+for <a href=http://www.gutenberg.org/>“the storage, retrieval, and searching of what was stored in libraries”</a>.</p><p>The mission of Project Gutenberg is simple: <a href=http://www.gutenberg.org/>“To encourage the creation and distribution of eBooks”</a>, with the motto
+<a href=http://www.gutenberg.org/>“Break Down the Bars of Ignorance and Illiteracy.”</a> The site&rsquo;s main scope is to
+share books and literature content when their copyright protection law
+terms have expired. Publishing this content on the site in a
+<a href=http://www.gutenberg.org/>“copyright free” form allows for the distribution of verbatim or non-verbatim copies</a> in the US.</p><p>In mid-April 2020, the FIEG (Italian Federation Editors of Journals)
+filed a request to AGCOM (Italian Competition Authority) to intervene in
+some alleged illegal operation of sharing copyright protected content
+(newspaper) <a href=https://www.repubblica.it/economia/2020/04/14/news/appello_della_fieg_all_agcom_fermi_telegram_basta_con_la_diffusione_illecita_dei_quotidiani_-253997660/>on the Telegram platform</a>.</p><p>The criminal prosecution started soon thereafter in cooperation with a
+special department (of “Guardia di Finanza”) working on privacy and
+online fraud. The judge assigned to the case (on 5th May 2020) requested
+the temporary seizure of the domain (“sequestro preventivo mediante
+oscuramento” ex. Art. 321 c.p.). The provision has been applied to
+several Telegram channels and some internet sites involved in sharing
+journals, books, with <a href=https://xmau.com/wp/notiziole/2020/06/04/repubblica-italiana-contro-project-gutenberg-un-case-study/>profit motives</a> (personal data collection used
+for advertising) by the software “Teleport Ultra”, in violation of art. 16 L. 633/1941.
+The decree has been sent to Italian Internet Service Providers (ISPs)
+for enforcement and by mid-May 2020, all the sites included in the list
+have been blocked, one of which was gutenberg.org.</p><p>Project Gutenberg has no legal representation in Italy. Only some time
+later did the project’s <a href=https://twitter.com/gutenberg_org/status/1264512881309085702>CEO acknowledge that their site was blocked</a>
+in the country. Even if AIB (Italian Library Association) <a href=https://www.aib.it/attivita/2020/82486-ripristino-accesso-project-gutenberg/>showed its support</a>,
+the only viable option is to intervene with a formal request instructed
+by a lawyer to the court to review the decree.</p><p>An informal letter <a href=https://xmau.com/wp/notiziole/2020/06/04/repubblica-italiana-contro-project-gutenberg-un-case-study/>sent to the Guardia Di Finanza</a>
+analyzed the content hosted on the Gutenberg site and identified 5 books
+that, according to Italian copyright law, are still protected &mdash; even
+if they are not according to US copyright law (as per ToS the country in
+which the content is shared and available).</p><p>According to US law, what has been published before 1978 has a copyright
+of 95 years; instead, under Italian law, copyright terms are considered
+expired after 70 years from the death of the author.</p><p>The current situation with the ongoing criminal lawsuit prevents access
+to more detailed information. It will therefore be necessary to follow
+up with requests for the disclosure of further information (when
+available) to better understand the case.</p><h1 id=methods>Methods</h1><p>We examined the blocking of gutenberg.org in Italy through the analysis
+of <a href="https://explorer.ooni.org/search?until=2021-09-08&amp;since=2021-08-09&amp;domain=www.gutenberg.org&amp;probe_cc=IT">OONI measurements</a>
+collected from multiple local AS networks. We analyzed OONI measurements
+(from the testing of <code>www.gutenberg.org</code>) collected from Italy between
+May 2020 (when the <a href=https://www.wired.it/internet/web/2020/06/30/progetto-gutenberg-sequestro/>blocking reportedly started</a>)
+to August 2021. We supplemented our study with online research to
+understand how and why the court of Rome took the decision to block the
+Gutenberg website.</p><p><a href=https://ooni.org/about/>OONI</a> is a free software project that aims
+to empower decentralized efforts in increasing transparency of internet
+censorship around the world. Since 2012, OONI has developed <a href=https://github.com/ooni/probe>free and open source software</a>, called <a href=https://ooni.org/install/>OONI Probe</a>, that can be run to measure the
+blocking of websites, collecting data that can potentially serve as
+evidence of internet censorship since it shows how, when, where, and by
+whom it is implemented.</p><p>As part of this study, we analyzed measurements collected from OONI’s
+<a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a> test.
+This test examines whether websites (included in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a>) are
+reachable and if they are not, it attempts to determine whether access
+to them is blocked by means of <a href=https://ooni.org/support/glossary/#dns-tampering>DNS tampering</a>, <a href=https://ooni.org/support/glossary/#tcp-ip-blocking>TCP/IP blocking</a> or by a
+<a href=https://ooni.org/support/glossary/#http-transparent-proxy>transparent HTTP proxy</a>. We
+limited our analysis to Web Connectivity measurements collected from the
+testing of <code>www.gutenberg.org</code> on different AS networks in Italy
+between May 2020 to August 2021.</p><p>Please consider that the findings are limited by the number of OONI
+Probe tests run by users in Italy. We only have measurements available
+depending on when OONI Probe users tested <code>www.gutenberg.org</code> in
+Italy, and depending on which networks these tests were performed.</p><h1 id=findings>Findings</h1><p>OONI data
+<a href="https://explorer.ooni.org/search?until=2021-09-08&amp;since=2021-08-09&amp;domain=www.gutenberg.org&amp;probe_cc=IT&amp;only=anomalies">shows</a>
+that <code>www.gutenberg.org</code> presented signs of blocking on at least 7 AS
+networks in Italy since May 2020. Most ISPs in Italy primarily appear to
+block access to <code>www.gutenberg.org</code> by means of <a href=https://ooni.org/support/glossary/#dns-hijacking>DNS hijacking</a>. However,
+we also observe HTTP failures on some networks as well.</p><p>In the following sections, we explain how the blocking of
+<code>www.gutenberg.org</code> varies across AS networks in Italy.</p><h2 id=blocking-methods-by-isp>Blocking methods by ISP</h2><p>OONI data
+<a href="https://explorer.ooni.org/search?until=2021-09-08&amp;since=2021-08-09&amp;domain=www.gutenberg.org&amp;probe_cc=IT">shows</a>
+that the testing of <code>www.gutenberg.org</code> presented signs of blocking on
+multiple AS networks in Italy between May 2020 to August 2021, as
+illustrated through the following chart.</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-2.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-2_hu962a2efbcfe3c9e4c59a72eb9fb81e97_305893_1000x800_fit_box_3.png srcset="/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-2_hu962a2efbcfe3c9e4c59a72eb9fb81e97_305893_2000x1600_fit_box_3.png 2x" title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p><strong>Source:</strong> OONI measurements on the testing of <code>www.gutenberg.org</code>
+across AS networks in Italy between May 2020 to August 2021, <a href="https://explorer.ooni.org/search?until=2021-09-08&amp;since=2021-08-09&amp;domain=www.gutenberg.org&amp;probe_cc=IT">https://explorer.ooni.org/search?until=2021-09-08&amp;since=2021-08-09&amp;domain=www.gutenberg.org&amp;probe_cc=IT</a></p><p>As is evident from the above chart, <code>www.gutenberg.org</code> received the
+highest volume of testing coverage during our analysis period on
+Vodafone Italia (AS30722) and Fastweb (AS12874), where most measurements
+presented DNS based anomalies. In particular, such measurements show
+that access to <code>www.gutenberg.org</code> was blocked by means of <a href=https://ooni.org/support/glossary/#dns-hijacking>DNS
+hijacking</a>, as
+internet users on those networks did not receive the correct IP address
+for the website. Similarly, we observe a high ratio of DNS anomalies on
+other AS networks as well, such as Telecom Italia (AS3269) and TIM
+(AS16232). We also observe HTTP failures caused by connection timeouts
+on several other AS networks as well.</p><p>It’s worth highlighting though that the blocking of
+<code>www.gutenberg.org</code> appears to vary across AS networks in Italy, as
+recent measurements suggest that the site is accessible on some
+networks, such as Wind (AS1267). Moreover, on networks (such as Vodafone
+Italia) where we observe the DNS hijacking of <code>www.gutenberg.org</code>, we
+also see that some measurements are successful &ndash; likely because a
+different <a href=https://ooni.org/support/glossary/#dns-resolver>DNS resolver</a> was used by
+the OONI Probe user(s) who contributed those measurements.</p><p>In the following sections, we summarize our main technical findings
+related to the blocking of <code>www.gutenberg.org</code> on 7 major ISPs in
+Italy based on OONI data.</p><h3 id=vodafone-italia-as30722>Vodafone Italia (AS30722)</h3><p>OONI data shows that Vodafone Italia blocks <code>www.gutenberg.org</code> by
+means of DNS hijacking.</p><p>When attempting to query the domain name <code>www.gutenberg.org</code>, instead
+of receiving the legitimate IP of the site, we
+<a href="https://explorer.ooni.org/measurement/20210104T104452Z_webconnectivity_IT_30722_n1_O4jGiINtXvHHzLko?input=https%3A%2F%2Fwww.gutenberg.org%2F">received</a>
+the IP address <code>83.224.65.170</code> (which belongs to Vodafone) as a
+response. This IP address does not listen on port 443 and therefore
+results in a connection timeout when attempting to connect to the site
+over HTTPS, as illustrated below.</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-1.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-1_hufb6f4d14ed6cd93bbb09c22fbcac1ef5_29127_1000x800_fit_box_3.png title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p><strong>Image:</strong> Screenshot of attempting to connect to <code>www.gutenberg.org</code>
+over HTTPS on Vodafone Italia (AS30722), resulting in a connection
+timeout.</p><p>When accessed over HTTP, it instead returns an 404 error page without
+any content (as illustrated below). This means that the block is not
+implemented transparently.</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-3.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-3_hudd169b38ace35df6702ee9c0f107d1e4_39302_1000x800_fit_box_3.png title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p><strong>Image:</strong> Screenshot of attempting to connect to <code>www.gutenberg.org</code>
+over HTTP on Vodafone Italia (AS30722), resulting in an 404 error page.</p><p>It’s also interesting to highlight that the reverse pointer records
+(PTR) for the IP address <code>83.224.65.170</code> returns a list of all other pages
+which are blocked by returning this IP (as shared below). This makes it
+easy to enumerate all the websites which are blocked using the same
+technique.</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-4.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-4_hu610148d4d2bb64e868977aa0af5ac712_315751_1000x800_fit_box_3.png title=PTR alt=PTR></a></div><p><strong>Image:</strong> Reverse pointer records (PTR) for the IP address
+83.224.65.170 returns a list of all other domains which are blocked by
+returning this IP.</p><p>Some OONI measurements collected from Vodafone Italia show that
+<code>www.gutenberg.org</code> was accessible, but that is due to the fact that
+in these cases the probe client has been configured to use a resolver
+different from the ISP provided one.</p><h3 id=fastweb-as12874>Fastweb (AS12874)</h3><p>OONI data shows that Fastweb appears to be consistently blocking
+<code>www.gutenberg.org</code> by means of DNS based tampering.</p><p>Some OONI measurements indicate the site being accessible, but this is
+because the probe in question was configured to use a resolver that is
+different from the ISP provided resolver. In the cases in which the
+probe is properly configured to use the ISP resolver, we can see that
+the means by which the <a href="https://explorer.ooni.org/measurement/20210727T104149Z_webconnectivity_IT_12874_n1_AA3pWAE46cUUC7L5?input=https%3A%2F%2Fwww.gutenberg.org%2F">block is implemented is that of returning an NXDOMAIN</a>
+to the DNS query for <code>www.gutenberg.org</code>. This is concerning because
+it doesn’t provide any transparency on the block being implemented,
+since a user will see an error message in their browser rather than a
+<a href=https://ooni.org/support/glossary/#block-page>block page</a> (which
+would have informed the user that access to the website is intentionally
+blocked).</p><h3 id=wind-as1267>Wind (AS1267)</h3><p>For the most part, Wind does not appear to be implementing the block for
+<code>www.gutenberg.org</code>. OONI measurements, for example,
+<a href="https://explorer.ooni.org/measurement/20210128T104054Z_webconnectivity_IT_1267_n1_Z2GXvyDiRnsJCbYS?input=https%3A%2F%2Fwww.gutenberg.org%2F">show</a>
+that even though the probe is configured to use the ISP provided
+resolver, we do not observe the blocking of the website.</p><p>We only have a <a href="https://explorer.ooni.org/measurement/20200713T133404Z_AS1267_FVCwNzN1wUx0rhNLoPYfnBYv5bSH69QXFqhfVq0B0uKNnTB6mT?input=https%3A%2F%2Fwww.gutenberg.org%2F">few measurements</a>
+that are indicative of blocking and, in those cases, the reason for the
+failure appears to be a <a href="https://explorer.ooni.org/measurement/20200713T133404Z_AS1267_FVCwNzN1wUx0rhNLoPYfnBYv5bSH69QXFqhfVq0B0uKNnTB6mT?input=https%3A%2F%2Fwww.gutenberg.org%2F">TLS certificate validation error</a>,
+which is a sign that they might be doing a TLS man-in-the-middle (MITM)
+to implement the blocking of the site.</p><h3 id=tim-as16232>TIM (AS16232)</h3><p>Telecom Italia Mobile (TIM) appears to block <code>www.gutenberg.org</code> by
+means of DNS hijacking. Specifically, when attempting to query
+<code>www.gutenberg.org</code> they will <a href="https://explorer.ooni.org/measurement/20210430T190134Z_webconnectivity_IT_16232_n1_8ORqDEhJaxCmRk96?input=https%3A%2F%2Fwww.gutenberg.org%2F">return the IP address of the loopback
+interface (127.0.0.1)</a>
+resulting in connection errors. This is concerning because to an
+internet user it will not be clear that the site is being intentionally
+blocked and might wrongly attribute the inaccessibility of the site to
+poor network conditions.</p><p>As part of our analysis, only one OONI measurement
+<a href="https://explorer.ooni.org/measurement/20200731T184253Z_AS16232_zokmx31pil2Jpuz8iq7iWoiujuml4v3F8KYBTzS0oz45ISKfwF?input=https%3A%2F%2Fwww.gutenberg.org%2F">showed</a>
+that the site was accessible, but this was due to the probe being
+configured with a different resolver from the ISP resolver.</p><h3 id=telecom-italia-as3269>Telecom Italia (AS3269)</h3><p>Similarly to TIM, Telecom Italia also
+<a href="https://explorer.ooni.org/measurement/20210718T114741Z_webconnectivity_IT_3269_n1_xaVyJSWYrdaEzlF5?input=https%3A%2F%2Fwww.gutenberg.org%2F">blocks</a>
+<code>www.gutenberg.org</code> by returning the IP address <code>127.0.0.1</code> in the
+DNS query answer, resulting in a blocking that is not transparent to the
+user.</p><h3 id=tiscali-as8612>Tiscali (AS8612)</h3><p>Tiscali blocks <code>www.gutenberg.org</code> by means of DNS based interference.
+Similarly to Fastweb, they <a href="https://explorer.ooni.org/measurement/20200526T095821Z_AS8612_SkhhsPaJOx8muuamd2BLBuqdJjMjO7ArgnAeAjhgMDk2OEKhwS?input=https%3A%2F%2Fwww.gutenberg.org%2F">return an NXDOMAIN</a>
+when looking up <code>www.gutenberg.org</code>, which is not transparent to the
+end user.</p><h3 id=iliad-as29447>Iliad (AS29447)</h3><p>Similarly to TIM and Telecom Italia, Iliad
+<a href="https://explorer.ooni.org/measurement/20210427T084458Z_webconnectivity_IT_29447_n1_zbicaC7niq9Bcd96?input=https%3A%2F%2Fwww.gutenberg.org%2F">blocks</a>
+<code>www.gutenberg.org</code> by means of DNS based interference, returning the
+IP address <code>127.0.0.1</code>, which is not transparent to the end user.</p><h2 id=additional-measurement-analysis-between-may-2020-to-august-2021>Additional measurement analysis between May 2020 to August 2021</h2><p>In this section, we share additional observations from analysis provided
+by one of our community members: Davide Brunello (independent
+researcher). Davide analyzed OONI <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a> measurements
+collected from the testing of <code>www.gutenberg.org</code> in Italy between May
+2020 to August 2021.</p><p>The following chart illustrates the volume of monthly OONI measurements
+collected from the testing of <code>www.gutenberg.org</code> on different AS
+networks in Italy between May 2020 (when the block started) to August
+2021.</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-5.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-5_hu465cf92e854058d4564c0df054bdb2d5_126292_1000x800_fit_box_3.png srcset="/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-5_hu465cf92e854058d4564c0df054bdb2d5_126292_2000x1600_fit_box_3.png 2x" title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p><strong>Source:</strong> Volume of monthly OONI measurements (on the testing of
+<code>www.gutenberg.org</code>) collected from different ISPs in Italy each month
+between May 2020 to August 2021.</p><p>As is evident through the above chart, <code>www.gutenberg.org</code> received
+the highest volume in testing coverage in June 2021, while most
+measurements (throughout the analysis period) were collected from
+Vodafone Italia and Fastweb. The diversity of AS coverage (as it
+pertains to the OONI Probe testing of <code>www.gutenberg.org</code>) enabled us
+to compare the blocking of <code>www.gutenberg.org</code> across different ISPs
+in Italy, as discussed in previous sections of this report.</p><p>Overall (between May 2020 to August 2021), 619 OONI measurements were
+collected from 19 unique ASNs (corresponding to 19 different ISPs) in
+Italy, with most measurements collected from Vodafone Italia (54%),
+Fastweb SpA (26%), Consortium GARR (7%), and Telecom Italia S.p.A. (5%).</p><p>The following chart characterizes the total volume of OONI measurements
+(from the testing of <code>www.gutenberg.org</code>) collected across AS networks
+in Italy, distinguishing between those that presented anomalies (and
+further characterizing those as “DNS” and “HTTP-failure”) and those that
+didn’t (“none”).</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-6.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-6_huec9bf2151fc3b90eb170f1ecc19c2049_78971_1000x800_fit_box_3.png title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p><strong>Source:</strong> Total of OONI measurements (from the testing of
+<code>www.gutenberg.org</code>) by blocking type across ISPs in Italy between May
+2020 to August 2021.</p><p>The characterization of the blocking type (as illustrated through the
+above chart) is based on OONI’s <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a> methodology,
+which was used for the testing of <code>www.gutenberg.org</code>. OONI’s Web
+Connectivity test is designed to measure the blocking of a URL by first
+attempting to identify the <a href=https://ooni.org/support/glossary/#dns-resolver>DNS resolver</a> used by the
+OONI Probe user, perform a <a href=https://ooni.org/support/glossary/#dns-lookup>DNS lookup</a> for the domain
+in question, establish a <a href=https://ooni.org/support/glossary/#tcp>TCP connection</a> to the IP
+address(es) identified during the DNS lookup, and send an <a href=https://ooni.org/support/glossary/#http-request>HTTP GET request</a> for the
+content of the webpage. These steps are automatically performed over two
+vantage points: the local network of the OONI Probe user and a “control”
+(non-censored) network. If the results from both networks are the same,
+the tested URL is flagged as “accessible”. If, however, the results
+differ, the tested URL is flagged as
+“<a href=https://ooni.org/support/glossary/#network-anomaly>anomalous</a>”
+(which provides an indication of potential blocking).</p><p>Based on OONI’s Web Connectivity methodology, there are 4 possible
+anomalies that can occur:</p><ul><li><p><strong>DNS anomaly.</strong> If the DNS responses (i.e. the IP addresses
+returned for a domain) between the local and “control” networks do
+not match;</p></li><li><p><strong>TCP/IP anomaly.</strong> If a TCP session to connect to websites was not
+established over the network of the user;</p></li><li><p><strong>HTTP-failure.</strong> If the HTTP request from the user’s network fails;</p></li><li><p><strong>HTTP-diff.</strong> If the <a href=https://ooni.org/support/glossary/#http-status-codes>HTTP status codes</a>, the
+<a href=https://ooni.org/support/glossary/#http-header>HTTP header</a> names, the HTML title tags, and the body length of the website
+differ from the local network of the OONI Probe user in comparison
+to the “control” (non-censored) network.</p></li></ul><p>As part of his analysis of Web Connectivity measurements (on the testing
+of <code>www.gutenberg.org</code>), Davide identified 3 types of measurements:</p><ul><li><p>Accessible (flagged as “none” in the above chart)</p></li><li><p>DNS anomalies (flagged as “DNS” in the above chart)</p></li><li><p>HTTP failures (flagged as “HTTP-Failure” in the above chart)</p></li></ul><p>Davide notes that out of the total number of measurements, 58% presented
+DNS anomalies, while 3% presented HTTP failures. 43% of measurements
+collected from Vodafone Italia (where a total of 333 measurements were
+collected) are annotated as “none” (indicating that
+<code>www.gutenberg.org</code> was accessible), but as mentioned in previous
+sections, this seems to be the result of OONI Probe users using
+different <a href=https://ooni.org/support/glossary/#dns-resolver>DNS resolvers</a> (instead of
+the one provided by the ISP, which implements the block).</p><p>The following chart provides a further breakdown of OONI measurements,
+limiting them to those that presented anomalies.</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-7.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-7_hu876e0a9d0aae585c0636bdde54d0d4e7_76525_1000x800_fit_box_3.png title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p><strong>Source:</strong> OONI measurements (from the testing of
+<code>www.gutenberg.org</code>) by blocking type across ISPs in Italy between May
+2020 to August 2021.</p><p>As can be seen through the graph, the majority (97%) of anomalous
+measurements on Vodafone Italia presented signs of DNS based
+interference, while a few (3%) presented HTTP failures. On Fastweb, 99%
+of anomalous measurements presented signs of DNS based tampering, while
+only 1% of measurements presented HTTP failures. On Wind, all (100%)
+anomalous measurements presented HTTP failures, but we observe limited
+testing coverage on this network, while all other measurements were
+successful (as illustrated through the previous chart).</p><p>This data may be helpful to demonstrate how the blocking of
+<code>www.gutenberg.org</code> (in compliance with the criminal court of Rome)
+has been implemented across AS networks in Italy. As is evident through
+the previous charts, most ISPs in Italy primarily block access to
+<code>www.gutenberg.org</code> by means of DNS tampering.</p><p>The following chart shares the volume of daily measurements that
+presented anomalies on 19 ISPs in Italy between May 2020 to August 2021.</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-8.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-8_hu06b48bb2e2884391abdc8da88cea908f_174624_1000x800_fit_box_3.png srcset="/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-8_hu06b48bb2e2884391abdc8da88cea908f_174624_2000x1600_fit_box_3.png 2x" title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p><strong>Source:</strong> Daily anomalous OONI measurements (from the testing of
+<code>www.gutenberg.org</code>) across ISPs in Italy between May 2020 to August
+2021.</p><p>The fact that we observe consistent anomalies over a relatively long
+timeline &ndash; on many local networks &ndash; provides a strong signal of
+blocking (reducing the likelihood of <a href=https://ooni.org/support/glossary/#false-positive>false positives</a> that
+could have occurred from temporary transient network failures).</p><p>In the first days after the decree became effective (5th May 2021), the
+number of OONI measurements reached its peak on different networks;
+after 1 year it has been concentrated on certain networks (Fastweb SpA,
+Vodafone Italia S.p.A.) on a regular basis.</p><p>The following chart presents the number of daily OONI measurements that
+presented DNS anomalies on different networks in Italy between May 2020
+to August 2021.</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-9.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-9_hu49dfe67802647d5a21e05982227e8494_172982_1000x800_fit_box_3.png srcset="/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-9_hu49dfe67802647d5a21e05982227e8494_172982_2000x1600_fit_box_3.png 2x" title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p><strong>Source:</strong> Daily OONI measurements (from the testing of <code>www.gutenberg.org</code>) that presented DNS
+anomalies across ISPs in Italy between May 2020 to August 2021.</p><p>Most anomalous measurements presented signs of DNS tampering. Meanwhile,
+a number of measurements (collected from many local networks) also
+showed that <code>www.gutenberg.org</code> was accessible at the time of testing,
+as illustrated below.</p><div><a href=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-10.png><img src=/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-10_hud6cce4f2b2cb654eb9c31a4b81564166_157423_1000x800_fit_box_3.png srcset="/post/2021-italy-blocks-gutenberg-book-publishing-website/images/image-10_hud6cce4f2b2cb654eb9c31a4b81564166_157423_2000x1600_fit_box_3.png 2x" title="Gutenberg blocked in Italy" alt="Gutenberg blocked in Italy"></a></div><p><strong>Source:</strong> Daily OONI measurements (from the testing of <code>www.gutenberg.org</code>) that presented DNS
+anomalies across ISPs in Italy between May 2020 to August 2021.</p><p>As discussed previously, the accessibility of measurements reflects the
+variance in how censorship is implemented across networks in Italy, as
+well as the fact that some OONI Probe users used different DNS resolvers
+(thereby circumventing the DNS blocks),</p><h1 id=conclusion>Conclusion</h1><p>Since May 2020, access to the Gutenberg book publishing website has been
+blocked in Italy (in compliance with a decree of the court of Rome) over
+copyright violation. The criminal lawsuit is currently ongoing and that
+does not permit access to relevant documents that would help with
+further understanding the background and situation that resulted in the
+blocking of <code>www.gutenberg.org</code>.</p><p>OONI measurement analysis shows that access to <code>www.gutenberg.org</code> is
+blocked on at least 7 AS networks in Italy. Most ISPs primarily appear
+to block access to <code>www.gutenberg.org</code> by means of <strong>DNS tampering</strong>.
+However, in implementing DNS hijacking, different ISPs serve different
+results to users. Some ISPs (like Fastweb and Tiscali) <a href="https://explorer.ooni.org/measurement/20210727T104149Z_webconnectivity_IT_12874_n1_AA3pWAE46cUUC7L5?input=https%3A%2F%2Fwww.gutenberg.org%2F">return an NXDOMAIN</a>,
+others (like TIM, Telecom Italia, and Iliad) <a href="https://explorer.ooni.org/measurement/20210430T190134Z_webconnectivity_IT_16232_n1_8ORqDEhJaxCmRk96?input=https%3A%2F%2Fwww.gutenberg.org%2F">return the IP address</a>
+<code>127.0.0.1</code>, while Vodafone Italia <a href="https://explorer.ooni.org/measurement/20210104T104452Z_webconnectivity_IT_30722_n1_O4jGiINtXvHHzLko?input=https%3A%2F%2Fwww.gutenberg.org%2F">returns the IP address</a>
+<code>83.224.65.170</code> (for HTTPS connections, this results in connection
+timeout errors; for HTTP connections, this returns a 404 error page). On
+other networks (like Wind), recent measurements suggest that
+<code>www.gutenberg.org</code> is
+<a href="https://explorer.ooni.org/measurement/20210128T104054Z_webconnectivity_IT_1267_n1_Z2GXvyDiRnsJCbYS?input=https%3A%2F%2Fwww.gutenberg.org%2F">accessible</a>.</p><p>Regardless of what is returned in the DNS response, what all ISPs in
+Italy (at least those included in this study) appear to have in common
+is the <strong>lack of transparency</strong> of the fact that access to
+<code>www.gutenberg.org</code> is intentionally blocked. When internet users in
+Italy attempt to access <code>www.gutenberg.org</code>, they view an error
+message which (unlike a <a href=https://ooni.org/support/glossary/#block-page>block page</a>) does not
+communicate that access to the site is blocked. Instead, internet users
+may think that the website is temporarily down, or that they’re unable
+to access it due to network performance issues.</p><p>As the necessity and proportionality surrounding the blocking of
+<code>www.gutenberg.org</code> remains quite unclear, further <a href=https://ooni.org/install/>OONI Probe</a> testing is needed to keep monitoring
+the accessibility of the site, and to continue collecting <a href=https://ooni.org/data/>open data</a> on its blocking.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

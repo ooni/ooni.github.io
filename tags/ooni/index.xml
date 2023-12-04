@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ooni on OONI: Open Observatory of Network Interference</title><link>/tags/ooni/</link><description>Recent content in ooni on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/ooni/index.xml" rel="self" type="application/rss+xml"/><item><title>Launch: New OONI Censorship Findings platform</title><link>/post/2023-launch-ooni-censorship-findings-platform/</link><pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate><guid>/post/2023-launch-ooni-censorship-findings-platform/</guid><description>Image: OONI Censorship Findings platform.
+Today we are thrilled to announce the launch of the OONI Censorship Findings platform!
+Internet censorship is frequently being reported around the world, but how can we verify such events with empirical evidence?
+Our new platform provides short reports on internet censorship around the world based on OONI&amp;rsquo;s open data. With the launch of the platform, we are publishing 20 reports on internet censorship that emerged in 2023.</description></item><item><title>Measure all the Things! IMC Hackathon 2023</title><link>/post/imc-hackathon-results-2023/</link><pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate><guid>/post/imc-hackathon-results-2023/</guid><description>On 23rd October 2023, right before the Internet Measurement Conference (IMC) 2023, we co-hosted an internet measurement hackathon in collaboration with the Internet Society (ISOC), M-Lab, Censored Planet and IODA.
+In this post we would like to share some of the projects that were developed as part of the hackathon. It was great to see how much was accomplished in such a short period of time!
+The day started with an introduction to the various datasets from OONI&amp;rsquo;s Arturo, Censored Planet&amp;rsquo;s Armin, IODA&amp;rsquo;s Zach, ISOC&amp;rsquo;s Amreesh and M-Lab&amp;rsquo;s Lai Yi.</description></item><item><title>Join us at the IMC 2023 Hackathon on Network Interference using Open Data</title><link>/post/2023-imc-hackathon/</link><pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate><guid>/post/2023-imc-hackathon/</guid><description>Are you attending the Internet Measurement Conference (IMC) 2023?
+Join us at the IMC Hackathon on Network Interference using Open Data on Monday, 23rd October 2023, in Montreal, Canada. The hackathon is organized by the Internet Society (ISOC), the Open Observatory of Network Interference (OONI), M-Lab and Censored Planet.
+IMC is a yearly academic conference focusing on Internet measurement and analysis. The conference is sponsored by ACM SIGCOMM.
+This IMC Hackathon will be about exploring, analyzing, and visualizing open network measurement data with a focus on identifying Internet censorship and Internet shutdown events.</description></item><item><title>Job Opening: OONI Project Manager</title><link>/post/2023-job-opening-ooni-project-manager/</link><pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate><guid>/post/2023-job-opening-ooni-project-manager/</guid><description>This job posting is now closed. Any applications received after 2023-06-28 will not be considered
+Are you a project manager interested in defending human rights on the internet? We have a job opening for you!
+The OONI team (a non-profit measuring internet censorship globally) is looking for a dedicated project manager to help us manage our software development work.
+We will be reviewing applications on a rolling basis.
+Job description By joining our team, you will help ensure that our software projects are on track, supporting a global community that relies on our tools for measuring and fighting internet censorship.</description></item><item><title>How we're improving OONI data quality: An analysis of failed measurements</title><link>/post/improving-data-quality-analysis-of-failed-measurements/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>/post/improving-data-quality-analysis-of-failed-measurements/</guid><description>In this blog post, we manually analyse failed OONI measurements to assess why they were classified as such, whether they are symptomatic of censorship, and whether they still carry helpful information for researchers. We focus on measurements from three countries (India, Pakistan, and Indonesia) and outline steps on how we will improve overall data quality.
+Background
+Methodology
+Results
+Pakistan
+India
+Indonesia
+Overall
+Limitations
+Conclusions and Future Work
+Background Web Connectivity is a network test that determines whether a web resource is accessible from the network where the user runs OONI Probe.</description></item><item><title>Year in Review: OONI in 2022</title><link>/post/ooni-in-2022/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>/post/ooni-in-2022/</guid><description>As the end of 2022 approaches, we publish this post to share some OONI highlights from the last year. We also share some of the things we’ll be working on in 2023!
+OONI Team
+OONI Probe
+New OONI Probe experiments
+New Test Lists Editor
+OONI Run improvements
+OONI Probe Web prototype
+OONI data
+1 billion measurements
+New OONI Measurement Aggregation Toolkit (MAT)
+New Circumvention Tool Reachability Dashboard
+Advancing OONI data analysis</description></item><item><title>Survey: Help shape OONI’s strategic priorities</title><link>/post/2022-survey-ooni-strategic-priorities/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>/post/2022-survey-ooni-strategic-priorities/</guid><description>OONI will celebrate its 10th anniversary on 5th December 2022!
+This is a time for celebration, but also a time for reflection: What worked well? What should we improve? What should we do differently going forward?
+The OONI community has been at the heart of our work over the past decade, and so we invite our community to help shape OONI’s strategic priorities for the future.
+Please take a few minutes to complete our survey: https://ooni.</description></item><item><title>New online OONI training course launched by Advocacy Assembly</title><link>/post/2022-ooni-training-course-advocacy-assembly/</link><pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate><guid>/post/2022-ooni-training-course-advocacy-assembly/</guid><description>We are excited to share that a free, online OONI training course (“Measuring Internet Censorship with OONI tools”) has been launched today on Small Media’s Advocacy Assembly platform!
+Through this course, you will learn how to measure internet censorship through the use of OONI tools. You will also learn how to access and interpret real-time OONI data on internet censorship around the world.
+Today, the course is available in English, Arabic, Spanish, and Farsi.</description></item><item><title>New Test Lists Editor: Contribute websites for censorship testing</title><link>/post/2022-test-lists-editor/</link><pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate><guid>/post/2022-test-lists-editor/</guid><description>Today the Open Observatory of Network Interference (OONI) team is excited to announce the public launch of our new Test Lists Editor!
+This platform enables the public to review and contribute to the lists of websites (“test lists”) that are tested for censorship by OONI Probe users around the world.
+Help the internet freedom community discover website blocks around the world by contributing through the new Test Lists Editor!</description></item><item><title>A Quick Look at QUIC Censorship</title><link>/post/2022-quick-look-quic-censorship/</link><pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate><guid>/post/2022-quick-look-quic-censorship/</guid><description>This blog post was originally published by the Open Technology Fund to disseminate Kathrin Elmenhorst&amp;rsquo;s QUIC-and-HTTP/3 censorship research as part of her ICFP fellowship with OONI.
+Last year, the new network protocol QUIC was introduced. QUIC is a general-purpose transport layer network with the goal of reducing latency compared to existing protocols. Since the introduction of QUIC, we have seen rising volumes of QUIC-based web traffic in the form of HTTP/3.</description></item><item><title>OONI’s submission for the OHCHR report on internet shutdowns and human rights</title><link>/post/2022-ooni-submission-ohchr-report-internet-shutdowns/</link><pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate><guid>/post/2022-ooni-submission-ohchr-report-internet-shutdowns/</guid><description>Currently, the 50th session of the UN Human Rights Council is taking place.
+In response to the UN High Commissioner for Human Rights’s call for submissions in support of the OHCHR report on internet shutdowns and human rights to the 50th session of the Human Rights Council in June 2022, the OONI team provided a submission with relevant information on the occurrence of mandated disruptions of access to social media and messaging platforms over the past 5 years based on empirical OONI network measurement data.</description></item><item><title>Job Opening: OONI Community Coordinator</title><link>/post/2022-job-opening-ooni-community-coordinator/</link><pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate><guid>/post/2022-job-opening-ooni-community-coordinator/</guid><description>Are you passionate about defending human rights on the internet? Are you extremely organized and enjoy supporting communities around the world? We have a job opening for you!
+The OONI team (a non-profit fighting internet censorship) is looking for a dedicated community coordinator to help grow and support the OONI community around the world.
+The application deadline is Sunday, 12th June 2022.
+Job description By joining our team, you will support our partners and global community of human rights defenders to measure and fight internet censorship.</description></item><item><title>New Launch: OONI Measurement Aggregation Toolkit (MAT)</title><link>/post/2022-ooni-mat/</link><pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate><guid>/post/2022-ooni-mat/</guid><description>Today the Open Observatory of Network Interference (OONI) team is thrilled to announce the public launch of the OONI Measurement Aggregation Toolkit (MAT)!
+The MAT is a tool that enables you to create your own custom charts based on aggregate views of real-time OONI data collected from around the world.
+Use the MAT to track internet censorship worldwide based on real-time OONI data!
+About the MAT
+What is OONI data?</description></item><item><title>Year in Review: OONI in 2021</title><link>/post/ooni-in-2021/</link><pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate><guid>/post/ooni-in-2021/</guid><description>In light of the ongoing global COVID-19 pandemic, 2021 continued to be a challenging year for everyone.
+Yet, several exciting things happened in the censorship measurement world. In this post, we share some OONI highlights from 2021, as well as some upcoming OONI projects for 2022!
+OONI Probe
+Automated OONI Probe testing
+New Debian package for OONI Probe
+New OONI Probe Command Line Interface for Linux and macOS
+New OONI Probe Experimental card</description></item><item><title>iThena integration of OONI Probe boosts censorship measurement coverage worldwide</title><link>/post/2021-ithena-boosts-ooni-measurement-coverage/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>/post/2021-ithena-boosts-ooni-measurement-coverage/</guid><description>Over the last months, the iThena project integrated OONI Probe into their platform, resulting in a major spike in OONI censorship measurement coverage around the world.
+In this blog post, we’re excited to introduce you to iThena and discuss how they helped support censorship measurement worldwide.
+About iThena
+OONI Probe integration into iThena
+About iThena iThena, developed by the Cyber-Complex Foundation, is a distributed computation and measurement project based on the Berkeley Open Infrastructure for Network Computing (BOINC) platform.</description></item><item><title>[Event Report] India, Let's Build the List</title><link>/post/2021-event-india-test-list/</link><pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate><guid>/post/2021-event-india-test-list/</guid><description>This is a guest post by The Bachchao Project, originally published here.
+The Bachchao Project in partnership with OONI hosted an online event on 9th and 10th October 2021 to update the Citizen Lab test list for India. The event, which was called “India, Lets build the list”, was organised to help strengthen community based monitoring of internet censorship in India. The event allowed experts from different fields to contribute to a curated list of websites that are relevant to India and which are regularly tested for censorship by volunteers in India.</description></item><item><title>Why Collaboration and Transparency is Key to Internet Measurement</title><link>/post/2021-internet-measurements-collaboration-transparency/</link><pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate><guid>/post/2021-internet-measurements-collaboration-transparency/</guid><description>This post was originally published on the Internet Society Pulse blog.
+With Internet shutdowns, disruptions and censorship events on the increase around the world, tracking where such events are happening and gathering evidence to help in the fight against them is becoming more and more important.
+Tracking these events is crucial because of the impact they have on society and the economy. When social media apps are blocked, for example, freedom of speech, access to information, and movement-building is hampered.</description></item><item><title>Job Opening: Mobile Developer for OONI Probe</title><link>/post/2021-job-opening-ooni-mobile-developer/</link><pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate><guid>/post/2021-job-opening-ooni-mobile-developer/</guid><description>Are you a mobile developer interested in defending human rights on the internet? We have a job opening for you!
+The OONI team (a non-profit fighting internet censorship, originally born out of the Tor Project) is looking for a dedicated mobile developer to work on OONI Probe: a free software app designed to measure internet censorship and network performance.
+The application deadline is Sunday, 31st October 2021.
+Job description If you join our team, you will lead the development of the OONI Probe mobile app, supporting human rights defenders worldwide to investigate and fight internet censorship.</description></item><item><title>OONI Partner Training 2021</title><link>/post/ooni-partner-training-2021/</link><pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate><guid>/post/ooni-partner-training-2021/</guid><description>Over the last week, we had the pleasure to host two 3-day OONI Partner Training events for our partners in Africa, Latin America, the Middle East, and Asia. As part of these events, our goal was to share OONI-specific knowledge and skills, and to collect feedback to better serve community needs.
+In this post, we share information about the training events.
+About
+Sessions
+Session 1: Information Controls Around the World (Day 1)</description></item><item><title>Year in Review: OONI in 2020</title><link>/post/ooni-in-2020/</link><pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate><guid>/post/ooni-in-2020/</guid><description>In light of the global COVID-19 pandemic, 2020 has been a challenging year for everyone.
+Yet, several exciting things happened in the censorship measurement world. In this post, we share some OONI highlights from 2020, as well as some upcoming OONI projects for 2021!
+OONI Probe
+New OONI Probe Desktop App for Windows and macOS
+New OONI Probe measurement engine
+OONI Run usability study
+Measurement methodologies
+New circumvention tool tests</description></item><item><title>Building a smart URL list system: Policy for URL prioritization</title><link>/post/ooni-smart-url-list-system/</link><pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate><guid>/post/ooni-smart-url-list-system/</guid><description>To improve the monitoring of website censorship around the world, OONI aims to create a smart URL list system, while ensuring, to the extent possible, the safety of the URL lists themselves by running them through the usual Citizen Lab URL review process. This will help ensure smarter test target selection and by extension, it will enable us &amp;ndash; and the broader internet freedom community &amp;ndash; to more effectively monitor, analyze, and respond to cases of website censorship around the world.</description></item><item><title>Let's measure the accessibility of COVID-19 websites around the world</title><link>/post/covid-19-ooni-measurement/</link><pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate><guid>/post/covid-19-ooni-measurement/</guid><description>Ensuring a free and open internet during an emergency, like the current COVID-19 pandemic, is more important than ever. However, access to information related to the coronavirus pandemic has already been censored by certain governments. China censored information on the coronavirus on Chinese social media platforms, while Venezuela’s state-owned CANTV blocked access to a coronavirus information portal last week.
+We therefore invite you to participate in a measurement campaign to check if COVID-19 sites are accessible in your country (and on the network you’re using) and to share relevant measurement data with the world.</description></item><item><title>Year in Review: OONI in 2019</title><link>/post/ooni-in-2019/</link><pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate><guid>/post/ooni-in-2019/</guid><description>As the new decade begins, we publish this post to share some OONI highlights from 2019. We also share some thoughts for 2020.
+New Apps
+Revamped OONI Probe Mobile App
+New OONI Probe Desktop App
+Near real-time publication of OONI measurements
+Revamped OONI Explorer
+OONI PostgreSQL MetaDB
+Improved measurements
+New OONI Probe tests
+New OONI Probe measurement engine
+Community
+New partnerships
+Research publications
+OONI workshops and presentations
+Community resources
+OONI-verse</description></item><item><title>OONI Highlights: 2017-2019</title><link>/post/ooni-highlights-2017-2019/</link><pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate><guid>/post/ooni-highlights-2017-2019/</guid><description>This post was originally published on the OTF website.
+Back in 2012, the Open Observatory of Network Interference (OONI) was born with OTF support to create the first open methodologies that would enable anyone around the world to measure internet censorship and other forms of network interference.
+Today, OONI comprises a global community that runs its censorship measurement software (OONI Probe) in more than 200 countries every month. Millions of measurements have been collected from tens of thousands of networks in 236 countries since 2012, all of which are openly published on OONI Explorer &amp;ndash; arguably the largest publicly available resource on internet censorship to date.</description></item><item><title>Year in Review: OONI in 2018</title><link>/post/ooni-in-2018/</link><pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate><guid>/post/ooni-in-2018/</guid><description>As the new year begins, we publish this post to share some OONI highlights from 2018. We also share some of the exciting new projects we’ll be launching in 2019!
+New partnerships
+Research publications
+Dev work behind the scenes
+Revamped OONI Probe mobile app
+Revamped OONI Explorer
+New OONI Probe desktop apps
+Probe Orchestration
+OONI workshops and presentations
+Videos
+Expanding OONI-verse
+New partnerships Our network of partners grew significantly in 2018!</description></item><item><title>Year in Review: OONI in 2017</title><link>/post/ooni-in-2017/</link><pubDate>Sat, 30 Dec 2017 00:00:00 +0000</pubDate><guid>/post/ooni-in-2017/</guid><description>As the end of 2017 approaches, we publish this blog to share some OONI highlights from the last year. We also share some of the things we’ll be working on in 2018!
+OONI Probe mobile apps
+Speed and performance tests
+OONI Run
+OONI API
+OONI Partner Gathering
+Research reports
+OONI in 2018
+OONI Probe mobile apps In February 2017, measuring internet censorship with OONI Probe suddenly became easier than ever before!</description></item></channel></rss>

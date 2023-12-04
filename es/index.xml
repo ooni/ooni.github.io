@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>/es/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="/es/index.xml" rel="self" type="application/rss+xml"/><item><title>Evidencia de censura en Internet durante el referéndum de independencia de Cataluña</title><link>/es/post/internet-censorship-catalonia-independence-referendum/</link><pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate><guid>/es/post/internet-censorship-catalonia-independence-referendum/</guid><description>Image: Catalan Independence Referendum site seized
+Note: This post was originally published here on 3rd October 2017. Below we provide a Spanish translation from the community.
+Hace dos días, Cataluña celebró un referéndum de independencia de España. Mientras el mundo espera a ver qué ocurre a continuación, publicamos este artículo para compartir evidencias de eventos recientes de censura que ocurrieron poco antes y durante el referéndum.
+Confirmamos el bloqueo de al menos 25 sitios web relacionados con el referéndum catalán mediante las técnicas de &amp;ldquo;DNS tampering&amp;rdquo; (manipulación de DNS) y &amp;ldquo;HTTP blocking&amp;rdquo; (bloqueo de HTTP), basado en medidas recogidas por &amp;ldquo;OONI Probe network&amp;rdquo; (red de sondas de OONI) desde tres redes locales.</description></item><item><title/><link>/es/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/es/about/risks/</guid><description>Riesgos: Lo que debes saber antes de ejecutar OONI Probe Note: This document was translated by Derechos Digitales (view the english version).
+Según nuestro conocimiento, ningún usuario de OONI Probe ha sufrido consecuencias como resultado del uso de nuestro software. Por lo tanto, los riesgos potenciales descritos a continuación son teóricos y especulativos. Si estás ejecutando OONI Probe en un entorno de alto riesgo, enfáticamente te recomendamos a leer toda la documentación a continuación.</description></item><item><title/><link>/es/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/es/support/ooni-outreach-kit/</guid><description>La participación comunitaria es el corazón del trabajo de OONI, pues los datos sobre la censura en internet dependen de las mediciones OONI Probe que ejecutan personas alrededor del mundo.
+¿Estás interesado en sumarte a las comunidades con la medición de la censura de OONI?
+El kit de divulgación incluye materiales que le recomendamos usar como parte de los esfuerzos de participación comunitaria de OONI.
+Folletos de OONI Hoja informativa de OONI Probe Hoja informativa del OONI Explorer Folleto sobre la censura en internet Diapositivas del taller de OONI Recursos de OONI Folletos de OONI Proporcionamos dos folletos de OONI que incluyen información acerca del uso de herramientas y datos de OONI para investigar la censura de Internet alrededor del mundo.</description></item><item><title>OONI Glosario</title><link>/es/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/es/support/glossary/</guid><description>Este documento fue traducido al español por Katherine Pennacchio y Mariengracia Chirinos.
+Documento original:
+English, OONI Glossary Este glosario contiene breves explicaciones de los términos utilizados en las aplicaciones, metodologías e informes de investigación de OONI.
+Si desea incluir más términos en este glosario, envíenos una solicitud o un correo electrónico.
+API
+AS
+ASN
+BGP
+Lista de bloqueos
+Página bloqueada
+Almacenamiento en caché
+Herramientas para evadir la censura
+Cliente
+Canal de procesamiento de datos</description></item><item><title>Preguntas frecuentes (FAQ)</title><link>/es/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/es/support/faq/</guid><description>Este documento fue traducido al español por Katherine Pennacchio y Mariengracia Chirinos.
+Documento original:
+English, Frequently Asked Questions (FAQ) Esta sección de preguntas frecuentes pretende responder a las preguntas que con más frecuencia nos plantea la comunidad.
+¿Hay alguna otra pregunta que le gustaría que tratáramos? Háganoslo saber.
+Sobre OONI
+¿Qué es OONI?
+¿Por qué OONI?
+¿Qué hace OONI?
+¿Por qué medir la censura en Internet?
+¿Cómo se financia OONI?</description></item></channel></rss>

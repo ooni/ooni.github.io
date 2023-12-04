@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>report on OONI: Open Observatory of Network Interference</title><link>/pt/categories/report/</link><description>Recent content in report on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>pt</language><lastBuildDate>Fri, 06 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="/pt/categories/report/index.xml" rel="self" type="application/rss+xml"/><item><title>WhatsApp bloqueado (outra vez) no Brasil</title><link>/pt/post/brazil-whatsapp-block/</link><pubDate>Fri, 06 May 2016 00:00:00 +0000</pubDate><guid>/pt/post/brazil-whatsapp-block/</guid><description>Pais: Brasil
+ISPs investigados: Tim mobile (AS 26615), Oi landline (AS 7738)
+Método de censura: DNS Hijacking
+OONI testes: HTTP Requests, DNS Consistency
+Periodo da medição: 2016-05-02 - 2016-05-03
+Translation by: Kornelia Friesch
+Desde que o [WhatsApp implantou a codificação end-to-end (end-to-end encryption)] (https://www.whatsapp.com/security/) para proteger a privacidade e segurança dos, em nível mundial, um bilhão de usuários, manifestaram-se, alguns casos de censura ordenados por governos irritando-se pelo fato de não terem mais acesso à comunicação privada dos cidadãos.</description></item></channel></rss>

@@ -1,0 +1,149 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Measuring DoT/DoH Blocking Using OONI Probe: A Preliminary Study | OONI</title>
+<link rel=canonical href=https://ooni.org/post/2022-doh-dot-paper-dnsprivacy21/><meta name=description content="This research paper examines encrypted DNS blocking in Iran, China, and Kazakhstan."><meta property="og:title" content="Measuring DoT/DoH Blocking Using OONI Probe: A Preliminary Study"><meta property="og:description" content="This research paper examines encrypted DNS blocking in Iran, China, and Kazakhstan."><meta property="og:type" content="article"><meta property="og:url" content="/post/2022-doh-dot-paper-dnsprivacy21/"><meta property="article:published_time" content="2022-06-17T00:00:00+00:00"><meta property="article:modified_time" content="2022-06-17T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Measuring DoT/DoH Blocking Using OONI Probe: A Preliminary Study"><meta name=twitter:description content="This research paper examines encrypted DNS blocking in Iran, China, and Kazakhstan."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Measuring DoT/DoH Blocking Using OONI Probe: A Preliminary Study</h1><div class=byline><span class=author>Simone Basso</span>
+<span class=date>2022-06-17</span></div><p>When you enter a URL such as <code>https://example.com/</code>, under the
+hood, your web browser resolves the <code>example.com</code> domain to one or
+more IP addresses using the Domain Name System (DNS), a set of
+federated servers and protocols providing this name-to-IP-address
+mapping. For example, as of 2022-06-16, <code>example.com</code> resolves to
+the <code>93.184.216.34</code> (IPv4) and <code>2606:2800:220:1:248:1893:25c8:1946</code>
+(IPv6) addresses. Once it knows the IP addresses for the domain,
+the browser then uses them to fetch the requested webpage. Conceptually,
+the browser tries the IP addresses in sequence until it finds one
+that works. If no returned IP address works, the request fails.
+Therefore, domain name lookups are key to browsing and, incidentally,
+are also key to website censorship and surveillance.</p><p>Historically, browsers and tools have always performed DNS resolution
+using an unencrypted protocol using UDP on port <code>53</code>. Because such
+a protocol is not encrypted, censors could tamper with domain name
+resolution or observe and log the domain names you resolve.</p><p>The Internet community has been working to secure domain name
+resolution for a few years by proposing and implementing encrypted
+DNS protocols. The <a href=https://datatracker.ietf.org/doc/html/rfc7858>DNS over
+TLS</a> protocol, also
+known as DoT, suggests using Transport Layer Security (TLS) to
+encrypt and authenticate domain name lookups. In a similar vein,
+the <a href=https://datatracker.ietf.org/doc/html/rfc8484>DNS over HTTPS</a>
+protocol, also known as DoH, proposes to use encrypted HTTP (HTTPS)
+to keep your domain name lookups safe from tampering and prying
+eyes.</p><p>In other words, these two new protocols increase users&rsquo; privacy and
+provide a mechanism to bypass ordinary domain name resolution
+censorship. Yet, censors could block attempts to use DoT or DoH,
+thus preventing users from reaping their benefits in terms of extra
+privacy and censorship circumvention.</p><p>To investigate the blocking of DoT and DoH, last year, we designed
+the
+<a href=https://github.com/ooni/spec/blob/master/nettests/ts-028-dnscheck.md>dnscheck</a>
+network experiment and <strong>we conducted a one-month-long <code>dnscheck</code>
+measurement campaign in Kazakhstan, Iran, and China</strong>. We documented
+this work in the <strong><a href=https://www.ndss-symposium.org/wp-content/uploads/dnspriv21-02-paper.pdf>Measuring DoT/DoH Blocking Using OONI Probe: a
+Preliminary
+Study</a></strong>
+research paper, presented at the Network and Distributed System
+Security Symposium (NDSS'21) in the context of the <a href=https://www.ndss-symposium.org/ndss-program/dns-privacy-2021/>DNS Privacy
+Workshop</a>.</p><p>Because we are incrementally rolling out dnscheck to all OONI Probe
+users, this seems to be a good moment in time to refer to the
+research paper, explain how <code>dnscheck</code> works, and summarize the main
+findings of our measurement campaign. To know more about this topic,
+continue reading this blog post, refer to the <a href=https://www.ndss-symposium.org/wp-content/uploads/dnspriv21-02-paper.pdf>research paper</a>,
+or watch me presenting the paper at the DNS Privacy Workshop:</p><iframe width=560 height=315 src="https://www.youtube-nocookie.com/embed/wggz3CcctO0?start=1859" frameborder=0 allow="autoplay; encrypted-media" allowfullscreen></iframe><h2 id=how-dnscheck-works>How dnscheck works</h2><p>Because we are measuring the blocking of encrypted DNS services,
+what matters to <code>dnscheck</code> is not the name we would like to resolve
+(<code>example.com</code> in the example above). Instead, what matters is the
+specific DoT or DoH service to measure.</p><p>DoH is DNS over HTTPS; therefore, users access DoH services by URL.
+For example, <code>https://1.1.1.1/dns-query</code> is the URL identifying
+Cloudflare&rsquo;s public DoH resolver. While this specific URL contains
+an IP address (<code>1.1.1.1</code>), DoH URLs have domain names in other
+cases. For example, an alternative URL for Cloudflare&rsquo;s public DoH
+resolver is <code>https://dns.cloudflare.com/dns-query</code>.</p><p>DoT is similar to DoH in that a service endpoint could contain an
+IP address or a domain name. However, unlike DoH, you generally
+identify DoT service endpoints by their IP address and port (e.g.,
+<code>8.8.4.4:853</code>) or by their domain name and port (e.g., <code>dns.google:853</code>).</p><p>In short, regardless of whether we want to measure DoT or DoH, there
+are two cases: (1) the service endpoint contains a domain name; (2)
+the service endpoint contains an IP address.</p><p>The first case, i.e., when the service endpoint contains a domain
+name, is more complex to measure. We need to use the ordinary
+unencrypted DNS to map the domain name into a list of IP addresses.
+Once that step is complete, we can measure each IP address using
+either DoT or DoH.</p><p>Perhaps an example could clarify the process.</p><p>Suppose you ask <code>dnscheck</code> to measure <code>https://dns.google/dns-query</code>.
+Then, <code>dnscheck</code> would notice that <code>dns.google</code> is a domain name
+and would use the unencrypted DNS to obtain IP addresses for
+<code>dns.google</code>. Suppose this operation is successful and yields
+<code>8.8.8.8</code> and <code>8.8.4.4</code>. Then, <code>dnscheck</code> will measure both
+<code>https://8.8.8.8/dns-query</code> and <code>https://8.8.4.4/dns-query</code>.</p><p>The second case is more immediate. If you ask <code>dnscheck</code> to measure
+<code>https://8.8.8.8/dns-query</code>, it will notice that <code>8.8.8.8</code> is already
+an IP address, and it will just measure <code>https://8.8.8.8/dns-query</code>.</p><p>What happens, though, if there&rsquo;s DNS blocking of the <code>dns.google</code>
+domain name?</p><p>In its most simplistic configuration, <code>dnscheck</code> would conclude
+that the service endpoint&rsquo;s domain name is blocked and will stop
+the measurement. However, it is also possible to tell <code>dnscheck</code>
+what are known-valid IP addresses for the domain. In such a case,
+<code>dnscheck</code> will continue the measurement using the known-valid IP
+addresses to check for additional censorship of the given service
+endpoint. We took advantage of this opportunity to provide a more
+comprehensive censorship assessment for the measurement campaign
+in Kazakhstan, Iran, and China.</p><p>Returning to the measurement algorithm, once <code>dnscheck</code> knows the
+IP address(es) of a service endpoint, it measures each IP address.
+In practice, it means that, for each IP address, <code>dnscheck</code> performs
+the following operations:</p><ol><li><p>Establish a TCP connection to the given IP address and port (for
+the above <code>https://8.8.8.8/dns-query</code> example, that would be <code>8.8.8.8</code>
+on port <code>443</code>);</p></li><li><p>Create a TLS channel over the TCP connection
+(DNS-over-TLS uses TLS and DNS-over-HTTPS also uses TLS because
+HTTPS is HTTP over TLS);</p></li><li><p>Create a DNS query for <code>example.com</code> and send the query using
+the rules defined by the specific protocol (DNS-over-TLS uses a
+straightforward algorithm for sending DNS messages while DNS-over-HTTPS
+encapsulates messages inside HTTP messages, so it is a bit more
+complex);</p></li><li><p>Receive from the server the corresponding DNS response.</p></li></ol><p>We say the experiment is successful (for a given IP address and
+port) if we complete all these steps. If the first step fails, we
+say there is TCP/IP blocking. If the second step fails, there is
+TLS blocking. If the third or fourth step fails, we say there is
+TLS interference after establishing a TLS session (aka &ldquo;interference
+after the TLS handshake&rdquo;).</p><p>It is important to note that a given service endpoint could be
+partially blocked. For example, there could be a case where
+<code>https://dns.google/dns-query</code> is blocked when using the <code>8.8.8.8</code>
+IP address and works as intended when using <code>8.8.4.4</code>.</p><h2 id=summary-of-the-main-findings>Summary of the main findings</h2><p>The general idea of this measurement campaign was to find DoT/DoH
+service endpoints blocking in selected countries. So, in December
+2020 and January 2021, we compiled a list of 123 public DoT/DoH
+services and, with help from volunteer users, we ran measurements
+in Kazakhstan (<a href=https://ipinfo.io/AS48716>AS48716</a>), Iran
+(<a href=https://ipinfo.io/AS197207>AS197207</a>), and China
+(<a href=https://ipinfo.io/AS45090>AS45090</a>).</p><p>Most endpoints failed or succeeded consistently. That is, if an
+endpoint failed for a given OONI Probe user, it failed all the time
+with the same failure. There were just a couple of exceptions to
+this general trend, which are documented in the research paper.</p><p>We were surprised to discover that there was no interference when
+mapping the service endpoint&rsquo;s domain name (e.g., <code>dns.google</code>) to
+IP addresses (e.g., <code>8.8.8.8</code> and <code>8.8.4.4</code>). The only exception
+to this trend was Iran, where <code>dns.adguard.com</code> mapped to <code>10.10.34.36</code>,
+a well-known private IP address used for censoring.</p><p>Blocking, instead, focused on preventing TCP or TLS communication
+between OONI Probe and the IP address(es) used by DoT/DoH services.
+The following table summarizes our findings in terms of blocking
+by protocol:</p><table><thead><tr><th></th><th>Kazakhstan</th><th>Iran</th><th>China</th></tr></thead><tbody><tr><td>Successful DoT lookups</td><td>8157 (95%)</td><td>1156 (50%)</td><td>4332 (93%)</td></tr><tr><td>Successful DoH lookups</td><td>16466 (82%)</td><td>4824 (92%)</td><td>9414 (89%)</td></tr></tbody></table><p>As you can see, <em>many</em> lookups succeeded. <strong>Blocking was the most
+aggressive in Iran: 50% of the DoT endpoints were not working</strong>. It
+seems reasonable to see more censorship in the Iranian network we
+tested than in the other two networks. In Iran, we ran measurements
+from one of the most popular mobile networks, while we used VPSs
+in China and Kazakhstan.</p><p>In terms of blocking by the company providing the service, <strong>Cloudflare
+was the most blocked company</strong> in the pack in several cases (and was
+more frequently blocked than other companies such as Google and
+Quad9):</p><table><thead><tr><th>Company</th><th>KZ DoT</th><th>KZ DoH</th><th>IR DoT</th><th>IR DoH</th><th>CN DoT</th><th>CN DoH</th></tr></thead><tbody><tr><td>Cloudflare</td><td>408 (91%)</td><td>3109 (88%)</td><td>158 (14%)</td><td>52 (13%)</td><td>230 (74%)</td><td>532 (47%)</td></tr><tr><td>Others</td><td>38 (9%)</td><td>413 (12%)</td><td>976 (86%)</td><td>337 (87%)</td><td>81 (26%)</td><td>590 (53%)</td></tr></tbody></table><p>Cloudflare blocking was especially apparent in the Kazakhstan network
+we tested. In the other networks, especially in Iran, blocking is
+more spread across companies. Again, this probably happens because
+we measured from a consumer-facing network in Iran.</p><p>Each network implemented distinct blocking policies. The following
+table summarizes the reason for blocking for blocked DoH lookups:</p><table><thead><tr><th>Interference</th><th>Kazakhstan</th><th>Iran</th><th>China</th></tr></thead><tbody><tr><td>timeout after the TLS handshake</td><td>2701 (77%)</td><td>160 (41%)</td><td>3 (~0%)</td></tr><tr><td>TLS handshake timeout</td><td>331 (9%)</td><td>1 (~0%)</td><td>61 (5%)</td></tr><tr><td>TCP connect timeout</td><td>397 (11%)</td><td>72 (19%)</td><td>813 (72%)</td></tr><tr><td>Reset during TLS handshake</td><td>1 (~0%)</td><td>77 (20%)</td><td>152 (14%)</td></tr><tr><td>Other</td><td>92 (3%)</td><td>79 (20%)</td><td>93 (9%)</td></tr></tbody></table><p>In China, there&rsquo;s a prevalence of TCP/IP blocking. Iran and Kazakhstan,
+there&rsquo;s interference with the TLS sessions.</p><p>In the Kazakhstan network we tested, TLS interference seemed to
+depend on the name of the service we&rsquo;re accessing as shown by the
+following table (which shows DoH measurements):</p><table><thead><tr><th>Address</th><th>Server Name</th><th>Result</th><th>Frequency</th></tr></thead><tbody><tr><td>2606:4700::6810:f8f9</td><td>cloudflare-dns.com</td><td>Timeout after the TLS handshake</td><td>85 (99%)</td></tr><tr><td>2606:4700::6810:f8f9</td><td>cloudflare-dns.com</td><td>Connect timeout</td><td>1 (1%)</td></tr><tr><td>2606:4700::6810:f8f9</td><td>mozilla.cloudflare-dns.com</td><td>Success</td><td>88 (100%)</td></tr></tbody></table><p>These measurements used the same IPv6 address (<code>2606:4700::6810:f8f9</code>).
+However, using <code>cloudflare-dns.com</code> causes a failure, while using
+<code>mozilla.cloudflare-dns.com</code> works. Because the failure happens (in
+most cases) when creating or using a TLS session (i.e., after the
+TLS handshake), this seems to be a case of <a href=https://en.wikipedia.org/wiki/Server_Name_Indication>Server Name Indication</a> based blocking.</p><p>Conversely, in Iran, we confirmed <a href=https://ooni.org/post/2020-iran-dot/>our previous
+result</a> showing that DoT
+traffic is blocked during the TLS handshake regardless of the name
+of the service:</p><table><thead><tr><th>Address</th><th>Server Name</th><th>Result</th><th>Frequency</th></tr></thead><tbody><tr><td>8.8.4.4</td><td>8888.google</td><td>TLS handshake timeout</td><td>40 (100%)</td></tr><tr><td>8.8.4.4</td><td>null</td><td>TLS handshake timeout</td><td>40 (100%)</td></tr><tr><td>8.8.8.8</td><td>8888.google</td><td>Success (TLSv1.3)</td><td>40 (100%)</td></tr></tbody></table><p>The first and the second row show that, with <code>8.8.4.4</code>, using
+<code>8888.google</code> as the server name or just testing without a server
+name yields the same result: a timeout during the TLS handshake.
+Yet, using another IP address (<code>8.8.8.8</code>) with the <code>8888.google</code>
+server name does not cause any blocking, suggesting there was
+<code>8.8.4.4</code>-specific blocking.</p><h2 id=concluding-remarks>Concluding remarks</h2><p>As far as we know, this research was the first account of DoT
+and DoH blocking. Since our initial measurement campaign in late 2020,
+<a href=https://arxiv.org/pdf/2202.00663.pdf>other researchers started studying encrypted DNS blocking</a>. As <code>dnscheck</code> is now
+integrated into <a href=https://ooni.org/install/>OONI Probe</a>, we can continue to collect DoT/DoH blocking
+information and hopefully produce more comprehensive
+analysis of the phenomenon in the future.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

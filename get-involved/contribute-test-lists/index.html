@@ -1,0 +1,110 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Test Lists: Contribute websites for censorship testing | OONI</title>
+<link rel=canonical href=https://ooni.org/get-involved/contribute-test-lists/><meta name=description content="This documentation provides information related to updating the Citizen Lab test lists for website censorship measurement."><meta property="og:title" content="Test Lists: Contribute websites for censorship testing"><meta property="og:description" content="This documentation provides information related to updating the Citizen Lab test lists for website censorship measurement."><meta property="og:type" content="article"><meta property="og:url" content="/get-involved/contribute-test-lists/"><meta name=twitter:card content="summary"><meta name=twitter:title content="Test Lists: Contribute websites for censorship testing"><meta name=twitter:description content="This documentation provides information related to updating the Citizen Lab test lists for website censorship measurement."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="col content"><h1 class=article-title>Test Lists: Contribute websites for censorship testing</h1><p>Censorship findings are only as interesting as the sites and services that you test.</p><p>You can contribute websites for censorship testing through the following platforms:</p><ul><li><a href=https://test-lists.ooni.org/>Test Lists Editor</a> (<a href=https://ooni.org/support/test-lists-editor>guide</a>)</li><li><a href=https://github.com/citizenlab/test-lists>GitHub</a> (<a href=https://ooni.org/support/github-test-lists>guide</a>)</li></ul><p>Before contributing, please read the documentation below to learn all about test lists. We also recommend reading <strong><a href=https://netalitica.com/wp-content/uploads/2021/10/Guideline-for-Test-List-Researchers-V7.pdf>Netalitica&rsquo;s Guidelines for Test List Researchers</a></strong>.</p><ul><li><p><a href=#about-test-lists>About test lists</a></p><ul><li><p><a href=#what-are-test-lists>What are test lists?</a></p></li><li><p><a href=#what-aren-t-test-lists>What aren&rsquo;t test lists?</a></p></li><li><p><a href=#types-of-test-lists>Types of test lists</a></p></li></ul></li><li><p><a href=#contributing-to-test-lists>Contributing to test lists</a></p><ul><li><p><a href=#why-contribute-to-test-lists>Why contribute to test lists?</a></p></li><li><p><a href=#who-can-contribute-to-test-lists>Who can contribute to test lists?</a></p></li><li><p><a href=#how-to-contribute-to-test-lists>How to contribute to test lists?</a></p></li><li><p><a href=#what-does-contributing-to-test-lists-involve>What does contributing to test lists involve?</a></p></li></ul></li><li><p><a href=#test-list-research>Test list research</a></p><ul><li><p><a href=#background-research>Background research</a></p></li><li><p><a href=#drawing-inspiration-from-30-categories>Drawing inspiration from 30 categories</a></p></li><li><p><a href=#research-on-previous-cases-of-reported-censorship>Research on previous cases of reported censorship</a></p></li></ul></li></ul><h1 id=about-test-lists>About test lists</h1><h2 id=what-are-test-lists>What are test lists?</h2><p>Test lists are <a href=https://github.com/citizenlab/test-lists/tree/master/lists>lists of websites</a>
+that are tested for censorship by <a href=https://ooni.org/install/>OONI Probe</a> and tools developed by other
+projects, such as <a href=https://censoredplanet.org/projects>Censored Planet</a>.</p><p>Since 2014, these lists have been <a href=https://github.com/citizenlab/test-lists>publicly hosted on GitHub</a> by the <a href=https://citizenlab.ca/>Citizen Lab</a> with the goal of encouraging community review and contributions. As a result, these lists have been dynamically
+updated on an ongoing basis over the years.</p><p>Test lists include a wide range of different types of websites based on
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 standardized categories</a>
+(such as news media, political criticism, and human rights content).
+Since these lists are tested by <a href=https://ooni.org/install/>OONI Probe</a> users on local networks (who may
+experience bandwidth constraints), they usually only include up to 1,000
+URLs.</p><p>While test lists usually include <em>some</em> websites that are known to be
+blocked, many sites are not censored locally when they are added to test
+lists. With test lists, we aim to <strong>discover website censorship</strong> (by
+identifying the blocking of sites that were previously accessible), not
+only confirm it.</p><h2 id=what-arent-test-lists>What aren&rsquo;t test lists?</h2><p><strong>1. A list of thousands of sites scraped from Alexa</strong></p><p>Creating (or contributing to existing) test lists is not a question of scraping
+“the top 1,000 sites” from Alexa. Rather, it requires <em>research</em>, an understanding
+of a country’s social and political environment, and how that may motivate
+information controls.</p><p><strong>2. Blocklists</strong></p><p>Some governments occasionally publish official blocklists (or they get leaked)
+which contain lists of websites that are legally prohibited in a country.
+Internet Service Providers (ISPs) are then ordered to block access to all
+websites included in such blocklists, commonly involving hundreds (or thousands)
+of URLs that contain content illegal in that country (such as gambling, file sharing, adult content, etc.).</p><p>Test lists, on the other hand, are <em>not</em> meant to be limited to blocked websites.
+Rather, they serve the purpose of monitoring when policies change - what&rsquo;s most
+likely to be blocked or unblocked. While test lists may include <em>some</em> websites
+that are known to be blocked (and that is useful for detecting censorship
+techniques adopted by ISPs), most sites are not censored locally when they are
+added to test lists. The aim of using the test list methodology is to not only
+identify censorship, but to also confirm the accessibility of sites. Unlike
+blocklists (which can include thousands of URLs), each test list is usually
+limited to up to 1,000 sites (due to the aforementioned bandwidth constraints).</p><h2 id=types-of-test-lists>Types of test lists</h2><p>There are 2 categories of test lists:</p><ul><li><p><strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>Global test list</a></strong>:
+Includes a wide range of internationally relevant websites (e.g.
+facebook.com), most of which are in English. This list is tested
+by <strong>all</strong> <a href=https://ooni.org/install/>OONI Probe</a> users
+globally.</p></li><li><p><strong><a href=https://github.com/citizenlab/test-lists/tree/master/lists>Country-specific test lists</a></strong>:
+Each list includes websites that are only relevant to a specific
+country (e.g. Brazilian media websites), many of which are in
+local languages. <a href=https://ooni.org/install/>OONI Probe</a> users
+test the list of the country that they are running tests from
+(e.g. OONI Probe users in Brazil test the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/br.csv>Brazilian test list</a>).</p></li></ul><p>To maximize the breadth of coverage while reducing research bias, test list URLs
+are categorized based on <strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 diverse categories</a></strong>. These categories range from news media, culture, and human rights issues to more provocative or objectionable
+categories (such as pornography and hate speech).</p><p><strong>Note:</strong> The <strong>MISC (Miscellaneous)</strong> category is temporarily included for
+non-categorized URLs (such as those measured through custom, manual testing).
+Please refrain from using the MISC category when categorizing URLs in the
+test lists.</p><h1 id=contributing-to-test-lists>Contributing to test lists</h1><h2 id=why-contribute-to-test-lists>Why contribute to test lists?</h2><p>Discovering cases of website blocking (such as the current <a href="https://explorer.ooni.org/measurement/20220517T140500Z_webconnectivity_RU_48642_n1_DC1jDel4Ougo1Zpo?input=http%3A%2F%2Fwww.bbc.com%2Fnews">blocking of bbc.com in Russia</a>)
+really depends on <em>which</em> websites you test.</p><p>For example, if a specific human rights website is blocked in a country,
+but it’s not included in a relevant test list, it won’t get tested by
+tools like <a href=https://ooni.org/install/>OONI Probe</a>, which means that
+relevant test results will not be <a href=https://ooni.org/data/>openly published</a>.</p><p>You can play an important role in ensuring that your country’s test list
+includes websites that are worth monitoring for censorship.</p><p>Updating test lists requires <strong>local knowledge</strong>, an understanding of
+which websites are relevant, commonly accessed, and more likely to be
+blocked in light of a country’s social and political environment.</p><p>Websites constantly change (e.g. domains expire, domains change, new
+websites are created), and what is sensitive to blocking changes over
+time. It is therefore important that test lists are reviewed and updated
+regularly.</p><p>The OONI Probe results of website testing are automatically published as
+<a href=https://ooni.org/data/>open data</a> in real-time.</p><h2 id=who-can-contribute-to-test-lists>Who can contribute to test lists?</h2><p>Anyone can contribute to test lists &ndash; no technical skills or knowledge is
+required. In fact, social scientists, researchers, and human rights defenders
+are often best-positioned to contribute to test lists (since identifying
+interesting/relevant websites for censorship testing often requires an
+understanding of a country&rsquo;s social and political environment).</p><p>If you are an organization interested in <em>regularly</em> contributing to the test
+lists of your country or region, please <a href=https://ooni.org/about/#contact>reach out to us</a>. We are always happy to collaborate on the
+review and update of test lists.</p><p>We also recommend keeping an eye out for <a href=https://netalitica.com/more-jobs/>paid research opportunities by Netalitica</a> to update test lists.</p><h2 id=how-to-contribute-to-test-lists>How to contribute to test lists?</h2><p>You can contribute to test lists through the following platforms:</p><ul><li><a href=https://test-lists.ooni.org/>Test Lists Editor</a> (<a href=https://ooni.org/support/test-lists-editor>guide</a>)</li><li><a href=https://github.com/citizenlab/test-lists>GitHub</a> (<a href=https://ooni.org/support/github-test-lists>guide</a>)</li></ul><h2 id=what-does-contributing-to-test-lists-involve>What does contributing to test lists involve?</h2><p>As part of reviewing a test list, you can:</p><ul><li><p><strong>Add</strong> websites;</p></li><li><p><strong>Edit</strong> existing entries (update the URL, update the category, add relevant
+context in the Notes);</p></li><li><p><strong>Delete</strong> existing entries (for example, if the domain has expired or is
+otherwise no longer relevant).</p></li></ul><h1 id=test-list-research>Test list research</h1><p>To identify URLs worth adding to test lists, we recommend starting off with
+relevant test list research.</p><h2 id=background-research>Background research</h2><p>Understanding information controls in a country requires an understanding of the
+country itself. Some background research on the country in question is therefore
+essential to identifying websites that are worth testing for censorship.</p><p>In-depth PhD style research is not required. In fact, many online resources with
+country profiles that you can refer to already exist, such as <a href=https://www.cia.gov/library/publications/the-world-factbook/>The World Factbook</a>, the <a href=https://opennet.net/research/profiles>OpenNet Initiative</a>, and <a href=https://freedomhouse.org/>Freedom House</a>, among others. Your
+background research probably shouldn’t be limited to such resources. Rather,
+these resources can serve as a <em>starting point</em> for identifying sites to add to
+test lists (in which case, you can even refer to a country’s <a href=https://en.wikipedia.org/wiki/Lists_of_countries_and_territories>Wikipedia</a> page).</p><p>Knowing that a country has many ethnic minorities, for example, is a starting
+point for subsequently exploring which sites represent the voices of those
+groups. Due to their sensitive nature, such sites might be more likely to get
+blocked (now or in the future), and so it might make sense to add them to your
+test list. By reading news websites from that country, you may come across the
+names of political activists. Similarly, it may be worth exploring whether those
+activists have websites and adding them to your test list.</p><p>By researching the main economic, political, and social issues of a country, you
+can search for a variety of different types of sites that address them and
+present different opinions. Those are the types of sites that are worth adding
+to test lists to monitor their accessibility over time. The process of
+identifying sites to add to your test list can also be guided by the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 categories</a> of the test list methodology.</p><h2 id=drawing-inspiration-from-30-categories>Drawing inspiration from 30 categories</h2><p>The Citizen Lab’s test list methodology relies on <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 diverse categories</a> for
+URLs. These categories serve the following main purposes:</p><ul><li><p>Ensuring that the testing sample of URLs is as diverse as possible</p></li><li><p>Enabling the characterization of information controls</p></li></ul><p>The more diverse the testing sample, the more likely researchers are to identify
+different forms of internet censorship. By categorizing URLs, researchers can
+more easily characterize internet censorship depending on what is blocked. In
+Iran, for example, the breadth and scale of internet censorship appears to be
+pervasive since many <a href=https://ooni.org/post/iran-internet-censorship/#key-findings>different types of websites</a> were found to be <a href=https://ooni.org/post/iran-internet-censorship/>blocked</a>.</p><p>When working on a test list, you can refer to the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 categories</a> and search for
+local websites that fall under each one. Ideally, a test list includes multiple
+URLs for each of the 30 categories, though we recognize that this is not always
+possible.</p><h2 id=research-on-previous-cases-of-reported-censorship>Research on previous cases of reported censorship</h2><p>Has censorship been reported in the country whose test list you&rsquo;re updating? If
+so, which websites were reportedly blocked?</p><p>As part of your research for identifying sites to add to a test list, it’s
+important to explore whether previous censorship events have been reported in
+the country. Those sites might <em>still</em> be blocked, even if their ban has been
+lifted. We, for example, found <a href=https://ooni.org/post/indonesia-internet-censorship/>Vimeo and Reddit to be blocked in Indonesia</a>, even though their ban was lifted more than two years ago. Furthermore, certain sites might only be blocked on certain networks, rather
+than on a nationwide level. By adding sites that have reportedly been blocked to
+your test list, <a href=https://ooni.org/install/>OONI Probe</a> users can collect network measurement data examining
+the accessibility of those sites over time (and may even be able to corroborate
+media reports).</p><p>Previous censorship cases can also help with identifying:</p><ul><li><p>The <strong>types of information</strong> that the country’s government censors (for example, if
+political opposition sites were blocked in the past, it might be worth adding
+them to test lists to examine if they’re blocked in the present or future);</p></li><li><p>The <strong>motivations</strong> behind censorship (for example, if a government has previously
+blocked sites for political reasons, it may be worth searching for other sites
+that could trigger politically-motivated censorship).</p></li></ul><p>To identify censorship cases, you can start off by searching for relevant media
+articles (where you’re likely to find the most recent cases). In addition to
+international news websites, it’s important to search for censorship reports
+through local media outlets as well. You can then refer to a variety of research
+reports published by a number of digital rights organizations, including (but
+not limited to) <a href=https://citizenlab.ca/category/research/>Citizen Lab</a>, <a href=https://freedomhouse.org/reports>Freedom on the Net (Freedom House)</a>, <a href=https://opennet.net/research/profiles>OpenNet Initiative</a>, <a href=https://rsf.org/en/ranking>Reporters Without Borders</a>, and <a href=https://www.article19.org/>ARTICLE 19</a>.</p><p>Given that economic, social, and political systems change over time (and the
+motivations of governments change along with them), it’s important to update
+test lists on an ongoing basis through the above recommended practices.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

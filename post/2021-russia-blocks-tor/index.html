@@ -1,0 +1,247 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Russia started blocking Tor | OONI</title>
+<link rel=canonical href=https://ooni.org/post/2021-russia-blocks-tor/><meta name=description content="This report shares OONI measurements on the blocking of Tor and the Tor Project's website in Russia."><meta property="og:title" content="Russia started blocking Tor"><meta property="og:description" content="This report shares OONI measurements on the blocking of Tor and the Tor Project's website in Russia."><meta property="og:type" content="article"><meta property="og:url" content="/post/2021-russia-blocks-tor/"><meta property="og:image" content="/post/2021-russia-blocks-tor/images/01.png"><meta property="article:published_time" content="2021-12-17T00:00:00+00:00"><meta property="article:modified_time" content="2021-12-17T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/post/2021-russia-blocks-tor/images/01.png"><meta name=twitter:title content="Russia started blocking Tor"><meta name=twitter:description content="This report shares OONI measurements on the blocking of Tor and the Tor Project's website in Russia."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Russia started blocking Tor</h1><div class=byline><span class=author>Maria Xynou, Arturo Filastò</span>
+<span class=date>2021-12-17</span></div><p>On 1st December 2021, some Internet Service Providers (ISPs) in Russia
+started
+<a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">blocking</a>
+access to the <a href=https://www.torproject.org/>Tor</a> anonymity network.</p><p>In this report, we share <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">OONI network measurement data</a>
+on the blocking of the Tor network and <code>www.torproject.org</code> in Russia.</p><ul><li><p><a href=#about-tor>About Tor</a></p></li><li><p><a href=#methods>Methods</a></p></li><li><p><a href=#findings>Findings</a></p><ul><li><p><a href=#blocking-of-the-tor-network>Blocking of the Tor network</a></p></li><li><p><a href=#blocking-of-the-tor-project-website>Blocking of the Tor Project website</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li><li><p><a href=#acknowledgements>Acknowledgements</a></p></li></ul><h1 id=about-tor>About Tor</h1><p>If you want real privacy and anonymity on the internet, the answer is
+simple: use <a href=https://www.torproject.org/download/>Tor</a>.</p><p>This is not a question of promotion, but a question of <strong>software
+design</strong>: Tor software is designed to bounce communications around a
+distributed network of relays (run by volunteers around the world),
+thereby hiding its users’ IP addresses and enabling them to circumvent
+online tracking and internet censorship.</p><p>When you use <a href=https://www.torproject.org/download/>Tor</a>, the online
+services that you connect to don’t see your real IP address, but some
+other IP address of the Tor relay you are exiting from. As a result,
+it’s harder for governments and corporations to track your online
+activity, and you can circumvent internet censorship in your country
+because you look like you’re connecting from a different location (where
+that service may not be blocked).</p><p>In short, the Tor network is uniquely designed in such a way that
+<em>actually</em> guarantees you online privacy and anonymity. Tor software is
+developed by a nonprofit organization (the <a href=https://www.torproject.org/>Tor Project</a>), whose mission is to advance
+human rights and freedoms by creating and deploying free and open source
+anonymity and privacy technologies, supporting their unrestricted
+availability and use, and furthering their scientific and popular
+understanding. The fact that it’s <a href=https://gitlab.torproject.org/tpo>free and open source</a> means that potentially
+anyone can use it, and its codebase is regularly reviewed (and improved
+upon) by security experts around the world.</p><p>This is why human rights defenders,
+<a href=https://archives.cjr.org/behind_the_news/can_we_still_trust_tor.php>journalists</a>,
+and
+<a href=https://blog.torproject.org/what-tor-supporter-looks-edward-snowden/>whistleblowers</a>
+around the world rely on Tor for online privacy, anonymity, and
+censorship circumvention (along with other <a href=https://ssd.eff.org/>digital security tools</a>). But it’s also why some governments (in
+countries like
+<a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=CN&amp;test_name=tor">China</a>
+and
+<a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=IR&amp;test_name=tor">Iran</a>)
+target and block access to Tor. The Tor Project has therefore created
+<a href=https://bridges.torproject.org/>Tor bridges</a>, enabling the
+circumvention of Tor blocking. <a href=https://www.torproject.org/download/>Tor Browser</a> – the main way that Tor
+is used by millions of users around the world – is shipped with a set of
+public bridges (called built-in
+<a href="https://bridges.torproject.org/bridges?transport=obfs4">obfs4</a>
+bridges) that users in censored environments can enable.</p><p>On 1st December 2021, <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">Russia started blocking access to Tor</a>,
+and the Tor Project
+<a href=https://blog.torproject.org/tor-censorship-in-russia/>responded</a>
+with a call for support from the internet freedom community. According
+to the Tor Project, Russia is the country with the <a href=https://metrics.torproject.org/userstats-relay-table.html>second largest number of Tor users</a> with
+more than 300,000 daily users (about 15% of all Tor users).</p><p>To learn about the impact of Tor blocking, view the Tor Project’s
+<a href=https://www.torproject.org/privchat/>online PrivChat event</a> to hear
+from an <a href=https://twitter.com/torproject/status/1468344092123795459>artist and activist who lives in Russia and relies on Tor</a>.</p><h1 id=methods>Methods</h1><p>Since 2012, <a href=https://ooni.org/>OONI</a> (a project born out of the Tor
+Project) has developed <a href=https://github.com/ooni>free and open source software</a> &ndash; called <a href=https://ooni.org/install/>OONI Probe</a> &ndash; designed to measure internet
+censorship and other forms of network interference. Every month, OONI
+Probe is run by tens of thousands of users in <a href=https://explorer.ooni.org/>around 200 countries</a>, including
+<a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU">Russia</a>.
+As soon as OONI Probe users run tests on their network, their test
+results (“measurements”) are automatically submitted to OONI servers,
+<a href=https://github.com/ooni/pipeline>processed</a>, and <a href=https://ooni.org/data/>openly published</a> in real-time.</p><p>The <a href=https://ooni.org/install/>OONI Probe app</a> includes a variety of
+different <a href=https://ooni.org/nettest/>network measurement tests</a>,
+including a <a href=https://ooni.org/nettest/tor/>test</a> specifically
+designed to measure Tor reachability. The OONI Probe Tor test provides
+an automated way of examining whether
+<a href=https://www.torproject.org/>Tor</a> works in a tested network.</p><p>To this end, this
+<a href=https://github.com/ooni/spec/blob/master/nettests/ts-023-tor.md>test</a>
+measures the reachability of a set of services that allow Tor to work.
+These include the following services:</p><ul><li><p>Tor directory authorities (used by Tor relays)</p></li><li><p>OR port (used by Tor bridges)</p></li><li><p>OR port of directory authorities (used by Tor clients)</p></li><li><p>Built-in obfs4 bridges (Tor bridge that speaks the OBFS4 protocol)</p></li></ul><p>By measuring the reachability of selected Tor directory authorities and
+bridges, this test evaluates whether they can be used within the tested
+network.</p><p>More specifically, this test attempts to perform the following actions
+from the vantage point of the user:</p><ul><li><p>HTTP GET request to the <code>tor/status-vote/current/consensus.z</code>
+resource, which is required for Tor directory authorities;</p></li><li><p>Connect to OR ports and OR ports of directory authorities and
+perform a TLS handshake;</p></li><li><p>Connect to obfs4 addresses and perform an OBFS4 handshake (an
+obfuscated handshake).</p></li></ul><p>Based on our heuristics, if the test succeeds in performing all of the
+above, Tor may work on a tested network (unless it&rsquo;s blocked in ways
+that aren’t being measured). In these cases, we automatically annotate
+Tor measurements as “OK”, indicating that Tor works on the tested
+network.</p><p>If the test fails in performing any of the above, Tor may not work in
+the tested network and may be blocked. In these cases, we automatically
+annotate Tor measurements as
+“<a href=https://ooni.org/support/faq/#what-do-you-mean-by-anomalies>anomalies</a>”,
+providing a sign of potential Tor blocking.</p><p>To examine <a href=https://blog.torproject.org/tor-censorship-in-russia/>Tor blocking in Russia</a>, we
+analyzed all <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor">Tor measurements collected from Russia</a>
+between 1st January 2021 to 8th December 2021. We explored whether the
+testing of Tor presented anomalies, and we aggregated <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">anomalous measurements</a>
+to evaluate whether they were persistent on the same AS networks. These
+aggregated anomalies were compared with <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor">other measurements</a>
+collected from the same AS networks, as well as with measurements
+collected from other AS networks. Beyond aggregation, we analyzed the
+raw measurement data within <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">anomalous measurements</a>
+to evaluate how access to Tor was being interfered with in Russia.</p><p>Similarly, we analyzed <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;domain=www.torproject.org">OONI Web Connectivity measurements</a>
+to examine the blocking of <code>www.torproject.org</code>. The OONI Probe <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity test</a> is
+designed to measure URLs (provided in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a>) by
+performing a DNS lookup, TCP connection, and HTTP GET request to each
+tested URL over two vantage points: the local vantage point of the user
+and a control (non-censored) vantage point. The results from both
+networks are automatically compared and if they are the same, the tested
+URL is annotated as “accessible” (unless if the measurement fails). If
+the results differ, the measurement is annotated as an “anomaly”.
+Anomalous measurements are further annotated as <code>dns</code>, <code>tcp/ip</code>,
+<code>http-diff</code>, and <code>http-failure</code>, depending on the reason which
+caused the anomaly (for example, if the DNS responses from the local and
+control vantage points do not match).</p><p>To analyze <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;domain=www.torproject.org">Web Connectivity measurements</a>
+pertaining to the testing of <code>www.torproject.org</code> in Russia, we
+aggregated the measurements to identify on which AS networks they
+presented the highest volume of anomalies. We further analyzed the
+measurements based on the types of anomalies that they presented
+(<code>dns</code>, <code>tcp/ip</code>, <code>http-diff</code>, and <code>http-failure</code>) to evaluate
+whether those types of anomalies were consistent on each network. By
+analyzing the raw data (for example, examining what was served in the
+HTTP response of measurements), we were able to characterize the blocks.</p><p>The summary findings from our analysis are presented in the following
+sections.</p><h1 id=findings>Findings</h1><p>As of 1st December 2021, several ISPs in Russia started <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">blocking access to the Tor network</a>.
+OONI data also shows that some Russian ISPs
+<a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;domain=www.torproject.org&amp;only=anomalies">block</a>
+access to the Tor Project’s website (<code>www.torproject.org</code>) as well.</p><h2 id=blocking-of-the-tor-network>Blocking of the Tor network</h2><p>Starting from 1st December 2021, OONI data suggests that several ISPs in
+Russia started <a href="https://explorer.test.ooni.org/experimental/mat?probe_cc=RU&amp;since=2021-11-08&amp;until=2021-12-09&amp;test_name=tor&amp;axis_x=measurement_start_day">blocking access to the Tor network</a>.
+The block does <em>not</em> seem to be implemented across all ISPs in Russia,
+but only a
+<a href="https://explorer.test.ooni.org/experimental/mat?probe_cc=RU&amp;since=2021-11-08&amp;until=2021-12-09&amp;test_name=tor&amp;axis_x=measurement_start_day&amp;axis_y=probe_asn">subset</a>
+of them. The following chart aggregates <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor">Tor measurement coverage from Russia</a>
+over the last months (providing a per-ASN breakdown), illustrating that
+Tor blocking differs significantly from ISP to ISP in Russia.</p><div><a href=/post/2021-russia-blocks-tor/images/01.png><img src=/post/2021-russia-blocks-tor/images/01_hu8a87771a1b967907b4d6a0a289a6d0fd_155612_1000x800_fit_box_3.png title="Blocking of Tor" alt="Blocking of Tor"></a></div><p><strong>Source:</strong> OONI Probe Tor measurements collected from Russia between
+June 2021 to December 2021, <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor">https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor</a></p><p>As <a href=https://explorer.ooni.org/country/RU>OONI measurement coverage from Russia</a> is quite large (OONI data
+collected from Russia covers 2,556 local networks since December 2012),
+we have limited the above chart to:</p><ul><li><p>AS networks where Tor testing presented
+<a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">anomalies</a>
+(during the analysis period);</p></li><li><p>AS networks where at least 16 Tor measurements were collected in the
+analysis period.</p></li></ul><p>Out of 65 AS networks included in the above chart, the testing of Tor
+only presented signs of blocking on the following 15 networks:
+<code>AS48092</code>, <code>AS3216</code>, <code>AS8334</code>, <code>AS8359</code>, <code>AS8402</code>,
+<code>AS12714</code>, <code>AS12958</code>, <code>AS15493</code>, <code>AS15582</code>, <code>AS15672</code>,
+<code>AS16345</code>, <code>AS24955</code>, <code>AS25159</code>, <code>AS31133</code>, <code>AS31208</code>.</p><p>The <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">anomalous measurements</a>
+from those networks provide a strong signal of Tor blocking because we
+observe that they began on several AS networks on the same day (1st
+December 2021), whereas previous measurements show that Tor was
+previously reachable on those networks. Moreover, Tor testing continued
+to present anomalies on those networks thereafter, providing a further
+signal of Tor blocking.</p><p>Tor blocking is further suggested by the recent spike in the use of
+<a href=https://bridges.torproject.org/>Tor bridges</a> (used for circumventing
+Tor blocking) in Russia, as illustrated below by <a href="https://metrics.torproject.org/userstats-bridge-country.html?start=2021-11-09&amp;end=2021-12-08&amp;country=ru">Tor Metrics</a>.</p><div><a href=/post/2021-russia-blocks-tor/images/02.png><img src=/post/2021-russia-blocks-tor/images/02_hu48899075fc20f6d8d017342a86bbbbfc_36997_1000x800_fit_box_3.png title="Tor Metrics" alt="Tor Metrics"></a></div><p><strong>Source:</strong> Tor Metrics: Bridge users from Russia, <a href="https://metrics.torproject.org/userstats-bridge-country.html?start=2021-11-09&amp;end=2021-12-08&amp;country=ru">https://metrics.torproject.org/userstats-bridge-country.html?start=2021-11-09&amp;end=2021-12-08&amp;country=ru</a></p><p>When looking at raw OONI data from <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">anomalous Tor measurements</a>,
+we can see that the block is implemented by means of <strong>IP blocking</strong>,
+which is <a href=https://censoredplanet.org/russia>consistent</a> with how we
+have seen ISPs in Russia implement blocks in the past. In particular,
+OONI data shows that attempts to connect to OR ports, OR ports of
+directory authorities, and obfs4 addresses consistently failed,
+resulting in generic timeout errors. This, for example, is illustrated
+from the following summary table, taken from an <a href=https://explorer.ooni.org/measurement/20211208T181239Z_tor_RU_8359_n1_vpm7c98293BSrYkD>OONI measurement</a>
+collected from the <code>AS8359</code> network in Russia on 8th December 2021.</p><div><a href=/post/2021-russia-blocks-tor/images/03.png><img src=/post/2021-russia-blocks-tor/images/03_hu5d079a29003af0ab4a897a9f7199b77f_174007_1000x800_fit_box_3.png title="OONI measurement" alt="OONI measurement"></a></div><p><strong>Source:</strong> OONI Probe Tor measurement collected from the <code>AS8359</code>
+network in Russia on 8th December 2021, <a href=https://explorer.ooni.org/measurement/20211208T181239Z_tor_RU_8359_n1_vpm7c98293BSrYkD>https://explorer.ooni.org/measurement/20211208T181239Z_tor_RU_8359_n1_vpm7c98293BSrYkD</a></p><p>In cases where obfs4 addresses (the default <a href=https://bridges.torproject.org/>Tor bridges</a> shipped as part of <a href=https://www.torproject.org/download/>Tor Browser</a>) are blocked, Tor users
+in Russia would need to <a href=https://forum.torproject.net/t/tor-blocked-in-russia-how-to-circumvent-censorship/982>get private bridges</a>
+(which are not publicly listed and therefore less likely to be blocked).</p><p>Interestingly, we observe that within the same network, Tor blocking
+does not appear to be implemented for all users. For example, on
+<code>AS16345</code> (VEON), some users appear to <a href=https://explorer.ooni.org/measurement/20211208T123808Z_tor_RU_16345_n1_rs7f8POuI9xRdxcl>experience Tor blocking</a>,
+while other users on the same AS network <a href=https://explorer.ooni.org/measurement/20211208T124613Z_tor_RU_16345_n1_O2h6Iy7B0G9mtbws>do not</a>.
+This could potentially be explained if the rollout of Tor blocking is
+not being carried out in the same way across all their infrastructure.
+The non-deterministic nature of Tor blocking is further suggested by
+OONI measurements which show that <a href="https://explorer.ooni.org/search?since=2021-11-14&amp;until=2021-12-15&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor">Tor was reachable from multiple AS networks</a>
+during certain windows of time (such as on 8th December 2021),
+corroborating what was
+<a href=https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/issues/40014#note_2765276>reported</a>
+by internet users in Russia.</p><p>Russia’s Federal Service for Supervision of Communications, Information
+Technology and Mass Media (Roskomnadzor) maintains a blocklist and
+provides a <a href=https://eais.rkn.gov.ru/en/>portal</a> through which
+internet users can check if specific IP addresses, domains, or URLs are
+included in their blocklist. A GitHub
+<a href=https://github.com/zapret-info/z-i>project</a> provides a dump of the
+IPs which are present in their blocklist, but none of the IP addresses
+associated with Tor directory authorities or bridges appear to currently
+be present in this registry. It is therefore likely that ISP
+coordination to implement Tor blocking happened through other means.</p><p>It’s worth highlighting though that most Tor measurements from most AS
+networks in Russia were
+<a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor">successful</a>,
+suggesting that it’s <em>still</em> possible to connect directly to Tor on many
+networks in Russia.</p><h2 id=blocking-of-the-tor-project-website>Blocking of the Tor Project website</h2><p>On 6th December 2021, the Tor Project <a href=https://gitlab.torproject.org/tpo/community/support/-/issues/40050#note_2764565>received an abuse notice from Roskomnadzor</a>,
+threatening to block access to the Tor Project’s main website
+(<code>www.torproject.org</code>). By 7th December 2021, <code>www.torproject.org</code>
+had <a href=https://gitlab.torproject.org/tpo/community/support/-/issues/40050#note_2765035>officially been added to the blocklist</a>.</p><p>This is corroborated by <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;domain=www.torproject.org&amp;only=anomalies">OONI data</a>,
+which not only shows that <em>some</em> ISPs in Russia appear to block access
+to <code>www.torproject.org</code>, but which also suggests that the blocking may
+have begun as early as September 2021.</p><p>The following chart aggregates <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;domain=www.torproject.org">OONI measurement coverage</a>
+from the testing of <code>www.torproject.org</code> across AS networks in Russia
+over the last months, illustrating how the blocking of the site varies
+across ISPs in the country.</p><div><a href=/post/2021-russia-blocks-tor/images/04.png><img src=/post/2021-russia-blocks-tor/images/04_hu211bbb1dfbecc89758853955204a5dc3_117713_1000x800_fit_box_3.png title="Blocking of Tor Project website" alt="Blocking of Tor Project website"></a></div><p><strong>Source:</strong> OONI measurements from the testing of
+<code>www.torproject.org</code> in Russia between
+January 2021 to December 2021, <a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;domain=www.torproject.org">https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;domain=www.torproject.org</a></p><p>Similarly to the graph produced for the testing of Tor (based on OONI
+data), we have limited this chart to AS networks where the testing of
+<code>www.torproject.org</code> presented anomalies and which received at least
+16 measurements during the analysis period.</p><p>OONI data shows that the testing of <code>www.torproject.org</code> presented
+signs of blocking on several AS networks. However, the censorship
+techniques across ISPs differ.</p><p>On some networks (such as <code>AS21127</code>), OONI data provides <strong>evidence</strong>
+of torproject.org blocking, as we observe that a <a href="https://explorer.ooni.org/measurement/20211208T105240Z_webconnectivity_RU_21127_n1_vuA5flblHujkP12E?input=http%3A%2F%2Ftorproject.org">block page was served</a>
+(as illustrated below).</p><div><a href=/post/2021-russia-blocks-tor/images/05.png><img src=/post/2021-russia-blocks-tor/images/05_hu8a924215914536aae020c454ab18668c_124961_1000x800_fit_box_3.png title="Block page" alt="Block page"></a></div><p><strong>Image:</strong> Block page served on <code>AS21127</code> in Russia when
+torproject.org was tested on 8th December 2021, <a href="https://explorer.ooni.org/measurement/20211208T105240Z_webconnectivity_RU_21127_n1_vuA5flblHujkP12E?input=http%3A%2F%2Ftorproject.org">https://explorer.ooni.org/measurement/20211208T105240Z_webconnectivity_RU_21127_n1_vuA5flblHujkP12E?input=http%3A%2F%2Ftorproject.org</a></p><p>Similarly, we observe a <a href="https://explorer.ooni.org/measurement/20211208T103229Z_webconnectivity_RU_31163_n1_HMGBbnFmuqyMIAtE?input=http%3A%2F%2Ftorproject.org">block page being served</a>
+when torproject.org was tested on <code>AS31163</code> on 8th December 2021, as
+illustrated below.</p><div><a href=/post/2021-russia-blocks-tor/images/06.png><img src=/post/2021-russia-blocks-tor/images/06_hu86dde0a2e45ca846321b7a5a5d6ef7ce_85155_1000x800_fit_box_3.png title="Block page" alt="Block page"></a></div><p><strong>Image:</strong> Block page served on <code>AS31163</code> in Russia when
+torproject.org was tested on 8th December 2021, <a href="https://explorer.ooni.org/measurement/20211208T103229Z_webconnectivity_RU_31163_n1_HMGBbnFmuqyMIAtE?input=http%3A%2F%2Ftorproject.org">https://explorer.ooni.org/measurement/20211208T103229Z_webconnectivity_RU_31163_n1_HMGBbnFmuqyMIAtE?input=http%3A%2F%2Ftorproject.org</a></p><p>We also observe <a href="https://explorer.ooni.org/measurement/20211208T101854Z_webconnectivity_RU_8359_n1_4ergxVLtT3HvXoYO?input=http%3A%2F%2Ftorproject.org">block pages</a>
+on other networks, such as <code>AS8359</code> (shared below).</p><div><a href=/post/2021-russia-blocks-tor/images/07.png><img src=/post/2021-russia-blocks-tor/images/07_hu1ea2ce3cfcb0b8155643b1edb8bd8e98_56862_1000x800_fit_box_3.png title="Block page" alt="Block page"></a></div><p><strong>Image:</strong> Block page served on <code>AS8359</code> in Russia when torproject.org
+was tested on 8th December 2021, <a href="https://explorer.ooni.org/measurement/20211208T101854Z_webconnectivity_RU_8359_n1_4ergxVLtT3HvXoYO?input=http%3A%2F%2Ftorproject.org">https://explorer.ooni.org/measurement/20211208T101854Z_webconnectivity_RU_8359_n1_4ergxVLtT3HvXoYO?input=http%3A%2F%2Ftorproject.org</a></p><p>In some cases though (such as on <code>AS42437</code>), OONI data suggests that
+access to torproject.org is being interfered with by means of a <a href="https://explorer.ooni.org/measurement/20211208T092220Z_webconnectivity_RU_42437_n1_nFZlCmxOs4RnVpYA?input=http%3A%2F%2Ftorproject.org">TLS man-in-the-middle attack</a>,
+while in other cases (such as on <code>AS51570</code>), we observe that the
+<a href="https://explorer.ooni.org/measurement/20211208T003455Z_webconnectivity_RU_51570_n1_ZYAu31bx2EDQUiOv?input=https%3A%2F%2Ftorproject.org">connection is reset once the TLS handshake has been initiated</a>,
+suggesting the use of Deep Packet Inspection (DPI) technology.</p><p>On many tested networks in Russia though, OONI data suggests that
+<code>www.torproject.org</code> is
+<a href="https://explorer.ooni.org/measurement/20211208T195602Z_webconnectivity_RU_24955_n1_rnonFvJpOw9Ko4s4?input=https%3A%2F%2Fwww.torproject.org%2F">accessible</a>.</p><h1 id=conclusion>Conclusion</h1><p>OONI data collected from Russia suggests that access to both the <a href="https://explorer.ooni.org/search?since=2021-11-10&amp;until=2021-12-11&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">Tor network</a>
+and the <a href="https://explorer.ooni.org/search?since=2021-11-10&amp;until=2021-12-11&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;only=anomalies&amp;domain=www.torproject.org">Tor Project’s website</a>
+is blocked on <em>some</em> AS networks in Russia.</p><ul><li><p><strong>Tor blocking.</strong> On 1st December 2021, <em>some</em> ISPs in Russia
+started blocking access to the Tor network by means of IP
+blocking.</p><ul><li><p>Out of (more than) 65 tested AS networks, OONI data only shows
+signs of <a href="https://explorer.ooni.org/search?since=2021-11-10&amp;until=2021-12-11&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">Tor blocking</a>
+on 15 AS networks in Russia.</p></li><li><p>The block also <a href=https://explorer.ooni.org/measurement/20211208T181239Z_tor_RU_8359_n1_vpm7c98293BSrYkD>impacts obfs4 addresses</a>,
+which means that Tor users in Russia may need to <a href=https://forum.torproject.net/t/tor-blocked-in-russia-how-to-circumvent-censorship/982>use private Tor bridges</a>
+to circumvent the block.</p></li><li><p>Tor blocking differs from ISP to ISP in Russia. However, not all
+users on the same AS network experience Tor blocking.</p></li></ul></li><li><p><strong>Blocking of Tor Project website.</strong> In September 2021, <em>some</em> ISPs
+in Russia started blocking access to <code>www.torproject.org</code>.
+Censorship techniques across ISPs differ.</p><ul><li><p>On some networks (such as <code>AS21127</code>, <code>AS31163</code>, and
+<code>AS8359</code>), a <a href="https://explorer.ooni.org/measurement/20211208T105240Z_webconnectivity_RU_21127_n1_vuA5flblHujkP12E?input=http%3A%2F%2Ftorproject.org">block page</a>
+is served for <code>www.torproject.org</code>, enabling us to
+automatically confirm the block.</p></li><li><p>On other networks (such as on <code>AS42437</code>), OONI data suggests
+that access to <code>www.torproject.org</code> is being interfered with
+by means of a <a href="https://explorer.ooni.org/measurement/20211208T092220Z_webconnectivity_RU_42437_n1_nFZlCmxOs4RnVpYA?input=http%3A%2F%2Ftorproject.org">TLS man-in-the-middle attack</a>.</p></li><li><p>In other cases (such as on <code>AS51570</code>), we observe that the
+<a href="https://explorer.ooni.org/measurement/20211208T003455Z_webconnectivity_RU_51570_n1_ZYAu31bx2EDQUiOv?input=https%3A%2F%2Ftorproject.org">connection is reset once the TLS handshake has been initiated</a>,
+suggesting the use of Deep Packet Inspection (DPI) technology.</p></li></ul></li></ul><p>Despite these blocks, OONI data suggests that both the Tor network and
+<code>www.torproject.org</code> are still
+<a href="https://explorer.ooni.org/search?since=2021-11-10&amp;until=2021-12-11&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor">accessible</a>
+on most networks in Russia. The blocking of the Tor network and
+<code>www.torproject.org</code> appears to vary from ISP to ISP in Russia, and
+different ISPs adopt different censorship techniques.</p><p>This variance could be explained by the fact that internet
+infrastructure in Russia is fairly
+<a href=https://www.ndss-symposium.org/ndss-paper/decentralized-control-a-case-study-of-russia/>decentralized</a>,
+limiting the ability to implement a uniform country-wide internet
+censorship policy. As a result, it is at the discretion of each ISP to
+independently implement blocking orders from the central government
+authority (Roskomnadzor).</p><p>To <a href=https://blog.torproject.org/tor-censorship-in-russia/>circumvent Tor blocking</a>, you
+can:</p><ul><li><p>Use a <a href=https://forum.torproject.net/t/tor-blocked-in-russia-how-to-circumvent-censorship/982>private Tor bridge</a>;</p></li><li><p><a href=https://forum.torproject.net/t/help-censored-users-run-a-tor-bridge/704>Run a Tor bridge</a>
+to help more Russians stay connected to the Tor network;</p></li><li><p>Teach users about <a href=https://tb-manual.torproject.org/bridges/>Tor bridges</a>.</p></li></ul><p>Meanwhile, the Tor Project <a href=https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/issues/40014>identified and responded to the use of DTLS fingerprinting to block the Snowflake pluggable transport</a>,
+and they will be rolling out the fix in the <a href=https://www.torproject.org/releases/>next Tor Browser release</a>. We therefore recommend
+keeping an eye out for (and updating to) the next Tor Browser version,
+and configuring Tor Browser to <a href=https://support.torproject.org/censorship/how-can-i-use-snowflake/>use Snowflake</a>.</p><p>If access to <code>www.torproject.org</code> is blocked on your network, you can:</p><ul><li><p>Circumvent this block by visiting the Tor Project’s <a href=https://tor.eff.org/>website mirror</a>;</p></li><li><p>Get Tor Browser by sending an email to <code>gettor@torproject.org</code>
+(<a href=https://gettor.torproject.org/>GetTor</a>), while specifying the
+operating system and language (eg. <code>windows ru</code>) you would like
+a download link for.</p></li></ul><p>If you’re in Russia and would like to contribute more OONI measurements,
+please consider running <a href=https://ooni.org/install/>OONI Probe</a> to
+continue <a href=https://ooni.org/support/ooni-probe-mobile#measuring-the-blocking-of-circumvention-tools>testing Tor reachability</a>.</p><h1 id=acknowledgements>Acknowledgements</h1><p>We thank <a href=https://ooni.org/install/>OONI Probe</a> users in Russia who
+contributed measurements, supporting this study.</p><p>We also thank the <a href=https://www.torproject.org/>Tor Project</a> for their
+tireless efforts in building an online world that protects humans
+worldwide.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

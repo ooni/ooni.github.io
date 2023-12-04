@@ -1,0 +1,185 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Tanzania blocks social media (and Tor?) on election day | OONI</title>
+<link rel=canonical href=https://ooni.org/post/2020-tanzania-blocks-social-media-tor-election-day/><meta name=description content="This report shares OONI measurements on the blocking of social media and Tor in Tanzania amid its 2020 general election."><meta property="og:title" content="Tanzania blocks social media (and Tor?) on election day"><meta property="og:description" content="This report shares OONI measurements on the blocking of social media and Tor in Tanzania amid its 2020 general election."><meta property="og:type" content="article"><meta property="og:url" content="/post/2020-tanzania-blocks-social-media-tor-election-day/"><meta property="og:image" content="/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image.png"><meta property="article:published_time" content="2020-10-28T00:00:00+00:00"><meta property="article:modified_time" content="2020-10-28T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image.png"><meta name=twitter:title content="Tanzania blocks social media (and Tor?) on election day"><meta name=twitter:description content="This report shares OONI measurements on the blocking of social media and Tor in Tanzania amid its 2020 general election."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Tanzania blocks social media (and Tor?) on election day</h1><div class=byline><span class=author>Maria Xynou</span>
+<span class=date>2020-10-28</span></div><div><a href=/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image.png><img src=/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image_hu0db7663ae82eb6397840c42136ac88b3_49762_1000x800_fit_box_3.png title="WhatsApp blocked in Tanzania on election day" alt="WhatsApp blocked in Tanzania on election day"></a></div><p>Starting from yesterday (27th October 2020) &ndash; <em>on the eve of
+<a href=https://www.washingtonpost.com/world/africa/tanzania-election-tanzanias-democracy-faces-a-critical-test-in-wednesdays-presidential-election/2020/10/27/b1620b64-17c3-11eb-8bda-814ca56e138b_story.html>Tanzania&rsquo;s 2020 general election</a></em>
+&ndash; OONI measurements continue to
+<a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ&amp;only=anomalies">show</a>
+the ongoing blocking of social media (and of the
+<a href=https://www.torproject.org/>Tor</a> circumvention tool) in Tanzania.</p><p>In this report, we share <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ&amp;only=anomalies">OONI data collected from Tanzania</a>
+on these blocks, as well as relevant instructions for further OONI Probe
+testing.</p><ul><li><p><a href=#methods>Methods</a></p></li><li><p><a href=#blocking-of-social-media>Blocking of social media</a></p><ul><li><p><a href=#whatsapp>WhatsApp</a></p></li><li><p><a href=#facebook-messenger>Facebook Messenger</a></p></li><li><p><a href=#telegram>Telegram</a></p></li><li><p><a href=#social-media-websites>Social media websites</a></p></li></ul></li><li><p><a href=#blocking-of-tor>Blocking of Tor?</a></p></li><li><p><a href=#further-testing>Further testing</a></p></li></ul><h1 id=methods>Methods</h1><p>OONI Probe is <a href=https://github.com/ooni>free and open source software</a>
+designed to measure various forms of network interference based on
+<a href=https://github.com/ooni/spec/tree/master/nettests>openly specified methodologies</a>. The
+<strong><a href=https://ooni.org/install/>OONI Probe app</a></strong>, available for both
+<a href=https://ooni.org/install/mobile>mobile</a> and
+<a href=https://ooni.org/install/desktop>desktop</a> platforms, includes a
+<a href=https://ooni.org/nettest/>variety of tests</a> designed to measure the
+blocking of websites, instant messaging apps, and circumvention tools
+(it also includes several network performance related tests). By
+default, as soon as you run OONI Probe tests, your test results are
+automatically sent to OONI servers,
+<a href=https://github.com/ooni/pipeline>processed</a>, and <a href=https://ooni.org/data/>openly published</a> in <strong>near real-time</strong>.</p><p>Since 2016, OONI Probe users in Tanzania have
+<a href=https://explorer.ooni.org/country/TZ>contributed</a> more than 80,000
+measurements from 30 local networks. On an ongoing basis, OONI Probe
+users in Tanzania
+<a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ">continue</a>
+to run tests and contribute relevant measurements.</p><p>Once we were notified yesterday by community members in Tanzania that
+they couldn’t access certain social media platforms without the use of a
+VPN, we immediately looked at (openly available) <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ">OONI measurements</a>
+pertaining to the recent testing of social media websites and apps in
+Tanzania.</p><p>More specifically, we looked at the following OONI measurements:</p><ul><li><p><strong>WhatsApp</strong>: Collected from the <a href=https://ooni.org/nettest/whatsapp/>OONI Probe WhatsApp test</a></p></li><li><p><strong>Facebook Messenger</strong>: Collected from the <a href=https://ooni.org/nettest/facebook-messenger/>OONI Probe Facebook Messenger test</a></p></li><li><p><strong>Telegram</strong>: Collected from the <a href=https://ooni.org/nettest/telegram/>OONI Probe Telegram test</a></p></li><li><p><strong>Websites</strong>: Collected from the <a href=https://ooni.org/nettest/web-connectivity/>OONI Probe Web Connectivity test</a> that measures
+many <a href=https://ooni.org/support/faq/#which-websites-will-i-test-for-censorship-with-ooni-probe>different types of websites</a>
+(including internationally relevant social media sites)</p></li></ul><p>Since we heard of increased VPN use in Tanzania (following reported
+difficulties in accessing social media platforms), we also looked at
+relevant OONI measurements to check whether access to circumvention
+tools was blocked as well.</p><p>OONI Probe, however, currently only includes tests for the following 2
+circumvention tools: <a href=https://ooni.org/nettest/tor/>Tor</a> and
+<a href=https://ooni.org/nettest/psiphon/>Psiphon</a>. We therefore looked at
+the measurements collected from these 2 tests in Tanzania, as well as at
+relevant <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a> measurements
+that pertain to the testing of circumvention tool websites.</p><p>The findings shared below are based on these <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ">openly available measurements</a>.</p><h1 id=blocking-of-social-media>Blocking of social media</h1><p>Today, on election day, access to WhatsApp, Facebook Messenger, and
+Telegram appears to be blocked in Tanzania.</p><h2 id=whatsapp>WhatsApp</h2><p>Starting from yesterday (27th October 2020), we observe the <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=whatsapp&amp;only=anomalies">blocking of WhatsApp</a>
+on multiple networks in Tanzania.</p><p>In many cases, we
+<a href=https://explorer.ooni.org/measurement/20201028T105553Z_whatsapp_TZ_327885_n1_80oZokYfNoAmUyfz>see</a>
+that attempts to connect to WhatsApp Web (web.whatsapp.com) and to
+WhatsApp’s registration service fail, resulting in generic timeout
+errors. Yet, TCP connections to the tested endpoints of WhatsApp’s
+mobile app are often successful. Nonetheless, the failed attempts to
+WhatsApp Web and to WhatsApp’s registration service suggest that access
+to <em>both</em> WhatsApp Web <em>and</em> to WhatsApp’s mobile app was most likely
+blocked in Tanzania.</p><p>This is further suggested by the following (main) factors:</p><ul><li><p>We consistently see the <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ&amp;test_name=whatsapp&amp;only=anomalies">testing of WhatsApp failing</a>
+in the same ways on the same networks (in multiple measurements);</p></li><li><p>During the last months, the <a href="https://explorer.ooni.org/search?until=2020-10-26&amp;since=2020-07-01&amp;probe_cc=TZ&amp;test_name=whatsapp">previous testing of WhatsApp</a>
+in Tanzania (before 27th October 2020) showed that it was
+consistently <em>accessible</em> (based on the requirements of the <a href=https://ooni.org/nettest/whatsapp/>OONI Probe WhatsApp test</a>);</p></li><li><p>Locals in Tanzania started reporting that they experienced
+difficulties using WhatsApp on 27th October 2020 (on the eve of
+Tanzania’s general election), which is also when OONI measurements
+start showing blocking.</p></li></ul><p>It therefore seems highly probable that access to WhatsApp was in fact
+blocked (on multiple networks) in Tanzania amid their 2020 general
+election. Recent
+<a href=https://explorer.ooni.org/measurement/20201028T172036Z_whatsapp_TZ_37035_n1_bVoMoDnPZiPCPdhp>measurements</a>
+collected at around 5PM UTC on 28th October 2020 from Tanzania suggest that access to
+WhatsApp remains blocked.</p><p>The blocking of WhatsApp in Tanzania is further suggested by OONI Probe
+Web Connectivity measurements (though they are few), which
+<a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=web_connectivity&amp;domain=www.whatsapp.com&amp;only=anomalies">show</a>
+that the testing of <code>www.whatsapp.com</code> presented anomalies on 3
+different networks during the same time frame.</p><h2 id=facebook-messenger>Facebook Messenger</h2><p>Facebook Messenger appears to be <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=facebook_messenger&amp;only=anomalies">blocked on multiple networks in Tanzania</a>
+on election day as well (starting from 27th October 2020).</p><p>We observe that access to Facebook Messenger is blocked in different
+ways on different networks. For example, some
+<a href=https://explorer.ooni.org/measurement/20201028T172215Z_facebookmessenger_TZ_37035_n1_4ogaAuty5WX5gT0j>measurements</a>
+(collected today) from MIC Tanzania (AS37035) show that TCP connections
+to Facebook’s endpoints were successful, but DNS lookups did not resolve
+to Facebook IP addresses. On Airtel (AS37133), we
+<a href=https://explorer.ooni.org/measurement/20201028T155014Z_facebookmessenger_TZ_37133_n1_5Dh7dPam4qTTQrNd>see</a>
+that DNS lookups resolved to Facebook IP addresses, but a few TCP
+connections to Facebook endpoints failed. Similarly, on Viettel
+(AS327885) we
+<a href=https://explorer.ooni.org/measurement/20201028T150534Z_facebookmessenger_TZ_327885_n1_XEXVXZ1VlBoncgyi>see</a>
+that a few TCP connections to Facebook endpoints failed (but the DNS
+lookups were successful).</p><p>Similarly to the testing of WhatsApp, we observe a consistent pattern
+where the testing of Facebook Messenger <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=facebook_messenger&amp;only=anomalies">consistently presented anomalies on multiple networks</a>
+in Tanzania from 27th October 2020 onwards, while <a href="https://explorer.ooni.org/search?until=2020-10-26&amp;since=2020-07-01&amp;probe_cc=TZ&amp;test_name=facebook_messenger">previous measurements</a>
+(collected over the last months) show that the app used to be reachable.
+This (along with the fact that many locals in Tanzania reported
+difficulties using Facebook over the past day) therefore provides a
+strong signal that access to Facebook Messenger was interfered with amid
+Tanzania’s 2020 general election.</p><h2 id=telegram>Telegram</h2><p>Along with WhatsApp and Facebook Messenger, access to Telegram appears
+to have been <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=telegram&amp;only=anomalies">blocked on multiple networks</a>
+in Tanzania as well.</p><p>Measurements collected today from Tanzania
+<a href=https://explorer.ooni.org/measurement/20201028T125726Z_telegram_TZ_37133_n1_Ikf7CqSeBC5CCjos>show</a>
+that HTTP(S) GET requests to <code>web.telegram.org</code> did not return a
+consistent response (suggesting blocking of Telegram Web), while many
+attempted connections to Telegram endpoints failed (suggesting potential
+blocking of Telegram’s mobile app as well). This, for example, is
+evident on <a href=https://explorer.ooni.org/measurement/20201028T125726Z_telegram_TZ_37133_n1_Ikf7CqSeBC5CCjos>Airtel (AS37133)</a>
+and on <a href=https://explorer.ooni.org/measurement/20201028T120316Z_telegram_TZ_33765_n1_5n5qrx0ohlNDFfdn>Tanzania Telecommunications (AS33765)</a>.
+In other cases &ndash; such as on Zanzibar Telecom (AS36930) &ndash; we
+<a href=https://explorer.ooni.org/measurement/20201028T105042Z_telegram_TZ_36930_n1_OTbdRtE8t3THkbIj>see</a>
+that Telegram Web appears blocked, but connections to the tested
+Telegram endpoints were successful. This suggests that while
+<code>web.telegram.org</code> may have been blocked, the Telegram mobile app may
+have worked on this network (unless they blocked access to <em>different</em>
+Telegram endpoints that weren’t tested as part of the <a href=https://ooni.org/nettest/telegram/>OONI Probe Telegram test</a>).</p><p>Similarly to WhatsApp and Facebook Messenger, we observe the same
+pattern where the <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=telegram&amp;only=anomalies">testing of Telegram consistently presents anomalies</a>
+on multiple networks in Tanzania (from 27th October 2020 onwards), while
+<a href="https://explorer.ooni.org/search?until=2020-10-26&amp;since=2020-07-01&amp;probe_cc=TZ&amp;test_name=telegram">previous measurements</a>
+collected over the last months show that Telegram used to be reachable.
+Along with the fact that many locals in Tanzania reported experiencing
+difficulties using Telegram (without a VPN) during this period, it seems
+likely the case that access to Telegram was blocked amid Tanzania’s 2020
+general election.</p><h2 id=social-media-websites>Social media websites</h2><p>In addition to social media apps, Internet Service Providers (ISPs) in
+Tanzania appear to have likely blocked access to several social media
+websites as well.</p><p>Almost all OONI
+<a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=web_connectivity&amp;domain=twitter.com">measurements</a>
+collected from the testing of <code>twitter.com</code> in Tanzania since
+yesterday, 27th October 2020, consistently suggest that access to the
+site was blocked on multiple networks. Across several different
+networks, we
+<a href="https://explorer.ooni.org/measurement/20201028T042614Z_webconnectivity_TZ_36908_n1_69omJROteporVlsR?input=https%3A%2F%2Ftwitter.com%2F">see</a>
+that the HTTP experiment failed, resulting in generic timeout errors.</p><p>We observe the same type of failures in the testing of
+<code>www.instagram.com</code> in Tanzania on 27th October 2020 on <a href="https://explorer.ooni.org/measurement/20201027T145712Z_webconnectivity_TZ_327885_n1_cFvomlcAyMEuLs0t?input=https%3A%2F%2Fwww.instagram.com%2F">Viettel (AS327885)</a>
+and <a href="https://explorer.ooni.org/measurement/20201027T141102Z_webconnectivity_TZ_36908_n1_TeiynLlhxjnFU9bz?input=https%3A%2F%2Fwww.instagram.com%2F">Vodacom (AS36908)</a>,
+but the limited volume of relevant measurements limits our ability to
+confirm this with confidence.</p><p>Among <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=web_connectivity&amp;only=anomalies">other social media sites</a>
+that presented signs of potential blocking (such as <code>www.tiktok.com</code>),
+we see <code>www.youtube.com</code>. Every time the site was tested over the last
+day (6 times in total on 2 networks), we <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=web_connectivity&amp;domain=www.youtube.com">consistently see that the
+HTTP experiment always failed</a>,
+resulting in generic timeout errors (similarly to the testing of
+<code>twitter.com</code> and <code>www.instagram.com</code>). While the relatively limited
+testing coverage of social media sites limits our confidence in
+confirming their blocking, it’s worth noting nonetheless that they
+present the same types of failures (signaling that they might have in
+fact been blocked).</p><h1 id=blocking-of-tor>Blocking of Tor?</h1><p>Circumventing these censorship events may have been a bit challenging in
+Tanzania, given the fact that we observe what seems to be the blocking of
+<a href=https://www.torproject.org/>Tor</a>, which can be used for
+circumventing internet censorship (in addition to its online privacy and
+anonymity properties).</p><p>As of 27th October 2020 (on the eve of Tanzania’s 2020 general
+election), we observe that the <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=tor&amp;only=anomalies">testing of Tor resulted in many timeout failures</a>,
+suggesting that access to Tor might have been blocked. To check whether
+Tor works (in a tested network), the <a href=https://ooni.org/nettest/tor/>OONI Probe Tor test</a> measures the reachability of Tor
+directory authorities (used by Tor relays), OR port (used by Tor
+bridges), OR port of directory authorities (used by Tor clients), and
+obfs4 (Tor bridge that speaks the OBFS4 protocol).</p><p>As part of <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-29&amp;probe_cc=TZ&amp;test_name=tor&amp;only=anomalies">Tor testing</a>
+in Tanzania, in many cases (between 27th to 28th October 2020), we see that <em>most</em> attempted connections to OR
+ports and obfs4 addresses failed (resulting in generic timeout errors).
+This is evident on several local networks, such as <a href=https://explorer.ooni.org/measurement/20201028T172336Z_tor_TZ_37035_n1_fnGxcTeKpajt0sys>MIC Tanzania (AS37035)</a>,
+<a href=https://explorer.ooni.org/measurement/20201028T160946Z_tor_TZ_36908_n1_kiMTNzOIPIWanQHo>Vodacom (AS36908)</a>,
+and <a href=https://explorer.ooni.org/measurement/20201028T150641Z_tor_TZ_327885_n1_oF9WZIroBB5Cp6i1>Viettel (AS327885)</a>.
+Given that <a href="https://explorer.ooni.org/search?until=2020-10-26&amp;since=2020-07-01&amp;probe_cc=TZ&amp;test_name=tor">previous Tor measurements</a>
+(collected over the last months, before 26th October 2020) showed that
+<a href=https://explorer.ooni.org/measurement/20201021T122720Z_tor_TZ_37035_n1_6sMwvrff2wObXF7o>Tor worked</a>
+in Tanzania (most Tor Browser bridges were reachable and almost all connections to Tor directory authorities were successful), the sudden failure of Tor testing (as seen on several networks in multiple measurements), along with the
+parallel blocking of social media platforms, suggest that access to Tor
+may have been interfered with in Tanzania amid its 2020 general election. It is also possible, however, that these timeouts may be the result of network congestion (rather than intentional blocking).</p><p>That said, it may still be possible to connect to Tor from Tanzania through
+the use of <em>private</em> <a href=https://bridges.torproject.org/>Tor bridges</a>. It&rsquo;s also worth highlighting that the number of timeouts varied across tests, and that <em>a few</em> connections to default Tor bridges and Tor directory authorities were successful. Regardless of potential interference, the Tor network saw a <em>spike</em> in both directly connecting Tor users and Tor bridge users in Tanzania.</p><p>The following chart, taken from <a href="https://metrics.torproject.org/userstats-relay-country.html?start=2020-08-01&amp;end=2020-10-30&amp;country=tz&amp;events=off">Tor Metrics</a>, shows that the number of directly connecting Tor users in Tanzania has been increasing over the last days.</p><div><a href=/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-tor-metrics.png><img src=/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-tor-metrics_hu9263c2c06e010561c832450be6c12d04_35692_1000x800_fit_box_3.png title="Tor Metrics: Directly connecting users from Tanzania" alt="Tor Metrics: Directly connecting users from Tanzania"></a></div><p>Going forward, we aim to improve upon the <a href=https://ooni.org/nettest/tor/>OONI Probe Tor experiment</a> to bootstrap <code>tor</code> from desktop probes, which could help with ruling out false positives and better evaluating whether Tor works in a tested network.</p><p>On a few occasions (on 27th and 28th October 2020), the testing of the
+<a href=https://psiphon.ca/>Psiphon VPN</a> in Tanzania presented some
+<a href="https://explorer.ooni.org/search?until=2020-10-29&amp;probe_cc=TZ&amp;test_name=psiphon&amp;only=anomalies">anomalies</a>
+on a few networks. While the <a href=https://ooni.org/nettest/psiphon/>OONI Probe Psiphon test</a> was able to bootstrap Psiphon,
+it was
+<a href=https://explorer.ooni.org/measurement/20201027T181530Z_psiphon_TZ_36930_n1_5wjkjvWIbA2yFqg8>unable</a>
+to fetch a webpage from the internet. However, <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;probe_cc=TZ&amp;test_name=psiphon">most Psiphon measurements</a>
+(collected from several networks in Tanzania over the last day) show
+that it was <a href=https://explorer.ooni.org/measurement/20201028T203458Z_psiphon_TZ_36908_n1_WZFjouXZJz9jnIo1>possible to successfully bootstrap Psiphon</a>
+and use it to fetch web pages, suggesting that Psiphon currently works
+in Tanzania.</p><h1 id=further-testing>Further testing</h1><p>In general, the more measurements we have available, the greater
+confidence we may have in confirming censorship events. Longitudinal
+measurements also enable us to examine whether and how censorship events
+change over time.</p><p>If you are in Tanzania and interested in contributing (more) OONI
+measurements, you can do so through the following steps:</p><ol><li><p>Install the <a href=https://ooni.org/install/mobile>OONI Probe mobile app</a></p></li><li><p>Tap <strong>Run</strong> (to run all tests)</p></li></ol><p>For more targeted testing, we also recommend the following:</p><ol><li><p>Open the <strong>Social media button</strong> in <a href=https://ooni.org/get-involved/run>this page</a> (when accessed from a mobile
+browser)</p></li><li><p>Open that button with your OONI Probe mobile app (instead of a
+browser)</p></li><li><p>Tap <strong>Run</strong> (to test 39 internationally relevant social media
+websites)</p></li></ol><p>Similarly:</p><ol><li><p>Open the <strong>VPNs button</strong> in <a href=https://ooni.org/get-involved/run>this page</a> (when accessed from a mobile
+browser)</p></li><li><p>Open that button with your OONI Probe mobile app (instead of a
+browser)</p></li><li><p>Tap <strong>Run</strong> (to test 21 circumvention tool websites)</p></li></ol><p>In all cases, <strong>please have your VPN turned off</strong> when running OONI
+Probe tests (to help ensure more accurate test results).</p><p>Once you have run OONI Probe tests, you will find your measurements in
+the Test Results section of your OONI Probe app. By default (unless you
+have opted out), all of your test results are automatically <a href="https://explorer.ooni.org/search?until=2020-10-29&amp;probe_cc=TZ">openly published</a>
+in <strong>near real-time</strong>. By contributing measurements, you are not only
+increasing transparency of internet censorship in Tanzania, but you are
+also enabling researchers and advocates to monitor censorship events as
+they emerge.</p><p>Warm thanks to all <a href=https://ooni.org/install/>OONI Probe</a> users in
+Tanzania for making this study possible.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

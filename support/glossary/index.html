@@ -1,0 +1,318 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>OONI Glossary | OONI</title>
+<link rel=canonical href=https://ooni.org/support/glossary/><meta name=description content="This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports."><meta property="og:title" content="OONI Glossary"><meta property="og:description" content="This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports."><meta property="og:type" content="article"><meta property="og:url" content="/support/glossary/"><meta name=twitter:card content="summary"><meta name=twitter:title content="OONI Glossary"><meta name=twitter:description content="This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="col content"><h1 class=article-title>OONI Glossary</h1><p><strong>Last updated</strong>: 3rd July 2023</p><p>This glossary contains <em>brief explanations</em> for terms used in OONI apps,
+methodologies, and research reports.</p><p><strong>Translations</strong>:</p><ul><li><strong>Español,</strong> <a href=/es/support/glossary>OONI Glosario</a></li><li><strong>العربية,</strong> <a href=/ar/support/glossary>OONI Glossary</a></li><li><strong>فارسی,</strong> <a href=/fa/support/glossary>OONI Glossary</a></li><li><strong>Kiswahili,</strong> <a href=/sw/support/glossary>OONI Faharasa</a></li><li><strong>Русский,</strong> <a href=/ru/support/glossary>OONI Глоссарий</a></li></ul><p>If you would like to see additional terms in this glossary, please <a href=https://github.com/ooni/ooni.org>open a pull request</a> or <a href=https://ooni.org/about/#contact>send us an email</a>.</p><ul><li><p><a href=#api>API</a></p></li><li><p><a href=#as>AS</a></p></li><li><p><a href=#asn>ASN</a></p></li><li><p><a href=#bgp>BGP</a></p></li><li><p><a href=#blocklist>Blocklist</a></p></li><li><p><a href=#block-page>Block page</a></p></li><li><p><a href=#caching>Caching</a></p></li><li><p><a href=#circumvention-tools>Circumvention tools</a></p></li><li><p><a href=#client>Client</a></p></li><li><p><a href=#data-processing-pipeline>Data processing pipeline</a></p></li><li><p><a href=#dns>DNS</a></p></li><li><p><a href=#dns-hijacking>DNS hijacking</a></p></li><li><p><a href=#dns-lookup>DNS lookup</a></p></li><li><p><a href=#dns-over-https>DNS over HTTPS</a></p></li><li><p><a href=#dns-over-tls>DNS over TLS</a></p></li><li><p><a href=#dns-over-udp>DNS over UDP</a></p></li><li><p><a href=#dns-query>DNS query</a></p></li><li><p><a href=#dns-resolver>DNS resolver</a></p></li><li><p><a href=#dns-spoofing>DNS spoofing</a></p></li><li><p><a href=#dns-tampering>DNS tampering</a></p></li><li><p><a href=#domain-fronting>Domain fronting</a></p></li><li><p><a href=#domain-name>Domain name</a></p></li><li><p><a href=#dpi>DPI</a></p></li><li><p><a href=#endpoint>Endpoint</a></p></li><li><p><a href=#false-positive>False positive</a></p></li><li><p><a href=#http>HTTP</a></p></li><li><p><a href=#https>HTTPS</a></p></li><li><p><a href=#http-blocking>HTTP blocking</a></p></li><li><p><a href=#https-collectors>HTTPS collectors</a></p></li><li><p><a href=#http-header>HTTP header</a></p></li><li><p><a href=#http-request>HTTP request</a></p></li><li><p><a href=#http-response>HTTP response</a></p></li><li><p><a href=#http-status-codes>HTTP status codes</a></p></li><li><p><a href=#http-transparent-proxy>HTTP transparent proxy</a></p></li><li><p><a href=#instant-messaging>Instant Messaging</a></p></li><li><p><a href=#internet>Internet</a></p></li><li><p><a href=#internet-blackout>Internet blackout</a></p></li><li><p><a href=#internet-censorship>Internet censorship</a></p></li><li><p><a href=#ip-address>IP address</a></p></li><li><p><a href=#isp>ISP</a></p></li><li><p><a href=#measurement>Measurement</a></p></li><li><p><a href=#metadata>Metadata</a></p></li><li><p><a href=#middlebox>Middlebox</a></p></li><li><p><a href=#mirror-website>Mirror website</a></p></li><li><p><a href=#nettest>Nettest</a></p></li><li><p><a href=#network>Network</a></p></li><li><p><a href=#network-anomaly>Network anomaly</a></p></li><li><p><a href=#network-interference>Network interference</a></p></li><li><p><a href=#onion-services>Onion services</a></p></li><li><p><a href=#ooni-bouncer>OONI bouncer</a></p></li><li><p><a href=#ooni-collector>OONI collector</a></p></li><li><p><a href=#ooni-explorer>OONI Explorer</a></p></li><li><p><a href=#ooni-nettest-helpers>OONI nettest helpers</a></p></li><li><p><a href=#ooni-probe>OONI Probe</a></p></li><li><p><a href=#ooni-run>OONI Run</a></p></li><li><p><a href=#performance>Performance</a></p></li><li><p><a href=#protocol>Protocol</a></p></li><li><p><a href=#proxy>Proxy</a></p></li><li><p><a href=#raspberry-pi>Raspberry Pi</a></p></li><li><p><a href=#server>Server</a></p></li><li><p><a href=#tcp>TCP</a></p></li><li><p><a href=#tcpip-blocking>TCP/IP blocking</a></p></li><li><p><a href=#test-input>Test input</a></p></li><li><p><a href=#test-list>Test list</a></p></li><li><p><a href=#tls>TLS</a></p></li><li><p><a href=#tor>Tor</a></p></li><li><p><a href=#traffic-manipulation>Traffic manipulation</a></p></li><li><p><a href=#udp>UDP</a></p></li><li><p><a href=#url>URL</a></p></li><li><p><a href=#vantage-point>Vantage point</a></p></li><li><p><a href=#vpn>VPN</a></p></li></ul><h3 id=api>API</h3><p>An Application Programming Interface (API) is an interface that enables
+programmers to write integration code between different services.</p><p>The <a href=https://api.ooni.io/>OONI API</a> provides an interface that enables users to
+request specific types of OONI data and to download such data in a specific
+format (JSON). For batch usage, we recommend the <a href=https://github.com/ooni/sysadmin/blob/master/docs/metadb-sharing.md>OONI PostgreSQL MetaDB</a>.</p><p>For a more detailed explanation, we recommend the article <a href=https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/>&ldquo;What is an API? In English, please&rdquo;</a>.</p><h3 id=as>AS</h3><p>The internet is run by tens of thousands of autonomous systems (AS) that
+coordinate with each other to share routing information: directions on how to
+reach <a href=#ip-address>IP addresses</a> on the internet.</p><p>Generally, an <a href=#isp>Internet Service Provider (ISP)</a> will be responsible for one or
+more ASs.</p><p>Each AS is responsible for delivering IP packets to a set of IP addresses that
+it manages.</p><h3 id=asn>ASN</h3><p>An Autonomous System Number (ASN) is a unique identifier of an autonomous system
+(<a href=#as>AS</a>). This number allows the respective autonomous system to exchange routing information
+with other systems.</p><p>An Internet Service Provider (ISP) usually has an officially registered ASN (and
+they can have more than one ASN).</p><p>OONI Probe collects the ASN to identify the network in which each test was
+performed.</p><p>Looking up an ASN number in a web search engine (such as Google) will show you
+which <a href=#isp>ISP</a> it corresponds to. For example, searching for &ldquo;&ldquo;AS30722"&rdquo; should return
+&ldquo;&ldquo;Vodafone Italia&rdquo;&rdquo;.</p><h3 id=bgp>BGP</h3><p>The Border Gateway Protocol (BGP) is a protocol used by
+<a href=#as>Autonomous Systems (AS)</a> on the internet to exchange routing
+information. With this information they are able to discover which
+AS is responsible for which set of <a href=#ip-address>IP addresses</a> and what is the path
+IP packets need to take in order to reach that particular AS.</p><p>BGP data, aggregated and published by organizations such as
+<a href=https://www.ripe.net/>RIPE</a> and <a href=https://ioda.inetintel.cc.gatech.edu/>IODA</a>, can be useful
+in detecting internet outages.</p><h3 id=blocklist>Blocklist</h3><p>A blocklist is a list of internet resources (such as websites and IP addresses)
+which are blocked from user access.</p><p>Some governments occasionally publish official blocklists (or they get leaked)
+which contain lists of websites that are considered prohibited in a country in accordance with local legislation.</p><p>Internet Service Providers (ISPs) are then ordered to block access to all
+websites included in such blocklists, commonly involving hundreds (or thousands)
+of URLs that contain content which is considered illegal in the respective country (such as
+gambling, file sharing, adult content, political speech, etc.).</p><h3 id=block-page>Block page</h3><p>A block page (or &ldquo;Access Denied Page&rdquo;) is a web page that is displayed when a
+user attempts to access a website they are not permitted to view.</p><p>This is a censorship technique adopted by <a href=#isp>Internet Service Providers (ISPs)</a> in
+several countries (such as Iran, Indonesia, Greece, and Italy).</p><p>When a block page is served by an ISP, the user does not view the content of the
+website they&rsquo;re trying to access. Instead, they view a web page (the block page)
+that informs them that they&rsquo;re not allowed to access the intended website.</p><p>A block page is the only form of internet censorship that clearly notifies
+internet users of the censorship. Often, a block page references the law behind
+the censorship.</p><p>As an example, below is a block page served by ISPs in Indonesia:</p><p><img src=/post/indonesia/indonesian-blockpage.png alt="Indonesian block page"></p><p>Based on OONI&rsquo;s heuristics, internet censorship is automatically confirmed when
+a block page is detected.</p><h3 id=caching>Caching</h3><p>Caching is the process of storing data in a temporary storage that allows faster
+access for future usage.</p><p>For example, a web <a href=#server>server</a> may cache certain web resources so they can be loaded
+faster when a user requests them.</p><h3 id=circumvention-tools>Circumvention tools</h3><p>Circumvention tools are technologies that enable their users to bypass internet
+censorship, such as the blocking of websites and social media apps.</p><p>Circumvention tools enable their users to access internet services that are
+blocked by their <a href=#isp>Internet Service Providers (ISPs)</a>.</p><p>VPNs and proxies are common circumvention tools, while
+<a href=https://www.torproject.org/>Tor</a> also provides its users with online privacy
+and anonymity (in addition to censorship circumvention).</p><h3 id=client>Client</h3><p>In the world of computers, a client is a piece of software or hardware that
+interacts with a service hosted by a server.</p><p>The <a href=https://ooni.org/install/>OONI Probe app</a>, for example, is a client that
+communicates with OONI servers in order to submit testing results.</p><h3 id=data-processing-pipeline>Data processing pipeline</h3><p>A data processing pipeline is a software system designed to process data.</p><p>The <a href=https://github.com/ooni/pipeline>OONI data processing pipeline</a> is
+responsible for aggregating network measurement data from OONI Probe users and
+analyzing the data to identify network anomalies around the world.</p><h3 id=dns>DNS</h3><p>DNS stands for &ldquo;Domain Name System&rdquo; and it maps domain names to <a href=#ip-address>IP addresses</a>.</p><p>A domain is a name that is commonly attributed to websites (when they&rsquo;re
+created), so that they can be more easily accessed and remembered. For example,
+<code>wikipedia.org</code> is the domain of the Wikipedia website.</p><p>However, computers can&rsquo;t connect to internet services through domain names, but
+based on IP addresses: the digital address of each service on the internet.
+Similarly, in the physical world, you would need the address of a house (rather
+than the name of the house itself) in order to visit it.</p><p>The Domain Name System (DNS) is what is responsible for transforming a human-
+readable domain name (such as <code>ooni.org</code>) into its numerical IP address
+counterpart (in this case:<code>104.198.14.52</code>), thus allowing your computer to
+access the intended website.</p><h3 id=dns-hijacking>DNS hijacking</h3><p>DNS hijacking (otherwise known as &ldquo;DNS poisoning&rdquo;) occurs when, upon looking up
+the address of a particular domain, the queried <a href=#dns-resolver>DNS resolver</a> is &lsquo;dishonest&rsquo;,
+intentionally returning an incorrect answer.</p><p>As a result, you either receive the IP address of a <a href=#block-page>block page</a>, or you get a
+response claiming that the domain name does not exist.</p><p>When Internet Service Providers (ISPs) receive government orders to block
+specific websites, they sometimes adopt this technique. In these cases, it may
+be possible to circumvent the censorship merely by changing your DNS resolver,
+or by using encrypted <a href=#dns>DNS</a>, such as <a href=#dns-over-https>DNS over HTTPS</a>.</p><h3 id=dns-lookup>DNS lookup</h3><p>When you try to access a website in your browser, the request is forwarded to a
+<a href=#dns-resolver>DNS resolver</a>, requesting the corresponding <a href=#ip-address>IP address</a> to the domain name you entered.</p><p>To check whether websites are blocked by means of DNS, <a href=https://ooni.org/install/>OONI Probe</a> starts off by performing a DNS lookup to see
+which IP addresses are mapped to tested domains by the user&rsquo;s DNS resolver. If
+the IP addresses do <em>not</em> match those allocated by another DNS resolver (known
+to not implement censorship), it&rsquo;s possible that censorship is implemented at
+the DNS level.</p><p>A more detailed description of how OONI&rsquo;s Web Connectivity test works is
+available <a href=https://ooni.org/nettest/web-connectivity/>here</a>.</p><h3 id=dns-over-https>DNS over HTTPS</h3><p>A way to perform <a href=#dns-lookup>DNS lookups</a> using <a href=#https>HTTPS</a>.</p><h3 id=dns-over-tls>DNS over TLS</h3><p>A way to perform <a href=#dns-lookup>DNS lookups</a> using <a href=#tls>TLS</a>.</p><h3 id=dns-over-udp>DNS over UDP</h3><p>The standard way to perform <a href=#dns-lookup>DNS lookups</a> over the internet. The client sends a one-off
+<a href=#udp>UDP</a> packet to the <a href=#server>server</a> containing a <a href=#dns-query>query</a> and awaits up until a given timeout
+to receive the response to the query.</p><h3 id=dns-query>DNS query</h3><p>A DNS query (otherwise known as a &ldquo;DNS request&rdquo;) is a request for information
+sent from a user&rsquo;s computer to a DNS server.</p><p>In most cases, a DNS request is sent to ask for the IP address associated with a
+domain name (such as <code>ooni.org</code>).</p><h3 id=dns-resolver>DNS resolver</h3><p>A DNS resolver is a <a href=#server>server</a> which maps domain names to IP addresses, operating like
+an &ldquo;address book&rdquo;.</p><p>A DNS resolver manages <a href=#dns-query>DNS requests</a> (for all the clients
+on its network) and is responsible for transforming host (/domain) names (such as
+<code>ooni.org</code>) into IP addresses (such as <code>104.198.14.52</code>).</p><p>Internet Service Providers (ISPs), amongst other service providers (such as Google), run DNS
+resolvers that can be queried to receive the IP address of a given website.</p><h3 id=dns-spoofing>DNS spoofing</h3><p>DNS spoofing (also referred to as &ldquo;DNS injection&rdquo;) occurs when <a href=#dns-query>DNS queries</a> are
+intercepted and spoofed (faked) DNS answers are injected in response.</p><p>This does <em>not</em> involve <a href=https://ooni.org/post/not-quite-network-censorship/>DNS misconfiguration</a>, nor is it similar to <a href=#dns-hijacking>DNS hijacking</a> where DNS resolvers
+reply with a forged response.</p><p>DNS spoofing is a more sophisticated technique that imitates the
+legitimate response of the queried DNS server, yet providing fake data.</p><p>When Internet Service Providers (ISPs) receive government orders to block
+specific websites, they sometimes adopt this technique, intercepting DNS traffic
+and replying with a spoofed response for the banned sites (preventing access).</p><h3 id=dns-tampering>DNS tampering</h3><p>DNS tampering is an <strong>umbrella term used to describe various forms of DNS
+interference</strong>, including <a href=#dns-hijacking>DNS hijacking</a> and <a href=#dns-spoofing>DNS spoofing</a>.</p><p>Internet services (such as websites and apps) are hosted on IP addresses, which
+are digital addresses on the internet. To visit a website, you need its IP
+address.</p><p>To obtain the IP address of a website, your computer needs to query a <a href=#dns-resolver>DNS resolver</a> for it
+(since it manages a database of IP addresses that correspond to domains).</p><p>DNS tampering occurs when, upon performing a DNS Lookup for a website, a wrong
+IP address is being returned, preventing you from visiting the requested website.</p><p>DNS tampering can happen in various ways, including:</p><ul><li><p><strong>DNS hijacking:</strong> Where the DNS resolver &rsquo;lies&rsquo; and returns the wrong IP
+address.</p></li><li><p><strong>DNS spoofing:</strong> Where your DNS request is intercepted and you receive the
+wrong IP address.</p></li></ul><p>DNS tampering is a common censorship technique adopted by Internet Service
+Providers (ISPs) around the world.</p><p>The <a href=https://ooni.org/install/>OONI Probe apps</a> measure the <a href=https://ooni.org/nettest/>DNS tampering of websites and apps</a>.</p><h3 id=domain-fronting>Domain fronting</h3><p>Domain fronting (also sometimes known as &ldquo;cloud fronting&rdquo;) is a censorship
+circumvention technique which relies on using a popular domain name hosted on a
+big cloud service provider to &ldquo;front&rdquo; traffic towards a circumvention service
+hosted on the same cloud service.</p><p>For example, this could involve setting up a service on the Google Cloud under the domain
+<code>circumvention-service.google-cloud.com</code>, but fronting it via <code>google.com</code>. This means
+that from the perspective of someone observing network traffic, all that they can
+see is an encrypted TLS connection towards <code>google.com</code>. Yet, inside of this
+encrypted connection, the client says &ldquo;actually I want to access
+<code>circumvention-service.google-cloud.com</code>&rdquo;, circumventing any potential block.</p><p>As a result, the censor would either have to block all of Google Cloud (and
+therefore disrupt other services too) or they would have a hard time
+distinguishing requests towards <code>circumvention-service.google-cloud.com</code> from
+requests to <code>google.com</code>. This concept is called &ldquo;<a href=https://www.upturn.org/static/files/CollateralFreedom.pdf>collateral freedom</a>&rdquo;, as it
+relies on censors <em>not</em> causing collateral damage by blocking access to big
+services (such as Google Cloud) that many other services rely on.</p><h3 id=domain-name>Domain name</h3><p>A domain is a name that is commonly attributed to websites (when they&rsquo;re
+created), so that they can be more easily accessed and remembered.</p><p>For example, <code>www.wikipedia.org</code> is the domain of the Wikipedia website.</p><h3 id=dpi>DPI</h3><p>Deep packet inspection (DPI) is a method of examining and managing
+network traffic. This technology is used for a detailed inspection of data being
+sent over a computer network.</p><p>As DPI enables advanced network management, it is commonly used by corporations
+and Internet Service Providers (ISPs).</p><p>However, DPI technology can also be used for implementing internet censorship
+(blocking of specific websites or apps) and online surveillance.</p><h3 id=endpoint>Endpoint</h3><p>Combination of an IP address, a port and a protocol name that uniquely identifies
+a client or server on the internet. For example, the <code>1.1.1.1</code> address on port
+<code>443</code> using the <a href=#tcp>TCP</a> protocol identifies an endpoint used by Cloudflare <a href=#dns-over-https>DNS over
+HTTPS</a> services.</p><p>It is common to represent endpoints using a compact notation like: <code>1.1.1.1:443/tcp</code>,
+where <code>:</code> separates the address and the port and <code>/</code> separates the port and the
+protocol.</p><h3 id=false-positive>False positive</h3><p>A false positive is a test result that wrongly indicates that a particular
+condition or attribute is present.</p><p><strong>Within the OONI context, false positives are OONI Probe test results (flagged
+as &ldquo;anomalous&rdquo;) which incorrectly indicate the presence of network
+interference (such as the blocking of a website or app)</strong>.</p><p>OONI Probe test results, collected from the network of the user, are
+automatically compared with test results collected from a non-censored network.
+If the results don&rsquo;t match, then the OONI Probe test result in question is
+flagged as an &ldquo;anomaly&rdquo;, indicating potential network interference. Many of
+these anomalies are in fact cases of network interference, while some are false
+positives.</p><p>False positives can occur due a number of reasons (partly due to limitations to
+<a href=https://ooni.org/nettest/>OONI methodologies</a>, and partly due to the very
+nature of how the internet works), such as the following:</p><ul><li><p><strong>Transient network failures:</strong> If OONI Probe tests are performed on an
+unstable network, the test results may show signs of potential <a href=#tcpip-blocking>TCP/IP
+interference</a>, when in fact network errors can cause the TCP connection to
+drop.</p></li><li><p><strong>Unreliable servers:</strong> If a website is hosted on an unreliable server or
+otherwise encounters server issues, the tested website may return failures
+(even though it&rsquo;s not interfered with) and the OONI Probe test may fail.</p></li><li><p><strong>DNS resolution:</strong> If the <a href=#dns-resolver>DNS resolver</a> of an OONI Probe user (such as Google
+or their local ISP) provides an IP address that is closest to the user
+geographically, that IP address may differ from the IP address resolved from
+a control vantage point, potentially incorrectly indicating the presence of
+DNS tampering.</p></li><li><p><strong>Geographical distribution of content:</strong> Many websites serve different
+content depending on the country that the user is connecting from. In these
+cases, the HTTP responses from the network of the OONI Probe user and from
+the control vantage point will differ, potentially incorrectly indicating
+the presence of <a href=#http>HTTP</a> based interference.</p></li></ul><h3 id=http>HTTP</h3><p>The Hypertext Transfer Protocol (HTTP) is the underlying protocol used by the World
+Wide Web to transfer or exchange data across the internet.</p><p>The HTTP protocol allows communication between a <a href=#client>client</a> and a <a href=#server>server</a>. It does so
+by handling a client’s request to connect to a server, and the server’s response
+to the client’s request.</p><p>All websites include an HTTP (or HTTPS) prefix (such as <code>http://example.com/</code>) so
+that your computer (the client) can request and receive the content of a website
+(hosted on a server).</p><p>The transmission of data over the HTTP protocol is <strong>unencrypted</strong>.</p><h3 id=https>HTTPS</h3><p>The Hypertext Transfer Protocol Secure (HTTPS) &ndash; also known as HTTP over <a href=#tls>TLS</a>, or
+HTTP over SSL &ndash; is <strong>the HTTP protocol over an encrypted channel</strong>.</p><p>Over the last years, most major websites on the internet started supporting HTTPS
+(such as <code>https://www.facebook.com/</code>) so that the transmission of data (such as
+passwords to login to websites) over the HTTP protocol is encrypted.</p><h3 id=http-blocking>HTTP blocking</h3><p>HTTP blocking is an umbrella term used to describe various forms of HTTP
+interference with the intention of preventing clients from retrieving
+information from specific servers.</p><p>To access a website on the internet, an HTTP request is sent to the server
+hosting the website you&rsquo;re trying to reach. If the request was successful, the
+server will reply with the contents of the website, allowing access.</p><p>When Internet Service Providers (ISPs) receive government orders to block
+specific websites, HTTP blocking is a common censorship technique that they may
+adopt. There are many ways that they can implement censorship on the HTTP
+protocol, such as the following:</p><ul><li><p><strong>Serving a block page:</strong> In this case, the ISP intercepts the user&rsquo;s request
+to access a specific website (e.g. <code>wikipedia.org</code>) and serves the user a block
+page instead, which informs the user that they are not allowed to access the
+requested website.</p></li><li><p><strong>HTTP failure:</strong> The user&rsquo;s <a href=#http-request>HTTP request</a> (to access a specific internet
+service) fails because it is intercepted by an HTTP transparent proxy, or the
+ISP resets the connection or hijacks the (unencrypted) connection to
+redirect it (preventing it from reaching the intended server).</p></li></ul><p>The OONI Probe <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity test</a> checks the above scenarios when measuring websites for HTTP
+blocking (and other forms of internet censorship).</p><h3 id=https-collectors>HTTPS collectors</h3><p>An HTTPS collector is a server that collects data over the encrypted <a href=#https>HTTPS
+protocol</a>.</p><p>OONI utilizes HTTPS collectors in order to collect network measurements from
+OONI Probe users around the world.</p><h3 id=http-header>HTTP header</h3><p>HTTP headers are used to <strong>transmit metadata</strong> about the <a href=#http-request>HTTP request</a> or
+response to the server or the client.</p><p>Certain HTTP headers are standardised for transmitting common bits of
+information, such as the User-Agent header field, which is used to tell the
+<a href=#server>server</a> which browser is performing the request.</p><p>Every time you connect to a server, you (the <a href=#client>client</a>) send a request through the
+<a href=#http>HTTP protocol</a> to that server. Such requests include <strong>HTTP headers</strong>, which
+request certain types of information based on various types of information
+fields (&ldquo;HTTP header fields&rdquo;). These fields include the &ldquo;Host header&rdquo;, which
+includes information about the specific domain you want to access. For example,
+when you connect to <code>ooni.org</code>, the &lsquo;host&rsquo; header of your HTTP request includes
+information which communicates that you want to access that domain.</p><p>When measuring the blocking of websites, the OONI Probe <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity test</a> compares the HTTP headers of
+the tested website from the network of the user with a non-censored network (as
+part of a larger testing methodology).</p><h3 id=http-request>HTTP request</h3><p>Every time you visit a website, your browser (the <a href=#client>client</a>) sends a request (&ldquo;HTTP
+request&rdquo;) through the HTTP protocol to the server that is hosting the website.
+A server normally replies with a &ldquo;HTTP response&rdquo; which includes the content of
+the website it is hosting.</p><p>In some cases though, Internet Service Providers (ISP) prevent users from
+accessing certain websites by blocking or interfering with the connection
+between them and the server. This is a form of <a href=#http-blocking>HTTP blocking</a>,
+<a href=https://ooni.org/nettest/web-connectivity/>measured</a> by the <a href=https://ooni.org/install/>OONI Probe app</a>.</p><h3 id=http-response>HTTP response</h3><p>Every time you visit a website, your browser (the client) sends a request
+("<a href=#http-request>HTTP request</a>&rdquo;) through the HTTP protocol to the server that is hosting the
+website.</p><p>In response to an HTTP request, a server will send an HTTP response, which
+includes HTTP response headers and optionally a response body, which in the case
+of a website will be the content of the page.</p><h3 id=http-status-codes>HTTP status codes</h3><p>HTTP status codes are standardized codes (maintained by the Internet Assigned
+Numbers Authority or IANA) that are issued by a server in response to a client&rsquo;s
+request. As suggested by their name, these codes communicate the status of an
+HTTP response.</p><p>HTTP status codes are divided into specific ranges, depending on the type of status they are communicating:</p><ul><li><strong>100-199</strong>: are used to communicate information to the client</li><li><strong>200-299</strong>: are used to indicate a successful request</li><li><strong>300-399</strong>: are used for redirecting the request to another location</li><li><strong>400-499</strong>: are used to indicate errors in the request by the client</li><li><strong>500-599</strong>: are used to indicate server-side errors</li></ul><p>Common HTTP status codes include:</p><ul><li><p>HTTP status <strong>200</strong> (OK): Used to indicate that the request was successful. This
+is generally the status code used most commonly for successful page loads.</p></li><li><p>HTTP status <strong>301</strong> (Moved Permanently): When the resource requested by the
+client is now available at a different location.</p></li><li><p>HTTP status <strong>302</strong> (Found): When the resource requested by the client can be
+<strong>temporarily accessed</strong> at a different location.</p></li><li><p>HTTP status <strong>400</strong> (Bad Request): When the application you are using (such as
+your web browser) accesses a server incorrectly or the request was corrupted.</p></li><li><p>HTTP status <strong>401</strong> (Unauthorized): When you try to access a web page that requires
+authentication credentials without you having provided any.</p></li><li><p>HTTP status <strong>403</strong> (Forbidden): When you try to access a restricted directory on
+a website that you don&rsquo;t have the correct authorized credentials for.</p></li><li><p>HTTP status <strong>404</strong> (Not Found): When you try to access a resource on a web
+server (usually a web page) that doesn’t exist (because, for example, you have
+mistyped a URL).</p></li><li><p>HTTP status <strong>451</strong> (Unavailable For Legal Reasons): When the resource that you are
+trying to access is blocked by the server due to legal restrictions. This is
+the status code used for implementing internet censorship.</p></li><li><p>HTTP status <strong>500</strong> (Internal Server Error): General-purpose error message when a
+web server encounters some form of internal error.</p></li></ul><p>When measuring the blocking of websites, the OONI Probe <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity test</a> compares the HTTP status codes
+of the tested website from the network of the user with a non-censored network
+(as part of a larger testing methodology).</p><h3 id=http-transparent-proxy>HTTP transparent proxy</h3><p>An HTTP transparent proxy is a type of <a href=#middlebox>middlebox</a>, an intermediary system that
+sits between a <a href=#client>client</a> and a <a href=#server>server</a> and performs actions over the <a href=#http>HTTP protocol</a>.</p><p>When a user makes a request to a server (for example, to access <code>wikipedia.org</code>),
+the transparent proxy intercepts the request to perform various actions (such as
+caching, redirection, and authentication).</p><p>Many Internet Service Providers (ISPs) around the world use HTTP transparent
+proxies for a number of purposes; for example, to improve network performance or
+to provide users with faster access to websites.</p><p>Sometimes though, HTTP transparent proxies are also used to implement internet
+censorship and/or surveillance.</p><p>The <a href=https://ooni.org/install/>OONI Probe app</a> includes two
+<a href=https://ooni.org/nettest/>tests</a> designed to measure networks with the aim of
+identifying the presence of HTTP transparent proxies.</p><h3 id=instant-messaging>Instant Messaging</h3><p>Instant messaging (IM) technology is a type of online chat which offers real-time
+text transmission over the internet.</p><p>WhatsApp, Facebook Messenger, and Telegram are examples of IM apps, all of which
+are <a href=https://ooni.org/nettest/>measured</a> for censorship by the <a href=https://ooni.org/install/>OONI Probe app</a>.</p><h3 id=internet>Internet</h3><p>The internet is a decentralized, international network of networks.</p><p>Devices, such as computers, connect to each other and form a network. Each
+network is connected to other networks, which are connected to each other
+through electronic, wireless and optical networking technologies.</p><p>Multiple interconnected networks form the internet.</p><h3 id=internet-blackout>Internet blackout</h3><p>An internet blackout (also referred to as &ldquo;internet outage&rdquo; or &ldquo;internet shutdown&rdquo;) occurs when the
+internet is completely turned-off in a country or region. The area or network
+affected by the internet blackout has no internet access at all.</p><p>An internet blackout may be <em>intentional</em> (ordered by a government) &ndash; in which
+case, it constitutes a form of internet censorship &ndash; or it may have been caused
+<em>unintentionally</em> (for example, due to disruption of cables).</p><p>Since <a href=https://ooni.org/install/>OONI Probe</a> requires internet connectivity in order to perform tests,
+measuring internet blackouts is currently out of scope.</p><p>Several <a href=https://ooni.org/post/examining-internet-blackouts/>public data sources</a> are available for monitoring internet blackouts, such as
+<a href=https://ioda.inetintel.cc.gatech.edu/>IODA</a>.</p><h3 id=internet-censorship>Internet censorship</h3><p>Internet censorship is the <em>intentional</em> control or suppression of what can be accessed,
+published, or viewed on the internet.</p><p>Internet Service Providers (ISPs) usually implement internet censorship based on
+government orders and/or in compliance with national legislation. This involves
+blocking access to specific websites and/or applications, preventing users of
+that specific network from accessing specific internet services.</p><p>As internet censorship is implemented on the network level, it may differ from
+network to network, and from country to country.</p><h3 id=ip-address>IP address</h3><p>An Internet Protocol (IP) address is a unique numerical address that identifies
+a device or service on the internet.</p><p>An IP address serves 2 main functions:</p><ol><li><p><strong>Identification:</strong> An IP address distinguishes a system from all other
+systems on the internet.</p></li><li><p><strong>Location:</strong> An IP address serves as a <strong>digital address</strong> for a system,
+enabling other systems on the internet to reach it.</p></li></ol><p>To connect to the internet, every device is assigned an IP address.</p><h3 id=isp>ISP</h3><p>An Internet Service Provider (ISP) is an organization that provides services for
+accessing and using the internet.</p><p>ISPs can be state-owned, commercial, community-owned, non-profit, or otherwise
+privately owned.</p><p>Vodafone, AT&amp;T, Airtel, and MTN are examples of ISPs.</p><h3 id=measurement>Measurement</h3><p>A network measurement is the process of measuring certain attributes of a
+network.</p><p>Within the OONI context, a measurement is the <strong>result of an OONI Probe test</strong>.</p><p>Each <a href=https://ooni.org/nettest/>OONI Probe test</a> is designed to measure
+different forms of network interference. Depending on the test, each OONI
+measurement contains a different result.</p><p>Here is an example of an OONI measurement: <a href="https://explorer.ooni.org/measurement/20191024T090549Z_AS42668_D8RVKYKWbqzaTopEcH3K6qy8yzOHVe1QgNeyzn686G1CbEveKU?input=http://kavkaznews.com/">https://explorer.ooni.org/measurement/20191024T090549Z_AS42668_D8RVKYKWbqzaTopEcH3K6qy8yzOHVe1QgNeyzn686G1CbEveKU?input=http://kavkaznews.com/</a></p><h3 id=metadata>Metadata</h3><p>Metadata is often described as “data about data” and is used to provide context
+and description of the data.</p><p>Examples of metadata for a document may include its author and the date of
+publication.</p><h3 id=middlebox>Middlebox</h3><p>A middlebox is a computer networking device that transforms, inspects, filters,
+or otherwise manipulates traffic for purposes other than packet forwarding.</p><p>Many <a href=#ISP>Internet Service Providers (ISPs)</a> around the world use middleboxes to
+improve network performance, provide users with faster access to websites, and
+for a number of other networking purposes.</p><p>Sometimes though, middleboxes are also used to implement internet censorship
+and/or surveillance.</p><p>The <a href=https://ooni.org/install/>OONI Probe app</a> includes two
+<a href=https://ooni.org/nettest/>tests</a> designed to measure networks with the aim of
+identifying the presence of middleboxes.</p><h3 id=mirror-website>Mirror website</h3><p>A mirror website is a replica of another website. Such websites have different
+URLs, but identical or near-identical content.</p><p>Mirror websites are often set up in an attempt to circumvent internet
+censorship. When <a href=#isp>ISPs</a> block access to a website, they block access to its URL. By
+changing the <a href=#dns>domain name</a>, these website owners can enable the public to access the
+content of their site.</p><h3 id=nettest>Nettest</h3><p>Nettest is an abbreviation for &ldquo;network test&rdquo;.</p><p>Within the OONI context, nettests refer to OONI Probe network measurement tests.</p><p>Descriptions for OONI Probe nettests are available here: <a href=https://ooni.org/nettest/>https://ooni.org/nettest/</a></p><h3 id=network>Network</h3><p>Devices, such as computers, connect to each other and form a network to exchange
+data.</p><p>Each network is connected to other networks, which are connected to each other
+through electronic, wireless and optical networking technologies. The internet
+is formed by multiple interconnected networks.</p><h3 id=network-anomaly>Network anomaly</h3><p>A network anomaly is network behavior that deviates from what is standard,
+normal, or expected.</p><p>Within the OONI context, network anomalies are testing results which deviate
+from what is expected based on the <a href=https://ooni.org/nettest/>methodologies of OONI Probe tests</a>.</p><p>OONI Probe test results, collected from the network of the user, are
+automatically compared with test results collected from a non-censored network.
+If the results don&rsquo;t match, then the OONI Probe test result in question is
+flagged as an &ldquo;anomaly&rdquo;, indicating potential network interference.</p><h3 id=network-interference>Network interference</h3><p>Network interference is an umbrella term used to describe various forms of
+interference that occur on networks on the internet.</p><p>Within the OONI context, the term network interference is primarily used to
+refer to cases of internet censorship and traffic manipulation.</p><h3 id=onion-services>Onion services</h3><p><a href=https://community.torproject.org/onion-services/overview/>Onion services</a> (previously known as &ldquo;Tor hidden services&rdquo;) are internet services that can only be accessed over the Tor network, providing their users with all the security of HTTPS with the added privacy benefits of Tor Browser.</p><p>Websites, for example, can be placed in an anonymous network location through the use of onion services, which allow them to hide their IP address and provide more privacy to their visitors. You can distinguish such websites through their .onion addresses, such as <a href=https://brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/>https://brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/</a> or <a href=https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion>https://www.nytimesn7cgmftshazwhfgzm37qxb44r64ytbb2dj3x62d2lljsciiyd.onion</a>.</p><h3 id=ooni-bouncer>OONI bouncer</h3><p>The OONI bouncer is the service that is responsible for informing OONI Probe
+clients:</p><ul><li><p>where they should submit their results</p></li><li><p>what the addresses of the nettest helpers are so that they can receive assistance in performing tests</p></li></ul><h3 id=ooni-collector>OONI collector</h3><p>The OONI collector is the service that is used for collecting measurements from
+OONI Probe clients around the world.</p><h3 id=ooni-explorer>OONI Explorer</h3><p><a href=https://explorer.ooni.org/>OONI Explorer</a> is a web interface which provides a
+location to explore, search, and download all network measurements collected
+<a href=https://ooni.org/install/>through OONI Probe</a> tests from 2012 until today.</p><h3 id=ooni-nettest-helpers>OONI nettest helpers</h3><p>The OONI nettest helpers implement server-side protocols that are of assistance
+to OONI Probe clients running tests. For example, OONI Probe clients speak to a
+test helper to learn what the expected content of a website is in order to do
+the control comparison and determine if that website is blocked.</p><h3 id=ooni-probe>OONI Probe</h3><p>OONI Probe is <a href=https://github.com/ooni>free and open source software</a> designed
+to measure internet censorship and other forms of network interference.</p><p>OONI Probe has been developed by the <a href=https://ooni.org/>Open Observatory of Network Interference</a> since 2012 and is available on <a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android</a>,
+<a href=https://itunes.apple.com/us/app/id1199566366>iOS</a>,
+<a href=https://ooni.org/install/cli>Linux</a>, <a href=https://ooni.org/install/desktop>Windows and macOS</a>.</p><h3 id=ooni-run>OONI Run</h3><p><a href=https://run.ooni.io/>OONI Run</a> is a web interface that enables OONI Probe
+mobile app users to generate links for <strong>customized OONI Probe testing</strong>.</p><p>This tool serves <strong>to coordinate censorship measurement with other OONI Probe users</strong> in a country or around the world.</p><p><a href=https://ooni.org/support/ooni-run/>OONI Run links</a> can be generated by adding URLs of the user&rsquo;s choice. The goal is to share this generated OONI Run link with other OONI Probe mobile app users,
+so that they can test the sites that were chosen when the link
+was generated.</p><p>The OONI Run platform can also be used to generate widget code to embed an OONI
+button (for customized OONI Probe testing) on a website.</p><h3 id=performance>Performance</h3><p>Network performance is a measure to define the quality of a network connection.
+This can be measured in several ways (e.g. speed, bandwidth, latency, error
+rate).</p><h3 id=protocol>Protocol</h3><p>Protocols are a set of rules or procedures for transmitting data between
+electronic devices (such as computers) on the internet. These rules determine
+how information will be structured and how it will be sent and received over the
+internet.</p><p>The internet consists of various types of protocols, such as the Internet
+Protocol (IP) which is used to direct data packets to a specific computer or
+server.</p><h3 id=proxy>Proxy</h3><p>A proxy is a <a href=#server>server</a> that acts as an intermediary service through which you can
+channel some or all of your internet communication. Proxies can therefore be
+used to bypass internet censorship.</p><h3 id=raspberry-pi>Raspberry Pi</h3><p>Raspberry Pi is the name of a series of single-board computers made by the
+<a href=https://www.raspberrypi.org/>Raspberry Pi Foundation</a>, a UK charity that aims
+to educate people in computing and create easier access to computing education.</p><p>OONI previously created an OONI Probe distribution for Raspberry Pis, called
+<a href=https://ooni.org/install/lepidopter/>Lepidopter</a>.</p><h3 id=server>Server</h3><p>A server is a computer that remains on and connected to the internet in order to
+provide internet services to other computers.</p><p>All internet services (such as websites, apps, and emails) are hosted on
+servers, which are responsible for receiving requests from other computers and
+responding to those requests (for example, by providing access to the websites
+they&rsquo;re hosting).</p><h3 id=tcp>TCP</h3><p>The Transmission Control Protocol (TCP) is one of the main protocols on the
+internet.</p><p>To connect to a website, your computer needs to establish a TCP
+connection to the address of that website.</p><p>TCP works on top of the Internet Protocol (IP), which defines how to address
+computers on the internet.</p><p>When speaking to a machine over the TCP protocol you use an IP and port pair, also
+called <a href=#endpoint>endpoint</a>, which looks something like this: 10.20.1.1:8080.</p><p>The main difference between TCP and (another very popular protocol called) <a href=#udp>UDP</a>
+is that TCP has the notion of a “connection”, making it a “reliable” transport
+protocol.</p><h3 id=tcpip-blocking>TCP/IP blocking</h3><p>TCP/IP blocking is a form of internet censorship that is implemented by
+preventing a <a href=#client>client</a> from establishing a <a href=#tcp>TCP</a> connection to an internet service.</p><p>This is achieved by either preventing the target IP from being reachable or
+actively resetting (i.e. injecting TCP RST packets) the connection to the
+IP:Port pair.</p><p><a href=https://ooni.org/install/>OONI Probe</a> measures the TCP/IP blocking of websites
+and apps.</p><h3 id=test-input>Test input</h3><p>Test input (in the context of <a href=https://ooni.org/install/>OONI Probe</a>) is an
+internet resource (such as a <a href=#url>URL</a>, <a href=#dns>domain</a>, or <a href=#ip-address>IP address</a>) that is the target of a
+measurement.</p><h3 id=test-list>Test list</h3><p>A <a href=https://github.com/citizenlab/test-lists/tree/master/lists>test list</a> is a
+machine-readable CSV file that includes URLs that are tested for censorship by
+tools like <a href=https://ooni.org/install/>OONI Probe</a>.</p><p>Censorship measurement projects like OONI rely on a global community of
+volunteers who run censorship detection tests from local vantage points. In
+light of bandwidth constraints, testing most websites available on the internet
+is not practical (nor possible in many cases). Instead, our measurements focus
+on a <em>sample</em> of websites provided in “test lists”: machine-readable CSV files
+with a set of curated, interesting <a href=#url>URLs</a>.</p><p>There are two types of test lists:</p><ul><li><p><strong>Global test list:</strong> Includes a wide range of internationally relevant websites (e.g. wikipedia.org), most of which are in English</p></li><li><p><strong>Country-specific test lists:</strong> Include websites that are only relevant to a specific country (e.g. Brazilian media websites), many of which are in local languages</p></li></ul><p>Test lists are <a href=https://github.com/citizenlab/test-lists>hosted</a> and managed by
+the <a href=https://citizenlab.ca/>Citizen Lab</a>.</p><h3 id=tls>TLS</h3><p>Transport Layer Security (TLS) &ndash; also referred to as &ldquo;SSL&rdquo; &ndash; is a
+cryptographic protocol that allows you to maintain a secure, encrypted
+connection between your computer and an internet service.</p><p>When you connect to a website though TLS, the address of the website will begin
+with <a href=#https>HTTPS</a> (such as <code>https://archive.org/</code>), instead of HTTP.</p><h3 id=tor>Tor</h3><p>The <a href=https://www.torproject.org/>Tor network</a>, which is free and open source,
+provides its users with online anonymity, privacy, and censorship circumvention.
+Tor software is designed to bounce communications around a distributed network
+of relays run by volunteers around the world, thereby hiding its users&rsquo; <a href=#ip-address>IP addresses</a> and
+enabling them to circumvent online tracking and internet censorship.</p><h3 id=traffic-manipulation>Traffic manipulation</h3><p>Traffic manipulation (a form of network interference) describes adversarial
+access to a network connection with capabilities to modify the data stream.</p><p>A middlebox (a computer networking device), for example, can be used by an
+<a href=#isp>Internet Service Provider (ISP)</a> to inspect, transform, filter, or otherwise
+manipulate internet traffic.</p><h3 id=udp>UDP</h3><p>The User Datagram Protocol (UDP) is one of the main protocols on the
+internet.</p><p>Unlike <a href=#tcp>TCP</a>, which has the the notion of a “connection” and is reliable, UDP
+allows one to send one-off packets over the internet.</p><h3 id=url>URL</h3><p>A URL is the address of a World Wide Web page.</p><p>For example, <code>https://archive.org/</code> is a URL, while archive.org is a domain.</p><h3 id=vantage-point>Vantage point</h3><p>A network vantage point is a unique network location from which internet
+measurements are performed. In the context of OONI Probe, we consider a vantage
+point to be a unique network and country pair, such as the vantage point of
+“Vodafone in Italy”.</p><h3 id=vpn>VPN</h3><p>A Virtual Private Network (VPN) is software that creates an encrypted connection
+(commonly called &ldquo;tunnel&rdquo;) from your device to a server (run by a VPN provider).</p><p>When you browse the internet through this &ldquo;tunnel&rdquo;, websites and other online
+services will receive requests from the <a href=#ip-address>IP address</a> of that <a href=#server>server</a>, rather than
+from your actual IP address.</p><p>VPNs can therefore be used to circumvent internet censorship.</p><hr><p><em><strong>Special thanks to Anatol (OONI community member) for contributing to this
+glossary.</strong></em></p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

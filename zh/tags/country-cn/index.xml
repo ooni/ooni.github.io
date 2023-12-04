@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>country-cn on OONI: Open Observatory of Network Interference</title><link>/zh/tags/country-cn/</link><description>Recent content in country-cn on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="/zh/tags/country-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>中国封锁了所有语言版本的维基百科</title><link>/zh/post/2019-china-wikipedia-blocking/</link><pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate><guid>/zh/post/2019-china-wikipedia-blocking/</guid><description>中国最近开始封锁所有语言版本的维基百科。 以前，封锁仅限于维基百科的中文版（zh.wikipedia.org），但现在已经扩展到了所有语言*.wikipedia.org的版本。
+我们将在本文分享OONI对于中国封锁维基百科的网络测量数据。 我们发现所有wikipedia.org的子域名在中国都被通过DNS注入和SNI过滤的方式封锁了。
+DNS注入 通过使用OONI Probe，自2015年以来，我们已经在中国的多个地区对维基百科域名进行了测试。大多数测试数据都是从中国电信（AS4134）收集的。
+OONI的Web连通性测试（在OONI Probe应用程序中提供）旨在测量基于TCP/IP，HTTP和DNS的对网站的封锁。 通过此测试收集的网络测量数据显示，在以前，除了中文版之外的大多数维基百科语言版本以前都可在中国访问，中文版据报道自2015年5月19日以来一直被封锁。
+OONI数据显示中国电信（AS4134）至少从2016年11月10日开始封锁zh.wikipedia.org（之前的OONI测试表明2015年3月zh.wikipedia.org是可访问的）。
+下图基于OONI数据，说明在2019年4月，多种语言版本的维基百科在中国被封锁。
+我们可以在**这里**获得对用于生成上图的OONI测量的分析。
+OONI测量结果表明，许多维基百科域名之前都可以访问，但从2019年4月25日开始收集的所有测量数据都显示了所有维基百科子域名的相同DNS异常。 前几个月发生的少数DNS异常是误报，而2019年4月以来的DNS异常显示维基百科域名被通过DNS注入封锁。 大多数测量数据来自中国电信（AS4134）。
+由于从中国收集的OONI测量结果表明封锁是通过DNS注入进行的，我们还可以进一步从中国以外测量基于DNS的封锁。 为此，我们从外国进行了OONI Probe DNS注入测试，指向中国的IP地址。
+此测试依赖于中国防火墙将“注入”受限域名的DNS请求这一事实，即使该请求来自国外并且指向的IP地址其实并不提供DNS解析服务。 因此，期望是，如果DNS查询超时，就说明没有封锁，但如果我们看到响应，那么就说明响应被审查注入了。
+OONI Probe DNS注入测试速度非常快。 它能让我们在不到一分钟的时间内扫描2,000多个维基百科域名，并确定哪些域名被封锁。
+通过分析OONI Probe DNS注入测试的结果，我们发现封锁针对的是wikipedia.org的任何子域名/语言版本（如*.wikipedia.org, zh.wikipedia.org, en.wikipedia.org等。）——包括wikipedia.org——但不影响zh.wikinews.org之外的任何其他维基媒体（Wikimedia）资源。
+封锁针对wikipedia.org的子域名而不管它们是否存在（例如，甚至donotexist.wikipedia.org都被封锁了！）。 被注入DNS响应中返回的IP地址似乎也是随机的（先前分析防火墙返回的IP地址分布的工作的例子包括“中国的DNS长城”和“全面了解防火墙DNS审查的图景”）。
+SNI过滤 为了检查是否可以通过仅加密DNS流量来对维基百科域名的封锁阻止，我们尝试在Firefox中启用DNS over HTTPS。
+为此, 我们运行:
+curl -H &amp;#39;accept: application/dns-json&amp;#39; https://cloudflare-dns.com/dns-query?name=www.wikipedia.org&amp;amp;type=A 我们能够通过DNS over HTTPS成功解析www.wikipedia.org域名
+这些测试也可以通过在Firefox中启用DNS over HTTPS来验证。
+但是，封锁仍然存在。
+从中国只能直接访问IP地址，表明可能存在SNI过滤。
+为了进一步验证封锁是基于SNI过滤的假设，我们进行了以下curl测试（我们在委内瑞拉进行了类似的测试以确认相同的假设）：
+$ curl -v --connect-to ::www.kernel.org: https://www.wikipedia.org * Rebuilt URL to: https://www.wikipedia.org/ * Connecting to hostname: www.kernel.org * Trying 147.</description></item></channel></rss>

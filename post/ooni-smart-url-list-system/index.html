@@ -1,0 +1,226 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Building a smart URL list system: Policy for URL prioritization | OONI</title>
+<link rel=canonical href=https://ooni.org/post/ooni-smart-url-list-system/><meta name=description content="To improve the monitoring of website censorship around the world, OONI aims to create a smart URL list system, while ensuring, to the extent possible, the safety of the URL lists themselves by running them through the usual Citizen Lab URL review process. This will help ensure smarter test target selection and by extension, it will enable us &ndash; and the broader internet freedom community &ndash; to more effectively monitor, analyze, and respond to cases of website censorship around the world."><meta property="og:title" content="Building a smart URL list system: Policy for URL prioritization"><meta property="og:description" content="To improve the monitoring of website censorship around the world, OONI aims to create a smart URL list system, while ensuring, to the extent possible, the safety of the URL lists themselves by running them through the usual Citizen Lab URL review process. This will help ensure smarter test target selection and by extension, it will enable us &ndash; and the broader internet freedom community &ndash; to more effectively monitor, analyze, and respond to cases of website censorship around the world."><meta property="og:type" content="article"><meta property="og:url" content="/post/ooni-smart-url-list-system/"><meta property="article:published_time" content="2020-04-15T00:00:00+00:00"><meta property="article:modified_time" content="2020-04-15T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Building a smart URL list system: Policy for URL prioritization"><meta name=twitter:description content="To improve the monitoring of website censorship around the world, OONI aims to create a smart URL list system, while ensuring, to the extent possible, the safety of the URL lists themselves by running them through the usual Citizen Lab URL review process. This will help ensure smarter test target selection and by extension, it will enable us &ndash; and the broader internet freedom community &ndash; to more effectively monitor, analyze, and respond to cases of website censorship around the world."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Building a smart URL list system: Policy for URL prioritization</h1><div class=byline><span class=author>Maria Xynou</span>
+<span class=date>2020-04-15</span></div><p>To improve the monitoring of website censorship around the world, OONI
+aims to create a smart URL list system, while ensuring, to the extent
+possible, the safety of the URL lists themselves by running them through
+the usual <a href=https://github.com/citizenlab/test-lists>Citizen Lab URL review process</a>. This will help
+ensure smarter test target selection and by extension, it will enable us
+&ndash; and the broader internet freedom community &ndash; to more effectively
+monitor, analyze, and respond to cases of website censorship around the
+world.</p><p>This document describes <strong><a href=/post/policy-url-prioritization/ooni-policy-url-prioritization.pdf>OONI’s policy for URL prioritization</a></strong>. The
+goal of this policy is to determine the criteria based on which the
+<a href=https://ooni.org/install/>OONI Probe</a> testing of certain types of
+URLs will be prioritized over others. Through URL prioritization, OONI
+aims to optimize the value of collected measurements, ensure regular
+testing of the same URLs for consistency, ensure that the tested URLs
+are relevant to OONI Probe users, and to improve the monitoring of
+website censorship around the world.</p><ul><li><p><a href=#summary>Summary</a></p></li><li><p><a href=#background>Background</a></p><ul><li><p><a href=#why-measure-website-censorship>Why measure website censorship</a></p></li><li><p><a href=#current-ooni-probe-limitations-to-url-testing>Current OONI Probe limitations to URL testing</a></p></li></ul></li><li><p><a href=#smart-url-list-system>Smart URL list system</a></p><ul><li><p><a href=#goals>Goals</a></p></li><li><p><a href=#criteria-for-url-prioritization>Criteria for URL prioritization</a></p><ul><li><p><a href=#global-url-prioritization-criteria>Global URL prioritization criteria</a></p></li><li><p><a href=#country-specific-url-prioritization-criteria>Country-specific URL prioritization criteria</a></p></li></ul></li><li><p><a href=#url-prioritization>URL prioritization</a></p><ul><li><p><a href=#citizen-lab-test-list-categories>Citizen Lab test list categories</a></p></li><li><p><a href=#emergent-censorship-events>Emergent censorship events</a></p></li><li><p><a href=#ooni-data-analysis>OONI data analysis</a></p></li></ul></li><li><p><a href=#push-notifications-to-solicit-testing>Push notifications to solicit testing</a></p></li><li><p><a href=#analysis-and-publication-of-measurements>Analysis and publication of measurements</a></p></li></ul></li><li><p><a href=#call-to-action>Call to Action</a></p><ul><li><p><a href=#review-urls-included-in-the-citizen-lab-test-lists>Review URLs included in the Citizen Lab test lists</a></p></li><li><p><a href=#review-url-categorizations>Review URL categorizations</a></p></li></ul></li></ul><h1 id=summary>Summary</h1><p>Even though thousands of websites are measured by tens of thousands of
+<a href=https://ooni.io/install/>OONI Probe</a> users in <a href=https://explorer.ooni.org/>more than 200 countries every month</a>, detecting the
+blocking of websites and collecting enough measurements to confirm
+blocking with confidence remains an ongoing challenge. Blocked URLs are
+sometimes not tested frequently enough (or at all), limiting the
+coverage of censorship events, rapid response, and relevant advocacy
+efforts.</p><p>To solve this problem, OONI aims to create a system for “smarter” URL
+testing. With the smart URL list system, the <a href=https://ooni.org/install/>OONI Probe</a> testing of certain categories of URLs
+would be prioritized over others, in order to improve the monitoring of
+website censorship around the world.</p><p>URLs will be prioritized for testing depending on whether they are of
+public interest, whether their blocking could impact human rights, and
+whether they fall under a category that is frequently blocked around the
+world (particularly in correlation to political events).
+Country-specific criteria may apply too on a case-by-case basis.</p><p>In every case, the smart URL list system will only prioritize URLs that
+are already included in the <a href=https://github.com/citizenlab/test-lists>Citizen Lab test lists</a> and which have
+therefore been reviewed by the community and vetted in terms of safety.</p><h1 id=background>Background</h1><h2 id=why-measure-website-censorship>Why measure website censorship</h2><p>Website blocking remains an ongoing - and increasingly worsening -
+problem, often affecting marginalized communities the most.</p><p>Hundreds of media websites and human rights websites are blocked in
+countries like
+<a href=https://ooni.io/post/iran-internet-censorship/#news-websites>Iran</a>
+and <a href=https://ooni.io/post/egypt-internet-censorship/>Egypt</a>.
+Independent media organizations in Egypt
+<a href=https://ooni.io/documents/Egypt-Internet-Censorship-AFTE-OONI-2018-07.pdf>report</a>
+that they are forced to shut down their operations entirely, as a result
+of ongoing, persistent blocking of their websites.</p><p>Amid Venezuela’s economic and political crisis, numerous <a href=https://ooni.io/post/venezuela-internet-censorship/#media>independent media websites have been blocked</a>,
+along with several <a href=https://ooni.io/post/venezuela-internet-censorship/#political-criticism>blogs expressing political criticism</a>.
+Last year, Wikipedia was not only <a href=https://ooni.io/post/venezuela-blocking-wikipedia-and-social-media-2019/#blocking-of-wikipedia>blocked in Venezuela</a>,
+but <a href=https://ooni.io/post/2019-china-wikipedia-blocking/>all language editions of Wikipedia are now blocked in China</a> as well.
+Last month, the <a href=https://ooni.org/post/2020-iran-blocks-farsi-wikipedia/>Farsi language edition of Wikipedia was temporarily blocked in Iran</a>.</p><p>Minority group sites remain blocked in numerous countries around the
+world. LGBTQI sites are blocked in countries like
+<a href=https://ooni.io/post/indonesia-internet-censorship/#lgbt>Indonesia</a>,
+<a href=https://ooni.io/post/iran-internet-censorship/#human-rights-issues>Iran</a>,
+<a href=https://ooni.io/post/ethiopia-report/#lgbti-websites>Ethiopia</a>, and
+<a href=https://sinarproject.org/digital-rights/updates/online-lgbt-censorship-malaysia>Malaysia</a>,
+the sites of the <a href=https://ooni.io/post/pakistan-internet-censorship/#minority-groups>Baluch and Hazara ethnic minorities are blocked in Pakistan</a>,
+while <a href=https://ooni.io/post/iran-internet-censorship/#human-rights-issues>the sites of the Baha&rsquo;i religious minority are blocked in Iran</a>.</p><p>Meanwhile, the blocking of websites is increasingly becoming more
+sophisticated around the world. Cuba, for example, <a href=https://ooni.torproject.org/post/cuba-internet-censorship-2017/>used to primarily serve blank block pages</a>, only blocking the HTTP version of websites. Now they censor access to
+websites that support HTTPS by means of <a href=https://ooni.io/post/cuba-referendum/>IP blocking</a>. Venezuelan ISPs used
+to primarily block sites by means of <a href=https://ooni.torproject.org/post/venezuela-internet-censorship/>DNS tampering</a>.
+Now state-owned CANTV implements <a href=https://ooni.torproject.org/post/venezuela-blocking-wikipedia-and-social-media-2019/>SNI-based filtering</a>
+as well.</p><p>All of the aforementioned cases have been detected through the use of
+<a href=https://ooni.io/install/>OONI Probe</a> and reported based on <a href=https://ooni.io/data/>OONI censorship measurement data</a>. However, our
+ability to effectively track and respond to the blocking of websites
+(and other internet censorship events) around the world is still rather
+limited.</p><h2 id=current-ooni-probe-limitations-to-url-testing>Current OONI Probe limitations to URL testing</h2><p>The <a href=https://ooni.io/install/>OONI Probe mobile app</a> (the most widely
+adopted OONI Probe testing client) tests a random selection of URLs
+taken from the
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global</a>
+and
+<a href=https://github.com/citizenlab/test-lists/tree/master/lists>country-specific</a>
+(based on the country that the user is running OONI Probe from) Citizen
+Lab test lists.</p><p>Due to bandwidth constraints, the default is that OONI Probe will only
+measure as many URLs as it can connect to within 90 seconds (users can
+extend the test runtime in the app settings, but this feature is not
+widely used).</p><p>This inevitably means that OONI Probe URL testing presents the following
+limitations:</p><ul><li><p>Blocked URLs may not get tested at all in a given country, if they don’t happen
+to be randomly selected as part of the default testing;</p></li><li><p>Blocked URLs may only get tested a few times in a given country,
+often leading to inconclusive results (particularly if a <a href=https://ooni.org/support/faq/#why-does-ooni-confirm-censorship-when-a-block-page-is-served>block page</a> is not served and if <a href=https://ooni.org/support/faq/#what-are-false-positives>false positives</a> emerge);</p></li><li><p>URLs may not get tested during a time-frame when they’re temporarily
+blocked (i.e. URLs were tested before and/or after their blocking,
+but not during);</p></li><li><p>Many URLs that are of less public interest and which have never been
+blocked may randomly get selected and get tested more frequently,
+while other URLs of greater public interest and which are censored
+may not get tested as frequently (or at all);</p></li><li><p>The random testing of URLs limits the ability to track and evaluate
+censorship changes over time (i.e. the blocking and unblocking of
+URLs).</p></li></ul><p>In summary, the random testing of URLs presents challenges to the
+testing of blocked URLs (and potentially means that blocked URLs are
+often missed), limiting the coverage of censorship events, rapid
+response, and relevant advocacy efforts. It also limits the internet
+freedom community’s ability to identify censorship trends and changes
+over time, since URLs may not be tested consistently over time.</p><h1 id=smart-url-list-system>Smart URL list system</h1><p>To solve this problem and improve the monitoring of website censorship
+around the world, we aim to build a system for “smarter” URL testing.</p><p>Based on this new system, OONI Probe users would no longer test URLs
+(included in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a>)
+randomly. Rather, the testing of certain categories of URLs would be
+prioritized over others, in order to improve the monitoring of website
+censorship around the world.</p><h2 id=goals>Goals</h2><p>The underlying <strong>goals and principles</strong> behind URL prioritization
+involve:</p><ul><li><p>Responding faster to emergent censorship events;</p></li><li><p>Expanding the breadth and granularity of global coverage of website
+censorship;</p></li><li><p>Optimizing the value of collected measurements;</p></li><li><p>Ensuring the regular testing of the same URLs for consistency and to
+support data analysis efforts;</p></li><li><p>Ensuring that the tested URLs are more relevant to OONI Probe users.</p></li></ul><p>We will adjust URL priorities based on the above goals and URL
+priorities will be transparent. We will openly display which URLs are
+prioritized for testing and we will provide the internet freedom
+community the option to offer suggestions.</p><p>In every case, the smart URL list system will only prioritize URLs that
+are already included in the <a href=https://github.com/citizenlab/test-lists>Citizen Lab test lists</a> and which have
+therefore been reviewed by the community and vetted in terms of safety.</p><h2 id=criteria-for-url-prioritization>Criteria for URL prioritization</h2><p>As part of the smart URL list system, the testing of URLs will be
+prioritized based on specified criteria. Some criteria will apply to all
+OONI Probe users globally, while other criteria will differ from country
+to country. Below we share the main criteria for each.</p><h3 id=global-url-prioritization-criteria>Global URL prioritization criteria</h3><p>The testing of URLs by OONI Probe users globally will be prioritized
+based on the following criteria:</p><ul><li><p><strong>Public interest.</strong> URLs that host content or offer services that
+are of public interest will be prioritized. Whether a URL or
+category of URLs is of “public interest” will be determined based
+on whether the censorship of such information could have an impact
+on the general public (because it relies on this information).
+News media, for example, is generally <a href=https://ethicaljournalismnetwork.org/the-public-interest>considered to be of public interest</a>,
+which is why its testing will be prioritized.</p></li><li><p><strong>Impact on human rights.</strong> Our goal is to defend human rights on
+the internet. We will therefore prioritize the testing of human
+rights sites and other sites whose potential blocking could have
+an impact on human rights.</p></li><li><p><strong>Frequently blocked around the world.</strong> Social media is an example
+of online content that is <a href=https://ooni.org/reports/>frequently blocked</a> in countries around the
+world, particularly during political events, such as elections or
+protests. We will prioritize the testing of URLs if they fall
+under a category that has commonly been blocked around the world
+(such as social media, news media, and VPNs), particularly in correlation to political events.</p></li></ul><h3 id=country-specific-url-prioritization-criteria>Country-specific URL prioritization criteria</h3><p>The testing of URLs by OONI Probe users may differ from country to
+country. In addition to the global URL prioritization criteria,
+country-specific URL prioritization may apply too based on the following
+criteria:</p><ul><li><p><strong>Reportedly blocked URLs.</strong> If a specific website or type of
+content is known to be blocked or reportedly blocked in a country
+(according to news articles, research reports, local accounts, or
+other third party resources), its testing may be prioritized. This
+may include a certain type of content (such as gambling) that is
+illegal/banned in a specific country. We are cognizant of the
+increased <a href=https://ooni.org/about/risks/>potential risk</a>
+associated with testing illegal content, and will therefore
+evaluate whether the testing of such content should be prioritized
+based on input from local communities and country experts.</p></li><li><p><strong>Likelihood of being censored.</strong> If certain types of URLs are
+likely to be blocked (now or in the future) due to their
+provocative content, their testing may be prioritized in a
+specific country. For example, this may include blogs and other
+websites that express political criticism.</p></li><li><p><strong>Correlation to political events and potential for censorship.</strong>
+Over the years, we have <a href=https://ooni.org/reports/>observed</a> a
+strong correlation between political events and the spike in
+censorship events around the world. We may therefore prioritize
+the testing of certain types of websites if they are likely to get
+blocked in correlation to specific political events. For example,
+this could involve the prioritized testing of election watchdog
+websites leading up to, during, and shortly after an election.</p></li></ul><p>The above country-specific criteria require local knowledge and
+expertise. They will therefore mainly be applied when and if we receive
+relevant advice and recommendations from local experts.</p><p>Overall, we may revise the above criteria in the future, particularly
+once the smart URL list system is rolled out and we have seen how it
+works in practice. We may also make changes based on community feedback
+and suggestions, and adjust URL priorities over time. Any future changes
+to the URL prioritization criteria will be reflected through an update
+to this policy.</p><h2 id=url-prioritization>URL prioritization</h2><h3 id=citizen-lab-test-list-categories>Citizen Lab test list categories</h3><p>OONI Probe measures the URLs included in the Citizen Lab’s
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global</a>
+and
+<a href=https://github.com/citizenlab/test-lists/tree/master/lists>country-specific</a>
+test lists. These URLs fall under <strong><a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 broad categories</a></strong>,
+which range from news media and human rights, to more objectionable
+categories, such as hate speech and pornography.</p><p>However, these categories don’t carry the same weight in terms of public
+interest and the possibility of being censored. News media, for example,
+is probably of greater public interest than URLs that fall under the
+gaming category. In certain countries where LGBT rights are not
+recognized, for example, the blocking of LGBT sites might be more
+probable than the blocking of URLs that fall under the e-commerce
+category.</p><p>Therefore, the new smart URL list system will implement backend logic
+for <strong>prioritizing the testing of certain URL categories</strong> over others.
+The prioritized testing of URL categories that are of greater public
+interest is especially important for OONI Probe mobile app deployments,
+as it makes it possible to save up on bandwidth by prioritizing the
+testing of more relevant URLs.</p><h3 id=emergent-censorship-events>Emergent censorship events</h3><p>In response to emergent censorship events, the smart URL list system may
+prioritize the testing of URLs that are reported (for example, by the
+news media or local community members) to be blocked. However, this
+prioritization will be <em>limited to URLs that are already included in the
+<a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a></em>
+(and have therefore been reviewed and vetted).</p><p>If, for example, popular social media platforms &ndash; such as <code>facebook.com</code>
+and <code>instagram.com</code> &ndash; are reportedly blocked in a certain country, the
+smart URL list system would enable us to prioritize the testing of
+<code>facebook.com</code> and <code>instagram.com</code> by OONI Probe users in that country.</p><p>Practically, this means that if you are an OONI Probe user in said
+country, when you tap/click “Run” in the OONI Probe app (without
+specifying the URLs that you’re testing), <code>facebook.com</code> and <code>instagram.com</code>
+would be amongst the first URLs you would test. The prioritization of
+URLs may be re-adjusted once/if an emergent censorship event has ended
+(for example, once access to <code>facebook.com</code> has been unblocked in a
+certain country).</p><h3 id=ooni-data-analysis>OONI data analysis</h3><p>With smart URL selection capabilities, we eventually aim to have the
+ability to dynamically determine and adjust the testing targets based on
+input from OONI data analysis.</p><p>Our new <a href=https://github.com/ooni/pipeline/pull/213>fast-path data processing pipeline</a> automatically
+analyzes and publishes OONI measurements from around the world in near
+real-time. This analysis can help flag censorship changes, such as the
+new blocking or unblocking of specific URLs. It can also flag the
+presence of anomalies for URLs that are of public interest, signaling
+the potential presence of past, emergent, or ongoing blocking. All this
+information can potentially feed into our new smart URL list system, in
+order to help inform which URLs we should prioritize testing for.</p><p><a href=https://run.ooni.io/>OONI Run</a> is a platform that is used by OONI
+Probe users around the world to coordinate the testing of specific URLs
+&ndash; particularly leading up to and during political events (such as
+elections or protests), and in response to emergent censorship events.
+Many of these URLs may be interesting to test on an ongoing basis, but
+may not already be included in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a>.</p><p>We therefore aim to mine OONI data to identify URLs that have been
+tested by OONI Probe users independently, add those URLs to the Citizen
+Lab test lists, and prioritize the testing of certain URLs if they meet
+the relevant criteria (as discussed previously).</p><h2 id=push-notifications-to-solicit-testing>Push notifications to solicit testing</h2><p>Ensuring the prioritized testing of URLs that are of public interest is
+not enough. We often have limited testing coverage of URLs of interest,
+limiting our confidence in ruling out <a href=https://ooni.org/support/faq/#what-are-false-positives>false positives</a> and
+confirming censorship events (especially if <a href=https://ooni.org/support/faq/#why-does-ooni-confirm-censorship-when-a-block-page-is-served>block pages</a>
+are <em>not</em> served).</p><p>To increase testing coverage, we will add support for configuring push
+notifications to solicit testing. We will also add support so that OONI
+Probe mobile app users can receive push notifications and run
+experiments. This will be particularly useful during emergent censorship
+events when fast coordination of targeted URL testing is crucial.</p><h2 id=analysis-and-publication-of-measurements>Analysis and publication of measurements</h2><p>As the OONI software ecosystem is designed to automatically <a href=https://ooni.org/data/>publish all measurements</a> that are sent to OONI
+servers, the internet freedom community and the public at large will
+benefit from the more sophisticated testing of the smart URL list
+system. Members of the internet freedom community and anyone from the
+public will be able to share feedback on which URLs should be
+prioritized.</p><p>To ensure that the measurements are more actionable, we are developing
+data analysis capabilities aimed at examining results from a
+website-centric perspective. This involves data analysis and pipeline
+work necessary for extracting website metrics, as well as adding data
+export capabilities for website-related metrics.</p><h1 id=call-to-action>Call to Action</h1><h2 id=review-urls-included-in-the-citizen-lab-test-lists>Review URLs included in the Citizen Lab test lists</h2><p>Which URLs are prioritized for OONI Probe testing depends on which URLs
+are included in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a>.
+This means that if certain URLs are blocked or otherwise interesting to
+test, but they are not included in the relevant Citizen Lab test lists,
+they will not be tested by OONI Probe users and relevant <a href=https://ooni.org/data/>OONI data</a> will likely not be available.</p><p>We therefore <a href=https://ooni.org/get-involved/contribute-test-lists#contributing-to-test-lists>encourage URL contributions</a>
+to the Citizen Lab test lists.</p><h2 id=review-url-categorizations>Review URL categorizations</h2><p>The URLs included in the Citizen Lab test lists are categorized based on
+a set of <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 categories</a>,
+and the OONI smart list system will prioritize testing based on these
+categories.</p><p>This emphasizes the need to ensure that URLs in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a> are
+categorized as accurately as possible. Your <a href=https://ooni.org/get-involved/contribute-test-lists#reviewing-test-lists>help in reviewing URL categories in the Citizen Lab test lists</a>
+(and changing any inaccurate categorizations) would be greatly
+appreciated!</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

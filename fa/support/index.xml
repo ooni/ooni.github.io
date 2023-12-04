@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>/fa/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>fa</language><atom:link href="/fa/support/index.xml" rel="self" type="application/rss+xml"/><item><title>راهنمای کاربر: برنامه دسکتاپ OONI Probe</title><link>/fa/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/fa/support/ooni-probe-desktop/</guid><description>**آخرین به‌روز‌رسانی: ** 18 اکتبر 2022
+نسخه دسکتاپ OONI Probe: 3.7.0
+OONI Probe یک برنامه رایگان و منبع‌باز است که می‌توانید از آن برای اندازه‌گیری سانسور اینترنت و سایر انواع تداخل در شبکه استفاده کنید. این راهنمای کاربری، دستورالعمل‌های گام به گام در مورد نحوه نصب، اجرا و تنظیمات استفاده از برنامه دسکتاپ OONI Probe را ارائه می‌دهد.
+آنچه در این راهنما کسب خواهید کرد:
+با نحوه اجرای دسکتاپ OONI Probe آشنا شوید:</description></item><item><title>راهنمای کاربری: برنامه موبایل OONI Probe</title><link>/fa/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/fa/support/ooni-probe-mobile/</guid><description>**آخرین به‌روز‌رسانی: ** 19 اکتبر 2022
+نسخه موبایل OONI Probe: 3.7.1
+OONI Probe یک برنامه رایگان و منبع باز است که می‌توانید از آن برای اندازه‌گیری سانسور اینترنت و سایر انواع تداخل در شبکه استفاده کنید. این راهنمای کاربری دستورالعمل‌های گام به گام در مورد نحوه نصب، اجرا و تنظیمات برنامه موبایل OONI Probe را ارائه می‌دهد.
+آنچه از این راهنما خواهید آموخت:
+یاد می‌گیرید که چگونه OONI Probe موبایل را اجرا کنید: تست مسدودیت وبسایت‌ها تست مسدودیت پیام‌رسان‌ها ابزارهای دور زدن سانسور را تست کنید سرعت و عملکرد شبکه خود را اندازه‌گیری کنید تست OONI Probe را برای وب‌سایت‌های مورد نظر خود سفارشی‌سازی کنید نحوه دسترسی و به اشتراک‌گذاری نتایج تست OONI Probe خود را یاد می‌گیرید تنظیمات برنامه OONI Probe خود را پیکربندی کنید با خواندن این راهنما امیدواریم احساس توانمندی در به اشتراک‌گذاری دانش و مهارت‌های OONI Probe خود با دیگران را کسب کنید!</description></item><item><title>سوالات متداول</title><link>/fa/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/fa/support/faq/</guid><description>این سند توسط Miaan Group ترجمه شده است.
+اصل سند (به زبان انگلیسی): Frequently Asked Questions (FAQ)
+این بخش سوالات متداول با هدف رسیدگی به سوالاتی است که غالبا توسط جامعه از ما پرسیده می شود.
+آیا سوالات دیگری وجود دارد که مایل هستید به آنها بپردازیم؟ لطفااجازه دهید تا ما بدانیم
+درباره اوونی OONI
+اوونی چیست؟
+چرا اوونی؟
+اوونی چه می کند؟
+چرا ما سانسور اینترنت را بررسی می کنیم؟</description></item><item><title>واژهنامه اوونی (OONI)</title><link>/fa/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/fa/support/glossary/</guid><description>واژهنامه اوونی (OONI) این سند توسط Miaan Group ترجمه شده است.
+اصل سند (به زبان انگلیسی): Glossary OONI
+این واژهنامه حاوی توضیحات مختصری برای واژگان مورد استفاده در اپلیکیشنها وگزارشهای تحقیقاتی اوونی (OONI) است.
+اگر میخواهید اصطلاحات بیشتری را در این واژهنامه ببینید، لطفا درخواست پیشنهادات را باز کنید یا برای ما ایمیل ارسال کنید.
+API
+AS
+ASN
+BGP
+Blocklist
+Block page
+Caching
+Circumvention tools
+Client
+Data processing pipeline
+DNS</description></item></channel></rss>

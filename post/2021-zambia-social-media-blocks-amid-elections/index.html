@@ -1,0 +1,294 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Zambia: Social media blocked amid 2021 general elections | OONI</title>
+<link rel=canonical href=https://ooni.org/post/2021-zambia-social-media-blocks-amid-elections/><meta name=description content="This report shares OONI measurements on the blocking of social media in Zambia amid its 2021 general election."><meta property="og:title" content="Zambia: Social media blocked amid 2021 general elections"><meta property="og:description" content="This report shares OONI measurements on the blocking of social media in Zambia amid its 2021 general election."><meta property="og:type" content="article"><meta property="og:url" content="/post/2021-zambia-social-media-blocks-amid-elections/"><meta property="og:image" content="/post/2021-zambia-social-media-blocks-amid-elections/images/blocking-twitter-facebook-zm.png"><meta property="article:published_time" content="2021-08-24T00:00:00+00:00"><meta property="article:modified_time" content="2021-08-24T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/post/2021-zambia-social-media-blocks-amid-elections/images/blocking-twitter-facebook-zm.png"><meta name=twitter:title content="Zambia: Social media blocked amid 2021 general elections"><meta name=twitter:description content="This report shares OONI measurements on the blocking of social media in Zambia amid its 2021 general election."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Zambia: Social media blocked amid 2021 general elections</h1><div class=byline><span class=author>Maria Xynou, Arturo Filastò</span>
+<span class=date>2021-08-24</span></div><div><a href=/post/2021-zambia-social-media-blocks-amid-elections/images/zm-whatsapp-measurement.png><img src=/post/2021-zambia-social-media-blocks-amid-elections/images/zm-whatsapp-measurement_hub8160a9686e73b30181e170649d5fdc1_49664_1000x800_fit_box_3.png title="Blocking of WhatsApp" alt="Blocking of WhatsApp"></a></div><p>Recently, on 12th August 2021, <a href=https://www.elections.org.zm/category/2021-general-election/>general elections</a>
+were held in Zambia, during which access to popular online social media
+platforms was <a href=https://edition.cnn.com/2021/08/12/africa/zambia-election-social-media-blackout-intl/index.html>reportedly blocked</a>.</p><p>In this report, we share relevant <a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;probe_cc=ZM">OONI data</a>
+on the blocking of
+<a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-08-10&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">WhatsApp</a>,
+<a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;domain=twitter.com&amp;probe_cc=ZM&amp;only=anomalies">Twitter</a>,
+and
+<a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;domain=www.facebook.com&amp;probe_cc=ZM&amp;only=anomalies">Facebook</a>
+amid Zambia’s 2021 general election.</p><ul><li><p><a href=#background>Background</a></p></li><li><p><a href=#methods>Methods</a></p></li><li><p><a href=#findings>Findings</a></p><ul><li><p><a href=#blocking-of-whatsapp>Blocking of WhatsApp</a></p></li><li><p><a href=#blocking-of-twitter-and-facebook>Blocking of Twitter and Facebook</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li><li><p><a href=#acknowledgements>Acknowledgements</a></p></li></ul><h1 id=background>Background</h1><p>While Zambia hasn’t experienced pervasive forms of internet censorship
+(such as the blocking of popular social media apps) over the last years,
+various forms of
+<a href=https://ooni.org/post/zambia-election-monitoring/#previous-cases-of-internet-censorship-and-surveillance>censorship</a>
+have been reported in the country.</p><p>Back in 2012, Zambia’s registrar of societies
+<a href=https://ooni.org/post/zambia-election-monitoring/#previous-cases-of-internet-censorship-and-surveillance>threatened</a>
+to deregister the <a href=https://www.zambiawatchdog.com/>Zambian Watchdog</a>,
+an investigative online media that focuses on corruption and other major
+crimes, for allegedly failing to pay required fees and submit a postal
+address. While this attempt was unsuccessful, the news website was
+nonetheless blocked. In 2013, we published a
+<a href=https://ooni.org/post/zambia/>report</a> demonstrating that Deep Packet
+Inspection (DPI) filtering techniques were used to block access to
+Zambian Watchdog’s website. Between July 2013 to April 2014, Zambia
+Reports, Barotse Post, and Radio Barotse (in addition to Zambian
+Watchdog) were <a href=https://freedomhouse.org/sites/default/files/resources/FOTN%202015_Zambia.pdf>reportedly censored</a>
+for about nine months for their critical coverage of the ruling party.</p><p>During Zambia’s 2016 general election, <a href=https://explorer.ooni.org/country/ZM>OONI network measurements</a> were collected from
+the country to examine the accessibility of websites and applications.
+We analyzed more than 38,000 network measurements collected from a local
+vantage point (MTN) in Zambia. At the time, we published a <a href=https://ooni.org/post/zambia-election-monitoring/>research report</a> documenting
+that we had not found any substantial evidence of internet censorship
+amid Zambia’s 2016 general election (though our study did present
+<a href=https://ooni.org/post/zambia-election-monitoring/#acknowledgement-of-limitations>limitations</a>).</p><p>Other forms of censorship, however, were reported leading up to the
+election. In June 2016, for example, the government <a href=https://www.voanews.com/africa/zambia-government-shuts-down-newspaper-unpaid-taxes>banned The Post</a>,
+one of Zambia’s few independent newspapers, over unpaid taxes. Following
+the 2016 general election, opposition leader Mr Hakainde Hichilema was
+<a href=https://www.bbc.com/news/world-africa-40945825>arrested on treason charges in April 2017</a> (and held in
+prison until August 2017) for allegedly failing to give way to the
+presidential motorcade. While in prison, Mr Hichilema
+<a href=https://www.bbc.co.uk/programmes/p05lpdkr>reported</a> that he was held
+in solitary confinement for eight days in a room without electricity,
+water or a toilet.</p><p>In the years leading up to Zambia’s 2021 general election, Amnesty
+International
+<a href=https://www.amnesty.org/en/latest/press-release/2021/06/zambia-killings-and-brutal-crackdown-against-dissent-set-the-tone-for-august-election/>reported</a>
+that censorship, excessive use of force by the police, arbitrary arrests
+and detention created a climate of fear and impunity in the country. In
+March 2020, for example, a 15-year-old boy was charged with three counts
+of criminal libel for <a href=https://www.theguardian.com/world/2020/mar/11/zambia-boy-arrested-allegedly-defaming-president-facebook>allegedly defaming President Lungu</a>
+on Facebook. In April 2020, Zambian authorities <a href=https://cpj.org/2020/04/zambia-cancels-broadcaster-prime-tvs-license-polic/>revoked the broadcasting license of Prime TV</a>,
+a popular television station known for its critical coverage of the
+government.</p><p>Zambia’s 2021 general election resulted in a <a href=https://www.bbc.com/news/world-africa-58226695>landslide victory for Mr Hichilema</a> of the
+United Party for National Development (UPND) &ndash; defeating incumbent
+President Edgar Lungu of the Patriotic Front. This was Mr Hichilema’s
+sixth attempt at winning the presidency, having lost the previous (2016)
+election by a very narrow margin. Mr Lungu
+<a href=https://www.bbc.com/news/world-africa-58215507>claimed</a> that the
+2021 elections were “not free and fair”, but accepted defeat and
+<a href=https://www.bbc.com/news/world-africa-58226695>committed</a> to a
+smooth transfer of power.</p><p>As internet access has frequently been interfered with during elections
+across Africa over the last years (such as during <a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/>Uganda’s 2021 general election</a>
+and <a href=https://ooni.org/post/2020-tanzania-blocks-social-media-tor-election-day/>Tanzania’s 2020 general election</a>),
+the <a href=https://www.accessnow.org/keepiton/>#KeepItOn campaign</a> &ndash; a
+global coalition of human rights organizations fighting internet
+shutdowns worldwide &ndash; published an <a href=https://www.accessnow.org/cms/assets/uploads/2021/08/KeepItOn_-open-letter-Zambia.pdf>open letter</a>
+to President Lungu ahead of Zambia’s 2021 general election, requesting
+that access to the internet in Zambia be kept open and secure throughout
+the election period. Amid fears of an internet shutdown, the Zambian
+government
+<a href=https://www.openzambia.com/politics/2021/8/7/there-will-be-no-internet-shutdown-in-zambia-government>reportedly</a>
+dismissed these concerns and promised to maintain the free flow of
+information during the elections. But a few days later, the Zambian
+government <a href=https://www.openzambia.com/politics/2021/8/10/government-threatens-to-turn-off-internet-again>reportedly threatened</a>
+to shut down the internet if citizens used it to “mislead and misinform”
+voters.</p><p>On election day, 12th August 2021, multiple reports surfaced on the
+<a href=https://www.openzambia.com/politics/2021/8/12/whatsapp-blocked-in-zambia>blocking of WhatsApp</a>
+and other <a href=https://techcrunch.com/2021/08/12/whatsapp-and-other-social-media-platforms-restricted-in-zambia-amidst-ongoing-elections/>online social media services</a>.
+Community members in Zambia ran <a href=https://ooni.org/install/>OONI Probe</a> (our app for measuring the blocking
+of websites and apps) and
+<a href=https://twitter.com/tawmug/status/1425797792509874177>reported</a> that
+WhatsApp was blocked. This was further
+<a href=https://edition.cnn.com/2021/08/12/africa/zambia-election-social-media-blackout-intl/index.html>confirmed</a>
+by a Facebook spokesperson, who reported that Zambia’s “social media
+shutdown had affected their apps and others, like Twitter”. While Zambia
+counted votes the next day, internet restrictions
+<a href=https://www.reuters.com/world/africa/zambia-counts-votes-internet-restriction-remain-force-2021-08-13/>reportedly</a>
+remained in place, while Zambians said that they were using VPNs to
+circumvent the social media blocks.</p><p>In the following sections, we share our analysis of <a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;probe_cc=ZM">OONI measurements collected from Zambia</a>,
+examining the blocking of social media services amid Zambia’s 2021
+general election.</p><h1 id=methods>Methods</h1><p>Since 2012, we have built a <a href=https://github.com/ooni>free and open source</a> app &ndash; called <a href=https://ooni.org/install/>OONI Probe</a> &ndash; designed to measure various forms
+of network interference. OONI Probe includes a variety of <a href=https://ooni.org/nettest/>network measurement tests</a> which measure the
+blocking of websites, instant messaging apps (WhatsApp, Telegram,
+Facebook Messenger, Signal), and circumvention tools (Tor, Psiphon,
+RiseupVPN); OONI Probe also includes several network performance tests.</p><p>OONI Probe has been run by people in Zambia since 2016. By default, all
+OONI Probe test results (called “measurements”) are automatically sent
+to OONI servers, <a href=https://github.com/ooni/pipeline>processed</a>, and
+<a href=https://ooni.org/data/>openly published</a> in near real-time. This
+enables us &ndash; and the broader internet freedom community &ndash; to examine
+censorship events in Zambia and around the world based on empirical
+network measurement data. Since 2016, OONI Probe users in Zambia have
+<a href=https://explorer.ooni.org/country/ZM>contributed more than 742,000 measurements</a> from 20 local
+networks.</p><p>As part of this study, we limited our analysis to <a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;probe_cc=ZM">OONI measurements collected from Zambia</a>
+between <strong>1st August 2021 to 18th August 2021</strong> (to include Zambia’s
+2021 general election period). We further limited our analysis to
+measurements collected from the following OONI Probe tests (which check
+for the accessibility of social media services):</p><ul><li><p><a href=https://ooni.org/nettest/whatsapp/>WhatsApp</a> test</p></li><li><p><a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger</a> test</p></li><li><p><a href=https://ooni.org/nettest/telegram/>Telegram</a> test</p></li><li><p><a href=https://ooni.org/nettest/signal/>Signal</a> test</p></li><li><p><a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a> test</p></li></ul><p>The first 4 tests (WhatsApp, Facebook Messenger, Telegram, Signal) are
+designed to measure the reachability of the respective apps from the
+local vantage point of the OONI Probe user. The <a href=https://ooni.org/nettest/whatsapp/>WhatsApp test</a>, for example, aims to examine
+whether the WhatsApp mobile app and WhatsApp web version
+(web.whatsapp.com) are blocked on a local network, and if so, how.</p><p>To this end, the <a href=https://github.com/ooni/spec/blob/master/nettests/ts-018-whatsapp.md>WhatsApp test</a>
+attempts to perform an <a href=https://ooni.org/support/glossary/#http-request>HTTP GET request</a>, <a href=https://ooni.org/support/glossary/#tcp>TCP connection</a>, and <a href=https://ooni.org/support/glossary/#dns-lookup>DNS
+lookup</a> to WhatsApp’s
+endpoints, registration service, and web version (web.whatsapp.com) from
+the local vantage point of the <a href=https://ooni.org/install/>OONI Probe</a>
+user. If TCP connections fail, HTTP requests do not send back a
+consistent response, and/or DNS lookups resolve to IP addresses that are
+not allocated to WhatsApp, then those test results (called
+“measurements”) are automatically annotated as
+“<a href=https://ooni.org/support/faq/#what-do-you-mean-by-anomalies>anomalies</a>”.</p><p>An anomalous measurement presents a sign of network interference (and
+may contain evidence of blocking), though <a href=https://ooni.org/support/faq/#what-are-false-positives>false positives</a> can
+emerge. To rule out false positives, it is necessary to examine relevant
+measurements (collected from the same AS network) in <em>aggregate</em> over
+time, in order to evaluate whether the same failures persist within a
+specific timeframe. The larger the volume of measurements presenting the
+same anomalies, the greater our confidence in determining the blocking
+of an internet service.</p><p>As part of our analysis, the testing of <a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-25&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">WhatsApp presented a larger volume of anomalous measurements</a>
+within the analysis time frame in comparison to the testing of Telegram,
+Facebook Messenger, and Signal. While the testing of
+<a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-25&amp;probe_cc=ZM&amp;test_name=telegram&amp;only=anomalies">Telegram</a>
+and <a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-25&amp;probe_cc=ZM&amp;test_name=facebook_messenger&amp;only=anomalies">Facebook Messenger</a>
+presented some anomalies during Zambia’s election period, we have
+excluded those measurements from our findings because most of the
+measurements collected during that period were successful, and the few
+anomalous measurements didn’t suffice for the confirmation of
+censorship.</p><p>Similarly, we limited our findings to OONI <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a> measurements
+that presented the largest volume of consistent anomalies within the
+analysis period. The OONI Probe Web Connectivity test is designed to
+measure the DNS, TCP/IP, and HTTP blocking of websites from two vantage
+points: the local network of the OONI Probe user and a control
+(non-censored) network. If the results from both networks match, the
+tested URL is considered accessible. But if the results differ from the
+two networks, the measurement is flagged as an “anomaly”.</p><p><a href=https://ooni.org/support/faq/#what-do-you-mean-by-anomalies>Anomalous measurements</a>
+are further characterized by the means of failure:</p><ul><li><p>If a measurement presents an inconsistent DNS response, it is
+flagged as a “DNS anomaly”;</p></li><li><p>If a measurement fails to establish a TCP connection to the resolved
+IP addresses, it is flagged as a “TCP/IP anomaly”;</p></li><li><p>If the HTTP request fails, or the HTTP status codes do not match, or
+the body length of compared websites differs by some percentage,
+and the HTTP header names and HTML title tags do not match, the
+measurement is flagged as an “HTTP anomaly”.</p></li></ul><p>Based on our current heuristics, we only <a href=https://ooni.org/support/faq/#how-can-i-interpret-ooni-data>automatically confirm</a>
+the blocking of websites when a <a href=https://ooni.org/support/glossary/#block-page>block page</a> is served (and we
+have added the fingerprint of that block page to our database). As we
+did not detect any block pages in Zambia, we have analyzed anomalous Web
+Connectivity measurements to examine whether the same types of anomalies
+(“DNS”, “TCP/IP”, “HTTP-failure”, “HTTP-diff”) are present consistently
+on the same AS networks.</p><p>Generally, the OONI Probe Web Connectivity test <a href=https://ooni.org/support/faq/#which-websites-will-i-test-for-censorship-with-ooni-probe>measures the websites</a>
+included in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a>
+(where URLs are categorized based on <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>30 standardized category codes</a>).
+As part of this study, we limited our analysis to websites (from the
+Citizen Lab test lists) categorized as “<a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>Social Networking (GRP)</a>”,
+since our goal was to check whether social media websites were in fact
+blocked in Zambia amid the 2021 elections.</p><h1 id=findings>Findings</h1><p>OONI data suggests that access to
+<a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-08-10&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">WhatsApp</a>,
+<a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;domain=twitter.com&amp;probe_cc=ZM&amp;only=anomalies">Twitter</a>,
+and
+<a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;domain=www.facebook.com&amp;probe_cc=ZM&amp;only=anomalies">Facebook</a>
+was blocked on several local networks in Zambia on election day, 12th
+August 2021. Further details are shared below.</p><h2 id=blocking-of-whatsapp>Blocking of WhatsApp</h2><p>Leading up to Zambia’s 2021 general election, the WhatsApp app was
+<a href="https://explorer.ooni.org/search?until=2021-08-24&amp;since=2021-07-25&amp;probe_cc=ZM&amp;test_name=whatsapp">tested</a>
+periodically on a few local networks in Zambia and those measurements
+showed that the app was
+<a href=https://explorer.ooni.org/measurement/20210811T134326Z_whatsapp_ZM_36959_n1_suGxsE7CuE0OGW3y>reachable</a>
+at the time. But suddenly on 12th August 2021 (the day of Zambia’s 2021
+general election), OONI measurements collected from 7 local networks
+showed that the <a href="https://explorer.ooni.org/search?until=2021-08-18&amp;since=2021-08-01&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">testing of WhatsApp presented anomalies</a>,
+suggesting that the app was blocked.</p><p>The following chart aggregates OONI measurements collected from 8 local
+networks in Zambia, illustrating the <a href=https://explorer.ooni.org/measurement/20210812T202507Z_whatsapp_ZM_36962_n1_ZqvmjgBoRMKIaWV5>blocking of WhatsApp</a>
+on 12th August 2021.</p><div><a href=/post/2021-zambia-social-media-blocks-amid-elections/images/blocking-whatsapp-zm.png><img src=/post/2021-zambia-social-media-blocks-amid-elections/images/blocking-whatsapp-zm_huf43b3b64152dafb6860fafaaf3365008_191235_1000x800_fit_box_3.png srcset="/post/2021-zambia-social-media-blocks-amid-elections/images/blocking-whatsapp-zm_huf43b3b64152dafb6860fafaaf3365008_191235_2000x1600_fit_box_3.png 2x" title="Blocking of WhatsApp" alt="Blocking of WhatsApp"></a></div><p><strong>Source:</strong> OONI measurements on the testing of WhatsApp, collected from
+Zambia between 1st August 2021 to 18th August 2021: <a href="https://explorer.ooni.org/search?until=2021-08-18&amp;since=2021-08-01&amp;probe_cc=ZM&amp;test_name=whatsapp">https://explorer.ooni.org/search?until=2021-08-18&amp;since=2021-08-01&amp;probe_cc=ZM&amp;test_name=whatsapp</a></p><p>As is evident from the above chart, almost all <a href="https://explorer.ooni.org/search?until=2021-08-18&amp;since=2021-08-01&amp;probe_cc=ZM&amp;test_name=whatsapp">OONI measurements</a>
+collected from 7 local networks in Zambia presented signs of blocking
+between 12th August 2021 to 14th August 2021, which coincides with
+Zambia’s 2021 general election. The timing of these anomalies is also
+consistent with what was reported by internet users on the ground, who
+<a href=https://twitter.com/tawmug/status/1425790154476826625>reported</a>
+WhatsApp inaccessibility on 12th August 2021, mentioning that access had
+been <a href=https://twitter.com/tawmug/status/1426514210813530112>restored</a>
+by 14th August 2021. Overall, the fact that most OONI WhatsApp
+measurements presented
+<a href="https://explorer.ooni.org/search?until=2021-08-18&amp;since=2021-08-01&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">anomalies</a>
+on 12th August 2021 (whereas <a href="https://explorer.ooni.org/search?until=2021-08-24&amp;since=2021-07-25&amp;probe_cc=ZM&amp;test_name=whatsapp">measurements collected before 12th August 2021 and after 14th August 2021</a>
+were accessible), coupled with <a href=https://twitter.com/iampilato/status/1425787480918433798>widespread user reports</a> from
+Zambia, provides a strong indication that WhatsApp was in fact blocked
+amid the election.</p><p>When looking at raw <a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-08-10&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">OONI measurement data</a>,
+we see that the connections to the WhatsApp registration service and
+WhatsApp web interface (web.whatsapp.com) <a href=https://explorer.ooni.org/measurement/20210812T193919Z_whatsapp_ZM_36959_n1_eQoGMPZL9SGn5yUQ>timeout during the TLS handshake</a>
+(while the IP addresses of the services were <em>not</em> blocked), as
+illustrated below:</p><div><a href=/post/2021-zambia-social-media-blocks-amid-elections/images/whatsapp-raw-data-zm.png><img src=/post/2021-zambia-social-media-blocks-amid-elections/images/whatsapp-raw-data-zm_hue94578903b915d3de434f158a61b3aad_120538_1000x800_fit_box_3.png title="WhatsApp measurement data" alt="WhatsApp measurement data"></a></div><p><strong>Source:</strong> OONI measurement testing WhatsApp in Zambia on 12th August
+2021, <a href=https://explorer.ooni.org/measurement/20210812T193919Z_whatsapp_ZM_36959_n1_eQoGMPZL9SGn5yUQ>https://explorer.ooni.org/measurement/20210812T193919Z_whatsapp_ZM_36959_n1_eQoGMPZL9SGn5yUQ</a></p><p>This suggests that the <a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-08-10&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">blocking of WhatsApp</a>
+was likely implemented through the use of Deep Packet Inspection (DPI)
+technology. Interestingly, we observe that WhatsApp was blocked in the
+same way on at least 7 different local networks.</p><h2 id=blocking-of-twitter-and-facebook>Blocking of Twitter and Facebook</h2><p>Similarly to WhatsApp, we observe that
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=twitter.com&amp;probe_cc=ZM">Twitter</a>
+and
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=www.facebook.com&amp;probe_cc=ZM">Facebook</a>
+domains were
+<a href="https://explorer.ooni.org/measurement/20210811T133029Z_webconnectivity_ZM_36959_n1_CEkfOh8ymRkHv7Cd?input=https%3A%2F%2Fwww.facebook.com%2FZambiaReports%2Fposts%2F598392566945439">accessible</a>
+when tested on several local networks in Zambia leading up to the 2021
+general election. But on election day, 12th August 2021, the testing of
+these domains <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=www.facebook.com&amp;probe_cc=ZM&amp;only=anomalies">presented anomalies</a>,
+while accessibility appears to have been
+<a href="https://explorer.ooni.org/measurement/20210814T115350Z_webconnectivity_ZM_37287_n1_3qneW4Yj3bhOD4Ma?input=https%3A%2F%2Fwww.facebook.com">restored</a>
+by 14th August 2021.</p><p>The following chart aggregates OONI measurements (collected from several
+local networks in Zambia) on the <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=twitter.com&amp;probe_cc=ZM">testing of Twitter</a>
+and
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=www.facebook.com&amp;probe_cc=ZM">Facebook</a>
+domains during the 2021 election period, illustrating that these domains
+were
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=www.facebook.com&amp;probe_cc=ZM&amp;only=anomalies">blocked</a>
+on election day.</p><div><a href=/post/2021-zambia-social-media-blocks-amid-elections/images/blocking-twitter-facebook-zm.png><img src=/post/2021-zambia-social-media-blocks-amid-elections/images/blocking-twitter-facebook-zm_hud475dbca8cd791391a6bad883684893e_175470_1000x800_fit_box_3.png srcset="/post/2021-zambia-social-media-blocks-amid-elections/images/blocking-twitter-facebook-zm_hud475dbca8cd791391a6bad883684893e_175470_2000x1600_fit_box_3.png 2x" title="Blocking of Twitter and Facebook" alt="Blocking of Twitter and Facebook"></a></div><p><strong>Source:</strong> OONI measurements on the testing of Twitter and Facebook
+domains in Zambia between 1st August 2021 to 16th August 2021, <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=twitter.com&amp;probe_cc=ZM">https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=twitter.com&amp;probe_cc=ZM</a>, <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=www.facebook.com&amp;probe_cc=ZM">https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=www.facebook.com&amp;probe_cc=ZM</a></p><p>As is evident from the above chart, we not only observe that the testing
+of Twitter and Facebook domains presented anomalies (on several
+different networks) on the same dates (12th and 13th August 2021), but
+we also see that they presented the exact same anomalies (annotated as
+“HTTP failures”), providing a stronger signal of blocking (since it
+suggests the use of a specific censorship technique, rather than
+transient failures that can lead to false positives). The timing of the
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=twitter.com&amp;probe_cc=ZM&amp;only=anomalies">Twitter</a>
+and <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=www.facebook.com&amp;probe_cc=ZM&amp;only=anomalies">Facebook anomalies</a>
+is also consistent with the timing of the <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">anomalies presented in the testing of WhatsApp</a>
+(as discussed in the previous section), further providing a signal of
+blocking.</p><p>In the testing of both <code>twitter.com</code> and <code>www.facebook.com</code> (on
+several networks in Zambia), we observe <a href="https://explorer.ooni.org/measurement/20210812T204908Z_webconnectivity_ZM_36959_n1_AZ5BoKKNzq2lCohc?input=https%3A%2F%2Fwww.facebook.com%2FZambiaReports%2Fposts%2F598392566945439">HTTP failures caused by connection timeouts during the TLS handshake</a>
+(which is also what we observed in <a href=https://explorer.ooni.org/measurement/20210812T193919Z_whatsapp_ZM_36959_n1_eQoGMPZL9SGn5yUQ>anomalous WhatsApp measurements</a>),
+suggesting the potential use of Deep Packet Inspection (DPI) technology.</p><p>This, for example, is observed in the following snippet taken from an
+<a href="https://explorer.ooni.org/measurement/20210812T204908Z_webconnectivity_ZM_36959_n1_AZ5BoKKNzq2lCohc?input=https%3A%2F%2Fwww.facebook.com%2FZambiaReports%2Fposts%2F598392566945439">OONI measurement</a>
+testing <code>www.facebook.com</code> on AfriConnect Zambia (AS36959) on 12th
+August 2021.</p><div><a href=/post/2021-zambia-social-media-blocks-amid-elections/images/facebook-raw-data-zm.png><img src=/post/2021-zambia-social-media-blocks-amid-elections/images/facebook-raw-data-zm_hu2249d30eeb71a946e69634bf4416b78d_109434_1000x800_fit_box_3.png title="Facebook measurement data" alt="Facebook measurement data"></a></div><p><strong>Source:</strong> OONI measurement testing <code>www.facebook.com</code> in Zambia on
+12th August 2021, <a href="https://explorer.ooni.org/measurement/20210812T204908Z_webconnectivity_ZM_36959_n1_AZ5BoKKNzq2lCohc?input=https%3A%2F%2Fwww.facebook.com%2FZambiaReports%2Fposts%2F598392566945439">https://explorer.ooni.org/measurement/20210812T204908Z_webconnectivity_ZM_36959_n1_AZ5BoKKNzq2lCohc?input=https%3A%2F%2Fwww.facebook.com%2FZambiaReports%2Fposts%2F598392566945439</a></p><p>Similarly, we observe <a href="https://explorer.ooni.org/measurement/20210812T202638Z_webconnectivity_ZM_37287_n1_o1wGOLDUlLYa175o?input=https%3A%2F%2Ftwitter.com%2F">connection timeouts during the TLS handshake</a>
+when testing <code>twitter.com</code> on Zain Zambia (AS37287) on 12th August
+2021 (as well as on <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=twitter.com&amp;probe_cc=ZM&amp;only=anomalies">several other networks</a>),
+as illustrated below.</p><div><a href=/post/2021-zambia-social-media-blocks-amid-elections/images/twitter-raw-data-zm.png><img src=/post/2021-zambia-social-media-blocks-amid-elections/images/twitter-raw-data-zm_hub4f29dc37b50ac458a649e3b1718d9bb_108076_1000x800_fit_box_3.png title="Twitter measurement data" alt="Twitter measurement data"></a></div><p><strong>Source:</strong> OONI measurement testing <code>twitter.com</code> in Zambia on 12th
+August 2021, <a href="https://explorer.ooni.org/measurement/20210812T202638Z_webconnectivity_ZM_37287_n1_o1wGOLDUlLYa175o?input=https%3A%2F%2Ftwitter.com%2F">https://explorer.ooni.org/measurement/20210812T202638Z_webconnectivity_ZM_37287_n1_o1wGOLDUlLYa175o?input=https%3A%2F%2Ftwitter.com%2F</a></p><p>Interestingly, we observe the same connection timeouts in the testing of
+<code>twitter.com</code> and <code>www.facebook.com</code> across several different AS
+networks in Zambia, suggesting that local ISPs adopted the same
+censorship techniques for the blocking of online social media services.</p><p>Reports surfaced on the <a href=https://www.theverge.com/2021/8/12/22621875/whatsapp-twitter-facebook-blocked-zambia-presidential-election>blocking of Instagram</a>
+amid the elections, but we have not been able to corroborate this based
+on OONI data, which shows that <code>www.instagram.com</code> was
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;probe_cc=ZM&amp;test_name=web_connectivity&amp;domain=www.instagram.com">accessible</a>
+when tested on 3 AS networks (AS37287, AS36962, AS36959) in Zambia
+between <a href="https://explorer.ooni.org/measurement/20210812T115318Z_webconnectivity_ZM_37287_n1_H9434ocuP8utCsAI?input=https%3A%2F%2Fwww.instagram.com%2F">11:53 UTC</a>
+to <a href="https://explorer.ooni.org/measurement/20210812T204908Z_webconnectivity_ZM_36959_n1_AZ5BoKKNzq2lCohc?input=https%3A%2F%2Fwww.instagram.com%2F">20:49 UTC</a>
+on 12th August 2021.</p><h1 id=conclusion>Conclusion</h1><p>Amid <a href=https://www.elections.org.zm/category/2021-general-election/>Zambia&rsquo;s 2021 general election</a>,
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">WhatsApp</a>,
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=twitter.com&amp;probe_cc=ZM&amp;only=anomalies">Twitter</a>,
+and
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=www.facebook.com&amp;probe_cc=ZM&amp;only=anomalies">Facebook</a>
+presented signs of blocking on several local networks in the country.</p><p>OONI data on the testing of the WhatsApp mobile app and web interface
+(web.whatsapp.com), Twitter and Facebook domains shows that:</p><ul><li><p>Starting on 12th August 2021 (election day), all services <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;probe_cc=ZM&amp;only=anomalies&amp;test_name=whatsapp">started
+to present anomalies</a>
+(but were accessible in previous years, up until 11th August 2021);</p></li><li><p>All services presented the same <a href=https://explorer.ooni.org/measurement/20210812T193919Z_whatsapp_ZM_36959_n1_eQoGMPZL9SGn5yUQ>HTTP failures caused by connection timeouts during the TLS handshake</a>,
+suggesting the potential use of Deep Packet Inspection (DPI) technology;</p></li><li><p>Connection timeouts (during the TLS handshake) were observed on <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;probe_cc=ZM&amp;only=anomalies&amp;test_name=whatsapp">at least 7 AS networks</a> in Zambia;</p></li><li><p>Accessibility was <a href="https://explorer.ooni.org/measurement/20210814T115350Z_webconnectivity_ZM_37287_n1_3qneW4Yj3bhOD4Ma?input=https%3A%2F%2Fwww.facebook.com">restored</a>
+by 14th August 2021 (and all subsequent measurements show that they remain accessible).</p></li></ul><p>The fact that <a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">WhatsApp</a>,
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=twitter.com&amp;probe_cc=ZM&amp;only=anomalies">Twitter</a>,
+and
+<a href="https://explorer.ooni.org/search?until=2021-08-25&amp;since=2021-07-26&amp;domain=www.facebook.com&amp;probe_cc=ZM&amp;only=anomalies">Facebook</a>
+presented the same timing in terms of connectivity failures, and that
+they presented the same connection timeouts during the TLS handshake,
+suggests:</p><ul><li><p>Coordination (among ISPs) in the implementation of social media blocks;</p></li><li><p>ISPs in Zambia implemented social media blocks using the same censorship techniques (further suggesting the use of specific
+censorship technology).</p></li></ul><p>Moreover, the timing of anomalies presented in OONI network measurement
+data is corroborated by widespread <a href=https://edition.cnn.com/2021/08/12/africa/zambia-election-social-media-blackout-intl/index.html>media reports</a>
+and <a href=https://twitter.com/iampilato/status/1425787480918433798>user reports</a> from
+the ground on the blocking of these specific social media services.</p><p>This is not the first time that <a href=https://ooni.org/reports/>social media is blocked</a> during elections. Access to social media has <a href=https://www.accessnow.org/keepiton-2021-elections-watch/>frequently been blocked amid
+elections</a>
+across Africa (and around the world) over the last years. Earlier this
+year, for example, <a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/#social-media>Uganda blocked social media services</a>
+(regardless of <a href=https://www.mtn.co.ug/product/ott-tax/>OTT tax</a>
+payment) in the run-up to its 2021 general election, and <a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/#internet-outage-amid-2021-general-election>disconnected the internet entirely</a>
+on a nationwide level on the eve of the election (the internet outage
+lasted for almost 5 days). Last year,
+<a href=https://ooni.org/post/2020-tanzania-blocks-social-media-tor-election-day/>Tanzania</a>,
+<a href=https://ooni.org/post/2020-burundi-blocks-social-media-amid-election/>Burundi</a>,
+and
+<a href=https://ooni.org/post/2020-togo-blocks-instant-messaging-apps/>Togo</a>
+blocked access to social media services on election day.</p><p>While it seems that social media services may have been blocked in
+Zambia in an <a href=https://www.openzambia.com/politics/2021/8/10/government-threatens-to-turn-off-internet-again>attempt to prevent the spread of misinformation</a>,
+the necessity and proportionality of these blocks remains unclear, while
+the free flow of information is
+<a href=https://www.ohchr.org/Documents/Issues/Opinion/ElectionsReportDigitalAge.pdf>essential</a>
+in ensuring free and fair elections.</p><p>You can monitor the accessibility of social media services in your
+country (and around the world) through the use of <a href=https://ooni.org/install/>OONI Probe</a> (and <a href=https://run.ooni.io/>OONI Run</a> for the coordination of remote testing), and
+by analyzing <a href=https://explorer.ooni.org/search>OONI data</a>, which is
+openly published in near real-time.</p><h1 id=acknowledgements>Acknowledgements</h1><p>We thank <a href=https://ooni.org/install/>OONI Probe</a> users in Zambia who
+contributed measurements, supporting this study.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

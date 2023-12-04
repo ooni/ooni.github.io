@@ -1,0 +1,986 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Zambia: Internet censorship during the 2016 general elections? | OONI</title>
+<link rel=canonical href=https://ooni.org/post/zambia-election-monitoring/><meta name=description content="A research study by the Open Observatory of Network Interference (OONI) and Strathmore University’s Centre for Intellectual Property and Information Technology Law (CIPIT).
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Previous cases of internet censorship and surveillance
+Zambia’s 2016 general elections and constitutional referendum
+Examining internet censorship during Zambia’s 2016 general elections"><meta property="og:title" content="Zambia: Internet censorship during the 2016 general elections?"><meta property="og:description" content="A research study by the Open Observatory of Network Interference (OONI) and Strathmore University’s Centre for Intellectual Property and Information Technology Law (CIPIT).
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Previous cases of internet censorship and surveillance
+Zambia’s 2016 general elections and constitutional referendum
+Examining internet censorship during Zambia’s 2016 general elections"><meta property="og:type" content="article"><meta property="og:url" content="/post/zambia-election-monitoring/"><meta property="article:published_time" content="2016-10-11T10:52:00+00:00"><meta property="article:modified_time" content="2016-10-11T10:52:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Zambia: Internet censorship during the 2016 general elections?"><meta name=twitter:description content="A research study by the Open Observatory of Network Interference (OONI) and Strathmore University’s Centre for Intellectual Property and Information Technology Law (CIPIT).
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Previous cases of internet censorship and surveillance
+Zambia’s 2016 general elections and constitutional referendum
+Examining internet censorship during Zambia’s 2016 general elections"><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Zambia: Internet censorship during the 2016 general elections?</h1><div class=byline><span class=author>Maria Xynou (OONI), Arturo Filastò (OONI), Moses Karanja (CIPIT), Arthur Gwagwa (CIPIT), Isaac Rutenberg (CIPIT)</span>
+<span class=date>2016-10-11 10:52 UTC</span></div><p><img src=/post/zambia-election-monitoring/zambia-flag.png alt="Zambia flag"></p><p>A research study by the Open Observatory of Network Interference
+(OONI) and Strathmore University’s Centre for Intellectual Property
+and Information Technology Law (CIPIT).</p><p><strong>Table of contents</strong></p><ul><li><p><a href=#key-findings><em>Key Findings</em></a></p></li><li><p><a href=#introduction><em>Introduction</em></a></p></li><li><p><a href=#background><em>Background</em></a></p></li><li><p><a href=#network-landscape-and-internet-penetration><em>Network landscape and internet
+penetration</em></a></p></li><li><p><a href=#legal-environment><em>Legal environment</em></a></p><ul><li><p><a href=#freedom-of-expression><em>Freedom of expression</em></a></p></li><li><p><a href=#press-freedom><em>Press freedom</em></a></p></li><li><p><a href=#access-to-information><em>Access to information</em></a></p></li><li><p><a href=#privacy><em>Privacy</em></a></p></li><li><p><a href=#censorship-and-surveillance><em>Censorship and surveillance</em></a></p></li></ul></li><li><p><a href=#previous-cases-of-internet-censorship-and-surveillance><em>Previous cases of internet censorship and
+surveillance</em></a></p></li><li><p><a href=#zambia-s-2016-general-elections-and-constitutional-referendum><em>Zambia’s 2016 general elections and constitutional
+referendum</em></a></p></li><li><p><a href=#examining-internet-censorship-during-zambia-s-2016-general-elections><em>Examining internet censorship during Zambia’s 2016 general
+elections</em></a></p><ul><li><p><a href=#methodology><em>Methodology</em></a></p><ul><li><p><a href=#creation-of-a-zambian-test-list><em>Creation of a Zambian test list</em></a></p></li><li><p><a href=#ooni-network-measurements><em>OONI network measurements</em></a></p><ul><li><p><a href=#web-connectivity><em>Web connectivity</em></a></p></li><li><p><a href=#http-invalid-request-line><em>HTTP invalid request line</em></a></p></li><li><p><a href=#http-header-field-manipulation><em>HTTP header field manipulation</em></a></p></li></ul></li><li><p><a href=#data-analysis><em>Data analysis</em></a></p></li></ul></li></ul></li><li><p><a href=#findings><em>Findings</em></a></p><ul><li><a href=#acknowledgement-of-limitations><em>Acknowledgement of limitations</em></a></li></ul></li><li><p><a href=#conclusion><em>Conclusion</em></a></p></li></ul><h1 id=key-findings>Key Findings</h1><p>Out of a total of 1,303 websites that were tested for censorship in
+Zambia during and following its 2016 general election period, only 10 of
+those sites
+<a href=https://explorer.ooni.org/country/ZM><em>presented</em></a> signs of
+DNS, TCP/IP and HTTP interference, while <a href=https://freedomhouse.org/sites/default/files/resources/FOTN%202015_Zambia.pdf><em>previously
+blocked</em></a>
+news outlets appeared to be accessible throughout the duration of the
+testing period.</p><p>No block pages were detected as part of this study that could confirm
+cases of censorship. Yet, the
+<a href=https://explorer.ooni.org/country/ZM><em>findings</em></a> illustrate
+that connections to the websites of the World Economic Forum, the
+Organization of American States (OAS), and an online-dating site
+(pof.com) failed consistently from Zambia’s MTN network across the
+testing period, while failure rates from control vantage points were
+below 1%, indicating that these sites might have been blocked.</p><p>Pornography and sites supporting LGBT dating also appeared to be
+inaccessible throughout the testing period, and such blocking can
+potentially be legally justified under Zambia’s <a href=http://www.parliament.gov.zm/sites/default/files/documents/acts/Penal%20Code%20Act.pdf><em>Penal
+Code</em></a>
+and <a href=http://www.zambialaws.com/Principal-Legislation/electronic-communications-and-transactions-act.html><em>Electronic Communications and Transactions Act
+2009</em></a>.
+However, it remains unclear why connections to other websites, such as
+that of Pinterest, may have been tampered with during Zambia’s 2016
+general elections.</p><p>The <a href=https://explorer.ooni.org/country/ZM><em>network tests run in Zambia</em></a>
+aimed at identifying &ldquo;middle boxes&rdquo; capable of performing internet censorship,
+did not reveal the presence of censorship equipment.
+However, this does not mean that censorship equipment is not present in the
+country, but just that these particular tests were not able to highlight it&rsquo;s
+presence.</p><h1 id=introduction>Introduction</h1><p>Zambia is <a href=http://www.worldbank.org/en/country/zambia/overview><em>known</em></a>
+for its relative political stability, having avoided conflict and
+maintained a multi-party democratic presidential system since 1991. As
+part of its
+<a href=http://www.csprzambia.org/images/Constitution_of_Zambia__Amendment_2016-Act_No._2_0.pdf><em>Constitution</em></a>,
+Zambia guarantees press freedom and various human rights, including
+freedom of expression and the right to access information, which are
+enshrined in its <a href=https://www.elections.org.zm/media/the-referendum-question-mobileversion.pdf><em>Bill of
+Rights</em></a>.</p><p>Several cases of censorship however have been reported over the last
+decades, including the
+<a href=https://www.hrw.org/reports/1996/Zambia.htm><em>ban</em></a> of <em>The Post</em>, one
+of Zambia’s few independent newspapers, leading up to the country’s 1996
+and 2016 general elections. Other cases of censorship were
+<a href=https://freedomhouse.org/sites/default/files/resources/FOTN%202015_Zambia.pdf><em>reported</em></a>
+between 2013 and 2014, when four independent online news outlets -
+<a href=http://www.zambiawatchdog.com/><em>Zambian Watchdog</em></a>, <a href=http://zambiareports.com/><em>Zambia
+Reports</em></a>, <a href=http://barotselandpost.com/><em>Barotse
+Post</em></a>, and <a href=http://www.radiobarotseland.com/index.php/en/><em>Radio
+Barotse</em></a> - were blocked
+for their critical coverage of the ruling party. OONI
+<a href=https://ooni.org/post/zambia/><em>revealed</em></a> at the time that
+Deep Packet Inspection (DPI) filtering tactics were used to block
+Zambian Watchdog’s website.</p><p>In light of Zambia’s 2016 general elections, the <a href=https://ooni.org/><em>Open Observatory of
+Network Interference (OONI)</em></a>, in
+collaboration with <a href=https://www.cipit.org/><em>Strathmore University’s Centre for Intellectual
+Property and Information Technology Law
+(CIPIT)</em></a>, conducted a study to examine whether
+internet censorship events occurred during the election period. This
+study was carried out through the collection of network measurements
+from a local vantage point in Zambia, based on a set of <a href=https://github.com/TheTorProject/ooni-spec><em>OONI software
+tests</em></a> designed to examine
+whether a set of websites were blocked, and whether systems that could
+be responsible for internet censorship and surveillance were present in
+the tested network (<a href=https://en.wikipedia.org/wiki/MTN_Group>MTN Zambia</a>).</p><p>The aim of this study is to increase transparency about potential
+internet controls in Zambia which might have interfered with the
+democratic process of elections. The following sections of this report
+provide information about Zambia’s network landscape and internet
+penetration levels, its legal environment with respect to freedom of
+expression, access to information and privacy, as well as about cases of
+censorship and surveillance that have previously been reported in the
+country. The remainder of the report documents the methodology and key
+findings of this study.</p><h1 id=background>Background</h1><p>Zambia is a landlocked country in Southern Africa, bordering with
+Tanzania, Zimbabwe, the Democratic Republic of the Congo, Angola,
+Malawi, Mozambique, Botswana and Namibia. Unlike most of its neighbors,
+Zambia is <a href=http://www.worldbank.org/en/country/zambia/overview><em>known</em></a>
+for its political stability.</p><p>Following the country’s independence from the United Kingdom in 1964,
+the <a href=http://africanelections.tripod.com/zm.html><em>United National Independence Party (UNIP) ruled Zambia for 18
+years</em></a> under a one-party
+state with the motto “<a href=https://politicalmatter.org/2016/04/19/one-zambia-one-nation-the-legacy-of-kenneth-kaunda-by-derrick-m-muwina/><em>One Zambia, One
+Nation</em></a>”.
+Deadly <a href=http://www.bbc.com/news/world-africa-14113084><em>riots</em></a>,
+however, and an <a href=http://www.nytimes.com/1990/07/01/world/failed-zambia-coup-weakens-leader.html><em>attempted
+coup</em></a>
+appear to include some of the factors that led to Zambia’s transition to
+a multi-party democracy and presidential system in 1991. Zambia has
+since held a number of general elections within this new framework.
+This, however, was almost disrupted by another <a href=http://www.bbc.com/news/world-africa-14113084><em>failed coup attempt in
+1997</em></a>, resulting in the
+death sentence of 103 soldiers. Zambia’s last general elections were
+held on 11th August 2016 which
+<a href=https://www.elections.org.zm/general_election_2016.php><em>resulted</em></a> in
+a victory for the Patriotic Front (PF), whose candidate Edgar Lungu was
+elected President for a five-year term.</p><p>Zambia was <a href=https://www.cia.gov/library/publications/the-world-factbook/geos/za.html><em>one of the world’s fastest growing
+economies</em></a>
+over the last decade, but the falling copper prices, exports and foreign
+direct investment have
+<a href=http://www.worldbank.org/en/country/zambia/overview><em>weakened</em></a> the
+economy in recent years, while the <a href=https://www.cia.gov/library/publications/the-world-factbook/geos/za.html><em>rate of
+inflation</em></a>
+has increased. Corruption also appears to remain
+<a href=http://www.transparency.org/cpi2015><em>pervasive</em></a> in the country
+despite <a href=http://www.transparency.org/whatwedo/answer/overview_of_corruption_and_anti_corruption_in_zambia><em>anti-corruption
+efforts</em></a>,
+such as the strengthening of legal and institutional frameworks.</p><p>Multiple <a href=http://minorityrights.org/country/zambia/><em>ethnic
+minorities</em></a> live in Zambia,
+the Bembe people being the largest ethnic group. The majority of the
+population is
+<a href=https://www.cia.gov/library/publications/the-world-factbook/geos/za.html><em>Protestant</em></a>,
+while <a href=https://www.cia.gov/library/publications/the-world-factbook/geos/za.html><em>smaller
+percentages</em></a>
+of the population are Roman Catholic, Muslim, Buddhist, Hindu and Bahá&rsquo;í.
+Despite the presence of diverse ethnic and religious groups, civil war
+has been prevented in the country. Xenophobic violence however has been
+an issue, recently resulting in the <a href=http://www.bbc.com/news/world-africa-36092917><em>death of
+Rwandans</em></a> who were
+accused of engaging in ritual killings in Lusaka.</p><p>Food shortages and HIV/AIDS are some of the main issues that have
+affected Zambia in recent decades. Around 70% of the population is
+<a href=http://minorityrights.org/country/zambia/><em>estimated</em></a> to live on less
+than US$1 per day. A national disaster due to droughts was
+<a href=http://news.bbc.co.uk/2/hi/africa/4457814.stm><em>declared</em></a> in 2005,
+when the President appealed for food aid. While Zambia consists of a
+population of around <a href=https://esa.un.org/unpd/wpp/Publications/Files/Key_Findings_WPP_2015.pdf><em>16
+million</em></a>,
+<a href=http://www.unaids.org/en/regionscountries/countries/zambia><em>more than 1
+million</em></a>
+people are estimated to be living with HIV/AIDS.</p><h1 id=network-landscape-and-internet-penetration>Network landscape and internet penetration</h1><p>Zambia was one of the first countries in Sub-Saharan Africa to adopt the
+internet, when satellite and dial-up technology were installed at the
+University of Zambia in the early 1990s. Today, three operators provide
+Zambia’s national fiber backbone: <a href=http://www.zamtel.zm/><em>Zambia Telecommunications Ltd
+(Zamtel)</em></a> and <a href=http://www.zesco.co.zm/><em>Zambia Electricity Supply
+Corporation Ltd (ZESCO)</em></a> - both of which are
+state-owned - as well as <a href=http://cecinvestor.com/><em>Copperbelt Energy Corporation
+(CEC)</em></a>, which is privately-owned.</p><p>All internet and mobile service providers in Zambia are privately-owned,
+with the exception of Zamtel, which is state-owned. Overall, Zambia has
+16 different Internet Service Providers (ISPs), and 3 mobile operators:
+Airtel, MTN and Zamtel.</p><table><thead><tr><th></th><th>2010</th><th>2011</th><th>2012</th><th>2013</th><th>2014</th><th>2015</th><th>2016 Q1-2</th></tr></thead><tbody><tr><td>Population-CSO Estimate</td><td>13,092,666</td><td>13,721,498</td><td>14,156,468</td><td>14,605,555</td><td>15,068,792</td><td>15,545,778</td><td>16,037,474</td></tr><tr><td>Number of Mobile Operators</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><td>Number of PSTN Operators</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>Number of Active ISPs</td><td>-</td><td>-</td><td>-</td><td>16</td><td>16</td><td>16</td><td>16</td></tr></tbody></table><p>Source: <a href=http://onlinesystems.zicta.zm:8585/statsfinal/ICT%20Indicators.html>Zambia Information and Communications Technology Authority</a></p><p>Zamtel has the largest share of internet subscriptions, but the smallest
+share in the mobile phone market, where <a href=http://onlinesystems.zicta.zm:8585/statsfinal/ICT%20Indicators.html><em>Airtel and MTN have the
+largest
+shares</em></a>.</p><table><thead><tr><th>Network Coverage</th><th>2010</th><th>2011</th><th>2012</th><th>2013</th><th>2014</th><th>2015</th><th>2016 Q1</th></tr></thead><tbody><tr><td>Internet Points of Presence (Districts)</td><td>-</td><td>-</td><td>-</td><td>99</td><td>-</td><td>-</td><td>-</td></tr><tr><td>PSTN Area Coverage (%)</td><td>90</td><td>90</td><td>90</td><td>90</td><td>90</td><td>90</td><td>90</td></tr><tr><td>National Network Geographical Coverage</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Airtel Zambia</td><td>-</td><td>-</td><td>-</td><td>42.7%</td><td>42.7%</td><td>42.7%</td><td>42.7%</td></tr><tr><td>MTN Zambia</td><td>-</td><td>36.6%</td><td>37.5%</td><td>39.4%</td><td>31.7%</td><td>45.4%</td><td>43.5%</td></tr><tr><td>Zamtel</td><td>-</td><td>75.0%</td><td>75.0%</td><td>29.7%</td><td>27.0%</td><td>27.0%</td><td>27.0%</td></tr></tbody></table><p>Source: <a href=http://onlinesystems.zicta.zm:8585/statsfinal/ICT%20Indicators.html>Zambia Information and Communications Technology Authority</a></p><p>Internet penetration in Zambia is currently limited to about
+<a href=http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx><em>21%</em></a>
+of the population, according to the <a href=http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx><em>International Telecommunication
+Union
+(ITU)</em></a>,
+the <a href=https://www.cia.gov/library/publications/the-world-factbook/geos/za.html><em>World
+Factbook</em></a>,
+and <a href=http://www.internetworldstats.com/africa.htm#zm><em>Internet World
+Stats</em></a>. The limited
+amount of internet users in Zambia is due to a number of reasons,
+including high costs of hardware, software and access to the internet,
+poor network coverage, erratic and expensive electricity, and high
+levels of illiteracy and poverty
+(<a href=http://www.worldbank.org/en/country/zambia/overview><em>60%</em></a> of the
+population is estimated to live below the poverty line, and
+<a href=http://www.worldbank.org/en/country/zambia/overview><em>42%</em></a> are
+considered to live in extreme poverty). Nonetheless, access to
+information and communication technologies (ICTs) has been increasing
+steadily over the last few years, growing from a <a href=http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx><em>penetration rate of
+10% in 2010 to about 21% in
+2016</em></a>.</p><p>The vast majority of Zambian ICT users access the internet via <em>mobile
+phones</em>, as <a href=http://onlinesystems.zicta.zm:8585/statsfinal/><em>70.5%</em></a> of
+the population is estimated to have mobile phone subscriptions, while
+<a href=http://onlinesystems.zicta.zm:8585/statsfinal/><em>less than 1%</em></a> of
+Zambians access the internet from their homes via fixed line
+subscriptions. As of 2013, <a href=https://advox.globalvoices.org/2013/12/21/zambia-register-your-sim-card-or-lose-your-service/><em>SIM card
+registration</em></a>
+with an original and valid identity card is required for mobile phone
+subscriptions.</p><p><a href=http://www.zicta.zm/><em>Zambia’s Information and Communications Technology Authority
+(ZICTA)</em></a> estimates that
+<a href=http://onlinesystems.zicta.zm:8585/statsfinal/><em>35.6%</em></a> of Zambia’s
+mobile phone subscribers use the internet in 2016, as illustrated below:</p><table><thead><tr><th>Indicator</th><th>Number</th><th>Penetration Rate</th></tr></thead><tbody><tr><td>Mobile Subscription</td><td>11,309,494</td><td>70.50%</td></tr><tr><td>Fixed Line Subscription</td><td>115,423</td><td>0.72%</td></tr><tr><td>Mobile Internet Users</td><td>5,715,493</td><td>35.60%</td></tr><tr><td>Fixed Internet Subscription</td><td>35,960</td><td>0.22%</td></tr></tbody></table><p>Source: <a href=http://onlinesystems.zicta.zm:8585/statsfinal/>Zambia Information and Communications Technology Authority</a></p><p><a href=https://freedomhouse.org/sites/default/files/resources/FOTN%202015_Zambia.pdf><em>Blackberry devices appear to be used the most</em></a>
+due to their cheap subscription fees, while the increasing number of
+mobile internet users and <a href=https://www.lusakatimes.com/2012/02/24/government-clamp-illegal-internet-cafs-zambia/><em>government cybercafe
+regulations</em></a>
+appear to be some of the reasons leading to the decreased popularity of
+cybercafes in recent years.</p><h1 id=legal-environment>Legal environment</h1><p>Zambia’s ICT sector is regulated by <a href=http://www.zicta.zm/><em>ZICTA</em></a>,
+which was established under the <a href=http://www.zambialaws.com/Principal-Legislation/information-and-communication-technologies-act.html><em>2009 Information and Communications
+Technologies
+Act</em></a>.
+As part of its mandate, ZICTA manages the registration for the .zm
+country code top-level domains, according to provisions under the <a href=http://www.parliament.gov.zm/node/3581><em>2009
+Electronic Communications and Transaction
+Act</em></a>. The <a href=http://www.iba.org.zm/><em>Independent
+Broadcasting Authority</em></a> is also responsible for
+regulating some internet content.</p><h2 id=freedom-of-expression>Freedom of expression</h2><p>Freedom of expression is enshrined in the <a href=https://www.elections.org.zm/media/the-referendum-question-mobileversion.pdf><em>Bill of
+Rights</em></a>
+which is included in Part III of Zambia’s Constitution. According to
+Article 21 of the Bill of Rights:</p><blockquote><p>(1) A person has the right to freedom of expression which includes &ndash;</p><p>(a) freedom to hold an opinion;</p><p>(b) freedom to receive or impart information or ideas;</p><p>(c) freedom of artistic creativity;</p><p>(d) academic freedom; and</p><p>(e) freedom of scientific and technological research, as prescribed.</p></blockquote><p>Clause 2 of Article 21 of the Bill of Rights specifies the conditions
+under which freedom of expression is restricted:</p><blockquote><p><em>(2) Clause (1) does not extend to &ndash;</em></p><p>(a) conduct or statements which incite war, genocide, crimes against</p><blockquote><p>humanity or other forms of violence; or</p></blockquote><p>(b) <em>statements which &ndash;</em></p><p>(i) vilify or disparage others; or</p><p>(ii) incite hatred.</p></blockquote><p>While freedom of expression is guaranteed under Zambia’s Constitution,
+in practice this right can be limited by broad interpretations of laws
+that restrict expression in the interest of national security, public
+order and safety.</p><h2 id=press-freedom>Press freedom</h2><p>Zambia’s Constitution was recently
+<a href=https://www.elections.org.zm/media/the-referendum-question-mobileversion.pdf><em>amended</em></a>
+to include significant protections for press freedom.</p><p>Freedom of the media (electronic, broadcasting, print, and other forms)
+is guaranteed under <a href=https://www.elections.org.zm/media/the-referendum-question-mobileversion.pdf><em>Article 23 of the Bill of
+Rights</em></a>,
+though “<em>the State may license broadcasting and electronic media where
+it is necessary to regulate signals and signal distribution</em>.”</p><p>Clause 2 of Article 23 explicitly prohibits the State from exercising
+control or interfering with the production or circulation of
+publications, or with the dissemination of information through any
+media.</p><p>Furthermore, clause 4 of Article 23 guarantees the independence of the
+public media to determine the editorial content of their broadcasts and
+communications, as well as the right to present divergent views and
+dissenting opinions.</p><p>In practice, however, press freedom can potentially be limited by
+various statutes. Zambia’s <a href=http://www.parliament.gov.zm/sites/default/files/documents/acts/Penal%20Code%20Act.pdf><em>Penal
+Code</em></a>,
+for example, includes clauses that criminalize the defamation of the
+president and allow the president to ban publications that are
+considered to be “contrary to the public interest”.</p><h2 id=access-to-information>Access to information</h2><p>Article 22 of the <a href=https://www.elections.org.zm/media/the-referendum-question-mobileversion.pdf><em>Bill of
+Rights</em></a>
+guarantees the right to access information. Specifically, clause 1 of
+Article 22 states that individuals have the right to access information
+held by the State or another person which is lawfully required for the
+exercise or protection of a right or freedom.</p><p>While the process of drafting Zambia’s Access to Information (ATI) Bill
+started in 2002, the Bill has still <em>not</em> been enacted into law, thus
+limiting the right to access information from being exercised in
+practice.</p><p>Various non-profit organizations, including
+<a href=https://www.ifex.org/zambia/2015/05/21/access_information/><em>IFEX</em></a> and
+the <a href=http://www.osisa.org/media-and-ict/zambia/freedom-information-bill-zambia><em>Open Society Initiative for Southern
+Africa</em></a>,
+have criticised the delay and have encouraged the Zambian government to
+create a timeline for enacting the Access to Information (ATI) Bill into
+law.</p><h2 id=privacy>Privacy</h2><p>The right to privacy is enshrined in Article 19 of Zambia’s <a href=https://www.elections.org.zm/media/the-referendum-question-mobileversion.pdf><em>Bill of
+Rights</em></a>,
+which extends to the protection of a person’s <em>communications</em> privacy
+from infringement.</p><p>Data protection is included in Part VII (“Protection of Personal
+Information”) of the <a href=http://www.zambialaws.com/Principal-Legislation/electronic-communications-and-transactions-act.html><em>2009 Electronic Communications and Transactions
+Act</em></a>,
+and Article 42 of the Act specifies the principles for the electronic
+collection of personal information.</p><p>While most of these principles include important provisions for data
+protection, it is noteworthy that principle 9 enables data controllers
+to “use any personal information to compile profiles for statistical
+purposes and may freely trade with such profiles and statistical data,
+as long as the profiles or statistical data cannot be linked to any
+specific data subject by a third party”. This principle raises concerns,
+as <a href=https://myshadow.org/false-promises-data-anonymisation><em>research</em></a>
+has shown that “anonymized datasets” can be de-anonymized by third
+parties.</p><h2 id=censorship-and-surveillance>Censorship and surveillance</h2><p>Zambia’s <a href=http://www.zambialaws.com/Principal-Legislation/electronic-communications-and-transactions-act.html><em>Electronic Communications and Transactions Act
+2009</em></a>
+(Part XI, “Interception of Communication”) includes details about how
+lawful interception is carried out, generally requiring a court order
+(Article 66).</p><p>Article 65 of the Act establishes the Central Monitoring and
+Coordination Centre, which manages and aggregates all authorised
+interceptions of communications, and which is operated by the department
+responsible for Government communications. According to Article 77,
+service providers are required to install hardware and software
+facilities and devices that enable the “real-time” and “full-time”
+interception of communications upon request by law enforcement agencies.
+Service providers are also required to provide interfaces for
+transmitting all intercepted communications directly to the Central
+Monitoring and Coordination Centre.</p><p>Part XIV (“Cyber Inspectors”) of the Act details the appointment and
+powers of cyber inspectors. According to Article 94, a cyber inspector
+may “monitor and inspect any website or activity on an information
+system in the public domain and report any unlawful activity to the
+appropriate authority”.</p><p>Pornography is prohibited under Article 102 of Part XV (“Cyber crime”)
+of the Act, according to which a fine and/or imprisonment can be imposed
+on any person that “procures any pornography through a computer system
+for oneself or for another person”, or “possesses any pornography in a
+computer system or on a computer data storage medium”.</p><h1 id=previous-cases-of-internet-censorship-and-surveillance>Previous cases of internet censorship and surveillance</h1><p>Africa’s first known case of internet censorship occurred in Zambia
+twenty years ago.</p><p>Leading up to the 1996 general elections, the government of Zambia
+<a href=https://www.hrw.org/reports/1996/Zambia.htm><em>banned edition 401</em></a> of
+<a href=http://www.postzambia.com/><strong>The Post</strong></a>, one of Zambia’s three
+primary newspapers, and ordered its removal from the newspaper’s
+website. This incidence of censorship
+<a href=https://www.hrw.org/reports/1996/Zambia.htm><em>reportedly</em></a> occurred
+because edition 401 stated that the government was secretly planning to
+hold a referendum on the constitution without providing the public with
+much prior notice.</p><p>In addition to censoring the online version and distribution of <em>The
+Post’s</em> 401 edition, the government also
+<a href=https://freedomhouse.org/sites/default/files/resources/FOTN%202015_Zambia.pdf><em>threatened</em></a>
+to hold the site’s Internet Service Provider (ISP), Zamnet, criminally
+liable for the content, and three of the edition’s editors were
+<a href=https://www.hrw.org/reports/1996/Zambia.htm><em>arrested</em></a> under the
+Official Secrets Act on charges for receiving and publishing “classified
+information”.</p><p>No other incidents of internet censorship were reported in Zambia for
+more than a decade.</p><p>The first new censorship attempt started in late 2012 when Zambia’s
+registrar of societies
+<a href=https://freedomhouse.org/report/freedom-press/2013/zambia><em>threatened</em></a>
+to deregister the <a href=http://www.zambiawatchdog.com/><strong>Zambian
+Watchdog</strong></a>, an investigative online
+media that focuses on corruption and other major crimes, for allegedly
+failing to pay required fees and submit a postal address. While this
+attempt was unsuccessful, the news website was blocked during the
+following year.</p><p>Four independent online news outlets - <a href=http://www.zambiawatchdog.com/><em>Zambian
+Watchdog</em></a>, <a href=http://zambiareports.com/><em>Zambia
+Reports</em></a>, <a href=http://barotselandpost.com/><em>Barotse
+Post</em></a>, and <a href=http://www.radiobarotseland.com/index.php/en/><em>Radio
+Barotse</em></a> - were
+<a href=https://freedomhouse.org/sites/default/files/resources/FOTN%202015_Zambia.pdf><em>reportedly
+censored</em></a>
+for about nine months, from July 2013 until April 2014, for their
+critical coverage of the ruling party under President Sata.</p><p>OONI <a href=https://ooni.org/post/zambia/><em>revealed</em></a> at the time
+that Deep Packet Inspection (DPI) filtering tactics were used to block
+Zambian Watchdog’s website. According to the collected data, “reset”
+packets were being injected by DPI device to terminate connections to
+<a href=http://www.zambiawatchdog.com><em>www.zambiawatchdog.com</em></a>, leading to
+the site being inaccessible.</p><p><img src=/post/zambia-election-monitoring/old-report-data.png alt="Zambia report data"></p><p>Source: Open Observatory of Network Interference (OONI), <a href=https://ooni.org/post/zambia/>“Zambia, a
+country under Deep Packet Inspection”</a></p><p>Initially, only unencrypted connections to Zambian Watchdog’s website
+were found to be blocked, but further
+<a href=https://ooni.org/post/zambia/#update-17th-july-2013-and-ssl-got-blocked><em>testing</em></a>
+also revealed the blocking of encrypted SSL connections to the website.</p><p>The Zambian government did not officially claim any responsibility in
+relation to this censorship, but Vice President Guy Scott <a href=https://cpj.org/2013/07/zambia-blocks-another-website-re-arrests-reporter.php><em>reportedly
+stated</em></a>
+that the Zambian Watchdog’s website deserved to be blocked because it
+was “promoting hate speech” and its reporting was “malicious, vicious
+and fictitious”.</p><p>During this period, several journalists suspected of working for the
+Zambian Watchdog were
+<a href=https://advox.globalvoices.org/2013/07/19/another-journalist-arrested-in-zambia/><em>arrested</em></a>
+on charges that included the “possession of obscene material”. Two years
+later, one of those journalists was acquitted after a court
+<a href=https://www.lusakatimes.com/2015/08/11/clayson-hamasaka-acquittedevidence-was-planted/><em>ruled</em></a>
+that evidence used against him had been planted.</p><p>In an <a href=http://zambiareports.com/2013/07/25/zambian-government-requested-to-stop-blocking-access-to-news-websites/><em>open
+letter</em></a>,
+news outlet Zambia Reports claimed that access to its website was also
+blocked completely, and that it had received no prior notification or
+explanation from the government in regards to why its website was being
+blocked. Zambia Reports also revealed that it had filed a complaint
+regarding the blocking of their IP address to ZICTA.</p><p>Censorship in Zambia is
+<a href=http://www.zambiawatchdog.com/authoritarian-regimes-band-together-zambia-in/><em>reportedly</em></a>
+enabled through collaboration with Chinese companies, such as
+<a href=http://www.huawei.com/><em>Huawei</em></a> and <a href=http://www.zte.com.cn/><em>ZTE</em></a>,
+that equip Zambian ISPs with DPI technology that can be used for the
+purpose of blocking social media and “unfriendly” websites. The Zambian
+government has
+<a href=https://advox.globalvoices.org/2013/02/23/zambia-chinese-experts-to-monitor-internet/><em>allegedly</em></a>
+spent about USD 1.8 million on its partnership with Chinese companies,
+involving the installation of an internet monitoring facility and
+possibly the development of backdoors within networks.</p><p>Zambian authorities <em>might</em> have also acquired sophisticated spyware,
+known as <a href=https://wikileaks.org/spyfiles/files/0/31_200810-ISS-PRG-HACKINGTEAM.pdf><em>Remote Control System
+(RCS)</em></a>,
+by an Italian surveillance company called <a href=http://www.hackingteam.it/><em>Hacking
+Team</em></a>. According to one of Hacking Team’s
+<a href=https://wikileaks.org/spyfiles/files/0/31_200810-ISS-PRG-HACKINGTEAM.pdf><em>brochures</em></a>,
+RCS spyware can remotely monitor and log activity on computers and
+smartphones, while being undetected by anti-virus, anti-spyware and
+anti-keylogging software. After <a href=http://arstechnica.com/security/2016/04/how-hacking-team-got-hacked-phineas-phisher/><em>Hacking Team got
+hacked</em></a>
+last year, <a href=https://wikileaks.org/hackingteam/emails/><em>leaked emails</em></a>
+revealed that the Zambian government intended to acquire spyware for
+monitoring and intercepting communications. This, though, has <em>not</em> been
+confirmed to date, and it remains unclear if the Zambian government is
+indeed using such technologies.</p><p>In 2013 Citizen Lab researchers
+<a href=https://citizenlab.org/storage/bluecoat/CitLab-PlanetBlueCoatRedux-FINAL.pdf><em>detected</em></a>
+the presence of a Blue Coat PacketShaper device in Zambia. Blue Coat
+Inc. is a California-based company which is known for developing,
+marketing, and exporting technologies that can be used to monitor
+internet traffic, block websites, and track users’ online activities and
+communications.</p><p>As part of its
+<a href=https://citizenlab.org/storage/bluecoat/CitLab-PlanetBlueCoatRedux-FINAL.pdf><em>study</em></a>,
+the Citizen Lab used a combination of network measurement and scanning
+methods and tools to identify instances of Blue Coat ProxySG and
+PacketShaper devices around the world. The research findings show the
+presence of Blue Coat PacketShaper in Zambia, as illustrated below:</p><p><img src=/post/zambia-election-monitoring/blue-coat.png alt=BlueCoat></p><p>Source: Citizen Lab, <a href=https://citizenlab.org/storage/bluecoat/CitLab-PlanetBlueCoatRedux-FINAL.pdf>“Some Devices Wander By Mistake: PLANET BLUE COAT
+REDUX”</a></p><p>Numerous
+<a href=http://techpresident.com/news/wegov/24434/zambian-president-admits-spying-fellow-officials><em>reports</em></a>
+surfaced over the last years accusing the Zambian government of
+extensive surveillance activities, some of which may have even
+<a href=http://zambiareports.com/2013/10/09/sata-is-listening-to-your-conversation/><em>targeted cabinet
+officials</em></a>,
+such as the foreign minister, and local leaders. Similarly, members of
+the opposition have
+<a href=http://zambiareports.com/2014/01/23/sata-tapping-phones-says-fr-bwalya/><em>accused</em></a>
+the Zambian government of eavesdropping on their phone conversations.
+Last year, two journalists
+<a href=http://www.africametro.com/headline/airtel-zambia-facing-phone-tapping-allegations><em>petitioned</em></a>
+the High Court of Zambia to inquire into allegations of phone tapping by
+Airtel - Zambia’s largest mobile service provider - under the previous
+government.</p><h1 id=zambias-2016-general-elections-and-constitutional-referendum>Zambia’s 2016 general elections and constitutional referendum</h1><p>Zambia has a <a href=http://www.bbc.com/news/world-africa-14112449><em>reputation for political
+stability</em></a>, especially
+in comparison to its neighbours, being governed by a unitary presidential
+republic.</p><p>The 2011 elections
+<a href=https://www.elections.org.zm/2011_elections.php><em>resulted</em></a> in a
+victory for the Patriotic Front (PF), whose candidate Michael Sata was
+elected President for a five-year term. However, following the death of
+President Sata in October 2014, <a href=https://www.elections.org.zm/results/2015_presidential_election><em>early presidential
+elections</em></a>
+were held last year to elect a successor to complete the remainder of
+his term. This resulted in the election of PF candidate Edgar Lungu, who
+beat Hakainde Hichilema of the United Party for National Development
+(UPND) by a very narrow margin. The UPND did <a href=http://www.usnews.com/news/world/articles/2015/01/25/zambia-ruling-party-candidate-wins-presidential-election><em>not
+accept</em></a>
+the credibility of the 2015 election.</p><p>On 11th August 2016, Zambia held its <a href=https://www.elections.org.zm/general_election_2016.php><em>general
+elections</em></a> to
+elect the President and National Assembly. Leading up to the elections,
+violent outbreaks occurred in Lusaka after the government
+<a href=https://freedomhouse.org/article/zambia-government-suspends-election-campaigns><em>banned</em></a>
+<em>The Post</em>, one of Zambia’s few independent newspapers, on 10th June.
+Due to the violence, the Electoral Commission suspended campaigning
+activities in Lusaka and Namwala for ten days. During this period, the
+government also took
+<a href=http://www.telegraph.co.uk/news/2016/06/28/zambia-accused-of-attacking-press-freedom-as-newspaper-is-closed/><em>action</em></a>
+against <em>The Post</em> on the ground of unpaid taxes of around USD 6
+million. The ban on the newspaper was eventually
+<a href=http://www.africareview.com/news/Zambia-electoral-body-lifts-campaign-ban/979180-3301036-120v6rb/index.html><em>lifted</em></a>
+more than a month later.</p><p>This is <em>not</em> the first time that <em>The Post</em> was banned. This
+<a href=https://www.hrw.org/reports/1996/Zambia.htm><em>previously occurred</em></a> in
+1996, leading up to the country’s general elections.</p><p>Members of the UPND, Zambia’s main opposition party, were
+<a href=http://www.dw.com/en/zambian-opposition-leaders-jailed-as-elections-near/a-19132564><em>arrested</em></a>
+a few weeks before the 2016 general elections on the grounds that they
+were trying to start a private militia. The police started off by
+<a href=https://www.lusakatimes.com/2016/07/01/police-raid-upnd-offices-pick-10-cadres/><em>raiding the UPND Head
+Office</em></a>
+and questioning staff members and volunteers of the party. According to
+the UPND, this was part of the PF government’s persecution and abuse
+towards them. The police subsequently <a href=http://www.africanews.com/2016/07/20/police-raid-zambian-opposition-leader-s-house-arresting-28-people/><em>raided the house of the UPND’s
+Vice
+President</em></a>,
+and a total of 28 people were arrested as part of the raid.</p><p>Further
+<a href=http://www.voanews.com/a/zambia-opposition-having-ballots-printed-dubai-could-undermine-vote/3429490.html><em>controversy</em></a>
+emerged in the printing of the ballot papers, which had previously been
+printed in South Africa. This time, the Electoral Commission of Zambia
+awarded the contract to <a href=http://www.alghurairprinting.com/><em>Al Ghurair Printing &
+Publishing</em></a>, a Dubai-based firm,
+which prepared the ballot papers used for Zambia’s 2016 elections.
+Opposition members and civil society groups
+<a href=http://www.voanews.com/a/printing-zambia-ballot-papers-on-course-commission-says/3409989.html><em>criticised</em></a>
+this move on the grounds that the contract with the Dubai firm was
+significantly more expensive than previous contracts, and that it
+increased the possibility of electoral fraud. Similar concerns were also
+raised in regards to the transport and distribution of the ballot
+papers.</p><p>The 2016 elections presented a “large turnout” and were
+<a href=http://www.aljazeera.com/news/2016/08/zambia-elections-polls-open-test-ruling-party-160811060636301.html><em>characterized</em></a>
+as “calm and peaceful”, while including a tight competition between the
+PF and the UPND. A total of nine candidates registered to run for the
+presidency, as illustrated below:</p><p><img src=/post/zambia-election-monitoring/election-results.png alt="Zambia elections"></p><p>Source: <a href=https://www.elections.org.zm/general_election_2016.php>Electoral Commission of Zambia, General Election of 2016</a></p><p>Edgar Lungu of the PF won the 2016 elections and was re-elected for a
+five-year term, beating the UPND again with a very close margin. The
+chart below illustrates that the PF and UPND acquired the vast majority
+of votes within Zambia:</p><p><img src=/post/zambia-election-monitoring/election-graph.png alt="Zambia elections graph"></p><p>Source: <a href=https://www.elections.org.zm/general_election_2016.php>Electoral Commission of Zambia, General Election 2016</a></p><p>While the PF and UPND each acquired a similar share of the total votes
+in the presidential elections, the PF
+<a href=https://www.elections.org.zm/results/2016_national_assembly_elections><em>won</em></a>
+a majority in the National Assembly, winning 80 of the 156 elected
+seats. In spite of the pre-election violence, the 2016 elections were
+generally
+<a href=http://www.dw.com/en/election-observers-in-zambia-report-media-biased-in-vote/a-19473207><em>characterized</em></a>
+as “peaceful”. However, election observers in Zambia
+<a href=http://www.dw.com/en/election-observers-in-zambia-report-media-biased-in-vote/a-19473207><em>reported</em></a>
+that the media <em>biased</em> the vote in favour of the ruling party.</p><p>Following the elections, the UPND
+<a href=http://www.timeslive.co.za/world/2016/08/14/Zambia-opposition-leader-angered-by-vote-results-delay><em>accused</em></a>
+the Electoral Commission of Zambia for participating in fraud due to its
+significant delay in announcing the results and
+<a href=http://www.aljazeera.com/news/2016/08/zambia-arrests-133-protesters-contested-election-160816080236912.html><em>stated</em></a>
+that the vote was rigged. The US-based Carter Center also <a href=http://www.bloomberg.com/news/articles/2016-08-13/zambia-presidential-rivals-neck-and-neck-as-results-trickle-in><em>expressed
+concern</em></a>
+in regards to the delay of the announcement of the results, and stated
+that the elections were characterized by significant inter-party
+tensions and polarization.</p><p>Protests sprung against the reelection of President Lungu, resulting in
+the <a href=http://www.aljazeera.com/news/2016/08/zambia-arrests-133-protesters-contested-election-160816080236912.html><em>arrest of 133
+protesters</em></a>.
+About a week after the elections, subscribers on MTN Zambia, Airtel
+Zambia, and Vodafone’s 4G service <a href=http://www.techzim.co.zw/2016/08/zambian-government-suspected-causing-internet-slowdown-shutdown-following-outage-opposition-strongholds/><em>expressed
+complaints</em></a>
+regarding an internet shutdown, some attributing this to state sponsored
+censorship in an attempt to stifle opposing views towards the election
+outcomes. MTN and Airtel acknowledged the disruptions, but it remains
+<a href=https://twitter.com/Mose_Karanja/status/766684089613185025><em>unclear</em></a>
+if the outage was ordered by the government or not.</p><p>Alongside the elections, a <a href=https://www.elections.org.zm/referendum_question.php><strong>constitutional
+referendum</strong></a> was
+also held in Zambia on 11th August 2016. Voters were asked to answer the
+following question:</p><p>“<em>Do you agree to the amendment to the Constitution to enhance the Bill
+of rights contained in Part III of the Constitution of Zambia and to
+repeal and replace Article 79 of the Constitution of Zambia?”</em></p><p>The referendum sought to enhance and amend Zambia’s <a href=https://www.elections.org.zm/media/the-referendum-question-mobileversion.pdf><em>Bill of
+Rights</em></a></p><ul><li>a declaration of individual rights and freedoms, as issued by the
+national government - by repealing and replacing Article 79, which
+dictates the process of future amendments. Specifically, the
+<a href=https://www.elections.org.zm/referendum_question.php><em>changes</em></a> to the
+Bill of Rights would include amendments to the “Civil and Political
+Rights” section, and the addition of the “Economic, Social, Cultural and
+Environmental Rights” and “Further and Special Rights” sections. For the
+referendum to pass, a majority ‘yes’ vote was required, along with a
+turnout of <em>at least</em> 50% eligible voters.</li></ul><p>The referendum was criticised in advance by media organizations, who
+<a href=http://allafrica.com/stories/201602110658.html><em>questioned</em></a> whether
+the majority of Zambia’s voters understand the Bill of Rights and what
+they were asked to answer through the referendum. The PF government was
+also
+<a href=https://www.lusakatimes.com/2016/06/01/delayed-release-proposed-bill-rights-ploy-pf/><em>criticised</em></a>
+for its delay in releasing the Bill of Rights, preventing voters from
+reading in advance the contents that they were asked to vote for or
+against. This was
+<a href=https://www.lusakatimes.com/2016/06/01/delayed-release-proposed-bill-rights-ploy-pf/><em>characterized</em></a>
+as a ploy to deprive the people of Zambia from the opportunity to make
+informed decisions in regards to the country’s constitution. Similarly,
+the decision to combine the 2016 general election with a referendum was
+<a href=https://www.lusakatimes.com/2016/05/31/referendum-issue-president-dissolved-cabinet-got-wrong/><em>characterized</em></a>
+as an undemocratic ploy by the PF government to acquire votes.</p><p>While the majority vote (71%) of Zambia’s 2016 constitutional referendum
+was in favour, the turnout was <a href=https://www.lusakatimes.com/2016/08/19/referendum-vote-flopsfails-meet-threshold/><strong>below</strong> <em>the 50%
+threshold</em></a>,
+preventing the validation of the result.</p><h1 id=examining-internet-censorship-during-zambias-2016-general-elections>Examining internet censorship during Zambia’s 2016 general elections</h1><p>The <a href=https://ooni.org/><em>Open Observatory of Network Interference
+(OONI)</em></a>, in collaboration with Strathmore
+University’s <a href=https://www.cipit.org/><em>Centre for Intellectual Property and Information
+Technology Law (CIPIT)</em></a>, performed a study of
+internet censorship in Zambia during its 2016 general elections.</p><p>The aim of this study was to understand whether and to what extent
+censorship events occurred during the election period, limiting voters’
+rights to access and disseminate information.</p><p>The sections below document the methodology and key findings of this
+study.</p><h2 id=methodology>Methodology</h2><p>The methodology of this study, in an attempt to identify potential
+censorship events in Zambia during its 2016 election period, included
+the following:</p><ul><li><p>Creation of a Zambian test list</p></li><li><p>OONI network measurements</p></li><li><p>Data analysis</p></li></ul><p>A <a href=https://github.com/citizenlab/test-lists/blob/master/lists/zm.csv><em>list of
+URLs</em></a>
+that are relevant and commonly accessed in Zambia was created, and such
+URLs - along with <a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv><em>other
+URLs</em></a>
+that are commonly accessed around the world - were tested for blocking
+based on OONI’s free software tests. Such tests were run from a local
+vantage point (the ISP MTN) in Zambia (AS 36962), and they also examined whether
+systems that are responsible for censorship, surveillance and traffic
+manipulation were present in the tested network. Once network
+measurement data was collected from these tests, the data was
+subsequently processed and analyzed based on a set of heuristics for
+detecting internet censorship and traffic manipulation.</p><p>The testing period started on 11th August 2016 - the day of Zambia’s
+general elections - and concluded on 24th August 2016. During this
+period, network measurements were collected every day through the use of
+OONI’s <a href=https://ooni.org/install/lepidopter/><em>software distribution for Raspberry
+Pis</em></a>.</p><h3 id=creation-of-a-zambian-test-list>Creation of a Zambian test list</h3><p>An important part of identifying censorship is determining <em>which</em>
+websites to examine for blocking.</p><p>OONI’s <a href=https://github.com/TheTorProject/ooni-probe><em>software</em></a> (called
+<em>OONI Probe</em>) is designed to examine URLs contained in specific lists
+(“test lists”) for censorship. By default, OONI Probe examines the
+“<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv><em>global test
+list</em></a>”,
+which includes a wide range of internationally relevant websites, most
+of which are in English. These websites fall under <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-proposed-category_codes.csv><em>30
+categories</em></a>,
+ranging from news media, file sharing and culture, to provocative or
+objectionable categories, like pornography, political criticism, and
+hate speech.</p><p>These categories help ensure that a wide range of different types of
+websites are tested, and they enable the examination of the impact of
+censorship events (for example, if the majority of the websites found to
+be blocked in a country fall under the “human rights” category, that may
+have a bigger impact than other types of websites being blocked
+elsewhere). The main reason why objectionable categories (such as
+“pornography” and “hate speech”) are included for testing is because
+they are more likely to be blocked due to their nature, enabling the
+development of heuristics for detecting censorship elsewhere within a
+country.</p><p>In addition to testing the URLs included in the global test list,
+OONI Probe is also designed to examine a test list which is specifically
+created for the country that the user is running OONI Probe from, if such
+a list exists. Unlike the global test list, <a href=https://github.com/citizenlab/test-lists/tree/master/lists><em>country-specific test
+lists</em></a>
+include websites that are relevant and commonly accessed within specific
+countries, and such websites are often in local languages. Similarly to
+the global test list, country-specific test lists include websites that
+fall under the same set of <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-proposed-category_codes.csv><em>30
+categories</em></a>,
+as explained previously.</p><p>All test lists are hosted by the <a href=https://citizenlab.org/><em>Citizen
+Lab</em></a> on
+<a href=https://github.com/citizenlab/test-lists><em>GitHub</em></a>, supporting OONI
+and other network measurement projects in the creation and maintenance
+of lists of URLs to test for censorship. Some criteria for adding URLs
+to test lists include the following:</p><ul><li><p>The URLs cover topics of socio-political interest within the country</p></li><li><p>The URLs are likely to be blocked because they include sensitive
+content (i.e. they touch upon sensitive issues or express
+political criticism)</p></li><li><p>The URLs have been blocked in the past</p></li><li><p>Users have faced difficulty connecting to those URLs</p></li></ul><p>The above criteria indicate that such URLs are more likely to be
+blocked, enabling the development of heuristics for detecting censorship
+within a country. Furthermore, other criteria for adding URLs are
+reflected in the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-proposed-category_codes.csv><em>30
+categories</em></a>
+that URLs can fall under. Such categories, for example, can include
+file-sharing, human rights, and news media, under which the websites of
+file-sharing projects, human rights NGOs and media organizations can be
+added.</p><p>As part of the study on whether censorship events occurred during the
+2016 election period in Zambia, OONI and CIPIT created a
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/zm.csv><em>country-specific test list for
+Zambia</em></a>,
+containing URLs to be tested for blocking. The added URLs are specific
+to the Zambian context, and include a number of websites that express
+political criticism towards the PF party and report on human rights
+violations. Overall, <a href=https://github.com/citizenlab/test-lists/blob/master/lists/zm.csv><em>90 different
+websites</em></a>,
+mostly grouped under the “political criticism” and “human rights”
+categories, are included in the Zambian test list, and were tested for
+censorship.</p><p>A core limitation to the study is the <em>bias</em> in terms of the URLs that
+were selected for testing. As the testing period covered Zambia’s 2016
+general elections, the URL selection criteria included the following:</p><ul><li><p>Websites that were more likely to be blocked, because their content
+expressed political criticism towards the ruling PF party.</p></li><li><p>Websites of organizations that were known to have previously been
+blocked (such as zambiawatchdog.com) and were thus likely to be
+blocked again.</p></li><li><p>Websites reporting on human rights restrictions and violations,
+reflecting criticism towards the ruling PF party.</p></li></ul><p>The above criteria reflect bias in terms of which URLs were selected for
+testing, as one of the core aims of this study was to examine whether
+and to what extent websites reflecting criticism towards the ruling
+party were blocked during the election period, limiting open dialogue
+and access to information across the country. As a result of this bias,
+it is important to acknowledge that the findings of this study are only
+limited to the websites that were tested, and do not provide a complete
+view of other censorship events that may have taken place during the
+2016 election period.</p><h3 id=ooni-network-measurements>OONI network measurements</h3><p>The <a href=https://ooni.org/><em>Open Observatory of Network Interference
+(OONI)</em></a> is a <em>free software</em> project that
+aims to increase transparency about internet censorship and traffic
+manipulation around the world. Since 2011, OONI has developed multiple
+<a href=https://github.com/TheTorProject/ooni-probe><strong>free and open source software
+tests</strong></a> designed to
+examine the following:</p><ul><li><p>Blocking of websites.</p></li><li><p>Detection of systems responsible for censorship and
+traffic manipulation.</p></li><li><p>Reachability of circumvention tools (such as Tor, Psiphon,
+and Lantern) and sensitive domains.</p></li></ul><p>As part of this study, OONI’s <a href=https://ooni.org/install/lepidopter/><em>distribution for embedded
+devices</em></a> (called
+<em>Lepidopter</em>) was run from a local vantage point in Zambia, including
+the following software tests:</p><ul><li><p><a href=https://ooni.org/nettest/web-connectivity/><em>Web connectivity</em></a></p></li><li><p><a href=https://ooni.org/nettest/http-invalid-request-line/><em>HTTP invalid request line</em></a></p></li><li><p><a href=https://ooni.org/nettest/http-header-field-manipulation/><em>HTTP header field manipulation</em></a></p></li></ul><p>The web connectivity test was run with the aim of examining whether a
+set of URLs (included in both the “<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv><em>global test
+list</em></a>”,
+and the recently updated “<a href=https://github.com/citizenlab/test-lists/blob/master/lists/zm.csv><em>Zambian test
+list</em></a>”)
+were blocked during the testing period and if so, how.</p><p>As the presence of Blue Coat filtering technology had previously been
+<a href=https://citizenlab.org/storage/bluecoat/CitLab-PlanetBlueCoatRedux-FINAL.pdf><em>detected</em></a>
+by the Citizen Lab in Zambia (see section on “Cases of internet
+censorship and surveillance”), the <a href=https://ooni.org/nettest/http-invalid-request-line/><em>HTTP invalid request
+line</em></a>
+and <a href=https://ooni.org/nettest/http-header-field-manipulation/><em>HTTP header field
+manipulation</em></a>
+tests were run for the purpose of examining whether such systems were
+present in the tested network during the testing period.</p><p>The sections below document how each of these tests are designed for the
+purpose of detecting cases of internet censorship and traffic
+manipulation.</p><h4 id=web-connectivity>Web connectivity</h4><p>This test
+<a href=https://ooni.org/nettest/web-connectivity/><em>examines</em></a>
+whether websites are reachable and if they are not, it attempts to
+determine whether access to them is blocked through DNS tampering, TCP
+connection RST/IP blocking or by a transparent HTTP proxy. Specifically,
+this test is designed to perform the following:</p><ul><li><p>Resolver identification</p></li><li><p>DNS lookup</p></li><li><p>TCP connect</p></li><li><p>HTTP GET request</p></li></ul><p>By default, this test performs the above (excluding the first step,
+which is performed only over the network of the user) both over a
+control server and over the network of the user. If the results from
+both networks match, then there is no clear sign of network
+interference; but if the results are different, the websites that the
+user is testing are likely censored.</p><p>Further information is provided below, explaining how each step
+performed under the web connectivity test works.</p><p><strong>1. Resolver identification</strong></p><p>The domain name system (DNS) is what is responsible for transforming a
+host name (e.g. torproject.org) into an IP address (e.g. 38.229.72.16).
+Internet Service Providers (ISPs), amongst others, run DNS resolvers
+which map IP addresses to hostnames. In some circumstances though, ISPs
+map the requested host names to the wrong IP addresses, which is a form
+of tampering.</p><p>As a first step, the web connectivity test attempts to identify which
+DNS resolver is being used by the user. It does so by performing a DNS
+query to special domains (such as whoami.akamai.com) which will disclose
+the IP address of the resolver.</p><p><strong>2. DNS lookup</strong></p><p>Once the <a href=https://github.com/TheTorProject/ooni-spec/blob/master/test-specs/ts-017-web-connectivity.md><em>web connectivity
+test</em></a>
+has identified the DNS resolver of the user, it then attempts to
+identify which addresses are mapped to the tested host names by the
+resolver. It does so by performing a DNS lookup, which asks the resolver
+to disclose which IP addresses are mapped to the tested host names, as
+well as which other host names are linked to the tested host names under
+DNS queries.</p><p><strong>3. TCP connect</strong></p><p>The web connectivity test will then try to connect to the tested
+websites by attempting to establish a TCP session on port 80 (or port
+443 for URLs that begin with HTTPS) for the list of IP addresses that
+were identified in the previous step (DNS lookup).</p><p><strong>4. HTTP GET request</strong></p><p>As the <a href=https://github.com/TheTorProject/ooni-spec/blob/master/test-specs/ts-017-web-connectivity.md><em>web connectivity
+test</em></a>
+connects to tested websites (through the previous step), it sends
+requests through the HTTP protocol to the servers which are hosting
+those websites. A server normally responds to an HTTP GET request with
+the content of the webpage that is requested.</p><p><strong>Comparison of results: Identifying censorship</strong></p><p>Once the above steps of the web connectivity test are performed <em>both</em>
+over a control server and over the network of the user, the collected
+results are then compared with the aim of identifying whether and how
+tested websites are tampered with. If the compared results do <em>not</em>
+match, then there is a sign of network interference.</p><p>Below are the conditions under which the following types of blocking are
+identified:</p><ul><li><p><strong>DNS blocking:</strong> If the DNS responses (such as the IP addresses
+mapped to host names) do <em>not</em> match.</p></li><li><p><strong>TCP/IP blocking:</strong> If a TCP session to connect to websites was
+<em>not</em> established over the network of the user.</p></li><li><p><strong>HTTP blocking:</strong> If the HTTP request over the user’s network
+failed, or the HTTP status codes don’t match, or all of the
+following apply:</p><ul><li><p>The body length of compared websites (over the control server
+and the network of the user) differs by some percentage</p></li><li><p>The HTTP headers names do not match</p></li><li><p>The HTML title tags do not match</p></li></ul></li></ul><p>It’s important to note, however, that DNS resolvers, such as Google or a
+local ISP, often provide users with IP addresses that are closest to
+them geographically. Often this is <em>not</em> done with the intent of network
+tampering, but merely for the purpose of providing users with localized
+content or faster access to websites. As a result, some false positives
+might arise in OONI measurements. Other false positives might occur when
+tested websites serve different content depending on the country that
+the user is connecting from, or in the cases when websites return
+failures even though they are not tampered with.</p><h4 id=http-invalid-request-line>HTTP invalid request line</h4><p>This
+<a href=https://ooni.org/nettest/http-invalid-request-line/><em>test</em></a>
+tries to detect the presence of network components (“middle box”) which
+could be responsible for censorship and/or traffic manipulation.</p><p>Instead of sending a normal HTTP request, this test sends an invalid
+HTTP request line - containing an invalid HTTP version number, an
+invalid field count and a huge request method – to an echo service
+listening on the standard HTTP port. An echo service is a very useful
+debugging and measurement tool, which simply sends back to the
+originating source any data it receives. If a middle box is not present
+in the network between the user and an echo service, then the echo
+service will send the invalid HTTP request line back to the user,
+exactly as it received it. In such cases, there is no visible traffic
+manipulation in the tested network.</p><p>If, however, a middle box is present in the tested network, the invalid
+HTTP request line will be intercepted by the middle box and this may
+trigger an error and that will subsequently be sent back to OONI’s
+server. Such errors indicate that software for traffic manipulation is
+likely placed in the tested network, though it’s not always clear what
+that software is. In some cases though, censorship and/or surveillance
+vendors can be identified through the error messages in the received
+HTTP response. Based on this technique, OONI has previously
+<a href=https://explorer.ooni.org/highlights/><em>detected</em></a> the use
+of BlueCoat, Squid and Privoxy proxy technologies in networks across
+multiple countries around the world.</p><p>It’s important though to note that a false negative could potentially
+occur in the hypothetical instance that ISPs are using highly
+sophisticated censorship and/or surveillance software that is
+specifically designed to not trigger errors when receiving invalid HTTP
+request lines like the ones of this test. Furthermore, the presence of a
+middle box is not necessarily indicative of traffic manipulation, as
+they are often used in networks for caching purposes.</p><h4 id=http-header-field-manipulation>HTTP header field manipulation</h4><p>This
+<a href=https://ooni.org/nettest/http-header-field-manipulation/><em>test</em></a>
+also tries to detect the presence of network components (“middle box”)
+which could be responsible for censorship and/or traffic manipulation.</p><p>HTTP is a protocol which transfers or exchanges data across the
+internet. It does so by handling a client’s request to connect to a
+server, and a server’s response to a client’s request. Every time a user
+connects to a server, the user (client) sends a request through the HTTP
+protocol to that server. Such requests include “HTTP headers”, which
+transmit various types of information, including the user’s device
+operating system and the type of browser that is being used. If Firefox
+is used on Windows, for example, the “user agent header” in the HTTP
+request will tell the server that a Firefox browser is being used on a
+Windows operating system.</p><p>This test emulates an HTTP request towards a server, but sends HTTP
+headers that have variations in capitalization. In other words, this
+test sends HTTP requests which include valid, but non-canonical HTTP
+headers. Such requests are sent to a backend control server which sends
+back any data it receives. If OONI receives the HTTP headers exactly as
+they were sent, then there is no visible presence of a “middle box” in
+the network that could be responsible for censorship, surveillance
+and/or traffic manipulation. If, however, such software is present in
+the tested network, it will likely normalize the invalid headers that
+are sent or add extra headers.</p><p>Depending on whether the HTTP headers that are sent and received from a
+backend control server are the same or not, OONI is able to evaluate
+whether software – which could be responsible for traffic manipulation –
+is present in the tested network.</p><p>False negatives, however, could potentially occur in the hypothetical
+instance that ISPs are using highly sophisticated software that is
+specifically designed to not interfere with HTTP headers when it
+receives them. Furthermore, the presence of a middle box is not
+necessarily indicative of traffic manipulation, as they are often used
+in networks for caching purposes.</p><h3 id=data-analysis>Data analysis</h3><p>Through its <a href=https://github.com/TheTorProject/ooni-pipeline><em>data
+pipeline</em></a>, OONI
+processes all network measurements that it collects, including the
+following types of data:</p><p><strong>Country code</strong></p><p>OONI by default collects the code which corresponds to the country from
+which the user is running OONI Probe tests from, by automatically
+searching for it based on the user’s IP address through the <a href=https://www.maxmind.com/en/home><em>MaxMind
+GeoIP database</em></a>. The collection of
+country codes is an important part of OONI’s research, as it enables
+OONI to map out global network measurements and to identify where
+network interferences take place.</p><p><strong>Autonomous System Number (ASN)</strong></p><p>OONI by default collects the Autonomous System Number (ASN) which
+corresponds to the network that a user is running OONI Probe tests from.
+The collection of the ASN is useful to OONI’s research because it
+reveals the specific network provider (such as Vodafone) of a user. Such
+information can increase transparency in regards to which network
+providers are implementing censorship or other forms of network
+interference.</p><p><strong>Date and time of measurements</strong></p><p>OONI by default collects the time and date of when tests were run. This
+information helps OONI evaluate when network interferences occur and to
+compare them across time.</p><p><strong>IP addresses and other information</strong></p><p>OONI does <em>not</em> deliberately collect or store users’ IP addresses. In
+fact, OONI takes measures to remove users’ IP addresses from the
+collected measurements, to protect its users from <a href=https://ooni.org/about/risks/><em>potential
+risks</em></a>.</p><p>However, OONI might <em>unintentionally</em> collect users’ IP addresses and
+other potentially personally-identifiable information, if such
+information is included in the HTTP headers or other metadata of
+measurements. This, for example, can occur if the tested websites
+include tracking technologies or custom content based on a user’s
+network location.</p><p><strong>Network measurements</strong></p><p>The types of network measurements that OONI collects depend on the types
+of tests that are run. Specifications about each OONI test can be viewed
+through its <a href=https://github.com/TheTorProject/ooni-spec/tree/master/test-specs><em>git
+repository</em></a>,
+and details about what collected network measurements entail can be
+viewed through <a href=https://explorer.ooni.org/world/><em>OONI
+Explorer</em></a> or through
+OONI’s <a href=https://api.ooni.io/><em>public list of
+measurements</em></a>.</p><p>The OONI pipeline processes the above types of data with the aim of deriving
+meaning from the collected measurements and, specifically, in an attempt to
+answer the following types of questions:</p><ul><li><p>Which types of OONI tests were run?</p></li><li><p>In which countries were those tests run?</p></li><li><p>In which networks were those tests run?</p></li><li><p>When were tests run?</p></li><li><p>What types of network interference occurred?</p></li><li><p>In which countries did network interference occur?</p></li><li><p>In which networks did network interference occur?</p></li><li><p>When did network interference occur?</p></li><li><p>How did network interference occur?</p></li></ul><p>To answer such questions, OONI’s pipeline is designed to process data
+which is automatically sent to OONI’s measurement collector by default.
+The initial processing of network measurements enables the following:</p><ul><li><p>Attributing measurements to a specific country.</p></li><li><p>Attributing measurements to a specific network within a country.</p></li><li><p>Distinguishing measurements based on the specific tests that were
+run for their collection.</p></li><li><p>Distinguishing between “normal” and “anomalous” measurements (the
+latter indicating that a form of network tampering is
+likely present).</p></li><li><p>Identifying the type of network interference based on a set of
+heuristics for DNS tampering, TCP/IP blocking, and HTTP blocking.</p></li><li><p>Identifying block pages based on a set of heuristics for
+HTTP blocking.</p></li><li><p>Identifying the presence of “middle boxes” (such as Blue Coat)
+within tested networks.</p></li></ul><p>However, false positives and false negatives emerge within the processed
+data due to a number of reasons. As explained previously (section on
+“<a href=#ooni-network-measurements><em>OONI network measurements</em></a>”), DNS
+resolvers (operated by Google or a local ISP) often provide users with
+IP addresses that are closest to them geographically. While this may
+appear to be a case of DNS tampering, it is actually done with the
+intention of providing users with faster access to websites. Similarly,
+false positives may emerge when tested websites serve different content
+depending on the country that the user is connecting from, or in the
+cases when websites return failures even though they are not tampered
+with.</p><p>Furthermore, measurements indicating HTTP or TCP/IP blocking might
+actually be due to temporary HTTP or TCP/IP failures, and may not
+conclusively be a sign of network interference. It is therefore
+important to test the same sets of websites across time and to
+cross-correlate data, prior to reaching a conclusion on whether websites
+are in fact being blocked.</p><p>Since block pages differ from country to country and sometimes even from
+network to network, it is quite challenging to accurately identify them.
+OONI uses a series of heuristics to try to guess if the page in question
+differs from the expected control, but these heuristics can often result
+in false positives. For this reason OONI only says that there is a
+confirmed instance of blocking when we have manually added a known
+blocking page to the list of blockpages we support.</p><p>However, this means that when a block page is not presented by the
+censor we are not able to confirm with absolute certainty that blocking
+is occurring. For the purpose of this study we have extended our
+methodology to also take into account unusual failures that could be
+triggered by the censor. In particular, we have looked at sites that
+appear to fail consistently (that is in the same way) and constantly
+over the testing period, therefore most likely <em>not</em> due to transient
+networking errors.</p><p>OONI’s methodology for detecting the presence of “middle boxes” -
+systems that could be responsible for censorship, surveillance and
+traffic manipulation - can also present false negatives, if ISPs are
+using highly sophisticated software that is specifically designed to
+<em>not</em> interfere with HTTP headers when it receives them, or to <em>not</em>
+trigger error messages when receiving invalid HTTP request lines. It
+remains unclear though if such software is being used. Moreover, it’s
+important to note that the presence of a middle box is not necessarily
+indicative of censorship or traffic manipulation, as such systems are
+often used in networks for caching purposes.</p><p>Upon collection of more network measurements, OONI continues to develop
+its data analysis heuristics, based on which it attempts to accurately
+identify censorship events.</p><h2 id=findings>Findings</h2><p>As part of this study, <a href=https://explorer.ooni.org/country/ZM><em>38,598 network
+measurements</em></a> were
+collected on a daily basis from a local vantage point (MTN) in Zambia,
+starting on the day of the general elections (11th August 2016) and
+concluding twelve days later. Such network measurements were collected
+via <a href=https://ooni.org/install/lepidopter/><em>OONI’s software distribution for Raspberry
+Pis</em></a>, which is
+designed to examine whether a set of URLs are blocked (and if so, how),
+and whether systems (“middle boxes”) that could be responsible for
+censorship, surveillance and traffic manipulation are used within a
+tested network.</p><p>Upon analysis of the collected data, the
+<a href=https://explorer.ooni.org/country/ZM><em>findings</em></a> illustrate
+that 10 different websites were consistently inaccessible during the
+testing period based on DNS tampering, TCP/IP blocking, and various
+forms of HTTP blocking. These findings are summarized in the table
+below:</p><table><thead><tr><th><strong>Tested site</strong></th><th><strong>DNS</strong></th><th><strong>HTTP-diff</strong></th><th><strong>HTTP-failure</strong></th><th><strong>TCP/IP blocking</strong></th><th><strong>CTRL failure rate</strong></th></tr></thead><tbody><tr><td>drugs-forum.com</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0%</td></tr><tr><td>wzo.org.il</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0%</td></tr><tr><td>cidh.org</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.06%</td></tr><tr><td>pof.com</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.36%</td></tr><tr><td>gayromeo.com</td><td>0.0</td><td>0.0</td><td>11.0</td><td>0.0</td><td>2.9%</td></tr><tr><td>pinterest.com</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>7.12%</td></tr><tr><td>weforum.org</td><td>1.0</td><td>0.0</td><td>11.0</td><td>0.0</td><td>7.11%</td></tr><tr><td>pornhub.com</td><td>0.0</td><td>0.0</td><td>12.0</td><td>0.0</td><td>13.9%</td></tr><tr><td>online-dating.org</td><td>12.0</td><td>0.0</td><td>0.0</td><td>0.0</td><td>17.57%</td></tr><tr><td>proxyweb.net</td><td>0.0</td><td>0.0</td><td>0.0</td><td>12.0</td><td>65.3%</td></tr></tbody></table><p>The failure rate column in the table above shows the percentage of
+failed requests to the sites in question from OONI’s control vantage
+point from 2016-07-01 to 2016-09-01. Since no block pages were found in
+testing the accessibility of sites in Zambia, OONI extended its
+methodology to take into account the failure rate of sites during the
+testing period compared to the overall failure rate from control vantage
+points. In short, OONI considers a website to be blocked if connections
+to it consistently fail across the testing period and if it exhibits a
+low overall failure rate from control vantage points.</p><p>Based on this methodology, sites with low failure rates (from control
+vantage points) - such as drugs-forum.com, cidh.org, and pof.com - are
+more likely to have been blocked during the testing period than other
+sites, such as proxyweb.net, which present higher failure rates.</p><p>The
+<a href="https://explorer.ooni.org/measurement/20160824T063105Z_AS36962_xgPga384HayLGE1UZO4nqEFOGyDRgbSDcAIHlRSVg2NKArocym?input=http:%2F%2Fgayromeo.com"><em>inaccessibility</em></a>
+of gayromeo.com, an online dating website for Lesbian, Gay, Bisexual,
+and Transgender (LGBT) communities around the world, might potentially
+be attributed to the prohibition of same-sex activity in Zambia.
+Sections 155 through 157 of Zambia’s <a href=http://www.parliament.gov.zm/sites/default/files/documents/acts/Penal%20Code%20Act.pdf><em>Penal
+Code</em></a>
+prohibit homosexual activity and impose a penalty of up to fourteen
+years of imprisonment. Similarly, both online-dating.org and pof.com
+may have been blocked for supporting homosexual dating, though
+online-dating.org also presents a high level of global failures.</p><p>Pornography is
+<a href=http://www.zambialaws.com/Principal-Legislation/electronic-communications-and-transactions-act.html><em>prohibited</em></a>
+in Zambia under Article 102 of Part XV (“Cyber crime”) of the Electronic
+Communications and Transactions Act 2009, which might explain why
+pornhub.com was
+<a href="https://explorer.ooni.org/measurement/20160824T063105Z_AS36962_xgPga384HayLGE1UZO4nqEFOGyDRgbSDcAIHlRSVg2NKArocym?input=http:%2F%2Fpornhub.com"><em>found</em></a>
+to be inaccessible throughout the testing period. It’s worth pointing
+out, however, that other pornographic websites were found accessible
+during the same testing period.</p><p>The inaccessibility of other websites appears to be less justifiable.
+The World Economic Forum’s <a href=http://www.weforum.org><em>website</em></a>, for
+example, was
+<a href="https://explorer.ooni.org/measurement/20160824T063105Z_AS36962_xgPga384HayLGE1UZO4nqEFOGyDRgbSDcAIHlRSVg2NKArocym?input=http:%2F%2Fwww.weforum.org"><em>found</em></a>
+to be consistently inaccessible based on DNS tampering and HTTP
+failures, but the motivation or legal justification behind this remains
+unclear. Quite similarly, it also remains unclear why the
+<a href=http://www.cidh.org><em>website</em></a> of the Organization of American States
+(OAS), which is responsible for the promotion and protection of human
+rights in America, was found to be
+<a href="https://explorer.ooni.org/measurement/20160824T063105Z_AS36962_xgPga384HayLGE1UZO4nqEFOGyDRgbSDcAIHlRSVg2NKArocym?input=http:%2F%2Fwww.cidh.org"><em>inaccessible</em></a>
+in Zambia during the 2016 election period. While the website of the
+World Economic Forum also presented a failure rate of about 7%
+(indicating that it might not actually have been blocked by Zambian
+ISPs), the website of the OAS presented a failure rate of less than 1%,
+indicating that it might have been blocked.</p><p>Other websites that raise questions include the
+<a href="https://explorer.ooni.org/measurement/20160824T063105Z_AS36962_xgPga384HayLGE1UZO4nqEFOGyDRgbSDcAIHlRSVg2NKArocym?input=http:%2F%2Fwww.wzo.org.il"><em>website</em></a>
+of the World Zionist Organization, which aims at establishing a legally
+assured home in Palestine for the Jewish people. Interestingly enough,
+this website presented 0% failure rates from control vantage points, but
+connections to it failed consistently throughout the testing period.
+It’s unclear though if this is due to TCP/IP blocking implemented by
+Zambia’s MTN, or if the website itself rejected connections coming from
+Zambia. Photo-sharing platform <a href=https://pinterest.com><em>Pinterest</em></a> also
+<a href="https://explorer.ooni.org/measurement/20160824T063105Z_AS36962_xgPga384HayLGE1UZO4nqEFOGyDRgbSDcAIHlRSVg2NKArocym?input=https:%2F%2Fpinterest.com"><em>appeared</em></a>
+to be inaccessible, presenting HTTP failures consistently across the
+testing period, but the website’s failure rates (around 7%) indicate
+that this might not actually be a case of censorship.</p><p>Multiple other websites, beyond the ones included in the above table,
+also presented signs of network interference. However, upon examining
+these websites across the testing period, connections to them appeared
+to be successful in most cases, indicating that many of the cases of
+network interference were likely false positives due to transient
+failures.</p><p>On a positive note, the websites of Zambia’s opposition members and the
+news outlets (such as zambiawatchdog.com/) that were previously censored
+between 2013 and 2014 were <a href=https://explorer.ooni.org/country/ZM><strong>not</strong>
+<em>found</em></a> to be blocked
+during this testing period. Out of a total of 1,303 websites that were
+tested for censorship in Zambia, only 10 of those websites presented
+signs of network interference.</p><p>The above cases, as detected through the use of <a href=https://github.com/TheTorProject/ooni-probe><em>OONI’s
+software</em></a>, indicate the
+presence of censorship equipment within the tested network. However,
+OONI’s <a href=https://ooni.org/nettest/http-invalid-request-line/><em>HTTP invalid request
+line</em></a>
+and <a href=https://ooni.org/nettest/http-header-field-manipulation/><em>HTTP header field
+manipulation</em></a>
+tests did <em>not</em> detect the fingerprints of such equipment, preventing
+the identification of the specific types of equipment being used.</p><h3 id=acknowledgement-of-limitations>Acknowledgement of limitations</h3><p>The findings of this study present various limitations, and do <em>not</em>
+necessarily reflect a comprehensive view of internet censorship in
+Zambia during the 2016 general election period. The first limitation is
+associated with the testing period, which started on the day of the
+general elections (11th August 2016) and concluded only twelve days
+later, without covering the pre-election period when other censorship
+events might have occurred. This limitation is associated with safety
+concerns and challenges in regards to probe deployment.</p><p>Another limitation to this study is the amount and type of URLs that
+were tested for censorship. As mentioned in the methodology section of
+this report (“Creating a Zambian test list”), the criteria for selecting
+URLs that are relevant to Zambia were biased. This URL selection bias
+was influenced by the core objective of this study, which sought to
+examine whether websites reflecting criticism towards the ruling party
+were blocked. Furthermore, while a total of 1,303 different URLs were
+tested for censorship as part of this study, not all the URLs on the
+internet were tested, indicating the possibility that other websites not
+included in test lists might have been blocked.</p><p>Furthermore, this study was limited to one local network vantage point
+(MTN Zambia) and therefore does not include measurements from other
+networks, where more and/or other censorship events might have occurred.
+This limitation is associated to safety concerns and challenges in terms
+of engaging volunteers in Zambia to run tests.</p><p>Finally, the heuristics used as part of OONI’s methodology present
+limitations. This is due to the fact that many false positives and false
+negatives occur within collected data (as explained in the methodology
+section of this report), limiting OONI’s ability to confirm cases of
+censorship with confidence in many cases. Moreover, OONI’s heuristics
+are limited to a sample of censorship equipment fingerprints, limiting
+the ability to identify other types of equipment that may have been used
+within tested networks.</p><h1 id=conclusion>Conclusion</h1><p>This study highlights the <em>possibility</em> of DNS, TCP/IP and HTTP
+<a href=https://explorer.ooni.org/country/ZM><em>blocking</em></a> of 10
+different websites during Zambia’s 2016 general election period. As no
+block pages were detected, none of these cases can be confirmed with
+confidence.</p><p>Sites that support LGBT dating and pornography were found to be
+inaccessible throughout the testing period. Under the provisions of
+Zambia’s <a href=http://www.parliament.gov.zm/sites/default/files/documents/acts/Penal%20Code%20Act.pdf><em>Penal
+Code</em></a>
+and <a href=http://www.zambialaws.com/Principal-Legislation/electronic-communications-and-transactions-act.html><em>Electronic Communications and Transactions Act
+2009</em></a>,
+the blocking of such sites can potentially be legally justified.</p><p>Pinterest was also
+<a href="http://explorer.ooni.org/measurement/20160813T063121Z_AS36962_mM85nQxBrOZgZd6A5Y0nP1WlglXJXt56GxnGsbDd0AicF56tpO?input=https:%2F%2Fpinterest.com"><em>found</em></a>
+to be inaccessible, as well as the websites of the World Economic Forum, the
+Organization of American States (OAS) and the World Zionist Organization.
+However, the motivation and legal justification behind these possible
+censorship events remains unclear. On a positive note, the websites of Zambia’s
+opposition members and the news outlets that were previously censored between
+2013 and 2014 were <em>not</em> found to be blocked during this testing period.</p><p><a href=https://ooni.org/>OONI</a> and the <a href=https://www.cipit.org/>CIPIT</a>
+encourage transparency around internet controls, particularly during election
+periods, to help enhance the safeguard of human rights and democratic
+processes.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

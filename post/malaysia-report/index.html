@@ -1,0 +1,802 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>The State of Internet Censorship in Malaysia | OONI</title>
+<link rel=canonical href=https://ooni.org/post/malaysia-report/><meta name=description content="Block page in Malaysia
+A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Previous cases of internet censorship and surveillance
+Examining internet censorship in Malaysia
+Methodology
+Creation of a Malaysian test list
+OONI network measurements
+Web connectivity
+HTTP invalid request line"><meta property="og:title" content="The State of Internet Censorship in Malaysia"><meta property="og:description" content="Block page in Malaysia
+A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Previous cases of internet censorship and surveillance
+Examining internet censorship in Malaysia
+Methodology
+Creation of a Malaysian test list
+OONI network measurements
+Web connectivity
+HTTP invalid request line"><meta property="og:type" content="article"><meta property="og:url" content="/post/malaysia-report/"><meta property="article:published_time" content="2016-12-20T00:00:00+00:00"><meta property="article:modified_time" content="2016-12-20T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="The State of Internet Censorship in Malaysia"><meta name=twitter:description content="Block page in Malaysia
+A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Previous cases of internet censorship and surveillance
+Examining internet censorship in Malaysia
+Methodology
+Creation of a Malaysian test list
+OONI network measurements
+Web connectivity
+HTTP invalid request line"><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>The State of Internet Censorship in Malaysia</h1><div class=byline><span class=author>Maria Xynou (OONI), Arturo Filastò (OONI), Khairil Yusof (Sinar Project), Tan Sze Ming (Sinar Project)</span>
+<span class=date>2016-12-20</span></div><p><img src=/post/malaysia-report/block-page.png alt="Malaysian block page"></p><p><em>Block page in Malaysia</em></p><p>A research study by the Open Observatory of Network Interference (OONI) and
+Sinar Project.</p><p><strong>Table of contents</strong></p><ul><li><p><a href=#key-findings>Key Findings</a></p></li><li><p><a href=#introduction>Introduction</a></p></li><li><p><a href=#background>Background</a></p></li><li><p><a href=#network-landscape-and-internet-penetration>Network landscape and internet penetration</a></p></li><li><p><a href=#legal-environment>Legal environment</a></p><ul><li><p><a href=#freedom-of-expression>Freedom of expression</a></p></li><li><p><a href=#press-freedom>Press freedom</a></p></li><li><p><a href=#access-to-information>Access to information</a></p></li><li><p><a href=#privacy>Privacy</a></p></li><li><p><a href=#censorship-and-surveillance>Censorship and surveillance</a></p></li></ul></li><li><p><a href=#previous-cases-of-internet-censorship-and-surveillance>Previous cases of internet censorship and surveillance</a></p></li><li><p><a href=#examining-internet-censorship-in-malaysia>Examining internet censorship in Malaysia</a></p><ul><li><p><a href=#methodology>Methodology</a></p><ul><li><p><a href=#creation-of-a-malaysian-test-list>Creation of a Malaysian test list</a></p></li><li><p><a href=#ooni-network-measurements>OONI network measurements</a></p><ul><li><p><a href=#web-connectivity>Web connectivity</a></p></li><li><p><a href=#http-invalid-request-line>HTTP invalid request line</a></p></li><li><p><a href=#http-header-field-manipulation>HTTP header field manipulation</a></p></li><li><p><a href=#vanilla-tor>Vanilla Tor</a></p></li><li><p><a href=#meek-fronted-requests>Meek Fronted Requests</a></p></li></ul></li></ul></li><li><p><a href=#data-analysis>Data analysis</a></p></li></ul></li><li><p><a href=#findings>Findings</a></p><ul><li><p><a href=#news-media>News Media</a></p></li><li><p><a href=#political-criticism>Political Criticism</a></p></li><li><p><a href=#religion>Religion</a></p></li><li><p><a href=#hosting-and-blogging-platforms>Hosting and Blogging platforms</a></p></li><li><p><a href=#file-sharing>File-sharing</a></p></li><li><p><a href=#online-dating>Online Dating</a></p></li><li><p><a href=#pornography>Pornography</a></p></li><li><p><a href=#gambling>Gambling</a></p></li><li><p><a href=#acknowledgement-of-limitations>Acknowledgement of limitations</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li></ul><p><strong>Country:</strong> Malaysia</p><p><strong>Probed ISPs:</strong> TM Net (AS4788), TM-VADS DC Hosting (AS17971)</p><p><strong>Censorship method:</strong> DNS injection (block pages)</p><p><strong>OONI tests:</strong> Web Connectivity, Vanilla Tor, HTTP invalid request
+line, HTTP header field manipulation, Meek Fronted Requests test</p><h1 id=key-findings>Key Findings</h1><p>New <a href=https://explorer.ooni.org/country/MY><em>OONI data</em></a>
+published in this report reveals that <strong>39 different websites</strong> were
+blocked in Malaysia by ISPs through the <strong>DNS injection of block
+pages</strong>. These sites include:</p><ul><li><p><strong>News outlets</strong>, <strong>blogs</strong> and <strong>medium.com</strong> for covering the <a href=http://www.wsj.com/specialcoverage/malaysia-controversy><em><strong>1MDB scandal</strong></em></a>.</p></li><li><p>A <a href=http://www.thereligionofpeace.com/><em>site</em></a> that expresses heavy
+criticism towards Islam.</p></li><li><p>Popular torrenting sites (such as thepiratebay.org).</p></li><li><p>A popular <a href=http://adultfriendfinder.com><em>online dating site</em></a>.</p></li><li><p>Pornographic sites.</p></li><li><p>Gambling sites.</p></li></ul><p>While the blocking of some sites (such as pornography and online
+gambling) can be legally justified under Malaysia’s laws and
+regulations, the blocking of sites covering the <a href=http://www.wsj.com/specialcoverage/malaysia-controversy><em>1MDB scandal</em></a>
+illustrates that such censorship was <em>politically motivated</em>.</p><p>On a positive note, some <a href=http://www.straitstimes.com/asia/se-asia/malaysia-blocks-bersih-rally-websites><em>previously blocked sites</em></a>
+(Bersih rally websites) were found to be
+<a href="https://explorer.ooni.org/measurement/20161111T222216Z_AS4788_CdgH2h69js5DX9sP5aW5liauAsrOAwhgj5XljqrNRImLNXptqG?input=http:%2F%2Fbersih.org"><em>accessible</em></a>
+when tested between September to November 2016. No signs of censorship
+were detected when examining the accessibility of social media,
+censorship circumvention tools and LGBTI websites in the country during
+the testing period.</p><p>View the <strong>data</strong> collected as part of this study:</p><ul><li><p><a href=https://explorer.ooni.org/country/MY><em><strong>OONI network measurements</strong></em></a></p></li><li><p><a href=https://gist.github.com/hellais/190780782d920e1d8523f37c002cc952><em><strong>Analysis of key findings</strong></em></a></p></li><li><p><a href=http://staging.measurements.ooni.io/files/by_country/MY><em><strong>Raw reports</strong></em></a></p></li></ul><h1 id=introduction>Introduction</h1><p>Malaysia is a Federal Constitutional Elective country with Westminster
+Parliamentary System. Malaysia has a population of around <a href=http://www.skmm.gov.my/skmmgovmy/media/General/pdf/CM-Q2-2015-BI-(pdf).pdf><em>30.9 million</em></a>,
+with broadband penetration 72.2% for households and 91.7% for individual
+users, while the figures surpass the population figures for access to
+the internet on mobile phones. More than 80 percent of Internet users
+live in urban areas, and penetration remains low in less populated
+states in East Malaysia.</p><p>Malaysia’s constitution provides citizens with “the right to freedom of
+speech and expression,” and MSC Malaysia has guaranteed in the Bill of
+Guarantees No.71 that it will ensure there is no censorship on the
+internet. However, as of November 2015, <a href=http://www.suaram.net/wordpress/wp-content/uploads/2015/12/SUARAM-HR-OVERVIEW-2015-combined-ver1.pdf><em>37 incidents</em></a>
+have occurred involving the investigation, arrest, charge and/or
+punishment of individuals under the Communication and Multimedia Act
+(CMA) documented by SUARAM. Various websites have also been
+<a href=https://freedomhouse.org/report/freedom-net/2015/malaysia><em>blocked</em></a>
+over the last year, especially following the <a href=http://www.wsj.com/specialcoverage/malaysia-controversy><em>1MDB scandal</em></a> and
+subsequent <a href=http://www.bbc.com/news/world-asia-33447456><em>retaliation against sites</em></a> covering the
+scandal.</p><p>In light of <a href=https://freedomhouse.org/report/freedom-net/2015/malaysia><em>recent censorship events</em></a> in
+Malaysia, the <a href=https://ooni.org/><em>Open Observatory of Network Interference (OONI)</em></a>, in collaboration with <a href=http://sinarproject.org/><em>Sinar Project</em></a>, conducted a study to examine
+whether internet censorship events were persisting in the country and,
+if so, to collect data that can serve as evidence of them. This study
+was carried out through the collection of network measurements from two
+local vantage points in Malaysia, based on <a href=https://github.com/TheTorProject/ooni-spec><em>OONI software tests</em></a> designed to examine
+whether a set of websites were blocked, and whether systems that could
+be responsible for internet censorship and surveillance were present in
+the tested networks (AS4788 and AS17971).</p><p>The aim of this study is to increase transparency about internet
+controls in Malaysia and to collect data that can potentially
+corroborate rumours and reports of internet censorship events. The
+following sections of this report provide information about Malaysia’s
+legal environment with respect to freedom of expression, access to
+information, and privacy, as well as about cases of censorship and
+surveillance that have previously been reported in the country. The
+remainder of the report documents the methodology and key findings of
+this study.</p><h1 id=background>Background</h1><p>Malaysia is a multi-ethnic and multicultural country with a population
+of around <a href=https://www.cia.gov/library/publications/the-world-factbook/geos/my.html><em>30 million</em></a>
+as of 2016, situated in the middle of Southeast Asia. Geographically,
+Malaysia consists of two parts: Peninsular Malaysia bordering with
+Thailand in the north and Singapore in the south, and East Malaysia on
+the northern part of the island of Borneo bordering with Indonesia in
+the south.</p><p>Malaysia is a federal constitutional monarchy, consisting of 13 states
+and 3 federal territories. Malaysia is also multiracial, consisting of
+Bumiputras and Muslim Malays that make up the majority
+(<a href=https://www.cia.gov/library/publications/the-world-factbook/geos/my.html><em>50.1%</em></a>)
+of the population. Bumiputera status is also accorded to certain
+non-Malay indigenous people of East Malaysia. 22.6% of Malaysia’s
+population is Chinese, while 6.7% is Indian. Ethnicity plays a major
+role in Malaysia, as there are a number of rights and privileges
+accorded to bumiputeras due to racial economic policies in place in
+Malaysia.</p><p>Statistics from the <a href="https://www.statistics.gov.my/index.php?r=column/cthemeByCat&amp;cat=117&amp;bul_id=MDMxdHZjWTk1SjFzTzNkRXYzcVZjdz09&amp;menu_id=L0pheU43NWJwRWVSZklWdzQ4TlhUUT09"><em>2010 census</em></a>
+show a religious makeup of the population at 61% Muslims, 19.8%
+Buddhist, 9.3% Christians and 6.3% Hindu. Religious beliefs mostly
+follow ethnic lines. Article 11 of the
+<a href=http://www.agc.gov.my/agcportal/uploads/files/Publications/FC/Federal%20Consti%20(BI%20text).pdf><em>Constitution</em></a>
+provides for freedom of religion, but it restricts propagation of any
+religious doctrine or belief among Muslims. All Malays however are
+Muslim by law, and apostasy is not legally allowed. Islam is a state
+religion, and state governments can impose Islamic law on Muslims. The
+government only accepts Sunni Islamic beliefs and any other Islamic
+beliefs, such as Shia, are not recognized and considered as deviant. The
+Government
+<a href=https://www.state.gov/j/drl/rls/irf/2009/127277.htm><em>restricts</em></a> the
+distribution in peninsular Malaysia of Malay-language translations of
+the Bible, Christian tapes, and other printed materials.</p><p>Politically Malaysia has been governed by single coalition government at
+the federal level by the <a href=http://www.barisannasional.org.my/><em>Barisan Nasional (National Front)</em></a> since independence in 1957.
+The National Front is made up of several race based parties dominated by
+the Malay ethnic party United Malays National Organisation (UMNO). The
+Barisan Nasional Coalition has been in power in all the state
+governments since independence, with a few brief periods where it lost
+in Eastern States of Kelantan and Sabah. This has resulted in a
+government and population that often does not differentiate between the
+roles of the elected executive and government. In 2008 however the
+political landscape changed when the <a href=http://www.nytimes.com/2008/03/09/world/asia/09iht-malay.1.10828947.html><em>opposition parties won elections in two of the largest states</em></a>
+by economy in Penang and Selangor. Over a third of the federal
+parliamentary seats were also won by the opposition in this election. In
+the last elections in 2013, the opposition gained more seats in both
+federal and states, while winning the popular vote. This has resulted in
+a current parliament that has demanded more accountability from the
+executive.</p><p>Economically Malaysia has been one of the <a href=http://www.state.gov/r/pa/ei/bgn/2777.htm><em>fastest developing countries in Asia</em></a> for the past few
+decades with a GDP growing on average 6.5 per cent annually from 1957 to
+2005. Malaysia is a highly open and competitive, upper-middle income
+economy.</p><p>In relation to its ASEAN neighbours, with the exception of Singapore,
+Malaysia ranks much higher when it comes to the measurement of
+corruption. According to <a href=https://www.transparency.org/cpi2015/><em>Transparency International’s Corruption Perceptions Index</em></a>, Malaysia
+ranked 50th in 2015. On 2nd July 2015, the Wall Street Journal released
+a bombshell by disclosing documents that showed that <a href=http://www.wsj.com/articles/SB10130211234592774869404581083700187014570><em>USD 680 million was transferred to the personal accounts of the Malaysian Prime Minister Najib Razak</em></a>
+possibly from the 1MDB state-owned investment company. Eventual leaks
+and stories over the course of several months finally led to a detailed
+public <a href=https://www.justice.gov/opa/file/877166/download><em>US Department of Justice Kleptocracy department case</em></a> which traced
+how public money totalling USD 3.5 billion was stolen from the Malaysian
+citizen.</p><p>The implications of 1MDB for governance are far reaching in Malaysia. It
+led to the
+<a href=http://www.wsj.com/articles/in-malaysian-1mdb-probes-some-evidence-wasnt-examined-1464295749><em>dismissal</em></a>
+of the Attorney General and transfers of senior investigating staff of
+MACC. The Auditor General report from PAC investigation on 1MDB was also
+classified under the <a href=http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%2088.pdf><em>Official Secrets Act</em></a>.
+During the October-November 2016 parliamentary sessions, discussions on
+1MDB and the Department of Justice case have been censored. Despite
+parliamentary privilege, MPs discussing 1MDB are called up by police for
+sharing information on it.</p><h1 id=network-landscape-and-internet-penetration>Network landscape and internet penetration</h1><p>All internet and mobile services providers in Malaysia are
+privately-owned. Overall, Malaysia has 10 different Internet Service
+Providers (ISPs) with 4 major mobile operators: DiGi, Maxis, Celcom and
+Umobile.</p><table><thead><tr><th>Mobile Operators/ISPs</th><th>Fixed Internet</th><th>Mobile Internet</th></tr></thead><tbody><tr><td>DiGi Telecommunications</td><td></td><td>X</td></tr><tr><td>Maxis Communications</td><td>X</td><td>X</td></tr><tr><td>Celcom Axiata</td><td></td><td>X</td></tr><tr><td>Packet One Networks (P1)</td><td>X</td><td></td></tr><tr><td>Yes 4G</td><td></td><td>X</td></tr><tr><td>Tune Talk</td><td></td><td>X</td></tr><tr><td>Telekom Malaysia (TMnet)</td><td>X</td><td></td></tr><tr><td>Time dotcom</td><td>X</td><td></td></tr><tr><td>RED Tone</td><td></td><td>X</td></tr><tr><td>U Mobile</td><td></td><td>X</td></tr></tbody></table><p>Internet penetration in Malaysia is currently
+<a href=http://www.skmm.gov.my/Resources/Statistics.aspx><em>72.2%</em></a> for
+households and 91.7% for individual users, while the figures surpass the
+population figures for access to the internet on mobile phones. More
+than 80% of internet users live in urban areas, and penetration remains
+low in less populated states in East Malaysia.</p><p>Indicators and internet penetration rates per 100 inhabitants and
+households from 2011 to 2016 are illustrated below.</p><table><thead><tr><th>Year</th><th>Population (Million)</th><th>Households (&lsquo;000)</th><th>Broadband</th><th></th><th>Cellular Phone</th><th>Direct Exchange Line</th></tr></thead><tbody><tr><td></td><td></td><td></td><td>Per 100 Inhabitants</td><td>Per 100 Households</td><td>Per 100 Households</td><td>Per 100 Inhabitants</td></tr><tr><td>2011</td><td>28.7</td><td>6,675</td><td>19.4</td><td>62.3</td><td>127.7</td><td>37.3</td></tr><tr><td>2012</td><td>29</td><td>6,744</td><td>21.7</td><td>66</td><td>141.6</td><td>34.4</td></tr><tr><td>2013</td><td>29.91</td><td>6,939</td><td>22.6</td><td>67.1</td><td>143.6</td><td>32.4</td></tr><tr><td>2014</td><td>30.29</td><td>7,092</td><td>31.9</td><td>70.2</td><td>148.5</td><td>30.3</td></tr><tr><td>2015</td><td>30.68</td><td>7,483</td><td>100.4</td><td>77.3</td><td>143.8</td><td>27.9</td></tr><tr><td>2016</td><td>30.97</td><td>7,570</td><td>114.7</td><td>77.9</td><td>141.6</td><td>14.7</td></tr></tbody></table><p>Source: <a href=http://www.skmm.gov.my/Resources/Statistics.aspx><em>Malaysian Communication and Multimedia Commision</em></a></p><h1 id=legal-environment>Legal environment</h1><p>Malaysia’s constitution and <a href=http://www.mscmalaysia.my/bogs#bog7><em>Bill of Guarantees</em></a> provides citizens with
+“the right to freedom of speech and expression,” but allows for
+limitations to this right. The government exercises tight control over
+online media, print, and broadcast media through laws like the
+<a href=http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%2088.pdf><em>Official Secrets Act</em></a>
+and the <a href=http://www.commonlii.org/my/legis/consol_act/sa19481969183/><em>Sedition Act</em></a>.
+Under Section 211 of the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>Communication and Multimedia Act (CMA)</em></a>,
+Malaysian authorities can ban content deemed “indecent, obscene, false,
+threatening, or offensive,” and the same, under Section 233 of the CMA,
+applies to such content shared over the internet.</p><p>In 2012, Malaysia’s parliament passed an
+<a href=http://www.federalgazette.agc.gov.my/outputaktap/20120622_A1432_BI_Act%20A1432%20BI-evidence%20(amendment)%20(no.%202).pdf><em>amendment</em></a>
+to the <a href=https://empowermalaysia.org/isi/uploads/sites/3/Act-56-Evidence-Act-1950.pdf><em>1950 Evidence Act</em></a>
+that holds intermediaries liable for seditious content posted
+anonymously on their networks or websites. This would include hosts of
+online forums, news outlets, and blogging services, as well as
+businesses providing Wi-Fi services. The amendment also holds someone
+liable if their name is attributed to the content or if the computer it
+was sent from belongs to them, whether or not they were the author. In
+2015 the parliament passed an
+<a href=https://www.cljlaw.com/files/bills/pdf/2015/MY_FS_BIL_2015_17.pdf><em>amendment</em></a>
+to the Sedition Act that added a new section which empowers the court to
+issue an order to an authorised officer under the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>Communications and Multimedia Act</em></a>
+to prevent access to such publications if the perpetrator is not
+identified.</p><h2 id=freedom-of-expression>Freedom of expression</h2><p>Freedom of speech and expression is guaranteed under Article 10 of the
+<a href=http://www.agc.gov.my/agcportal/uploads/files/Publications/FC/Federal%20Consti%20(BI%20text).pdf><em>Federal Constitution of Malaysia</em></a>.
+In practice, however, this right can be limited by the vague
+interpretations of laws that restrict expression in the interest of
+national security, safety and public order.</p><p><strong>Sedition Act 1948</strong></p><p>Malaysia’s <a href=http://www.commonlii.org/my/legis/consol_act/sa19481969183/><em>Sedition Act</em></a> can
+potentially be used to restrict freedom of expression online. Sections
+3(1) and 4(1) of the Act can be used against any form of statement that
+contents seditious tendency - to bring hatred, or to excite disaffection
+against any Ruler and Government; to promote feelings of ill will and
+hostility between different races or classes of the population of
+Malaysia; to question any matter, right, status, position, privilege,
+sovereignty.</p><p><strong>Communication & Multimedia Act (CMA) 1998</strong></p><p>Section 211 of the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>CMA</em></a>
+bans content deemed “indecent, obscene, false, threatening, or
+offensive,” and, under Section 233, the same applies to content shared
+over the internet.</p><p><strong>Evidence Act 1950</strong></p><p><a href=http://www.federalgazette.agc.gov.my/outputaktap/20120622_A1432_BI_Act%20A1432%20BI-evidence%20(amendment)%20(no.%202).pdf><em>Amendments</em></a>
+to Malaysia’s <a href=https://empowermalaysia.org/isi/uploads/sites/3/Act-56-Evidence-Act-1950.pdf><em>Evidence Act</em></a>
+hold intermediaries liable for seditious content posted anonymously on
+their networks or websites. This includes hosts of online forums, news
+outlets, and blogging services, as well as businesses providing Wi-Fi
+services. The amendment also holds someone liable if their name is
+attributed to the content or if the computer it was sent from belongs to
+them, whether or not they were the author.</p><h2 id=press-freedom>Press freedom</h2><p><strong>Printing, Presses and Publications Act (PPPA) 1984</strong></p><p>The
+<a href=http://www.federalgazette.agc.gov.my/outputaktap/20120622_A1436_BI_Act%20A1436%20BI-printing%20presses%20and%20publications%20(amendment).pdf><em>amendment</em></a>
+of
+<a href=http://www.moha.gov.my/images/maklumat_bahagian/PQ/Act301.pdf><em>PPPA</em></a>
+in 2012 expanded its scope and includes ‘publications’ (anything which
+by its form, shape or in any manner is capable of suggesting words or
+ideas) posted online and plug loopholes.</p><h2 id=access-to-information>Access to information</h2><p><strong>Official Secrets Act (OSA) 1972</strong></p><p>Malaysia’s <a href=http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%2088.pdf><em>Official Secrets Act</em></a>
+is a broadly-worded law which carries a maximum penalty of life
+imprisonment for actions associated with the wrongful collection,
+possession or communication of official information. Any public officer
+can declare any material an official secret: a certification which
+cannot be questioned in court. The act allows for arrest and detention
+without a warrant, and substantially reverses the burden of proof. It
+states that &ldquo;until the contrary is proven,&rdquo; any of the activities
+proscribed under the Act will be presumed to have been undertaken &ldquo;for a
+purpose prejudicial to the safety or interests of Malaysia.&rdquo;</p><h2 id=privacy>Privacy</h2><p><strong>Personal Data Protection Act 2010</strong></p><p>Malaysia’s <a href=http://www.pdp.gov.my/images/LAWS_OF_MALAYSIA_PDPA.pdf><em>Personal Data Protection Act</em></a> protects
+any personal data collected in Malaysia from being misused. According to
+the Act, one must obtain the consent of data subjects before collecting
+their personal data or sharing it with third parties. In order for their
+consent to be valid, data collectors must provide data subjects with a
+written notice of the purpose for the data collection, their rights to
+request or correct their data, what class of third parties will have
+access to their data, and whether or not they are required to share
+their data, and the consequences if they don’t.</p><h2 id=censorship-and-surveillance>Censorship and surveillance</h2><p><strong>Communications & Multimedia Act (CMA) 1998</strong></p><p>Section 211 of the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>CMA</em></a>
+bans content deemed “indecent, obscene, false, threatening, or
+offensive,” and, under Section 233, the same applies to content shared
+over the internet.</p><p><strong>Prevention of Crime Act (PoCA) 1959</strong></p><p>The
+<a href=https://www.cljlaw.com/files/bills/pdf/2015/MY_FS_BIL_2015_08.pdf><em>amendment</em></a>
+of
+<a href=http://www.vertic.org/media/National%20Legislation/Malaysia/MY_Prevention_Crime_Act.pdf><em>PoCA</em></a>
+allows for detention without trial for a period of two years. This order
+can be extended to another two years by the Board. A supervision order
+allows for a registered person to be attached with an electronic
+monitoring device and imposes conditions such as restriction on internet
+use or meeting with other registered persons.</p><p><strong>Security Offenses (Special Measures) Act (SOSMA) 2012</strong></p><p><a href=http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20747%20-%20Security%20Offences%20(Special%20Measures)%20Act%202012.pdf><em>SOSMA</em></a>
+has replaced the <a href=http://www.vertic.org/media/National%20Legislation/Malaysia/MY_Internal_Security_Act.pdf><em>Internal Security Act (ISA) 1960</em></a>,
+which allowed for infinitely renewable detentions without trial. SOSMA
+authorizes phone-tapping and communications powers to the government, as
+well as an electronic anklet to track the freed detainees of the
+Prevention of Terrorism Act (PoTA). More recently, SOSMA has been used
+to <a href=http://www.freemalaysiatoday.com/category/nation/2016/11/29/ngo-slams-putrajayas-empty-sosma-assurances/><em>raid the office</em></a>s
+of human rights defenders.</p><p><strong>Prevention of Terrorism Act (PoTA) 2015</strong></p><p><a href=http://www.federalgazette.agc.gov.my/outputaktap/aktaBI_20150604_Act769(BI).pdf><em>PoTA</em></a>
+enables the Malaysian authorities to detain terror suspects without
+trial for a period of two years, without judicial reviews of detentions.
+Instead, detentions will be reviewed by a special Prevention of
+Terrorism Board. Suspected militants will be fitted with electronic
+monitoring devices (EMD or electronic anklets) upon their release from
+detention.</p><h1 id=previous-cases-of-internet-censorship-and-surveillance>Previous cases of internet censorship and surveillance</h1><p><strong>FinFisher</strong></p><p>In 2013, Citizen Lab research found <a href=https://citizenlab.org/wp-content/uploads/2013/05/shortbg-malaysia1.pdf><em>evidence of a FinFisher server</em></a>
+running in Malaysia, and later found evidence of Finfisher software
+embedded in an election related document. The Malaysian government
+neither confirmed nor denied the use of Finfisher.</p><p><strong>Hacking Team Surveillance Software</strong></p><p>Leaked <a href=https://wikileaks.org/hackingteam/emails/><em>Hacking Team emails</em></a> in 2015 revealed
+that at least three government agencies, including the Prime Minister’s
+department,
+<a href=https://www.digitalnewsasia.com/insights/what-malaysia-bought-from-spyware-maker-hacking-team><em>bought</em></a>
+Hacking Team’s Remote Control System (RCS): spyware designed to evade
+encryption and to remotely collect information from a target’s computer.
+The same emails, however, also revealed that the procuring agencies
+seemed to lack the technical capacity to use the software.</p><p><strong>Deep Packet Inspection (DPI) to timeout HTTP requests</strong></p><p>Before the 2013 general elections, users were reporting that some
+Youtube videos with politically sensitive content were not viewable.
+Sinar Project and other researchers independently
+<a href=https://plus.google.com/+SinarProjectOrg/posts/ak6opfbDxwa><em>found</em></a>
+that unencrypted HTTP requests on two ISPs (Maxis and TMNet) that
+matched some URL strings were timing out. Several other URLs with
+political content were also found to be affected by a <a href=http://sinarproject.org/en/updates/ge13-censorship-of-on-line-media-in-malaysia><em>similar block</em></a>
+by running a test that would split the HTTP headers into <a href=https://github.com/Sinar/censortests><em>smaller packets</em></a>. As it was only
+affecting two ISPs and there does not seem to be any specific pattern to
+the urls being blocked, it was not conclusive that this was sanctioned
+by any government agency.</p><p>This same method of censorship was repeated on 16th February 2016, when
+users in Malaysia reported that a <a href=http://www.bbc.com/news/blogs-trending-25756864><em>BBC article</em></a> covering an
+embarrassing meme of a quote from then Prime Minister Najib Razak was
+blocked. The <a href=http://www.skmm.gov.my/><em>Malaysian Communications and Multimedia Commission (MCMC)</em></a> however
+<a href=http://www.themalaymailonline.com/malaysia/article/mcmc-denies-blocking-bbc-kangkung-page><em>denied</em></a>
+any government involvement.</p><p><strong>News outlets blocked</strong></p><p>Access to the Sarawak Report <a href=http://www.sarawakreport.org/><em>website</em></a>
+has been
+<a href=http://www.thestar.com.my/news/nation/2015/07/19/mcmc-block-sarawak-report/><em>blocked</em></a>
+by the Malaysian Communications And Multimedia Commission (MCMC) since
+July 2015 on the grounds that it may undermine the stability of the
+country, as announced on the MCMC’s <a href=https://www.facebook.com/SuruhanjayaKomunikasiMultimediaMalaysia><em>official Facebook page</em></a>.
+This marks the first official confirmation of blocking of political
+websites in Malaysia.</p><p>The Malaysian government has blocked at least ten websites, including
+online news portals (<a href=http://www.sarawakreport.org/><em>Sarawak Report</em></a>,
+<a href=http://www.malaysia-chronicle.com/><em>Malaysia Chronicle</em></a>, <a href=http://www.themalaysianinsider.com/malaysia><em>The Malaysian Insider</em></a>, <a href=http://www.asiasentinel.com/><em>Asia Sentinel</em></a>,
+<a href=https://medium.com/><em>Medium</em></a>) and private blogs, for reporting about
+the scandal surrounding Malaysian Prime Minister Najib tun Razak over
+his mysterious private dealings with RM2.6 billions.</p><p>The <a href=http://www.thestar.com.my/news/nation/2015/07/24/the-edge-suspended/><em>suspension of the publishing permit</em></a>
+of the Edge Weekly and the Edge Financial Daily for three months over
+the reports on 1MDB and the arrests of Lionel Morais, Amin Iskandar,
+Zulkifli Sulong, Ho Kay Tat and Jahabar Sadiq were blatant punishment
+and harassment of the mass media and journalists by the Malaysian
+government.</p><p>Last year, <a href=http://www.malaysiakini.com/><em>Malaysiakini</em></a>’s office was
+<a href=https://www.malaysiakini.com/news/318706><em>raided</em></a> over the report
+that a deputy public prosecutor was transferred out of the Malaysian
+Anti-Corruption Commission (MACC) special operations division. On the
+same day, the Royal Malaysian Police, aided by the Malaysian
+Communication and Multimedia Commission (MCMC), also
+<a href=http://www.freemalaysiatoday.com/category/nation/2015/11/07/cops-mcmc-also-raid-star-online-office/><em>visited</em></a>
+<a href=http://www.thestar.com/><em>The Star</em></a> headquarters over a similar
+report.</p><p><strong>Blocking of websites promoting Bersih 4</strong></p><p>The Malaysian Communications and Multimedia Commission (MCMC)
+<a href=http://www.malaysiakini.com/news/310207><em>blocked</em></a> four websites for
+spreading information on Bersih in August 2015. These websites include
+<a href=http://bersih.org>http://bersih.org</a>, <a href=http://globalbersih.org>http://globalbersih.org</a>, <a href=http://www.bersih.org>http://www.bersih.org</a> and
+<a href=http://www.globalbersih.org>http://www.globalbersih.org</a>. This
+marked the second confirmation of directive to censor political websites
+after Sarawak Report. After the <a href=http://www.channelnewsasia.com/news/asiapacific/bersih-4-0-protest-enters/2086202.html><em>Bersih 4 protests</em></a>
+on 29th and 30th August, the blocking of these sites was lifted soon
+thereafter.</p><p><strong>Official announcements of blocked sites by MCMC</strong></p><p>Over the last year, the Malaysian Communications and Multimedia
+Commission (MCMC) has officially announced the blocking of numerous
+sites. These include <a href=http://www.thestar.com.my/news/nation/2016/07/14/mcmc-blocks-websites-urls/><em>sites involved in the propagation of the Islamic State (IS) ideology in the Malay language</em></a>,
+more than 1,000 <a href=http://www.thestar.com.my/news/nation/2015/11/10/mcmc-block-porn-sites/><em>porn websites</em></a>,
+and <a href=http://www.themalaymailonline.com/malaysia/article/mcmc-blocks-306-online-gambling-sites-since-early-this-year><em>hundreds of online gambling sites</em></a>.</p><h1 id=examining-internet-censorship-in-malaysia>Examining internet censorship in Malaysia</h1><p>The <a href=https://ooni.org/><em>Open Observatory of Network Interference (OONI)</em></a>, in collaboration with <a href=http://sinarproject.org/en><em>Sinar Project</em></a>, performed a study of internet
+censorship in Malaysia. The aim of this study was to understand whether
+and to what extent censorship events occurred in Malaysia during the
+testing period (between September to November 2016).</p><p>The sections below document the methodology and key findings of this
+study.</p><h2 id=methodology>Methodology</h2><p>The methodology of this study, in an attempt to identify potential
+internet censorship events in Malaysia, included the following:</p><ul><li><p>Creation of a Malaysian test list</p></li><li><p>OONI network measurements</p></li><li><p>Data analysis</p></li></ul><p>A <a href=https://github.com/citizenlab/test-lists/blob/master/lists/my.csv><em>list of URLs</em></a>
+that are relevant and commonly accessed in Malaysia was created, and
+such URLs - along with <a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv><em>other URLs</em></a>
+that are commonly accessed around the world - were tested for blocking
+based on <a href=https://github.com/TheTorProject/ooni-probe><em>OONI’s free software tests</em></a>. Such tests were
+run from two local vantage points in Malaysia (AS4788 and AS17971), and
+they also examined whether systems that are responsible for censorship,
+surveillance and traffic manipulation were present in the tested
+network. Once network measurement data was collected from these tests,
+the data was subsequently processed and analyzed based on a set of
+heuristics for detecting internet censorship and traffic manipulation.</p><p>The analysis period started on 24th September 2016 and concluded on 13th
+November 2016.</p><h3 id=creation-of-a-malaysian-test-list>Creation of a Malaysian test list</h3><p>An important part of identifying censorship is determining <em>which</em>
+websites to examine for blocking.</p><p>OONI’s <a href=https://github.com/TheTorProject/ooni-probe><em>software</em></a> (called
+<em>OONI Probe</em>) is designed to examine URLs contained in specific lists
+(“test lists”) for censorship. By default, OONI Probe examines the
+“<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv><em>global test list</em></a>”,
+which includes a wide range of internationally relevant websites, most
+of which are in English. These websites fall under <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-proposed-category_codes.csv><em>30 categories</em></a>,
+ranging from news media, file sharing and culture, to provocative or
+objectionable categories, like pornography, political criticism, and
+hate speech.</p><p>These categories help ensure that a wide range of different types of
+websites are tested, and they enable the examination of the impact of
+censorship events (for example, if the majority of the websites found to
+be blocked in a country fall under the “human rights” category, that may
+have a bigger impact than other types of websites being blocked
+elsewhere). The main reason why objectionable categories (such as
+“pornography” and “hate speech”) are included for testing is because
+they are more likely to be blocked due to their nature, enabling the
+development of heuristics for detecting censorship elsewhere within a
+country.</p><p>In addition to testing the URLs included in the global test list,
+OONI Probe is also designed to examine a test list which is specifically
+created for the country that the user is running OONI Probe from, if such
+a list exists. Unlike the global test list, <a href=https://github.com/citizenlab/test-lists/tree/master/lists><em>country-specific test lists</em></a>
+include websites that are relevant and commonly accessed within specific
+countries, and such websites are often in local languages. Similarly to
+the global test list, country-specific test lists include websites that
+fall under the same set of <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-proposed-category_codes.csv><em>30 categories</em></a>,
+as explained previously.</p><p>All test lists are hosted by the <a href=https://citizenlab.org/><em>Citizen Lab</em></a> on
+<a href=https://github.com/citizenlab/test-lists><em>GitHub</em></a>, supporting OONI
+and other network measurement projects in the creation and maintenance
+of lists of URLs to test for censorship. Some criteria for adding URLs
+to test lists include the following:</p><ul><li><p>The URLs cover topics of socio-political interest within
+the country.</p></li><li><p>The URLs are likely to be blocked because they include sensitive
+content (i.e. they touch upon sensitive issues or express political criticism).</p></li><li><p>The URLs have been blocked in the past.</p></li><li><p>Users have faced difficulty connecting to those URLs.</p></li></ul><p>The above criteria indicate that such URLs are more likely to be
+blocked, enabling the development of heuristics for detecting censorship
+within a country. Furthermore, other criteria for adding URLs are
+reflected in the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-proposed-category_codes.csv><em>30 categories</em></a>
+that URLs can fall under. Such categories, for example, can include
+file-sharing, human rights, and news media, under which the websites of
+file-sharing projects, human rights NGOs and media organizations can be
+added.</p><p>As part of this study, OONI and Sinar Project reviewed the Citizen Lab’s
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/my.csv><em>test list for Malaysia</em></a>
+by adding more URLs to be tested for censorship. The recently added URLs
+are specific to the Malaysian context and fall under the following
+categories: human rights issues, political criticism, LGBTI, public
+health, religion, social networking, and culture. Overall, <a href=https://github.com/citizenlab/test-lists/blob/master/lists/my.csv><strong>400 different URLs</strong></a>
+that are relevant to Malaysia were tested as part of this study. In
+addition, the URLs included in the Citizen Lab’s <a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv><em>global list</em></a>
+(including 1,218 different URLs) were also tested. As such, a total of
+<strong>1,618 different URLs</strong> were tested for censorship in Malaysia as part
+of this research.</p><p>A core limitation to the study is the <em>bias</em> in terms of the URLs that
+were selected for testing. The URL selection criteria included the
+following:</p><ul><li><p>Websites that were more likely to be blocked, because their content expressed
+political criticism.</p></li><li><p>Websites of organizations that were known to have previously been blocked and
+were thus likely to be blocked again.</p></li><li><p>Websites reporting on human rights restrictions and violations.</p></li></ul><p>The above criteria reflect bias in terms of which URLs were selected for
+testing, as one of the core aims of this study was to examine whether
+and to what extent websites reflecting criticism were blocked, limiting
+open dialogue and and access to information across the country. As a
+result of this bias, it is important to acknowledge that the findings of
+this study are only limited to the websites that were tested, and do not
+necessarily provide a complete view of other censorship events that may
+have occurred during the testing period.</p><h3 id=ooni-network-measurements>OONI network measurements</h3><p>The <a href=https://ooni.org/><em>Open Observatory of Network Interference (OONI)</em></a> is a <em>free software</em> project that
+aims to increase transparency about internet censorship and traffic
+manipulation around the world. Since 2011, OONI has developed multiple
+<a href=https://github.com/TheTorProject/ooni-probe><strong>free and open source software tests</strong></a> designed to
+examine the following:</p><ul><li><p>Blocking of websites.</p></li><li><p>Detection of systems responsible for censorship and traffic manipulation.</p></li><li><p>Reachability of circumvention tools (such as Tor, Psiphon, and Lantern) and
+sensitive domains.</p></li></ul><p>As part of this study, the following <a href=https://github.com/TheTorProject/ooni-probe><em>OONI software tests</em></a> were run from two
+local vantage points (AS4788 and AS17971) in Malaysia:</p><ul><li><p><a href=https://ooni.org/nettest/web-connectivity/><em>Web connectivity</em></a></p></li><li><p><a href=https://ooni.org/nettest/http-invalid-request-line/><em>HTTP invalid request line</em></a></p></li><li><p><a href=https://ooni.org/nettest/http-header-field-manipulation/><em>HTTP header field manipulation</em></a></p></li><li><p><a href=https://ooni.org/nettest/vanilla-tor/><em>Vanilla Tor</em></a></p></li><li><p><a href=https://ooni.org/nettest/meek-fronted-requests/><em>Meek Fronted Requests</em></a></p></li></ul><p>The web connectivity test was run with the aim of examining whether a
+set of URLs (included in both the “<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv><em>global test list</em></a>”,
+and the recently updated “<a href=https://github.com/citizenlab/test-lists/blob/master/lists/my.csv><em>Malaysian test list</em></a>”)
+were blocked during the testing period and if so, how. The Vanilla Tor
+test was run to examine the reachability of the <a href=https://www.torproject.org/><em>Tor network</em></a>, while the Meek Fronted Requests
+test was run to examine whether the domains used by Meek (a type of
+<a href=https://bridges.torproject.org/><em>Tor bridge</em></a>) work in tested
+networks.</p><p>The HTTP invalid request line and HTTP header field manipulation tests
+were run with the aim of examining whether “middle boxes” (systems
+placed in the network between the user and a control server) that could
+potentially be responsible for censorship and/or surveillance were
+present in the tested network.</p><p>The sections below document how each of these tests are designed for the
+purpose of detecting cases of internet censorship and traffic
+manipulation.</p><h4 id=web-connectivity>Web connectivity</h4><p>This test
+<a href=https://ooni.org/nettest/web-connectivity/><em>examines</em></a>
+whether websites are reachable and if they are not, it attempts to
+determine whether access to them is blocked through DNS tampering, TCP
+connection RST/IP blocking or by a transparent HTTP proxy. Specifically,
+this test is designed to perform the following:</p><ul><li><p>Resolver identification</p></li><li><p>DNS lookup</p></li><li><p>TCP connect</p></li><li><p>HTTP GET request</p></li></ul><p>By default, this test performs the above (excluding the first step,
+which is performed only over the network of the user) both over a
+control server and over the network of the user. If the results from
+both networks match, then there is no clear sign of network
+interference; but if the results are different, the websites that the
+user is testing are likely censored.</p><p>Further information is provided below, explaining how each step
+performed under the web connectivity test works.</p><p><strong>1. Resolver identification</strong></p><p>The domain name system (DNS) is what is responsible for transforming a
+host name (e.g. torproject.org) into an IP address (e.g. 38.229.72.16).
+Internet Service Providers (ISPs), amongst others, run DNS resolvers
+which map IP addresses to hostnames. In some circumstances though, ISPs
+map the requested host names to the wrong IP addresses, which is a form
+of tampering.</p><p>As a first step, the web connectivity test attempts to identify which
+DNS resolver is being used by the user. It does so by performing a DNS
+query to special domains (such as whoami.akamai.com) which will disclose
+the IP address of the resolver.</p><p><strong>2. DNS lookup</strong></p><p>Once the <a href=https://github.com/TheTorProject/ooni-spec/blob/master/test-specs/ts-017-web-connectivity.md><em>web connectivity test</em></a>
+has identified the DNS resolver of the user, it then attempts to
+identify which addresses are mapped to the tested host names by the
+resolver. It does so by performing a DNS lookup, which asks the resolver
+to disclose which IP addresses are mapped to the tested host names, as
+well as which other host names are linked to the tested host names under
+DNS queries.</p><p><strong>3. TCP connect</strong></p><p>The web connectivity test will then try to connect to the tested
+websites by attempting to establish a TCP session on port 80 (or port
+443 for URLs that begin with HTTPS) for the list of IP addresses that
+were identified in the previous step (DNS lookup).</p><p><strong>4. HTTP GET request</strong></p><p>As the <a href=https://github.com/TheTorProject/ooni-spec/blob/master/test-specs/ts-017-web-connectivity.md><em>web connectivity test</em></a>
+connects to tested websites (through the previous step), it sends
+requests through the HTTP protocol to the servers which are hosting
+those websites. A server normally responds to an HTTP GET request with
+the content of the webpage that is requested.</p><p><strong>Comparison of results: Identifying censorship</strong></p><p>Once the above steps of the web connectivity test are performed <em>both</em>
+over a control server and over the network of the user, the collected
+results are then compared with the aim of identifying whether and how
+tested websites are tampered with. If the compared results do <em>not</em>
+match, then there is a sign of network interference.</p><p>Below are the conditions under which the following types of blocking are
+identified:</p><ul><li><p><strong>DNS blocking:</strong> If the DNS responses (such as the IP addresses mapped to host
+names) do <em>not</em> match.</p></li><li><p><strong>TCP/IP blocking:</strong> If a TCP session to connect to websites was <em>not</em> established
+over the network of the user.</p></li><li><p><strong>HTTP blocking:</strong> If the HTTP request over the user’s network failed, or the HTTP
+status codes don’t match, or all of the following apply:</p><ul><li><p>The body length of compared websites (over the control server and the network of
+the user) differs by some percentage</p></li><li><p>The HTTP headers names do not match</p></li><li><p>The HTML title tags do not match</p></li></ul></li></ul><p>It’s important to note, however, that DNS resolvers, such as Google or a
+local ISP, often provide users with IP addresses that are closest to
+them geographically. Often this is <em>not</em> done with the intent of network
+tampering, but merely for the purpose of providing users with localized
+content or faster access to websites. As a result, some false positives
+might arise in OONI measurements. Other false positives might occur when
+tested websites serve different content depending on the country that
+the user is connecting from, or in the cases when websites return
+failures even though they are not tampered with.</p><h4 id=http-invalid-request-line>HTTP invalid request line</h4><p>This
+<a href=https://ooni.org/nettest/http-invalid-request-line/><em>test</em></a>
+tries to detect the presence of network components (“middle box”) which
+could be responsible for censorship and/or traffic manipulation.</p><p>Instead of sending a normal HTTP request, this test sends an invalid
+HTTP request line - containing an invalid HTTP version number, an
+invalid field count and a huge request method – to an echo service
+listening on the standard HTTP port. An echo service is a very useful
+debugging and measurement tool, which simply sends back to the
+originating source any data it receives. If a middle box is not present
+in the network between the user and an echo service, then the echo
+service will send the invalid HTTP request line back to the user,
+exactly as it received it. In such cases, there is no visible traffic
+manipulation in the tested network.</p><p>If, however, a middle box is present in the tested network, the invalid
+HTTP request line will be intercepted by the middle box and this may
+trigger an error and that will subsequently be sent back to OONI’s
+server. Such errors indicate that software for traffic manipulation is
+likely placed in the tested network, though it’s not always clear what
+that software is. In some cases though, censorship and/or surveillance
+vendors can be identified through the error messages in the received
+HTTP response. Based on this technique, OONI has previously
+<a href=https://explorer.ooni.org/highlights/><em>detected</em></a> the use
+of BlueCoat, Squid and Privoxy proxy technologies in networks across
+multiple countries around the world.</p><p>It’s important though to note that a false negative could potentially
+occur in the hypothetical instance that ISPs are using highly
+sophisticated censorship and/or surveillance software that is
+specifically designed to not trigger errors when receiving invalid HTTP
+request lines like the ones of this test. Furthermore, the presence of a
+middle box is not necessarily indicative of traffic manipulation, as
+they are often used in networks for caching purposes.</p><h4 id=http-header-field-manipulation>HTTP header field manipulation</h4><p>This
+<a href=https://ooni.org/nettest/http-header-field-manipulation/><em>test</em></a>
+also tries to detect the presence of network components (“middle box”)
+which could be responsible for censorship and/or traffic manipulation.</p><p>HTTP is a protocol which transfers or exchanges data across the
+internet. It does so by handling a client’s request to connect to a
+server, and a server’s response to a client’s request. Every time a user
+connects to a server, the user (client) sends a request through the HTTP
+protocol to that server. Such requests include “HTTP headers”, which
+transmit various types of information, including the user’s device
+operating system and the type of browser that is being used. If Firefox
+is used on Windows, for example, the “user agent header” in the HTTP
+request will tell the server that a Firefox browser is being used on a
+Windows operating system.</p><p>This test emulates an HTTP request towards a server, but sends HTTP
+headers that have variations in capitalization. In other words, this
+test sends HTTP requests which include valid, but non-canonical HTTP
+headers. Such requests are sent to a backend control server which sends
+back any data it receives. If OONI receives the HTTP headers exactly as
+they were sent, then there is no visible presence of a “middle box” in
+the network that could be responsible for censorship, surveillance
+and/or traffic manipulation. If, however, such software is present in
+the tested network, it will likely normalize the invalid headers that
+are sent or add extra headers.</p><p>Depending on whether the HTTP headers that are sent and received from a
+backend control server are the same or not, OONI is able to evaluate
+whether software – which could be responsible for traffic manipulation –
+is present in the tested network.</p><p>False negatives, however, could potentially occur in the hypothetical
+instance that ISPs are using highly sophisticated software that is
+specifically designed to not interfere with HTTP headers when it
+receives them. Furthermore, the presence of a middle box is not
+necessarily indicative of traffic manipulation, as they are often used
+in networks for caching purposes.</p><h4 id=vanilla-tor>Vanilla Tor</h4><p>This <a href=https://ooni.org/nettest/vanilla-tor/><em>test</em></a> examines
+the reachability of the <a href=https://www.torproject.org/><em>Tor network</em></a>,
+which is designed for online anonymity and censorship circumvention.</p><p>The Vanilla Tor test attempts to start a connection to the Tor network.
+If the test successfully bootstraps a connection within a predefined
+amount of seconds (300 by default), then Tor is considered to be
+reachable from the vantage point of the user. But if the test does not
+manage to establish a connection, then the Tor network is likely blocked
+within the tested network.</p><h4 id=meek-fronted-requests>Meek Fronted Requests</h4><p>This test examines whether the domains used by Meek (a type of <a href=https://bridges.torproject.org/><em>Tor bridge</em></a>) work in tested networks.</p><p>Meek is a pluggable transport which uses non-blocked domains, such as
+google.com, awsstatic.com (Amazon cloud infrastructure), and
+ajax.aspnetcdn.com (Microsoft azure cloud infrastructure) to proxy its
+users over <a href=https://www.torproject.org/><em>Tor</em></a> to blocked websites,
+while hiding both the fact that they are connecting to such websites and
+how they are connecting to them. As such, Meek is useful for not only
+connecting to websites that are blocked, but for also hiding which
+websites you are connecting to.</p><p>Below is a simplified explanation of how this works:</p><p>[user] → [https://www.google.com] → [Meek hosted on the cloud] → [Tor]
+→ [blocked-website]</p><p>The user will receive a response (access to a blocked website, for
+example) from cloud-fronted domains, such as google.com, through the
+following way:</p><p>[blocked-website] → [Tor] → [Meek hosted on the cloud]
+→ [https://www.google.com] → [user]</p><p>In short, this test does an encrypted connection to cloud-fronted
+domains over HTTPS and examines whether it can connect to them or not.
+As such, this test enables users to check whether Meek enables the
+circumvention of censorship in an automated way.</p><h3 id=data-analysis>Data analysis</h3><p>Through its <a href=https://github.com/TheTorProject/ooni-pipeline><em>data pipeline</em></a>, OONI
+processes all network measurements that it collects, including the
+following types of data:</p><p><strong>Country code</strong></p><p>OONI by default collects the code which corresponds to the country from
+which the user is running OONI Probe tests from, by automatically
+searching for it based on the user’s IP address through the <a href=https://www.maxmind.com/en/home><em>MaxMind GeoIP database</em></a>. The collection of
+country codes is an important part of OONI’s research, as it enables
+OONI to map out global network measurements and to identify where
+network interferences take place.</p><p><strong>Autonomous System Number (ASN)</strong></p><p>OONI by default collects the Autonomous System Number (ASN) which
+corresponds to the network that a user is running OONI Probe tests from.
+The collection of the ASN is useful to OONI’s research because it
+reveals the specific network provider (such as Vodafone) of a user. Such
+information can increase transparency in regards to which network
+providers are implementing censorship or other forms of network
+interference.</p><p><strong>Date and time of measurements</strong></p><p>OONI by default collects the time and date of when tests were run. This
+information helps OONI evaluate when network interferences occur and to
+compare them across time.</p><p><strong>IP addresses and other information</strong></p><p>OONI does <em>not</em> deliberately collect or store users’ IP addresses. In
+fact, OONI takes measures to remove users’ IP addresses from the
+collected measurements, to protect its users from <a href=https://ooni.org/about/risks/><em>potential risks</em></a>.</p><p>However, OONI might <em>unintentionally</em> collect users’ IP addresses and
+other potentially personally-identifiable information, if such
+information is included in the HTTP headers or other metadata of
+measurements. This, for example, can occur if the tested websites
+include tracking technologies or custom content based on a user’s
+network location.</p><p><strong>Network measurements</strong></p><p>The types of network measurements that OONI collects depend on the types
+of tests that are run. Specifications about each OONI test can be viewed
+through its <a href=https://github.com/TheTorProject/ooni-spec/tree/master/test-specs><em>git repository</em></a>,
+and details about what collected network measurements entail can be
+viewed through <a href=https://explorer.ooni.org/world/><em>OONI Explorer</em></a> or through
+OONI’s <a href=https://api.ooni.io/><em>public list of measurements</em></a>.</p><p>OONI processes the above types of data with the aim of deriving meaning
+from the collected measurements and, specifically, in an attempt to
+answer the following types of questions:</p><ul><li><p>Which types of OONI tests were run?</p></li><li><p>In which countries were those tests run?</p></li><li><p>In which networks were those tests run?</p></li><li><p>When were tests run?</p></li><li><p>What types of network interference occurred?</p></li><li><p>In which countries did network interference occur?</p></li><li><p>In which networks did network interference occur?</p></li><li><p>When did network interference occur?</p></li><li><p>How did network interference occur?</p></li></ul><p>To answer such questions, OONI’s pipeline is designed to process data
+which is automatically sent to OONI’s measurement collector by default.
+The initial processing of network measurements enables the following:</p><ul><li><p>Attributing measurements to a specific country.</p></li><li><p>Attributing measurements to a specific network within a country.</p></li><li><p>Distinguishing measurements based on the specific tests that were run for their
+collection.</p></li><li><p>Distinguishing between “normal” and “anomalous” measurements (the latter
+indicating that a form of network tampering is likely present).</p></li><li><p>Identifying the type of network interference based on a set of heuristics for
+DNS tampering, TCP/IP blocking, and HTTP blocking.</p></li><li><p>Identifying block pages based on a set of heuristics for HTTP blocking.</p></li><li><p>Identifying the presence of “middle boxes” (such as Blue Coat) within tested
+networks.</p></li></ul><p>However, false positives and false negatives emerge within the processed
+data due to a number of reasons. As explained previously (section on
+“<a href="https://docs.google.com/document/d/16Tq9gg-Z3nD7si-yoPMS5RjKKhT7s0Wov_arBNencIE/edit#heading=h.4g05tkh1gu2k"><em>OONI network measurements</em></a>”),
+DNS resolvers (operated by Google or a local ISP) often provide users
+with IP addresses that are closest to them geographically. While this
+may appear to be a case of DNS tampering, it is actually done with the
+intention of providing users with faster access to websites. Similarly,
+false positives may emerge when tested websites serve different content
+depending on the country that the user is connecting from, or in the
+cases when websites return failures even though they are not tampered
+with.</p><p>Furthermore, measurements indicating HTTP or TCP/IP blocking might
+actually be due to temporary HTTP or TCP/IP failures, and may not
+conclusively be a sign of network interference. It is therefore
+important to test the same sets of websites across time and to
+cross-correlate data, prior to reaching a conclusion on whether websites
+are in fact being blocked.</p><p>Since block pages differ from country to country and sometimes even from
+network to network, it is quite challenging to accurately identify them.
+OONI uses a series of heuristics to try to guess if the page in question
+differs from the expected control, but these heuristics can often result
+in false positives. For this reason OONI only says that there is a
+confirmed instance of blocking when a block page is detected.</p><p>OONI’s methodology for detecting the presence of “middle boxes” -
+systems that could be responsible for censorship, surveillance and
+traffic manipulation - can also present false negatives, if ISPs are
+using highly sophisticated software that is specifically designed to
+<em>not</em> interfere with HTTP headers when it receives them, or to <em>not</em>
+trigger error messages when receiving invalid HTTP request lines. It
+remains unclear though if such software is being used. Moreover, it’s
+important to note that the presence of a middle box is not necessarily
+indicative of censorship or traffic manipulation, as such systems are
+often used in networks for caching purposes.</p><p>Upon collection of more network measurements, OONI continues to develop
+its data analysis heuristics, based on which it attempts to accurately
+identify censorship events.</p><h1 id=findings>Findings</h1><p>As part of this study, <a href=https://explorer.ooni.org/country/MY><em>hundreds of thousands of network measurements</em></a> from two
+local vantage points (AS4788 and AS17971) in Malaysia collected between
+24th September 2016 and 13th November 2016 were analyzed.</p><p>Upon analysis of the collected data, the findings illustrate that <strong>39
+different websites</strong> were blocked based on <strong>DNS injections of block
+pages</strong> during the testing period. These sites fall under the following
+categories: news media, political criticism, file-sharing, hosting and
+blogging platforms, online dating, religion, pornography, and gambling.</p><p>The table below includes all of the websites that were
+<a href=https://explorer.ooni.org/country/MY><em>found</em></a> to be blocked
+based on DNS injections of block pages.</p><table><thead><tr><th>Blocked websites</th><th>Categories</th><th>First measured</th><th>First blocked</th><th>Last blocked</th><th>Last measured</th></tr></thead><tbody><tr><td><code>http://adultfriendfinder.com</code></td><td>Online Dating</td><td>2016-09-24 3:55:08</td><td>2016-09-24 3:55:08</td><td>2016-11-13 22:39:44</td><td>2016-11-13 22:39:44</td></tr><tr><td><code>http://beeg.com</code></td><td>Pornography</td><td>2016-09-24 3:55:26</td><td>2016-09-24 3:55:26</td><td>2016-11-13 22:39:53</td><td>2016-11-13 22:39:53</td></tr><tr><td><code>http://extratorrent.cc</code></td><td>File-sharing</td><td>2016-11-10 0:02:37</td><td>2016-11-10 0:03:42</td><td>2016-11-13 0:03:34</td><td>2016-11-13 0:03:34</td></tr><tr><td><code>http://jinggo-fotopages.blogspot.my/</code></td><td>Political Criticism</td><td>2016-11-10 1:11:18</td><td>2016-11-10 1:11:18</td><td>2016-11-13 1:18:17</td><td>2016-11-13 1:18:17</td></tr><tr><td><code>http://malaysia-chronicle.com</code></td><td>Political Criticism</td><td>2016-09-24 3:32:58</td><td>2016-09-24 3:32:58</td><td>2016-11-13 22:26:26</td><td>2016-11-13 22:26:26</td></tr><tr><td><code>http://manhub.com</code></td><td>Pornography</td><td>2016-09-24 3:59:53</td><td>2016-09-24 3:59:53</td><td>2016-11-13 22:41:46</td><td>2016-11-13 22:41:46</td></tr><tr><td><code>http://pornhub.com</code></td><td>Pornography</td><td>2016-09-24 4:01:41</td><td>2016-09-24 4:01:41</td><td>2016-11-12 22:42:19</td><td>2016-11-13 22:42:16</td></tr><tr><td><code>http://redtube.com</code></td><td>Pornography</td><td>2016-09-24 4:02:06</td><td>2016-09-24 4:02:06</td><td>2016-11-13 22:42:28</td><td>2016-11-13 22:42:28</td></tr><tr><td><code>http://syedsoutsidethebox.blogspot.my/</code></td><td>Political Criticism</td><td>2016-11-10 1:11:16</td><td>2016-11-10 1:11:16</td><td>2016-11-13 1:18:14</td><td>2016-11-13 1:18:14</td></tr><tr><td><code>http://tabunginsider.blogspot.my/</code></td><td>Political Criticism</td><td>2016-11-10 1:11:13</td><td>2016-11-10 1:11:13</td><td>2016-11-13 1:18:13</td><td>2016-11-13 1:18:13</td></tr><tr><td><code>http://thepiratebay.org</code></td><td>File-sharing</td><td>2016-09-24 4:03:00</td><td>2016-09-24 4:03:00</td><td>2016-11-13 22:42:44</td><td>2016-11-13 22:42:44</td></tr><tr><td><code>http://www.888casino.com</code></td><td>Gambling</td><td>2016-09-24 4:05:18</td><td>2016-09-24 4:05:18</td><td>2016-11-13 0:08:58</td><td>2016-11-13 22:43:49</td></tr><tr><td><code>http://www.89.com</code></td><td>Pornography</td><td>2016-09-24 4:05:19</td><td>2016-09-25 4:05:11</td><td>2016-11-13 22:43:49</td><td>2016-11-13 22:43:49</td></tr><tr><td><code>http://www.ashemaletube.com</code></td><td>Pornography</td><td>2016-09-24 4:07:28</td><td>2016-09-24 4:07:28</td><td>2016-11-13 22:44:57</td><td>2016-11-13 22:44:57</td></tr><tr><td><code>http://www.asiasentinel.com</code></td><td>News Media</td><td>2016-09-24 3:49:08</td><td>2016-09-24 3:49:08</td><td>2016-11-13 22:33:31</td><td>2016-11-13 22:33:31</td></tr><tr><td><code>http://www.belmont.ag</code></td><td>Gambling</td><td>2016-09-24 4:10:13</td><td>2016-09-24 4:10:13</td><td>2016-11-13 22:45:27</td><td>2016-11-13 22:45:27</td></tr><tr><td><code>http://www.betfair.com</code></td><td>Gambling</td><td>2016-09-24 4:10:23</td><td>2016-09-24 4:10:23</td><td>2016-11-13 22:45:29</td><td>2016-11-13 22:45:29</td></tr><tr><td><code>http://www.carnivalcasino.com</code></td><td>Gambling</td><td>2016-09-24 4:13:39</td><td>2016-09-24 4:13:39</td><td>2016-11-12 22:46:31</td><td>2016-11-13 22:46:36</td></tr><tr><td><code>http://www.casinotropez.com</code></td><td>Gambling</td><td>2016-09-24 4:13:41</td><td>2016-09-24 4:13:41</td><td>2016-11-13 22:46:41</td><td>2016-11-13 22:46:41</td></tr><tr><td><code>http://www.clubdicecasino.com</code></td><td>Gambling</td><td>2016-09-24 4:14:34</td><td>2016-09-24 4:14:34</td><td>2016-11-13 22:47:19</td><td>2016-11-13 22:47:19</td></tr><tr><td><code>http://www.europacasino.com</code></td><td>Gambling</td><td>2016-09-24 4:17:45</td><td>2016-09-24 4:17:45</td><td>2016-11-13 22:49:53</td><td>2016-11-13 22:49:53</td></tr><tr><td><code>http://www.goldenrivieracasino.com</code></td><td>Gambling</td><td>2016-09-24 4:20:34</td><td>2016-09-24 4:20:34</td><td>2016-11-13 22:52:00</td><td>2016-11-13 22:52:00</td></tr><tr><td><code>http://www.hustler.com</code></td><td>Pornography</td><td>2016-09-24 4:21:36</td><td>2016-09-24 4:21:36</td><td>2016-11-13 22:52:34</td><td>2016-11-13 22:52:34</td></tr><tr><td><code>http://www.livejasmin.com</code></td><td>Pornography</td><td>2016-09-24 4:32:04</td><td>2016-09-24 4:32:04</td><td>2016-11-13 22:55:28</td><td>2016-11-13 22:55:28</td></tr><tr><td><code>http://www.roxypalace.com</code></td><td>Gambling</td><td>2016-09-24 4:41:19</td><td>2016-09-24 4:41:19</td><td>2016-11-13 23:01:30</td><td>2016-11-13 23:01:30</td></tr><tr><td><code>http://www.sarawakreport.org</code></td><td>News Media</td><td>2016-09-24 3:49:15</td><td>2016-09-24 3:49:15</td><td>2016-11-13 22:33:33</td><td>2016-11-13 22:33:33</td></tr><tr><td><code>http://www.sarawakreport.org/2016/04/the-simple-silver-bullet-solution-to-1mdb-malaysias-financial-woes-sack-najib/</code></td><td>News Media</td><td>2016-09-24 3:51:03</td><td>2016-09-24 3:51:03</td><td>2016-11-13 1:15:58</td><td>2016-11-13 1:15:58</td></tr><tr><td><code>http://www.sarawakreport.org/tag/1mdb</code></td><td>News Media</td><td>2016-09-24 3:51:00</td><td>2016-09-24 3:51:00</td><td>2016-11-13 1:15:57</td><td>2016-11-13 1:15:57</td></tr><tr><td><code>http://www.sex.com</code></td><td>Pornography</td><td>2016-09-24 4:42:12</td><td>2016-09-24 4:42:12</td><td>2016-11-13 23:02:11</td><td>2016-11-13 23:02:11</td></tr><tr><td><code>http://www.spinpalace.com</code></td><td>Gambling</td><td>2016-09-24 4:43:02</td><td>2016-09-24 23:02:44</td><td>2016-11-13 23:02:49</td><td>2016-11-13 23:02:49</td></tr><tr><td><code>http://www.themalaysianinsider.com</code></td><td>News Media</td><td>2016-09-24 3:47:22</td><td>2016-09-24 3:47:22</td><td>2016-11-13 22:32:39</td><td>2016-11-13 22:32:39</td></tr><tr><td><code>http://www.thereligionofpeace.com</code></td><td>Religion</td><td>2016-09-24 3:49:29</td><td>2016-09-24 3:49:29</td><td>2016-11-13 1:14:02</td><td>2016-11-13 1:14:02</td></tr><tr><td><code>http://www.wetplace.com</code></td><td>Pornography</td><td>2016-09-24 4:48:34</td><td>2016-09-24 4:48:34</td><td>2016-11-13 23:05:43</td><td>2016-11-13 23:05:43</td></tr><tr><td><code>http://www.worldsex.com</code></td><td>Pornography</td><td>2016-09-24 4:49:57</td><td>2016-09-24 4:49:57</td><td>2016-11-13 23:06:26</td><td>2016-11-13 23:06:26</td></tr><tr><td><code>http://xhamster.com</code></td><td>Pornography</td><td>2016-09-24 4:50:56</td><td>2016-09-24 4:50:56</td><td>2016-11-13 23:06:59</td><td>2016-11-13 23:06:59</td></tr><tr><td><code>http://xvideos.com</code></td><td>Pornography</td><td>2016-09-24 4:50:56</td><td>2016-09-24 23:06:57</td><td>2016-11-13 0:49:33</td><td>2016-11-13 23:06:59</td></tr><tr><td><code>http://youjizz.com</code></td><td>Pornography</td><td>2016-09-24 4:51:03</td><td>2016-09-24 4:51:03</td><td>2016-11-13 23:07:06</td><td>2016-11-13 23:07:06</td></tr><tr><td><code>http://youporn.com</code></td><td>Pornography</td><td>2016-09-24 4:51:07</td><td>2016-09-24 4:51:07</td><td>2016-11-13 23:07:07</td><td>2016-11-13 23:07:07</td></tr><tr><td><code>https://medium.com</code></td><td>Hosting and Blogging platforms</td><td>2016-09-24 3:49:13</td><td>2016-09-24 3:49:13</td><td>2016-11-13 22:33:33</td><td>2016-11-13 22:33:33</td></tr><tr><td><code>https://thepiratebay.se</code></td><td>File-sharing</td><td>2016-09-24 4:51:47</td><td>2016-09-24 23:07:17</td><td>2016-11-13 23:07:28</td><td>2016-11-13 23:07:28</td></tr><tr><td><code>https://torrentz.eu</code></td><td>File-sharing</td><td>2016-09-24 4:51:49</td><td>2016-09-25 6:06:53</td><td>2016-11-12 23:07:42</td><td>2016-11-13 23:07:29</td></tr></tbody></table><p>The chart below illustrates that porn, gambling and news websites were
+found to be blocked the most. Similarly, torrenting sites and websites
+expressing political criticism also presented relatively high
+percentages <code>of</code> blocking from the sites that were found to be blocked.</p><p><img src=/post/malaysia-report/malaysia-chart.png alt="Malaysia chart"></p><p>Recently, the Malaysian Communications and Multimedia Commission (MCMC)
+<a href=http://english.astroawani.com/malaysia-news/mcmc-blocks-over-5-000-websites-various-offences-jailani-125528><em>announced</em></a>
+the blocking of 5,044 websites for various offenses under the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>Malaysia Communications and Multimedia Act (CMA) 1998</em></a>.
+According to <a href=http://english.astroawani.com/malaysia-news/mcmc-blocks-over-5-000-websites-various-offences-jailani-125528><em>Malaysia’s Deputy Communications and Multimedia Minister</em></a>,
+most of these websites include pornography, while others include
+gambling, piracy, unregistered medicine, and counterfeit products. Some
+of these sites might be included in the
+<a href=https://explorer.ooni.org/country/MY><em>findings</em></a> of this
+study, but the blocking of news outlets that covered the <a href=http://www.bbc.com/news/world-asia-33447456><em>1MDB scandal</em></a> appears to be
+politically motivated.</p><p>In the following subsections we dive into each of these categories to
+examine what was found to be blocked in Malaysia during the testing
+period.</p><h3 id=news-media>News Media</h3><p>A major <a href=http://www.bbc.com/news/world-asia-33447456><em>political scandal</em></a> erupted in
+Malaysia in 2015 when the country’s Prime Minister was accused of
+corruption and embezzlement, resulting in the <a href=http://www.bbc.com/news/world-asia-35800396><em>blocking of independent news websites</em></a>.</p><p><a href=http://www.1mdb.com.my/><em>1Malaysia Development Berhad (1MDB)</em></a> is a
+strategic development company, wholly owned by the Government of
+Malaysia, that was established to drive the country’s economic
+development through global strategic partnerships and foreign direct
+investment. The <a href=http://www.bbc.com/news/world-asia-33447456><em>scandal</em></a>
+first broke out when the Wall Street Journal
+<a href=http://www.wsj.com/specialcoverage/malaysia-controversy><em>reported</em></a>
+that it had seen a paper trail that allegedly traced close to $700m to
+the personal bank accounts of Malaysia’s Prime Minister. But negative
+attention towards the 1MDB had already been drawn since early 2015,
+after it <a href=http://www.bbc.com/news/world-asia-33447456><em>missed payments</em></a> that it owed to
+banks and bondholders.</p><p>Two Malaysian news websites, the <a href=https://www.themalaysianinsider.com/><em>Malaysian
+Insider</em></a> and <a href=http://www.sarawakreport.org/><em>Sarawak
+Report</em></a>, were reportedly
+<a href=http://www.bbc.com/news/world-asia-35800396><em>blocked</em></a> in February
+2015 for covering the scandal. Sarawak Report mirrored its site, and
+that was
+<a href=http://digimon.sinarproject.org/incidents/sarawak-report><em>blocked</em></a>
+too. The government <a href=http://www.bbc.com/news/world-asia-35800396><em>justified the
+blocking</em></a> on the grounds
+of “maintaining peace, stability, and harmony in the country”. A month
+later, the Malaysian Insider <a href=http://www.wsj.com/articles/malaysian-insider-news-site-closing-1457942708><em>shut down</em></a>
+completely, despite having gained popularity in the country. And
+according to our testing, both sites <em>remain</em> blocked in Malaysia to
+date.</p><p>Similarly, we also found the website of Asia Sentinel, another news
+outlet that heavily
+<a href=http://www.asiasentinel.com/politics/malaysia-1mdb-default-what-were-they-thinking/><em>covered</em></a>
+Malaysia’s 1MDB scandal, to be
+<a href="https://explorer.ooni.org/measurement/20161210T004635Z_AS4788_FVmI3J39tlOoXsMNOrOBKUZSYgbltG5rXR9G4BIvkXmKwIjem1?input=http:%2F%2Fwww.asiasentinel.com"><em>blocked</em></a>.
+Asia Sentinel is an independent media outlet that reports on news from
+all across Asia. In 2014, Asia Sentinel <a href=http://www.asiasentinel.com/><em>won the 2014 SOPA Award</em></a> for Excellence in Explanatory
+Journalism. As part of our testing,
+<a href=http://www.asiasentinel.com><em>www.asiasentinel.com</em></a> consistently
+returned a block page.</p><p>The Malaysian Communications and Multimedia Commission (MCMC) has
+<a href=https://freedomhouse.org/report/freedom-net/2016/malaysia><em>justified</em></a>
+the blocking of these sites on the grounds of national security under
+Section 233 of the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>1998 Communications and Multimedia Act (CMA)</em></a>.</p><p><strong>Blocked news websites</strong></p><ul><li><code>http://www.asiasentinel.com</code></li><li><code>http://www.sarawakreport.org</code></li><li><code>http://www.sarawakreport.org/2016/04/the-simple-silver-bullet-solution-to-1mdb-malaysias-financial-woes-sack-najib/</code></li><li><code>http://www.sarawakreport.org/tag/1mdb</code></li><li><code>http://www.themalaysianinsider.com</code></li></ul><h3 id=political-criticism>Political Criticism</h3><p>Several political blogs were found to be blocked as part of our study. Amongst them, a <a href=http://jinggo-fotopages.blogspot.my/><em>satirical photo blog that specializes in Malaysian politics</em></a> and which <a href=https://jinggo-fotopages.blogspot.gr/2016/09/pelancaran-siri-jelajah-penerangan-1mdb.html><em>covered the 1MDB scandal</em></a>
+returned block pages every time we tested it. Similarly, a
+<a href=http://syedsoutsidethebox.blogspot.my/><em>blog</em></a> that serves as a
+publishing platform for short articles, information, and thoughts that
+are “outside the box” was also found to be blocked based on the DNS
+injection of a block page.</p><p>Interestingly, a <a href=http://tabunginsider.blogspot.my/><em>blog</em></a> which
+published documents pertaining to the mismanagement of public funds in
+relation to the 1MDB scandal was also found to be blocked. This blog
+also expresses frustration with how funds of the Malaysian Pilgrims
+Funds Board (Tabung Haji) were misappropriated when used to bail out the
+1MDB. Malaysia’s Prime Minister has denied these allegations,
+<a href=http://www.themalaymailonline.com/malaysia/article/najib-says-depressed-by-tabung-haji-1mdb-rumours><em>stating</em></a>
+“<em>Why would we use public money to bail out 1MDB? That is not a mark of
+a responsible government.</em>” Yet, this blog remains blocked according to
+our testing.</p><p><a href=http://www.malaysia-chronicle.com/><em>Malaysia Chronicle</em></a> is a news
+outlet that provides citizens with the opportunity to “speak up on
+politics, business, and social”. Most of its articles express political
+criticism and according to our findings, this site remained
+<a href="https://explorer.ooni.org/measurement/20161111T222216Z_AS4788_CdgH2h69js5DX9sP5aW5liauAsrOAwhgj5XljqrNRImLNXptqG?input=http:%2F%2Fmalaysia-chronicle.com"><em>blocked</em></a>
+throughout the testing period.</p><p><strong>Blocked sites expressing political criticism</strong></p><ul><li><code>http://jinggo-fotopages.blogspot.my/</code></li><li><code>http://malaysia-chronicle.com</code></li><li><code>http://syedsoutsidethebox.blogspot.my/</code></li><li><code>http://tabunginsider.blogspot.my/</code></li></ul><h3 id=religion>Religion</h3><p>While Malaysia’s constitution guarantees freedom of religion, Islam is
+the country’s state religion. As part of this study, we found a
+<a href=http://www.thereligionofpeace.com><em>site</em></a> expressing <em>heavy criticism</em>
+towards Islam to be
+<a href="https://explorer.ooni.org/measurement/20161111T004856Z_AS4788_qVtleJJvdqT7CVk2tX0NPzcYftL4FPm6d41wzHE9blYzoswg7h?input=http:%2F%2Ftabunginsider.blogspot.my%2F"><em>blocked</em></a>
+in Malaysia.</p><p>This site keeps track of and enumerates the amount of terror attacks,
+suicide blasts, and deaths and injuries worldwide. It also publishes
+articles that document violence against non-Muslims in Bangladesh and
+other countries around the world.</p><p>In the Malaysian context, this site can be viewed as inciting hatred
+towards Islam and its blocking can therefore be justified under the
+<a href=http://www.commonlii.org/my/legis/consol_act/sa19481969183/><em>1948 Sedition Act</em></a>,
+which prohibits the incitement of hatred towards any religion.</p><p><strong>Blocked site criticising Islam</strong></p><ul><li><a href=http://www.thereligionofpeace.com>http://www.thereligionofpeace.com</a></li></ul><h3 id=hosting-and-blogging-platforms>Hosting and Blogging platforms</h3><p>Once the <a href=http://www.sarawakreport.org/><em>Sarawak Report</em></a> was <a href=https://www.theguardian.com/world/2015/jul/20/sarawak-report-whistleblowing-website-blocked-by-malaysia-over-pm-allegations><em>blocked for covering the 1MDB scandal</em></a>,
+it subsequently attempted to have its articles published on medium.com,
+one of the world’s most popular online publishing platforms. However,
+this resulted in the <a href=http://www.sarawakreport.org/2016/01/1mdb-reporting-has-all-been-vindicated-so-how-come-the-growing-media-crackdown-in-malaysia/><em>blocking of medium.com</em></a>
+for hosting stories by Sarawak Report.</p><p>OONI data collected as part of this study shows that medium.com was
+<a href="https://explorer.ooni.org/measurement/20161111T222216Z_AS4788_CdgH2h69js5DX9sP5aW5liauAsrOAwhgj5XljqrNRImLNXptqG?input=https:%2F%2Fmedium.com"><em>blocked</em></a>
+throughout the testing period.</p><p><strong>Blocked blogging platform</strong></p><ul><li><code>https://medium.com</code></li></ul><h3 id=file-sharing>File-sharing</h3><p>Two different versions of The Pirate Bay, a site that facilitates
+peer-to-peer file-sharing amongst users of the BitTorrent protocol, was
+found to be
+<a href="https://explorer.ooni.org/measurement/20161111T223538Z_AS4788_nCm7QnebKsWIJ6QCiyqZzc5lu1dhktZvTyhCSNkasYeGbObPyK?input=http:%2F%2Fthepiratebay.org"><em>blocked</em></a>
+as part of our study. Similarly, two other torrenting sites were also
+found to be
+<a href="https://explorer.ooni.org/measurement/20161110T235705Z_AS4788_hXivqWX3IUXsTX6bTcpHYkFCvM82YFJKUXUvHScbsoMTfmWa0I?input=http:%2F%2Fextratorrent.cc"><em>blocked</em></a>.</p><p>These sites might be part of the thousands of websites that were
+recently <a href=http://english.astroawani.com/malaysia-news/mcmc-blocks-over-5-000-websites-various-offences-jailani-125528><em>announced to be blocked by the MCMC</em></a>
+for enabling piracy, which is viewed as an offense under <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>Malaysia’s 1998 Communications and Multimedia Act (CMA)</em></a>.</p><p><strong>Blocked torrenting sites</strong></p><ul><li><code>http://extratorrent.cc</code></li><li><code>http://thepiratebay.org</code></li><li><code>https://thepiratebay.se</code></li><li><code>https://torrentz.eu</code></li></ul><h3 id=online-dating>Online Dating</h3><p>Adult Friend Finder, one of the world’s most popular online dating
+sites, was found to be
+<a href="https://explorer.ooni.org/measurement/20161111T223538Z_AS4788_nCm7QnebKsWIJ6QCiyqZzc5lu1dhktZvTyhCSNkasYeGbObPyK?input=http:%2F%2Fadultfriendfinder.com"><em>blocked</em></a>
+as part of this study. It remains unclear though what the motivation was
+behind the blocking of this particular site, and not other popular
+dating sites.</p><p><strong>Blocked online dating site</strong></p><ul><li><a href=http://adultfriendfinder.com>http://adultfriendfinder.com</a></li></ul><h3 id=pornography>Pornography</h3><p>Pornography is <a href=https://freedomhouse.org/report/freedom-net/2015/malaysia><em>strictly banned</em></a> in
+Malaysia and the censorship of pornographic websites can be
+<a href=http://english.astroawani.com/malaysia-news/mcmc-blocks-over-5-000-websites-various-offences-jailani-125528><em>justified</em></a>
+under the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>Communications and Multimedia Act 1998</em></a>.
+As part of this study, the following pornographic websites were found to
+be blocked.</p><p><strong>Blocked porn websites</strong></p><ul><li><code>http://beeg.com</code></li><li><code>http://pornhub.com</code></li><li><code>http://redtube.com</code></li><li><code>http://www.89.com</code></li><li><code>http://www.ashemaletube.com</code></li><li><code>http://www.hustler.com</code></li><li><code>http://www.livejasmin.com</code></li><li><code>http://www.sex.com</code></li><li><code>http://www.wetplace.com</code></li><li><code>http://www.worldsex.com</code></li><li><code>http://xhamster.com</code></li><li><code>http://xvideos.com</code></li><li><code>http://youjizz.com</code></li><li><code>http://youporn.com</code></li></ul><h3 id=gambling>Gambling</h3><p>Malaysia strictly prohibits online gambling. The blocking of gambling
+sites can be justified under the <a href=http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20289.pdf><em>Common Gaming Houses Act 1953</em></a>
+(Act 289) and under the <a href=http://www.commonlii.org/my/legis/consol_act/pba19671989220/><em>Pool Betting Act 1967</em></a>.</p><p>Under Sharia Law, online gambling is considered a serious crime. As part
+of this study, we found the following gambling sites to be blocked in
+the country.</p><p><strong>Blocked gambling sites</strong></p><ul><li><code>http://www.888casino.com</code></li><li><code>http://www.belmont.ag</code></li><li><code>http://www.betfair.com</code></li><li><code>http://www.carnivalcasino.com</code></li><li><code>http://www.casinotropez.com</code></li><li><code>http://www.clubdicecasino.com</code></li><li><code>http://www.europacasino.com</code></li><li><code>http://www.goldenrivieracasino.com</code></li><li><code>http://www.roxypalace.com</code></li><li><code>http://www.spinpalace.com</code></li></ul><h2 id=acknowledgement-of-limitations>Acknowledgement of limitations</h2><p>The findings of this study present various limitations, and do not
+necessarily reflect a comprehensive view of internet censorship in
+Malaysia.</p><p>The first limitation is associated with the testing period, which
+started on 24th September 2016 and concluded less than two months later,
+on 13th November 2016. As such, censorship events which may have
+occurred before and/or after the testing period are not examined as part
+of this study.</p><p>Another limitation to this study is associated to the amount and types
+of URLs that were tested for censorship. As mentioned in the methodology
+section of this report (“Creating a Malaysian test list”), the criteria
+for selecting URLs that are relevant to Malaysia were biased. The URL
+selection bias was influenced by the core objective of this study, which
+sought to examine whether sites expressing political criticism and
+defending human rights were blocked. Furthermore, while a total of 1,618
+different URLs were tested for censorship as part of this study, we did
+not test all of the URLs on the internet, indicating the possibility
+that other websites not included in test lists might have been blocked.</p><p>While network measurements were collected from <em>two</em> local vantage
+points in Malaysia (AS4788 and AS17971), OONI’s software tests were not
+run from all vantage points in the country where different censorship
+events might have occurred.</p><h1 id=conclusion>Conclusion</h1><p>This study provides data that serves as evidence of the DNS blocking of
+39 different websites in Malaysia. Since block pages were detected for
+all of these sites, their censorship is confirmed and undeniable.</p><p>The blocked websites include news outlets, blogs, and a popular
+publishing platform (medium.com). These sites were reportedly <a href=https://freedomhouse.org/report/freedom-press/2016/malaysia><em>first blocked in 2015</em></a> for
+covering the <a href=http://www.wsj.com/specialcoverage/malaysia-controversy><em>1MDB scandal</em></a> and,
+according to our
+<a href=https://explorer.ooni.org/country/MY><em>findings</em></a>, remained
+blocked throughout the testing period of this study (24th September 2016
+to 13th November 2016). While the blocking of these sites has been
+<a href=https://freedomhouse.org/report/freedom-net/2016/malaysia><em>justified</em></a>
+on the grounds of national security under Section 233 of the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>1998 Communications and Multimedia Act (CMA)</em></a>,
+these censorship events appear to be politically motivated.</p><p>Amongst the
+<a href="https://explorer.ooni.org/measurement/20161111T004856Z_AS4788_qVtleJJvdqT7CVk2tX0NPzcYftL4FPm6d41wzHE9blYzoswg7h?input=http:%2F%2Ftabunginsider.blogspot.my%2F"><em>blocked</em></a>
+websites, we found a <a href=http://www.thereligionofpeace.com/><em>site</em></a> that
+expresses heavy criticism towards Islam. In the Malaysian context, this
+site can be viewed as inciting hatred towards Islam and its censorship
+can therefore be justified under Malaysia’s <a href=http://www.commonlii.org/my/legis/consol_act/sa19481969183/><em>Sedition Act 1948</em></a>
+which prohibits the incitement of hatred towards any religion. We also
+found a <a href=http://adultfriendfinder.com><em>popular online dating site</em></a> to
+be
+<a href="https://explorer.ooni.org/measurement/20161111T223538Z_AS4788_nCm7QnebKsWIJ6QCiyqZzc5lu1dhktZvTyhCSNkasYeGbObPyK?input=http:%2F%2Fadultfriendfinder.com"><em>blocked</em></a>,
+but the motivation and/or legal justification behind its blocking
+remains unclear.</p><p>As part of our study, we
+<a href=https://gist.github.com/hellais/190780782d920e1d8523f37c002cc952><em>found</em></a>
+multiple pornographic, gambling, and torrenting sites to be blocked,
+which might fall under the <a href=http://english.astroawani.com/malaysia-news/mcmc-blocks-over-5-000-websites-various-offences-jailani-125528><em>thousands of websites that were announced to be blocked</em></a>
+by the MCMC. The censorship of pornography can be legally justified
+under the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>Malaysia Communications and Multimedia Act (CMA) 1998</em></a>,
+while the blocking of gambling sites can be justified under the <a href=http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20289.pdf><em>Common Gaming Houses Act
+1953</em></a>
+(Act 289) and under the <a href=http://www.commonlii.org/my/legis/consol_act/pba19671989220/><em>Pool Betting Act 1967</em></a>.</p><p>On a positive note, some <a href=http://www.straitstimes.com/asia/se-asia/malaysia-blocks-bersih-rally-websites><em>previously blocked sites</em></a>
+(Bersih rally websites) were found to be
+<a href="https://explorer.ooni.org/measurement/20161111T222216Z_AS4788_CdgH2h69js5DX9sP5aW5liauAsrOAwhgj5XljqrNRImLNXptqG?input=http:%2F%2Fbersih.org"><em>accessible</em></a>.
+No signs of censorship were detected when examining the accessibility of
+social media, censorship circumvention tools and LGBTI websites, and we
+did not detect the presence of any “middle boxes” capable of performing
+internet censorship. However, this does not mean that censorship
+equipment is not present in the country, but just that these particular
+tests were not able to highlight its presence.</p><p><a href=https://ooni.org/><em>OONI</em></a> and <a href=http://sinarproject.org/><em>Sinar Project</em></a> encourage transparency around
+internet controls to help enhance the safeguard of human rights and
+democratic processes.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

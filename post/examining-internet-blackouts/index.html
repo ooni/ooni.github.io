@@ -1,0 +1,114 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Examining internet blackouts through public data sources | OONI</title>
+<link rel=canonical href=https://ooni.org/post/examining-internet-blackouts/><meta name=description content="Pulling the plug on the internet is one of the ways that governments around the world attempt to exert control over the flow of information.
+While the Open Observatory of Network Interference (OONI) project has developed numerous software tests for examining different forms of internet censorship (such as the blocking of websites, instant messaging apps, and censorship circumvention tools), we currently do not have tests that are designed to examine internet blackouts, when the internet as a whole is rendered inaccessible within a location."><meta property="og:title" content="Examining internet blackouts through public data sources"><meta property="og:description" content="Pulling the plug on the internet is one of the ways that governments around the world attempt to exert control over the flow of information.
+While the Open Observatory of Network Interference (OONI) project has developed numerous software tests for examining different forms of internet censorship (such as the blocking of websites, instant messaging apps, and censorship circumvention tools), we currently do not have tests that are designed to examine internet blackouts, when the internet as a whole is rendered inaccessible within a location."><meta property="og:type" content="article"><meta property="og:url" content="/post/examining-internet-blackouts/"><meta property="article:published_time" content="2017-03-28T16:39:00+00:00"><meta property="article:modified_time" content="2017-03-28T16:39:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Examining internet blackouts through public data sources"><meta name=twitter:description content="Pulling the plug on the internet is one of the ways that governments around the world attempt to exert control over the flow of information.
+While the Open Observatory of Network Interference (OONI) project has developed numerous software tests for examining different forms of internet censorship (such as the blocking of websites, instant messaging apps, and censorship circumvention tools), we currently do not have tests that are designed to examine internet blackouts, when the internet as a whole is rendered inaccessible within a location."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Examining internet blackouts through public data sources</h1><div class=byline><span class=author>Maria Xynou, Arturo Filastò</span>
+<span class=date>2017-03-28 16:39 UTC</span></div><p>Pulling the plug on the internet is one of the ways that governments around the
+world attempt to exert control over the flow of information.</p><p>While the <a href=https://ooni.org/>Open Observatory of Network Interference (OONI)</a> project has developed numerous <a href=https://github.com/TheTorProject/ooni-probe>software tests</a> for examining different
+forms of internet censorship (such as the blocking of websites, instant
+messaging apps, and censorship circumvention tools), we currently do not have
+tests that are designed to examine internet blackouts, when the internet as a
+whole is rendered inaccessible within a location.</p><p>Over the last months we received many reports relating to internet blackouts in
+various countries around the world. In some of these countries we had probes
+running <a href=https://ooni.org//nettest/>OONI tests</a>, but merely
+asserting that an internet blackout had occurred just because we stopped
+receiving measurements probably wouldn&rsquo;t have been accurate. As such, we started
+to refer to other public data sources that could help us gain a better
+understanding of potential network disruptions in countries where internet
+blackouts were reported by locals.</p><p>In this post we outline some <em>basics</em> from our methodology when examining internet
+blackouts through public data sources.</p><h1 id=identifying-data-sources>Identifying data sources</h1><p>Our main criterion for identifying data sources that can help shed light on
+network disruptions is that they collect and publish a <strong>large volume of internet
+traffic</strong> from as many countries around the world as possible (including, of
+course, the country where an internet blackout has been reported), or that they
+provide insight into the <strong>routing</strong> within networks.</p><p>Some public data sources, such as <a href="https://www.google.com/transparencyreport/traffic/?hl=en#expand=CG">Google Transparency Reports</a>,
+provide data with large volumes of internet traffic because they are produced by
+companies offering internet services used by large populations across many
+countries around the world. Other data sources, such as <a href=https://www.measurementlab.net/tools/ndt/>NDT measurements</a>, publish data collected
+from probes monitoring network performance globally. And other data sources,
+like <a href=https://metrics.torproject.org/>Tor Metrics</a>, publish daily measurements
+from around the world pertaining to the use of particular software.</p><p>Data sources that provide insight into the potential routing within networks can
+also be useful when examining internet blackouts. BGP data aggregated by
+<a href=https://www.ripe.net/>RIPE</a>, for example, enables us to monitor routing
+information for the country in question and to examine whether it has been
+disconnected from the internet.</p><p>In short, some public data sources that we refer to when examining internet
+blackouts include the following:</p><ul><li><p><a href="https://www.google.com/transparencyreport/traffic/?hl=en#expand=CG">Google Product Traffic</a> data (via Google Transparency Reports)</p></li><li><p><a href=https://www.measurementlab.net/tools/ndt/>NDT measurement</a> data (via <a href=https://www.measurementlab.net/>M-Lab</a>)</p></li><li><p><a href=https://www.ripe.net/>RIPE</a> data (including public measurements and BGP announcement data)</p></li><li><p><a href=http://store.steampowered.com/stats/>Steam stats</a></p></li><li><p><a href=https://metrics.torproject.org/>Tor Metrics</a> data (which is specific to the use of <a href=https://www.torproject.org/>tor software</a>)</p></li><li><p><a href=http://www.routeviews.org/>Route Views Project</a> BGP announcement data archive</p></li><li><p>Center for Applied Internet Data Analysis (CAIDA): <a href=http://www.caida.org/projects/ioda/>Internet Outage Detection and Analysis (IODA)</a></p></li><li><p>Dyn Research: <a href=http://b2b.renesys.com/eventsbulletin/>Outages Bulletin</a></p></li><li><p>Internet-Wide Scan Data Repository: <a href=https://scans.io/study/washington-dns>Longterm DNS survey</a></p></li></ul><p>The above list is not exhaustive and the listed data sources present various
+limitations. <a href=https://www.measurementlab.net/tools/ndt/>NDT measurement data</a>,
+for example, is limited by the amount of probes deployed which may not include
+equal coverage across countries around the world, while <a href="https://www.google.com/transparencyreport/traffic/?hl=en#expand=CG">Google traffic data</a> is
+limited by the amount of users Google has in each country of question. Such data
+sources, however, can potentially help gain insight into the volume of internet
+traffic originating from various countries around the world through further
+examination.</p><h1 id=examining-data-sources>Examining data sources</h1><p>Most public data sources (as listed in the previous section) allow us to select
+a country and to observe the flow of internet traffic originating from it across
+time. If a country-wide internet blackout has occurred, we would expect to see
+almost no internet traffic origination from a country during the reported period
+of a blackout. This, for example, was evident in Ethiopia in August 2016, when
+an internet blackout was <a href=http://www.bbc.com/news/world-africa-36940906>reported</a> in the middle of political protests.</p><p>The graph below, taken from <a href="https://www.google.com/transparencyreport/traffic/?hl=en#expand=CG">Google traffic data</a>,
+clearly illustrates that no internet traffic was originating from Ethiopia
+between 6th to 8th August, confirming that an internet blackout occurred.</p><p><img src=/post/ethiopia-internet-shutdown-amidst-recent-protests/ethiopia-google-traffic.png alt="Ethiopia google traffic"></p><p>Similarly, <a href="https://www.google.com/transparencyreport/traffic/explorer/?r=GM&amp;l=WEBSEARCH&amp;csd=1479483000000&amp;ced=1480692600000">Google traffic data</a> in the graph
+below shows a clear disruption of internet traffic originating from the Gambia
+between 30th November to 2nd December, when an internet blackout was
+<a href=https://ooni.org/post/gambia-internet-shutdown/>reported</a> during
+the country’s 2016 presidential election.</p><p><img src=/post/gambia-shutdown/gambia-03.png alt="Twitter post"></p><p>In addition to Google traffic data, it’s also particularly useful to look at BGP
+announcement data aggregated by RIPE from different <a href=https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/faq-ris/what-is-a-remote-route-collector-rrc>Remote Route Collectors (RRT)</a> and to examine whether
+a country’s prefixes are withdrawn when an internet blackout is being reported.
+In the Gambia, for example, such data allowed us to monitor the withdrawal and
+announcement of Gambian prefixes during the country’s 2016 presidential
+election. In fact, Gambian prefixes were
+<a href=https://ooni.org/post/gambia-internet-shutdown/>withdrawn</a> between
+30th November to 2nd December, which is consistent with the hypothesis that the
+internet blackout occurred during that period, as inferred through <a href="https://www.google.com/transparencyreport/traffic/explorer/?r=GM&amp;l=WEBSEARCH&amp;csd=1479483000000&amp;ced=1480692600000">Google traffic data</a>.</p><p>OONI has been working on a methodology to automatically identify and
+investigate cases of internet blackouts. So for this is something very
+experimental and will require more work to have it be production ready.</p><p>This <a href=/notebooks/internet-blackouts-google-traffic.ipynb>ipython notebook</a> (<a href=/notebooks/internet-blackouts-google-traffic.html>view</a>)
+contains some of the results of the experiments we have been doing.
+The same methodology can easily be applied to other datasets other than the
+Google traffic data. It would have been useful, and much easier, if Google
+Transparency Reports provided an easy to use HTTP API for obtaining the data.</p><h1 id=cross-referencing-data-sources>Cross-referencing data sources</h1><p>Internet blackout might not always occur across all networks on a country-wide
+level. A government, for example, may order ISPs to shut down the internet only
+in a specific location where a protest is taking place, while keeping the
+internet accessible in the rest of the country. In such a case, it’s probably
+unlikely that Google traffic data would show a complete disruption as
+illustrated in the graphs of the previous section, but would rather show a
+general decrease in traffic data in comparison to previous dates. As such,
+cross-referencing data sources as part of an examination of internet blackout
+can be a useful next step.</p><p>One way of doing so is by looking at both <a href="https://www.google.com/transparencyreport/traffic/?hl=en#expand=CG">Google traffic data</a> and
+<a href=https://metrics.torproject.org/>Tor Metrics</a> for a particular country during
+the same period of time. It’s unlikely, for example, that there would be a total
+internet blackout if there is normal usage of the <a href=https://www.torproject.org/>Tor network</a> during a reported blackout. If, however,
+there is a spike in Tor usage and Google traffic data is significantly decreased
+in comparison to previous dates, then it might be the case that censorship
+events are occurring in certain networks, leading to the increased usage of
+censorship circumvention software.</p><p>This is illustrated through the example below where we can see decreased Google
+traffic data and <a href="https://metrics.torproject.org/userstats-relay-country.html?start=2016-08-06&amp;end=2016-11-04&amp;country=et&amp;events=off">increased usage of Tor software</a> in Ethiopia
+in October 2016.</p><p><img src=/post/ethiopia-report/et-01.png alt="Google data"></p><p><img src=/post/ethiopia-report/et-03.png alt="Tor metrics"></p><p>When cross-referencing data sources, it might also be useful to look at the
+geotagging of posts on social media platforms, such as Twitter. Unlike the
+aforementioned public data sources (e.g. Google transparency reports) which show
+an overview of traffic originating from a country, the geotags on posts allow us
+to drill down to a specific region or city in a country (if the geotags are
+accurate). This is particularly useful if, for example, locals are reporting a
+blackout in a country, Google traffic data does not show a clear blackout, but
+you’re interested in examining whether the approximate internet activity
+originating from a specific city or region has been disrupted.</p><p>This process involves:</p><ul><li><p>Collecting all of the posts of a social media platform (e.g. via Twitter’s API)
+that are geotagged with the region that you are interested in;</p></li><li><p>Calculating the approximate amount of geotagged posts within the time range that
+you are interested in;</p></li><li><p>Evaluating whether there is a significant decrease of geotagged posts on the
+specific dates of a reported internet blackout.</p></li></ul><p>This is illustrated through the graph below that we
+<a href=https://ooni.org/post/ethiopia-internet-shutdown-amidst-recent-protests/>created</a> based on tweets geotagged in Ethiopia between 3rd-9th August
+2016, indicating a decrease of Twitter activity in the country on 7th August
+2016 when an internet blackout was reported in the country.</p><p><img src=/post/ethiopia-internet-shutdown-amidst-recent-protests/ethiopia-tweets.png alt="Ethiopia Tweets"></p><p>However, such data should probably only be used supplementary when cross-
+referencing data sources, since it is subject to various limitations (for
+example, Twitter users in a country might be inactive due to reasons unrelated
+to an internet blackout).</p><h1 id=conclusion>Conclusion</h1><p>Unless all data sources that you refer to show absolutely no internet traffic
+originating from a country or the prefixes within a country are completely
+withdrawn, it’s hard to reach an accurate conclusion on whether an internet
+blackout has occurred or not.</p><p>Nonetheless, the publicly available data sources mentioned in this post can help
+gain some insight into the flow of internet traffic in most countries around the
+world, and they can help provide <em>signs</em> of internet blackout.</p><p>We encourage more companies (such as <a href=https://www.akamai.com/>Akamai</a>,
+<a href=https://www.cloudflare.com/>CloudFlare</a> and <a href=https://www.fastly.com/>Fastly</a>)
+to publish data on network traffic originating from countries to help increase
+transparency when heavy network disruptions occur. We also encourage you all to
+support Access Now’s <a href=https://www.accessnow.org/keepiton/>#KeepItOn campaign</a>
+for a stable and open internet around the world.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

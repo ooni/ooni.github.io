@@ -1,0 +1,519 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Investigating Internet shutdowns through Mozilla telemetry | OONI</title>
+<link rel=canonical href=https://ooni.org/post/2021-investigating-internet-shutdowns-mozilla-telemetry/><meta name=description content="This report shares findings from analyzing Mozilla telemetry to investigate Internet connectivity shutdowns in Myanmar, Uganda, Belarus, and Iran."><meta property="og:title" content="Investigating Internet shutdowns through Mozilla telemetry"><meta property="og:description" content="This report shares findings from analyzing Mozilla telemetry to investigate Internet connectivity shutdowns in Myanmar, Uganda, Belarus, and Iran."><meta property="og:type" content="article"><meta property="og:url" content="/post/2021-investigating-internet-shutdowns-mozilla-telemetry/"><meta property="og:image" content="/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/01.png"><meta property="article:published_time" content="2021-11-08T00:00:00+00:00"><meta property="article:modified_time" content="2021-11-08T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/01.png"><meta name=twitter:title content="Investigating Internet shutdowns through Mozilla telemetry"><meta name=twitter:description content="This report shares findings from analyzing Mozilla telemetry to investigate Internet connectivity shutdowns in Myanmar, Uganda, Belarus, and Iran."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Investigating Internet shutdowns through Mozilla telemetry</h1><div class=byline><span class=author>Arturo Filastò (OONI), Maria Xynou (OONI), Ramakrishna Padmanabhan (IODA), Alberto Dainotti (IODA)</span>
+<span class=date>2021-11-08</span></div><p>More than <a href=https://data.firefox.com/dashboard/user-activity>200 million users</a> worldwide use
+the <a href=https://www.mozilla.org/en-US/firefox/new/>Firefox</a> web browser
+(developed by Mozilla) every month.</p><p>If access to the Internet is shut down in a country, Mozilla should
+expect to see a dramatic drop in Firefox usage from that country. Given
+how <a href=https://data.firefox.com/dashboard/user-activity>widespread</a> the
+use of Firefox is around the world, could Mozilla telemetry be a
+valuable resource for the Internet freedom community to investigate
+Internet shutdowns?</p><p>To explore this question, the <a href=https://ooni.org/>Open Observatory of Network Interference (OONI)</a> and <a href=https://ioda.caida.org/>Internet Outage Detection and Analysis (IODA)</a> teams joined forces to analyze a
+dataset of potential outage signals gathered through regular Mozilla
+telemetry, access to which was provided by Mozilla as part of a relevant
+research project to validate assumptions about the data.</p><p>In this report, we share our findings from analyzing Mozilla telemetry
+to investigate Internet connectivity shutdowns in
+<a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/>Myanmar</a>,
+<a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/>Uganda</a>,
+<a href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/>Belarus</a>,
+and <a href=https://ioda.caida.org/ioda/2020-iran-report>Iran</a>.</p><p>Our analysis demonstrates that Mozilla telemetry is not only a valuable
+resource for investigating Internet connectivity shutdowns worldwide,
+but that it also provides novel insights. We share recommendations
+for improving the research use of Mozilla telemetry.</p><ul><li><p><a href=#introduction>Introduction</a></p></li><li><p><a href=#methods>Methods</a></p><ul><li><p><a href=#case-studies>Case studies</a></p></li><li><p><a href=#analysis-of-mozilla-telemetry>Analysis of Mozilla telemetry</a></p><ul><li><a href=#limitations>Limitations</a></li></ul></li><li><p><a href=#comparison-of-mozilla-telemetry-with-other-public-datasets>Comparison of Mozilla telemetry with other public datasets</a></p></li></ul></li><li><p><a href=#investigating-internet-shutdowns>Investigating Internet shutdowns</a></p><ul><li><p><a href=#myanmar>Myanmar</a></p></li><li><p><a href=#uganda>Uganda</a></p></li><li><p><a href=#belarus>Belarus</a></p></li><li><p><a href=#iran>Iran</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p><ul><li><a href=#recommendations>Recommendations</a></li></ul></li><li><p><a href=#acknowledgements>Acknowledgements</a></p></li></ul><h1 id=introduction>Introduction</h1><p>How can we verify that access to the Internet has (intentionally or
+unintentionally) been shut down in a country? We often hear of Internet
+shutdowns occurring worldwide from media reports and <a href=https://www.accessnow.org/keepiton/>advocacy campaigns</a>, but which data sources
+can we refer to?</p><p>There are a number of public datasets that shed light on whether access
+to the Internet has been shut down in a country. Some of these datasets
+(such as <a href=https://ioda.caida.org/ioda/dashboard>IODA</a>) are
+specifically designed to measure Internet outages, but you can also
+potentially
+<a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/#social-media>infer</a>
+the presence of Internet shutdowns through the <em>absence</em> of data from
+other Internet-wide measurement datasets (such as <a href=https://www.ripe.net/manage-ips-and-asns/db>RIPE data</a>, <a href=https://www.measurementlab.net/data/>M-Lab data</a> and, in some cases, <a href=https://ooni.org/data/>OONI data</a>). If an Internet-wide measurement dataset
+contains a stable volume of data from a specific network over a long
+period of time, a drop in volume of data could potentially signal the
+absence of Internet connectivity.</p><p><a href=https://metrics.torproject.org/>Tor Metrics</a> show the number of
+directly connecting <a href=https://www.torproject.org/>Tor</a> users from a
+given country. Similarly, the <a href=https://psix.ca/>Psiphon Data Engine</a>
+shares the number of daily <a href=https://psiphon.ca/>Psiphon</a> users from
+each country. If the number of Tor or Psiphon users drops dramatically
+to almost no users, that may be a signal that the country in question is
+experiencing an Internet shutdown (since Internet connectivity is
+required to use Tor and Psiphon). But in the case of Tor and Psiphon
+(which are censorship circumvention tools), a drop in their usage may
+also be the result of their blocking (as governments tend to block
+circumvention tools in an attempt to prevent censorship circumvention),
+rather than a country-wide Internet connectivity shutdown.</p><p>This highlights the need to check whether drops in Internet connectivity
+signals are present in <em>multiple independent datasets</em> for the same
+country, during the same time period. It also suggests that it’s useful
+to check <em>Internet traffic towards popular services</em>, which governments
+are less likely to shut down.</p><p>As Google services are widely used in most countries, <a href=https://transparencyreport.google.com/traffic/overview>Google traffic data</a> (which
+illustrates the volume of Internet traffic towards Google products and
+services) is a great example of this. A significant drop in Google
+traffic (in comparison to previous levels in that country) often
+<a href=https://ooni.org/post/2019-iran-internet-blackout/#other-data-sources>provides a signal of an Internet connectivity shutdown</a>
+(as Internet access is required to use Google products and services).
+However, Google currently publishes its datasets aggregated at the
+granularity of entire countries, precluding the ability to detect
+Internet connectivity shutdowns that target a specific sub-national
+region or a network within a country.</p><p>With <a href=https://data.firefox.com/dashboard/user-activity>more than 200 million users</a> worldwide
+every month, can Mozilla telemetry &ndash; gathered only from Firefox web
+browser users who have data reporting enabled &ndash; be another useful
+source for investigating and potentially corroborating Internet
+connectivity shutdowns worldwide?</p><p>To evaluate this question, Mozilla provided us access to <a href=https://github.com/mozilla/bigquery-etl/blob/main/sql/moz-fx-data-shared-prod/internet_outages/global_outages_v1/metadata.yaml>specific aggregated data points</a>
+(which did <em>not</em> contain any personal information) about network
+activity from Firefox telemetry in a dataset which spans from January
+2020 to date.</p><p>We selected 4 case studies based on countries
+(<a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/>Myanmar</a>,
+<a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/>Uganda</a>,
+<a href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/>Belarus</a>,
+<a href=https://ioda.caida.org/ioda/2020-iran-report>Iran</a>) where Internet
+shutdowns are known to have occurred (based on public datasets and
+reports) from January 2020 onwards (the starting date of Mozilla
+telemetry that we have access to).</p><p>Ultimately, with this study we aim to evaluate how useful Mozilla
+telemetry is for the Internet freedom community in researching Internet
+connectivity shutdown events worldwide.</p><p><strong>Note:</strong> We use the terms “outages” and “shutdowns” interchangeably to
+refer to the complete disruption of Internet connectivity. The partial
+shutdown of specific Internet services (such as the blocking of apps) is
+out of scope in this study because Mozilla telemetry does not involve
+such tests.</p><h1 id=methods>Methods</h1><p>To evaluate whether Mozilla telemetry can be helpful in examining
+Internet connectivity shutdowns, we:</p><ul><li><p><strong>Selected case studies.</strong> The case studies were chosen based on
+countries that are known to have experienced Internet connectivity
+shutdowns within the Mozilla telemetry date range that we have
+access to (from January 2020 to date).</p></li><li><p><strong>Analyzed Mozilla telemetry.</strong> Our analysis involved the 4
+countries (Myanmar, Uganda, Belarus, Iran) that we selected as
+case studies.</p></li><li><p><strong>Compared Mozilla telemetry with other public datasets.</strong> We
+compared public data (such as <a href=https://ioda.caida.org/ioda/dashboard>IODA</a> and <a href=https://transparencyreport.google.com/traffic/overview>Google traffic data</a>)
+with Mozilla telemetry on the selected case studies.</p></li></ul><p>Based on this comparison, our goal was to explore whether it is possible
+to observe signals of Internet connectivity shutdowns through Mozilla
+telemetry within the date ranges of selected case studies. We also aimed
+to understand the potential strengths and limitations of Mozilla
+telemetry in examining Internet connectivity shutdowns.</p><h2 id=case-studies>Case studies</h2><p>We selected case studies to explore whether signals of Internet
+connectivity outages are visible in Mozilla telemetry.</p><p>Our criteria for selecting these case studies include:</p><ul><li><p><strong>Date range of Mozilla telemetry.</strong> The date range of Mozilla
+telemetry that we have access to spans from January 2020 to date.
+We therefore needed to select cases of Internet outages that
+occurred from January 2020 onwards.</p></li><li><p><strong>Countries that are known to have experienced Internet connectivity
+shutdowns from January 2020 onwards.</strong> To compare Mozilla
+telemetry with other public data sources, we selected countries
+that are known to have experienced Internet connectivity shutdowns
+(based on media reports and signals from relevant public datasets)
+during the Mozilla telemetry date range.</p></li><li><p><strong>Internet connectivity shutdown cases that occurred during
+political events.</strong> When access to the Internet is shut down
+during a political event (such as elections or protests), it is
+possible that such a shutdown was <em>intentional</em> and that its
+timing had a larger public impact. It is therefore important to
+monitor such shutdown events (which are more relevant from a
+socio-political perspective) and to evaluate whether they are
+visible through Mozilla telemetry.</p></li><li><p><strong>Internet connectivity shutdowns previously reported by OONI and/or
+IODA.</strong> We further narrowed our case study selection to Internet
+shutdown events that OONI and/or IODA had already
+<a href=https://ooni.org/reports/>reported</a> on from January 2020
+onwards. Having previously performed relevant analysis and
+published reports, such case studies enabled us to have a more
+in-depth understanding, facilitating more accurate comparison with
+Mozilla telemetry. However, we acknowledge our bias in our case
+study selection.</p></li></ul><p>Based on these criteria, we selected the following case studies:</p><ol><li><p><strong>Myanmar.</strong> We examine two <a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#ongoing-nightly-outages>Internet outages</a>
+that occurred following the February 2021 military coup.</p></li><li><p><strong>Uganda.</strong> We examine the <a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/#internet-outage-amid-2021-general-election>4-day nationwide Internet outage</a>
+amid its January 2021 general election.</p></li><li><p><strong>Belarus.</strong> We examine the <a href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/#internet-outages-amid-2020-belarusian-presidential-election>Internet outages amid its 2020 presidential election</a>.</p></li><li><p><strong>Iran.</strong> We examine two <a href=https://ioda.caida.org/ioda/2020-iran-report>Internet outages in March 2020</a> following its
+February 2020 legislative election.</p></li></ol><h2 id=analysis-of-mozilla-telemetry>Analysis of Mozilla telemetry</h2><p>For the purpose of this research, Mozilla provided us access to an
+<a href=https://github.com/mozilla/bigquery-etl/blob/main/sql/moz-fx-data-shared-prod/internet_outages/global_outages_v1/metadata.yaml>aggregated dataset</a>
+of network activity based on Firefox web browser usage worldwide. This
+telemetry dataset spans from January 2020 to date.</p><p><a href=https://github.com/mozilla/bigquery-etl/blob/main/sql/moz-fx-data-shared-prod/internet_outages/global_outages_v1/metadata.yaml>Mozilla telemetry data</a>
+is only collected from
+<a href=https://www.mozilla.org/en-US/firefox/new/>Firefox</a> browser users
+who have data reporting enabled, reporting information on certain
+networking related metadata when browsing the web. As such, Mozilla
+telemetry provides a representation of the user experience when
+accessing the web. This telemetry has been aggregated to build privacy
+protections in the data.</p><p>The telemetry dataset which has been made available to us is an
+aggregate of pings sent by Firefox clients.</p><p>A row of the data looks something like this:</p><pre tabindex=0><code>country,city,datetime,proportion_undefined,proportion_timeout,proportion_abort,proportion_unreachable,proportion_terminated,proportion_channel_open,avg_dns_success_time,missing_dns_success,avg_dns_failure_time,missing_dns_failure,count_dns_failure,ssl_error_prop,avg_tls_handshake_time
+</code></pre><p>Each row represents the various aggregate metrics (percentage of
+failures, timing information, counts) over a window of 1 hour in a
+specific country or city. The aggregation is performed on an hourly
+basis, but cities which have less than or equal to 50 hourly active
+users are filtered out.</p><p>To analyze Mozilla telemetry as part of this study, we queried the
+dataset based on the 4 countries that we selected as case studies. For
+each country, we queried the dataset based on the date range(s) of the
+Internet shutdown events (selected as part of the case studies). We then
+checked whether we could observe a drop in metrics or a complete absence
+of metrics within that date range (in comparison to previous levels
+before and after the Internet shutdown event), which could provide a
+signal of a potential Internet outage. We also checked whether we could
+observe a spike in connection timeouts (or other errors), which could
+signal a disruption in Internet connectivity (in cases where the
+Internet shutdown does not affect all networks in a country).</p><p>Based on our analysis of Mozilla telemetry, we produced relevant charts,
+which we share in the Findings section below.</p><h3 id=limitations>Limitations</h3><p>The Mozilla dataset provides location granularity in terms of
+<code>country</code> and <code>city</code>, which is very useful for potentially detecting
+localized Internet outages that only affect specific cities or regions
+(such as the <a href=https://internetshutdowns.in/>Internet shutdowns in Jammu and Kashmir</a>). However, it does not provide
+<a href=https://ooni.org/support/glossary/#asn>Autonomous System Number (ASN)</a> level information, which
+is essential for identifying the specific AS network that is impacted by
+an Internet outage. In Iran, for example, we observed <a href=https://ooni.org/post/2019-iran-internet-blackout/#network-level-differences>network-level differences</a>
+during the nationwide Internet shutdown in November 2019. The absence of
+ASN information in Mozilla telemetry therefore presents a limitation in
+detecting Internet shutdowns that only occur on certain networks.</p><p>The <code>datetime</code> column in Mozilla telemetry indicates when the metric
+was submitted to Mozilla’s telemetry backend, but <em>not</em> the time in
+which that particular metric was computed on the client. As clients will
+store and attempt to re-transmit the metrics at a later stage, these two
+times can vary quite dramatically during an Internet outage event. This
+therefore presents a limitation in evaluating the correct timing of a
+metric.</p><p>As part of this study, the primary metric we used for detecting an
+outage event is the number of distinct locations that are able to submit
+telemetry data to Mozilla servers. But when looking at other metrics,
+such as the average percentage of connection timeouts, the exact timing
+of when these metrics were recorded is quite unclear. Moreover, Mozilla
+telemetry is aggregated on an hourly basis, which presents the risk of
+missing short-lived Internet connectivity shutdowns (which last less
+than an hour).</p><p>Given that Mozilla telemetry is aggregated and doesn’t contain
+information on the testing of endpoints, we cannot use it to examine the
+blocking of specific Internet services (and, therefore, cannot compare
+it against <a href=https://ooni.org/data/>OONI measurement data</a>). Rather,
+Mozilla telemetry is more useful for examining Internet connectivity
+shutdowns by checking whether a dramatic drop or absence of metrics is
+visible during a reported Internet shutdown event.</p><h2 id=comparison-of-mozilla-telemetry-with-other-public-datasets>Comparison of Mozilla telemetry with other public datasets</h2><p><a href=https://ooni.org/support/glossary/#false-positive>False positives</a>
+can occur (particularly in Internet measurement data), and datasets
+usually present limitations.</p><p><a href=https://ioda.caida.org/ioda/dashboard>IODA</a> signals, for example,
+may miss certain Internet outages (particularly if they only affect
+cellular networks), while <a href=https://transparencyreport.google.com/traffic/overview>Google traffic data</a> may not
+reflect Internet outages that only impact certain networks or regions.
+Mozilla telemetry shares city-level granularity (which
+<a href=https://ioda.caida.org/ioda/dashboard>IODA</a> does not), but does not
+provide network-level granularity (which
+<a href=https://ioda.caida.org/ioda/dashboard>IODA</a> does). The absence (or
+dramatic drop) of <a href=https://metrics.torproject.org/>Tor</a> or
+<a href=https://psix.ca/>Psiphon</a> metrics may signal the presence of an
+Internet outage, or that may be the result of those tools being blocked
+in the specific country.</p><p>In short, it is necessary to adopt a more holistic approach, examining
+potential Internet connectivity shutdowns through the <em>comparison of
+relevant datasets</em>.</p><p>We therefore compared Mozilla telemetry with other public datasets for
+the selected case studies of this research. Based on the analysis of
+Mozilla telemetry, we checked whether we could observe a significant
+drop in metrics or a complete absence of metrics within the date range
+of a selected case study, in comparison to metrics for the same country
+and date range in other public datasets (such as
+<a href=https://ioda.caida.org/ioda/dashboard>IODA</a> and <a href=https://transparencyreport.google.com/traffic/overview>Google traffic data</a>).</p><p>Our hypothesis is that if we observe a similar drop or absence of
+metrics in Mozilla telemetry in comparison to other relevant public
+datasets (for the same country and date range), Mozilla telemetry can be
+a useful data source for examining Internet connectivity shutdowns.
+However, if we do not observe a significant drop or absence of metrics
+in Mozilla telemetry, that may reflect limitations to the dataset,
+and/or suggest that the Internet outage in question did not have a large
+impact (if Firefox clients were still able to submit metrics). The
+hourly granularity of Mozilla telemetry (as opposed to being near
+real-time) may also present the risk of short-term outages (that last
+less than 1 hour) not being recorded.</p><h1 id=investigating-internet-shutdowns>Investigating Internet shutdowns</h1><p>To evaluate whether Mozilla telemetry can be useful in investigating
+Internet connectivity shutdowns, we analyzed Mozilla telemetry and
+compared it against relevant public datasets involving 4
+country-specific case studies in
+<a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/>Myanmar</a>,
+<a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/>Uganda</a>,
+<a href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/>Belarus</a>,
+and <a href=https://ioda.caida.org/ioda/2020-iran-report>Iran</a>.</p><p>We share our analysis and findings in the sections below.</p><h2 id=myanmar>Myanmar</h2><p>On 1st February 2021, the military in Myanmar carried out a <a href=https://www.bbc.com/news/world-asia-55882489>coup d’etat</a>, seizing power
+and detaining the country’s State Counsellor (equivalent to a prime
+minister) and other democratically elected leaders. On the same night,
+IODA data
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1612051200&amp;until=1612224000">suggests</a>
+that an Internet outage occurred.</p><p>As we can see from the chart below, IODA illustrates a drop in both
+Active Probing and BGP signals.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/01.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/01_hu61f807754ebd3eef919b72aacdc88e63_86496_1000x800_fit_box_3.png title="IODA signals in Myanmar" alt="IODA signals in Myanmar"></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), IODA Signals
+for Myanmar, <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1612051200&amp;until=1612224000">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1612051200&amp;until=1612224000</a></p><p>When looking closer at the outage, we can see that it <a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#outage-on-1st-february-2021>does not appear to affect all networks in the same way</a>.
+Some networks experienced almost complete loss of Internet connectivity,
+while others appear to have only experienced small outages.</p><p>For the purpose of confirming the outage, we looked at the number of
+datapoints present in Mozilla telemetry data and searched for “holes” in
+the data. A “hole” is when no clients are able to report back any data
+to Mozilla telemetry servers.</p><p>When comparing IODA signals (from the Internet outage in Myanmar on 1st
+February 2021) to Mozilla telemetry data, we can see that the outage is
+<em>not</em> very visible in the overall metrics count chart (which looks at
+how many locations in a given hour were able to report back metrics to
+the telemetry server).</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/02.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/02_hu25f9221e21e7cd7fdaa60777d16aa9c4_145362_1000x800_fit_box_3.png title="Mozilla telemetry from Myanmar" alt="Mozilla telemetry from Myanmar"></a></div><p><strong>Source:</strong> Mozilla telemetry data from Myanmar (24th January 2021 to
+11th February 2021): Custom overall metrics count chart.</p><p>But when looking at Mozilla’s metric on “Average Proportion Timeout”, we
+notice a spike in the percentage of connections which timeout.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/03.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/03_hu93f558cb5c8257219cc17cb2d3ed278f_94616_1000x800_fit_box_3.png title="Mozilla telemetry from Myanmar" alt="Mozilla telemetry from Myanmar"></a></div><p><strong>Source:</strong> Mozilla telemetry data from Myanmar (January 2021 to
+February 2021): Custom chart on Average Proportion Timeout.</p><p>The spike in connection timeouts (as illustrated in the above chart)
+could potentially provide a signal of an Internet disruption. However,
+this data is presented with a lag because the timestamp of Mozilla
+telemetry is based on data submission, rather than on the timing of the
+measurement being performed.</p><p>Yet, the fact that there is not a complete absence of data seems to
+indicate that this outage only affected a <em>subset</em> of all networks in
+the country, as several clients were still able to submit metrics during
+the period of the outage. IODA data appears to corroborate this
+hypothesis, as it
+<a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#outage-on-1st-february-2021>shows</a>
+that not all AS networks in Myanmar were impacted by the Internet
+outage.</p><p>When a <a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#outage-on-6th-february-2021>second Internet outage</a>
+occurred in Myanmar a few days later (on 6th February 2021), Mozilla
+telemetry provided a strong signal as we observe the <em>complete absence</em>
+of metrics during that period.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/04.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/04_hu563f4f3dccc6b9791782b2f3194a7949_207873_1000x800_fit_box_3.png title="Mozilla telemetry from Myanmar" alt="Mozilla telemetry from Myanmar"></a></div><p><strong>Source:</strong> Mozilla telemetry data from Myanmar (February 2021): Custom
+chart showing the absence of Mozilla telemetry on 6th February 2021.</p><p>As we can see from the above chart, starting from 6th February 2021 at
+06:00 UTC until 7th February 2021 at 07:00 UTC, there is a complete
+absence of data points, strongly suggesting that an Internet
+connectivity shutdown event occurred. Compared to the first Internet
+outage on 1st February 2021 (during which some network connectivity was
+still present), this second outage (on 6th February 2021) was much more
+severe and pervasive, as no Mozilla telemetry clients were able to
+report back any data.</p><p>The severity of the second Internet outage on 6th February 2021 is also
+illustrated in <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1612310400&amp;until=1612915200">IODA data</a>
+(below), which
+<a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#outage-on-6th-february-2021>shows</a>
+a major drop in both Active Probing and IBR signals, as well as a drop
+in the BGP signal correlating in time with the drop in the other
+signals. This strongly suggests that Myanmar experienced a widespread
+internet outage, corroborating the signal seen previously in Mozilla
+telemetry.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/05.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/05_hu63d31e282a74a4da118462c471a92fbb_86013_1000x800_fit_box_3.png title="IODA data from Myanmar" alt="IODA data from Myanmar"></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), IODA Signals
+for Myanmar, <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1612310400&amp;until=1612915200">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1612310400&amp;until=1612915200</a></p><p>Similarly, <a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1612051200000;end:1612915199999;product:19;region:MM&amp;lu=fraction_traffic">Google traffic data</a>
+very visibly shows that almost no Google traffic originated from Myanmar
+during the same time period, as illustrated below.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/06.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/06_hu9ddda59a6791a83f579d8e8a27711695_65020_1000x800_fit_box_3.png title="Google traffic data from Myanmar" alt="Google traffic data from Myanmar"></a></div><p><strong>Source:</strong> Google Transparency Report, Traffic and disruptions to
+Google: Myanmar (February 2021), <a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1612051200000;end:1612915199999;product:19;region:MM&amp;lu=fraction_traffic">https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1612051200000;end:1612915199999;product:19;region:MM&amp;lu=fraction_traffic</a></p><p>When comparing Mozilla telemetry, <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1612310400&amp;until=1612915200">IODA data</a>,
+and <a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1612051200000;end:1612915199999;product:19;region:MM&amp;lu=fraction_traffic">Google traffic data</a>,
+we observe absence of relevant metrics during the same time period in
+Myanmar. The Internet outage on 6th February 2021 is further indicated
+by the fact that we see the signals from all 3 datasets resume to their
+previous levels thereafter.</p><p>Overall, our comparison of Mozilla telemetry from Myanmar with other
+(relevant) public data sources shows that:</p><ul><li><p>High impact Internet connectivity shutdowns which affect all
+networks are visible through Mozilla telemetry (when access to the
+Internet is shut down completely and Firefox users cannot submit
+telemetry to Mozilla servers);</p></li><li><p>Lower impact Internet connectivity shutdowns which only affect
+certain networks are <em>not</em> visible through the overall Mozilla
+telemetry count, but can potentially be inferred if Mozilla
+metrics display a high percentage of connection timeouts.</p></li></ul><h2 id=uganda>Uganda</h2><p>On 13th January 2021, on the eve of Uganda’s 2021 general election, the
+country was <a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/#internet-outage-amid-2021-general-election>disconnected from the Internet entirely</a>.
+The nationwide Internet connectivity shutdown lasted for 4 days, with
+Internet access being restored on the morning of 18th January 2021.</p><p>In this case study, we compare Mozilla telemetry with
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">IODA</a>,
+the (now discontinued) Oracle Internet Intelligence map, <a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic">Google traffic data</a>,
+and <a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">Cloudflare radar data</a> to
+explore whether Uganda’s 4-day Internet connectivity shutdown is visible
+in Mozilla telemetry.</p><p>When looking at the metrics reported to Mozilla telemetry services, we
+can see that the last successfully submitted data points were on 13th
+January 2021 at 17:00 UTC. What follows is a complete lack of any data
+which is visible as a “hole” in the chart below.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/07.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/07_hucd763eb9ab30b65bf94d48576f56547c_163897_1000x800_fit_box_3.png title="Mozilla telemetry from Uganda" alt="Mozilla telemetry from Uganda"></a></div><p><strong>Source:</strong> Mozilla telemetry data from Uganda (January 2021): Custom
+chart showing the absence of Mozilla telemetry between 13th-18th January
+2021.</p><p>Starting from 18th January 2021 at 05:00 UTC, we can see that traffic
+towards Mozilla telemetry services resumes to previous levels. The
+complete absence of Mozilla telemetry between 17:00 UTC on 13th January
+2021 to 05:00 UTC on 18th January 2021 provides a strong indication that
+Uganda experienced a widespread Internet connectivity shutdown.</p><p>When we compare the above chart with <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">IODA data</a>,
+we can clearly see that the timing of the hypothesized Internet
+connectivity shutdown is quite consistent.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/08.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/08_huf891d9823f42ee0a3dda8d55d9236d63_118951_1000x800_fit_box_3.png title="IODA data from Uganda" alt="IODA data from Uganda"></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), IODA Signals
+for Uganda, <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>IODA data (above) shows a major drop in both Active Probing and IBR
+signals, starting at around 16:00 UTC on 13th January 2021, and lasting
+up until around 09:30 UTC on 18th January 2021. We also observe a drop
+in the BGP signal correlating in time with the drop in the other
+signals. As we see that all these signals resume to their previous
+levels on 18th January 2021, IODA data strongly indicates that Uganda
+experienced a widespread Internet outage.</p><p>The same drop in traffic between 13th to 18th January 2021 can be seen
+in data from Oracle Internet Intelligence (now discontinued), Google
+traffic data, and Cloudflare radar data, as illustrated through the
+following charts.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/09.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/09_hu672d7822e1ff915122e59852335225c4_70931_1000x800_fit_box_3.png title="Oracle Internet Intelligence data from Uganda" alt="Oracle Internet Intelligence data from Uganda"></a></div><p><strong>Source:</strong> Oracle Internet Intelligence Map, Uganda (January 2021), <a href="https://map.internetintel.oracle.com/?root=national&amp;country=UG">https://map.internetintel.oracle.com/?root=national&amp;country=UG</a>
+(the link no longer provides relevant data because the project has
+recently been discontinued)</p><p>Oracle’s Internet Intelligence Map (shared above) used to track internet
+disruptions worldwide based on three signals: Traceroute completion
+ratio, BGP routes, and DNS query rate. Between 13th to 18th January
+2021, Oracle’s Internet Intelligence Map (now discontinued) recorded
+almost identical timings in the drop of signals as <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">IODA data</a>.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/10.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/10_hufb1a60d8a2f0af0d08dda2ff8ee070b3_89640_1000x800_fit_box_3.png title="Google traffic data from Uganda" alt="Google traffic data from Uganda"></a></div><p><strong>Source:</strong> Google Transparency Report, Traffic and disruptions to
+Google: Uganda (January 2021), <a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic">https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic</a></p><p>Similarly, <a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic">Google traffic data</a>
+(above) shows a major drop in traffic between 13th to 18th January 2021,
+as almost no Google traffic originated from Uganda during this time
+period (but traffic resumed thereafter).</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/11.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/11_hu8cf020e0aa6cbf8610051ec03f036606_60335_1000x800_fit_box_3.png title="Cloudflare Radar data from Uganda" alt="Cloudflare Radar data from Uganda"></a></div><p><strong>Source:</strong> Cloudflare Radar, Change in Internet Traffic in Uganda
+(January 2021), <a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">https://radar.cloudflare.com/ug?date_filter=last_30_days</a>
+(it is currently only possible to filter CloudFlare Radar data up until
+30 days ago)</p><p>Uganda’s Internet connectivity shutdown is further corroborated by
+<a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">Cloudflare Radar data</a>, which
+also shows a major drop in traffic from Uganda between the evening of
+13th January 2021 to the morning of 18th January 2021.</p><p>Similarly to our previous case study on Myanmar, our comparison of
+Mozilla telemetry from Uganda with other (relevant) public data sources
+shows that high impact Internet connectivity shutdowns which affect all
+networks are visible through Mozilla telemetry (when access to the
+Internet is shut down completely and Firefox users cannot submit
+telemetry to Mozilla servers).</p><h2 id=belarus>Belarus</h2><p>Amid a <a href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/#2020-belarusian-presidential-election>controversial presidential election</a>,
+Belarus experienced several <a href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/#internet-outages-amid-2020-belarusian-presidential-election>Internet outages</a>
+between 8th to 17th August 2020, with the most heavy disruptions being
+noted between 9th to 12th August 2020.</p><p>In this case study, we compare Mozilla telemetry with IODA and Google
+traffic data from Belarus in August 2020.</p><p>Based on our analysis of Mozilla telemetry from Belarus, we have
+produced the following chart.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/12.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/12_hufc9c3d0639b26f1401c1741c1628e8b9_140715_1000x800_fit_box_3.png title="Mozilla telemetry from Belarus" alt="Mozilla telemetry from Belarus"></a></div><p><strong>Source:</strong> Mozilla telemetry data from Belarus (August 2020): Custom
+chart showing the drop in Mozilla telemetry between 9th-11th August
+2020.</p><p>By looking at Mozilla telemetry (above) from Belarus on the evening of
+9th August 2020, we can see that the number of locations submitting
+metrics starts dropping at around 17:00 UTC. This is followed by a
+complete absence of metrics until 10th August 2020 at 17:00 UTC.
+Thereafter, we can see that metrics start being submitted again for some
+hours until 20:00 UTC. After that there is another interruption in
+metric submission, until traffic appears to fully resume on 11th August
+2020 at 05:00 UTC.</p><p>The pattern observed in Mozilla telemetry data is consistent with what
+we see in the
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173">IODA</a>
+Active Probing and BGP feed data.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/13.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/13_hu966dc95080d624e6b42589ee69624c89_133491_1000x800_fit_box_3.png title="IODA data from Belarus" alt="IODA data from Belarus"></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA): Belarus
+(August 2020), <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173</a></p><p>The first two drops in the evening of 9th August 2020 (between around
+18:00 UTC to midnight UTC) and the evening of 10th August 2020 (between
+16:00 UTC to around midnight) lineup very well with what we see in
+Mozilla telemetry data. We do not, however, see the third drop in
+Mozilla telemetry data on the next day, 11th August 2020 (during the
+same time period).</p><p><a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic">Google traffic data</a>
+further supports these Internet disruptions, as illustrated below.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/14.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/14_hu0a2de76fb11575c61362ddbe11f9d5de_51373_1000x800_fit_box_3.png title="Google traffic data from Belarus" alt="Google traffic data from Belarus"></a></div><p><strong>Source:</strong> Google Transparency Reports: Traffic and disruptions to
+Google in Belarus (August 2020), <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic">https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic</a></p><p><a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic">Google traffic data</a>
+seems to be aligned with what is displayed in <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173">IODA data</a>,
+as we observe (in the above chart) 3 drops in Google traffic originating
+from Belarus between 9th to 12th August 2020.</p><p>In an attempt to further characterize the Internet outages in Belarus
+amid its 2020 presidential election, we tried to understand why Mozilla
+telemetry does not display the third Internet outage that both <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173">IODA data</a>
+and <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic">Google traffic data</a>
+display in the evening of 11th August 2020. To this end, we looked at
+the average proportion of timed out connections, as well as the average
+proportion of connections reporting the network as being unreachable.</p><p>Based on this analysis, we produced the following chart, which includes
+Mozilla telemetry from Belarus on both the average proportion of
+connection timeouts and the average proportion of unreachable
+connections.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/15.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/15_hucd5f965bde7a31cd5e5e63dea4cc0d3e_149874_1000x800_fit_box_3.png title="Mozilla telemetry from Belarus" alt="Mozilla telemetry from Belarus"></a></div><p><strong>Source:</strong> Mozilla telemetry data from Belarus (August 2020): Custom
+charts showing the average proportion of connection timeouts and the
+average proportion of unreachable connections.</p><p>Starting on 10th August 2020 (as illustrated above), we observe a spike
+in the average proportion of connections timing out. As some telemetry
+continued to be submitted during this period nonetheless, it may be
+indicative of an unreliable connection. The high rate of connection
+timeouts appears to persist until at least 23:00 UTC on 12th August
+2020, which is consistent with the duration of the outage observed in
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173">IODA</a>
+and <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic">Google traffic data</a>.</p><p>It is important to note though that the reported timestamps do not
+correspond to the exact time when the metric was collected, but to when
+the metric was submitted to Mozilla telemetry servers. A Mozilla metric
+may therefore refer to a prior period.</p><p>As for why we see this unusual pattern in Mozilla telemetry, we have the
+following observations and hypothesis. It could be that the outages were
+not “total”, but instead transitioned to being instances of throttling.
+Moreover, a partial outage may have resulted in certain users
+experiencing poor Internet connectivity for some time. It might be the
+case that one of the upstream ISPs for certain users was out and some
+backup routes had to be used.</p><p>The hypothesis of the upstream ISP going down and backup routes being
+used is suggested by the fact that we observe an increase in locations
+submitting telemetry data during the period of the outage, as
+illustrated below.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/16.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/16_hu5f6d865d4eff66e4a0ce30eaa4f03e7e_103053_1000x800_fit_box_3.png title="Mozilla telemetry from Belarus" alt="Mozilla telemetry from Belarus"></a></div><p><strong>Source:</strong> Mozilla telemetry data from Belarus (August 2020): Custom
+chart showing the submission of telemetry by region in Belarus.</p><p>As is evident through the above chart, there are certain locations that
+only appear to report Mozilla telemetry data during the period of the
+outage. This indicates that there might have been some reshaping of the
+network topology during the outage, leading to us to see users exit from
+different locations.</p><p>Overall, Mozilla telemetry provides a strong signal of the first two
+Internet outages (on 9th and 10th August 2020) in Belarus, similarly to
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173">IODA</a>
+and <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic">Google traffic data</a>.
+The third outage (on 11th August 2020), however, is not directly visible
+through Mozilla telemetry, but can potentially be inferred through the
+spike in connection timeouts and unreachable connections. The fact that
+we see an increase in such metrics from a variety of different locations
+in Belarus (possibly as a result of network topology reshaping) on 11th
+August 2020 adds to the overall Mozilla metric count, making it harder
+to spot an outage on that day (in comparison to previous days).</p><h2 id=iran>Iran</h2><p>Iran <a href=https://ioda.caida.org/ioda/2020-iran-report>experienced two Internet outages</a> in March 2020,
+following its February 2020 legislative election. The first occurred on
+3rd March 2020; it only lasted for about 1 hour, but it affected several
+networks. The second outage occurred on 11th March 2020, only lasting
+for 10 minutes, but also affecting several networks.</p><p>IODA data
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/IR&amp;lastView=overview&amp;from=1583179200&amp;until=1583208000">shows</a>
+that all 3 of its signals experienced a significant drop in Iran between
+around 00:50 UTC and 01:30 UTC on 3rd March 2020, as illustrated below.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/17.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/17_hu2bc0fb16f037680858e631ebc4e45edf_224215_1000x800_fit_box_3.png title="IODA data from Iran" alt="IODA data from Iran"></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA): Iran (March
+2020), <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/IR&amp;lastView=overview&amp;from=1583179200&amp;until=1583208000">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/IR&amp;lastView=overview&amp;from=1583179200&amp;until=1583208000</a></p><p>IODA <a href=https://ioda.caida.org/ioda/2020-iran-report#mar-3-2020>found</a>
+that several of the affected networks (including cellular networks) had
+outages that began nearly simultaneously (in contrast to <a href=https://ooni.org/post/2019-iran-internet-blackout/>Iran’s
+November 2019 nationwide Internet shutdown</a>), but the
+extent of the outages varied across providers. Interestingly, two large
+state-owned providers (Iran Telecom Co (AS58224) and ITC (AS12880)) only
+observed small outages, whereas some non-state-owned providers (such as
+Shatel (AS31549), Asiatech (AS43754), Mobin Net (AS50810), DATAK
+(AS25124)) observed outages that appeared to affect the entirety of
+their address-space.</p><p>A week later, on 11th March 2020, IODA
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/IR&amp;lastView=overview&amp;from=1583870400&amp;until=1583985600">showed</a>
+that Iran experienced a second, but shorter (in terms of duration)
+Internet outage. This outage affected multiple networks at approximately
+14:00 UTC and lasted less than 10 minutes.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/18.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/18_hue41c16390c08adbcdb9866e06ccdd408_98776_1000x800_fit_box_3.png title="IODA data from Iran" alt="IODA data from Iran"></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA): Iran (March
+2020), <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/IR&amp;lastView=overview&amp;from=1583870400&amp;until=1583985600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/IR&amp;lastView=overview&amp;from=1583870400&amp;until=1583985600</a></p><p>Similarly to the outage on 3rd March 2020, some large non-state-owned
+ASes appear to have experienced a <a href=https://ioda.caida.org/ioda/2020-iran-report#mar-11-2020>more severe outage</a>
+compared to state-owned ASes during the outage on 11th March 2020.</p><p>To explore whether these outages are visible in Mozilla telemetry, we
+analyzed their data and produced the following charts which display the
+number of distinct locations submitting metrics and average proportion
+of connection timeouts from Iran in March 2020.</p><div><a href=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/19.png><img src=/post/2021-investigating-internet-shutdowns-mozilla-telemetry/images/19_hu1ccd5b00cb20873faabde18c2e26ccf1_179805_1000x800_fit_box_3.png title="Mozilla telemetry from Iran" alt="Mozilla telemetry from Iran"></a></div><p><strong>Source:</strong> Mozilla telemetry data from Iran (February to March 2020):
+Custom charts showing the number of distinct locations submitting
+telemetry data and average proportion of connection timeouts from Iran.</p><p>However, as is evident from the above charts, we do not notice any
+visible drop in the number of locations submitting Mozilla telemetry
+data during the affected periods (3rd and 11th March 2020). This is
+likely due to the fact that Mozilla telemetry is aggregated on an hourly
+basis, therefore missing short-lived Internet outages that last less
+than an hour.</p><p>It’s interesting to note though that while we don’t notice any anomalies
+in the average proportion of connection timeouts during the first outage
+(3rd March 2020), there is a visible spike during the second outage
+(11th March 2020), even though it lasted far less (not even 10 minutes).
+The reason for this remains quite unclear to us. However, we theorize
+that it is possible that the second outage may have been caused by a
+DDoS attack that targeted a major upstream provider, resulting in
+increased latency (and therefore more connection timeouts). The first
+outage may have had some other cause which isn’t evident in Mozilla
+telemetry data.</p><p>It’s also worth mentioning that short-lived Internet shutdowns are
+commonly not seen in other datasets either. <a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1582934400000;end:1584316799999;product:19;region:IR&amp;lu=fraction_traffic">Google traffic
+data</a>,
+for example, does not present any significant signs of disruption in
+Iran during this period.</p><h1 id=conclusion>Conclusion</h1><p>Mozilla telemetry is very useful for examining Internet connectivity
+shutdowns.</p><p>Through the case studies of this research, we were able to detect strong
+signals in Mozilla telemetry on <strong>high impact Internet connectivity
+shutdowns</strong> (such as those observed in
+<a href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/#internet-outage-amid-2021-general-election>Uganda</a>
+and
+<a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#outage-on-6th-february-2021>Myanmar</a>
+earlier this year). In those cases, access to the Internet was shut down
+entirely. As a result, we observe a complete absence of Mozilla
+telemetry, strongly suggesting the presence of an Internet connectivity
+shutdown. If researchers observe the same absence of metrics (for the
+same country and date range) in other (relevant) public datasets as well
+(such as <a href=https://ioda.caida.org/ioda/dashboard>IODA</a> and <a href=https://transparencyreport.google.com/traffic/overview>Google
+traffic data</a>),
+they have greater confidence in confirming an Internet shutdown event.</p><p>We were also able to observe lower impact Internet shutdowns through the
+analysis of Mozilla telemetry. In
+<a href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/#internet-outages-amid-2020-belarusian-presidential-election>Belarus</a>,
+for example, the drop in Mozilla metrics on 9th and 10th August 2020
+(amid the presidential election) provided a signal of Internet
+disruptions, which we corroborated with other public datasets. However,
+a third Internet disruption (on 11th August 2020), which is visible in
+both
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173">IODA</a>
+and <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic">Google traffic data</a>,
+is not visible in Mozilla telemetry. Yet, we observe a spike in
+connection timeouts and unreachable connections in Mozilla telemetry on
+that day from many more locations in Belarus, which might suggest that
+there may have been some reshaping of the network topology during the
+outage.</p><p>In
+<a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#internet-outages>Myanmar</a>,
+while Mozilla telemetry provides a strong signal of a <a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#outage-on-6th-february-2021>high impact Internet shutdown on 6th February 2021</a>,
+the <a href=https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#outage-on-1st-february-2021>lower impact Internet shutdown of 1st February 2021</a>
+(which only affected certain networks for a shorter period of time) is
+not very visible in Mozilla telemetry. We could, however, <strong>potentially
+infer the shutdown from the high percentage of connection timeouts</strong> in
+Mozilla telemetry from Myanmar on 1st February 2021.</p><p>In <a href=https://ioda.caida.org/ioda/2020-iran-report#outages>Iran</a>,
+Mozilla telemetry does not provide signals of the two short-lived
+Internet outages that occurred on 3rd and 11th March 2020 (both of which
+lasted for less than an hour). This is likely due to the fact that
+Mozilla telemetry is aggregated in hourly buckets, therefore missing
+short-lived Internet outages.</p><p>Overall, Mozilla telemetry (in its current form) appears to be a useful
+data source primarily for examining high impact Internet connectivity
+shutdowns, which involve the complete shutdown of all Internet access in
+a country. The high average proportion rate of connection timeouts in
+Mozilla telemetry can also provide a signal of lower impact Internet
+connectivity shutdowns (when they only affect certain networks, and/or
+are short-lived), particularly when compared with other relevant data
+sources. The geographical granularity in Mozilla telemetry data
+potentially provides research opportunities to explore the reshaping of
+network topology.</p><h2 id=recommendations>Recommendations</h2><p>Following our analysis of Mozilla telemetry for this study, we provide
+the following friendly recommendations to Mozilla for enhancing the
+research and advocacy use of the Mozilla dataset for the Internet
+freedom community.</p><p>Our recommendations include:</p><ol><li><p><strong>Publish Mozilla telemetry as open data.</strong> By making a dataset of
+Mozilla telemetry openly available, Mozilla will support research
+and <a href=https://www.accessnow.org/keepiton/>advocacy</a> efforts to
+investigate Internet connectivity shutdowns worldwide. Mozilla
+telemetry can potentially offer evidence of an Internet
+connectivity shutdown.</p></li><li><p><strong>Provide AS-level aggregation.</strong> Often, Internet shutdowns around
+the world only affect certain networks. Such shutdown events are
+currently hard to detect through Mozilla’s current dataset, which
+does not provide AS-level aggregation. ASN information would
+enable researchers and advocates to investigate which networks are
+affected by outages, and to confirm lower impact Internet
+connectivity shutdowns.</p></li><li><p><strong>Aggregate by collection time rather than submission time.</strong>
+Currently, Mozilla data is aggregated by the time data was
+received by the ingestion pipeline, rather than when it’s
+collected. This presents an important research limitation because,
+in the absence of a working connection to the Mozilla telemetry
+service, data might be stored and submitted up to 90 days later
+compared to when the measurement was gathered by the device.</p></li></ol><h1 id=acknowledgements>Acknowledgements</h1><p>We thank Mozilla for providing us access to Mozilla telemetry for this
+research, and for considering our recommendations.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

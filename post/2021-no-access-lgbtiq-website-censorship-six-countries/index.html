@@ -1,0 +1,109 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>No Access: LGBTIQ Website Censorship in Six Countries | OONI</title>
+<link rel=canonical href=https://ooni.org/post/2021-no-access-lgbtiq-website-censorship-six-countries/><meta name=description content="This research report shares OONI measurements on the blocking of LGBTIQ websites in Malaysia, Indonesia, Russia, Iran, Saudi Arabia, and the UAE, along with qualitative findings from interviews with LGBTIQ communities."><meta property="og:title" content="No Access: LGBTIQ Website Censorship in Six Countries"><meta property="og:description" content="This research report shares OONI measurements on the blocking of LGBTIQ websites in Malaysia, Indonesia, Russia, Iran, Saudi Arabia, and the UAE, along with qualitative findings from interviews with LGBTIQ communities."><meta property="og:type" content="article"><meta property="og:url" content="/post/2021-no-access-lgbtiq-website-censorship-six-countries/"><meta property="og:image" content="/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover.png"><meta property="article:published_time" content="2021-08-31T00:00:00+00:00"><meta property="article:modified_time" content="2021-08-31T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover.png"><meta name=twitter:title content="No Access: LGBTIQ Website Censorship in Six Countries"><meta name=twitter:description content="This research report shares OONI measurements on the blocking of LGBTIQ websites in Malaysia, Indonesia, Russia, Iran, Saudi Arabia, and the UAE, along with qualitative findings from interviews with LGBTIQ communities."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>No Access: LGBTIQ Website Censorship in Six Countries</h1><div class=byline><span class=author>Open Observatory of Network Interference (OONI), OutRight Action International, The Citizen Lab</span>
+<span class=date>2021-08-31</span></div><div><a href=/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover.png><img src=/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover_hu8e7a0a05fbd469f582f2cbe56349749f_290878_1000x800_fit_box_3.png title="Report cover" alt="Report cover"></a></div><p>Today, in collaboration with <a href=https://outrightinternational.org/>OutRight Action International</a> and the <a href=https://citizenlab.ca/>Citizen Lab</a>, we are excited to share our new research report, “<strong>No Access: LGBTIQ Website Censorship in Six Countries</strong>”,
+which examines the blocking of LGBTIQ websites in Indonesia, Malaysia,
+Iran, Russia, Saudi Arabia, and the United Arab Emirates (UAE).</p><p><strong><a href=/documents/2021-lgbtiq-website-censorship-report/2021-lgbtiq-website-censorship-report-v2.pdf>READ FULL REPORT</a></strong></p><p><a href=/documents/2021-lgbtiq-website-censorship-report/annotated-bibliography.pdf>Annotated Bibliography</a></p><p>Below we share some of our key research findings.</p><h1 id=summary-of-findings>Summary of findings</h1><p>We joined forces with <a href=https://outrightinternational.org/>OutRight Action International</a> and the <a href=https://citizenlab.ca/>Citizen Lab</a> to examine the blocking of LGBTIQ websites
+in six countries: Indonesia, Malaysia, Iran, Russia, Saudi Arabia, and
+the United Arab Emirates (UAE). We selected these countries because they
+are (a) known to serve <a href=https://ooni.org/support/glossary/#block-page>block pages</a> (i.e., pages that
+website visitors may see when access is restricted), which enable us to
+automatically confirm the blocking of LGBTIQ websites, and (b) known to
+censor LGBTIQ related content, based on prior research.</p><p>We adopted a mixed methods research approach, combining <a href=https://explorer.ooni.org/search>OONI network measurement analysis</a> with interviews
+and literature research. Specifically, we analyzed <a href=https://api.ooni.io/>OONI measurements</a> collected from these six countries
+to detect the blocking of LGBTIQ websites, and to examine how their
+blocking varies across AS networks in each country (if at all). The
+timeframe that we selected for OONI data analysis was <strong>June 1, 2016 to
+July 31, 2020</strong>. To examine the impact of online LGBTIQ censorship,
+<a href=https://outrightinternational.org/>OutRight Action International</a>
+and the <a href=https://citizenlab.ca/>Citizen Lab</a> interviewed LGBTIQ
+communities in the six countries.</p><p>Our technical findings, along with information on the criminalization of
+LGBTIQ related activities, are summarized for each country in the
+following tables.</p><div><a href=/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/summary-table-1.png><img src=/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/summary-table-1_hu7e20f25f851c3e8bb17fcf8d0bb9d111_94116_1000x800_fit_box_3.png title="Summary Table 1" alt="Summary Table 1"></a></div><p><strong>Image:</strong> Table 1: Summary of findings</p><div><a href=/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/summary-table-2.png><img src=/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/summary-table-2_hud12bccd5fc0347ee737e68154fa62d83_131809_1000x800_fit_box_3.png title="Summary Table 2" alt="Summary Table 2"></a></div><p><strong>Image:</strong> Table 2: Summary of findings</p><p>Overall, through OONI data analysis we found:</p><ul><li><p><strong>Iran blocks the highest number of LGBTIQ URLs in our <a href=https://github.com/citizenlab/test-lists/tree/master/lists>test lists</a>.</strong>
+Out of the six countries, the highest instance of LGBTIQ URL
+blocking was seen in Iran, where 75 unique LGBTIQ URLs were
+detected as blocked. In Iran, we also observed the blocking of
+<code>www.outrightinternational.org</code>, the website of OutRight Action
+International, one of this report’s authors. In second place is
+the UAE where 51 unique LGBTIQ URLs in our <a href=https://github.com/citizenlab/test-lists/tree/master/lists>test lists</a>
+were found blocked.</p></li><li><p><strong>Russia has the highest number of networks that block LGBTIQ websites.</strong> Specifically, we detected the blocking of LGBTIQ
+websites on 172 distinct AS networks. Iran has the second highest
+prevalence of blocking, with LGBTIQ websites being blocked on 84
+AS networks. In Indonesia, LGBTIQ websites were blocked on 43 AS
+networks, while in the UAE, LGBTIQ websites were found blocked on
+only 3 AS networks. We should note, however, that these figures
+also reflect the diversity of each country’s ISP market.</p></li><li><p><strong>Saudi Arabia has the highest percentage of LGBTIQ website blocking consistency.</strong> The highest blocking consistency was found in Saudi
+Arabia, where most LGBTIQ URLs that we tested were found blocked
+more than 75 percent of the time. Blocking consistency refers to
+the amount of times that we found each LGBTIQ URL to be blocked in
+each country in comparison to the total amount of times tested
+throughout our analysis period. The more times a URL is found
+blocked in comparison to the times that it was tested, the higher
+its blocking consistency. Our research across the six countries
+found variation in blocking consistency.</p></li><li><p><strong>LGBTIQ websites on “culture and community” were blocked most often.</strong> In Indonesia, Iran, Malaysia, and Saudi Arabia, the most
+frequently blocked LGBTIQ websites were those that belong under
+the “Culture and Community” category. These are websites that aim
+primarily to create a sense of community among LGBTIQ individuals,
+as well as provide information about art and culture. This is not
+the case in Russia, however, where LGBTIQ websites under the “News
+Media" category instead presented the most blocking, while in the
+UAE, most of the LGBTIQ websites found to be blocked were no
+longer operational (categorized as “404 Not Found”).</p></li><li><p><strong>Variation in the blocking of internationally-relevant LGBTIQ websites vs. locally-relevant ones.</strong> All six countries blocked
+LGBTIQ websites that are internationally-relevant and meant for an
+international audience, including popular dating websites (e.g.,
+<code>www.grindr.com</code>), news media sites (e.g.,
+<code>www.advocate.com</code>), and websites of organizations defending
+LGBTIQ human rights around the world (e.g., <code>ilga.org</code>). In
+Malaysia and Indonesia, all local LGBTIQ websites tested (e.g.,
+queerlapis.com and suarakita.org), however, were accessible during
+our analysis period, and therefore, it appears that both countries
+block internationally-relevant LGBTIQ websites only. In contrast,
+Iran, Russia, Saudi Arabia, and the UAE blocked access to several
+local and regional LGBTIQ sites, in addition to blocking
+internationally-relevant LGBTIQ sites.</p></li><li><p><strong>Variation in the implementation of internet censorship across networks in the six countries.</strong> Iran, for example, appears to
+have a uniform censorship apparatus, as most ISPs not only block
+the same websites, but they also use the same set of censorship
+techniques. Nevertheless, Iranian ISPs appear to alternate between
+blocking and unblocking LGBTIQ URLs over time. In Indonesia, on
+the other hand, despite the Communications and Information
+Technology Ministry’s (Kominfo) Trust Positif censorship program,
+we observed differences in LGBTIQ URLs blocked on different
+networks. This variation signals that different ISPs block access
+to different websites at different moments in time.</p></li><li><p><strong>Variation in the number of blocking annotations.</strong> Blocking
+annotations indicate the distinct ways by which internet
+censorship was implemented. Where the implementation of internet
+censorship varies from ISP to ISP, we would see a high number of
+blocking annotations in that country. The highest number was found
+in Russia with 148 different annotations, while in Indonesia, we
+detected 84 distinct blocking annotations. In contrast, we
+observed fewer than 10 different blocking annotations each in
+Malaysia, Iran, and the UAE, while in Saudi Arabia (where ISPs
+consistently serve the same single blockpage) we only detected 2
+blocking annotations.</p></li><li><p><strong>Variation in how block pages are served for LGBTIQ websites.</strong>
+Local ISPs in all six countries serve <a href=https://ooni.org/support/glossary/#block-page>block pages</a> when users
+try to access blocked LGBTIQ content, but the technical means by
+which these pages are served by ISPs vary across countries—in some
+cases, they even vary between ISPs within the same country. ISPs
+in Indonesia and Malaysia serve block pages by means of <a href=https://ooni.org/support/glossary/#dns-hijacking>DNS hijacking</a>,
+whereas Iranian ISPs serve block pages primarily by means of <a href=https://ooni.org/support/glossary/#dns-tampering>DNS injection</a>. In
+Russia, ISPs commonly make use of <a href=https://ooni.org/support/glossary/#http-transparent-proxy>HTTP transparent proxies</a>
+to serve blockpages, but some Russian ISPs serve block pages by means of <a href=https://ooni.org/support/glossary/#dns-hijacking>DNS hijacking</a>
+instead. In Saudi Arabia and the UAE, ISPs deliver block pages to
+internet users through the use of censorship technologies.</p></li><li><p><strong>Some block pages in Russia contained affiliate ads.</strong> Unlike other
+countries, some block pages in Russia contained affiliate ads,
+suggesting the presence of financial incentives. We have observed
+ads being served as part of censorship efforts previously. In
+2018, both <a href=https://ooni.org/post/egypt-internet-censorship/>OONI</a> and the
+<a href=https://citizenlab.ca/2018/03/bad-traffic-sandvines-packetlogic-devices-deploy-government-spyware-turkey-syria/>Citizen Lab</a>
+reported on the injection of ads by ISPs in Egypt, while implementing internet censorship.</p></li><li><p><strong>Detection of censorship technologies in Saudi Arabia and the UAE.</strong> In both Saudi Arabia and the UAE, ISPs deliver block pages
+to internet users through the use of WireFilter technology, which
+is a network filtering device made for the ISP and commercial
+market, manufactured by Riyadh-based Sewar Technologies Ltd. In
+the UAE, we also observed blocking using a tool manufactured by
+Netsweeper, which is a Canadian company that sells internet
+filtering products to ISPs around the world.</p></li></ul><p>Further details are available through our <strong><a href=/documents/2021-lgbtiq-website-censorship-report/2021-lgbtiq-website-censorship-report-v2.pdf>report</a></strong>.</p><p>We thank OONI Probe users who contributed measurements, supporting this
+study.</p><p>To <a href=https://ooni.org/post/2019-measure-blocking-lgbtqi-sites/>measure the blocking of LGBTIQ websites</a>
+around the world (and contribute <a href=https://explorer.ooni.org/>open data</a>), you can <a href=https://ooni.org/install/mobile>install the OONI Probe mobile app</a> and tap on the <code>LGBTIQ</code> buttons on this page: <a href=https://ooni.org/get-involved/run/>https://ooni.org/get-involved/run/</a></p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

@@ -1,0 +1,380 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Belarus protests: From internet outages to pervasive website censorship | OONI</title>
+<link rel=canonical href=https://ooni.org/post/2020-belarus-internet-outages-website-censorship/><meta name=description content="This report shares OONI measurements on the blocking of websites in Belarus amid protests, following the 2020 Belarusian presidential election."><meta property="og:title" content="Belarus protests: From internet outages to pervasive website censorship"><meta property="og:description" content="This report shares OONI measurements on the blocking of websites in Belarus amid protests, following the 2020 Belarusian presidential election."><meta property="og:type" content="article"><meta property="og:url" content="/post/2020-belarus-internet-outages-website-censorship/"><meta property="og:image" content="/post/2020-belarus-internet-outages-website-censorship/images/anon.png"><meta property="article:published_time" content="2020-09-15T00:00:00+00:00"><meta property="article:modified_time" content="2020-09-15T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/post/2020-belarus-internet-outages-website-censorship/images/anon.png"><meta name=twitter:title content="Belarus protests: From internet outages to pervasive website censorship"><meta name=twitter:description content="This report shares OONI measurements on the blocking of websites in Belarus amid protests, following the 2020 Belarusian presidential election."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Belarus protests: From internet outages to pervasive website censorship</h1><div class=byline><span class=author>Maria Xynou (OONI), Arturo Filastò (OONI)</span>
+<span class=date>2020-09-15</span></div><div><a href=/post/2020-belarus-internet-outages-website-censorship/images/by-blockpage.png><img src=/post/2020-belarus-internet-outages-website-censorship/images/by-blockpage_hu30535e14807dc77c0aa5193ef3f6d4f3_63399_1000x800_fit_box_3.png title="Block page served in Belarus" alt="Block page served in Belarus"></a></div><p><strong>Image:</strong> Block page served in Belarus.</p><p><em>This report was prepared in collaboration with <a href=https://humanconstanta.by/>Human Constanta</a> and the <a href=https://t.me/zabynet>Digital Observers Community Belarus</a>.</em></p><p>More than 70 websites have been <a href=https://www.hrw.org/news/2020/08/28/belarus-internet-disruptions-online-censorship>blocked</a>
+in Belarus over the last weeks, following a <a href=https://www.theguardian.com/world/2020/aug/10/its-outrageous-belarus-election-result-sparks-night-of-defiance-and-violence>controversial presidential election</a>
+and amid <a href=https://time.com/5880593/belarus-protests-lukashenko/>ongoing anti-government protests</a>. Many
+of the blocked sites include news media and are related to the
+elections, while several other sites expressing political criticism were
+blocked as well. At the time of writing, many of these sites remain
+blocked in Belarus.</p><p>In this report, we share <a href="https://explorer.ooni.org/search?until=2020-09-16&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI measurement data</a>
+on the recent blocking of websites in Belarus.</p><ul><li><p><a href=#background>Background</a></p><ul><li><p><a href=#2020-belarusian-presidential-election>2020 Belarusian presidential election</a></p></li><li><p><a href=#internet-outages-amid-2020-belarusian-presidential-election>Internet outages amid 2020 Belarusian presidential election</a></p></li></ul></li><li><p><a href=#methods>Methods</a></p></li><li><p><a href=#blocked-websites>Blocked websites</a></p><ul><li><p><a href=#media>Media</a></p></li><li><p><a href=#political>Political</a></p></li><li><p><a href=#human-rights>Human rights</a></p></li><li><p><a href=#communication>Communication</a></p></li><li><p><a href=#circumvention>Circumvention</a></p></li><li><p><a href=#other>Other</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li></ul><h1 id=background>Background</h1><h2 id=2020-belarusian-presidential-election>2020 Belarusian presidential election</h2><p>Belarus has had the same president, <a href=https://www.theguardian.com/world/alexander-lukashenko>Alexander Lukashenko</a>,
+for 26 years.</p><p>Having won every presidential election since 1994, Lukashenko has been
+described as “<a href=https://www.nytimes.com/2020/08/07/world/europe/belarus-election-aleksandr-lukashenko.html>Europe’s last dictator</a>”
+&ndash; particularly since international election observers have
+<a href=https://news.un.org/en/story/2015/10/512522-belarus-election-neither-free-nor-fair-says-un-human-rights-expert>characterized</a>
+most of these elections as neither free nor fair. The latest
+presidential <a href=https://www.bbc.com/news/world-europe-53707011>elections were held a month ago on 9th August 2020</a>, where Lukashenko
+ran for &ndash; and <a href=https://www.dw.com/en/alexander-lukashenko-wins-belarus-election/a-54506718>won</a> &ndash; a sixth term. But this landslide victory &ndash; claiming <a href=https://www.bbc.com/news/world-europe-53707011>about 80% of the vote</a> &ndash; didn’t go unchallenged.</p><p>Mass protests
+<a href=https://time.com/5880593/belarus-protests-lukashenko/>erupted</a> in
+Belarus leading up to the 2020 presidential election, following the
+<a href=https://www.euronews.com/2020/06/03/prominent-opposition-figures-arrested-in-belarus-as-presidential-election-approaches>arrest</a>
+of opposition political candidates and against Lukashenko’s bid for a
+sixth presidential term. Sergei Tikhanovsky, a Belarusian
+<a href=https://www.youtube.com/channel/UCFPC7r3tWWXWzUIROLx46mg>YouTuber</a>
+and <a href=https://www.facebook.com/strana888>pro-democracy activist</a>,
+announced his intention of running for the 2020 presidential election in
+May 2020, but he was
+<a href=https://www.washingtonpost.com/world/europe/belarus-lukashenko-opposition-election/2020/07/23/86f231f6-c5ca-11ea-a825-8722004e4150_story.html>arrested</a>
+two days later. In response, his wife, <a href=https://www.aljazeera.com/indepth/features/woman-challenging-belarusian-president-lukashenko-200807102413488.html>Svetlana Tikhanovskaya</a>,
+decided to run against Lukasheno.</p><p>However, Tikhanovskaya <a href=https://www.reuters.com/article/us-belarus-election-candidate-children-idUSKCN24L1Q6>reportedly received threats that her children would be taken away</a>
+unless she stepped down from the presidential race, and was forced to
+send her children abroad. Quite similarly, Amnesty International
+<a href=https://www.amnesty.org.uk/press-releases/belarus-authorities-threatening-women-political-activists-ahead-election>reported</a>
+that several other female political activists were also threatened with
+sexual violence and with threats that their children would be taken
+away. Despite the harassment, Tikhanovskaya emerged as the <a href=https://www.vox.com/2020/8/10/21357805/belarus-election-tikhanovskaya-lukashenko-protest-minsk>main opposition candidate</a>
+in the 2020 presidential elections, whose political rallies <a href=https://www.theguardian.com/world/2020/aug/10/belarus-opposition-candidate-rejects-election-result-protests-svetlana-tikhanovskaya-lukashenko>reportedly drew some of the largest crowds</a>
+that the country has seen in decades.</p><p>When the country’s election commission announced that Lukashenko had won
+around 80% of the vote, Tikhanovskaya
+<a href=https://www.theguardian.com/world/2020/aug/10/belarus-opposition-candidate-rejects-election-result-protests-svetlana-tikhanovskaya-lukashenko>rejected</a>
+Lukashenko’s win, describing the election as massively rigged and
+appealing to EU leaders to “<a href=https://euobserver.com/opinion/149183>support the awakening</a>” of Belarus. While EU
+leaders condemned the latest Belarusian elections as unfair, they
+<a href=https://www.ft.com/content/88954cad-db13-4ec8-af8c-65386f74b3c7>stressed that any political change must come from within the country</a>,
+rather than from foreign interference.</p><p>Meanwhile, mass anti-government
+<a href=https://www.aljazeera.com/news/2020/08/belarus-turns-pressure-protesters-arrests-50-200826113250592.html>protests</a>,
+calling for President Lukashenko to step down, have been ongoing.
+According to Amnesty International, the <a href=https://www.amnesty.org/en/latest/news/2020/08/belarus-mounting-evidence-of-a-campaign-of-widespread-torture-of-peaceful-protesters/>protests have been marred by violence</a>,
+as testimonies from protesters in Belarus describe being beaten,
+tortured, threatened with rape, and being subjected to other
+ill-treatment in detection centres. Recently, the UN office of the High
+Commissioner for Human Rights released a
+<a href="https://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.aspx?NewsID=26199">statement</a>
+calling on Belarusian authorities to stop torturing protesters and to
+prevent enforced disappearances.</p><p>Yet, both the mass protests and the violent crackdown by authorities
+remain ongoing. Following a fourth consecutive weekend of protests
+against President Lukashenko, <a href=https://www.bbc.com/news/world-europe-54044750>hundreds of protesters have been arrested</a> in recent
+days. The situation in Belarus remains turbulent.</p><h2 id=internet-outages-amid-2020-belarusian-presidential-election>Internet outages amid 2020 Belarusian presidential election</h2><p>Several data sources suggest that access to the internet was disrupted
+amid the Belarusian 2020 presidential election. This was also widely
+<a href=https://www.wired.com/story/belarus-internet-outage-election/>reported</a>
+by media outlets, while some groups
+<a href=https://blog-en.psiphon.ca/2020/08/amid-major-network-disruptions-176m.html>reported</a>
+that Deep Packet Inspection (DPI) technology (reportedly
+<a href=https://www.bloomberg.com/news/articles/2020-09-11/sandvine-use-to-block-belarus-internet-rankles-staff-lawmakers>provided</a>
+by U.S. company <a href=https://www.sandvine.com/hubfs/downloads/archive/policy-traffic-switch.pdf>Sandvine Inc.</a>)
+was used to block SSL traffic at scale, affecting popular messaging
+apps, social media platforms, email providers, VPNs, among many other
+services.</p><p>The <a href=https://ioda.caida.org/>Internet Outage Detection and Analysis (IODA)</a> project of the <a href=https://www.caida.org/>Centre for Applied Internet Data Analysis (CAIDA)</a> measures
+internet outages worldwide in near real-time. To track and identify
+internet outages, IODA uses <a href=https://www.caida.org/projects/ioda/>three complementary measurement and inference methods</a>: Routing (BGP)
+announcements, Active Probing, and Internet Background Radiation (IBR)
+traffic. Access to IODA measurements is openly available through their
+<a href=https://ioda.caida.org/ioda/dashboard>Dashboard</a>, which enables
+users to explore internet outages with county, region, and AS level of
+granularity.</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173">IODA data</a>
+from the following chart (taken from the <a href=https://ioda.caida.org/ioda/dashboard>IODA dashboard</a>) presents signals of
+internet disruptions in Belarus between 8th August 2020 to 17th August
+2020, with the most heavy disruptions being noted between 9th August
+2020 to 12th August 2020.</p><div><a href=/post/2020-belarus-internet-outages-website-censorship/images/by-ioda.png><img src=/post/2020-belarus-internet-outages-website-censorship/images/by-ioda_hu84926acc6b34ee6942e6ba2ae7456f95_149323_1000x800_fit_box_3.png title="IODA data from Belarus" alt="IODA data from Belarus"></a></div><p><strong>Source:</strong> <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BY&amp;lastView=overview&amp;from=1596114973&amp;until=1598534173">Internet Outage Detection and Analysis (IODA): Belarus</a></p><p>Within this time period, we observe in the chart that the first major
+disruption occurs on election day on 9th August 2020, between around
+18:00 UTC to midnight UTC, coinciding with the
+<a href=https://www.dw.com/en/violent-protests-erupt-in-belarus-after-lukashenko-claims-election-win/a-54506078>protests</a>
+that erupted as soon as the election results were announced. The second
+major disruption is observed the next day on 10th August 2020 between
+16:00 UTC to around midnight. Very similarly, the third disruption is
+observed during the same time period on the next day (11th August 2020).</p><p>These internet disruptions are corroborated by <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic">Google traffic data</a>,
+which suggests that access to the internet was disrupted in Belarus
+between 9th August 2020 to 12th August 2020, as illustrated below.</p><div><a href=/post/2020-belarus-internet-outages-website-censorship/images/by-google-traffic.png><img src=/post/2020-belarus-internet-outages-website-censorship/images/by-google-traffic_hu7cbdad6620484d56f83c55cbb77c52a9_100310_1000x800_fit_box_3.png title="Google traffic data from Belarus" alt="Google traffic data from Belarus"></a></div><p><strong>Source:</strong> <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1595894400000;end:1598572799999;product:19;region:BY&amp;lu=fraction_traffic">Google Transparency Reports: Traffic and disruptions to Google in Belarus</a></p><p>Similarly to IODA data, Google traffic data shows that Belarus
+experienced major internet disruptions in the nights of 9th, 10th, and
+11th August 2020, with internet access mildly being restored during the
+day on 10th and 11th August 2020.</p><p>This is further corroborated by RIPE, who published a
+<a href=https://labs.ripe.net/Members/alun_davies/our-first-glance-at-the-belarus-outages>report</a>
+on the internet outages in Belarus, discussing that this wasn’t a
+complete internet shutdown affecting the entire country, as some RIPE
+Atlas probes remained connected throughout this period. The fact that
+the internet outages didn’t affect all networks across Belarus is
+further <a href="https://explorer.ooni.org/search?until=2020-08-12&amp;probe_cc=BY">confirmed by OONI Probe measurements collected from Belarus between 9th to 12th August 2020</a>
+(as <a href=https://ooni.org/install/>OONI Probe</a> tests require internet
+connectivity).</p><h1 id=methods>Methods</h1><p>Internet connectivity was
+<a href=https://labs.ripe.net/Members/alun_davies/our-first-glance-at-the-belarus-outages>restored</a>
+in Belarus by 12th August 2020, but 10 days later, access to more than
+50 websites was
+<a href=https://time.com/5882656/belarus-blocks-news-websites-protests/>reportedly</a>
+blocked. To examine the potential blocking of websites amid the ongoing
+<a href=https://www.bbc.com/news/world-europe-54044750>wave of protests</a>, we
+analyzed <a href="https://explorer.ooni.org/search?until=2020-09-08&amp;probe_cc=BY&amp;test_name=web_connectivity">OONI measurements collected from Belarus</a>.</p><p>OONI Probe is <a href=https://github.com/ooni>free and open source software</a>
+designed to measure internet censorship and other forms of network
+interference. The <a href=https://ooni.org/install/>OONI Probe app</a>
+(available for both <a href=https://ooni.org/install/mobile>mobile</a> and
+<a href=https://ooni.org/install/desktop>desktop</a> platforms) includes tests
+designed to <a href=https://ooni.org/nettest/web-connectivity/>measure the blocking of websites</a>, instant
+messaging apps (<a href=https://ooni.org/nettest/whatsapp/>WhatsApp</a>,
+<a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger</a>,
+<a href=https://ooni.org/nettest/telegram/>Telegram</a>), and circumvention
+tools (<a href=https://ooni.org/nettest/tor/>Tor</a> and
+<a href=https://ooni.org/nettest/psiphon/>Psiphon</a>), among <a href=https://ooni.org/nettest/>other tests</a>.</p><p>As our aim through this study is to examine the blocking of websites, we
+will focus on the OONI Probe <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity test</a>, which is designed to
+measure the blocking of websites. This test does so by attempting to
+perform a <a href=https://ooni.org/support/glossary/#dns-lookup>DNS lookup</a>,
+<a href=https://ooni.org/support/glossary/#tcp>TCP</a> connection, and <a href=https://ooni.org/support/glossary/#http-request>HTTP request</a> (to the URLs
+included in the <a href=https://github.com/citizenlab/test-lists/tree/master/lists>Citizen Lab test lists</a>)
+from both a control vantage point and the local vantage point of the
+user. The measurements collected from both vantage points are
+automatically compared and if they differ, the result is flagged as
+“<a href=https://ooni.org/support/faq/#what-do-you-mean-by-anomalies>anomalous</a>”.
+Depending on the type of anomaly detected (DNS, TCP/IP, HTTP), we can
+infer the type of blocking.</p><p>Based on our current heuristics, OONI only automatically confirms cases
+of blocking if a <a href=https://ooni.org/support/glossary/#block-page>block page</a> is served, and if
+the fingerprint of that block page has been added to the OONI database.
+Given that <a href=https://ooni.org/support/faq/#what-are-false-positives>false positives</a> can
+occur, all other cases of blocking are confirmed through manual data
+analysis.</p><p>Unless an OONI Probe user opts-out, their test results are automatically
+sent to OONI’s servers, <a href=https://github.com/ooni/pipeline>processed</a>,
+and <a href=https://ooni.org/data/>openly published</a>. Since September 2015,
+<a href=https://explorer.ooni.org/country/BY>more than a million OONI Probe tests have been run in Belarus from 59
+local networks</a>.</p><p>As part of this study, we analyzed <a href="https://explorer.ooni.org/search?until=2020-09-08&amp;probe_cc=BY&amp;test_name=web_connectivity">OONI Web Connectivity measurements collected from Belarus</a>
+between <strong>1st August 2020 to 3rd September 2020</strong>. The analysis period
+was mainly limited to August 2020 because our goal was to identify
+recently blocked websites (the blocking of which <a href=https://time.com/5882656/belarus-blocks-news-websites-protests/>reportedly began on 22nd August 2020</a>).</p><p>As part of our analysis, we not only examined the testing of URLs
+included in the Citizen Lab’s
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global</a>
+and
+<a href=https://github.com/citizenlab/test-lists/blob/master/lists/by.csv>Belarusian</a>
+test lists (which are <a href=https://ooni.org/get-involved/contribute-test-lists>tested by default</a> when OONI
+Probe users in Belarus run the Web Connectivity test for website
+testing), but we also examined other URLs that were tested independently
+by OONI Probe users in Belarus using the <a href=https://run.ooni.io/>OONI Run</a> platform (which is used for <a href=https://ooni.org/post/ooni-run/>custom URL testing</a>). To ensure that the
+<a href=https://t.me/zatelecom/15474>recently blocked URLs</a> are tested
+regularly in Belarus, we <a href=https://github.com/citizenlab/test-lists/pull/666>added them</a> to the Citizen
+Lab’s Belarusian test list.</p><p>To confirm censorship events with greater confidence, we limited our
+analysis to the networks and URLs that received the most testing
+coverage, potentially excluding cases of blocking that received limited
+testing coverage.</p><p>As we detected the presence of block pages within anomalous Web
+Connectivity measurements, we updated our database with the fingerprints
+of those block pages, and detected many cases of blocking automatically.
+But as ISPs in Belarus adopted a variety of different censorship
+techniques, we also performed more manual data analysis in order to
+identify other cases of blocking as well. Our analysis is available
+through this
+<strong><a href="https://docs.google.com/spreadsheets/d/15aLKEL9dxJMR6-VybMH7VV97f6Q9139_Iu9TgfT6YdY/edit?usp=sharing">file</a></strong>.</p><h1 id=blocked-websites>Blocked websites</h1><p>Amid <a href=https://www.theguardian.com/world/2020/aug/18/belarus-protests-who-are-the-key-players-and-what-do-they-want>ongoing mass protests</a>,
+Belarusian ISPs <a href=https://www.hrw.org/news/2020/08/28/belarus-internet-disruptions-online-censorship>blocked access to more than 70 websites</a>,
+many of which include news media, electoral sites, and sites expressing
+political criticism. The blocking <a href=https://time.com/5882656/belarus-blocks-news-websites-protests/>reportedly began on 22nd August 2020</a>,
+which is also when <a href=https://ooni.org/install/>OONI Probe</a> users in
+Belarus started testing most of the <a href=https://t.me/zatelecom/15474>reportedly blocked websites</a>.</p><p>Our
+<a href="https://docs.google.com/spreadsheets/d/15aLKEL9dxJMR6-VybMH7VV97f6Q9139_Iu9TgfT6YdY/edit?usp=sharing">analysis</a>
+of <a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI measurements collected from Belarus</a>
+between 1st August 2020 to 3rd September 2020 shows that <strong>at least 86
+websites appear to be blocked</strong>. Many more websites presented
+<a href=https://ooni.org/support/faq/#what-do-you-mean-by-anomalies>anomalies</a>
+as part of the testing, but we narrowed down the scope to the sites that
+received <em>both</em> the highest volume of testing <em>and</em> which presented the
+highest ratio of anomalies. This means that we excluded websites which
+presented non-deterministic signs of blocking and which received limited
+testing coverage, thereby limiting our ability to rule out potential
+<a href=https://ooni.org/support/glossary/#false-positive>false positives</a>.</p><p>We automatically confirmed the blocking of websites when <a href=https://ooni.org/support/glossary/#block-page>block pages</a> were served.
+Based on this, we were able to <strong>confirm the blocking</strong> of the following
+domains: <code>afn.by</code>, <code>www.belaruspartisan.org</code>, <code>www.afn.by</code>,
+<code>www.charter97.org</code>, <code>intimby.net</code>, <code>charter97.org</code>, <code>dmp2.org</code>,
+<code>is.gd</code>,<code>txti.es</code>, <code>zapraudu.info</code>, <code>svaboda2.net</code>,
+<code>www.svaboda.org</code>, <code>www.praca-by.info</code>, <code>ucpb.org</code>,
+<code>spring96.org</code>, <code>mfront.net</code>, <code>gazetaby.com</code>,
+<code>eurobelarus.info</code>, <code>belsat.eu</code>,<code>belarus.regnum.ru</code>,
+<code>tsepkalo.com</code>, <code>015.by</code>, <code>vkurier.by</code>, <code>udf.by</code>,
+<code>rusproxy.telegramproxy.me</code>, <code>telegram-socks.tk</code>, <code>tgproxy.me</code>,
+<code>www.ucpb.org</code>,<code>www.bchd.info</code>, <code>www.moyby.com</code>, <code>opg.ucoz.net</code>,
+<code>zubr.in</code>, <code>naviny.by</code>, <code>nn.by</code>.</p><p>We observe a variance in terms of how sites are blocked across different
+Internet Service Providers (ISPs) in Belarus, which we discuss in a bit
+more detail in the following sections. In some cases, when sites are
+hosted on HTTP, we see ISPs <a href="https://explorer.ooni.org/measurement/20200827T200140Z_AS6697_3AaFyKd5jJXttGd2Ct2rjnfLB8hw4sXDwghlc8jeVXVrOzcOCN?input=http%3A%2F%2Fudf.by">serving a blockpage</a>.
+But when sites are hosted on encrypted HTTPS, we observe <a href="https://explorer.ooni.org/measurement/20200829T214713Z_AS6697_qPI6nu4s2ioTAz3CzcmflzSlcgt1xXXmk4tvFL1QjrcjOgW8uU?input=https%3A%2F%2Fudf.by%2F">interference during the TLS handshake</a>
+(after the TCP connection and before the HTTP request), resulting in a
+connection reset error.</p><p>As <a href="https://explorer.ooni.org/measurement/20200829T214713Z_AS6697_qPI6nu4s2ioTAz3CzcmflzSlcgt1xXXmk4tvFL1QjrcjOgW8uU?input=https%3A%2F%2Fudf.by%2F">blocking appears to be implemented during the TLS
+handshake</a>
+and the connection is being reset, this suggests that either Deep Packet
+Inspection (DPI) technology is being used (the most probable scenario)
+or that all traffic goes through a proxy that resets undesired
+connections. It also seems likely that the SNI field in the TLS
+handshake is being used to decide whether to block or let connections go
+through.</p><p>In the following sections, we briefly discuss the blocking of media,
+political, human rights, communication tools, and circumvention tool
+websites, among other blocked sites.</p><h2 id=media>Media</h2><p>At least 25 media websites appear to be blocked in Belarus, as suggested
+through <a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI data</a>.</p><div><a href=/post/2020-belarus-internet-outages-website-censorship/images/media.png><img src=/post/2020-belarus-internet-outages-website-censorship/images/media_hu3c5790482f3487805f4858e8c5a64fde_566254_1000x800_fit_box_3.png srcset="/post/2020-belarus-internet-outages-website-censorship/images/media_hu3c5790482f3487805f4858e8c5a64fde_566254_2000x1600_fit_box_3.png 2x" title="Blocked media in Belarus" alt="Blocked media in Belarus"></a></div><p><strong>Image:</strong> Blocking of media websites across ISPs in Belarus, <a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI measurements collected from Belarus between 1st August 2020 to 3rd September 2020</a></p><p>The above chart lists the 25 media websites that presented signs of
+blocking through our analysis of OONI measurements collected throughout
+August 2020 (between 1st August 2020 to 3rd September 2020). Results
+from the testing of each site across 15 local networks are illustrated
+through the above chart (relevant data is missing if those sites weren’t
+tested on those networks during the data analysis period).</p><p>Out of these media websites, we <strong>automatically confirm the blocking of
+the following domains</strong> (because <a href=https://ooni.org/support/glossary/#block-page>block pages</a> were served):
+<code>afn.by</code>, <code>www.afn.by</code>, <code>www.charter97.org</code>, <code>charter97.org</code>,
+<code>svaboda2.net</code>, <code>www.svaboda.org</code>, <code>gazetaby.com</code>,
+<code>eurobelarus.info</code>, <code>belsat.eu</code>, <code>belarus.regnum.ru</code>,
+<code>vkurier.by</code>, <code>www.moyby.com</code>.</p><p>We observe a variance in blocking both in terms of which websites are
+blocked across ISPs (i.e. different sites blocked on different
+networks), as well as in terms of censorship techniques. We not only
+observe variance in censorship techniques across ISPs, but we also see
+that the same ISP may adopt different censorship techniques,
+particularly depending on whether a site is hosted on HTTP or encrypted
+HTTPS.</p><p>On 22nd August 2020, for example, <a href="https://explorer.ooni.org/measurement/20200822T112733Z_AS6697_h2Erqu5ueNF9B27O8MBhUlFtYz9dkQQQ2HEselOX55Hbv3roq8?input=http%3A%2F%2Fwww.svaboda.org">Beltelecom (AS6697) served a block page</a>
+in order to block access to the HTTP version of <code>www.svaboda.org</code>. On
+the same day, we see Beltelecom blocking access to the HTTPS version of
+<code>www.svaboda.org</code> by <a href="https://explorer.ooni.org/measurement/20200822T120528Z_AS6697_5SAnPzRuc3J0IutcaieMIsxLEK4o6tUpfeQY6h8gCAMV6uKoLd?input=https%3A%2F%2Fwww.svaboda.org%2F">interfering with the TLS handshake</a>
+and resetting the connection. While the blocking of many of these media
+websites appears to have started on 22nd August 2020, some of these
+media websites appear to have been blocked since earlier in the month.</p><p><a href=https://charter97.org/>Charter 97</a>, a pro-democracy media website
+covering human rights issues in Belarus, appears to have been <a href="https://explorer.ooni.org/measurement/20200808T193004Z_AS6697_0959wmgNu3SnvqzTWvUFHKPTAv7IMu6eZHjMVqGylIZp8zXde2?input=http%3A%2F%2Fcharter97.org">blocked
+since at least 8th August 2020 on Beltelecom (AS6697)</a>,
+as a block page was served (therefore confirming its blocking).
+Similarly to <code>www.svaboda.org</code> and many other blocked sites, we
+observe that <a href="https://explorer.ooni.org/measurement/20200822T013654Z_AS6697_JV4aQkeMLjJcHDAhoX9hJp2aqPPnkovgFHDLyqYVg8yX1uqayH?input=https%3A%2F%2Fcharter97.org%2F">Beltelecom (AS6697) blocked access to the HTTPS version of charter97.org</a>
+during the TLS handshake.</p><p>All measurements collected thereafter (testing <code>charter97.org</code> on
+several different local networks) consistently presented signs of
+blocking up until 11th September 2020, when the testing of
+<code>charter97.org</code> on Beltelecom (AS6697) showed that the site was
+<a href="https://explorer.ooni.org/measurement/20200911T011117Z_AS6697_5pBmniHOdI1WaJ66E4Kf27KtfCDO2SBJRmqO9PbzT4Gzntr3sD?input=https%3A%2F%2Fcharter97.org%2F">accessible</a>,
+suggesting that it has now been unblocked on this network. Quite
+similarly, some other media websites (such as eurobelarus.info) appear
+to have been
+<a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=eurobelarus.info">unblocked</a>
+in recent days.</p><p>The <a href=https://baj.by/be>website</a> of the Belarusian Association of
+Journalists <a href="https://explorer.ooni.org/search?until=2020-09-12&amp;domain=baj.by&amp;probe_cc=BY">presented signs of blocking mainly between 13th August 2020 to 18th August 2020</a>,
+during which most measurements consistently presented the same HTTP
+failures. More recent measurements collected at the end of August 2020
+showed that access to <code>baj.by</code> was
+<a href="https://explorer.ooni.org/measurement/20200829T214713Z_AS6697_qPI6nu4s2ioTAz3CzcmflzSlcgt1xXXmk4tvFL1QjrcjOgW8uU?input=https%3A%2F%2Fbaj.by%2F">accessible</a>
+on Beltelecom (AS6697) &ndash; at least during the moments when it was
+tested.</p><p>In addition to the <a href="https://explorer.ooni.org/search?until=2020-09-12&amp;domain=belsat.eu&amp;probe_cc=BY">blocking of independent media websites</a>
+(such as <code>belsat.eu</code>), we observe the blocking of <code>regnum.ru</code> and
+<code>sputnikipogrom.com</code> which, according to <a href=https://github.com/citizenlab/test-lists/blob/master/lists/by.csv>local community members</a>,
+are Russian nationalist media with anti-Belarus sentiment.</p><p>The list of blocked media websites, and relevant OONI measurements from
+their testing in Belarus, are available through the table below.</p><table><thead><tr><th>Blocked domains</th><th>OONI measurements</th></tr></thead><tbody><tr><td><code>afn.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=afn.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=afn.by</a></td></tr><tr><td><code>belarus.regnum.ru</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belarus.regnum.ru">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belarus.regnum.ru</a></td></tr><tr><td><code>eurobelarus.info</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=eurobelarus.info">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=eurobelarus.info</a></td></tr><tr><td><code>svaboda2.net</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=svaboda2.net">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=svaboda2.net</a></td></tr><tr><td><code>vkurier.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vkurier.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vkurier.by</a></td></tr><tr><td><code>vozrojdenie.crimea.ua</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vozrojdenie.crimea.ua">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vozrojdenie.crimea.ua</a></td></tr><tr><td><code>baj.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=baj.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=baj.by</a></td></tr><tr><td><code>belarusinfocus.info</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belarusinfocus.info">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belarusinfocus.info</a></td></tr><tr><td><code>belprauda.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belprauda.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belprauda.org</a></td></tr><tr><td><code>belsat.eu</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belsat.eu">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belsat.eu</a></td></tr><tr><td><code>by.tribuna.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=by.tribuna.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=by.tribuna.com</a></td></tr><tr><td><code>charter97.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=charter97.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=charter97.org</a></td></tr><tr><td><code>euroradio.fm</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=euroradio.fm">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=euroradio.fm</a></td></tr><tr><td><code>gazetaby.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=gazetaby.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=gazetaby.com</a></td></tr><tr><td><code>news.vitebsk.cc</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=news.vitebsk.cc">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=news.vitebsk.cc</a></td></tr><tr><td><code>ont.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=ont.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=ont.by</a></td></tr><tr><td><code>progomel.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=progomel.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=progomel.by</a></td></tr><tr><td><code>regnum.ru</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=regnum.ru">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=regnum.ru</a></td></tr><tr><td><code>sputnikipogrom.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=sputnikipogrom.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=sputnikipogrom.com</a></td></tr><tr><td><code>vot-tak.tv</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vot-tak.tv">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vot-tak.tv</a></td></tr><tr><td><code>www.moyby.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.moyby.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.moyby.com</a></td></tr><tr><td><code>www.politnavigator.net</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.politnavigator.net">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.politnavigator.net</a></td></tr><tr><td><code>www.svaboda.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.svaboda.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.svaboda.org</a></td></tr><tr><td><code>www.the-village.me</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.the-village.me">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.the-village.me</a></td></tr><tr><td><code>zona.media</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zona.media">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zona.media</a></td></tr></tbody></table><h2 id=political>Political</h2><p>Following the Belarusian 2020 presidential election &ndash; and amid
+<a href=https://www.bbc.com/news/world-europe-53731514>protests over a disputed poll</a> &ndash; access to
+several election related sites was blocked. More specifically, at least
+25 political websites appear to have been blocked in Belarus, as
+illustrated through the following chart (based on <a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI data</a>).</p><div><a href=/post/2020-belarus-internet-outages-website-censorship/images/polr.png><img src=/post/2020-belarus-internet-outages-website-censorship/images/polr_huac34ac58f928fcca08dbc2b64b378e07_515386_1000x800_fit_box_3.png srcset="/post/2020-belarus-internet-outages-website-censorship/images/polr_huac34ac58f928fcca08dbc2b64b378e07_515386_2000x1600_fit_box_3.png 2x" title="Blocked political sites in Belarus" alt="Blocked political sites in Belarus"></a></div><p><strong>Image:</strong> Blocking of political websites across ISPs in Belarus, <a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI measurements collected from Belarus between 1st August 2020 to 3rd September 2020</a></p><p>It is evident that most of these sites appear to have been blocked on at
+least 4 ISP networks in Belarus. In some cases (when the sites were
+hosted on HTTP), block pages were served, while in most cases, we
+observe interference during the TLS handshake, resulting in HTTP
+failures and connection reset errors.</p><p>We <strong>automatically confirmed the blocking</strong> of the following political
+sites (because <a href=https://ooni.org/support/glossary/#block-page>block pages</a> were served):
+<code>www.belaruspartisan.org</code>, <code>zapraudu.info</code>, <code>ucpb.org</code>,
+<code>tsepkalo.com</code>, <code>udf.by</code>, <code>www.ucpb.org</code>, <code>www.bchd.info</code>,
+<code>opg.ucoz.net</code>, <code>zubr.in</code>.</p><p>On election day, on 9th August 2020, we observed <a href="https://explorer.ooni.org/measurement/20200809T132651Z_AS25106_le1qtl9iy9skehcmnmzFfJQAW5Yuk9dNLlVM8IG3vlzC9gSfAS?input=https%3A%2F%2Fbelarus2020.org%2F">DNS spoofing</a>
+in the testing of an election related site: <code>belarus2020.org</code>. The
+testing of <code>belarus2020.org</code> often presented <a href="https://explorer.ooni.org/measurement/20200810T132315Z_AS6697_fI8fGBFEYxR2n6dseoKryRMBLy1nhmD3UZ5CKaNQBXj4nddPQS?input=http%3A%2F%2Fbelarus2020.org">HTTP failures and genetic timeout errors from 10th August 2020 onwards</a>
+(though this could potentially have been affected by the internet
+outages during that period), while previous testing showed that the site
+used to be
+<a href="https://explorer.ooni.org/measurement/20200808T195259Z_AS6697_glOMJhH6hqIUX60LnN3WNmhy2ZGoFY320fFUqRPW2wNp3bjpXH?input=https%3A%2F%2Fbelarus2020.org%2F">accessible</a>.</p><p>From 22nd August 2020, we start to observe that the testing of
+<code>belarus2020.org</code> starts to <a href="https://explorer.ooni.org/measurement/20200822T112652Z_AS6697_2p2XxW4RqTNVNRvGc9pzAoa2D3FLTqUOnKbEjcByU7unTSvGBl?input=https%3A%2F%2Fbelarus2020.org%2F">always present connection reset errors</a>
+(instead of generic timeout errors), which is consistent with how most
+of the other websites were blocked from that date onwards. This suggests
+that that local ISPs (such as Beltelecom) may have switched to blocking
+<code>belarus2020.org</code> with the same censorship technique as other sites.</p><p>Quite similarly, we observe that <code>zubr.in</code> &ndash; a system for the online
+monitoring of Belarus’ 2020 electoral process &ndash; presented <a href="https://explorer.ooni.org/measurement/20200813T112239Z_AS6697_UBvtRokviFcpQ26bY18101WGzURQbCwA8hziVMwbhnpiqHMYsf?input=https%3A%2F%2Fzubr.in%2F">HTTP failures and generic timeout errors</a>
+everytime it was tested from 13th August 2020 onwards, suggesting
+potential blocking. From 22nd August 2020, we start to observe that the
+testing of the site consistently presents <a href="https://explorer.ooni.org/measurement/20200822T111315Z_AS6697_mA7Wp6ZvaaOJ90uJaGNvWx0WpV82UFCAfOhRqUtN4F3Klyl6lp?input=https%3A%2F%2Fzubr.in%2F">connection reset errors</a>
+(with interference happening during the TLS handshake), similarly to how
+most sites were blocked from that date onwards.</p><p>In addition to the blocking of election monitoring sites, we observe the
+blocking of political opposition and pro-democracy sites. These include
+the <a href=https://hramada.org/>website</a> of the Belarusian Social
+Democratic Party (People&rsquo;s Assembly), the
+<a href=https://zapraudu.info/>site</a> of a political movement advocating for
+democratic peaceful change, and the
+<a href=https://pramen.io/ru/glavnaya/>sites</a> of anarchist groups.</p><p>The list of blocked political websites, and relevant OONI measurements
+from their testing in Belarus, are available through the table below.</p><table><thead><tr><th>Blocked domains</th><th>OONI measurements</th></tr></thead><tbody><tr><td><code>ucpb.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=ucpb.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=ucpb.org</a></td></tr><tr><td><code>babariko.vision</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=babariko.vision">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=babariko.vision</a></td></tr><tr><td><code>bchd.info</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=bchd.info">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=bchd.info</a></td></tr><tr><td><code>belarus2020.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belarus2020.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=belarus2020.org</a></td></tr><tr><td><code>elections2020.spring96.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=elections2020.spring96.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=elections2020.spring96.org</a></td></tr><tr><td><code>flagshtok.info</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=flagshtok.info">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=flagshtok.info</a></td></tr><tr><td><code>honestby.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=honestby.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=honestby.org</a></td></tr><tr><td><code>honestpeople.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=honestpeople.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=honestpeople.by</a></td></tr><tr><td><code>watch.honestpeople.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=watch.honestpeople.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=watch.honestpeople.by</a></td></tr><tr><td><code>help.honestpeople.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=help.honestpeople.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=help.honestpeople.by</a></td></tr><tr><td><code>hramada.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=hramada.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=hramada.org</a></td></tr><tr><td><code>mspring.online</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=mspring.online">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=mspring.online</a></td></tr><tr><td><code>narodny-opros.info</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=narodny-opros.info">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=narodny-opros.info</a></td></tr><tr><td><code>opg.ucoz.net</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=opg.ucoz.net">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=opg.ucoz.net</a></td></tr><tr><td><code>pramen.io</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=pramen.io">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=pramen.io</a></td></tr><tr><td><code>pramenby.wordpress.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=pramenby.wordpress.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=pramenby.wordpress.com</a></td></tr><tr><td><code>primaries.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=primaries.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=primaries.by</a></td></tr><tr><td><code>pyx.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=pyx.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=pyx.by</a></td></tr><tr><td><code>statkevich.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=statkevich.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=statkevich.org</a></td></tr><tr><td><code>tip.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tip.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tip.by</a></td></tr><tr><td><code>tsepkalo.info</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tsepkalo.info">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tsepkalo.info</a></td></tr><tr><td><code>tsepkalo.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tsepkalo.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tsepkalo.com</a></td></tr><tr><td><code>udf.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=udf.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=udf.by</a></td></tr><tr><td><code>zapraudu.info</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zapraudu.info">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zapraudu.info</a></td></tr><tr><td><code>zubr.in</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zubr.in">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zubr.in</a></td></tr></tbody></table><h2 id=human-rights>Human rights</h2><p>Several human rights sites have been blocked in Belarus as well, as
+listed in the following table (which shares relevant <a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI data</a>).</p><table><thead><tr><th>Blocked domains</th><th>OONI measurements</th></tr></thead><tbody><tr><td><code>spring96.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=spring96.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=spring96.org</a></td></tr><tr><td><code>praca-by.info</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=praca-by.info">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=praca-by.info</a></td></tr><tr><td><code>www.praca-by.info</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.praca-by.info">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.praca-by.info</a></td></tr><tr><td><code>vitebskspring.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vitebskspring.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vitebskspring.org</a></td></tr><tr><td><code>www.privacyinternational.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.privacyinternational.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.privacyinternational.org</a></td></tr></tbody></table><p>Most measurements have been collected from Beltelecom (AS6697), but some
+of these sites present signs of blocking on 3 other networks as well
+(AS25106, AS31143, AS42772). The blocked sites include the
+<a href=https://spring96.org/>site</a> of the Human Rights Center “Viasna”, a
+human rights NGO which was established in April 1996 during mass
+protests by the democratic opposition in Belarus. The testing of their
+site has <a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=spring96.org">presented anomalies</a>
+mainly from 13th August 2020 onwards.</p><p>Other blocked sites include that of <a href=https://vitebskspring.org/pra-nas>Vitebsk Spring</a>, an independent information
+resource created and maintained by human rights activists and
+journalists in the city of Vitebsk and the Vitebsk region. From 22nd
+August 2020 onwards, <a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vitebskspring.org">almost all measurements</a>
+collected from the testing of their site on several different networks
+suggest that access was blocked. However, since the <a href=https://ooni.org/install/>OONI Probe</a> testing of <code>vitebskspring.org</code> only
+started on 22nd August 2020, we are unable to evaluate whether the
+blocking started on an earlier date.</p><p>Privacy International’s <a href=https://privacyinternational.org/>website</a>
+also appears to have been <a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.privacyinternational.org&amp;probe_asn=AS6697">blocked by Beltelecom (AS6697)</a>
+in Belarus. Similarly to other sites hosted on HTTPS, we observe
+interference during the TLS handshake, suggesting the potential presence
+of SNI based filtering. All OONI measurements collected from 25th August
+2020 onwards suggest
+<a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.privacyinternational.org&amp;probe_asn=AS6697">blocking</a>
+of <code>www.privacyinternational.org</code> on Beltelecom (AS6697).</p><p>Similarly to other censorship cases discussed in this report, we observe
+that Beltelecom (AS6697) <a href="https://explorer.ooni.org/measurement/20200822T190352Z_AS6697_eGRtOy9yvLxkWh1cQ6WyLB2nIduQMIEHnArsxjxmP5u1UhDvkv?input=http%3A%2F%2Fwww.praca-by.info%2Findex.php%2Fru%2F">serve a block page</a>
+for the HTTP version of <code>www.praca-by.info</code>, but we see that the
+<a href="https://explorer.ooni.org/measurement/20200818T055320Z_AS6697_y4tXoY098dOGsZpDEyXhGSOTeUGAL0s2pVpUoWU4vSlvtIm5nN?input=https%3A%2F%2Fpraca-by.info%2F">connection times out</a>
+when they block access to the HTTPS version of the site.</p><h2 id=communication>Communication</h2><p>At least 19 domains of communication platforms (and proxies for those
+platforms) have been blocked in Belarus in August 2020, all of which are
+listed in the following table (which also shares relevant <a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI data</a>).</p><table><thead><tr><th>Blocked domains</th><th>OONI measurements</th></tr></thead><tbody><tr><td><code>proxygram.org</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=proxygram.org">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=proxygram.org</a></td></tr><tr><td><code>prx.nmja</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=prx.nmja">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=prx.nmja</a></td></tr><tr><td><code>rusproxy.telegramproxy.me</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=rusproxy.telegramproxy.me">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=rusproxy.telegramproxy.me</a></td></tr><tr><td><code>telegram.veesecurity.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=telegram.veesecurity.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=telegram.veesecurity.com</a></td></tr><tr><td><code>telegramproxy.online</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=telegramproxy.online">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=telegramproxy.online</a></td></tr><tr><td><code>tginfo.yadda.club</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tginfo.yadda.club">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tginfo.yadda.club</a></td></tr><tr><td><code>tgproxy.me</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tgproxy.me">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tgproxy.me</a></td></tr><tr><td><code>tlgrm.mnja</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tlgrm.mnja">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tlgrm.mnja</a></td></tr><tr><td><code>txti.es</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=txti.es">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=txti.es</a></td></tr><tr><td><code>catalog-telegram.ru</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=catalog-telegram.ru">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=catalog-telegram.ru</a></td></tr><tr><td><code>cock.li</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=cock.li">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=cock.li</a></td></tr><tr><td><code>mssg.me</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=mssg.me">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=mssg.me</a></td></tr><tr><td><code>proxy-gram.tk</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=proxy-gram.tk">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=proxy-gram.tk</a></td></tr><tr><td><code>startmail.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=startmail.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=startmail.com</a></td></tr><tr><td><code>tutanota.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tutanota.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tutanota.com</a></td></tr><tr><td><code>vk.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vk.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vk.com</a></td></tr><tr><td><code>www.liveu.tv</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.liveu.tv">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.liveu.tv</a></td></tr><tr><td><code>www.vamtlgrm.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.vamtlgrm.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=www.vamtlgrm.com</a></td></tr><tr><td><code>zharov-lox.telegramproxy.me</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zharov-lox.telegramproxy.me">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zharov-lox.telegramproxy.me</a></td></tr></tbody></table><p>Telegram channels have
+<a href=https://globalvoices.org/2020/08/18/how-one-telegram-channel-became-central-to-belarus-protests/>reportedly</a>
+served as an important information and communication platform amid the
+ongoing protests in Belarus, which might explain why many of the above
+Telegram-related domains were blocked. The
+<a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tutanota.com">blocked</a>
+sites also include privacy-preserving email providers,
+<a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=tutanota.com">tutanota.com</a>
+and
+<a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=startmail.com">startmail.com</a>.
+Access to <code>tutanota.com</code> appears to have been
+<a href="https://explorer.ooni.org/measurement/20200911T010122Z_AS12406_udzNe3uY0vnwjaBQZFTJnPS8UVqoJQlYoRh6wuYyzzAzHVZZHQ?input=https%3A%2F%2Ftutanota.com%2F">unblocked</a>
+in recent days on some networks.</p><p>VK is a Russian social networking service which hosts the <a href=https://vk.com/humanrights_by>channels of Belarusian human rights organizations</a>
+and of groups <a href=https://vk.com/l_l_loc>expressing criticism against President Lukashenko</a>, which may potentially explain why
+the platform was <a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=vk.com">recently blocked</a>
+in Belarus.</p><h2 id=circumvention>Circumvention</h2><p>Several censorship circumvention tool websites have been blocked in
+Belarus as well, as illustrated through the following chart (based on
+<a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI data</a>).</p><div><a href=/post/2020-belarus-internet-outages-website-censorship/images/anon.png><img src=/post/2020-belarus-internet-outages-website-censorship/images/anon_hu3d7ad557fb4f9c0a13ec7b0702d64eac_211923_1000x800_fit_box_3.png srcset="/post/2020-belarus-internet-outages-website-censorship/images/anon_hu3d7ad557fb4f9c0a13ec7b0702d64eac_211923_2000x1600_fit_box_3.png 2x" title="Blocked circumvention tool sites in Belarus" alt="Blocked circumvention tool sites in Belarus"></a></div><p><strong>Image:</strong> Blocking of circumvention tool websites across ISPs in
+Belarus, <a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI measurements collected from Belarus between 1st August 2020 to 3rd September 2020</a></p><p>The following table shares relevant OONI measurements on the blocking of
+these circumvention tool sites.</p><table><thead><tr><th>Blocked domains</th><th>OONI measurements</th></tr></thead><tbody><tr><td><code>anonym.to</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=anonym.to">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=anonym.to</a></td></tr><tr><td><code>cameleo.xyz</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=cameleo.xyz">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=cameleo.xyz</a></td></tr><tr><td><code>noblockme.ru</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=noblockme.ru">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=noblockme.ru</a></td></tr><tr><td><code>psiphon.ca</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=psiphon.ca">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=psiphon.ca</a></td></tr><tr><td><code>safervpn.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=safervpn.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=safervpn.com</a></td></tr><tr><td><code>surfshark.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=surfshark.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=surfshark.com</a></td></tr><tr><td><code>zenmate.com</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zenmate.com">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=zenmate.com</a></td></tr></tbody></table><p>Psiphon, SaferVPN, SurfShark, and ZenMate are among the VPN sites that
+consistently presented anomalies as part of their recent testing in
+Belarus. Almost all <a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=psiphon.ca">OONI measurements collected from the testing of psiphon.ca</a>
+from 21st August 2020 onwards show that access to the site has been
+blocked on several local networks (while some previous measurements from
+9th August 2020 onwards also presented signs of potential blocking).
+Yet, amid the network disruptions following the elections, Psiphon
+<a href=https://blog-en.psiphon.ca/2020/08/amid-major-network-disruptions-176m.html>supported a peak of 1.76 million active daily users</a>
+in Belarus.</p><h2 id=other>Other</h2><p>Apart from news, political, human rights, communication and
+circumvention tool sites, we also observed the blocking of several other
+websites as well (which are included in the <a href=https://t.me/zatelecom/15474>reported blocklist</a>), as listed in the following
+table.</p><table><thead><tr><th>Blocked domains</th><th>OONI measurements</th></tr></thead><tbody><tr><td><code>mfront.net</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=mfront.net">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=mfront.net</a></td></tr><tr><td><code>015.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=015.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=015.by</a></td></tr><tr><td><code>masheka.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=masheka.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=masheka.by</a></td></tr><tr><td><code>virtualbrest.by</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=virtualbrest.by">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=virtualbrest.by</a></td></tr><tr><td><code>intimby.net</code></td><td><a href="https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=intimby.net">https://explorer.ooni.org/search?until=2020-09-12&amp;probe_cc=BY&amp;domain=intimby.net</a></td></tr></tbody></table><p>The first domain listed in the above table (mfront.net) has information
+on health insurance in Russia, the next three sites (<code>015.by</code>, <code>masheka.by</code>,
+<code>virtualbrest.by</code>) are web portals, while <code>intimby.net</code> is a
+Belarusian dating site.</p><h1 id=conclusion>Conclusion</h1><p>At least <strong>86 websites appear to have been blocked in Belarus</strong> over the
+last month, according to <a href="https://explorer.ooni.org/search?until=2020-09-03&amp;probe_cc=BY&amp;test_name=web_connectivity&amp;only=anomalies">OONI network measurement data</a>.
+These include <strong>news media, political opposition, pro-democracy, and
+election related websites</strong>, as well as communication and circumvention
+tool sites.</p><p>Given that these censorship events emerged <a href=https://www.nytimes.com/2020/08/24/world/europe/belarus-protests-arrests.html>amid mass anti-government
+protests</a>,
+they appear to be politically-motivated. These findings corroborate the
+blocking of most sites included in a <a href=https://t.me/zatelecom/15474>reported blocklist</a>. Most of these sites appear to
+have been blocked from 22nd August 2020 onwards, with some presenting
+signs of blocking right after the Belarusian 2020 presidential election.</p><p>We observe a variance in blocking both in terms of which websites are
+blocked across ISPs (i.e. different sites blocked on different
+networks), as well as in terms of censorship techniques. We see that the
+same ISP may adopt different censorship techniques, particularly
+depending on whether a site is hosted on HTTP or encrypted HTTPS.</p><p>In some cases, when sites are hosted on HTTP, we see that ISPs <a href="https://explorer.ooni.org/measurement/20200827T200140Z_AS6697_3AaFyKd5jJXttGd2Ct2rjnfLB8hw4sXDwghlc8jeVXVrOzcOCN?input=http%3A%2F%2Fudf.by">serve a blockpage</a>.
+But when sites are hosted on encrypted HTTPS, we observe <a href="https://explorer.ooni.org/measurement/20200829T214713Z_AS6697_qPI6nu4s2ioTAz3CzcmflzSlcgt1xXXmk4tvFL1QjrcjOgW8uU?input=https%3A%2F%2Fudf.by%2F">interference
+during the TLS handshake</a>
+(after the TCP connection and before the HTTP request), resulting in a
+connection reset error.</p><p>As <a href="https://explorer.ooni.org/measurement/20200829T214713Z_AS6697_qPI6nu4s2ioTAz3CzcmflzSlcgt1xXXmk4tvFL1QjrcjOgW8uU?input=https%3A%2F%2Fudf.by%2F">blocking appears to be implemented during the TLS handshake</a>,
+this suggests that Deep Packet Inspection (DPI) technology is likely
+being used. It seems likely that the SNI is being used to decide whether
+to block or let connections go through.</p><p>These findings are limited to <a href="https://docs.google.com/spreadsheets/d/15aLKEL9dxJMR6-VybMH7VV97f6Q9139_Iu9TgfT6YdY/edit?usp=sharing">our analysis of OONI measurements</a>
+collected from multiple ISP networks in Belarus between 1st August 2020
+to 3rd September 2020, and exclude websites which received limited
+testing coverage during this period.</p><p>Protests in Belarus are
+<a href=https://www.npr.org/2020/09/13/912513066/massive-protests-continue-in-belarus-as-demonstrators-demand-lukashenko-resign>ongoing</a>
+and the political environment remains tense. The findings of this study
+suggest that there may be a correlation between the development of
+political events and censorship events, raising the need for <a href=https://ooni.org/install/mobile>further network measurement testing</a>.</p><p>As this study was carried out through the use of <a href=https://ooni.org/install/>free and open source software</a> and <a href=https://ooni.org/data/>open data</a>, it can potentially be reproduced and
+expanded upon.</p><p>We thank all <a href=https://ooni.org/install/>OONI Probe</a> users in Belarus
+who made this study possible.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

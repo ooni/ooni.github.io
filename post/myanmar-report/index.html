@@ -1,0 +1,684 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>The State of Internet Censorship in Myanmar | OONI</title>
+<link rel=canonical href=https://ooni.org/post/myanmar-report/><meta name=description content="A research study by the Open Observatory of Network Interference (OONI), Sinar Project, and the Myanmar ICT for Development Organization (MIDO).
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Reported cases of internet censorship and surveillance
+Examining internet censorship in Myanmar
+Methodology
+Review of the Citizen Lab&rsquo;s test list for Myanmar"><meta property="og:title" content="The State of Internet Censorship in Myanmar"><meta property="og:description" content="A research study by the Open Observatory of Network Interference (OONI), Sinar Project, and the Myanmar ICT for Development Organization (MIDO).
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Reported cases of internet censorship and surveillance
+Examining internet censorship in Myanmar
+Methodology
+Review of the Citizen Lab&rsquo;s test list for Myanmar"><meta property="og:type" content="article"><meta property="og:url" content="/post/myanmar-report/"><meta property="article:published_time" content="2017-03-29T13:31:00+00:00"><meta property="article:modified_time" content="2017-03-29T13:31:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="The State of Internet Censorship in Myanmar"><meta name=twitter:description content="A research study by the Open Observatory of Network Interference (OONI), Sinar Project, and the Myanmar ICT for Development Organization (MIDO).
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Reported cases of internet censorship and surveillance
+Examining internet censorship in Myanmar
+Methodology
+Review of the Citizen Lab&rsquo;s test list for Myanmar"><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>The State of Internet Censorship in Myanmar</h1><div class=byline><span class=author>Kay Yen Wong (Sinar Project), Maria Xynou (OONI), Arturo Filastò (OONI), Khairil Yusof (Sinar Project),Tan Sze Ming (Sinar Project), Myanmar ICT for Development Organization (MIDO)</span>
+<span class=date>2017-03-29 13:31 UTC</span></div><p><img src=/post/myanmar/myanmar-flag.png alt=Myanmar></p><p>A research study by the Open Observatory of Network Interference (OONI),
+Sinar Project, and the Myanmar ICT for Development Organization (MIDO).</p><p><strong>Table of contents</strong></p><ul><li><p><a href=#key-findings>Key Findings</a></p></li><li><p><a href=#introduction>Introduction</a></p></li><li><p><a href=#background>Background</a></p></li><li><p><a href=#network-landscape-and-internet-penetration>Network landscape and internet penetration</a></p></li><li><p><a href=#legal-environment>Legal environment</a></p><ul><li><p><a href=#freedom-of-expression>Freedom of expression</a></p></li><li><p><a href=#press-freedom>Press freedom</a></p></li><li><p><a href=#access-to-information>Access to information</a></p></li><li><p><a href=#privacy>Privacy</a></p></li><li><p><a href=#censorship-and-surveillance>Censorship and surveillance</a></p></li></ul></li><li><p><a href=#reported-cases-of-internet-censorship-and-surveillance>Reported cases of internet censorship and surveillance</a></p></li><li><p><a href=#examining-internet-censorship-in-myanmar>Examining internet censorship in Myanmar</a></p><ul><li><p><a href=#methodology>Methodology</a></p><ul><li><p><a href=#review-of-the-citizen-labs-test-list-for-myanmar>Review of the Citizen Lab&rsquo;s test list for Myanmar</a></p></li><li><p><a href=#ooni-network-measurements>OONI network measurements</a></p><ul><li><p><a href=#web-connectivity-test>Web Connectivity test</a></p></li><li><p><a href=#http-invalid-request-line-test>HTTP Invalid Request Line test</a></p></li><li><p><a href=#http-header-field-manipulation-test>HTTP Header Field Manipulation test</a></p></li><li><p><a href=#vanilla-tor-test>Vanilla Tor test</a></p></li><li><p><a href=#whatsapp-test>WhatsApp test</a></p></li><li><p><a href=#facebook-messenger-test>Facebook Messenger test</a></p></li></ul></li></ul></li><li><p><a href=#data-analysis>Data analysis</a></p></li></ul></li><li><p><a href=#findings>Findings</a></p><ul><li><a href=#acknowledgement-of-limitations>Acknowledgement of limitations</a></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li><li><p><a href=#acknowledgements>Acknowledgements</a></p></li></ul><p><strong>Country:</strong> Myanmar</p><p><strong>Probed ISPs:</strong> FMG Company Limited (AS63852), Global Technology Co.,
+Ldt (AS133524), OOREDOO Myanmar (AS132167), Telenor Myanmar (AS133385),
+Myanma Posts & Telecommunications (AS9988), Yatanarpon Teleport Company
+Limited (AS18399).</p><p><strong>Testing period:</strong> 25th October 2016 - 28th February 2017</p><p><strong>OONI tests:</strong> Web Connectivity, HTTP Invalid Request Line, HTTP Header
+Field Manipulation, WhatsApp test, Facebook Messenger test, Vanilla Tor
+test.</p><p><strong>Censorship method:</strong> Signs of TCP/IP blocking and HTTP blocking.</p><h1 id=key-findings>Key Findings</h1><p>Out of <a href=https://github.com/citizenlab/test-lists/tree/master/lists>1,927 sites</a> that
+were tested for censorship in six local vantage points in Myanmar, only
+five sites <a href=https://api.ooni.io/files/by_country/MM>presented signs of TCP/IP and HTTP blocking</a>,
+including the sites of the <a href=http://burma.usembassy.gov>U.S. embassy in Myanmar</a> and of the <a href=http://www.cidh.org/>Organization of American States (OAS)</a>. The motivation and
+justification behind the potential blocking of these sites remains
+unclear. No block pages were detected as part of this study that can
+confirm cases of censorship.</p><p>Similarly, no middle boxes were detected as part of this study. Blue
+Coat software (some types of which can potentially be used for internet
+censorship and surveillance) was previously
+<a href=https://explorer.ooni.org/highlights/>detected</a> in
+Myanmar by OONI in late 2012. Extensive tests though performed across
+six different networks in Myanmar show that Blue Coat software didn’t
+appear to be present during the testing period (25th October 2016 to
+28th February 2017), indicating that it may have been removed.</p><p>WhatsApp, Facebook Messenger, and the <a href=https://www.torproject.org/>Tor network</a> appeared to be
+<a href=https://api.ooni.io/files/by_country/MM>accessible</a>
+across all six networks in Myanmar where OONI tests were run.</p><h1 id=introduction>Introduction</h1><p>In an attempt to examine the current state of internet censorship in
+Myanmar, the <a href=https://ooni.org/>Open Observatory of Network Interference (OONI)</a>, <a href=http://sinarproject.org/>Sinar Project</a> and <a href=http://myanmarido.org/>Myanmar ICT for Development Organization (MIDO)</a> collaborated on a joint study to
+examine whether internet censorship events were persisting in the
+country through the collection and analysis of network measurements.</p><p>The aim of this study is to increase transparency of internet controls
+in Myanmar and to collect data that can potentially corroborate rumours
+and reports of internet censorship events. The following sections of
+this report provide information about Myanmar’s network landscape and
+internet penetration levels, its legal environment with respect to
+freedom of expression, access to information and privacy, as well as
+about cases of censorship and surveillance that have previously been
+reported in the country. The remainder of the report documents the
+methodology and key findings of this study.</p><h1 id=background>Background</h1><p>Myanmar is a sovereign state with a population of around <a href=https://drive.google.com/file/d/0B067GBtstE5TeUlIVjRjSjVzWlk/view>51 million</a>
+in South East Asia, bordering the Andaman Sea and the Bay of Bengal,
+between Bangladesh and Thailand. It is a <a href=https://www.cia.gov/library/publications/the-world-factbook/geos/bm.html>parliamentary republic</a>
+with 7 regions, 7 states, and 1 union territory.</p><p>Its population is comprised of 135 distinct officially recognised ethnic
+groups, with the majority Burman ethnic group making up
+<a href=https://www.cia.gov/library/publications/the-world-factbook/geos/bm.html>68%</a>
+of the population and dominating the military and government. The
+minority ethnic groups includes the Shans (9%), Karens (7%), Rakhines
+(4%), Chinese (3%), Indians (2%) and Mon (2%), with the other ethnic
+groups consisting the remaining 5%.</p><p>According to Myanmar&rsquo;s <a href=https://drive.google.com/file/d/0B067GBtstE5TeUlIVjRjSjVzWlk/view>2014 census</a>,
+a large majority of Myanmar&rsquo;s population practices Buddhism, with 87.9%
+identifying as Buddhists, 6.2% as Christians, 4.3% Muslims, 0.8%
+Animists, 0.5% Hindus, 0.2% as &lsquo;other&rsquo; and the remaining 0.1% as &rsquo;none&rsquo;.
+Non-Buddhist minorities face widespread persecution and prejudice, with
+the Rohingya minority having continued to suffer from human rights
+violation under the military junta since 1978, with
+<a href=http://www.reuters.com/article/us-myanmar-violence-idUSBRE85A01C20120611>continued</a>
+<a href=http://www.undispatch.com/the-8-stages-of-genocide-against-burmas-rohingya/>criticism</a>
+by human rights organisations on the government&rsquo;s treatment of the
+Rohingya minority. The government has been actively accused of forced or
+pressured religious conversions of non-Buddhist minorities. Adherence to
+Buddhism was an <a href=https://www.state.gov/j/drl/rls/irf/2010_5/168349.htm>unwritten prerequisite</a>
+for promotions within the government and army, with nearly all senior
+level officers of the armed forces and the ruling State Peace
+Development Council (SPDC) identifying as Buddhists.</p><p>Civil wars and rampant ethnic and religious strife have been a constant
+feature of Myanmar&rsquo;s socio-political landscape for most of its
+independent years as ethnic minorities struggle for ethnic and
+sub-national autonomy. Human rights violations and systematic denial of
+basic rights such as freedom of expression, association, and assembly,
+occurred with regularity during the military junta’s rule of the country
+from 1962 till 2011. The ruling State Peace and Development Council
+(SPDC) <a href=https://www.hrw.org/world-report/2010/country-chapters/burma>regularly arrested</a>
+activists and opposition party members sentenced by unfair trials in
+closed courts, in addition to imposing systematic restrictions of
+information control to limit social mobilisation around key political
+events.</p><p>From 1962, the country was ruled by the military junta up until 2011
+when it was officially dissolved and replaced with a nominally civilian
+government following the 2010 general election. Although the 2010
+election was
+<a href=https://www.theguardian.com/commentisfree/2011/jul/04/aung-san-suu-kyi-burmese>criticised</a>
+for declaring the National League for Democracy (NLD) illegal, and only
+allowing government sanctioned political parties to contest in it, it
+marked the transition of the military’s movement towards more openness,
+with the government’s <a href=http://www.bbc.com/news/world-asia-16546688>political reforms</a> which included
+ending the house arrest of NLD’s pro-democracy leader Aung San Suu Kyi,
+the release of 200 political prisoners as part of a general amnesty,
+relaxation of press censorship, and institution of new labour laws.</p><p>Drastic reforms in September 2011 marked the military government’s
+transition to more openness, with significant relaxations of the
+country’s censorship policies. <a href=https://opennet.net/blog/2012/10/update-information-controls-burma>Censorship tests</a>
+conducted by ONI in 2012 found reductions in the scope and depth of
+content filtered in 2012 compared to in 2005, with a majority of
+previously censored political content ranging from independent news
+sites, the websites of opposition parties, and critical political
+content made accessible. Despite that, a culture of self-censorship
+remains, with many media organisations taking precaution to avoid
+accusations of libel and state security charges. With the new transition
+towards a free democratic system following the win of the opposition
+party, National League for Democracy in the most recent 2015 election,
+it is imperative to continue the questioning of the true breadth and
+depth of the current state of censorship in Myanmar.</p><p>Myanmar’s transition to a civilian government in 2011 began an economic
+overhaul aimed at attracting foreign investors, and integrating Myanmar
+into the global economy. This, along with the easing of most Western
+sanctions has led to its accelerated growth in 2013 and 2014, with a GDP
+growth of
+<a href=https://www.cia.gov/library/publications/the-world-factbook/geos/bm.html>8.7%</a>.
+Despite this, due to the former military government’s isolationist
+policies and economic mismanagement, Myanmar’s <a href=http://www.dvb.no/analysis/income-inequality-in-burma/33726>income gap</a> is
+among the widest in the world, as a large proportion of the economy
+remains under the control of supporters of the previous military
+government.</p><p>Myanmar ranks as a corrupt nation, with a <a href=http://www.transparency.org/news/feature/corruption_perceptions_index_2016>Corruption Perceptions Index</a>
+rank of 136 out of 176, and a rating of 28 out of 100 as of 2016.</p><h1 id=network-landscape-and-internet-penetration>Network landscape and internet penetration</h1><p>As of 2016, internet penetration rates in Myanmar are at
+<a href=http://www.internetworldstats.com/asia/mm.htm>19.3%</a>, quickly
+growing due to the sharp increase in its mobile penetration rate with
+the emergence of cheap mobile internet and improved telecommunication
+infrastructure. Despite the strong growth in Myanmar’s mobile
+penetration rate from <a href=https://www.budde.com.au/Research/Myanmar-Burma-Telecoms-Mobile-Broadband-and-Digital-Media-Statistics-and-Analyses>7% in 2013 to 85% by 2016</a>,
+fixed line telephone penetration remains low at just under 1%.</p><p>Prior to September 2011, a combination of government censorship,
+deliberate infrastructure and technical constraints, <a href=http://opennet.net/research/bulletins/013>deliberately controlled internet speeds with proxy-caching servers</a>, and <a href=https://web.archive.org/web/20110420123218/http://www.mpt.net.mm/mpt/it/triff.html>government restrictions on pricing</a>
+limited the internet penetration rates in Myanmar, with it being as low
+as <a href=http://www.internetworldstats.com/asia/mm.htm>0.2%</a> in 2010.</p><p>The government’s expansive control over the internet was largely
+facilitated by the fact that users were limited to only two ISPs,
+Myanmar Posts and Telecom (MPT) and Bagan Cybertech (currently
+Yatanarpon Telecom), both of which were state-controlled by the Myanmar
+government. With low computer ownership, most users relied on internet
+cafés, promoted as “Public Access Centres” (PAC) for internet access,
+with many internet cafés <a href=http://www.atimes.com/atimes/Southeast_Asia/II21Ae01.html>utilising proxy sites and circumvention tools</a> to
+bypass government restrictions.</p><p>Following the enactment of the Information Technology Law, the
+government began the <a href=http://archive-1.mizzima.com/business/technology/10158-isp-licenses-to-be-issued-after-new-it-law>issuing of ISP licenses</a>
+to new operators in 2013 in an effort to open up Myanmar’s
+telecommunications market. With the entry of two foreign operators
+Ooredoo and Telenor in the local mobile market leading to the emergence
+of cheap mobile internet and improved telecommunication infrastructure,
+internet penetration rates <a href=http://www.internetworldstats.com/asia/mm.htm>skyrocketed to 12.6%</a> in 2015, with it
+currently growing at 19.3% in 2016.</p><p>The table below illustrates some of the main providers in Myanmar.</p><table><thead><tr><th>Mobile Operators/ISPs</th><th>Fixed Internet</th><th>Mobile Internet</th></tr></thead><tbody><tr><td>Myanmar Posts and Telecom (MPT)</td><td>X</td><td>X</td></tr><tr><td>Yatanarpon Telecom Company</td><td>X</td><td>X</td></tr><tr><td>Telenor Myanmar Limited</td><td></td><td>X</td></tr><tr><td>Ooredoo Myanmar Limited</td><td></td><td>X</td></tr><tr><td>Global Technology Co., Ltd</td><td>X</td><td></td></tr><tr><td>Fiber Link Myanmar Co., Ltd</td><td>X</td><td></td></tr><tr><td>Fortune Broadband</td><td>X</td><td></td></tr><tr><td>Elite Tech</td><td>X</td><td></td></tr><tr><td>WeLink</td><td>X</td><td></td></tr><tr><td>Amara Communications Co., Ltd</td><td></td><td>X</td></tr><tr><td>Bluewave</td><td>X</td><td></td></tr><tr><td>AGB</td><td>X</td><td></td></tr><tr><td>Spectrum Life Net Core</td><td>X</td><td></td></tr><tr><td>Myanmar Net</td><td>X</td><td></td></tr></tbody></table><h1 id=legal-environment>Legal environment</h1><h2 id=freedom-of-expression>Freedom of expression</h2><p><strong>Telecommunications Law 2013</strong></p><p>The <a href=http://www.mcit.gov.mm/sites/default/files/Telecom%20Law%20English%20Version_0.pdf>2013 Telecommunications Law</a>
+restricts speech via telecommunications equipment. Section 66D prohibits
+the “extortion, coercion, wrongful restrainment, defamation, undue
+influence or threatening of any person” using any telecommunications
+networks. The use of such subjective terms imposes on the criminal
+liability of the speech of any telecommunications user.</p><p>The Research Team for Telecommunication Law, as established by the Committee for
+Amending the Telecommunication Law, has analyzed the Telecommunication Law from
+various aspects, particularly from the view of the legal system and IT
+technology. According to the findings, this law has resulted in seven cases
+under section 66(d) and five charges under the former President U Thein Sein
+administration. Under the present National League for Democracy government,
+there have been forty-two 66(d) cases, with five resulting in charges, and eight
+people being held in custody. The rest are ongoing cases.</p><p>Many of these cases may result from the vague terminology and definitions used
+as part of Myanmar’s Telecommunication Law. The Research Team for
+Telecommunication Law pointed out, for example, that Section 68(a) of the Law
+(“Connecting, receiving, transmitting, distributing or handing out false
+information dishonestly or participating in such activity”) is vague, confusing,
+and does not specify the types of online activities that could potentially
+result in prosecution.</p><p><strong>Myanmar Penal Code</strong></p><p>Section 124A [Sedition] of the <a href=http://www.wipo.int/edocs/lexdocs/laws/en/mm/mm004en.pdf>Myanmar Penal Code</a>
+prohibits any words, either spoken or written, signs, or visible
+representations that bring into hatred, contempt, attempts to excite, or
+disaffection towards the government, and can be punished by life
+imprisonment or imprisonment of a shorter term to which a fine may be
+added.</p><p>Sections 499-502 [Defamation] allow the state to prosecute an
+individual for defamation, defined as making or publishing any
+imputation concerning a person intending to harm the reputation of such
+a person, with a penalty of imprisonment of up to 2 years.</p><p>Section 505B [Public Tranquility] punishes the creation, publication
+or circulation of any statement or rumour with the intent to cause fear
+or alarm to the public which may induce them to commit an offence
+against the State or against public tranquility, with the penalty of
+imprisonment which may extend to two years.</p><p><strong>Computer Science Development Law (1996)</strong></p><p>Section IX of the <a href="http://www.wipo.int/wipolex/en/details.jsp?id=6434">1996 Computer Science Development Law</a> requires prior
+permission and registration for the importing, keeping, or utilization
+of computers or related equipment in addition to the setting up of
+computer networks. Failure to comply with the stipulations of the
+Ministry of Communications, Posts and Telegraphs is punishable by
+imprisonment of up to 15 years, and may also be liable to a fine.
+Despite it being effectively superseded by the 2004 Electronic
+Transactions Act and subsequently the 2013 Telecommunications Act, it
+has never been formally repealed and technically remains in force.</p><h2 id=press-freedom>Press freedom</h2><p><strong>End of pre-publication censorship 2012</strong></p><p>In 2012, as part of Myanmar&rsquo;s reform process, the country&rsquo;s Ministry of
+Information abolished pre-publication censorship practices, no longer
+requiring media organisations to submit their content to a censorship
+board prior to publication. However, a culture of self-censorship
+remains, with many media organisations taking precaution to avoid
+accusations of libel and state security charges.</p><p><strong>Broadcast Law 2015</strong></p><p>The <a href=http://www.mizzima.com/sites/default/files/photo/2015/08/Broadcasting-Law-Draft-Book-English-28-8-2015.pdf>Broadcast Law</a>
+lifted the ban on private ownership of daily newspapers for the first
+time, with broadcast licenses to public service, commercial and
+community broadcasters authorized and revoked by a Broadcast Council.
+However, the law maintains government control over the broadcasting
+sector&ndash; members of the Broadcast Council are appointed by its
+president, leaving it open to political manipulation, and undermining
+its independence.</p><h2 id=access-to-information>Access to information</h2><p><strong>Official Secrets Act 1923</strong></p><p>Myanmar’s broadly drawn <a href=http://www.icnl.org/research/library/files/Myanmar/secrets.pdf>Official Secrets Act</a>
+which dates back to 1923 penalizes the receival and dissemination of a
+broadly defined range of documents, especially government documents.
+Section 3(1)(a) of the Official Secrets Act provides penalties of up to
+14 years of imprisonment for anyone approaching or entering a broad
+range of prohibited places. Section 5 of the Act severely limits the
+disclosure of information of any kind by anyone within or with
+connections to the government, in addition to making it an offense to
+receive such information, with both offenses carrying providing
+penalties of up to 2 years of imprisonment.</p><p><strong>Electronic Transactions Law 2004</strong></p><p>The <a href=http://unpan1.un.org/intradoc/groups/public/documents/un-dpadm/unpan041197.pdf>2004 Electronic Transaction Law</a>
+forbids the sending or distribution of &ldquo;information relating to secrets
+of the security of the state&rdquo; through the internet. Due to the broadness
+of this definition, this applies to communications about cultural or
+economic affairs, and has been used to imprison journalists, bloggers or
+activists. The law, along with the Television and Video Law was applied
+by closed courts (mostly operating out of Insein prison) to <a href=http://news.bbc.co.uk/2/hi/asia-pacific/7721589.stm>deliver sentences</a> of up
+to 65 years to activists, bloggers and members of the 88 Generation
+Students Group.</p><h2 id=privacy>Privacy</h2><p>Section 357 of the <a href=http://www.wipo.int/edocs/lexdocs/laws/en/mm/mm009en.pdf>Constitution of Burma 2008</a> states
+that “the Union must protect the privacy and security of home, property,
+correspondence and other communications of citizens under the law
+subject to the provisions of the Constitution”. Certain data privacy
+requirements exist as part of Myanmar&rsquo;s 2004 Electronic Transactions Law. Some ISPs such as Telenor have adopted their own policies in
+regards to the privacy of their customers. The company stated in their
+<a href=http://www.telenor.com/wp-content/uploads/2013/03/Telecoms-Industry-Dialogue-%20Principles-Version-%201.pdf>policy</a>
+that they hold a public commitment to protecting their subscribers’
+freedom of expression and privacy in accordance with local legislation.</p><p>In mid-December 2016, Myanmar ICT for Development Organization (MIDO) organized
+the Myanmar Digital Rights Forum, together with Phandeeyar, Myanmar Centre for
+Responsible Business and EngagedMedia.org, with support from the Embassy of
+Sweden. The two-day Forum brought together about 90 representatives from
+organizations of the private sector and civil society, as well as government and
+media, to discuss concerns to digital rights.</p><p>The participants discussed the (then) draft Citizens’ Privacy and Security
+Protection Bill and raised a number of concerns about its impact and practical
+implementation. Many of the concerns pertained to the flaws and vague
+definitions included in the Bill, as well as to its limited compliance with
+international human rights standards. Some of the participants pointed out that
+the Bill does not contain a clear process for seeking permission, an order or a
+warrant that would authorize the circumstances for data collection and
+retention. As such, representatives from 18 organizations attending the Myanmar
+Digital Rights Forum released a joint statement urging the Union Parliament and
+the Government not to expedite the law enacting without having nation-wide
+public consultation.</p><p>Despite the comments and requests made by civil society organizations, the
+Citizens’ Privacy and Security Protection Bill was <a href=http://www.myanmar-responsiblebusiness.org/pdf/Law-Protecting-Privacy-and-Security-of-Citizens_en_unofficial.pdf>enacted into law</a> on 8th March 2017. The main changes to the law,
+compared to the original draft, include the removal of the bylaw making powers
+from the Home Ministry, and the insertion of vague wording in Article 8 for
+“permission from the Union President or a Union-level Government body”.</p><h2 id=censorship-and-surveillance>Censorship and surveillance</h2><p><strong>Telecommunications Law 2013</strong></p><p>Articles 75 and 77 of the 2013 Telecommunications Law allows the
+government to intercept, suspend, or obtain any information that
+threatens the national security and prevalence of law in the country.
+The broad provision fails to specify which government agents are
+authorised to do this, and what sort of information specifically
+constitutes the general terms such as ‘national security’.</p><h1 id=reported-cases-of-internet-censorship-and-surveillance>Reported cases of internet censorship and surveillance</h1><p>The internet freedom landscape in Myanmar appears to have taken a
+relatively positive turn following the 2011 reforms. Nonetheless, some
+cases of internet censorship and surveillance that have been reported
+since are included below.</p><p><strong>Internet café surveillance</strong></p><p>A <a href=https://rsf.org/en/news/surveillance-media-and-internet-stepped-under-new-civilian-president>2011 report by Reporters Without Borders(RSF)</a>
+revealed the issuing of a set of expansive directives by the Ministry of
+Communications Post and Telegraphs (MCPT) requiring owners of internet
+cafés to collect and share with the authorities the personal data of
+their patrons including their “names, National Registration Card number,
+passport number (if the user is a foreigner), contact address”, in
+addition to a log of their internet records.</p><p><strong>Internet censorship devices</strong></p><p>In 2011, <a href=https://citizenlab.org/2011/11/behind-blue-coat/>Citizen Lab research</a> uncovered
+the use of commercial filtering devices manufactured by U.S.-based Blue
+Coat Systems in Myanmar. Tests of internet filtering conducted within
+Burma running on Open Net Initiative (ONI) developed software provided
+evidence that Blue Coat’s devices were being used to actively filter
+internet content in Myanmar. Of the 37 Blue Coat content categories, all
+URLs from 10 categories on ONI’s test list appeared to be blocked
+entirely, including categories for pornography, LGBT, Hacking, and Proxy
+Avoidance.</p><p>Similarly, a <a href=https://rsf.org/en/news/burma-1>report</a> by Reporters
+without Borders revealed the acquisition of censorship equipment and
+hardware from the Chinese subsidiary of Alacatel-Lucent. The offering of
+a website filtering and surveillance system by Alcatel-Lucent’s Chinese
+subsidiary was confirmed by a spokesman for Hanthawaddy, a
+state-controlled ISP.</p><p>Blue Coat software (some types of which can potentially be used for
+internet filtering, censorship, and surveillance) was
+<a href=https://explorer.ooni.org/highlights/>detected</a> in
+Myanmar through <a href=https://ooni.org/nettest/http-invalid-request-line/>OONI’s HTTP Invalid Request Line test</a>
+in late 2012. It remains unclear, however, if this was a country-wide
+deployment or if it was only used in the specific network that was
+tested. Two years later OONI’s HTTP Invalid Request Line test was run in
+the same network, but the presence of Blue Coat systems was <a href=https://explorer.ooni.org/highlights/>not detected</a> (indicating
+that it was possibly removed from that specific network).</p><p><strong>Hacking Team Surveillance Software</strong></p><p>Leaked email communications from 2015 revealed a discussion between
+Hacking Team, an Italian spyware company, and the Myanmar government on
+establishing domestic surveillance mechanisms, with the earliest
+communication dating back to 2012. Although Hacking Team’s offer ‘active
+IT intrusion services’ appears to have
+<a href=https://wikileaks.org/hackingteam/emails/emailid/17155>failed</a>, the
+fact that such options were being considered by the Myanmar government
+is disturbing.</p><p><strong>Blocking of Facebook</strong></p><p>Following days of unrest and inter-communal violence between Buddhist
+and Muslim residents of the Mandalay region which left two dead and 14
+injured, <a href=http://www.irrawaddy.com/news/burma/facebook-problems-coincide-curfew-burma.html>Facebook went down</a>
+in Myanmar coinciding with the government-imposed curfew hours in
+Mandalay, with speculation that the blocked access may have been to
+prevent online users from posting hate speech and fueling unrest in
+Mandalay.</p><h1 id=examining-internet-censorship-in-myanmar>Examining internet censorship in Myanmar</h1><p>The <a href=https://ooni.org/>Open Observatory of Network Interference (OONI)</a>, in collaboration with <a href=http://sinarproject.org/en>Sinar Project</a> and <a href=http://myanmarido.org/>Myanmar ICT for Development Organization (MIDO)</a>, performed a study of internet
+censorship in Myanmar. The aim of this study was to understand whether
+and to what extent censorship events occurred in Myanmar during the
+testing period.</p><p>The sections below document the methodology and key findings of this
+study.</p><h2 id=methodology>Methodology</h2><p>The methodology of this study, in an attempt to identify potential
+internet censorship events in Thailand, included the following:</p><ul><li><p>Review of the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/mm.csv>Citizen Lab’s test list for Myanmar</a></p></li><li><p>OONI network measurements</p></li><li><p>Data analysis</p></li></ul><p>A <a href=https://github.com/citizenlab/test-lists/blob/master/lists/mm.csv>list of URLs</a>
+that are relevant and commonly accessed in Myanmar was created by the
+Citizen Lab in 2014 for the purpose of enabling network measurement
+researchers to examine their accessibility in Myanmar. As part of this
+study, this list of URLs was reviewed to include additional URLs which -
+along with <a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>other URLs</a>
+that are commonly accessed around the world - were tested for blocking
+based on <a href=https://github.com/TheTorProject/ooni-probe>OONI’s free software tests</a>. Such tests were
+run from local vantage points in Myanmar, and they also examined whether
+systems that are responsible for censorship, surveillance and traffic
+manipulation were present in the tested network. Once network
+measurement data was collected from these tests, the data was
+subsequently processed and analyzed based on a set of heuristics for
+detecting internet censorship and traffic manipulation.</p><p>The testing period for this study started on 25th October 2016 and
+concluded on 28th February 2017.</p><h3 id=review-of-the-citizen-labs-test-list-for-myanmar>Review of the Citizen Lab’s test list for Myanmar</h3><p>An important part of identifying censorship is determining <em>which</em>
+websites to examine for blocking.</p><p>OONI’s <a href=https://github.com/TheTorProject/ooni-probe>software</a> (called
+<em>OONI Probe</em>) is designed to examine URLs contained in specific lists
+(“test lists”) for censorship. By default, OONI Probe examines the
+“<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global test list</a>”,
+which includes a wide range of internationally relevant websites, most
+of which are in English. These websites fall under <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>31 categories</a>,
+ranging from news media, file sharing and culture, to provocative or
+objectionable categories, like pornography, political criticism, and
+hate speech.</p><p>These categories help ensure that a wide range of different types of
+websites are tested, and they enable the examination of the impact of
+censorship events (for example, if the majority of the websites found to
+be blocked in a country fall under the “human rights” category, that may
+have a bigger impact than other types of websites being blocked
+elsewhere). The main reason why objectionable categories (such as
+“pornography” and “hate speech”) are included for testing is because
+they are more likely to be blocked due to their nature, enabling the
+development of heuristics for detecting censorship elsewhere within a
+country.</p><p>In addition to testing the URLs included in the global test list,
+OONI Probe is also designed to examine a test list which is specifically
+created for the country that the user is running OONI Probe from, if such
+a list exists. Unlike the global test list, <a href=https://github.com/citizenlab/test-lists/tree/master/lists>country-specific test lists</a>
+include websites that are relevant and commonly accessed within specific
+countries, and such websites are often in local languages. Similarly to
+the global test list, country-specific test lists include websites that
+fall under the same set of <a href=https://github.com/citizenlab/test-lists/blob/master/lists/00-LEGEND-new_category_codes.csv>31 categories</a>,
+as explained previously.</p><p>All test lists are hosted by the <a href=https://citizenlab.org/>Citizen Lab</a> on
+<a href=https://github.com/citizenlab/test-lists>GitHub</a>, supporting OONI
+and other network measurement projects in the creation and maintenance
+of lists of URLs to test for censorship. As part of this study, OONI and
+Sinar Project reviewed the <a href=https://github.com/citizenlab/test-lists/blob/master/lists/mm.csv>Citizen Lab’s test list for Myanmar</a>
+by adding more URLs to be tested for censorship. Overall, <em><a href=https://github.com/citizenlab/test-lists/blob/master/lists/mm.csv>822 URLs</a></em>
+that are relevant to Myanmar were tested as part of this study. In
+addition, the URLs included in the Citizen Lab’s <a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global list</a>
+(including 1,105 different URLs) were also tested.</p><p>It is important to acknowledge that the findings of this study are only
+limited to the websites that were tested, and do not necessarily provide
+a complete view of other censorship events that may have occurred during
+the testing period.</p><h3 id=ooni-network-measurements>OONI network measurements</h3><p>The <a href=https://ooni.org/>Open Observatory of Network Interference (OONI)</a> is a <em>free software</em> project that
+aims to increase transparency of internet censorship around the world.
+Since 2012, OONI has developed multiple <a href=https://github.com/TheTorProject/ooni-probe>free and open source software tests</a> designed to
+examine the following:</p><ul><li><p>Blocking of websites.</p></li><li><p>Blocking of censorship circumvention tools (such as Tor).</p></li><li><p>Blocking of instant messaging apps.</p></li><li><p>Detection of systems responsible for censorship, surveillance, and
+traffic manipulation.</p></li></ul><p>As part of this study, the following <a href=https://github.com/TheTorProject/ooni-probe>OONI software tests</a> were run from six
+different local vantage points in Myanmar:</p><ul><li><p><a href=https://ooni.org/nettest/web-connectivity/>Web connectivity</a></p></li><li><p><a href=https://ooni.org/nettest/http-invalid-request-line/>HTTP invalid request line</a></p></li><li><p><a href=https://ooni.org/nettest/http-header-field-manipulation/>HTTP header field manipulation</a></p></li><li><p><a href=https://ooni.org/nettest/vanilla-tor/>Vanilla Tor</a></p></li><li><p><a href=https://ooni.org/nettest/whatsapp/>WhatsApp</a></p></li><li><p><a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger</a></p></li></ul><p>The Web Connectivity test was run with the aim of examining whether a
+set of URLs (included in both the “<a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>global test list</a>”
+and the recently updated “<a href=https://github.com/citizenlab/test-lists/blob/master/lists/mm.csv>Myanmar test list</a>”)
+were blocked during the testing period and if so, how. The Vanilla Tor
+test was run to examine the reachability of the <a href=https://www.torproject.org/>Tor network</a>, while the
+<a href=https://ooni.org/nettest/whatsapp/>WhatsApp</a> and
+<a href=https://ooni.org/nettest/facebook-messenger/>Facebook Messenger</a>
+tests were run to examine whether these instant messaging apps were
+blocked in Myanmar during the testing period.</p><p>The HTTP invalid request line and HTTP header field manipulation tests
+were run with the aim of examining whether “middle boxes” (systems
+placed in the network between the user and a control server) that could
+potentially be responsible for censorship and/or surveillance were
+present in the tested network.</p><p>The sections below document how each of these tests are designed for the
+purpose of detecting cases of internet censorship and traffic
+manipulation.</p><h4 id=web-connectivity-test>Web Connectivity test</h4><p>This
+<a href=https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/web_connectivity.py>test</a>
+examines whether websites are reachable and if they are not, it attempts
+to determine whether access to them is blocked through DNS tampering,
+TCP/IP blocking or by a transparent HTTP proxy. Specifically, this test
+is designed to perform the following:</p><ul><li><p>Resolver identification</p></li><li><p>DNS lookup</p></li><li><p>TCP connect</p></li><li><p>HTTP GET request</p></li></ul><p>By default, this test performs the above (excluding the first step,
+which is performed only over the network of the user) both over a
+control server and over the network of the user. If the results from
+both networks match, then there is no clear sign of network
+interference; but if the results are different, the websites that the
+user is testing are likely censored.</p><p>Further information is provided below, explaining how each step
+performed under the web connectivity test works.</p><p><strong>1. Resolver identification</strong></p><p>The domain name system (DNS) is what is responsible for transforming a
+host name (e.g. torproject.org) into an IP address (e.g. 38.229.72.16).
+Internet Service Providers (ISPs), amongst others, run DNS resolvers
+which map IP addresses to hostnames. In some circumstances though, ISPs
+map the requested host names to the wrong IP addresses, which is a form
+of tampering.</p><p>As a first step, the web connectivity test attempts to identify which
+DNS resolver is being used by the user. It does so by performing a DNS
+query to special domains (such as whoami.akamai.com) which will disclose
+the IP address of the resolver.</p><p><strong>2. DNS lookup</strong></p><p>Once the Web Connectivity test has identified the DNS resolver of the
+user, it then attempts to identify which addresses are mapped to the
+tested host names by the resolver. It does so by performing a DNS
+lookup, which asks the resolver to disclose which IP addresses are
+mapped to the tested host names, as well as which other host names are
+linked to the tested host names under DNS queries.</p><p><strong>3. TCP connect</strong></p><p>The web connectivity test will then try to connect to the tested
+websites by attempting to establish a TCP session on port 80 (or port
+443 for URLs that begin with HTTPS) for the list of IP addresses that
+were identified in the previous step (DNS lookup).</p><p><strong>4. HTTP GET request</strong></p><p>As the web connectivity test connects to tested websites (through the
+previous step), it sends requests through the HTTP protocol to the
+servers which are hosting those websites. A server normally responds to
+an HTTP GET request with the content of the webpage that is requested.</p><p><strong>Comparison of results: Identifying censorship</strong></p><p>Once the above steps of the web connectivity test are performed <em>both</em>
+over a control server and over the network of the user, the collected
+results are then compared with the aim of identifying whether and how
+tested websites are tampered with. If the compared results do <em>not</em>
+match, then there is a sign of network interference.</p><p>Below are the conditions under which the following types of blocking are
+identified:</p><ul><li><p><strong>DNS blocking:</strong> If the DNS responses (such as the IP addresses
+mapped to host names) do <em>not</em> match.</p></li><li><p><strong>TCP/IP blocking:</strong> If a TCP session to connect to websites was
+<em>not</em> established over the network of the user.</p></li><li><p><strong>HTTP blocking:</strong> If the HTTP request over the user’s network
+failed, or the HTTP status codes don’t match, or all of the
+following apply:</p></li></ul><ol><li><p>The body length of compared websites (over the control server
+and the network of the user) differs by some percentage;</p></li><li><p>The HTTP headers names do not match;</p></li><li><p>The HTML title tags do not match.</p></li></ol><p>It’s important to note, however, that DNS resolvers, such as Google or a
+local ISP, often provide users with IP addresses that are closest to
+them geographically. Often this is <em>not</em> done with the intent of network
+tampering, but merely for the purpose of providing users with localized
+content or faster access to websites. As a result, some false positives
+might arise in OONI measurements. Other false positives might occur when
+tested websites serve different content depending on the country that
+the user is connecting from, or in the cases when websites return
+failures even though they are not tampered with.</p><h4 id=http-invalid-request-line-test>HTTP Invalid Request Line test</h4><p>This
+<a href=https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/manipulation/http_invalid_request_line.py>test</a>
+tries to detect the presence of network components (“middle box”) which
+could be responsible for censorship and/or traffic manipulation.</p><p>Instead of sending a normal HTTP request, this test sends an invalid
+HTTP request line - containing an invalid HTTP version number, an
+invalid field count and a huge request method – to an echo service
+listening on the standard HTTP port. An echo service is a very useful
+debugging and measurement tool, which simply sends back to the
+originating source any data it receives. If a middle box is not present
+in the network between the user and an echo service, then the echo
+service will send the invalid HTTP request line back to the user,
+exactly as it received it. In such cases, there is no visible traffic
+manipulation in the tested network.</p><p>If, however, a middle box is present in the tested network, the invalid
+HTTP request line will be intercepted by the middle box and this may
+trigger an error and that will subsequently be sent back to OONI’s
+server. Such errors indicate that software for traffic manipulation is
+likely placed in the tested network, though it’s not always clear what
+that software is. In some cases though, censorship and/or surveillance
+vendors can be identified through the error messages in the received
+HTTP response. Based on this technique, OONI has previously
+<a href=https://explorer.ooni.org/highlights/>detected</a> the use
+of BlueCoat, Squid and Privoxy proxy technologies in networks across
+multiple countries around the world.</p><p>It’s important though to note that a false negative could potentially
+occur in the hypothetical instance that ISPs are using highly
+sophisticated censorship and/or surveillance software that is
+specifically designed to not trigger errors when receiving invalid HTTP
+request lines like the ones of this test. Furthermore, the presence of a
+middle box is not necessarily indicative of traffic manipulation, as
+they are often used in networks for caching purposes.</p><h4 id=http-header-field-manipulation-test>HTTP Header Field Manipulation test</h4><p>This
+<a href=https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/manipulation/http_header_field_manipulation.py>test</a>
+also tries to detect the presence of network components (“middle box”)
+which could be responsible for censorship and/or traffic manipulation.</p><p>HTTP is a protocol which transfers or exchanges data across the
+internet. It does so by handling a client’s request to connect to a
+server, and a server’s response to a client’s request. Every time a user
+connects to a server, the user (client) sends a request through the HTTP
+protocol to that server. Such requests include “HTTP headers”, which
+transmit various types of information, including the user’s device
+operating system and the type of browser that is being used. If Firefox
+is used on Windows, for example, the “user agent header” in the HTTP
+request will tell the server that a Firefox browser is being used on a
+Windows operating system.</p><p>This test emulates an HTTP request towards a server, but sends HTTP
+headers that have variations in capitalization. In other words, this
+test sends HTTP requests which include valid, but non-canonical HTTP
+headers. Such requests are sent to a backend control server which sends
+back any data it receives. If OONI receives the HTTP headers exactly as
+they were sent, then there is no visible presence of a “middle box” in
+the network that could be responsible for censorship, surveillance
+and/or traffic manipulation. If, however, such software is present in
+the tested network, it will likely normalize the invalid headers that
+are sent or add extra headers.</p><p>Depending on whether the HTTP headers that are sent and received from a
+backend control server are the same or not, OONI is able to evaluate
+whether software – which could be responsible for traffic manipulation –
+is present in the tested network.</p><p>False negatives, however, could potentially occur in the hypothetical
+instance that ISPs are using highly sophisticated software that is
+specifically designed to not interfere with HTTP headers when it
+receives them. Furthermore, the presence of a middle box is not
+necessarily indicative of traffic manipulation, as they are often used
+in networks for caching purposes.</p><h4 id=vanilla-tor-test>Vanilla Tor test</h4><p>This
+<a href=https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/vanilla_tor.py>test</a>
+examines the reachability of the <a href=https://www.torproject.org/>Tor network</a>, which is designed for online
+anonymity and censorship circumvention.</p><p>The Vanilla Tor test attempts to start a connection to the Tor network.
+If the test successfully bootstraps a connection within a predefined
+amount of seconds (300 by default), then Tor is considered to be
+reachable from the vantage point of the user. But if the test does not
+manage to establish a connection, then the Tor network is likely blocked
+within the tested network.</p><h4 id=whatsapp-test>WhatsApp test</h4><p>This
+<a href=https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/whatsapp.py>test</a>
+is designed to examine the reachability of both WhatsApp’s app and the
+WhatsApp web version within a network.</p><p>OONI’s WhatsApp test attempts to perform an HTTP GET request, TCP
+connection and DNS lookup to WhatsApp’s endpoints, registration service
+and web version over the vantage point of the user. Based on this
+methodology, WhatsApp’s <em>app</em> is likely blocked if any of the following
+apply:</p><ul><li><p>TCP connections to WhatsApp’s endpoints fail;</p></li><li><p>TCP connections to WhatsApp’s registration service fail;</p></li><li><p>DNS lookups resolve to IP addresses that are <em>not</em> allocated to
+WhatsApp;</p></li><li><p>HTTP requests to WhatsApp’s registration service do <em>not</em> send back
+a response to OONI’s servers.</p></li></ul><p>WhatsApp’s web interface (web.whatsapp.com) is likely if any of the
+following apply:</p><ul><li><p>TCP connections to web.whatsapp.com fail;</p></li><li><p>DNS lookups illustrate that a different IP address has been
+allocated to web.whatsapp.com;</p></li><li><p>HTTP requests to web.whatsapp.com do <em>not</em> send back a consistent
+response to OONI’s servers.</p></li></ul><h4 id=facebook-messenger-test>Facebook Messenger test</h4><p>This
+<a href=https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/facebook_messenger.py>test</a>
+is designed to examine the reachability of Facebook Messenger within a
+tested network.</p><p>OONI’s Facebook Messenger test attempts to perform a TCP connection and
+DNS lookup to Facebook’s endpoints over the vantage point of the user.
+Based on this methodology, Facebook Messenger is likely blocked if one
+or both of the following apply:</p><ul><li><p>TCP connections to Facebook’s endpoints fail;</p></li><li><p>DNS lookups to domains associated to Facebook do <em>not</em> resolve to IP
+addresses allocated to Facebook.</p></li></ul><h3 id=data-analysis>Data analysis</h3><p>Through its <a href=https://github.com/TheTorProject/ooni-pipeline>data pipeline</a>, OONI
+processes all network measurements that it collects, including the
+following types of data:</p><p><strong>Country code</strong></p><p>OONI by default collects the code which corresponds to the country from
+which the user is running OONI Probe tests from, by automatically
+searching for it based on the user’s IP address through the <a href=https://www.maxmind.com/en/home>MaxMind GeoIP database</a>. The collection of
+country codes is an important part of OONI’s research, as it enables
+OONI to map out global network measurements and to identify where
+network interferences take place.</p><p><strong>Autonomous System Number (ASN)</strong></p><p>OONI by default collects the Autonomous System Number (ASN) which
+corresponds to the network that a user is running OONI Probe tests from.
+The collection of the ASN is useful to OONI’s research because it
+reveals the specific network provider (such as Vodafone) of a user. Such
+information can increase transparency in regards to which network
+providers are implementing censorship or other forms of network
+interference.</p><p><strong>Date and time of measurements</strong></p><p>OONI by default collects the time and date of when tests were run. This
+information helps OONI evaluate when network interferences occur and to
+compare them across time.</p><p><strong>IP addresses and other information</strong></p><p>OONI does <em>not</em> deliberately collect or store users’ IP addresses. In
+fact, OONI takes measures to remove users’ IP addresses from the
+collected measurements, to protect its users from <a href=https://ooni.org/about/risks/>potential risks</a>.</p><p>However, OONI might <em>unintentionally</em> collect users’ IP addresses and
+other potentially personally-identifiable information, if such
+information is included in the HTTP headers or other metadata of
+measurements. This, for example, can occur if the tested websites
+include tracking technologies or custom content based on a user’s
+network location.</p><p><strong>Network measurements</strong></p><p>The types of network measurements that OONI collects depend on the types
+of tests that are run. Specifications about each OONI test can be viewed
+through its <a href=https://github.com/TheTorProject/ooni-spec/tree/master/test-specs>git repository</a>,
+and details about what collected network measurements entail can be
+viewed through <a href=https://explorer.ooni.org/world/>OONI Explorer</a> or through
+OONI’s <a href=https://api.ooni.io/>measurement API</a>.</p><p>OONI processes the above types of data with the aim of deriving meaning
+from the collected measurements and, specifically, in an attempt to
+answer the following types of questions:</p><ul><li><p>Which types of OONI tests were run?</p></li><li><p>In which countries were those tests run?</p></li><li><p>In which networks were those tests run?</p></li><li><p>When were tests run?</p></li><li><p>What types of network interference occurred?</p></li><li><p>In which countries did network interference occur?</p></li><li><p>In which networks did network interference occur?</p></li><li><p>When did network interference occur?</p></li><li><p>How did network interference occur?</p></li></ul><p>To answer such questions, OONI’s pipeline is designed to process data
+which is automatically sent to OONI’s measurement collector by default.
+The initial processing of network measurements enables the following:</p><ul><li><p>Attributing measurements to a specific country.</p></li><li><p>Attributing measurements to a specific network within a country.</p></li><li><p>Distinguishing measurements based on the specific tests that were
+run for their collection.</p></li><li><p>Distinguishing between “normal” and “anomalous” measurements (the
+latter indicating that a form of network tampering is likely present).</p></li><li><p>Identifying the type of network interference based on a set of
+heuristics for DNS tampering, TCP/IP blocking, and HTTP blocking.</p></li><li><p>Identifying block pages based on a set of heuristics for
+HTTP blocking.</p></li><li><p>Identifying the presence of “middle boxes” (such as Blue Coat)
+within tested networks.</p></li></ul><p>However, false positives and false negatives emerge within the processed
+data due to a number of reasons. As explained previously (section on
+“OONI network measurements”), DNS resolvers (operated by Google or a
+local ISP) often provide users with IP addresses that are closest to
+them geographically. While this may appear to be a case of DNS
+tampering, it is actually done with the intention of providing users
+with faster access to websites. Similarly, false positives may emerge
+when tested websites serve different content depending on the country
+that the user is connecting from, or in the cases when websites return
+failures even though they are not tampered with.</p><p>Furthermore, measurements indicating HTTP or TCP/IP blocking might
+actually be due to temporary HTTP or TCP/IP failures, and may not
+conclusively be a sign of network interference. It is therefore
+important to test the same sets of websites across time and to
+cross-correlate data, prior to reaching a conclusion on whether websites
+are in fact being blocked.</p><p>Since block pages differ from country to country and sometimes even from
+network to network, it is quite challenging to accurately identify them.
+OONI uses a series of heuristics to try to guess if the page in question
+differs from the expected control, but these heuristics can often result
+in false positives. For this reason OONI only says that there is a
+confirmed instance of blocking when a block page is detected.</p><p>OONI’s methodology for detecting the presence of “middle boxes” -
+systems that could be responsible for censorship, surveillance and
+traffic manipulation - can also present false negatives, if ISPs are
+using highly sophisticated software that is specifically designed to
+<em>not</em> interfere with HTTP headers when it receives them, or to <em>not</em>
+trigger error messages when receiving invalid HTTP request lines. It
+remains unclear though if such software is being used. Moreover, it’s
+important to note that the presence of a middle box is not necessarily
+indicative of censorship or traffic manipulation, as such systems are
+often used in networks for caching purposes.</p><p>Upon collection of more network measurements, OONI continues to develop
+its data analysis heuristics, based on which it attempts to accurately
+identify censorship events.</p><h2 id=findings>Findings</h2><p>As part of this study, <a href=https://api.ooni.io/files/by_country/MM>network measurements</a>
+were collected through <a href=https://github.com/TheTorProject/ooni-probe>OONI Probe software tests</a> performed across
+six local vantage points in Myanmar between 25th October 2016 to 28th
+February 2017.</p><p>Upon analysis of the collected data, no block pages were detected that
+could confirm cases of censorship. WhatsApp, Facebook Messenger, and the
+<a href=https://www.torproject.org/>Tor network</a> appeared to be
+<a href=https://api.ooni.io/files/by_country/MM>accessible</a>
+in all networks where tests were run. While <a href=https://ooni.org/nettest/http-invalid-request-line/>OONI tests</a>
+had <a href=https://explorer.ooni.org/highlights/><em>previously detected the presence of Blue Coat
+software</em></a> (some types
+of which can potentially be used for internet censorship and
+surveillance) in Myanmar in late 2012, the presence of Blue Coat was
+<em>not</em> detected as part of this study (and neither were any other middle
+boxes).</p><p>Certain sites, however, presented a high amount of network anomalies are
+part of our testing, indicating that connections to them might have been
+tampered with. The findings pertaining to these sites are summarized in
+the table below.</p><table><thead><tr><th>Sites</th><th>TCP/IP blocking</th><th>HTTP failure</th><th>HTTP diff</th><th>DNS blocking</th><th>Control failure</th><th>Not blocked</th></tr></thead><tbody><tr><td><code>http://burma.usembassy.gov</code></td><td>0</td><td>9</td><td>0</td><td>0</td><td>32</td><td>0</td></tr><tr><td><code>http://realdoll.com</code></td><td>0</td><td>41</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td><code>http://www.sportingbet.com</code></td><td>40</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr><td><code>http://www.cidh.org</code></td><td>9</td><td>0</td><td>0</td><td>0</td><td>32</td><td>0</td></tr><tr><td><code>http://www.vibe.com</code></td><td>0</td><td>0</td><td>7</td><td>0</td><td>32</td><td>2</td></tr></tbody></table><p>The values under the “Control failure” column in the table above pertain to
+measurements where we are unable to determine whether access to those sites
+was blocked or not, because the control request failed. It’s useful to
+cross-reference this information with whether connections to the site in
+question were confirmed to <em>not</em> be blocked. The fact that connections to
+vibe.com, for example, were <em>not</em> blocked twice indicates that the site is
+<em>least likely</em> to have been tampered with, in comparison to the other sites
+included in the table above. Access to realdoll.com, on the other hand, which
+presented HTTP failures every time it was tested is more likely to have been
+blocked. Similarly, gambling site sportingbet.com which presented signs of
+TCP/IP blocking almost every time it was tested is also likely to have been
+censored.</p><p>The <a href=http://www.cidh.org/>website</a> of the Organization of American
+States (OAS), which is responsible for the promotion and protection of
+human rights in America, presented signs of TCP/IP blocking. The testing
+of this site <em>also</em> presented signs of TCP/IP blocking in a <a href=https://ooni.org/post/zambia-election-monitoring/>previous OONI study on internet censorship in Zambia</a>
+in October 2016. While this inevitably raises the question of whether
+such measurements are false positives, it’s worth noting that the
+failure rate from a control vantage point is <a href=https://ooni.org/post/zambia-election-monitoring/#findings>less than 1%</a>.
+The motivation behind the potential blocking of this site though remains
+unclear.</p><p>Finally, the testing of the <a href=http://burma.usembassy.gov>site</a> of the
+U.S. embassy in Myanmar presented signs of HTTP blocking, indicating
+that access to it may have been tampered with. The testing of multiple
+other sites also presented network anomalies, but those were ruled out
+as false positives based on our heuristics.</p><h2 id=acknowledgement-of-limitations>Acknowledgement of limitations</h2><p>The findings of this study present various limitations and do not
+necessarily reflect a comprehensive view of internet censorship in
+Myanmar.</p><p>The first limitation is associated with the testing period. While OONI
+network measurements have been <a href=https://api.ooni.io/files/by_country/MM>collected from Myanmar since 2012</a> and
+continue to be collected on the day of the publication of this report,
+this study only takes into account and analyzes network measurements
+that were collected between 25th October 2016 to 28th February 2017.
+This study is limited to this time frame because we aim to examine the
+most recent censorship events and because there was a significant
+increase in the collection of network measurements during this period,
+in comparison to previous months and years. As such, censorship events
+which may have occurred before and/or after the testing period are not
+examined as part of this study.</p><p>Another limitation to this study is associated to the amount and types
+of URLs that were tested for censorship. As mentioned in the methodology
+section of this report (“Review of the Citizen Lab’s test list for
+Myanmar”), OONI’s <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity test</a> was run to
+examine the accessibility of <a href=https://github.com/citizenlab/test-lists/blob/master/lists/mm.csv>822 URLs</a>
+that are more relevant to the Myanmar context and of <a href=https://github.com/citizenlab/test-lists/blob/master/lists/global.csv>1,105 internationally relevant sites</a>.
+While a total of 1,927 URLs were tested for censorship as part of this
+study, we did not test all of the URLs on the internet, indicating the
+possibility that other websites not included in tests lists might have
+been blocked.</p><p>Finally, while network measurements were collected from <em>six</em> different
+local vantage points in Myanmar, <a href=https://github.com/TheTorProject/ooni-probe>OONI’s software tests</a> were not run
+consistently across all networks. Stable measurements were collected
+from certain vantage points throughout the testing period, but less
+stable measurements were also collected from a number of other vantage
+points following the <a href=https://ooni.org/post/ooni-mobile-app/>launch of OONI’s mobile app</a> on 9th February
+2017. In other words, once
+<a href=https://github.com/TheTorProject/ooni-probe>OONI Probe</a> became easier
+to install and run via its mobile version for Android and iOS, we
+received an increased amount of sporadic measurements from various new
+networks. Since tests were not always run consistently, our ability to
+evaluate whether censorship cases were persistent was limited.</p><h1 id=conclusion>Conclusion</h1><p>Signs of TCP/IP and HTTP blocking pertaining to fives sites, including
+the sites of the <a href=http://burma.usembassy.gov>U.S. embassy in Myanmar</a>
+and of the <a href=http://www.cidh.org/>Organization of American States (OAS)</a>, were
+<a href=https://api.ooni.io/files/by_country/MM>detected</a>
+as part of this study. It remains unclear though why those sites might
+be blocked. Overall, 1,927 URLs were tested for censorship. No block
+pages were detected that could confirm cases of internet censorship.</p><p>Similarly, no middle boxes were detected as part of this study. Blue
+Coat software (some types of which can potentially be used for internet
+censorship and surveillance) was
+<a href=https://explorer.ooni.org/highlights/>detected</a> in
+Myanmar by OONI in late 2012. It’s unclear, however, if this was a
+countrywide deployment or if it was only used in the specific network
+that was tested. Two years later, the presence of Blue Coat software was
+not detected in the same network, indicating that it may have been
+removed. Our recent study, covering the same network plus five
+additional networks, does <em>not</em> show the presence of Blue Coat software
+in tested networks.</p><p>WhatsApp, Facebook Messenger, and the <a href=https://www.torproject.org/>Tor network</a> appeared to be
+<a href=https://api.ooni.io/files/by_country/MM>accessible</a>
+across all six networks in Myanmar where OONI tests were run.</p><h1 id=acknowledgements>Acknowledgements</h1><p>We thank the <a href=https://www.opentech.fund/>Open Technology Fund (OTF)</a> and
+<a href=https://www.accessnow.org/>Access Now</a> for funding this research. We also
+thank all the anonymous volunteers in Myanmar who have run and continue to run
+OONI Probe, thus making this research possible.</p></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>

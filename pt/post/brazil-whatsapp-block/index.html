@@ -1,0 +1,307 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>WhatsApp bloqueado (outra vez) no Brasil | OONI</title>
+<link rel=canonical href=https://ooni.org/pt/post/brazil-whatsapp-block/><meta name=description content="Pais: Brasil
+ISPs investigados: Tim mobile (AS 26615), Oi landline (AS 7738)
+Método de censura: DNS Hijacking
+OONI testes: HTTP Requests, DNS Consistency
+Periodo da medição: 2016-05-02 - 2016-05-03
+Translation by: Kornelia Friesch
+Desde que o [WhatsApp implantou a codificação end-to-end (end-to-end encryption)] (https://www.whatsapp.com/security/) para proteger a privacidade e segurança dos, em nível mundial, um bilhão de usuários, manifestaram-se, alguns casos de censura ordenados por governos irritando-se pelo fato de não terem mais acesso à comunicação privada dos cidadãos."><meta property="og:title" content="WhatsApp bloqueado (outra vez) no Brasil"><meta property="og:description" content="Pais: Brasil
+ISPs investigados: Tim mobile (AS 26615), Oi landline (AS 7738)
+Método de censura: DNS Hijacking
+OONI testes: HTTP Requests, DNS Consistency
+Periodo da medição: 2016-05-02 - 2016-05-03
+Translation by: Kornelia Friesch
+Desde que o [WhatsApp implantou a codificação end-to-end (end-to-end encryption)] (https://www.whatsapp.com/security/) para proteger a privacidade e segurança dos, em nível mundial, um bilhão de usuários, manifestaram-se, alguns casos de censura ordenados por governos irritando-se pelo fato de não terem mais acesso à comunicação privada dos cidadãos."><meta property="og:type" content="article"><meta property="og:url" content="/pt/post/brazil-whatsapp-block/"><meta property="article:published_time" content="2016-05-06T00:00:00+00:00"><meta property="article:modified_time" content="2016-05-06T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="WhatsApp bloqueado (outra vez) no Brasil"><meta name=twitter:description content="Pais: Brasil
+ISPs investigados: Tim mobile (AS 26615), Oi landline (AS 7738)
+Método de censura: DNS Hijacking
+OONI testes: HTTP Requests, DNS Consistency
+Periodo da medição: 2016-05-02 - 2016-05-03
+Translation by: Kornelia Friesch
+Desde que o [WhatsApp implantou a codificação end-to-end (end-to-end encryption)] (https://www.whatsapp.com/security/) para proteger a privacidade e segurança dos, em nível mundial, um bilhão de usuários, manifestaram-se, alguns casos de censura ordenados por governos irritando-se pelo fato de não terem mais acesso à comunicação privada dos cidadãos."><link rel=stylesheet type=text/css href=/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script type=text/javascript>var _paq=window._paq||[];_paq.push(["disableCookies"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//matomo.ooni.org/",_paq.push(["setTrackerUrl",t+"matomo.php"]),_paq.push(["setSiteId","1"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"matomo.js",s.parentNode.insertBefore(e,s)}()</script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
+<img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>WhatsApp bloqueado (outra vez) no Brasil</h1><div class=byline><span class=author>Vasilis Ververis, Maria Xynou, Will Scott</span>
+<span class=date>2016-05-06</span></div><h4>Translation(s):</h4><ul><li><a href=/post/brazil-whatsapp-block/>English: OONI Data Reveals How WhatsApp Was Blocked (Again) in Brazil</a></li></ul><p><strong>Pais:</strong> Brasil</p><p><strong>ISPs investigados:</strong> Tim mobile (AS 26615), Oi landline (AS 7738)</p><p><strong>Método de censura:</strong> DNS Hijacking</p><p><strong>OONI testes:</strong> HTTP Requests, DNS Consistency</p><p><strong>Periodo da medição:</strong> 2016-05-02 - 2016-05-03</p><p><strong>Translation by:</strong> Kornelia Friesch</p><hr><p>Desde que o
+[WhatsApp implantou a codificação end-to-end (end-to-end encryption)]
+(<a href=https://www.whatsapp.com/security/>https://www.whatsapp.com/security/</a>) para proteger a privacidade e segurança
+dos, em nível mundial, um bilhão de usuários, manifestaram-se, alguns casos de
+censura ordenados por governos irritando-se pelo fato de não terem mais acesso
+à comunicação privada dos cidadãos. Com a codificação end-to-end pelo protocolo
+Signal, se torna-se impossível para o WhatsApp decifrar os dados do usuário. Ou
+seja, mesmo se quisesse entregar os dados não podería – sendo isso o que
+precisamente faz a comunicação pelo WhatsApp mais segura. Já em Dezembro do
+ano passado um juiz no Brasil [ordenou o bloqueio do WhatsApp por 48 horas]
+(<a href=https://www.theguardian.com/technology/2015/dec/17/whatsapp-blocked-brazil-48-hours-facebook>https://www.theguardian.com/technology/2015/dec/17/whatsapp-blocked-brazil-48-hours-facebook</a>)
+, sancionando desta forma a rejeição de entrega de dados pelo WhatsApp durante
+uma investigação de crimes. No início desta semana aconteceu outro incidente de
+bloqueio por [ordem judicial no Brasil]
+(<a href=https://www.theguardian.com/technology/2016/may/02/brazil-whatsapp-block-72-hours>https://www.theguardian.com/technology/2016/may/02/brazil-whatsapp-block-72-hours</a>)
+, desta vez por 72 horas, penalizando novamente desta forma outra vez a
+rejeição da empresa de entregar dados durante uma investigação sobre tráfico de
+drogas. Nos dois casos, a ordem de bloqueio de WhatsApp se efetuou em menos de
+24 horas, gerando um enorme descontenamento na população brasileira, da qual
+[mais de cem milhões de pessoas]
+(<a href=http://www.theglobeandmail.com/technology/tech-news/whatsapp-comes-down-how-brazilians-are-coping-without-their-social-mediafixes/article27799710/>http://www.theglobeandmail.com/technology/tech-news/whatsapp-comes-down-how-brazilians-are-coping-without-their-social-mediafixes/article27799710/</a>)
+(91% dos usuários de celular) dependem desse serviço na sua comunicação
+cotidiana deles.</p><p>Segundo Lucas Teixeira, técnico-chefe de [Coding Rights]
+(<a href=https://www.codingrights.org/)>https://www.codingrights.org/)</a>:</p><blockquote><p>&ldquo;As pessoas reagiram ao bloqueio do Whatsapp com um misto de choque, revolta e
+zoeira, refletindo o fato de que o Whatsapp é usado por quase todas as pessoas
+em cidades pequenas e grandes &ndash; e até mesmo em áreas rurais &ndash; para se
+comunicarem, substituindo o SMS e chamadas telefônicas em quase 100%. As
+parcerias de zero rating da empresa com telecoms também ajudou bastante na
+adoção. Planos de Internet móvel com franquia de dados mas &ldquo;Whatsapp de graça&rdquo;
+são comuns. O Marco Civil da Internet proíbe expressamente violações à
+neutralidade de rede, mas a legalidade do zero rating especificamente vai ser
+definida no seu <a href=http://participacao.mj.gov.br/marcocivil>processo de regulamentação</a>.
+Já sobre a legalidade do bloqueio do Whatsapp, não há certeza pois o processo
+corre sob sigilo, mas ele foi revertido na Justiça.&rdquo;</p></blockquote><p>Acompanhando as reportagens recentes sobre o bloqueio de WhatsApp no Brasil, o
+<a href=https://ooni.org/>Open Observatory of Network Interference (OONI)</a>
+realizou testes dentro do País para detectar os detalhes técnicos da
+implementação, isto é, o metodo da censura. Esta entrada blog contem a
+publicação dos dados contabilizados, mostrando desta maneira o que o bloqueio
+da página web do WhatsApp pelos provedores de serviço de internet (ISPs)
+brasileiros usando o método de DNS hijacking.</p><h1 id=os-nossos-resultados>Os nossos resultados</h1><p>Para comprovar o bloqueio do WhatsApp, assim como para identificar o método
+aplicado, dois tipos de [testes OONI]
+(<a href=https://github.com/TheTorProject/ooni-spec>https://github.com/TheTorProject/ooni-spec</a>) foram realizados no Brasil:</p><ul><li>[DNS-consistency tests]
+(<a href=https://github.com/TheTorProject/ooni-probe/blob/master/docs/source/tests/dnsconsistency.rst>https://github.com/TheTorProject/ooni-probe/blob/master/docs/source/tests/dnsconsistency.rst</a>)</li><li>[HTTP-request tests]
+(<a href=https://github.com/TheTorProject/ooni-probe/blob/master/docs/source/tests/http_requests.rst>https://github.com/TheTorProject/ooni-probe/blob/master/docs/source/tests/http_requests.rst</a>)</li></ul><p>O primeiro teste é criado para comparar os resultados da consulta do DNS de um
+DNS reverso confiável com os resultados de um DNS reverso pelo qual
+comprovou-se manipulação. O segundo teste tenta detectar a censura online,
+comparando HTTP pedidos de informação pelo <a href=https://www.torproject.org/>Tor</a> e
+pela rede do usuário. Aplicando estes dois testes a <strong>web.whatsapp.com</strong> e a
+<strong><a href=https://www.whatsapp.com>www.whatsapp.com</a></strong>, o <strong>DNS hijacking</strong> se revelou como método de bloqueio
+(exemplificado a seguir):</p><p><strong>DNS-consistency tests</strong></p><pre tabindex=0><code>###########################################
+# OONI Probe Report for dns_consistency (0.7.0)
+# Tue May  3 06:20:40 2016
+###########################################
+probe_asn: AS7738
+probe_cc: BR
+test_helpers: {backend: &#39;213.138.109.232:57004&#39;}
+test_name: dns_consistency
+test_start_time: &#39;2016-05-03 04:20:40&#39;
+test_version: 0.7.0
+---
+control_resolver: 213.138.109.232:57004
+errors: {192.168.122.1: dns_lookup_error}
+failures: [192.168.122.1]
+inconsistent: []
+input: www.whatsapp.com
+measurement_start_time: &#39;2016-05-03 04:20:43&#39;
+queries:
+- answers:
+  - {answer_type: A, ipv4: 184.173.147.39}
+  - {answer_type: A, ipv4: 184.173.147.38}
+  - {answer_type: A, ipv4: 192.155.212.203}
+  - {answer_type: A, ipv4: 192.155.212.202}
+  failure: null
+  hostname: www.whatsapp.com
+  query_type: A
+  resolver_hostname: 213.138.109.232
+  resolver_port: 57004
+- answers: []
+  failure: deferred_timeout_error
+  hostname: www.whatsapp.com
+  query_type: A
+  resolver_hostname: 192.168.122.1
+  resolver_port: 53
+successful: []
+test_resolvers: [192.168.122.1]
+test_runtime: 1.2021667957305908
+...
+control_resolver: 213.138.109.232:57004
+errors: {192.168.122.1: dns_lookup_error}
+failures: [192.168.122.1]
+inconsistent: []
+input: web.whatsapp.com
+measurement_start_time: &#39;2016-05-03 04:20:43&#39;
+queries:
+- answers:
+  - {answer_type: CNAME, hostname: mmx-ds.cdn.whatsapp.net}
+  - {answer_type: A, ipv4: 179.60.192.51}
+  failure: null
+  hostname: web.whatsapp.com
+  query_type: A
+  resolver_hostname: 213.138.109.232
+  resolver_port: 57004
+- answers: []
+  failure: deferred_timeout_error
+  hostname: web.whatsapp.com
+  query_type: A
+  resolver_hostname: 192.168.122.1
+  resolver_port: 53
+successful: []
+test_resolvers: [192.168.122.1]
+test_runtime: 1.223766803741455
+</code></pre><pre tabindex=0><code>###########################################
+# OONI Probe Report for dns_consistency (0.7.0)
+# Tue May  3 01:39:37 2016
+###########################################
+probe_asn: AS26615
+probe_cc: BR
+software_name: ooniprobe
+software_version: 1.4.2
+test_helpers: {backend: &#39;213.138.109.232:57004&#39;}
+test_name: dns_consistency
+test_start_time: &#39;2016-05-02 23:39:37&#39;
+test_version: 0.7.0
+---
+control_resolver: 213.138.109.232:57004
+errors: {192.168.122.1: no_answer}
+failures: [192.168.122.1]
+input: www.whatsapp.com
+measurement_start_time: &#39;2016-05-02 23:39:40&#39;
+queries:
+- answers:
+  - {answer_type: A, ipv4: 169.44.84.178}
+  - {answer_type: A, ipv4: 184.173.147.39}
+  - {answer_type: A, ipv4: 184.173.147.38}
+  - {answer_type: A, ipv4: 169.44.82.102}
+  - {answer_type: A, ipv4: 192.155.212.202}
+  - {answer_type: A, ipv4: 192.155.212.203}
+  failure: null
+  hostname: www.whatsapp.com
+  query_type: A
+  resolver_hostname: 213.138.109.232
+  resolver_port: 57004
+- answers: []
+  failure: null
+  hostname: www.whatsapp.com
+  query_type: A
+  resolver_hostname: 192.168.122.1
+  resolver_port: 53
+successful: []
+test_resolvers: [192.168.122.1]
+test_runtime: 0.47959399223327637
+---
+control_resolver: 213.138.109.232:57004
+errors: {192.168.122.1: no_answer}
+failures: [192.168.122.1]
+input: web.whatsapp.com
+measurement_start_time: &#39;2016-05-02 23:39:40&#39;
+queries:
+- answers:
+  - {answer_type: CNAME, hostname: mmx-ds.cdn.whatsapp.net}
+  - {answer_type: A, ipv4: 179.60.192.51}
+  failure: null
+  hostname: web.whatsapp.com
+  query_type: A
+  resolver_hostname: 213.138.109.232
+  resolver_port: 57004
+- answers: []
+  failure: null
+  hostname: web.whatsapp.com
+  query_type: A
+  resolver_hostname: 192.168.122.1
+  resolver_port: 53
+successful: []
+test_resolvers: [192.168.122.1]
+test_runtime: 0.03604292869567871
+</code></pre><pre tabindex=0><code>###########################################
+# OONI Probe Report for dns_consistency (0.7.0)
+# Tue May  3 15:07:07 2016
+###########################################
+---
+annotations: null
+data_format_version: 0.2.0
+input_hashes: [db9176124032c0dd1d974fa52ee194e8304658ba2f32f5f07911abfb03521ff0]
+options: [-f, whatsappurl.list]
+probe_asn: AS7738
+probe_cc: BR
+probe_city: null
+probe_ip: 127.0.0.1
+report_id: null
+software_name: ooniprobe
+software_version: 1.4.2
+test_helpers: {backend: &#39;213.138.109.232:57004&#39;}
+test_name: dns_consistency
+test_start_time: &#39;2016-05-03 13:07:07&#39;
+test_version: 0.7.0
+...
+---
+control_resolver: 213.138.109.232:57004
+errors: {192.168.122.1: dns_lookup_error}
+failures: [192.168.122.1]
+inconsistent: []
+input: www.whatsapp.com
+measurement_start_time: &#39;2016-05-03 13:07:12&#39;
+queries:
+- answers:
+  - {answer_type: A, ipv4: 192.155.212.202}
+  - {answer_type: A, ipv4: 192.155.212.203}
+  - {answer_type: A, ipv4: 184.173.147.38}
+  - {answer_type: A, ipv4: 184.173.147.39}
+  - {answer_type: A, ipv4: 169.44.84.178}
+  - {answer_type: A, ipv4: 169.44.82.102}
+  failure: null
+  hostname: www.whatsapp.com
+  query_type: A
+  resolver_hostname: 213.138.109.232
+  resolver_port: 57004
+- answers: []
+  failure: deferred_timeout_error
+  hostname: www.whatsapp.com
+  query_type: A
+  resolver_hostname: 192.168.122.1
+  resolver_port: 53
+successful: []
+test_resolvers: [192.168.122.1]
+test_runtime: 1.296454906463623
+...
+---
+</code></pre><p><strong>HTTP-request test</strong></p><pre tabindex=0><code>###########################################
+# OONI Probe Report for http_requests (0.2.5)
+# Mon May  2 23:17:02 2016
+###########################################
+probe_asn: AS26615
+probe_cc: BR
+software_name: ooniprobe
+software_version: 1.4.2
+test_helpers: {}
+test_name: http_requests
+test_start_time: &#39;2016-05-02 21:17:02&#39;
+test_version: 0.2.5
+...
+agent: agent
+body_length_match: null
+body_proportion: null
+control_cloudflare: null
+control_failure: null
+experiment_failure: dns_lookup_error
+factor: 0.8
+headers_diff: null
+headers_match: null
+input: https://www.whatsapp.com
+measurement_start_time: &#39;2016-05-02 21:17:07&#39;
+requests:
+- failure: dns_lookup_error
+  request:
+    body: null
+    headers: {User-Agent: &#39;Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2)
+        Gecko/20100115 Firefox/3.6&#39;}
+    method: GET
+    tor: {exit_ip: null, exit_name: null, is_tor: false}
+    url: https://www.whatsapp.com
+  response: null
+</code></pre><h2 id=ultrapassar-censura>Ultrapassar censura</h2><p>Pode-se ultrapassar o bloqueio da página web do WhatsApp’s pelo uso do
+<a href=https://www.torproject.org/>Tor</a>. No caso do DNS hijacking, os usuários podem
+conseguir acesso às páginas bloqueadas apenas [modificando o DNS reverso]
+(<a href=https://developers.google.com/speed/public-dns/docs/using#google_public_dns_ip_addresses>https://developers.google.com/speed/public-dns/docs/using#google_public_dns_ip_addresses</a>)
+(embora essa variante não seja sempre eficaz). Em caso de bloquearem o
+WhatsApp (ou outros IM aplicatvos) outra vez, os usários de Android no Brasil
+(e por toda a parte) podem tentar ultrapassar a censura usando o <a href=https://www.torproject.org/docs/android.html><strong>modo da VPN
+de Orbot</strong></a> o qual autoriza todos
+os applicativos a funcionar pela rede <a href=https://www.torproject.org/>Tor</a>. Não
+obstante, é importante dastacar que o recurso da VPN de Orbot <strong>não</strong> dever ser
+utilizado para anonimato na rede, mas para ultrapassar a censura na rede.</p><h2 id=limitações-nessa-investigação>Limitações nessa investigação</h2><p>No momento, os [testes de software do OONI]
+(<a href=https://github.com/TheTorProject/ooni-spec>https://github.com/TheTorProject/ooni-spec</a>) <strong>não</strong> se relacionam
+particularmente aos applicativos de instant messaging (IM) (como p. ex.
+WhatsApp), mas às páginas web. È por isso, que os nossos resultados não
+refletem os testes do applicativo WhatsApp, mas se limitam aos testes a
+respeito da página web de WhatsApp a qual foi bloqueada por DNS hijacking. Ao
+longo desse ano pretendemos desenvolver outros OONI testes que particularmente
+tenham como objetivo testar applicativos de IM a respeito da censura.</p><p>Até então, o bloqueio da página web de WhatsApp assim como o applicativo web
+podem ser testados da seguinte forma:</p><ol><li>[Instalar ooniprobe]
+(<a href=https://github.com/TheTorProject/ooni-probe#installation>https://github.com/TheTorProject/ooni-probe#installation</a>)</li><li>Baixar o [whatsapp deck]
+(<a href=https://raw.githubusercontent.com/TheTorProject/ooni-probe/0b4cea0ad99696f664cd3083df929d93f88fda43/data/decks/whatsapp.deck>https://raw.githubusercontent.com/TheTorProject/ooni-probe/0b4cea0ad99696f664cd3083df929d93f88fda43/data/decks/whatsapp.deck</a>)
+(eg. <code>wget https://raw.githubusercontent.com/TheTorProject/ooni-probe/0b4cea0ad99696f664cd3083df929d93f88fda43/data/decks/whatsapp.deck</code>)</li><li>Percorrer o test deck <code>ooniprobe -i whatsapp.deck hr</code></li></ol><h1 id=ooni-explorer-report-links>OONI Explorer report links</h1><h2 id=http-requests-measurements>HTTP Requests measurements</h2><ul><li><a href="https://explorer.ooni.org/measurement/20160502T211641Z_AS26615_S0P6z1jAn0ToeMtK4xvjJUKlSOw9ENcipv9pUfrVd3yPmuD7ek?input=http:%2F%2Fweb.whatsapp.com">URL: http://web.whatsapp.com May 2, 2016 9:17:02 PM, AS 26615</a></li><li><a href="https://explorer.ooni.org/measurement/20160502T211641Z_AS26615_S0P6z1jAn0ToeMtK4xvjJUKlSOw9ENcipv9pUfrVd3yPmuD7ek?input=https:%2F%2Fweb.whatsapp.com">URL: http://web.whatsapp.com May 2, 2016 9:17:02 PM, AS 26615</a></li><li><a href="https://explorer.ooni.org/measurement/20160502T211641Z_AS26615_S0P6z1jAn0ToeMtK4xvjJUKlSOw9ENcipv9pUfrVd3yPmuD7ek?input=http:%2F%2Fwww.whatsapp.com">URL: http://www.whatsapp.com May 2, 2016 9:17:02 PM, AS 26615</a></li><li><a href="https://explorer.ooni.org/measurement/20160502T211641Z_AS26615_S0P6z1jAn0ToeMtK4xvjJUKlSOw9ENcipv9pUfrVd3yPmuD7ek?input=https:%2F%2Fwww.whatsapp.com">URL: https://www.whatsapp.com May 2, 2016 9:17:02 PM, AS 26615</a></li><li><a href="https://explorer.ooni.org/measurement/20160504T214210Z_AS26615_LzBigYkP8oN1aAnI1mnFFDwZPAbUcTu2ZN6uSwosZuW8HVm7br?input=http:%2F%2Fwww.whatsapp.com%2Fcidr.txt">URL: http://www.whatsapp.com/cidr.txt May 2, 2016 11:39:18 PM, AS 26615</a></li><li><a href="https://explorer.ooni.org/measurement/20160502T211641Z_AS26615_S0P6z1jAn0ToeMtK4xvjJUKlSOw9ENcipv9pUfrVd3yPmuD7ek?input=https:%2F%2Fwww.whatsapp.com%2Fcidr.txt">URL: https://www.whatsapp.com/cidr.txt May 2, 2016 9:17:02 PM, AS 26615</a></li><li><a href="https://explorer.ooni.org/measurement/20160504T214555Z_AS7738_bCjuASU2Bx2qP7XWIarsRXUTHCRUO7AYaWgDOQowqyUgF8hEGA?input=http:%2F%2Fweb.whatsapp.com">URL: http://web.whatsapp.com May 3, 2016 4:17:57 AM, AS 7738</a></li><li><a href="https://explorer.ooni.org/measurement/20160504T214555Z_AS7738_bCjuASU2Bx2qP7XWIarsRXUTHCRUO7AYaWgDOQowqyUgF8hEGA?input=https:%2F%2Fweb.whatsapp.com">URL: https://web.whatsapp.com May 3, 2016 4:17:57 AM, AS 7738</a></li><li><a href="https://explorer.ooni.org/measurement/20160504T214555Z_AS7738_bCjuASU2Bx2qP7XWIarsRXUTHCRUO7AYaWgDOQowqyUgF8hEGA?input=http:%2F%2Fwww.whatsapp.com">URL: http://www.whatsapp.com May 3, 2016 4:17:57 AM, AS 7738</a></li><li><a href="https://explorer.ooni.org/measurement/20160504T214555Z_AS7738_bCjuASU2Bx2qP7XWIarsRXUTHCRUO7AYaWgDOQowqyUgF8hEGA?input=https:%2F%2Fwww.whatsapp.com">URL: https://www.whatsapp.com May 3, 2016 4:17:57 AM, AS 7738</a></li><li><a href="https://explorer.ooni.org/measurement/20160503T041735Z_AS7738_N5LWvuq8MtDoAP7r93EWmqurxi6pZ9pzpBsbZhXZR8VF4R484M?input=http:%2F%2Fwww.whatsapp.com%2Fcidr.txt">URL: http://www.whatsapp.com/cidr.txt May 3, 2016 4:17:57 AM, AS 7738</a></li><li><a href="https://explorer.ooni.org/measurement/20160503T041735Z_AS7738_N5LWvuq8MtDoAP7r93EWmqurxi6pZ9pzpBsbZhXZR8VF4R484M?input=https:%2F%2Fwww.whatsapp.com%2Fcidr.txt">URL: https://www.whatsapp.com/cidr.txt May 3, 2016 4:17:57 AM, AS 7738</a></li></ul><h2 id=dns-consistency-measurements>DNS Consistency measurements</h2><ul><li><a href="https://explorer.ooni.org/measurement/20160502T233914Z_AS26615_MFMGaqdNJpa0ao1EZjVRVRkQIngry7DXMHE44SANRBBWMNB53e?input=web.whatsapp.com">Website: web.whatsapp.com May 2, 2016 11:39:37 PM, AS 26615</a></li><li><a href="https://explorer.ooni.org/measurement/20160502T233914Z_AS26615_MFMGaqdNJpa0ao1EZjVRVRkQIngry7DXMHE44SANRBBWMNB53e?input=www.whatsapp.com">Website: www.whatsapp.com May 2, 2016 11:39:37 PM, AS 26615</a></li><li><a href="https://explorer.ooni.org/measurement/20160504T214811Z_AS7738_G7r7jVDGUQffeea959x5m7Fr0e4EsM5ppD3vl9fWhuM3uqkyIA?input=web.whatsapp.com">Website: web.whatsapp.com May 3, 2016 1:07:07 PM, AS 7738</a></li><li><a href="https://explorer.ooni.org/measurement/20160503T042017Z_AS7738_OZ89SZlnKKhSFhXOGMmsFzcZ9ctLL8NZgJeEg6llwDV92JKIf8?input=www.whatsapp.com">Website: www.whatsapp.com May 3, 2016 4:20:40 AM, AS 7738</a></li></ul></main></div><footer class=p-4><div class=container><div class=row><div class="col-12 col-md-4"><div class=pb-2><img src=/images/logos/ooni-horizontal.svg height=32px alt="OONI Logo"></div><div class=pb-4>Global community measuring internet censorship around the world.</div><div><div>© 2022 Open Observatory of Network Interference (OONI)</div><div><a href=https://github.com/ooni/license>Content available under a Creative Commons
+license.</a></div></div></div><div class="col-12 col-md-8"><div class=row><div class="mt-3 col-sm"><div class=footer-section-title>About</div><div class=pt-1><a href=/about/>OONI</a></div><div class=pt-1><a href=/about/data-policy/>Data Policy</a></div><div class=pt-1><a href=https://github.com/ooni/license/tree/master/data>Data
+License</a></div><div class=pt-1><a href=/about/#contact>Contact</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>OONI Probe</div><div class=pt-1><a href=https://ooni.org/install/>Install</a></div><div class=pt-1><a href=https://ooni.org/nettest/>Tests</a></div><div class=pt-1><a href=https://github.com/ooni>Source code</a></div><div class=pt-1><a href=https://api.ooni.io/>API</a></div></div><div class="mt-3 col-sm"><div class=footer-section-title>Updates</div><div class=pt-1><a href=/post/>Blog</a></div><div class=pt-1><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk>Mailing list</a></div><div class=pt-1><a href=https://slack.ooni.org/>Slack</a></div><ul class="pt-1 footer-links-social"><li><a class=twitter href=https://twitter.com/OpenObservatory>Twitter (@OpenObservatory)</a></li><li><a class=youtube href=https://www.youtube.com/c/OONIorg>Youtube (OONIorg)</a></li><li><a class=facebook href=https://facebook.com/ooni.org>Facebook (ooni.org)</a></li><li><a class=instagram href=https://www.instagram.com/openobservatory/>Instagram (@OpenObservatory)</a></li><li><a class=mastodon rel=me href=https://mastodon.social/@ooni>Mastodon (@ooni@mastodon.social)</a></li></ul></div></div></div></div></div></footer></body></html>
