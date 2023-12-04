@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>network throttling on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/network-throttling/</link><description>Recent content in network throttling on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 27 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/network-throttling/index.xml" rel="self" type="application/rss+xml"/><item><title>Egypt: Media censorship, Tor interference, HTTPS throttling and ads injections?</title><link>https://ooni.github.io/post/egypt-network-interference/</link><pubDate>Thu, 27 Oct 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/egypt-network-interference/</guid><description>Country: Egypt
-Probed ISPs: Noor (AS 20928), TE Data (AS 8452), Vodafone (AS 24835)
-Censorship method: DPI, network throttling, TCP injections
-OONI tests: HTTP Requests, Web Connectivity, Vanilla Tor
-Measurement period: 2016-08-27 - 2016-10-26
-We recently noticed network anomalies in Egypt and performed a study in an attempt to understand the situation.
-Our findings indicate that the Tor anonymity network appeared to be interfered with in Egypt, while HTTPS connections to DigitalOcean&amp;rsquo;s Frankfurt data centre were throttled.</description></item></channel></rss>
