@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>theme-news_media on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/theme-news_media/</link><description>Recent content in theme-news_media on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/theme-news_media/index.xml" rel="self" type="application/rss+xml"/><item><title>Kazakhstan: TLS MITM attacks and blocking of news media, human rights, and circumvention tool sites</title><link>https://ooni.github.io/post/2024-kazakhstan-report/</link><pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-kazakhstan-report/</guid><description>In recent years, internet censorship in Kazakhstan has been reported quite extensively. As part of this study, OONI, Internet Freedom Kazakhstan (IFKZ), and Eurasian Digital Foundation collaborated to investigate internet censorship in Kazakhstan over the past year (between June 2023 to June 2024) through the analysis of empirical network measurement data.
+In this report, we share OONI censorship measurement findings and relevant legal context. We found numerous news media, human rights, and circumvention tool websites blocked in Kazakhstan by means of TLS interference.</description></item><item><title>Throttling of news media amid Kazakhstan’s 2022 presidential election</title><link>https://ooni.github.io/post/2023-throttling-kz-elections/</link><pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-throttling-kz-elections/</guid><description>Snap presidential elections were held in Kazakhstan in November 2022, following a wave of unrest that started in January 2022. Following the victory of incumbent president Tokayev, early legislative elections were held in March 2023.
+Through the analysis of OONI data, we observe the throttling of Radio Free Europe/Radio Liberty (RFE/RL) Kazakhstan&amp;rsquo;s service websites in Kazakh and Russian (www.azattyq.org and rus.azattyq.org) in Kazakhstan, starting from 27th September 2022 and lasting until at least 11th April 2023.</description></item><item><title>OONI measurements show ongoing internet censorship in Azerbaijan</title><link>https://ooni.github.io/post/2023-azerbaijan-internet-censorship/</link><pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-azerbaijan-internet-censorship/</guid><description>Azerbaijan is known to block access to independent news media websites – we previously reported on this in July 2021. At the time, we analyzed OONI measurements collected from Azerbaijan between January 2020 to May 2021 and found that ISPs in Azerbaijan were blocking access to several independent news media and circumvention tool sites. We also found that amid the 2020 Nagorno-Karabakh war, ISPs in Azerbaijan temporarily blocked access to social media services, and attempted to block access to Tor and Psiphon.</description></item><item><title>How Internet censorship changed in Russia during the 1st year of military conflict in Ukraine</title><link>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</guid><description>As of today, last year, Russia started its military operation in Ukraine. This was followed by increased levels of internet censorship, as Internet Service Providers (ISPs) in Russia started blocking access to several news media websites. In early March 2022, OONI published a report documenting these blocks, as well as the blocking of a site (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine. OONI also reported that Russian ISPs started throttling access to Twitter on 26th February 2022, and switched to blocking it by 4th March 2022 – at which point, they also started blocking access to Facebook.</description></item><item><title>Pakistan: Blocking of Wikipedia and Deutsche Welle (DW)</title><link>https://ooni.github.io/post/2023-pakistan-blocks-wikipedia-and-dw/</link><pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-pakistan-blocks-wikipedia-and-dw/</guid><description>Over the past weeks, access to Wikipedia and Deutsche Welle’s (DW) website was reportedly blocked in Pakistan.
+As part of this report, we share OONI data from Pakistan that provides signals of these blocks. Specifically, OONI data shows that access to Wikipedia was temporarily restricted between 1st to 6th February 2023, while access to Deutsche Welle (DW) remains blocked since (at least) 16th January 2023.
+Blocking of Deutsche Welle
+Blocking of Wikipedia</description></item><item><title>iMAP State of Internet Censorship Report 2022 - Cambodia</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-cambodia/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-cambodia/</guid><description>បកប្រែជាភាសាខ្មែរ
+News and other websites are periodically blocked in Cambodia, particularly those that disseminate information that could be perceived as a threat to the ruling government.1 In July 2018, the government ordered internet service providers (ISPs) to block at least 15 news websites during the country’s election.2 In the wake of the COVID-19 pandemic, the government has reportedly blocked access to news sites.3 In June 2020, the Ministry of Post telecommunications (MPTC) blocked six online gambling sites.</description></item><item><title>iMAP State of Internet Censorship Report 2022 - Indonesia</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-indonesia/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-indonesia/</guid><description>In July 2014, Regulation of the Minister of Communications and Informatics Number 19 of 2014 on the Handling of Negative Internet Sites came into force as part of the regulator&amp;rsquo;s programme for Healthy and Safe Internet (INSAN or Internet Sehat dan Aman). The law mandated ISPs to block any internet content that is deemed to carry &amp;ldquo;negative&amp;rdquo; elements such as pornography, hoaxes, or SARA conflicts.
+As of September 2022, the Indonesian Ministry of Information and Communication (Kominfo) has blocked over 1,000,000 websites through TrustPositif,1 a filtering application that has been operational since 2010 per Ministerial Regulation No 19 of 2014.</description></item><item><title>iMAP State of Internet Censorship Report 2022 - Malaysia</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-malaysia/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-malaysia/</guid><description>It is a codified guarantee that the internet will not be censored except for illegal, obscene and indecent content, while in reality the extent of censorship and its implementation are wider than projected and remain to be explored.
+Diterjemah ke dalam bahasa Melayu
+The Ministry of Communications and Multimedia (MCMC) do not publish list of blocked sites, however statements were released from time to time to announce the number of sites blocked.</description></item><item><title>iMAP State of Internet Censorship Report 2022 - Myanmar</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-myanmar/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-myanmar/</guid><description>မြန်မာဘာသာသို့ ပြန်ဆိုပါသည်။
+Blocking of independent New Media. 112 out of 2,130 websites were detected 1,473 confirmed blocking counts through 6 local vantages under DNS level interference and HTTP level interference. There were 11 out of 31 websites’ categories from OONI were found as confirmed blocking. Among 11 categories, News Media was experiential as the highest confirmed blocking measurement, following to pornography to the second largest blocking counts. Interestingly, within 117 government websites, OONI detects 15 websites were blocked from 2 vantage points of 2 ISPs.</description></item><item><title>iMAP State of Internet Censorship Report 2022 - Thailand</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-thailand/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-thailand/</guid><description>Thailand, a country situated on the mainland of Southeast Asia, was under military junta for five years from 2014 to 2019. Upon the general election in 2019, the country has been nominally a parliamentary constitutional monarchy, although with lèse-majesté laws continuing to be invoked especially with regard to internet censorship. Adding the COVID-19 pandemic into the picture, the Thai government introduced Regulation 29 to curb fake news, which led to reported incidences of internet censorship.</description></item><item><title>iMAP State of Internet Censorship Report 2022 - Vietnam</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-vietnam/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-vietnam/</guid><description>Swedish Ambassador to Vietnam Pereric Högberg affirmed that Vietnam is making good use of opportunities from the internet, being one of the leading countries in Southeast Asia in terms of internet connection and development1. Vietnam is not limited to using the Internet and social networks2. However, there are still websites with controlled access in Vietnam.
+Dịch sang tiếng Việt
+Under the authoritarian political system, freedom of assembly, association, expression, press and religion, as well as civil society activism, is tightly restricted and controlled by the party despite legislation recognising civil and political rights in the Constitution.</description></item><item><title>New blocks emerge in Russia amid war in Ukraine: An OONI network measurement analysis</title><link>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</guid><description>Download in PDF Information controls are known to occur during conflicts, and that’s exactly what we’re seeing in Russia following the recent invasion of Ukraine on 24th February 2022.
+In recent days, OONI network measurement data collected from Russia shows that many Internet Service Providers (ISPs) have started blocking access to several news media websites, as well as to a website (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine.</description></item><item><title>Media censorship in Azerbaijan through the lens of network measurement</title><link>https://ooni.github.io/post/2021-azerbaijan/</link><pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-azerbaijan/</guid><description>Key Findings Introduction Methods OONI network measurement Acknowledgement of limitations Background Network landscape and internet penetration Legal environment Internet censorship and media freedom environment Findings Blocked news media websites Blocking of social media amid 2020 Nagorno-Karabakh war Blocking of social media websites Blocking of instant messaging apps WhatsApp Telegram Blocked circumvention tool sites Tor and Psiphon Conclusion Acknowledgements Key Findings As part of our analysis of OONI measurements collected from Azerbaijan between January 2020 to May 2021, we found:</description></item><item><title>Myanmar: Data on internet blocks and internet outages following military coup</title><link>https://ooni.github.io/post/2021-myanmar-internet-blocks-and-outages/</link><pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-myanmar-internet-blocks-and-outages/</guid><description>On 1st February 2021, the military in Myanmar carried out a coup d’etat, seizing power and detaining the country’s State Counsellor (equivalent to a prime minister) and other democratically elected leaders.
+A few days after the coup, ISPs in Myanmar started blocking access to Facebook services. On 5th February 2021, they started blocking access to Twitter and Instagram as well. On 6th February 2021, access to the internet was shut down entirely for nearly 30 hours.</description></item><item><title>Belarus protests: From internet outages to pervasive website censorship</title><link>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</link><pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</guid><description>Image: Block page served in Belarus.
+This report was prepared in collaboration with Human Constanta and the Digital Observers Community Belarus.
+More than 70 websites have been blocked in Belarus over the last weeks, following a controversial presidential election and amid ongoing anti-government protests. Many of the blocked sites include news media and are related to the elections, while several other sites expressing political criticism were blocked as well. At the time of writing, many of these sites remain blocked in Belarus.</description></item><item><title>Those Unspoken Thoughts: A study of censorship and media freedom in Manipur, India</title><link>https://ooni.github.io/post/2020-those-unspoken-thoughts-otf-fellow-report/</link><pubDate>Thu, 18 Jun 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-those-unspoken-thoughts-otf-fellow-report/</guid><description>This research report was produced by OTF Information Controls Fellow, Chinmayi S K. OONI served as her host organization throughout her fellowship.
+Read full report The northeastern Indian state of Manipur has long been an area of conflict and crackdowns. But although human rights violations are well documented in the state, few studies have examined the impact of censorship and internet shutdowns in the region. In 2019, research fellow Chinmayi S K sought to address this critical gap by documenting the blocking of websites in Manipur and assessing how the use of information controls in the state compares to that in the rest of India.</description></item><item><title>Myanmar blocks “fake news” websites amid COVID-19 pandemic</title><link>https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/</link><pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/</guid><description>In March 2020, Internet Service Providers (ISPs) in Myanmar received a directive from the Ministry of Transport and Communications to block 230 websites, most of which contain adult content. However, 67 of these sites were blocked on the grounds of spreading “fake news”. The list of these 230 websites has not been published.
+In an attempt to potentially identify the newly blocked websites, we analyzed OONI network measurements collected from Myanmar over the last months, between 1st January 2020 to 9th April 2020.</description></item><item><title>Egypt blocks BBC and Alhurra: Expanding media censorship amid political unrest</title><link>https://ooni.github.io/post/2019-egypt-blocks-bbc-and-alhurra/</link><pubDate>Thu, 26 Sep 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-egypt-blocks-bbc-and-alhurra/</guid><description>Last weekend, protests erupted in Egypt in response to corruption allegations against President Abdul Fattah al-Sisi’s government.
+Protests have been rare since President Sisi took power in 2014, but amid policies of economic austerity and recent corruption allegations, hundreds of Egyptians took to the streets. It was subsequently reported that BBC News and the US-funded Alhurra news website were amongst blocked services. The head of Egypt’s Supreme Council for Media Regulation reportedly stated that the BBC and other news websites may have been blocked because of their “inaccurate” coverage of the protests.</description></item><item><title>Resurgence of Internet Censorship in Ethiopia: Blocking of WhatsApp, Facebook, and African Arguments</title><link>https://ooni.github.io/post/resurgence-internet-censorship-ethiopia-2019/</link><pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/resurgence-internet-censorship-ethiopia-2019/</guid><description>Last year in June 2018, following years of pervasive internet censorship, Ethiopia unblocked hundreds of websites as part of political reforms under a new government. But merely a year later, we observe a resurgence of internet censorship in the country.
+In mid-June 2019, Ethiopia experienced several internet blackouts and once internet access was restored, access to WhatsApp and Telegram was blocked. These events coincided with Ethiopia’s national high school exams and it is believed that internet access was restricted in an attempt to prevent exam leakage as has happened in the past.</description></item><item><title>Cuba blocks independent media amid 2019 constitutional referendum</title><link>https://ooni.github.io/post/cuba-referendum/</link><pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/cuba-referendum/</guid><description>On 24th February 2019, Cubans voted on a new constitution for the first time in decades.
+But a few hours before the referendum, independent news outlet Tremenda Nota reported that their website got blocked in Cuba.
+In this post, we share OONI network measurement data that confirms the blocking of tremendanota.com, as well as the blocking of several other independent media websites during the referendum.
+We also found that ETECSA, Cuba’s only telecommunications company, has changed its censorship techniques, now censoring access to sites that support HTTPS by means of IP blocking.</description></item><item><title>The State of Internet Censorship in Venezuela</title><link>https://ooni.github.io/post/venezuela-internet-censorship/</link><pubDate>Thu, 16 Aug 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/venezuela-internet-censorship/</guid><description>A study by IPYS Venezuela, Venezuela Inteligente, and the Open Observatory of Network Interference (OONI).
+Update (2018-10-19): The section on Tor becoming accessible was added.
+Key Findings
+Introduction
+Background
+Political environment
+Legal environment
+Reported cases of internet censorship
+Methodology: Measuring internet censorship in Venezuela
+Acknowledgement of limitations Findings
+Blocked websites
+Media
+Political criticism
+Zello
+Currency exchange
+Blocking of Tor
+About Tor Testing Tor unblocking Conclusion
+Probed ISPs: Most recent measurements collected from Digitel (AS264731), CANTV (AS8048), Movistar (AS6306) and Movilnet (AS27889).</description></item><item><title>South Sudan: Measuring Internet Censorship in the World's Youngest Nation</title><link>https://ooni.github.io/post/south-sudan-censorship/</link><pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/south-sudan-censorship/</guid><description>Image by Mandavi
+Established in July 2011, South Sudan is the youngest country in the world. But the transition to independence from Sudan has been far from smooth, as the country experiences an ongoing civil war. Even though internet penetration levels remain quite low, two media websites and two independent blogs were reportedly blocked last year.
+This report is a joint research effort by the Open Observatory of Network Interference (OONI) and South Sudan’s The Advocates for Human Rights and Democracy (TAHURID).</description></item><item><title>The State of Internet Censorship in Egypt</title><link>https://ooni.github.io/post/egypt-internet-censorship/</link><pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/egypt-internet-censorship/</guid><description>The report uncovers anomalies on Egyptian networks, including censorship and the hijacking of unencrypted HTTP connections for advertising and cryptocurrency mining.
+Read full report in English Read full report in Arabic Read the summary of the report in Arabic
+Last year, Egypt ordered the blocking of 21 news websites. OONI, a censorship measurement project under the Tor Project, responded by publishing a report on the blocking of (at least) 10 media websites, including Mada Masr and Al Jazeera.</description></item><item><title>Ethiopia: Verifying the unblocking of websites</title><link>https://ooni.github.io/post/ethiopia-unblocking/</link><pubDate>Fri, 29 Jun 2018 19:49:00 +0000</pubDate><guid>https://ooni.github.io/post/ethiopia-unblocking/</guid><description>Pro PM Abiy Ahmed Rally at Meskel Square, June 2018 - Photo by Berhan Taye
+On 22nd June 2018, the Ethiopian government reported that it had unblocked 264 websites. This (great) news was also reported by ESAT, a major Ethiopian media website that was blocked over the last years.
+Today, OONI and Access Now publish new research based on the testing of sites that were previously found to be blocked, in an attempt to examine whether they have in fact been unblocked in recent days.</description></item><item><title>ParkNet: Short Documentary on Internet Censorship in Cuba</title><link>https://ooni.github.io/post/parknet-short-documentary-cuba/</link><pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/parknet-short-documentary-cuba/</guid><description>Last year we had the opportunity to travel to Cuba to explore its internet landscape. We spent most of our time hopping from one public WiFi hotspot to another, measuring networks in Havana, Santa Clara, and Santiago de Cuba. You might remember that we published a research report on our findings.
+Today we publish a short documentary (“ParkNet”) on our study of internet censorship in Cuba.
+“ParkNet” is a term that we coined to refer to parks that serve as public WiFi hotspots in Cuba.</description></item><item><title>How Pakistan blocked news outlets, social media sites, and IM apps amidst protests</title><link>https://ooni.github.io/post/how-pakistan-blocked-social-media/</link><pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/how-pakistan-blocked-social-media/</guid><description>Last weekend, a number of social media sites and news outlets were blocked in Pakistan during Islamist protests. Protesters gathered in Islamabad alleged that Mr. Zahid Hamid, the Federal Law Minister, should be removed from his position because he omitted a reference to the Prophet Muhammad in a parliamentary bill. On Saturday, 25th November 2017, law enforcement agencies initiated an operation to disperse the sit-in at the Faizabad Interchange linking Islamabad and Rawalpindi.</description></item><item><title>Internet Censorship in Iran: Network Measurement Findings from 2014-2017</title><link>https://ooni.github.io/post/iran-internet-censorship/</link><pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/iran-internet-censorship/</guid><description>Image: Blockpage in Iran
+A research study by the Open Observatory of Network Interference (OONI), ASL19, ARTICLE 19, and Small Media.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape
+Internet use
+Legal environment
+Reported cases of internet censorship
+Methodology: Measuring internet censorship in Iran
+Review of the Citizen Lab&amp;rsquo;s test list for Iran
+OONI network measurement testing
+Web Connectivity
+HTTP Invalid Request Line
+HTTP Header Field Manipulation
+Vanilla Tor test</description></item><item><title>Measuring Internet Censorship in Cuba's ParkNets</title><link>https://ooni.github.io/post/cuba-internet-censorship-2017/</link><pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/cuba-internet-censorship-2017/</guid><description>Image by Arturo Filastò (CC-BY-SA-3.0) A research study by the Open Observatory of Network Interference (OONI)
+View the pdf version of the report here.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+ETECSA
+ParkNets
+Joven Club
+StreetNets
+El Paquete
+Summary
+Measuring Internet Censorship in Cuba
+Methodology
+Collection and analysis of OONI Probe network measurements
+Custom tests
+Findings
+Blocked websites
+News Media
+Political Criticism
+Human Rights Issues</description></item><item><title>#EgyptCensors: Evidence of recent censorship events in Egypt</title><link>https://ooni.github.io/post/egypt-censors/</link><pubDate>Mon, 19 Jun 2017 15:30:00 +0000</pubDate><guid>https://ooni.github.io/post/egypt-censors/</guid><description>Country: Egypt
+OONI tests: Web Connectivity, HTTP Header Field Manipulation, HTTP Invalid Request Line, HTTP Host, Vanilla Tor.
+Probed ISPs: Link Egypt (AS24863), Vodafone Egypt (AS36935), Telecom Egypt (AS8452).
+Analysis period: 23rd May 2017 to 17th June 2017.
+Censorship method: Deep Packet Inspection (DPI) used to RESET connections.
+Starting on May 24th, the Egyptian government ordered ISPs to block at least 21 news websites on the grounds of “supporting terrorism and spreading lies”.</description></item><item><title>The State of Internet Censorship in Indonesia</title><link>https://ooni.github.io/post/indonesia-internet-censorship/</link><pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/indonesia-internet-censorship/</guid><description>Image: Block page in Indonesia
+A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Reported cases of internet censorship and surveillance
+Examining internet censorship in Indonesia
+Methodology
+Collection of OONI Probe network measurements
+Web Connectivity
+HTTP Invalid Request Line</description></item><item><title>The State of Internet Censorship in Thailand</title><link>https://ooni.github.io/post/thailand-internet-censorship/</link><pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/thailand-internet-censorship/</guid><description>Image: Block page in Thailand
+A research study by the Open Observatory of Network Interference (OONI), Sinar Project, and the Thai Netizen Network.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Reported cases of internet censorship and surveillance
+Examining internet censorship in Thailand
+Methodology
+Review of the Citizen Lab&amp;rsquo;s Thai test list</description></item><item><title>The State of Internet Censorship in Malaysia</title><link>https://ooni.github.io/post/malaysia-report/</link><pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/malaysia-report/</guid><description>Block page in Malaysia
+A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+Table of contents
+Key Findings
+Introduction
+Background
+Network landscape and internet penetration
+Legal environment
+Freedom of expression
+Press freedom
+Access to information
+Privacy
+Censorship and surveillance
+Previous cases of internet censorship and surveillance
+Examining internet censorship in Malaysia
+Methodology
+Creation of a Malaysian test list
+OONI network measurements
+Web connectivity
+HTTP invalid request line</description></item><item><title>Ethiopia: Evidence of social media blocking and internet censorship</title><link>https://ooni.github.io/post/ethiopia-report/</link><pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ethiopia-report/</guid><description>Youth in Addis trying to get Wi-Fi Connection. Credit Addis Fortune Newspaper
+Recently we published a post about what appeared to be a possible internet shutdown in Ethiopia during a wave of ongoing protests by ethnic groups. Today, in collaboration with Amnesty International we are releasing a report that includes evidence of recent censorship events during Ethiopia’s political upheaval.
+See the Amharic translation of the report. Translated by Wolete Mariam.</description></item><item><title>Egypt: Media censorship, Tor interference, HTTPS throttling and ads injections?</title><link>https://ooni.github.io/post/egypt-network-interference/</link><pubDate>Thu, 27 Oct 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/egypt-network-interference/</guid><description>Country: Egypt
+Probed ISPs: Noor (AS 20928), TE Data (AS 8452), Vodafone (AS 24835)
+Censorship method: DPI, network throttling, TCP injections
+OONI tests: HTTP Requests, Web Connectivity, Vanilla Tor
+Measurement period: 2016-08-27 - 2016-10-26
+We recently noticed network anomalies in Egypt and performed a study in an attempt to understand the situation.
+Our findings indicate that the Tor anonymity network appeared to be interfered with in Egypt, while HTTPS connections to DigitalOcean&amp;rsquo;s Frankfurt data centre were throttled.</description></item></channel></rss>
