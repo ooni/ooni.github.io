@@ -1,2 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>theme-circumvention on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/sw/tags/theme-circumvention/</link><description>Recent content in theme-circumvention on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>sw</language><lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/sw/tags/theme-circumvention/index.xml" rel="self" type="application/rss+xml"/><item><title>Tanzania: Ongezeko la udhibiti wa LGBTIQ mtandaoni na vizuizi vingine</title><link>https://ooni.github.io/sw/post/2024-tanzania-lgbtiq-censorship-and-other-targeted-blocks/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/sw/post/2024-tanzania-lgbtiq-censorship-and-other-targeted-blocks/</guid><description>Ripoti hii imeonyesha udhibiti wa tovuti za LGBTIQ na aina nyingine za udhibiti zilizokusudiwa nchini Tanzania kutokana na uchambuzi wa OONI data.
-Matokeo muhimu Utangulizi Mbinu Kukubali mapungufu Matokeo Uzuiaji wa tovuti za LGBTIQ Mitandao ya kijamii ya LGBTIQ Haki za LGBTIQ Habari na utamaduni wa LGBTIQ Kuzuia kujiua kwa LGBTIQ Uzuiaji wa tovuti zinazo saidia haki za binadamu Uzuiaji wa tovuti za uchumba za mtandaoni Uzuiaji wa Clubhouse na 4chan Uzuiaji wa ProtonVPN Hitimisho Shukrani Matokeo muhimu Uchambuzi wetu wa OONI data zilizokusanywa kutoka Tanzania zaidi ya mwaka jana (kati ya tarehe 1 Januari 2023 hadi tarehe 1 Januari 2024) umeonyesha kuwa Uzuiaji wa kina wa tovuti za LGBTIQ, ambao unahusiana na kuongezeka kwa ubaguzi na ukandamizaji wa jamii za LGBTIQ kwa miaka ya hivi karibuni.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Theme-Circumvention on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/sw/tags/theme-circumvention/</link><description>Recent content in Theme-Circumvention on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>sw</language><lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/sw/tags/theme-circumvention/index.xml" rel="self" type="application/rss+xml"/><item><title>Tanzania: Ongezeko la udhibiti wa LGBTIQ mtandaoni na vizuizi vingine</title><link>https://ooni.github.io/sw/post/2024-tanzania-lgbtiq-censorship-and-other-targeted-blocks/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/sw/post/2024-tanzania-lgbtiq-censorship-and-other-targeted-blocks/</guid><description>&lt;p>Ripoti hii imeonyesha udhibiti wa tovuti za LGBTIQ na aina nyingine za udhibiti zilizokusudiwa nchini Tanzania kutokana na uchambuzi wa &lt;a href="https://explorer.ooni.org/chart/mat?test_name=web_connectivity&amp;axis_x=measurement_start_day&amp;since=2023-12-01&amp;until=2024-01-31&amp;time_grain=day&amp;probe_cc=TZ">OONI data&lt;/a>.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#matokeo-muhimu">&lt;strong>Matokeo muhimu&lt;/strong>&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#utangulizi">&lt;strong>Utangulizi&lt;/strong>&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#mbinu">&lt;strong>Mbinu&lt;/strong>&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#kukubali-mapungufu">&lt;strong>Kukubali mapungufu&lt;/strong>&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#matokeo">&lt;strong>Matokeo&lt;/strong>&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#uzuiaji-wa-tovuti-za-lgbtiq">&lt;strong>Uzuiaji wa tovuti za LGBTIQ&lt;/strong>&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#mitandao-ya-kijamii-ya-lgbtiq">&lt;strong>Mitandao ya kijamii ya LGBTIQ&lt;/strong>&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#haki-za-lgbtiq">&lt;strong>Haki za LGBTIQ&lt;/strong>&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#habari-na-utamaduni-wa-lgbtiq">&lt;strong>Habari na utamaduni wa LGBTIQ&lt;/strong>&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#kuzuia-kujiua-kwa-lgbtiq">&lt;strong>Kuzuia kujiua kwa LGBTIQ&lt;/strong>&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#uzuiaji-wa-tovuti-zinazo-saidia-haki-za-binadamu">&lt;strong>Uzuiaji wa tovuti zinazo saidia haki za binadamu&lt;/strong>&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#uzuiaji-wa-tovuti-za-uchumba-za-mtandaoni">&lt;strong>Uzuiaji wa tovuti za uchumba za mtandaoni&lt;/strong>&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#uzuiaji-wa-clubhouse-na-4chan">&lt;strong>Uzuiaji wa Clubhouse na 4chan&lt;/strong>&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#uzuiaji-wa-protonvpn">&lt;strong>Uzuiaji wa ProtonVPN&lt;/strong>&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#hitimisho">&lt;strong>Hitimisho&lt;/strong>&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#shukrani">&lt;strong>Shukrani&lt;/strong>&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="matokeo-muhimu">&lt;strong>Matokeo muhimu&lt;/strong>&lt;/h2>
+&lt;p>Uchambuzi wetu wa &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=TZ&amp;since=2023-12-01&amp;until=2024-01-31&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=web_connectivity">OONI data&lt;/a> zilizokusanywa kutoka Tanzania zaidi ya mwaka jana (kati ya tarehe 1 Januari 2023 hadi tarehe 1 Januari 2024) umeonyesha kuwa &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=TZ&amp;since=2023-12-01&amp;until=2024-01-31&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;axis_y=domain&amp;test_name=web_connectivity&amp;category_code=LGBT">Uzuiaji wa kina wa tovuti za LGBTIQ&lt;/a>, ambao unahusiana na &lt;a href="https://www.ohchr.org/en/press-releases/2018/11/bachelet-tanzania-has-duty-protect-not-further-endanger-lgbt-people">kuongezeka kwa ubaguzi na ukandamizaji wa jamii za LGBTIQ&lt;/a> kwa miaka ya hivi karibuni. Vizuizi vingi vimetambulika katika sehemu ya utafiti huu umeonekana umekusudiwa kiasilia, kwani wamehusisha tovuti maalum sana, huku tovuti nyingine (zinajozulikana zaidi) za aina hiyohiyo (mfano. Mitandao ya kijamii, haki za binadamu) zilipatikana.&lt;/p></description></item></channel></rss>

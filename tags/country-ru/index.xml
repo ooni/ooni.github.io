@@ -1,16 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>country-ru on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-ru/</link><description>Recent content in country-ru on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-ru/index.xml" rel="self" type="application/rss+xml"/><item><title>Russia blocked OONI Explorer, a large open dataset on Internet censorship</title><link>https://ooni.github.io/post/2024-russia-blocked-ooni-explorer/</link><pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-russia-blocked-ooni-explorer/</guid><description>As of 11th September 2024, Russia has blocked one of our platforms: OONI Explorer.
-OONI Explorer is one of the largest open datasets on internet censorship around the world. We first launched this web platform back in 2016 with the goal of enabling researchers, journalists, and human rights defenders to investigate internet censorship based on empirical network measurement data that is contributed by OONI Probe users worldwide. Every day, we publish new measurements from around the world in real-time.</description></item><item><title>How Internet censorship changed in Russia during the 1st year of military conflict in Ukraine</title><link>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</guid><description>As of today, last year, Russia started its military operation in Ukraine. This was followed by increased levels of internet censorship, as Internet Service Providers (ISPs) in Russia started blocking access to several news media websites. In early March 2022, OONI published a report documenting these blocks, as well as the blocking of a site (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine. OONI also reported that Russian ISPs started throttling access to Twitter on 26th February 2022, and switched to blocking it by 4th March 2022 – at which point, they also started blocking access to Facebook.</description></item><item><title>New blocks emerge in Russia amid war in Ukraine: An OONI network measurement analysis</title><link>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</guid><description>Download in PDF Information controls are known to occur during conflicts, and that’s exactly what we’re seeing in Russia following the recent invasion of Ukraine on 24th February 2022.
-In recent days, OONI network measurement data collected from Russia shows that many Internet Service Providers (ISPs) have started blocking access to several news media websites, as well as to a website (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine.</description></item><item><title>Russia started blocking Tor</title><link>https://ooni.github.io/post/2021-russia-blocks-tor/</link><pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-russia-blocks-tor/</guid><description>On 1st December 2021, some Internet Service Providers (ISPs) in Russia started blocking access to the Tor anonymity network.
-In this report, we share OONI network measurement data on the blocking of the Tor network and www.torproject.org in Russia.
-About Tor
-Methods
-Findings
-Blocking of the Tor network
-Blocking of the Tor Project website
-Conclusion
-Acknowledgements
-About Tor If you want real privacy and anonymity on the internet, the answer is simple: use Tor.</description></item><item><title>No Access: LGBTIQ Website Censorship in Six Countries</title><link>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</link><pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</guid><description>Today, in collaboration with OutRight Action International and the Citizen Lab, we are excited to share our new research report, “No Access: LGBTIQ Website Censorship in Six Countries”, which examines the blocking of LGBTIQ websites in Indonesia, Malaysia, Iran, Russia, Saudi Arabia, and the United Arab Emirates (UAE).
-READ FULL REPORT
-Annotated Bibliography
-Below we share some of our key research findings.
-Summary of findings We joined forces with OutRight Action International and the Citizen Lab to examine the blocking of LGBTIQ websites in six countries: Indonesia, Malaysia, Iran, Russia, Saudi Arabia, and the United Arab Emirates (UAE).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Ru on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-ru/</link><description>Recent content in Country-Ru on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-ru/index.xml" rel="self" type="application/rss+xml"/><item><title>Russia blocked OONI Explorer, a large open dataset on Internet censorship</title><link>https://ooni.github.io/post/2024-russia-blocked-ooni-explorer/</link><pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-russia-blocked-ooni-explorer/</guid><description>&lt;p>As of 11th September 2024, Russia has &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=RU&amp;since=2024-08-01&amp;until=2024-09-25&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=web_connectivity&amp;domain=explorer.ooni.org">blocked&lt;/a> one of our platforms: &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a>.&lt;/p>
+&lt;p>&lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> is one of the largest open datasets on internet censorship around the world. We &lt;a href="https://blog.torproject.org/ooni-explorer-censorship-and-other-network-anomalies-around-world/">first launched&lt;/a> this web platform back in 2016 with the goal of enabling researchers, journalists, and human rights defenders to investigate internet censorship based on empirical network measurement data that is contributed by &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> users worldwide. Every day, we publish &lt;a href="https://explorer.ooni.org/">new measurements&lt;/a> from around the world in real-time.&lt;/p></description></item><item><title>How Internet censorship changed in Russia during the 1st year of military conflict in Ukraine</title><link>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</guid><description>&lt;p>As of today, last year, Russia started its &lt;a href="https://www.bbc.com/news/world-60525350">military operation in Ukraine&lt;/a>. This was followed by increased levels of internet censorship, as Internet Service Providers (ISPs) in Russia started &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocking-of-news-media-websites">blocking access to several news media websites&lt;/a>. In early March 2022, OONI published a &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/">report&lt;/a> documenting these blocks, as well as the &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocked-website-about-captured-and-killed-russian-soldiers">blocking of a site&lt;/a> (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine. OONI also reported that Russian ISPs started &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-throttled">throttling access to Twitter&lt;/a> on 26th February 2022, and switched to &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-and-facebook-blocked">blocking&lt;/a> it by 4th March 2022 – at which point, they also started &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;domain=www.facebook.com&amp;probe_cc=RU&amp;only=anomalies">blocking access to Facebook&lt;/a>.&lt;/p></description></item><item><title>New blocks emerge in Russia amid war in Ukraine: An OONI network measurement analysis</title><link>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</guid><description>&lt;a class="ooni-btn" href="https://ooni.github.io/documents/OONI-Report-New-blocks-emerge-in-Russia-amid-war-in-Ukraine.pdf">Download in PDF&lt;/a>
+
+&lt;p>Information controls are known to occur during conflicts, and that’s exactly what we’re seeing in Russia following the recent invasion of Ukraine on 24th February 2022.&lt;/p>
+&lt;p>In recent days, &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;probe_cc=RU">OONI network measurement data&lt;/a> collected from Russia shows that many Internet Service Providers (ISPs) have started &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;only=anomalies">blocking&lt;/a> access to several news media websites, as well as to a &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;only=anomalies&amp;domain=200rf.com">website&lt;/a> (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine. OONI data also shows that Russian ISPs started &lt;a href="https://explorer.ooni.org/search?since=2022-02-26&amp;until=2022-03-04&amp;failure=false&amp;domain=twitter.com&amp;probe_cc=RU">throttling access to Twitter&lt;/a> on 26th February 2022, and switched to &lt;a href="https://explorer.ooni.org/measurement/20220306T202033Z_webconnectivity_RU_51604_n1_oVoIGdnUmlxCWmyR?input=https%3A%2F%2Ftwitter.com%2F">blocking&lt;/a> it by 4th March 2022 – at which point, they also started &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;domain=www.facebook.com&amp;probe_cc=RU&amp;only=anomalies">blocking access to Facebook&lt;/a>. Censorship in Russia is generally implemented in a &lt;a href="https://www.ndss-symposium.org/ndss-paper/decentralized-control-a-case-study-of-russia/">decentralized&lt;/a> way, as blocks are not observed on all networks, while ISPs adopt a variety of different censorship techniques.&lt;/p></description></item><item><title>Russia started blocking Tor</title><link>https://ooni.github.io/post/2021-russia-blocks-tor/</link><pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-russia-blocks-tor/</guid><description>&lt;p>On 1st December 2021, some Internet Service Providers (ISPs) in Russia
+started
+&lt;a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">blocking&lt;/a>
+access to the &lt;a href="https://www.torproject.org/">Tor&lt;/a> anonymity network.&lt;/p>
+&lt;p>In this report, we share &lt;a href="https://explorer.ooni.org/search?since=2021-11-08&amp;until=2021-12-09&amp;failure=false&amp;probe_cc=RU&amp;test_name=tor&amp;only=anomalies">OONI network measurement data&lt;/a>
+on the blocking of the Tor network and &lt;code>www.torproject.org&lt;/code> in Russia.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-russia-blocks-tor/#about-tor">About Tor&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-russia-blocks-tor/#methods">Methods&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-russia-blocks-tor/#findings">Findings&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-russia-blocks-tor/#blocking-of-the-tor-network">Blocking of the Tor network&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-russia-blocks-tor/#blocking-of-the-tor-project-website">Blocking of the Tor Project website&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-russia-blocks-tor/#conclusion">Conclusion&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-russia-blocks-tor/#acknowledgements">Acknowledgements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="about-tor">About Tor&lt;/h1>
+&lt;p>If you want real privacy and anonymity on the internet, the answer is
+simple: use &lt;a href="https://www.torproject.org/download/">Tor&lt;/a>.&lt;/p></description></item><item><title>No Access: LGBTIQ Website Censorship in Six Countries</title><link>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</link><pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover.png">
+ &lt;img
+ src="https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover_hu14604463933570315610.png"
+
+ 
+
+ title="Report cover"
+ 
+ alt="Report cover"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today, in collaboration with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> and the &lt;a href="https://citizenlab.ca/">Citizen Lab&lt;/a>, we are excited to share our new research report, “&lt;strong>No Access: LGBTIQ Website Censorship in Six Countries&lt;/strong>”,
+which examines the blocking of LGBTIQ websites in Indonesia, Malaysia,
+Iran, Russia, Saudi Arabia, and the United Arab Emirates (UAE).&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://ooni.github.io/documents/2021-lgbtiq-website-censorship-report/2021-lgbtiq-website-censorship-report-v2.pdf">READ FULL REPORT&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://ooni.github.io/documents/2021-lgbtiq-website-censorship-report/annotated-bibliography.pdf">Annotated Bibliography&lt;/a>&lt;/p>
+&lt;p>Below we share some of our key research findings.&lt;/p>
+&lt;h1 id="summary-of-findings">Summary of findings&lt;/h1>
+&lt;p>We joined forces with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> and the &lt;a href="https://citizenlab.ca/">Citizen Lab&lt;/a> to examine the blocking of LGBTIQ websites
+in six countries: Indonesia, Malaysia, Iran, Russia, Saudi Arabia, and
+the United Arab Emirates (UAE). We selected these countries because they
+are (a) known to serve &lt;a href="https://ooni.org/support/glossary/#block-page">block pages&lt;/a> (i.e., pages that
+website visitors may see when access is restricted), which enable us to
+automatically confirm the blocking of LGBTIQ websites, and (b) known to
+censor LGBTIQ related content, based on prior research.&lt;/p></description></item></channel></rss>

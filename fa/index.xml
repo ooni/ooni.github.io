@@ -1,33 +1,166 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/fa/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>fa</language><atom:link href="https://ooni.github.io/fa/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/fa/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/about/risks/</guid><description>خطرات: مطالبی که باید قبل از اجرای کاوشگر اوونی بدانید این سند توسط Miaan Group ترجمه شده است.
-اصل سند (به زبان انگلیسی): Risks: Things you should know before running OONI Probe
-طبق اطلاعات ما، هیچ کاربر کاوشگر اوونی تا به حال با عواقبی به خاطر استفاده از نرم افزار ما مواجه نشده است. بنابراین، خطرات بالقوه شرح داده شده در زیر، تئوری و کاملاً حدس و گمان هستند. اگر کاوشگر اوونی را از یک &amp;ldquo;محیط پرخطر&amp;rdquo; اجرا می کنید، لطفا تمام مطالب زیر را بخوانید.</description></item><item><title/><link>https://ooni.github.io/fa/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/ooni-outreach-kit/</guid><description>حیات اونی و ارزش آن به فعالیت بیشتر کاربران آن گره خورده است. زیرا هرچه کاربران بیشتری در سراسر جهان از اونی پراب استفاده و آن را اجرا کنند، اطلاعات اونی درباره سانسور اینترنت بیشتر و دقیق‌تر خواهد بود. اگر شما هم علاقه‌مند هستید تا افراد بیشتری را به عضویت در جامعه کاربران اونی دعوت و تشویق کنید، این بسته معرفی و ترویج،‌ بهترین ابزار برای شماست.
-بروشورهای معرفی OONI بروشور معرفی OONI Probe بروشور معرفی کاوشگر اونی بروشور سانسوراینترنت اسلایدهای آموزشی برای برگزاری کارگاه OONI منابع OONI بروشورهای معرفی OONI ما دو بروشور برای معرفی اونی طراحی کرده‌ایم که حاوی اطلاعاتی درباره استفاده از ابزارها و داده‌های OONI برای تحقیق در مورد سانسور اینترنت در سراسر جهان است.</description></item><item><title>راهنمای کاربر: برنامه دسکتاپ OONI Probe</title><link>https://ooni.github.io/fa/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/ooni-probe-desktop/</guid><description>**آخرین به‌روز‌رسانی: ** 18 اکتبر 2022
-نسخه دسکتاپ OONI Probe: 3.7.0
-OONI Probe یک برنامه رایگان و منبع‌باز است که می‌توانید از آن برای اندازه‌گیری سانسور اینترنت و سایر انواع تداخل در شبکه استفاده کنید. این راهنمای کاربری، دستورالعمل‌های گام به گام در مورد نحوه نصب، اجرا و تنظیمات استفاده از برنامه دسکتاپ OONI Probe را ارائه می‌دهد.
-آنچه در این راهنما کسب خواهید کرد:
-با نحوه اجرای دسکتاپ OONI Probe آشنا شوید:</description></item><item><title>راهنمای کاربری: برنامه موبایل OONI Probe</title><link>https://ooni.github.io/fa/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/ooni-probe-mobile/</guid><description>**آخرین به‌روز‌رسانی: ** 19 اکتبر 2022 نسخه موبایل OONI Probe: 3.7.1
-OONI Probe یک برنامه رایگان و منبع باز است که می‌توانید از آن برای اندازه‌گیری سانسور اینترنت و سایر انواع تداخل در شبکه استفاده کنید. این راهنمای کاربری دستورالعمل‌های گام به گام در مورد نحوه نصب، اجرا و تنظیمات برنامه موبایل OONI Probe را ارائه می‌دهد.
-آنچه از این راهنما خواهید آموخت:
-یاد می‌گیرید که چگونه OONI Probe موبایل را اجرا کنید: تست مسدودیت وبسایت‌ها تست مسدودیت پیام‌رسان‌ها ابزارهای دور زدن سانسور را تست کنید سرعت و عملکرد شبکه خود را اندازه‌گیری کنید تست OONI Probe را برای وب‌سایت‌های مورد نظر خود سفارشی‌سازی کنید نحوه دسترسی و به اشتراک‌گذاری نتایج تست OONI Probe خود را یاد می‌گیرید تنظیمات برنامه OONI Probe خود را پیکربندی کنید با خواندن این راهنما امیدواریم احساس توانمندی در به اشتراک‌گذاری دانش و مهارت‌های OONI Probe خود با دیگران را کسب کنید!</description></item><item><title>سوالات متداول</title><link>https://ooni.github.io/fa/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/faq/</guid><description>این سند توسط Miaan Group ترجمه شده است.
-اصل سند (به زبان انگلیسی): Frequently Asked Questions (FAQ)
-این بخش سوالات متداول با هدف رسیدگی به سوالاتی است که غالبا توسط جامعه از ما پرسیده می شود.
-آیا سوالات دیگری وجود دارد که مایل هستید به آنها بپردازیم؟ لطفااجازه دهید تا ما بدانیم
-درباره اوونی OONI
-اوونی چیست؟
-چرا اوونی؟
-اوونی چه می کند؟
-چرا ما سانسور اینترنت را بررسی می کنیم؟</description></item><item><title>واژهنامه اوونی (OONI)</title><link>https://ooni.github.io/fa/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/glossary/</guid><description>واژهنامه اوونی (OONI) این سند توسط Miaan Group ترجمه شده است.
-اصل سند (به زبان انگلیسی): Glossary OONI
-این واژهنامه حاوی توضیحات مختصری برای واژگان مورد استفاده در اپلیکیشنها وگزارشهای تحقیقاتی اوونی (OONI) است.
-اگر میخواهید اصطلاحات بیشتری را در این واژهنامه ببینید، لطفا درخواست پیشنهادات را باز کنید یا برای ما ایمیل ارسال کنید.
-API
-AS
-ASN
-BGP
-Blocklist
-Block page
-Caching
-Circumvention tools
-Client
-Data processing pipeline
-DNS</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/fa/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>fa</language><atom:link href="https://ooni.github.io/fa/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/fa/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/about/risks/</guid><description>&lt;h1 id="خطرات-مطالبی-که-باید-قبل-از-اجرای-کاوشگر-اوونی-بدانید">خطرات: مطالبی که باید قبل از اجرای کاوشگر اوونی بدانید&lt;/h1>
+&lt;p>این سند توسط &lt;a href="https://www.miaan.org/">Miaan Group&lt;/a> ترجمه شده است.&lt;/p>
+&lt;p>اصل سند (به زبان انگلیسی): &lt;a href="https://ooni.org/about/risks">Risks: Things you should know before running OONI Probe&lt;/a>&lt;/p>
+&lt;p>طبق اطلاعات ما، هیچ کاربر کاوشگر اوونی تا به حال با عواقبی به خاطر استفاده از نرم افزار ما مواجه نشده است. بنابراین، خطرات بالقوه شرح داده شده در زیر، تئوری و کاملاً حدس و گمان هستند. اگر کاوشگر اوونی را از یک &amp;ldquo;محیط پرخطر&amp;rdquo; اجرا می کنید، لطفا تمام مطالب زیر را بخوانید.&lt;/p></description></item><item><title/><link>https://ooni.github.io/fa/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/ooni-outreach-kit/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-outreach-kit/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu116634532574350516.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
+ 
+
+ title="عُدة التوعية لـ OONI"
+ 
+ alt="عُدة التوعية لـ OONI"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>حیات اونی و ارزش آن به فعالیت بیشتر کاربران آن گره خورده است. زیرا هرچه کاربران بیشتری در سراسر جهان از اونی پراب استفاده و آن را &lt;a href="https://ooni.org/install/">اجرا کنند&lt;/a>، اطلاعات اونی درباره سانسور &lt;a href="https://ooni.org/data">اینترنت&lt;/a> بیشتر و دقیق‌تر خواهد بود.
+اگر شما هم علاقه‌مند هستید تا افراد بیشتری را به عضویت در جامعه کاربران اونی دعوت و تشویق کنید، این بسته معرفی و ترویج،‌ بهترین ابزار برای شماست.&lt;/p></description></item><item><title>راهنمای کاربر: برنامه دسکتاپ OONI Probe</title><link>https://ooni.github.io/fa/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/ooni-probe-desktop/</guid><description>&lt;p>**آخرین به‌روز‌رسانی: ** 18 اکتبر 2022&lt;/p>
+&lt;p>&lt;strong>نسخه دسکتاپ OONI Probe:&lt;/strong> 3.7.0&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu8619296333105039821.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu2811019159506606390.png 2x"
+ 
+
+ title="Install OONI Probe Desktop"
+ 
+ alt="Install OONI Probe Desktop"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe یک &lt;a href="https://github.com/ooni/probe">برنامه رایگان و منبع‌باز&lt;/a> است که می‌توانید از آن برای اندازه‌گیری سانسور اینترنت و سایر انواع تداخل در شبکه استفاده کنید. این راهنمای کاربری، &lt;strong>دستورالعمل‌های گام به گام&lt;/strong> در مورد نحوه نصب، اجرا و تنظیمات استفاده از &lt;a href="https://ooni.github.io/install/desktop">برنامه دسکتاپ OONI Probe&lt;/a> را ارائه می‌دهد.&lt;/p>
+&lt;p>&lt;strong>آنچه در این راهنما کسب خواهید کرد:&lt;/strong>&lt;/p></description></item><item><title>راهنمای کاربری: برنامه موبایل OONI Probe</title><link>https://ooni.github.io/fa/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/ooni-probe-mobile/</guid><description>&lt;p>**آخرین به‌روز‌رسانی: ** 19 اکتبر 2022
+&lt;strong>نسخه موبایل OONI Probe:&lt;/strong> 3.7.1&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-mobile/images/image49.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu9506725050971740468.png"
+
+ 
+
+ title="Measure Internet Censorship"
+ 
+ alt="Measure Internet Censorship"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe یک &lt;a href="https://github.com/ooni/probe">برنامه رایگان و منبع باز&lt;/a> است که می‌توانید از آن برای اندازه‌گیری سانسور اینترنت و سایر انواع تداخل در شبکه استفاده کنید. این راهنمای کاربری &lt;strong>دستورالعمل‌های گام به گام&lt;/strong> در مورد نحوه نصب، اجرا و تنظیمات &lt;a href="https://ooni.org/install/mobile">برنامه موبایل OONI Probe&lt;/a> را ارائه می‌دهد.&lt;/p>
+&lt;p>&lt;strong>آنچه از این راهنما خواهید آموخت:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>یاد می‌گیرید که چگونه OONI Probe موبایل را اجرا کنید:
+&lt;ul>
+&lt;li>تست مسدودیت وبسایت‌ها&lt;/li>
+&lt;li>تست مسدودیت پیام‌رسان‌ها&lt;/li>
+&lt;li>ابزارهای دور زدن سانسور را تست کنید&lt;/li>
+&lt;li>سرعت و عملکرد شبکه خود را اندازه‌گیری کنید&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>تست OONI Probe را برای وب‌سایت‌های مورد نظر خود سفارشی‌سازی کنید&lt;/li>
+&lt;li>نحوه دسترسی و به اشتراک‌گذاری نتایج تست OONI Probe خود را یاد می‌گیرید&lt;/li>
+&lt;li>تنظیمات برنامه OONI Probe خود را پیکربندی کنید&lt;/li>
+&lt;/ul>
+&lt;p>با خواندن این راهنما امیدواریم احساس توانمندی در به اشتراک‌گذاری دانش و مهارت‌های OONI Probe خود با دیگران را کسب کنید!&lt;/p></description></item><item><title>سوالات متداول</title><link>https://ooni.github.io/fa/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/faq/</guid><description>&lt;p>این سند توسط &lt;a href="https://www.miaan.org/">Miaan Group&lt;/a> ترجمه شده است.&lt;/p>
+&lt;p>اصل سند (به زبان انگلیسی): &lt;a href="https://ooni.org/support/faq/">Frequently Asked Questions (FAQ)&lt;/a>&lt;/p>
+&lt;p>این بخش سوالات متداول با هدف رسیدگی به سوالاتی است که غالبا توسط جامعه از ما پرسیده می شود.&lt;/p>
+&lt;p>آیا سوالات دیگری وجود دارد که مایل هستید به آنها بپردازیم؟ &lt;a href="https://ooni.org/about/#contact">لطفااجازه دهید تا ما بدانیم&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%A7%D9%88%D9%88%D9%86%DB%8C-ooni">درباره اوونی OONI&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%A7%D9%88%D9%88%D9%86%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA">اوونی چیست؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%DA%86%D8%B1%D8%A7-%D8%A7%D9%88%D9%88%D9%86%DB%8C">چرا اوونی؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%A7%D9%88%D9%88%D9%86%DB%8C-%DA%86%D9%87-%D9%85%DB%8C-%DA%A9%D9%86%D8%AF">اوونی چه می کند؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%DA%86%D8%B1%D8%A7-%D9%85%D8%A7-%D8%B3%D8%A7%D9%86%D8%B3%D9%88%D8%B1-%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D8%B1%D8%A7-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%DB%8C-%DA%A9%D9%86%DB%8C%D9%85">چرا ما سانسور اینترنت را بررسی می کنیم؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%A8%D9%88%D8%AF%D8%AC%D9%87-%D8%A7%D9%88%D9%88%D9%86%DB%8C-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF">بودجه اوونی چگونه تامین می شود؟&lt;/a>&lt;/p></description></item><item><title>واژهنامه اوونی (OONI)</title><link>https://ooni.github.io/fa/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/glossary/</guid><description>&lt;h1 id="واژهنامه-اوونی-ooni">واژهنامه اوونی (OONI)&lt;/h1>
+&lt;p>این سند توسط &lt;a href="https://www.miaan.org/">Miaan Group&lt;/a> ترجمه شده است.&lt;/p>
+&lt;p>اصل سند (به زبان انگلیسی): &lt;a href="https://ooni.org/support/glossary/">Glossary OONI&lt;/a>&lt;/p>
+&lt;p>این واژهنامه حاوی &lt;em>توضیحات مختصری&lt;/em> برای واژگان مورد استفاده در اپلیکیشنها وگزارشهای تحقیقاتی اوونی (OONI) است.&lt;/p>
+&lt;p>اگر میخواهید اصطلاحات بیشتری را در این واژهنامه ببینید، لطفا &lt;a href="https://github.com/ooni/ooni.org">درخواست پیشنهادات&lt;/a> را باز کنید یا برای ما &lt;a href="https://ooni.org/about/#contact">ایمیل ارسال کنید&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#api">API&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#as">AS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#asn">ASN&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#bgp">BGP&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#blocklist">Blocklist&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#block-page">Block page&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#caching">Caching&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#circumvention-tools">Circumvention tools&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#client">Client&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#data-processing-pipeline">Data processing pipeline&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#dns">DNS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#dns-hijacking">DNS hijacking&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#dns-lookup">DNS lookup&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,9 +1,94 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>event on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/event/</link><description>Recent content in event on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/event/index.xml" rel="self" type="application/rss+xml"/><item><title>Join the 10th Ooniversary Events!</title><link>https://ooni.github.io/post/10th-ooniversary-events/</link><pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/10th-ooniversary-events/</guid><description>Subscribe on YouTube You’re invited to join us for the celebration of OONI’s 10th anniversary!
-To share OONI highlights from the last 10 years, as well as how community members have used OONI tools and data as part of their work, we’ll be hosting 2 live-streamed events:
-OONI Highlights:
-Date and time: 5th December 2022 at 14:00 UTC (1 hour event)
-Location: Live-streamed on OONI YouTube channel
-OONI Community:</description></item><item><title>Internet Measurement Village 2020: Slides &amp; Video Recordings</title><link>https://ooni.github.io/post/2020-imv-slides-recordings/</link><pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-imv-slides-recordings/</guid><description>Over the last month, between 10th June 2020 to 3rd July 2020, we organized and hosted the Internet Measurement Village (IMV) 2020, an online community event aimed at sharing skills, knowledge, and resources on internet measurement, in defense of a free and open internet.
-As all the IMV sessions were live-streamed and will continue to live on the OONI YouTube channel, we hope that these recordings will serve as a valuable resource on internet measurement for the internet freedom community.</description></item><item><title>Join the online Internet Measurement Village 2020</title><link>https://ooni.github.io/post/2020-internet-measurement-village/</link><pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-internet-measurement-village/</guid><description>Subscribe on YouTube We are excited to bring the first online Internet Measurement Village to you this month.
-Interested in learning all about Internet measurement and how to detect Internet censorship? Curious to explore open datasets on Internet censorship and Internet outages? Eager to learn how advocates are pushing back against Internet shutdowns and defending a free and open Internet?
-Join us for the online Internet Measurement Village, starting on Wednesday, 10th June 2020 and ending on Friday, 3rd July 2020.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Event on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/event/</link><description>Recent content in Event on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 24 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/event/index.xml" rel="self" type="application/rss+xml"/><item><title>Join the 10th Ooniversary Events!</title><link>https://ooni.github.io/post/10th-ooniversary-events/</link><pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/10th-ooniversary-events/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary.jpg">
+ &lt;img
+ src="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary_hu6664003398305905779.jpg"
+
+ 
+ srcset="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary_hu9430410147315059057.jpg 2x"
+ 
+
+ title="10th Ooniversary"
+ 
+ alt="10th Ooniversary"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;a class="youtube-subscribe" href="https://www.youtube.com/c/OONIorg?sub_confirmation=1">
+Subscribe on YouTube
+&lt;/a>
+
+&lt;p>You’re invited to join us for the celebration of OONI’s 10th
+anniversary!&lt;/p>
+&lt;p>To share OONI highlights from the last 10 years, as well as how
+community members have used OONI tools and data as part of their work,
+we’ll be hosting &lt;strong>2 live-streamed events&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>OONI Highlights&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Date and time: &lt;strong>5th December 2022 at 14:00 UTC&lt;/strong> (1 hour event)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Location: Live-streamed on &lt;a href="https://www.youtube.com/watch?v=f4D4gq9TBMg">OONI YouTube channel&lt;/a>&lt;/p></description></item><item><title>Internet Measurement Village 2020: Slides &amp; Video Recordings</title><link>https://ooni.github.io/post/2020-imv-slides-recordings/</link><pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-imv-slides-recordings/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-imv-slides-recordings/images/imv2020-banner.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-imv-slides-recordings/images/imv2020-banner_hu311103607854719990.png"
+
+ 
+ srcset="https://ooni.github.io/post/2020-imv-slides-recordings/images/imv2020-banner_hu495236815503009730.png 2x"
+ 
+
+ title="Internet Measurement Village 2020"
+ 
+ alt="Internet Measurement Village 2020"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Over the last month, between 10th June 2020 to 3rd July 2020, we
+organized and hosted the &lt;strong>&lt;a href="https://ooni.org/post/2020-internet-measurement-village/">Internet Measurement Village (IMV) 2020&lt;/a>&lt;/strong>, an
+online community event aimed at sharing skills, knowledge, and resources
+on internet measurement, in defense of a free and open internet.&lt;/p>
+&lt;p>As all the IMV sessions were live-streamed and will continue to live on
+the &lt;a href="https://www.youtube.com/c/OONIorg">OONI YouTube channel&lt;/a>, we hope
+that these recordings will serve as a valuable resource on internet
+measurement for the internet freedom community.&lt;/p></description></item><item><title>Join the online Internet Measurement Village 2020</title><link>https://ooni.github.io/post/2020-internet-measurement-village/</link><pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-internet-measurement-village/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-internet-measurement-village/images/imv2020-banner.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-internet-measurement-village/images/imv2020-banner_hu9743658825744276811.png"
+
+ 
+ srcset="https://ooni.github.io/post/2020-internet-measurement-village/images/imv2020-banner_hu5501900478008247774.png 2x"
+ 
+
+ title="Internet Measurement Village 2020"
+ 
+ alt="Internet Measurement Village 2020"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;a class="youtube-subscribe" href="https://www.youtube.com/c/OONIorg?sub_confirmation=1">
+Subscribe on YouTube
+&lt;/a>
+
+&lt;p>We are excited to bring the first online Internet Measurement Village to
+you this month.&lt;/p>
+&lt;p>Interested in learning all about Internet measurement and how to detect
+Internet censorship? Curious to explore open datasets on Internet
+censorship and Internet outages? Eager to learn how advocates are
+pushing back against Internet shutdowns and defending a free and open
+Internet?&lt;/p>
+&lt;p>Join us for the online Internet Measurement Village, &lt;strong>starting on
+Wednesday, 10th June 2020 and ending on Friday, 3rd July 2020&lt;/strong>.&lt;/p></description></item></channel></rss>

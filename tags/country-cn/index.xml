@@ -1,9 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>country-cn on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-cn/</link><description>Recent content in country-cn on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 28 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>China is blocking OONI</title><link>https://ooni.github.io/post/2023-china-blocks-ooni/</link><pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-china-blocks-ooni/</guid><description>We usually report on how other services are blocked. This time, we’re reporting on how our own services are blocked.
-China recently started blocking access to our website (ooni.org) and censorship measurement app (OONI Probe).
-This is not too surprising, given the fact that our work and tools center around measuring and exposing internet censorship (in China and around the world), and China has one of the most advanced and pervasive levels of internet censorship in the world.</description></item><item><title>Measuring DoT/DoH Blocking Using OONI Probe: A Preliminary Study</title><link>https://ooni.github.io/post/2022-doh-dot-paper-dnsprivacy21/</link><pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-doh-dot-paper-dnsprivacy21/</guid><description>When you enter a URL such as https://example.com/, under the hood, your web browser resolves the example.com domain to one or more IP addresses using the Domain Name System (DNS), a set of federated servers and protocols providing this name-to-IP-address mapping. For example, as of 2022-06-16, example.com resolves to the 93.184.216.34 (IPv4) and 2606:2800:220:1:248:1893:25c8:1946 (IPv6) addresses. Once it knows the IP addresses for the domain, the browser then uses them to fetch the requested webpage.</description></item><item><title>Measuring HTTP/3 censorship with OONI Probe</title><link>https://ooni.github.io/post/2022-http3-measurements-paper/</link><pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-http3-measurements-paper/</guid><description>Last year, QUIC emerged as a new internet protocol for creating reliable connections and encrypting communications between clients over the new HTTP/3 protocol. Observing the emergence and growing deployment of HTTP/3, we want to enable OONI Probe to measure HTTP/3 censorship and monitor how censors respond and adapt to technical innovation.
-We therefore added HTTP/3 support (in early 2021) into OONI Probe (through our urlgetter research tool) to conduct measurements in China, Iran, India and Kazakhstan to investigate the state of HTTP/3 censorship in these countries.</description></item><item><title>How countries attempt to block Signal Private Messenger App around the world</title><link>https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/</link><pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/</guid><description>Signal Private Messenger, commonly used by human rights defenders worldwide, is widely considered the state-of-the-art app for private and secure communications. But as its popularity surged recently, we have started to observe its blocking in several countries.
-In this report, we share our analysis of OONI network measurement data on the blocking of the Signal Private Messenger app in Iran, China, Cuba, and Uzbekistan.
-Currently, circumvention is enabled by default for Signal users in Iran, Egypt, Oman, Qatar, and the UAE.</description></item><item><title>China is now blocking all language editions of Wikipedia</title><link>https://ooni.github.io/post/2019-china-wikipedia-blocking/</link><pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-china-wikipedia-blocking/</guid><description>translation: 中国封锁了所有语言版本的维基百科
-China recently started blocking all language editions of Wikipedia. Previously, the blocking was limited to the Chinese language edition of Wikipedia (zh.wikipedia.org), but has now expanded to include all *.wikipedia.org language editions.
-In this post, we share OONI network measurement data on the blocking of Wikipedia in China. We found that all wikipedia.org sub-domains are blocked in China by means of DNS injection and SNI filtering.
-DNS injection Through the use of OONI Probe, Wikipedia domains have been tested from multiple local vantage points in China since 2015.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Cn on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-cn/</link><description>Recent content in Country-Cn on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 28 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>China is blocking OONI</title><link>https://ooni.github.io/post/2023-china-blocks-ooni/</link><pubDate>Fri, 28 Jul 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-china-blocks-ooni/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2023-china-blocks-ooni/images/image4.png">
+ &lt;img
+ src="https://ooni.github.io/post/2023-china-blocks-ooni/images/image4_hu9808324584859745139.png"
+
+ 
+
+ title="China blocks OONI"
+ 
+ alt="China blocks OONI"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>We usually &lt;a href="https://ooni.org/reports/">report&lt;/a> on how other services are blocked. This time, we’re reporting on how our own services are blocked.&lt;/p>
+&lt;p>China recently started blocking access to our website (&lt;code>ooni.org&lt;/code>) and censorship measurement app (&lt;a href="https://ooni.org/install/">OONI Probe&lt;/a>).&lt;/p>
+&lt;p>This is not too surprising, given the fact that our work and tools center around measuring and exposing internet censorship (in &lt;a href="https://explorer.ooni.org/">China and around the world&lt;/a>), and China has one of the most advanced and pervasive levels of internet censorship in the world. However, we’re not sure why China decided to start blocking us at this specific moment in time (as opposed to years ago), given that OONI measurements have been &lt;a href="https://explorer.ooni.org/country/CN">collected from China&lt;/a> since 2014. The timing of OONI blocking in China (which seems to have started on 7th July 2023) leads us to think that it might be related to our recent &lt;a href="https://twitter.com/OpenObservatory/status/1673659531639894019">reporting on the blocking of F-Droid&lt;/a> in China in late June 2023. But we also reported on the &lt;a href="https://ooni.org/post/2019-china-wikipedia-blocking/">blocking of Wikipedia in China&lt;/a> back in 2019 (among other &lt;a href="https://ooni.org/reports/">reports&lt;/a> on censorship observed in China), and China did not block our services at the time.&lt;/p></description></item><item><title>Measuring DoT/DoH Blocking Using OONI Probe: A Preliminary Study</title><link>https://ooni.github.io/post/2022-doh-dot-paper-dnsprivacy21/</link><pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-doh-dot-paper-dnsprivacy21/</guid><description>&lt;p>When you enter a URL such as &lt;code>https://example.com/&lt;/code>, under the
+hood, your web browser resolves the &lt;code>example.com&lt;/code> domain to one or
+more IP addresses using the Domain Name System (DNS), a set of
+federated servers and protocols providing this name-to-IP-address
+mapping. For example, as of 2022-06-16, &lt;code>example.com&lt;/code> resolves to
+the &lt;code>93.184.216.34&lt;/code> (IPv4) and &lt;code>2606:2800:220:1:248:1893:25c8:1946&lt;/code>
+(IPv6) addresses. Once it knows the IP addresses for the domain,
+the browser then uses them to fetch the requested webpage. Conceptually,
+the browser tries the IP addresses in sequence until it finds one
+that works. If no returned IP address works, the request fails.
+Therefore, domain name lookups are key to browsing and, incidentally,
+are also key to website censorship and surveillance.&lt;/p></description></item><item><title>Measuring HTTP/3 censorship with OONI Probe</title><link>https://ooni.github.io/post/2022-http3-measurements-paper/</link><pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-http3-measurements-paper/</guid><description>&lt;p>Last year, QUIC emerged as a new internet protocol for creating reliable connections and encrypting communications between clients over the new HTTP/3 protocol. Observing the emergence and growing deployment of HTTP/3, we want to enable &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> to measure HTTP/3 censorship and monitor how censors respond and adapt to technical innovation.&lt;/p>
+&lt;p>We therefore added HTTP/3 support (in early 2021) into &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> (through our &lt;a href="https://github.com/ooni/spec/blob/master/nettests/ts-027-urlgetter.md">urlgetter&lt;/a> research tool) to conduct measurements in &lt;strong>China, Iran, India and Kazakhstan to investigate the state of HTTP/3 censorship&lt;/strong> in these countries.&lt;/p></description></item><item><title>How countries attempt to block Signal Private Messenger App around the world</title><link>https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/</link><pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/images/01.png">
+ &lt;img
+ src="https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/images/01_hu6429735702460217004.png"
+
+ 
+
+ title="Signal blocked in Iran"
+ 
+ alt="Signal blocked in Iran"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;a href="https://signal.org/">Signal Private Messenger&lt;/a>, commonly used by
+human rights defenders worldwide, is widely considered the
+state-of-the-art app for private and secure communications. But as its
+&lt;a href="https://edition.cnn.com/2021/01/12/tech/signal-growth-whatsapp-confusion/index.html">popularity surged&lt;/a>
+recently, we have started to observe its
+&lt;a href="https://explorer.ooni.org/search?until=2021-09-29&amp;since=2021-08-30&amp;test_name=signal&amp;only=anomalies">blocking&lt;/a>
+in several countries.&lt;/p>
+&lt;p>In this report, we share our analysis of &lt;a href="https://explorer.ooni.org/search?until=2021-09-29&amp;since=2021-08-30&amp;test_name=signal&amp;only=anomalies">OONI network measurement data&lt;/a>
+on the blocking of the Signal Private Messenger app in &lt;strong>Iran, China,
+Cuba, and Uzbekistan&lt;/strong>.&lt;/p>
+&lt;p>Currently, circumvention is &lt;a href="https://github.com/signalapp/Signal-Android/blob/83b9fbac11868833925f9395364b8167a1c6615a/app/src/main/java/org/thoughtcrime/securesms/push/SignalServiceNetworkAccess.java#L53">enabled by default&lt;/a>
+for Signal users in Iran, Egypt, Oman, Qatar, and the UAE. If Signal
+users in other countries are unable to use the app, they can enable the
+“Censorship Circumvention” setting on iOS. On Android, Signal blocking
+can be circumvented through the use of &lt;a href="https://support.signal.org/hc/en-us/articles/360056052052-Proxy-Support">Signal TLS proxies&lt;/a>.&lt;/p></description></item><item><title>China is now blocking all language editions of Wikipedia</title><link>https://ooni.github.io/post/2019-china-wikipedia-blocking/</link><pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-china-wikipedia-blocking/</guid><description>&lt;p>&lt;a href="https://ooni.github.io/post/2019-china-wikipedia-blocking.zh/">translation: 中国封锁了所有语言版本的维基百科&lt;/a>&lt;/p>
+&lt;p>China recently started blocking all language editions of Wikipedia. Previously, the blocking was limited to the Chinese language edition of Wikipedia (zh.wikipedia.org), but has now expanded to include all &lt;code>*.wikipedia.org&lt;/code> language editions.&lt;/p>
+&lt;p>In this post, we share &lt;a href="https://api.ooni.io/files/by_country/CN">OONI network measurement data&lt;/a> on the blocking of Wikipedia in China. We found that all wikipedia.org sub-domains are blocked in China by means of DNS injection and SNI filtering.&lt;/p>
+&lt;h2 id="dns-injection">DNS injection&lt;/h2>
+&lt;p>Through the use of &lt;a href="https://ooni.io/install/">OONI Probe&lt;/a>, Wikipedia domains have been &lt;a href="https://api.ooni.io/files/by_country/CN">tested&lt;/a> from multiple local vantage points in China since 2015. Most measurements have been collected from China Telecom (AS4134).  &lt;/p></description></item></channel></rss>

@@ -1,20 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>indonesia on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/indonesia/</link><description>Recent content in indonesia on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/indonesia/index.xml" rel="self" type="application/rss+xml"/><item><title>iMAP State of Internet Censorship Report 2022 - Indonesia</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-indonesia/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-indonesia/</guid><description>In July 2014, Regulation of the Minister of Communications and Informatics Number 19 of 2014 on the Handling of Negative Internet Sites came into force as part of the regulator&amp;rsquo;s programme for Healthy and Safe Internet (INSAN or Internet Sehat dan Aman). The law mandated ISPs to block any internet content that is deemed to carry &amp;ldquo;negative&amp;rdquo; elements such as pornography, hoaxes, or SARA conflicts.
-As of September 2022, the Indonesian Ministry of Information and Communication (Kominfo) has blocked over 1,000,000 websites through TrustPositif,1 a filtering application that has been operational since 2010 per Ministerial Regulation No 19 of 2014.</description></item><item><title>The State of Internet Censorship in Indonesia</title><link>https://ooni.github.io/post/indonesia-internet-censorship/</link><pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/indonesia-internet-censorship/</guid><description>Image: Block page in Indonesia
-A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
-Table of contents
-Key Findings
-Introduction
-Background
-Network landscape and internet penetration
-Legal environment
-Freedom of expression
-Press freedom
-Access to information
-Privacy
-Censorship and surveillance
-Reported cases of internet censorship and surveillance
-Examining internet censorship in Indonesia
-Methodology
-Collection of OONI Probe network measurements
-Web Connectivity
-HTTP Invalid Request Line</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Indonesia on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/indonesia/</link><description>Recent content in Indonesia on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/indonesia/index.xml" rel="self" type="application/rss+xml"/><item><title>iMAP State of Internet Censorship Report 2022 - Indonesia</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-indonesia/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-indonesia/</guid><description>&lt;ul>
+&lt;li>
+&lt;p>In July 2014, Regulation of the Minister of Communications and Informatics Number 19 of 2014 on the Handling of Negative Internet Sites came into force as part of the regulator&amp;rsquo;s programme for Healthy and Safe Internet (INSAN or Internet Sehat dan Aman). The law mandated ISPs to block any internet content that is deemed to carry &amp;ldquo;negative&amp;rdquo; elements such as pornography, hoaxes, or SARA conflicts.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>As of September 2022, the Indonesian Ministry of Information and Communication (Kominfo) has blocked over 1,000,000 websites through TrustPositif,&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> a filtering application that has been operational since 2010 per Ministerial Regulation No 19 of 2014.&lt;/p></description></item><item><title>The State of Internet Censorship in Indonesia</title><link>https://ooni.github.io/post/indonesia-internet-censorship/</link><pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/indonesia-internet-censorship/</guid><description>&lt;p>&lt;img alt="Indonesian block page" src="https://ooni.github.io/post/indonesia/indonesian-blockpage.png">&lt;/p>
+&lt;p>&lt;em>Image: Block page in Indonesia&lt;/em>&lt;/p>
+&lt;p>A research study by the Open Observatory of Network Interference (OONI) and Sinar
+Project.&lt;/p>
+&lt;p>&lt;strong>Table of contents&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#key-findings">Key Findings&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#introduction">Introduction&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#network-landscape-and-internet-penetration">Network landscape and internet penetration&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#legal-environment">Legal environment&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#freedom-of-expression">Freedom of expression&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#press-freedom">Press freedom&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#access-to-information">Access to information&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#privacy">Privacy&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#censorship-and-surveillance">Censorship and surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#reported-cases-of-internet-censorship-and-surveillance">Reported cases of internet censorship and surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#examining-internet-censorship-in-indonesia">Examining internet censorship in Indonesia&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#methodology">Methodology&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#collection-of-ooniprobe-network-measurements">Collection of OONI Probe network measurements&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#web-connectivity">Web Connectivity&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#http-invalid-request-line">HTTP Invalid Request Line&lt;/a>&lt;/p></description></item></channel></rss>

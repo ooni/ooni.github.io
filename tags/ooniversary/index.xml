@@ -1,11 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ooniversary on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/ooniversary/</link><description>Recent content in ooniversary on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 09 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/ooniversary/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI Community Video</title><link>https://ooni.github.io/post/ooni-community-video/</link><pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-community-video/</guid><description>We are happy to celebrate OONI&amp;rsquo;s 10th anniversary together with our amazing community, who have been at the heart of our work over the past decade.
-Today, we are excited to share a new video with OONI community members, where they discuss how OONI has been useful to their work, while sharing what they would like to see OONI do in the future.
-Featured community members and partners Andrés Azpúrua, Venezuela Inteligente Andrés is the co-founder and Director of Venezuela Inteligente, a non-profit organization that aims to facilitate information, communication and collaboration between citizens and civil society organizations to create impact from a non-partisan perspective.</description></item><item><title>Highlights: 10 Years of OONI</title><link>https://ooni.github.io/post/highlights-10-years-of-ooni/</link><pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/highlights-10-years-of-ooni/</guid><description>Today is OONI’s 10th anniversary!
-As of today, 10 years ago, the first OONI measurement was published. Today, 10 years later, more than a billion OONI measurements have been published, shedding light on internet censorship worldwide.
-In this post, we share some OONI highlights from the past 10 years, as well as some of our future plans.
-You can start off by getting a glimpse of “OONI in 10 years” through the following animation, which shares some highlights from the past decade.</description></item><item><title>Join the 10th Ooniversary Events!</title><link>https://ooni.github.io/post/10th-ooniversary-events/</link><pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/10th-ooniversary-events/</guid><description>Subscribe on YouTube You’re invited to join us for the celebration of OONI’s 10th anniversary!
-To share OONI highlights from the last 10 years, as well as how community members have used OONI tools and data as part of their work, we’ll be hosting 2 live-streamed events:
-OONI Highlights:
-Date and time: 5th December 2022 at 14:00 UTC (1 hour event)
-Location: Live-streamed on OONI YouTube channel
-OONI Community:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ooniversary on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/ooniversary/</link><description>Recent content in Ooniversary on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 09 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/ooniversary/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI Community Video</title><link>https://ooni.github.io/post/ooni-community-video/</link><pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-community-video/</guid><description>&lt;p>We are happy to celebrate OONI&amp;rsquo;s 10th anniversary together with our
+amazing community, who have been at the heart of our work over the past
+decade.&lt;/p>
+&lt;p>Today, we are excited to share a &lt;strong>new video with OONI community
+members&lt;/strong>, where they discuss how OONI has been useful to their work,
+while sharing what they would like to see OONI do in the future.&lt;/p>
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zrclQ2QZjVo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe>
+
+&lt;h2 id="featured-community-members-and-partners">Featured community members and partners&lt;/h2>
+&lt;h3 id="andrés-azpúrua-venezuela-inteligentehttpsveinteligenteorg">Andrés Azpúrua, &lt;a href="https://veinteligente.org/">Venezuela Inteligente&lt;/a>&lt;/h3>
+&lt;p>Andrés is the co-founder and Director of Venezuela Inteligente, a
+non-profit organization that aims to facilitate information,
+communication and collaboration between citizens and civil society
+organizations to create impact from a non-partisan perspective. They
+promote, facilitate and develop digital tools, improving access to
+information, collaboration and responsiveness, empowering organizations,
+activists and citizens. They fight for the rights of Venezuelans online
+and offline.&lt;/p></description></item><item><title>Highlights: 10 Years of OONI</title><link>https://ooni.github.io/post/highlights-10-years-of-ooni/</link><pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/highlights-10-years-of-ooni/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/highlights-10-years-of-ooni/images/01.png">
+ &lt;img
+ src="https://ooni.github.io/post/highlights-10-years-of-ooni/images/01_hu11060568953675838338.png"
+
+ 
+ srcset="https://ooni.github.io/post/highlights-10-years-of-ooni/images/01_hu2671249911654719631.png 2x"
+ 
+
+ 
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today is OONI’s 10th anniversary!&lt;/p>
+&lt;p>As of today, 10 years ago, the first OONI measurement was published.
+Today, 10 years later, &lt;a href="https://explorer.ooni.org/">more than a billion OONI measurements&lt;/a> have been published, shedding
+light on &lt;a href="https://ooni.org/reports/">internet censorship&lt;/a> worldwide.&lt;/p>
+&lt;p>In this post, we share some &lt;strong>OONI highlights from the past 10 years&lt;/strong>,
+as well as some of our future plans.&lt;/p>
+&lt;p>You can start off by getting a glimpse of “OONI in 10 years” through the
+following animation, which shares some highlights from the past decade.&lt;/p></description></item><item><title>Join the 10th Ooniversary Events!</title><link>https://ooni.github.io/post/10th-ooniversary-events/</link><pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/10th-ooniversary-events/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary.jpg">
+ &lt;img
+ src="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary_hu6664003398305905779.jpg"
+
+ 
+ srcset="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary_hu9430410147315059057.jpg 2x"
+ 
+
+ title="10th Ooniversary"
+ 
+ alt="10th Ooniversary"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;a class="youtube-subscribe" href="https://www.youtube.com/c/OONIorg?sub_confirmation=1">
+Subscribe on YouTube
+&lt;/a>
+
+&lt;p>You’re invited to join us for the celebration of OONI’s 10th
+anniversary!&lt;/p>
+&lt;p>To share OONI highlights from the last 10 years, as well as how
+community members have used OONI tools and data as part of their work,
+we’ll be hosting &lt;strong>2 live-streamed events&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>OONI Highlights&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Date and time: &lt;strong>5th December 2022 at 14:00 UTC&lt;/strong> (1 hour event)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Location: Live-streamed on &lt;a href="https://www.youtube.com/watch?v=f4D4gq9TBMg">OONI YouTube channel&lt;/a>&lt;/p></description></item></channel></rss>

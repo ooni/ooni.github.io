@@ -1,10 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>survey on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/survey/</link><description>Recent content in survey on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 20 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/survey/index.xml" rel="self" type="application/rss+xml"/><item><title>Survey: Help shape OONI’s strategic priorities</title><link>https://ooni.github.io/post/2022-survey-ooni-strategic-priorities/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-survey-ooni-strategic-priorities/</guid><description>OONI will celebrate its 10th anniversary on 5th December 2022!
-This is a time for celebration, but also a time for reflection: What worked well? What should we improve? What should we do differently going forward?
-The OONI community has been at the heart of our work over the past decade, and so we invite our community to help shape OONI’s strategic priorities for the future.
-Please take a few minutes to complete our survey: https://ooni.</description></item><item><title>OONI Run Survey &amp; Interviews: Share your feedback</title><link>https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/</link><pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/</guid><description>OONI Run is a platform that you can use to generate mobile deep links and widget code to coordinate OONI Probe testing.
-Researchers and human rights defenders around the world have used OONI Run to coordinate OONI Probe censorship measurement campaigns, particularly leading up to and during political events (such as elections and protests).
-We’re excited to hear more about your experience with OONI Run so that we can improve it.</description></item><item><title>Do you use OONI Probe? We want your feedback!</title><link>https://ooni.github.io/post/ooniprobe-ux-survey-and-interviews/</link><pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooniprobe-ux-survey-and-interviews/</guid><description>Survey (self-hosted mirror)
-Since last year’s launch of the OONI Probe mobile apps, tens of thousands of people have been measuring internet censorship in around 200 countries every month. But OONI Probe is far from perfect.
-We’re excited to hear more about your experience with the apps so that we can improve them.
-We invite you to complete our survey and/or participate in an interview to provide feedback.
-Survey We’d love to hear your thoughts on the current OONI Probe mobile apps.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Survey on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/survey/</link><description>Recent content in Survey on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 20 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/survey/index.xml" rel="self" type="application/rss+xml"/><item><title>Survey: Help shape OONI’s strategic priorities</title><link>https://ooni.github.io/post/2022-survey-ooni-strategic-priorities/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-survey-ooni-strategic-priorities/</guid><description>&lt;p>OONI will celebrate its 10th anniversary on 5th December 2022!&lt;/p>
+&lt;p>This is a time for celebration, but also a time for reflection: What
+worked well? What should we improve? What should we do differently going
+forward?&lt;/p>
+&lt;p>The OONI community has been at the heart of our work over the past
+decade, and so we invite our community to help shape OONI’s strategic
+priorities for the future.&lt;/p>
+&lt;p>Please take a few minutes to &lt;strong>complete our survey&lt;/strong>:
+&lt;a href="https://ooni.typeform.com/2022-survey">https://ooni.typeform.com/2022-survey&lt;/a>&lt;/p></description></item><item><title>OONI Run Survey &amp; Interviews: Share your feedback</title><link>https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/</link><pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/images/ooni-run.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/images/ooni-run_hu17043667162593774499.png"
+
+ 
+
+ title="OONI Run"
+ 
+ alt="OONI Run"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;a href="https://ooni.org/post/ooni-run/">OONI Run&lt;/a> is a platform that you can
+use to generate mobile deep links and widget code to coordinate &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> testing.&lt;/p>
+&lt;p>Researchers and human rights defenders around the world have used &lt;a href="https://run.ooni.org/">OONI Run&lt;/a> to coordinate OONI Probe censorship
+measurement campaigns, particularly leading up to and during political
+events (such as elections and protests).&lt;/p>
+&lt;p>We’re excited to hear more about your experience with OONI Run so that
+we can improve it.&lt;/p></description></item><item><title>Do you use OONI Probe? We want your feedback!</title><link>https://ooni.github.io/post/ooniprobe-ux-survey-and-interviews/</link><pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooniprobe-ux-survey-and-interviews/</guid><description>&lt;p>&lt;strong>&lt;a href="https://ooniuxteam.typeform.com/to/a1P0cn">Survey&lt;/a>&lt;/strong> (self-hosted &lt;a href="https://storm.torproject.org/shared/VpAFK13fdAozTGTolFd2EsT1CkLY8-YlBLbRERy5EwI">mirror&lt;/a>)&lt;/p>
+&lt;p>Since last year’s &lt;a href="https://ooni.org/post/ooni-mobile-app/">launch of the OONI Probe mobile apps&lt;/a>, tens of
+thousands of people have been &lt;a href="https://api.ooni.io/stats">measuring internet censorship in around 200 countries&lt;/a> every month. But &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> is far from perfect.&lt;/p>
+&lt;p>We’re excited to hear more about your experience with the apps so that
+we can improve them.&lt;/p>
+&lt;p>We invite you to complete our survey and/or participate in an interview
+to provide feedback.&lt;/p>
+&lt;h1 id="survey">Survey&lt;/h1>
+&lt;p>We’d love to hear your thoughts on the &lt;em>current&lt;/em> OONI Probe mobile apps.&lt;/p></description></item></channel></rss>

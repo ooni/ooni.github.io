@@ -1,3 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>test-lists-editor on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/test-lists-editor/</link><description>Recent content in test-lists-editor on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/test-lists-editor/index.xml" rel="self" type="application/rss+xml"/><item><title>New Test Lists Editor: Contribute websites for censorship testing</title><link>https://ooni.github.io/post/2022-test-lists-editor/</link><pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-test-lists-editor/</guid><description>Today the Open Observatory of Network Interference (OONI) team is excited to announce the public launch of our new Test Lists Editor!
-This platform enables the public to review and contribute to the lists of websites (“test lists”) that are tested for censorship by OONI Probe users around the world.
-Help the internet freedom community discover website blocks around the world by contributing through the new Test Lists Editor!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Test-Lists-Editor on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/test-lists-editor/</link><description>Recent content in Test-Lists-Editor on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/test-lists-editor/index.xml" rel="self" type="application/rss+xml"/><item><title>New Test Lists Editor: Contribute websites for censorship testing</title><link>https://ooni.github.io/post/2022-test-lists-editor/</link><pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-test-lists-editor/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2022-test-lists-editor/images/01.png">
+ &lt;img
+ src="https://ooni.github.io/post/2022-test-lists-editor/images/01_hu3102870722549096828.png"
+
+ 
+
+ title="Test Lists Editor"
+ 
+ alt="Test Lists Editor"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today the Open Observatory of Network Interference (OONI) team is
+excited to announce the public launch of our new &lt;strong>&lt;a href="https://test-lists.ooni.org/">Test Lists Editor&lt;/a>&lt;/strong>!&lt;/p>
+&lt;p>This platform enables the public to &lt;strong>review and contribute to the lists
+of websites&lt;/strong> (“&lt;a href="https://ooni.org/get-involved/contribute-test-lists">test lists&lt;/a>”) that are
+&lt;strong>tested for censorship&lt;/strong> by &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a>
+users around the world.&lt;/p>
+&lt;p>Help the internet freedom community discover website blocks around the
+world by contributing through the new &lt;a href="https://test-lists.ooni.org/">Test Lists Editor&lt;/a>!&lt;/p></description></item></channel></rss>

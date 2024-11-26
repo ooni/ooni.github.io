@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/pt/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>pt</language><atom:link href="https://ooni.github.io/pt/support/index.xml" rel="self" type="application/rss+xml"/><item><title>Guia do usuário: OONI Probe Desktop App</title><link>https://ooni.github.io/pt/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/pt/support/ooni-probe-desktop/</guid><description>Última atualização: 6 de setembro de 2022
-OONI Probe Versão Desktop: 3.7.0
-Este documento foi traduzido por Cauan Henrique Zorzenon da Localization Lab Community.
-OONI Probe é um aplicativo gratuito e de código aberto que você pode usar para medir a censura na internet e outras formas de interferência na rede. Este guia do usuário fornece instruções passo a passo sobre como instalar, executar e personalizar o uso do aplicativo de desktop OONI Probe.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/pt/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>pt</language><atom:link href="https://ooni.github.io/pt/support/index.xml" rel="self" type="application/rss+xml"/><item><title>Guia do usuário: OONI Probe Desktop App</title><link>https://ooni.github.io/pt/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/pt/support/ooni-probe-desktop/</guid><description>&lt;p>&lt;strong>Última atualização:&lt;/strong> 6 de setembro de 2022&lt;/p>
+&lt;p>&lt;strong>OONI Probe Versão Desktop:&lt;/strong> 3.7.0&lt;/p>
+&lt;p>Este documento foi traduzido por &lt;a href="https://x.com/cauan_zorzenon">Cauan Henrique Zorzenon&lt;/a> da Localization Lab Community.&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu8619296333105039821.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu2811019159506606390.png 2x"
+ 
+
+ title="Install OONI Probe Desktop"
+ 
+ alt="Install OONI Probe Desktop"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe é um aplicativo &lt;a href="https://github.com/ooni/probe">gratuito e de código aberto&lt;/a> que você pode usar para medir a censura na internet e outras formas de interferência na rede. Este guia do usuário fornece &lt;strong>instruções passo a passo&lt;/strong> sobre como instalar, executar e personalizar o uso do &lt;a href="https://ooni.org/install/desktop">aplicativo de desktop OONI Probe&lt;/a>.&lt;/p></description></item></channel></rss>

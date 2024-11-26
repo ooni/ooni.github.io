@@ -1,26 +1,168 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>year-in-review on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/year-in-review/</link><description>Recent content in year-in-review on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/year-in-review/index.xml" rel="self" type="application/rss+xml"/><item><title>Year in Review: OONI in 2023</title><link>https://ooni.github.io/post/2023-year-in-review/</link><pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-year-in-review/</guid><description>As the end of 2023 approaches, we publish this post to share some OONI highlights from the last year. We also share some of the things we’ll be working on in 2024!
-New OONI non-profit legal entity New OONI Project Manager New OONI measurement tools Launched OONI Probe Web Launched News Media Scan app with Deutsche Welle (DW) Building OONI Run v2 New OONI Explorer features Censorship Findings: 22 reports Domain-centric pages Network-centric pages User feedback reporting mechanism Charts on internet outages Research OONI research reports OONI reports for ISOC Pulse shutdown timeline Community New partnerships New OONI Outreach Kit New OONI screencasts and documentation Localization OONI Explorer OONI Run OONI Probe OONI documentation New OONI Community Interviews OONI workshops and presentations OONI-verse 2024 New OONI non-profit legal entity OONI is now a registered NGO in Italy!</description></item><item><title>Year in Review: OONI in 2022</title><link>https://ooni.github.io/post/ooni-in-2022/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2022/</guid><description>As the end of 2022 approaches, we publish this post to share some OONI highlights from the last year. We also share some of the things we’ll be working on in 2023!
-OONI Team
-OONI Probe
-New OONI Probe experiments
-New Test Lists Editor
-OONI Run improvements
-OONI Probe Web prototype
-OONI data
-1 billion measurements
-New OONI Measurement Aggregation Toolkit (MAT)
-New Circumvention Tool Reachability Dashboard
-Advancing OONI data analysis</description></item><item><title>Year in Review: OONI in 2021</title><link>https://ooni.github.io/post/ooni-in-2021/</link><pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2021/</guid><description>In light of the ongoing global COVID-19 pandemic, 2021 continued to be a challenging year for everyone.
-Yet, several exciting things happened in the censorship measurement world. In this post, we share some OONI highlights from 2021, as well as some upcoming OONI projects for 2022!
-OONI Probe
-Automated OONI Probe testing
-New Debian package for OONI Probe
-New OONI Probe Command Line Interface for Linux and macOS
-New OONI Probe Experimental card</description></item><item><title>Year in Review: OONI in 2020</title><link>https://ooni.github.io/post/ooni-in-2020/</link><pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2020/</guid><description>In light of the global COVID-19 pandemic, 2020 has been a challenging year for everyone.
-Yet, several exciting things happened in the censorship measurement world. In this post, we share some OONI highlights from 2020, as well as some upcoming OONI projects for 2021!
-OONI Probe
-New OONI Probe Desktop App for Windows and macOS
-New OONI Probe measurement engine
-OONI Run usability study
-Measurement methodologies
-New circumvention tool tests</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Year-in-Review on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/year-in-review/</link><description>Recent content in Year-in-Review on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/year-in-review/index.xml" rel="self" type="application/rss+xml"/><item><title>Year in Review: OONI in 2023</title><link>https://ooni.github.io/post/2023-year-in-review/</link><pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-year-in-review/</guid><description>&lt;p>As the end of 2023 approaches, we publish this post to share some OONI
+highlights from the last year. We also share some of the things we’ll be
+working on in 2024!&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#new-ooni-non-profit-legal-entity">New OONI non-profit legal entity&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-project-manager">New OONI Project Manager&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-measurement-tools">New OONI measurement tools&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#launched-ooni-probe-web">Launched OONI Probe Web&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#launched-news-media-scan-app-with-deutsche-welle-dw">Launched News Media Scan app with Deutsche Welle (DW)&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#building-ooni-run-v2">Building OONI Run v2&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-explorer-features">New OONI Explorer features&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#censorship-findings-22-reports">Censorship Findings: 22 reports&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#domain-centric-pages">Domain-centric pages&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#network-centric-pages">Network-centric pages&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#user-feedback-reporting-mechanism">User feedback reporting mechanism&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#charts-on-internet-outages">Charts on internet outages&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#research">Research&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-research-reports">OONI research reports&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-reports-for-isoc-pulse-shutdown-timeline">OONI reports for ISOC Pulse shutdown timeline&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#community">Community&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#new-partnerships">New partnerships&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-outreach-kit">New OONI Outreach Kit&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-screencasts-and-documentation">New OONI screencasts and documentation&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#localization">Localization&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-explorer">OONI Explorer&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-run">OONI Run&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-probe">OONI Probe&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-documentation">OONI documentation&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-community-interviews">New OONI Community Interviews&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-workshops-and-presentations">OONI workshops and presentations&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#ooni-verse">OONI-verse&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#2024">2024&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="new-ooni-non-profit-legal-entity">New OONI non-profit legal entity&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/post/2023-year-in-review/images/image4.png">
+ &lt;img
+ src="https://ooni.github.io/post/2023-year-in-review/images/image4_hu18379814389437255340.png"
+
+ 
+
+ title="OONI Explorer"
+ 
+ alt="OONI Explorer"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI is now a registered NGO in Italy!&lt;/p></description></item><item><title>Year in Review: OONI in 2022</title><link>https://ooni.github.io/post/ooni-in-2022/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2022/</guid><description>&lt;p>As the end of 2022 approaches, we publish this post to share some OONI
+highlights from the last year. We also share some of the things we’ll be
+working on in 2023!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-team">OONI Team&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-probe">OONI Probe&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-ooni-probe-experiments">New OONI Probe experiments&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-test-lists-editor">New Test Lists Editor&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-run-improvements">OONI Run improvements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-probe-web-prototype">OONI Probe Web prototype&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-data">OONI data&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#1-billion-measurements">1 billion measurements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-ooni-measurement-aggregation-toolkit-mat">New OONI Measurement Aggregation Toolkit (MAT)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-circumvention-tool-reachability-dashboard">New Circumvention Tool Reachability Dashboard&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#advancing-ooni-data-analysis">Advancing OONI data analysis&lt;/a>&lt;/p></description></item><item><title>Year in Review: OONI in 2021</title><link>https://ooni.github.io/post/ooni-in-2021/</link><pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2021/</guid><description>&lt;p>In light of the ongoing global &lt;a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">COVID-19 pandemic&lt;/a>,
+2021 continued to be a challenging year for everyone.&lt;/p>
+&lt;p>Yet, several exciting things happened in the censorship measurement
+world. In this post, we share some OONI highlights from 2021, as well as
+some upcoming OONI projects for 2022!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#ooni-probe">OONI Probe&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#automated-ooni-probe-testing">Automated OONI Probe testing&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#new-debian-package-for-ooni-probe">New Debian package for OONI Probe&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#new-ooni-probe-command-line-interface-for-linux-and-macos">New OONI Probe Command Line Interface for Linux and macOS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#new-ooni-probe-experimental-card">New OONI Probe Experimental card&lt;/a>&lt;/p></description></item><item><title>Year in Review: OONI in 2020</title><link>https://ooni.github.io/post/ooni-in-2020/</link><pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2020/</guid><description>&lt;p>In light of the global &lt;a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">COVID-19 pandemic&lt;/a>,
+2020 has been a challenging year for everyone.&lt;/p>
+&lt;p>Yet, several exciting things happened in the censorship measurement
+world. In this post, we share some OONI highlights from 2020, as well as
+some upcoming OONI projects for 2021!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#ooni-probe">OONI Probe&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#new-ooni-probe-desktop-app-for-windows-and-macos">New OONI Probe Desktop App for Windows and macOS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#new-ooni-probe-measurement-engine">New OONI Probe measurement engine&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#ooni-run-usability-study">OONI Run usability study&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#measurement-methodologies">Measurement methodologies&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#new-circumvention-tool-tests">New circumvention tool tests&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#new-experiments">New experiments&lt;/a>&lt;/p></description></item></channel></rss>

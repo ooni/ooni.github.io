@@ -1,9 +1,72 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>performance on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/performance/</link><description>Recent content in performance on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml"/><item><title>Measurement observations on network performance during the COVID-19 pandemic in Northern Italy</title><link>https://ooni.github.io/post/2020-network-performance-covid19-italy/</link><pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-network-performance-covid19-italy/</guid><description>We were recently invited to participate in a NetGain Partnership webinar (titled “Surging Demand and The Global Internet Infrastructure”) to discuss the changing landscape for internet infrastructure and technology in the wake of the COVID-19 pandemic.
-As part of our preparation for this webinar, we looked at network performance measurements collected from northern Italy over the last months (i.e. when Italy was hit hard by the COVID-19 pandemic) in an attempt to understand whether and to what extent there was a correlation between increased internet use and reduced network performance.</description></item><item><title>Launched: New OONI Probe Desktop App for Windows and macOS</title><link>https://ooni.github.io/post/2020-ooni-probe-desktop-app/</link><pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-ooni-probe-desktop-app/</guid><description>Today, OONI is thrilled to announce the public launch of the new OONI Probe desktop app that you can download and install on Windows and macOS to measure internet censorship and network performance.
-Install OONI Probe Desktop app By running the tests in the new OONI Probe desktop app, you can measure:
-Blocking of websites;
-Blocking of WhatsApp, Facebook Messenger, and Telegram;
-Blocking of Tor and Psiphon;
-Presence of systems (“middleboxes”) that could potentially be responsible for censorship and/or surveillance;</description></item><item><title>New OONI Probe Mobile App: Measure Internet Censorship &amp; Performance</title><link>https://ooni.github.io/post/ooni-mobile-app/</link><pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-mobile-app/</guid><description>Today the Open Observatory of Network Interference (OONI) project is thrilled to announce the release of a new mobile app (“OONI Probe - Measure Internet Censorship &amp;amp; Performance”) that can now be installed on Android and iOS for testing Internet censorship and network performance.
-By running the tests included in OONI’s mobile app, you can monitor:
-Blocking of websites; Presence of systems that could be responsible for censorship or surveillance; Speed and performance of your network.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Performance on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/performance/</link><description>Recent content in Performance on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml"/><item><title>Measurement observations on network performance during the COVID-19 pandemic in Northern Italy</title><link>https://ooni.github.io/post/2020-network-performance-covid19-italy/</link><pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-network-performance-covid19-italy/</guid><description>&lt;p>We were recently invited to participate in a &lt;a href="https://www.netgainpartnership.org/">NetGain Partnership webinar&lt;/a> (titled “&lt;a href="https://www.netgainpartnership.org/events/covid19/global-infrastructure">Surging Demand and The Global Internet Infrastructure&lt;/a>”)
+to discuss the changing landscape for internet infrastructure and
+technology in the wake of the COVID-19 pandemic.&lt;/p>
+&lt;p>As part of our preparation for this webinar, we looked at network
+performance measurements collected from northern Italy over the last
+months (i.e. when Italy was hit hard by the COVID-19 pandemic) in an
+attempt to understand whether and to what extent there was a correlation
+between increased internet use and reduced network performance. As our
+observations may be of public interest, we decided to share them through
+this blog post.&lt;/p></description></item><item><title>Launched: New OONI Probe Desktop App for Windows and macOS</title><link>https://ooni.github.io/post/2020-ooni-probe-desktop-app/</link><pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-ooni-probe-desktop-app/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-ooni-probe-desktop-app/images/desktop-feature.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-ooni-probe-desktop-app/images/desktop-feature_hu15263499433944027071.png"
+
+ 
+
+ title="OONI Probe desktop app"
+ 
+ alt="OONI Probe desktop app"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today, OONI is thrilled to announce the public launch of the &lt;strong>new OONI
+Probe desktop app&lt;/strong> that you can download and install on &lt;strong>Windows&lt;/strong> and
+&lt;strong>macOS&lt;/strong> to measure internet censorship and network performance.&lt;/p>
+&lt;a class="ooni-btn" href="https://ooni.org/install/desktop">Install OONI Probe Desktop app&lt;/a>
+
+&lt;p>By running the tests in the new OONI Probe desktop app, you can measure:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Blocking of &lt;a href="https://ooni.org/nettest/web-connectivity/">websites&lt;/a>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Blocking of &lt;a href="https://ooni.org/nettest/whatsapp/">WhatsApp&lt;/a>, &lt;a href="https://ooni.org/nettest/facebook-messenger/">Facebook Messenger&lt;/a>, and
+&lt;a href="https://ooni.org/nettest/telegram/">Telegram&lt;/a>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Blocking of &lt;a href="https://ooni.org/nettest/tor/">Tor&lt;/a> and
+&lt;a href="https://ooni.org/nettest/psiphon/">Psiphon&lt;/a>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Presence of systems (“&lt;a href="https://ooni.org/nettest/http-invalid-request-line/">middleboxes&lt;/a>”)
+that could potentially be responsible for censorship and/or surveillance;&lt;/p></description></item><item><title>New OONI Probe Mobile App: Measure Internet Censorship &amp; Performance</title><link>https://ooni.github.io/post/ooni-mobile-app/</link><pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-mobile-app/</guid><description>&lt;p>&lt;img alt="OONI mobile app" src="https://ooni.github.io/post/ooni-mobile-app/ooni-mobile-app.jpg">&lt;/p>
+&lt;p>Today the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project is thrilled to
+announce the release of a new mobile app (“&lt;strong>OONI Probe - Measure Internet
+Censorship &amp;amp; Performance&lt;/strong>”) that can now be installed on &lt;strong>Android&lt;/strong> and &lt;strong>iOS&lt;/strong> for
+testing Internet censorship and network performance.&lt;/p>
+&lt;div class="row pb-3 pt-4">
+		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
+			&lt;img alt="Download ooniprobe for Android"
+				src="https://ooni.github.io/install/play-store-badge.png"
+				srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
+		&lt;/a>
+
+		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://itunes.apple.com/us/app/id1199566366">
+			&lt;img alt="Download ooniprobe for iOS"
+				src="https://ooni.github.io/install/app-store-badge.png"
+				srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
+		&lt;/a>
+
+		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
+			&lt;img alt="Download ooniprobe for Android (F-Droid)"
+				src="https://ooni.github.io/install/fdroid-badge.png"
+				srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
+		&lt;/a>
+&lt;/div>
+
+&lt;p>By running the tests included in OONI’s mobile app, you can monitor:&lt;/p></description></item></channel></rss>

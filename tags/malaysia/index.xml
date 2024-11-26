@@ -1,22 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>malaysia on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/malaysia/</link><description>Recent content in malaysia on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/malaysia/index.xml" rel="self" type="application/rss+xml"/><item><title>iMAP State of Internet Censorship Report 2022 - Malaysia</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-malaysia/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-malaysia/</guid><description>It is a codified guarantee that the internet will not be censored except for illegal, obscene and indecent content, while in reality the extent of censorship and its implementation are wider than projected and remain to be explored.
-Diterjemah ke dalam bahasa Melayu
-The Ministry of Communications and Multimedia (MCMC) do not publish list of blocked sites, however statements were released from time to time to announce the number of sites blocked.</description></item><item><title>The State of Internet Censorship in Malaysia</title><link>https://ooni.github.io/post/malaysia-report/</link><pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/malaysia-report/</guid><description>Block page in Malaysia
-A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
-Table of contents
-Key Findings
-Introduction
-Background
-Network landscape and internet penetration
-Legal environment
-Freedom of expression
-Press freedom
-Access to information
-Privacy
-Censorship and surveillance
-Previous cases of internet censorship and surveillance
-Examining internet censorship in Malaysia
-Methodology
-Creation of a Malaysian test list
-OONI network measurements
-Web connectivity
-HTTP invalid request line</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Malaysia on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/malaysia/</link><description>Recent content in Malaysia on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/malaysia/index.xml" rel="self" type="application/rss+xml"/><item><title>iMAP State of Internet Censorship Report 2022 - Malaysia</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-malaysia/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-malaysia/</guid><description>&lt;p>It is a codified guarantee that the internet will not be censored except for illegal, obscene and indecent content, while in reality the extent of censorship and its implementation are wider than projected and remain to be explored.&lt;/p>
+&lt;hr>
+&lt;p>&lt;a href="https://imap.sinarproject.org/reports/2022/imap-state-of-internet-censorship-country-report-2022-malaysia/2022-malaysia-translation">Diterjemah ke dalam bahasa Melayu&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The Ministry of Communications and Multimedia (MCMC) do not publish list of blocked sites, however statements were released from time to time to announce the number of sites blocked. It was revealed that 2,195 websites promoting online gambling were blocked as of March 2021.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> Between 2020 to July 2021, 960 phishing sites were blocked.&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> From 2018 to September 2021, 4,068 pornography sites were blocked by MCMC.&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/p></description></item><item><title>The State of Internet Censorship in Malaysia</title><link>https://ooni.github.io/post/malaysia-report/</link><pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/malaysia-report/</guid><description>&lt;p>&lt;img alt="Malaysian block page" src="https://ooni.github.io/post/malaysia-report/block-page.png">&lt;/p>
+&lt;p>&lt;em>Block page in Malaysia&lt;/em>&lt;/p>
+&lt;p>A research study by the Open Observatory of Network Interference (OONI) and
+Sinar Project.&lt;/p>
+&lt;p>&lt;strong>Table of contents&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#key-findings">Key Findings&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#introduction">Introduction&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#network-landscape-and-internet-penetration">Network landscape and internet penetration&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#legal-environment">Legal environment&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#freedom-of-expression">Freedom of expression&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#press-freedom">Press freedom&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#access-to-information">Access to information&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#privacy">Privacy&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#censorship-and-surveillance">Censorship and surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#previous-cases-of-internet-censorship-and-surveillance">Previous cases of internet censorship and surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#examining-internet-censorship-in-malaysia">Examining internet censorship in Malaysia&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#methodology">Methodology&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#creation-of-a-malaysian-test-list">Creation of a Malaysian test list&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#ooni-network-measurements">OONI network measurements&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/malaysia-report/#web-connectivity">Web connectivity&lt;/a>&lt;/p></description></item></channel></rss>

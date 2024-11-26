@@ -1,2 +1,85 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2023 on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/2023/</link><description>Recent content in 2023 on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/2023/index.xml" rel="self" type="application/rss+xml"/><item><title>Year in Review: OONI in 2023</title><link>https://ooni.github.io/post/2023-year-in-review/</link><pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-year-in-review/</guid><description>As the end of 2023 approaches, we publish this post to share some OONI highlights from the last year. We also share some of the things we’ll be working on in 2024!
-New OONI non-profit legal entity New OONI Project Manager New OONI measurement tools Launched OONI Probe Web Launched News Media Scan app with Deutsche Welle (DW) Building OONI Run v2 New OONI Explorer features Censorship Findings: 22 reports Domain-centric pages Network-centric pages User feedback reporting mechanism Charts on internet outages Research OONI research reports OONI reports for ISOC Pulse shutdown timeline Community New partnerships New OONI Outreach Kit New OONI screencasts and documentation Localization OONI Explorer OONI Run OONI Probe OONI documentation New OONI Community Interviews OONI workshops and presentations OONI-verse 2024 New OONI non-profit legal entity OONI is now a registered NGO in Italy!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2023 on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/2023/</link><description>Recent content in 2023 on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 22 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/2023/index.xml" rel="self" type="application/rss+xml"/><item><title>Year in Review: OONI in 2023</title><link>https://ooni.github.io/post/2023-year-in-review/</link><pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-year-in-review/</guid><description>&lt;p>As the end of 2023 approaches, we publish this post to share some OONI
+highlights from the last year. We also share some of the things we’ll be
+working on in 2024!&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#new-ooni-non-profit-legal-entity">New OONI non-profit legal entity&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-project-manager">New OONI Project Manager&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-measurement-tools">New OONI measurement tools&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#launched-ooni-probe-web">Launched OONI Probe Web&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#launched-news-media-scan-app-with-deutsche-welle-dw">Launched News Media Scan app with Deutsche Welle (DW)&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#building-ooni-run-v2">Building OONI Run v2&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-explorer-features">New OONI Explorer features&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#censorship-findings-22-reports">Censorship Findings: 22 reports&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#domain-centric-pages">Domain-centric pages&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#network-centric-pages">Network-centric pages&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#user-feedback-reporting-mechanism">User feedback reporting mechanism&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#charts-on-internet-outages">Charts on internet outages&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#research">Research&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-research-reports">OONI research reports&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-reports-for-isoc-pulse-shutdown-timeline">OONI reports for ISOC Pulse shutdown timeline&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#community">Community&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#new-partnerships">New partnerships&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-outreach-kit">New OONI Outreach Kit&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-screencasts-and-documentation">New OONI screencasts and documentation&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#localization">Localization&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-explorer">OONI Explorer&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-run">OONI Run&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-probe">OONI Probe&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-documentation">OONI documentation&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-community-interviews">New OONI Community Interviews&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-workshops-and-presentations">OONI workshops and presentations&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#ooni-verse">OONI-verse&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#2024">2024&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="new-ooni-non-profit-legal-entity">New OONI non-profit legal entity&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/post/2023-year-in-review/images/image4.png">
+ &lt;img
+ src="https://ooni.github.io/post/2023-year-in-review/images/image4_hu18379814389437255340.png"
+
+ 
+
+ title="OONI Explorer"
+ 
+ alt="OONI Explorer"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI is now a registered NGO in Italy!&lt;/p></description></item></channel></rss>

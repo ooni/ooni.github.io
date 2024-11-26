@@ -1,11 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>data-quality on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/data-quality/</link><description>Recent content in data-quality on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/data-quality/index.xml" rel="self" type="application/rss+xml"/><item><title>How we're improving OONI data quality: An analysis of failed measurements</title><link>https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/</guid><description>In this blog post, we manually analyse failed OONI measurements to assess why they were classified as such, whether they are symptomatic of censorship, and whether they still carry helpful information for researchers. We focus on measurements from three countries (India, Pakistan, and Indonesia) and outline steps on how we will improve overall data quality.
-Background
-Methodology
-Results
-Pakistan
-India
-Indonesia
-Overall
-Limitations
-Conclusions and Future Work
-Background Web Connectivity is a network test that determines whether a web resource is accessible from the network where the user runs OONI Probe.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data-Quality on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/data-quality/</link><description>Recent content in Data-Quality on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 13 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/data-quality/index.xml" rel="self" type="application/rss+xml"/><item><title>How we're improving OONI data quality: An analysis of failed measurements</title><link>https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/</guid><description>&lt;p>In this blog post, we manually analyse &lt;code>failed&lt;/code> OONI measurements to assess why they were classified as such, whether they are symptomatic of censorship, and whether they still carry helpful information for researchers. We focus on measurements from three countries (India, Pakistan, and Indonesia) and outline steps on how we will improve overall data quality.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#methodology">Methodology&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#results">Results&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#pakistan">Pakistan&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#india">India&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#indonesia">Indonesia&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#overall">Overall&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#limitations">Limitations&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#conclusions-and-future-work">Conclusions and Future Work&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="background">Background&lt;/h1>
+&lt;p>&lt;a href="https://ooni.org/nettest/web-connectivity/">Web Connectivity&lt;/a> is a network test that determines whether a web resource is accessible from the network where the user runs &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a>. To this end, Web Connectivity measures accessing the resource and compares the measurement results with another measurement performed by a control vantage point. After the measurement, OONI Probe submits a JSON document summarising its findings and the control vantage point findings to the OONI backend. In turn, the &lt;a href="https://github.com/ooni/pipeline/">OONI data processing pipeline&lt;/a> classifies all Web Connectivity measurements into four categories:&lt;/p></description></item></channel></rss>

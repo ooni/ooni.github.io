@@ -1,22 +1,22 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election | OONI</title>
-<link rel=canonical href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/><meta name=description content="This report shares OONI measurements on the blocking of social media in Uganda, and IODA data on the 4-day internet outage amid its 2021 general election."><meta property="og:title" content="Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election"><meta property="og:description" content="This report shares OONI measurements on the blocking of social media in Uganda, and IODA data on the 4-day internet outage amid its 2021 general election."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/"><meta property="og:image" content="https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/images/MTN.jpeg"><meta property="article:published_time" content="2021-01-22T00:00:00+00:00"><meta property="article:modified_time" content="2021-01-22T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/images/MTN.jpeg"><meta name=twitter:title content="Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election"><meta name=twitter:description content="This report shares OONI measurements on the blocking of social media in Uganda, and IODA data on the 4-day internet outage amid its 2021 general election."><link rel=stylesheet type=text/css href=https://ooni.github.io/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=https://ooni.github.io/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='initial-scale=1,width=device-width'><title>Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election | OONI</title>
+<link rel=canonical href=https://ooni.org/post/2021-uganda-general-election-blocks-and-outage/><meta name=description content="This report shares OONI measurements on the blocking of social media in Uganda, and IODA data on the 4-day internet outage amid its 2021 general election."><meta property="og:title" content="Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election"><meta property="og:description" content="This report shares OONI measurements on the blocking of social media in Uganda, and IODA data on the 4-day internet outage amid its 2021 general election."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/"><meta property="og:image" content="https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/images/MTN.jpeg"><meta property="article:published_time" content="2021-01-22T00:00:00+00:00"><meta property="article:modified_time" content="2021-01-22T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/images/MTN.jpeg"><meta name=twitter:title content="Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election"><meta name=twitter:description content="This report shares OONI measurements on the blocking of social media in Uganda, and IODA data on the 4-day internet outage amid its 2021 general election."><link rel=stylesheet type=text/css href=/css/bootstrap.min.e2d14d1a1dcdfab34aba5963e76f1aa59cc3291ce469f4336bdbddcea78ab123.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
 <img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
 <img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election</h1><div class=byline><span class=author>Maria Xynou (OONI), Simone Basso (OONI), Ramakrishna Padmanabhan (CAIDA, UC San Diego), Arturo Filastò (OONI), DefendDefenders, Defenders Protection Initiative</span>
 <span class=date>2021-01-22</span></div><p>Last week, amid its <a href=https://www.bbc.com/news/world-africa-55573581>2021 general election</a>, Uganda was
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=-1w&amp;until=now">disconnected</a>
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=-1w&until=now">disconnected</a>
 from the internet entirely. The country experienced a <a href=https://www.accessnow.org/the-world-is-watching-uganda-elections/>widespread internet blackout that lasted 4 days</a>,
 starting on the eve of the election (13th January 2021) and ending in
 the morning of 18th January 2021. In the days leading up to the
 election, access to major social media platforms and circumvention tools
 was <a href=https://www.facebook.com/MTNUG/posts/5644233898936144>blocked</a>
 &ndash; <em>even when the <a href=https://www.mtn.co.ug/product/ott-tax/>OTT (Over the Top) tax</a> (commonly referred to as
-the “Social Media Tax”) was paid</em>.</p><p>In this report, we share <a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG">OONI network measurement data</a>
+the “Social Media Tax”) was paid</em>.</p><p>In this report, we share <a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG">OONI network measurement data</a>
 on the blocking of social media and circumvention platforms leading up
-to Uganda’s elections, as well as <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=-1w&amp;until=now">IODA data</a>
+to Uganda’s elections, as well as <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=-1w&until=now">IODA data</a>
 (and other public data sources) on the internet blackout that occurred
 amid and following the election. We also share findings from experiments
 run in Uganda (before and after the internet blackout) through the use
-of the <code>miniooni</code> research client.</p><ul><li><p><a href=#background>Background</a></p></li><li><p><a href=#methods>Methods</a></p></li><li><p><a href=#blocks-in-the-election-run-up>Blocks in the election run-up</a></p><ul><li><p><a href=#app-stores>App Stores</a></p></li><li><p><a href=#social-media>Social media</a></p><ul><li><p><a href=#websites>Websites</a></p></li><li><p><a href=#apps>Apps</a></p></li></ul></li><li><p><a href=#circumvention-tools>Circumvention tools</a></p></li></ul></li><li><p><a href=#characterizing-website-blocking>Characterizing website blocking</a></p><ul><li><p><a href=#play-stores-website>Play Store&rsquo;s website</a></p></li><li><p><a href=#protonvpns-website>ProtonVPN&rsquo;s website</a></p><ul><li><p><a href=#mtn>MTN</a></p></li><li><p><a href=#airtel>Airtel</a></p></li></ul></li><li><p><a href=#facebooks-website>Facebook&rsquo;s website</a></p><ul><li><p><a href=#mtn>MTN</a></p></li><li><p><a href=#airtel>Airtel</a></p></li></ul></li></ul></li><li><p><a href=#internet-outage-amid-2021-general-election>Internet outage amid 2021 general election</a></p><ul><li><a href=#network-level-analysis>Network-level analysis</a></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li><li><p><a href=#acknowledgements>Acknowledgements</a></p></li></ul><h1 id=background>Background</h1><p>Uganda has had the same President (Mr. <a href=https://www.bbc.com/news/world-africa-12421747>Yoweri Museveni</a>) since 1986.
+of the <code>miniooni</code> research client.</p><ul><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#background>Background</a></p></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#methods>Methods</a></p></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#blocks-in-the-election-run-up>Blocks in the election run-up</a></p><ul><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#app-stores>App Stores</a></p></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#social-media>Social media</a></p><ul><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#websites>Websites</a></p></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#apps>Apps</a></p></li></ul></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#circumvention-tools>Circumvention tools</a></p></li></ul></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#characterizing-website-blocking>Characterizing website blocking</a></p><ul><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#play-stores-website>Play Store&rsquo;s website</a></p></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#protonvpns-website>ProtonVPN&rsquo;s website</a></p><ul><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#mtn>MTN</a></p></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#airtel>Airtel</a></p></li></ul></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#facebooks-website>Facebook&rsquo;s website</a></p><ul><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#mtn>MTN</a></p></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#airtel>Airtel</a></p></li></ul></li></ul></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#internet-outage-amid-2021-general-election>Internet outage amid 2021 general election</a></p><ul><li><a href=/post/2021-uganda-general-election-blocks-and-outage/#network-level-analysis>Network-level analysis</a></li></ul></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#conclusion>Conclusion</a></p></li><li><p><a href=/post/2021-uganda-general-election-blocks-and-outage/#acknowledgements>Acknowledgements</a></p></li></ul><h1 id=background>Background</h1><p>Uganda has had the same President (Mr. <a href=https://www.bbc.com/news/world-africa-12421747>Yoweri Museveni</a>) since 1986.
 Multiparty elections have been
 <a href=http://news.bbc.co.uk/2/hi/africa/4750040.stm>held</a> in the country
 since 2006, but President Museveni (and his <a href=https://www.nrm.ug/>National Resistance Movement</a> party) has <a href=https://www.bbc.com/news/world-africa-55689665>won every election</a> over the last
@@ -63,7 +63,7 @@ that they were unable to access major social media platforms (such as
 Facebook) &ndash; even once they had paid the OTT tax.</p><p>On 12th January 2021, Ugandan ISPs
 <a href=https://www.facebook.com/MTNUG/posts/5644233898936144>confirmed</a> the
 blocking of online social media platforms and online messaging
-applications in compliance with a directive from the UCC.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/MTN.jpeg><img src=/post/2021-uganda-general-election-blocks-and-outage/images/MTN_hu4ccc969aa1a190adeea283682e133bd0_163653_1000x800_fit_q75_box.jpeg title="MTN notice" alt="MTN notice"></a></div><p>The recent blocking of social media <a href=https://www.bbc.com/news/world-africa-55640405>reportedly followed Facebook’s closure of “fake” accounts</a> which it said
+applications in compliance with a directive from the UCC.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/MTN.jpeg><img src=/post/2021-uganda-general-election-blocks-and-outage/images/MTN_hu17698951907267083898.jpeg title="MTN notice" alt="MTN notice"></a></div><p>The recent blocking of social media <a href=https://www.bbc.com/news/world-africa-55640405>reportedly followed Facebook’s closure of “fake” accounts</a> which it said
 were linked to Uganda’s government and used to boost the popularity of
 posts. This move was <a href=https://www.bbc.com/news/world-africa-55640405>seen as a form of retaliation</a> as (on
 12th January 2021) President Museveni <a href=https://www.nytimes.com/2021/01/13/world/africa/uganda-facebook-ban-elections.html>accused Facebook of “arrogance”</a>
@@ -76,7 +76,7 @@ ordered the blocking of more than 100 VPNs.</p><p>On the eve of <a href=https://
 ordered the suspension of the operation of all internet gateways and
 associated access points in Uganda. The order specified that this
 suspension should take effect at 7pm on 13th January 2021, as
-illustrated below.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/UCC.jpeg><img src=/post/2021-uganda-general-election-blocks-and-outage/images/UCC_hu2a8c50aad80a534ed2df59c48788def1_45350_1000x800_fit_q75_box.jpeg title="UCC notice" alt="UCC notice"></a></div><p>Overall, the run-up to <a href=https://www.bbc.com/news/world-africa-55573581>Uganda’s 2021 general election</a> was marred by
+illustrated below.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/UCC.jpeg><img src=/post/2021-uganda-general-election-blocks-and-outage/images/UCC_hu11362723613082042922.jpeg title="UCC notice" alt="UCC notice"></a></div><p>Overall, the run-up to <a href=https://www.bbc.com/news/world-africa-55573581>Uganda’s 2021 general election</a> was marred by
 violence, as authorities
 <a href=https://time.com/5929196/uganda-elections-bobi-wine-museveni/>reportedly</a>
 cracked down on opposition rallies, while opposition candidates and
@@ -89,7 +89,7 @@ Uganda’s political opposition in 2017 and ran for Uganda’s presidency in
 the latest election. However, Mr. Museveni was
 <a href=https://www.bbc.com/news/world-africa-55689665>re-elected</a>, winning
 almost 59% of the vote and a sixth presidential term (despite
-accusations of vote fraud by the opposition).</p><h1 id=methods>Methods</h1><p>To investigate the blocking of online platforms, we analyzed <a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG">OONI measurements collected from Uganda</a>
+accusations of vote fraud by the opposition).</p><h1 id=methods>Methods</h1><p>To investigate the blocking of online platforms, we analyzed <a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG">OONI measurements collected from Uganda</a>
 (similarly to our <a href=https://ooni.org/post/uganda-social-media-tax/>2018 study</a> examining the
 blocking of social media and circumvention tools with the introduction
 of the OTT tax). OONI measurements are regularly collected and
@@ -100,7 +100,7 @@ collected from Uganda between <strong>9th January 2021 to 19th January 2021</str
 as network disruptions were first
 <a href=https://twitter.com/cipesaug/status/1347789536521293826>reported</a> on
 9th January 2021, while internet connectivity was
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=-1w&amp;until=now">restored</a>
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=-1w&until=now">restored</a>
 in the country by 18th January 2021. We further limited our analysis to
 OONI measurements pertaining to the testing of social media websites and
 apps, as well as to the testing of circumvention tool websites and apps.</p><p>While a wide range of social media and circumvention tool websites can
@@ -117,7 +117,7 @@ contributed by volunteer OONI Probe users in Uganda (i.e. if a blocked
 service was not tested in Uganda in the analysis period, relevant
 measurement findings will not be available). Prior to 12th January 2021,
 there was a divergence of
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG">measurements</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG">measurements</a>
 from probes run by users who had and had not paid the <a href=https://www.mtn.co.ug/product/ott-tax/>OTT tax</a>. After 12th January 2021,
 we observed the disappearance of that divergence as users who had paid
 OTT tax experienced the blocks previously instituted on ones who had not
@@ -130,9 +130,9 @@ whether their blocking depended on DNS, TCP, or TLS blocking. In the
 case of TLS blocking, we further investigated whether it depended on the
 value of the SNI extension.</p><p>To explore Uganda’s internet blackout (when access to the internet was
 disrupted entirely), we referred to the following public data sources:
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=-1w&amp;until=now">Internet Outage Detection and Analysis (IODA)</a>,
-<a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1610064000000;end:1611100799999;product:19;region:UG&amp;lu=fraction_traffic">Google traffic data</a>,
-<a href="https://map.internetintel.oracle.com/?root=national&amp;country=UG">Oracle’s Internet Intelligence Map</a>,
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=-1w&until=now">Internet Outage Detection and Analysis (IODA)</a>,
+<a href="https://transparencyreport.google.com/traffic/overview?hl=en&fraction_traffic=start:1610064000000;end:1611100799999;product:19;region:UG&lu=fraction_traffic">Google traffic data</a>,
+<a href="https://map.internetintel.oracle.com/?root=national&country=UG">Oracle’s Internet Intelligence Map</a>,
 and <a href="https://radar.cloudflare.com/ug?date_filter=last_7_days">Cloudflare Radar</a> data.
 Our goal was to check whether the signals and timing of Uganda’s
 internet blackout can be verified and corroborated by all four separate
@@ -141,69 +141,69 @@ public data sources, and how they can compare to the UCC order (which
 the suspension of internet gateways and associated access points at 7pm
 on 13th January 2021).</p><h1 id=blocks-in-the-election-run-up>Blocks in the election run-up</h1><h2 id=app-stores>App Stores</h2><p>On 9th January 2021, people in Uganda <a href=https://twitter.com/cipesaug/status/1347789536521293826>started reporting</a>
 that they experienced difficulties downloading apps from the Google Play
-Store. This appears to be corroborated by <a href="https://explorer.ooni.org/search?until=2021-01-19&amp;since=2021-01-01&amp;probe_cc=UG&amp;domain=play.google.com">OONI measurements</a>,
+Store. This appears to be corroborated by <a href="https://explorer.ooni.org/search?until=2021-01-19&since=2021-01-01&probe_cc=UG&domain=play.google.com">OONI measurements</a>,
 which show that the testing of <code>google.play.com</code> <a href="https://explorer.ooni.org/measurement/20210118T114745Z_webconnectivity_UG_20294_n1_twQcpdotSk0kBhOW?input=https%3A%2F%2Fplay.google.com%2Fstore%2F">presented signs of blocking</a>
 on several networks almost every time that it was tested between 10th
 January 2021 to 18th January 2021 (the relevant URL was not tested in
 Uganda on 9th January 2021).</p><p>While we also heard reports of potential Apple App Store blocking too,
 we cannot confirm this based on OONI measurements, which show that
 <code>apps.apple.com</code> was
-<a href="https://explorer.ooni.org/search?until=2021-01-19&amp;since=2021-01-01&amp;probe_cc=UG&amp;domain=apps.apple.com">accessible</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-19&since=2021-01-01&probe_cc=UG&domain=apps.apple.com">accessible</a>
 on several networks in Uganda every time it was tested between 11th
 January 2021 to 18th January 2021. It is possible though that it may
 have been blocked on different networks (in comparison to those tested),
 or that access may have been interfered with in ways beyond those
 measured.</p><h2 id=social-media>Social media</h2><h3 id=websites>Websites</h3><p>In the days leading up to <a href=https://www.bbc.com/news/world-africa-55573581>Uganda’s 2021 general election</a>, OONI
-measurements show that a number of <a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;only=anomalies">social media websites presented signs of blocking</a>.
+measurements show that a number of <a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&only=anomalies">social media websites presented signs of blocking</a>.
 These include <code>www.facebook.com</code>, the
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.facebook.com">blocking</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.facebook.com">blocking</a>
 of which appears to have started on 12th January 2021 (following
 President Museveni’s <a href=https://www.nytimes.com/2021/01/13/world/africa/uganda-facebook-ban-elections.html>instruction to restrict Facebook access</a>
 in response to Facebook’s closure of “fake” accounts, and on the same
 day that Ugandan ISPs
 <a href=https://www.facebook.com/MTNUG/posts/5644233898936144>notified</a>
 their customers of such blocking) and which appears to be ongoing. Most
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.facebook.com">OONI measurements</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.facebook.com">OONI measurements</a>
 collected between 12th January 2021 to 19th January 2021 suggest the
 blocking of <code>www.facebook.com</code> on several networks in Uganda.</p><p>Similarly, OONI measurements collected from Uganda on the testing of
 <code>www.instagram.com</code> between 12th January 2021 to 19th January 2021
-suggest the <a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.instagram.com">ongoing blocking</a>
+suggest the <a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.instagram.com">ongoing blocking</a>
 of this social media website (though a relatively limited volume of
 measurements &ndash; in comparison to the testing of <code>www.facebook.com</code> &ndash;
 has been collected during this period). While the testing of
 <code>www.whatsapp.com</code> <a href="https://explorer.ooni.org/measurement/20210109T135239Z_webconnectivity_UG_20294_n1_4sJBB51HQEYvlc4u?input=https%3A%2F%2Fwww.whatsapp.com%2F">first presented signs of blocking</a>
-on 9th January 2021, we more consistently observed <a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.whatsapp.com">signs of blocking</a>
+on 9th January 2021, we more consistently observed <a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.whatsapp.com">signs of blocking</a>
 between 12th January 2021 to 19th January 2021.</p><p>All OONI measurements collected between 12th January 2021 to 19th
 January 2021 consistently show that access to <code>twitter.com</code> appears to
 have been
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=twitter.com">blocked</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=twitter.com">blocked</a>
 on several networks in Uganda. Similarly, all OONI measurements
 collected during this time frame on the testing of <code>www.viber.com</code>
 show that access to this website was
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.viber.com">blocked</a>
-in Uganda as well. During this period, we also observed <a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;only=anomalies">signs of blocking</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.viber.com">blocked</a>
+in Uganda as well. During this period, we also observed <a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&only=anomalies">signs of blocking</a>
 for many other social media websites, such as
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.skype.com">skype.com</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.snapchat.com">snapchat.com</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.wechat.com">wechat.com</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.tumblr.com">tumblr.com</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.linkedin.com">linkedin.com</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.skype.com">skype.com</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.snapchat.com">snapchat.com</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.wechat.com">wechat.com</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.tumblr.com">tumblr.com</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.linkedin.com">linkedin.com</a>,
 as well as the blocking of dating sites (such as
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.grindr.com">grindr.com</a>).</p><p>Interestingly, <code>www.youtube.com</code> (which is <a href=https://www.mtn.co.ug/product/ott-tax/>not included amongst the OTT taxed platforms</a>) only
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.youtube.com">started presenting signs of blocking from 18th January 2021</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.grindr.com">grindr.com</a>).</p><p>Interestingly, <code>www.youtube.com</code> (which is <a href=https://www.mtn.co.ug/product/ott-tax/>not included amongst the OTT taxed platforms</a>) only
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.youtube.com">started presenting signs of blocking from 18th January 2021</a>
 onwards, once internet connectivity in Uganda was restored (following
 the 4-day internet blackout). This is not only shown through relevant
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;domain=www.youtube.com">OONI measurements</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&domain=www.youtube.com">OONI measurements</a>
 collected from multiple networks in Uganda, but YouTube disruption is
-also suggested through <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1608422400000;product:21;region:UG&amp;lu=fraction_traffic">Google traffic data</a>
+also suggested through <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1608422400000;product:21;region:UG&lu=fraction_traffic">Google traffic data</a>
 which shows that the levels of YouTube traffic originating from Uganda
 are significantly decreased in comparison to the pre-internet blackout
-levels, as illustrated below.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/youtube-google-traffic.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/youtube-google-traffic_hu35306fc7fd3592d2bcbdbabd1eb967e5_81813_1000x800_fit_box_3.png title="Google traffic for YouTube" alt="Google traffic for YouTube"></a></div><p><strong>Source:</strong> Google Transparency Reports, Traffic and disruptions to
+levels, as illustrated below.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/youtube-google-traffic.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/youtube-google-traffic_hu983481952778916382.png title="Google traffic for YouTube" alt="Google traffic for YouTube"></a></div><p><strong>Source:</strong> Google Transparency Reports, Traffic and disruptions to
 Google: YouTube, Uganda,
-<a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1608422400000;product:21;region:UG&amp;lu=fraction_traffic">https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1608422400000;product:21;region:UG&amp;lu=fraction_traffic</a></p><p>This is further corroborated by a notification that Ugandan internet
+<a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1608422400000;product:21;region:UG&lu=fraction_traffic">https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1608422400000;product:21;region:UG&amp;lu=fraction_traffic</a></p><p>This is further corroborated by a notification that Ugandan internet
 users received from their ISPs on 18th January 2021, which explicitly
 lists YouTube among the blocked internet services (in compliance with a
-UCC directive).</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/youtube-blocking-notice.jpeg><img src=/post/2021-uganda-general-election-blocks-and-outage/images/youtube-blocking-notice_hu6429170c14eac49e529e7345cfafa470_32855_1000x800_fit_q75_box.jpeg title="YouTube blocking notice" alt="YouTube blocking notice"></a></div><p>It is possible that this move may be in response to government orders to
+UCC directive).</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/youtube-blocking-notice.jpeg><img src=/post/2021-uganda-general-election-blocks-and-outage/images/youtube-blocking-notice_hu9883573807860457918.jpeg title="YouTube blocking notice" alt="YouTube blocking notice"></a></div><p>It is possible that this move may be in response to government orders to
 censor specific YouTube channels affiliated with the political
 opposition. Following deadly riots in November 2019 over the arrest of
 opposition presidential candidate (Bobi Wine), it was
@@ -226,14 +226,14 @@ following sections (“Characterizing website blocking”) dive into this
 deeper, as we investigated some of the blocked websites through the use
 of more advanced techniques (which we haven’t integrated into the <a href=https://ooni.org/install/>OONI Probe apps</a> yet).</p><h3 id=apps>Apps</h3><p>To examine the blocking of social media apps, we analyzed OONI data
 collected from Uganda on the testing of
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=whatsapp">WhatsApp</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=facebook_messenger">Facebook Messenger</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=whatsapp">WhatsApp</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=facebook_messenger">Facebook Messenger</a>,
 and
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=telegram">Telegram</a>.
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=telegram">Telegram</a>.
 Starting from 12th January 2021, all three apps presented signs of
-blocking on several networks, as illustrated through the chart below.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/social-media-chart.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/social-media-chart_hube1e2f7f523bb355c14a908f278d0f38_143906_1000x800_fit_box_3.png title="Social media blocked in Uganda: OONI data" alt="Social media blocked in Uganda: OONI data"></a></div><p><strong>Source:</strong> OONI measurements collected from Uganda between 9th January
+blocking on several networks, as illustrated through the chart below.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/social-media-chart.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/social-media-chart_hu14927829273461425917.png title="Social media blocked in Uganda: OONI data" alt="Social media blocked in Uganda: OONI data"></a></div><p><strong>Source:</strong> OONI measurements collected from Uganda between 9th January
 2021 to 19th January 2021,
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2021-01-09&amp;probe_cc=UG">https://explorer.ooni.org/search?until=2021-01-20&amp;since=2021-01-09&amp;probe_cc=UG</a></p><p>Through the above chart, it is evident that:</p><ul><li><p>All three apps (WhatsApp, Facebook Messenger, Telegram) presented
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2021-01-09&probe_cc=UG">https://explorer.ooni.org/search?until=2021-01-20&amp;since=2021-01-09&amp;probe_cc=UG</a></p><p>Through the above chart, it is evident that:</p><ul><li><p>All three apps (WhatsApp, Facebook Messenger, Telegram) presented
 signs of blocking on several Ugandan networks (including major
 providers, such as MTN) on 12th and 13th January 2021;</p></li><li><p>These apps did <em>not</em> present signs of blocking on all networks, as
 some tests suggested that the apps worked on some networks
@@ -245,15 +245,15 @@ networks in Uganda during this time frame);</p></li><li><p>OONI Probe testing (a
 same time on 18th January 2021, further suggesting the presence of
 an internet outage during the previous days;</p></li><li><p>Social media apps remain blocked (the blocking of which is suggested
 by a larger volume of measurements in comparison to previous days)
-from 18th January 2021 onwards on most networks.</p></li></ul><p>More specifically, <a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=whatsapp">WhatsApp appears to be blocked</a>
+from 18th January 2021 onwards on most networks.</p></li></ul><p>More specifically, <a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=whatsapp">WhatsApp appears to be blocked</a>
 because attempted connections to WhatsApp’s registration service and web
 interface (<code>web.whatsapp.com</code>) consistently
 <a href=https://explorer.ooni.org/measurement/20210119T165733Z_whatsapp_UG_20294_n1_fhYo4y0H9hHRe22T>fail</a>.
 While DNS lookups consistently resolve to IP addresses associated with
-Facebook, <a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=facebook_messenger">Facebook Messenger appears to be blocked</a>
+Facebook, <a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=facebook_messenger">Facebook Messenger appears to be blocked</a>
 because attempted TCP connections to Facebook’s endpoints
 <a href=https://explorer.ooni.org/measurement/20210119T233557Z_facebookmessenger_UG_20294_n1_vHZlIzsS7O4HdwTX>failed</a>.
-In many <a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=telegram">Telegram measurements</a>,
+In many <a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=telegram">Telegram measurements</a>,
 we see that TCP connections to <em>some</em> Telegram endpoints succeed, while
 others
 <a href=https://explorer.ooni.org/measurement/20210119T233548Z_telegram_UG_20294_n1_foxGOU2kVYLFTK0t>fail</a>,
@@ -275,18 +275,18 @@ worked as expected. This is illustrated through the following chart,
 which shares OONI measurement coverage per test across networks (showing
 that almost all test results indicated that
 <a href=https://www.torproject.org/>Tor</a> and
-<a href=https://psiphon.ca/>Psiphon</a> worked).</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/circumvention-chart.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/circumvention-chart_hufb32018921049edf41995f804f76281e_62600_1000x800_fit_box_3.png title="Circumvention tool testing in Uganda: OONI data" alt="Circumvention tool testing in Uganda: OONI data"></a></div><p><strong>Source:</strong> OONI measurements collected from Uganda between 9th January
+<a href=https://psiphon.ca/>Psiphon</a> worked).</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/circumvention-chart.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/circumvention-chart_hu11783204295683643800.png title="Circumvention tool testing in Uganda: OONI data" alt="Circumvention tool testing in Uganda: OONI data"></a></div><p><strong>Source:</strong> OONI measurements collected from Uganda between 9th January
 2021 to 19th January 2021,
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2021-01-09&amp;probe_cc=UG">https://explorer.ooni.org/search?until=2021-01-20&amp;since=2021-01-09&amp;probe_cc=UG</a></p><p>As is evident through the above chart, <a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=psiphon">Psiphon appeared to work</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2021-01-09&probe_cc=UG">https://explorer.ooni.org/search?until=2021-01-20&amp;since=2021-01-09&amp;probe_cc=UG</a></p><p>As is evident through the above chart, <a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=psiphon">Psiphon appeared to work</a>
 on multiple networks in Uganda between 9th January 2021 to 19th January
 2021 (excluding the days between 14th to 17th January 2021, when there
 appears to have been an internet outage). Throughout this period, the
 <a href=https://ooni.org/nettest/psiphon/>OONI Probe Psiphon test</a> was able
 to successfully bootstrap and create the Psiphon tunnel, and use it to
 fetch a webpage from the internet (suggesting that this circumvention
-tool worked in the tested networks).</p><p>Psiphon accessibility in Uganda is further suggested by the <a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&amp;var-region=UG">Psiphon Data Engine</a>,
-which shows the number of Psiphon connections originating from Uganda.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/psiphon-metrics.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/psiphon-metrics_hu546f7274ce1f40fce9f0247cd3001193_89534_1000x800_fit_box_3.png title="Psiphon Data Engine" alt="Psiphon Data Engine"></a></div><p><strong>Source:</strong> Psiphon Data Engine, Connections from Uganda (January 2021),
-<a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&amp;var-region=UG">https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&amp;var-region=UG</a></p><p>The above graph (taken from the <a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&amp;var-region=UG">Psiphon Data Engine</a>)
+tool worked in the tested networks).</p><p>Psiphon accessibility in Uganda is further suggested by the <a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&var-region=UG">Psiphon Data Engine</a>,
+which shows the number of Psiphon connections originating from Uganda.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/psiphon-metrics.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/psiphon-metrics_hu17990199822448214229.png title="Psiphon Data Engine" alt="Psiphon Data Engine"></a></div><p><strong>Source:</strong> Psiphon Data Engine, Connections from Uganda (January 2021),
+<a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&var-region=UG">https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&amp;var-region=UG</a></p><p>The above graph (taken from the <a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&var-region=UG">Psiphon Data Engine</a>)
 shows an increase in connecting Psiphon users between 11th to 13th
 January 2021 (which is when Ugandan ISPs were
 <a href=https://www.facebook.com/MTNUG/posts/5644233898936144>instructed</a> to
@@ -296,23 +296,23 @@ of 13th January 2021 (which is when the UCC instructed the suspension of
 all internet gateways), we observe a complete drop in Psiphon users
 (lasting for several days), and we see that Psiphon users resume
 connections by 18th January 2021 (which coincides with the dates of the
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610202359&amp;until=1611066419">reported internet blackout</a>).</p><p>However, starting from 18th January 2021, the <a href=https://ooni.org/nettest/psiphon/>OONI Probe Psiphon test</a> started to <a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=psiphon&amp;probe_asn=AS37075">present signs of potential Psiphon blocking on Airtel (AS37075)</a>;
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610202359&until=1611066419">reported internet blackout</a>).</p><p>However, starting from 18th January 2021, the <a href=https://ooni.org/nettest/psiphon/>OONI Probe Psiphon test</a> started to <a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=psiphon&probe_asn=AS37075">present signs of potential Psiphon blocking on Airtel (AS37075)</a>;
 while the test was able to bootstrap Psiphon, it was <a href=https://explorer.ooni.org/measurement/20210118T194651Z_psiphon_UG_37075_n1_3HvAbpEKKxzGsEwK>unable to fetch a webpage</a>
 from the internet. These findings though are not conclusive, since very
 few Psiphon measurements have been collected from Airtel (AS37075) since
 18th January 2021. We therefore encourage further Psiphon testing on
-this network.</p><p>Similarly to Psiphon, <a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=tor">Tor appeared to work</a>
+this network.</p><p>Similarly to Psiphon, <a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=tor">Tor appeared to work</a>
 on multiple networks in Uganda between 9th January 2021 to 19th January
 2021 (excluding the days between 14th to 17th January 2021, when there
 appears to have been an internet outage). As part of <a href=https://ooni.org/nettest/tor/>OONI Probe Tor testing</a> throughout this period, most
 reachability measurements of selected Tor directory authorities and
 bridges were successful. Even in the cases where OONI measurements
 presented a few anomalies, Tor still appeared to be functional given
-that some Tor directory authorities were reachable.</p><p>Tor accessibility in Uganda is further suggested by <a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&amp;end=2021-01-20&amp;country=ug&amp;events=off">Tor Metrics</a>,
+that some Tor directory authorities were reachable.</p><p>Tor accessibility in Uganda is further suggested by <a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&end=2021-01-20&country=ug&events=off">Tor Metrics</a>,
 which shows the estimated number of directly connecting Tor users from
-Uganda.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ug-tor-metrics.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ug-tor-metrics_hud176f88221ac727130d2b5301be39573_40110_1000x800_fit_box_3.png title="Tor Metrics" alt="Tor Metrics"></a></div><p><strong>Source:</strong> Tor Metrics, Directly connecting users from Uganda (January
+Uganda.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ug-tor-metrics.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ug-tor-metrics_hu4949684562572784985.png title="Tor Metrics" alt="Tor Metrics"></a></div><p><strong>Source:</strong> Tor Metrics, Directly connecting users from Uganda (January
 2021),
-<a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&amp;end=2021-01-20&amp;country=ug&amp;events=off">https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&amp;end=2021-01-20&amp;country=ug&amp;events=off</a></p><p>The above graph (taken from <a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&amp;end=2021-01-20&amp;country=ug&amp;events=off">Tor Metrics</a>)
+<a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&end=2021-01-20&country=ug&events=off">https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&amp;end=2021-01-20&amp;country=ug&amp;events=off</a></p><p>The above graph (taken from <a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&end=2021-01-20&country=ug&events=off">Tor Metrics</a>)
 shows that there was a spike in Tor usage on 12th January 2021 (which is
 when Ugandan ISPs were
 <a href=https://www.facebook.com/MTNUG/posts/5644233898936144>instructed</a> to
@@ -320,24 +320,24 @@ start blocking social media platforms, regardless of <a href=https://www.mtn.co.
 attempt to circumvent social media censorship. Starting from the evening
 of 13th January 2021 (which is when the UCC instructed the suspension of
 all internet gateways), we observe an almost complete drop in Tor users,
-which coincides with the dates of the <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610202359&amp;until=1611066419">reported internet blackout</a>.
+which coincides with the dates of the <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610202359&until=1611066419">reported internet blackout</a>.
 As internet connectivity resumed in Uganda, so did the number of Tor
 users in Uganda.</p><p>Apart from the testing of tools, OONI measurements also suggest the
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;only=anomalies">potential blocking of several circumvention tool websites</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=web_connectivity&only=anomalies">potential blocking of several circumvention tool websites</a>
 which presented the same type of anomalies (with <code>connection_reset</code>
 errors) during the analysis period. These include
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=protonvpn.com&amp;only=anomalies">protonvpn.com</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=safervpn.com&amp;only=anomalies">safervpn.com</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.hotspotshield.com&amp;only=anomalies">hotspotshield.com</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=nordvpn.com&amp;only=anomalies">nordvpn.com</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.torproject.org&amp;only=anomalies">torproject.org</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=web_connectivity&domain=protonvpn.com&only=anomalies">protonvpn.com</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=web_connectivity&domain=safervpn.com&only=anomalies">safervpn.com</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=web_connectivity&domain=www.hotspotshield.com&only=anomalies">hotspotshield.com</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=web_connectivity&domain=nordvpn.com&only=anomalies">nordvpn.com</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=web_connectivity&domain=www.torproject.org&only=anomalies">torproject.org</a>,
 and
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=ultrasurf.us&amp;only=anomalies">ultrasurf.us</a>.
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=web_connectivity&domain=ultrasurf.us&only=anomalies">ultrasurf.us</a>.
 However, the blocking of such websites does not necessarily mean that
 their apps are blocked as well (this, for example, does not appear to be
 the case with <a href=https://www.torproject.org/>Tor</a>, which seems to
 <a href=https://explorer.ooni.org/measurement/20210119T074705Z_tor_UG_328727_n1_YSY6KHF3gI7biYJG>work</a>
-in Uganda).</p><p>On 22nd January 2021, it was <a href=https://www.monitor.co.ug/uganda/news/national/government-threatens-to-arrest-vpn-users-3265618>reported</a> that the Ugandan government is threatening to arrest VPN users, and that they plan to block all websites offering VPN services.</p><h1 id=characterizing-website-blocking>Characterizing website blocking</h1><p>We ran <a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2021-01-10&amp;probe_cc=UG&amp;test_name=urlgetter">custom experiments</a>
+in Uganda).</p><p>On 22nd January 2021, it was <a href=https://www.monitor.co.ug/uganda/news/national/government-threatens-to-arrest-vpn-users-3265618>reported</a> that the Ugandan government is threatening to arrest VPN users, and that they plan to block all websites offering VPN services.</p><h1 id=characterizing-website-blocking>Characterizing website blocking</h1><p>We ran <a href="https://explorer.ooni.org/search?until=2021-01-21&since=2021-01-10&probe_cc=UG&test_name=urlgetter">custom experiments</a>
 with <code>miniooni</code> to determine the extent of the blocking. This client
 allows us to test experimental measurement methodologies that have not
 been integrated into the <a href=https://ooni.org/nettest/>regular OONI tests</a> yet.</p><p>We ran tests with and without TLSv1.3, changing the SNI or the target
@@ -347,7 +347,7 @@ ProtonVPN’s website, and Facebook’s website.</p><h2 id=play-stores-website>P
 20th January 2021 (once internet connectivity had been restored in
 Uganda). All domain name resolutions succeeded. They all returned IP
 addresses belonging to Google’s autonomous system (AS15169). We
-therefore excluded the possibility of DNS interference.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/play-store-mtn.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/play-store-mtn_hu29e911e79f4424799f6541021a2f1951_8421_1000x800_fit_box_3.png title="Play Store testing on MTN" alt="Play Store testing on MTN"></a></div><p><strong>Figure:</strong> Play Store measurements from MTN</p><p>All TLS handshakes using TLSv1.3 and <code>play.google.com</code> as the SNI
+therefore excluded the possibility of DNS interference.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/play-store-mtn.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/play-store-mtn_hu8664172864072188831.png title="Play Store testing on MTN" alt="Play Store testing on MTN"></a></div><p><strong>Figure:</strong> Play Store measurements from MTN</p><p>All TLS handshakes using TLSv1.3 and <code>play.google.com</code> as the SNI
 failed. In seven cases
 (<a href="https://explorer.ooni.org/measurement/20210120T023405Z_urlgetter_UG_20294_n1_wJov8evo4LNnhwTC?input=https://play.google.com">#1</a>,
 <a href="https://explorer.ooni.org/measurement/20210120T192809Z_urlgetter_UG_20294_n1_RqHn946CsqNmfVIx?input=https://play.google.com">#2</a>,
@@ -394,7 +394,7 @@ We observed three <code>ENETDOWN</code> errors
 and
 <a href="https://explorer.ooni.org/measurement/20210112T004244Z_urlgetter_UG_20294_n1_DceftFdsS7ojltYc?input=https://protonvpn.com">#3</a>).
 In two cases, the experiment failed because of an error in our
-measurement script.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/protonvpn-mtn.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/protonvpn-mtn_hueb0d2e786c68fe96f99ab554b052e4c3_8324_1000x800_fit_box_3.png title="ProtonVPN measurements from MTN" alt="ProtonVPN measurements from MTN"></a></div><p><strong>Figure:</strong> ProtonVPN measurements from MTN</p><p>One of the <code>ECONNRESET</code> failures was from a SIM without the OTT tax
+measurement script.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/protonvpn-mtn.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/protonvpn-mtn_hu2666767542931381641.png title="ProtonVPN measurements from MTN" alt="ProtonVPN measurements from MTN"></a></div><p><strong>Figure:</strong> ProtonVPN measurements from MTN</p><p>One of the <code>ECONNRESET</code> failures was from a SIM without the OTT tax
 paid. All these failures occurred while the TLS handshake was in
 progress.</p><p>The <code>ENETDOWN</code> errors occurred roughly 50 ms after sending the
 ClientHello. In all these cases, the connect time was at least 200 ms.</p><p>After every measurement, we ran another one with <code>example.com</code> as the
@@ -410,7 +410,7 @@ date, we observed three <code>ENETDOWN</code> errors
 and two timeout errors
 (<a href="https://explorer.ooni.org/measurement/20210119T074335Z_urlgetter_UG_37075_n1_2ztNa30gmYooTkNN?input=https://protonvpn.com">#1</a>,
 <a href="https://explorer.ooni.org/measurement/20210119T061616Z_urlgetter_UG_37075_n1_T9f7Q3ditWaYX0rv?input=https://protonvpn.com">#2</a>).
-All these errors occurred when connecting.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/protonvpn-airtel.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/protonvpn-airtel_hubfeee60ced425e798bd80226e48f0aa4_8452_1000x800_fit_box_3.png title="ProtonVPN measurements from Airtel" alt="ProtonVPN measurements from Airtel"></a></div><p><strong>Figure:</strong> ProtonVPN measurements from Airtel</p><p>We also tried connecting to <code>https://example.com</code> using TLSv.13 and
+All these errors occurred when connecting.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/protonvpn-airtel.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/protonvpn-airtel_hu12409381157683865937.png title="ProtonVPN measurements from Airtel" alt="ProtonVPN measurements from Airtel"></a></div><p><strong>Figure:</strong> ProtonVPN measurements from Airtel</p><p>We also tried connecting to <code>https://example.com</code> using TLSv.13 and
 <code>protonvpn.com</code> as the SNI after each regular measurement. Fourteen
 times out of fourteen, we received the ServerHello (see, for example,
 <a href="https://explorer.ooni.org/measurement/20210118T111953Z_urlgetter_UG_37075_n1_ONILcn5Jd9BcDtBw?input=https://example.com">#1</a>,
@@ -426,7 +426,7 @@ refused” nine times for each domain (e.g.,
 <a href="https://explorer.ooni.org/measurement/20210119T165703Z_urlgetter_UG_20294_n1_tN5IyL9lToSY9WZF?input=https://facebook.com">#2</a>)
 and <code>ENETDOWN</code> once for each domain (e.g.,
 <a href="https://explorer.ooni.org/measurement/20210120T114622Z_urlgetter_UG_20294_n1_oYnDf46hekJhTZHw?input=https://facebook.com">#1</a>,
-<a href="https://explorer.ooni.org/measurement/20210120T115244Z_urlgetter_UG_20294_n1_ZDEIfXJ680gZjTGz?input=https://www.facebook.com">#2</a>).</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-mtn.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-mtn_hu161354b818190c9a438c3fa66b3a210e_8598_1000x800_fit_box_3.png title="Facebook measurements from MTN" alt="Facebook measurements from MTN"></a></div><p><strong>Figure:</strong> Facebook measurements from MTN</p><p>To search for SNI blocking evidence, we repeated each measurement after
+<a href="https://explorer.ooni.org/measurement/20210120T115244Z_urlgetter_UG_20294_n1_ZDEIfXJ680gZjTGz?input=https://www.facebook.com">#2</a>).</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-mtn.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-mtn_hu7971910062400201916.png title="Facebook measurements from MTN" alt="Facebook measurements from MTN"></a></div><p><strong>Figure:</strong> Facebook measurements from MTN</p><p>To search for SNI blocking evidence, we repeated each measurement after
 a short time interval using TLSv1.3 and the same SNIs with
 <code>https://example.com</code>. We observed failures connecting (three times
 out of nine for each SNI; see, for example,
@@ -459,7 +459,7 @@ connecting (see, e.g.,
 <a href="https://explorer.ooni.org/measurement/20210118T103130Z_urlgetter_UG_37075_n1_ZGD6ixadLPgmUMe1?input=https://facebook.com">#2</a>,
 <a href="https://explorer.ooni.org/measurement/20210118T112058Z_urlgetter_UG_37075_n1_elco6cTpFAYYRJlb?input=https://facebook.com">#3</a>).
 This result indicates that there is blocking of the relevant TCP
-endpoints.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-airtel.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-airtel_huf658bc99e93c17bb08a93b929b6c0d8a_9715_1000x800_fit_box_3.png title="Facebook measurements from Airtel (using TCP)" alt="Facebook measurements from Airtel (using TCP)"></a></div><p><strong>Figure:</strong> Facebook measurements from Airtel (using TCP)</p><p>We nearly immediately repeated the experiment using TSLv1.3 and the same
+endpoints.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-airtel.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-airtel_hu14754899048157758669.png title="Facebook measurements from Airtel (using TCP)" alt="Facebook measurements from Airtel (using TCP)"></a></div><p><strong>Figure:</strong> Facebook measurements from Airtel (using TCP)</p><p>We nearly immediately repeated the experiment using TSLv1.3 and the same
 SNIs with <code>https://example.com</code>. All these experiments failed in the
 TLS handshake. In five out of thirteen cases, the error was <code>ENETDOWN</code>
 (see, e.g.,
@@ -481,7 +481,7 @@ All these measurements failed after the QUIC handshake completed. The
 client and the server exchange some extra data after the handshake, then
 the client times out reading or writing. When it times out writing, it
 retransmits several times before giving up. When it times out reading,
-it just blocks until there is no network activity for several seconds.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-airtel-quic.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-airtel-quic_hu65b757f5ebdde497117d5cd6b2cf183a_9816_1000x800_fit_box_3.png title="Facebook measurements from Airtel (using QUIC)" alt="Facebook measurements from Airtel (using QUIC)"></a></div><p><strong>Figure:</strong> Facebook measurements from Airtel (using QUIC)</p><p>We retried using <code>example.com</code> as the SNI. The QUIC handshake, of
+it just blocks until there is no network activity for several seconds.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-airtel-quic.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/facebook-airtel-quic_hu3717983317451881236.png title="Facebook measurements from Airtel (using QUIC)" alt="Facebook measurements from Airtel (using QUIC)"></a></div><p><strong>Figure:</strong> Facebook measurements from Airtel (using QUIC)</p><p>We retried using <code>example.com</code> as the SNI. The QUIC handshake, of
 course, completed successfully (see, e.g.,
 <a href="https://explorer.ooni.org/measurement/20210118T111110Z_urlgetter_UG_37075_n1_s3kZolv4VkpzXEPo?input=https://facebook.com">#1</a>,
 <a href="https://explorer.ooni.org/measurement/20210118T103329Z_urlgetter_UG_37075_n1_XLxqGlKi6Co86fAo?input=https://facebook.com">#2</a>,
@@ -497,10 +497,10 @@ Uganda remained disconnected from the internet on election day (14th
 January 2021), and the nationwide internet outage lasted for almost 5
 days (as internet connectivity was restored in the morning of 18th
 January 2021). This internet outage is visible through several public
-data sources: <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610288759&amp;until=1611066419">Internet Outage Detection and Analysis (IODA)</a>,
-<a href="https://map.internetintel.oracle.com/?root=national&amp;country=UG">Oracle’s Internet Intelligence Map</a>,
+data sources: <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610288759&until=1611066419">Internet Outage Detection and Analysis (IODA)</a>,
+<a href="https://map.internetintel.oracle.com/?root=national&country=UG">Oracle’s Internet Intelligence Map</a>,
 <a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">Cloudflare Radar</a>, and
-<a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic">Google traffic</a>
+<a href="https://transparencyreport.google.com/traffic/overview?hl=en&fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&lu=fraction_traffic">Google traffic</a>
 data.</p><p>The <a href=https://ioda.caida.org/>Internet Outage Detection and Analysis (IODA)</a> project of the <a href=https://www.caida.org/>Center for Applied Internet Data Analysis (CAIDA)</a> measures
 Internet blackouts worldwide in near real-time. To track and identify
 internet outages, IODA uses <a href=https://www.caida.org/projects/ioda/>three complementary measurement and inference methods</a>: Routing (BGP)
@@ -508,14 +508,14 @@ announcements, Active Probing, and Internet Background Radiation (IBR)
 traffic. Access to IODA measurements is openly available through their
 <a href=https://ioda.caida.org/ioda/dashboard>Dashboard</a>, which enables
 users to explore internet outages with county, region, and AS level of
-granularity.</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">IODA data</a>
+granularity.</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610280000&until=1611057600">IODA data</a>
 from the following chart (taken from the <a href=https://ioda.caida.org/ioda/dashboard>IODA dashboard</a>) clearly shows that
 Uganda experienced a widespread internet outage, starting at around
 16:00 UTC on 13th January 2021 (which is 19:00 in Uganda, the same time
 that the UCC instructed the suspension of all internet gateways), and
-lasting up until around 09:30 UTC on 18th January 2021.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda_hu78c80d3d88f73e079f9d02cf00273508_147877_1000x800_fit_box_3.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), IODA Signals
+lasting up until around 09:30 UTC on 18th January 2021.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda_hu6269415591948203079.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), IODA Signals
 for Uganda,
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>Within this time period, we observe a major drop in both active probing
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>Within this time period, we observe a major drop in both active probing
 and IBR signals, and also a drop in the BGP signal correlating in time
 with the drop in the other signals, strongly suggesting that Uganda
 experienced a widespread internet outage. This is further indicated by
@@ -523,34 +523,34 @@ the fact that we see these signals resume to their previous levels on
 18th January 2021.</p><p>Quite similarly, <a href=https://map.internetintel.oracle.com/>Oracle’s Internet Intelligence Map</a> tracks internet disruptions
 worldwide based on three signals: Traceroute completion ratio, BGP
 routes, and DNS query rate. Between 13th to 18th January 2021, Oracle’s
-Internet Intelligence Map <a href="https://map.internetintel.oracle.com/?root=national&amp;country=UG">records the same internet outage</a>
-in Uganda as <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610288759&amp;until=1611066419">IODA data</a>
-(with almost identical timings in the drop of signals).</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/oracle.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/oracle_hu9a6589bc55c622d1286e569a08c20100_94016_1000x800_fit_box_3.png title=Oracle alt=Oracle></a></div><p><strong>Source:</strong> Oracle Internet Intelligence Map, Uganda (January 2021),
-<a href="https://map.internetintel.oracle.com/?root=national&amp;country=UG">https://map.internetintel.oracle.com/?root=national&amp;country=UG</a></p><p>This internet outage is further corroborated by <a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">Cloudflare Radar data</a>, which
+Internet Intelligence Map <a href="https://map.internetintel.oracle.com/?root=national&country=UG">records the same internet outage</a>
+in Uganda as <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610288759&until=1611066419">IODA data</a>
+(with almost identical timings in the drop of signals).</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/oracle.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/oracle_hu12911231170704328808.png title=Oracle alt=Oracle></a></div><p><strong>Source:</strong> Oracle Internet Intelligence Map, Uganda (January 2021),
+<a href="https://map.internetintel.oracle.com/?root=national&country=UG">https://map.internetintel.oracle.com/?root=national&amp;country=UG</a></p><p>This internet outage is further corroborated by <a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">Cloudflare Radar data</a>, which
 tracks internet traffic disruptions worldwide. The following graph
 clearly shows that almost no internet traffic originated from Uganda
 between (the evening of) 13th January 2021 to (the morning of) 18th
 January 2021 &ndash; similarly to both
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610288759&amp;until=1611066419">IODA</a>
-and <a href="https://map.internetintel.oracle.com/?root=national&amp;country=UG">Oracle Internet Intelligence</a>
-data.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/cloudflare.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/cloudflare_hu8e6fe4f16f273444226026397288e091_52490_1000x800_fit_box_3.png title=Cloudflare alt=Cloudflare></a></div><p><strong>Source:</strong> Cloudflare Radar, Change in Internet Traffic in Uganda
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610288759&until=1611066419">IODA</a>
+and <a href="https://map.internetintel.oracle.com/?root=national&country=UG">Oracle Internet Intelligence</a>
+data.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/cloudflare.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/cloudflare_hu4167524092615362266.png title=Cloudflare alt=Cloudflare></a></div><p><strong>Source:</strong> Cloudflare Radar, Change in Internet Traffic in Uganda
 (January 2021),
-<a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">https://radar.cloudflare.com/ug?date_filter=last_30_days</a></p><p>Uganda’s internet outage is further corroborated by <a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic">Google traffic data</a>,
+<a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">https://radar.cloudflare.com/ug?date_filter=last_30_days</a></p><p>Uganda’s internet outage is further corroborated by <a href="https://transparencyreport.google.com/traffic/overview?hl=en&fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&lu=fraction_traffic">Google traffic data</a>,
 which very visibly shows that almost no Google traffic originated from
 Uganda during the same time period. It also shows that Google traffic
 resumed on 18th January 2021, similarly to what is shown by
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610288759&amp;until=1611066419">IODA</a>,
-<a href="https://map.internetintel.oracle.com/?root=national&amp;country=UG">Oracle Internet Intelligence</a>,
-and <a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">Cloudflare Radar</a> data.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/google-traffic.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/google-traffic_hu7067251e64c678ffc48bc073fd8155dc_75248_1000x800_fit_box_3.png title="Google traffic" alt="Google traffic"></a></div><p><strong>Source:</strong> Google Transparency Report, Traffic and disruptions to
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610288759&until=1611066419">IODA</a>,
+<a href="https://map.internetintel.oracle.com/?root=national&country=UG">Oracle Internet Intelligence</a>,
+and <a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">Cloudflare Radar</a> data.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/google-traffic.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/google-traffic_hu751266397296666428.png title="Google traffic" alt="Google traffic"></a></div><p><strong>Source:</strong> Google Transparency Report, Traffic and disruptions to
 Google: Uganda (January 2021),
-<a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic">https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic</a></p><p>As the same internet outage (involving the same dates and times) is
+<a href="https://transparencyreport.google.com/traffic/overview?hl=en&fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&lu=fraction_traffic">https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic</a></p><p>As the same internet outage (involving the same dates and times) is
 shown through four separate data sources, we are confident that Uganda
 experienced a severe internet outage amid its 2021 general election.
-This is further suggested by the <a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG">absence of OONI measurements from Uganda</a>
+This is further suggested by the <a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG">absence of OONI measurements from Uganda</a>
 during this time period (since <a href=https://ooni.org/install/>OONI Probe</a>
 requires internet connectivity to perform tests), as well as by the
-<a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&amp;end=2021-01-20&amp;country=ug&amp;events=off">drastic drop in Tor users</a>
-and <a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&amp;var-region=UG">Psiphon users</a>
+<a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&end=2021-01-20&country=ug&events=off">drastic drop in Tor users</a>
+and <a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&var-region=UG">Psiphon users</a>
 during this period.</p><p>When asked about this internet outage, Mark Kiggundu, Technology Program
 Manager of <a href=https://defenddefenders.org/>DefendDefenders</a>, said:</p><p><em>“The internet as a vast network of people, information and knowledge
 enable individuals to enjoy diverse human rights including the right to
@@ -558,24 +558,24 @@ freedom of opinion and expression. It is also a source of livelihood for
 many and a major contributor to development in any given state.
 Therefore, interference with its access or availability not only
 infringes on fundamental human rights, but is also a threat to life and
-livelihood.”</em></p><h2 id=network-level-analysis>Network-level analysis</h2><p><a href=https://ioda.caida.org/>IODA</a> provides data at the <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">network-level granularity</a>,
+livelihood.”</em></p><h2 id=network-level-analysis>Network-level analysis</h2><p><a href=https://ioda.caida.org/>IODA</a> provides data at the <a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610280000&until=1611057600">network-level granularity</a>,
 allowing us to drill-in deeper and examine which networks were affected
 by the internet outage in Uganda. Analyzing network-level data also
 allows us to examine if there were differences in the times at which the
 outage began and ended across various networks.</p><p>Unlike previous large-scale government-mandated blackouts (<a href=https://ooni.org/post/2019-iran-internet-blackout/>such as the Iranian nation-wide blackout in 2019</a>) where there
 were significant differences in outage times across networks, many
 networks in Uganda appear to have experienced outages that began and
-ended at the same time.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-1.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-1_hu4cc58f655c612267a19ca01382953b7c_115295_1000x800_fit_box_3.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), Active
+ended at the same time.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-1.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-1_hu13847996339944582683.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), Active
 probing signals for networks whose outages began and ended at the same
-time.</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36997&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36997&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/327687&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/327687&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37063&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37063&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37122&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37122&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37113&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37113&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>The above graph shows IODA’s active probing signal for five major
+time.</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/36997&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36997&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/327687&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/327687&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/37063&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37063&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/37122&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37122&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/37113&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37113&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>The above graph shows IODA’s active probing signal for five major
 networks in Uganda; we see that the outage began at around 16:00 UTC on
 13th January 2021 and ended at around 09:30 UTC on 18th January 2021 for
 all these networks. This level of coordination in timings suggests that
 network operators were able to anticipate and execute the enforcement
 and the relaxation of the shutdown according to pre-planned schedules.</p><p>Although the timing patterns of the outages are identical across the
-networks below, the way these outages manifest in IODA’s signals varies.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-2.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-2_hu036ac7a90efa68ae369c93bbe65e418d_46522_1000x800_fit_box_3.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), BGP signals
+networks below, the way these outages manifest in IODA’s signals varies.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-2.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-2_hu13070629835170384976.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), BGP signals
 for networks whose outages began and ended at the same time. Only some
-of these networks’ outages are visible in BGP.</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36997&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36997&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/327687&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/327687&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37063&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37063&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37122&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37122&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37113&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37113&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>The graph above shows IODA’s BGP signals for the five networks from the
+of these networks’ outages are visible in BGP.</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/36997&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36997&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/327687&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/327687&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/37063&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37063&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/37122&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37122&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/37113&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37113&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>The graph above shows IODA’s BGP signals for the five networks from the
 previous graph that had similar outage timing patterns. We see that only
 some of these networks’ outages are visible in the BGP signal although
 each had a noticeable drop in the active probing signal. There is a
@@ -585,19 +585,19 @@ However, Infocom (AS36997) and Roke (AS37063) do not see any drop in
 BGP-visible /24 blocks during this period. These dissimilarities in the
 outage’s signature in IODA’s signals may reflect the use of different
 approaches by these networks’ operators for disconnecting their
-networks.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-3.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-3_hu3c5bc4acfdbace3273fedd7483ca92ca_132541_1000x800_fit_box_3.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), Active
+networks.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-3.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-3_hu14031674486555157641.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), Active
 probing signals for networks whose outages began before/after 16:00 UTC
 on 13th January 2021 (the time at which most other networks’ outages
-began).</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36991&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36991&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/20294&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/20294&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/21491&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/21491&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>Not all networks experienced the outage at the same time, however. The
+began).</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/36991&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36991&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/20294&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/20294&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/21491&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/21491&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>Not all networks experienced the outage at the same time, however. The
 outage affecting Africell Uganda (AS36991) began several hours earlier,
 at around 13:00 UTC on 13th January 2021. On the other hand, the outage
 affecting MTN (AS20294) and Uganda Telecom (AS21491) began a few hours
 later, at around 19:00 UTC. Like the dissimilarities in outage
 signatures across networks, these differences in timing patterns also
 suggest that the implementation of the shutdown was left to the network
-operators.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-4.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-4_hu04472642930a53222fa36d1c92593b6a_179436_1000x800_fit_box_3.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), Active
+operators.</p><div><a href=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-4.png><img src=/post/2021-uganda-general-election-blocks-and-outage/images/ioda-net-4_hu18235384190214406374.png title=IODA alt=IODA></a></div><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), Active
 probing signals for networks that experienced short but significant
-outages before 13th January 2021.</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/29039&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/29039&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36977&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36977&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37075&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37075&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>Some networks appeared to experience brief but major outages even before
+outages before 13th January 2021.</p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/29039&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/29039&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/36977&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/36977&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p><a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=asn/37075&lastView=overview&from=1610280000&until=1611057600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=asn/37075&amp;lastView=overview&amp;from=1610280000&amp;until=1611057600</a></p><p>Some networks appeared to experience brief but major outages even before
 the multi-day outage that began on 13th January 2021. Two ASNs operated
 by Airtel Uganda (AS36977 and AS37075) experienced a brief outage on
 12th January 2021 at around 00:30 AM UTC and another short outage on
@@ -610,40 +610,40 @@ media platforms was
 <a href=https://ooni.org/post/uganda-social-media-blocked/>blocked</a>. Now,
 amid its 2021 general election, Uganda not only experienced social media
 blocking (regardless of <a href=https://www.mtn.co.ug/product/ott-tax/>OTT tax</a> payment), but also a
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610288759&amp;until=1611066419">4-day internet outage</a>.</p><p>In the days leading up to Uganda’s 2021 general election, ISPs appear to
-have <a href="https://explorer.ooni.org/search?until=2021-01-19&amp;since=2021-01-01&amp;probe_cc=UG&amp;domain=play.google.com">blocked access to the Google Play Store</a>
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610288759&until=1611066419">4-day internet outage</a>.</p><p>In the days leading up to Uganda’s 2021 general election, ISPs appear to
+have <a href="https://explorer.ooni.org/search?until=2021-01-19&since=2021-01-01&probe_cc=UG&domain=play.google.com">blocked access to the Google Play Store</a>
 (hampering people’s ability to download apps), as well as to a number of
 social media apps (including
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=whatsapp">WhatsApp</a>,
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=facebook_messenger">Facebook Messenger</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=whatsapp">WhatsApp</a>,
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=facebook_messenger">Facebook Messenger</a>,
 and
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=telegram">Telegram</a>)
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=telegram">Telegram</a>)
 and websites (such as
-<a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.facebook.com">facebook.com</a>)
+<a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.facebook.com">facebook.com</a>)
 &ndash; regardless of <a href=https://www.mtn.co.ug/product/ott-tax/>OTT tax</a>
 payment. Access to certain circumvention tool websites (such as
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=protonvpn.com&amp;only=anomalies">protonvpn.com</a>)
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=web_connectivity&domain=protonvpn.com&only=anomalies">protonvpn.com</a>)
 appears to have been blocked as well, though both
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=tor">Tor</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=tor">Tor</a>
 and
-<a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG&amp;test_name=psiphon">Psiphon</a>
+<a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG&test_name=psiphon">Psiphon</a>
 appear to have worked throughout the election period.</p><p>Starting from the eve of Uganda’s 2021 general election (in the evening
 of 13th January 2021), Uganda was disconnected from the internet
 entirely. The country experienced a 4-day internet outage (which
 included election day), as shown through several public data sources:
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610288759&amp;until=1611066419">Internet Outage Detection and Analysis (IODA)</a>,
-<a href="https://map.internetintel.oracle.com/?root=national&amp;country=UG">Oracle’s Internet Intelligence Map</a>,
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610288759&until=1611066419">Internet Outage Detection and Analysis (IODA)</a>,
+<a href="https://map.internetintel.oracle.com/?root=national&country=UG">Oracle’s Internet Intelligence Map</a>,
 <a href="https://radar.cloudflare.com/ug?date_filter=last_30_days">Cloudflare Radar</a>, and
-<a href="https://transparencyreport.google.com/traffic/overview?hl=en&amp;fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&amp;lu=fraction_traffic">Google traffic</a>
-data. This is further corroborated by the <a href="https://explorer.ooni.org/search?until=2021-01-21&amp;since=2020-12-22&amp;probe_cc=UG">absence of OONI measurements from Uganda</a>
+<a href="https://transparencyreport.google.com/traffic/overview?hl=en&fraction_traffic=start:1609459200000;end:1611187199999;product:19;region:UG&lu=fraction_traffic">Google traffic</a>
+data. This is further corroborated by the <a href="https://explorer.ooni.org/search?until=2021-01-21&since=2020-12-22&probe_cc=UG">absence of OONI measurements from Uganda</a>
 during this time period (since <a href=https://ooni.org/install/>OONI Probe</a>
 requires internet connectivity to perform tests), as well as by the
-<a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&amp;end=2021-01-20&amp;country=ug&amp;events=off">drastic drop in Tor users</a>
-and <a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&amp;var-region=UG">Psiphon users</a>
+<a href="https://metrics.torproject.org/userstats-relay-country.html?start=2021-01-09&end=2021-01-20&country=ug&events=off">drastic drop in Tor users</a>
+and <a href="https://psix.ca/d/nyi8gE6Zk/regional-overview?orgId=2&var-region=UG">Psiphon users</a>
 during this period.</p><p>Even though internet connectivity in Uganda was
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=1610288759&amp;until=1611066419">restored</a>
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/UG&lastView=overview&from=1610288759&until=1611066419">restored</a>
 on 18th January 2021, access to social media and circumvention platforms
-remained blocked. Notably, Ugandan ISPs only appear to have <a href="https://explorer.ooni.org/search?until=2021-01-20&amp;since=2020-12-21&amp;probe_cc=UG&amp;test_name=web_connectivity&amp;domain=www.youtube.com">started blocking access to YouTube on 18th January 2021</a>,
+remained blocked. Notably, Ugandan ISPs only appear to have <a href="https://explorer.ooni.org/search?until=2021-01-20&since=2020-12-21&probe_cc=UG&test_name=web_connectivity&domain=www.youtube.com">started blocking access to YouTube on 18th January 2021</a>,
 even though the platform is <em>not</em> included on the <a href=https://www.mtn.co.ug/product/ott-tax/>OTT list of taxed platforms</a>.</p><p>While Ugandan ISPs (such as
 <a href=https://www.facebook.com/MTNUG/posts/5644233898936144>MTN</a>) have
 been transparent to their customers about these internet restrictions,

@@ -1,3 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/data/</link><description>Recent content in Data on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://ooni.github.io/data/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/data/content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/data/content/</guid><description>This URL is old Raw OONI Probe measurements now live at: https://api.ooni.io.
-You can also explore the collected measurements via the OONI Explorer.
-You should update your bookmarks and links accordingly.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/data/</link><description>Recent content in Data on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/data/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/data/content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/data/content/</guid><description>&lt;h2 id="this-url-is-old">This URL is old&lt;/h2>
+&lt;p>Raw OONI Probe measurements now live at:
+&lt;a href="https://api.ooni.io">https://api.ooni.io&lt;/a>.&lt;/p>
+&lt;p>You can also explore the collected measurements via the &lt;a href="https://explorer.ooni.org/">OONI
+Explorer&lt;/a>.&lt;/p>
+&lt;p>You should update your bookmarks and links accordingly.&lt;/p></description></item></channel></rss>

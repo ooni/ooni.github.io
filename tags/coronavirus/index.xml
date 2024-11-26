@@ -1,3 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>coronavirus on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/coronavirus/</link><description>Recent content in coronavirus on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/coronavirus/index.xml" rel="self" type="application/rss+xml"/><item><title>Myanmar blocks “fake news” websites amid COVID-19 pandemic</title><link>https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/</link><pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/</guid><description>In March 2020, Internet Service Providers (ISPs) in Myanmar received a directive from the Ministry of Transport and Communications to block 230 websites, most of which contain adult content. However, 67 of these sites were blocked on the grounds of spreading “fake news”. The list of these 230 websites has not been published.
-In an attempt to potentially identify the newly blocked websites, we analyzed OONI network measurements collected from Myanmar over the last months, between 1st January 2020 to 9th April 2020.</description></item><item><title>Let's measure the accessibility of COVID-19 websites around the world</title><link>https://ooni.github.io/post/covid-19-ooni-measurement/</link><pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/covid-19-ooni-measurement/</guid><description>Ensuring a free and open internet during an emergency, like the current COVID-19 pandemic, is more important than ever. However, access to information related to the coronavirus pandemic has already been censored by certain governments. China censored information on the coronavirus on Chinese social media platforms, while Venezuela’s state-owned CANTV blocked access to a coronavirus information portal last week.
-We therefore invite you to participate in a measurement campaign to check if COVID-19 sites are accessible in your country (and on the network you’re using) and to share relevant measurement data with the world.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Coronavirus on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/coronavirus/</link><description>Recent content in Coronavirus on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/coronavirus/index.xml" rel="self" type="application/rss+xml"/><item><title>Myanmar blocks “fake news” websites amid COVID-19 pandemic</title><link>https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/</link><pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/images/mm-blockpage-3.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/images/mm-blockpage-3_hu15627163551353397360.png"
+
+ 
+
+ title="Block page served in Myanmar"
+ 
+ alt="Block page served in Myanmar"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>In March 2020, Internet Service Providers (ISPs) in Myanmar received a
+directive from the Ministry of Transport and Communications to &lt;a href="https://www.telenor.com.mm/en/article/blocking-230-websites-myanmar-based-directive-authorities">block 230 websites&lt;/a>,
+most of which contain adult content. However, 67 of these sites were
+blocked on the grounds of spreading “fake news”. The list of these 230
+websites has not been published.&lt;/p>
+&lt;p>In an attempt to potentially identify the newly blocked websites, we
+analyzed &lt;a href="https://explorer.ooni.org/country/MM">OONI network measurements collected from Myanmar&lt;/a> over the last months,
+between 1st January 2020 to 9th April 2020.&lt;/p></description></item><item><title>Let's measure the accessibility of COVID-19 websites around the world</title><link>https://ooni.github.io/post/covid-19-ooni-measurement/</link><pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/covid-19-ooni-measurement/</guid><description>&lt;p>Ensuring a free and open internet during an emergency, like the current
+&lt;a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen">COVID-19 pandemic&lt;/a>,
+is more important than ever. However, access to information related to
+the coronavirus pandemic has already been censored by certain
+governments. &lt;a href="https://citizenlab.ca/2020/03/censored-contagion-how-information-on-the-coronavirus-is-managed-on-chinese-social-media/">China censored information on the coronavirus&lt;/a>
+on Chinese social media platforms, while &lt;a href="https://vesinfiltro.com/noticias/bloqueado_portal_coronavirus_AN">Venezuela’s state-owned CANTV blocked access to a coronavirus information portal&lt;/a>
+last week.&lt;/p>
+&lt;p>We therefore invite you to participate in a measurement campaign to
+check if COVID-19 sites are accessible in your country (and on the
+network you’re using) and to &lt;a href="https://explorer.ooni.org/">share relevant measurement data&lt;/a> with the world.&lt;/p></description></item></channel></rss>

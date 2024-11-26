@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/fr/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>fr</language><atom:link href="https://ooni.github.io/fr/support/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/fr/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fr/support/ooni-outreach-kit/</guid><description>L&amp;rsquo;engagement communautaire est au cœur du travail d’OONI, car les données d’OONI sur la censure de l&amp;rsquo;Internet dépendent des personnes qui utilisent OONI Probe dans le monde entier.
-Vous souhaitez impliquer vos communautés dans la mesure de la censure?
-Le kit de sensibilisation d&amp;rsquo;OONI comprend des supports que nous vous encourageons à utiliser pour engager les communautés dans l&amp;rsquo;utilisation des outils OONI.
-OONI Brochures Fiche d&amp;rsquo;information sur OONI Probe Fiche d&amp;rsquo;information sur OONI Explorer Dépliant sur la censure d&amp;rsquo;Internet OONI présentation de la formation OONI Brochures We provide 2 OONI brochures that include information about using OONI tools and data for investigating internet censorship around the world.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/fr/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>fr</language><atom:link href="https://ooni.github.io/fr/support/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/fr/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fr/support/ooni-outreach-kit/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-outreach-kit/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu116634532574350516.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
+ 
+
+ title="OONI Outreach Kit"
+ 
+ alt="OONI Outreach Kit"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>L&amp;rsquo;engagement communautaire est au cœur du travail d’OONI, car les &lt;a href="https://ooni.org/data/">données d’OONI&lt;/a> sur la censure de l&amp;rsquo;Internet dépendent des personnes qui utilisent &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> dans le monde entier.&lt;/p>
+&lt;p>Vous souhaitez impliquer vos communautés dans la mesure de la censure?&lt;/p>
+&lt;p>Le kit de sensibilisation d&amp;rsquo;OONI comprend &lt;strong>des supports que nous vous encourageons à utiliser&lt;/strong> pour engager les communautés dans l&amp;rsquo;utilisation des outils OONI.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-brochures">OONI Brochures&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#fiche-dinformation-sur-ooni-probe">Fiche d&amp;rsquo;information sur OONI Probe&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#fiche-dinformation-sur-ooni-explorer">Fiche d&amp;rsquo;information sur OONI Explorer&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#dépliant-sur-la-censure-dinternet">Dépliant sur la censure d&amp;rsquo;Internet&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-présentation-de-la-formation">OONI présentation de la formation&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="ooni-brochures">OONI Brochures&lt;/h2>
+&lt;p>We provide 2 OONI brochures that include information about using OONI tools and data for investigating internet censorship around the world.&lt;/p></description></item></channel></rss>

@@ -1,5 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>country-es on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-es/</link><description>Recent content in country-es on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-es/index.xml" rel="self" type="application/rss+xml"/><item><title>New blocks emerge in Russia amid war in Ukraine: An OONI network measurement analysis</title><link>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</guid><description>Download in PDF Information controls are known to occur during conflicts, and that’s exactly what we’re seeing in Russia following the recent invasion of Ukraine on 24th February 2022.
-In recent days, OONI network measurement data collected from Russia shows that many Internet Service Providers (ISPs) have started blocking access to several news media websites, as well as to a website (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine.</description></item><item><title>Evaluating OONI’s New Measurement Engine in the Context of the Blocking of Women on Web in Spain</title><link>https://ooni.github.io/post/2020-engine-evaluation-spain/</link><pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-engine-evaluation-spain/</guid><description>Reproduction rights site www.womenonweb.org has been blocked in Spain over the last months by several local Internet Service Providers (ISPs). Once Spanish hacktivist communities noticed that www.womenonweb.org was inaccessible, they coordinated on running OONI Probe tests to collect measurement data that could serve as evidence. The findings of this investigation have been published in an excellent report, whose writing was coordinated by our former colleague, Vasilis Ververis.
-We were involved in the technical review of the report.</description></item><item><title>Evidence of Internet Censorship during Catalonia's Independence Referendum</title><link>https://ooni.github.io/post/internet-censorship-catalonia-independence-referendum/</link><pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/internet-censorship-catalonia-independence-referendum/</guid><description>Image: Catalan Independence Referendum site seized
-Two days ago, Catalonia held a referendum seeking independence from Spain. As the world awaits to see what happens next, we publish this post to share evidence of recent censorship events that occurred during and leading up to the referendum.
-We confirm the blocking of at least 25 sites related to the Catalan referendum by means of DNS tampering and HTTP blocking, based on OONI Probe network measurements collected from three local networks.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Es on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-es/</link><description>Recent content in Country-Es on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-es/index.xml" rel="self" type="application/rss+xml"/><item><title>New blocks emerge in Russia amid war in Ukraine: An OONI network measurement analysis</title><link>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</guid><description>&lt;a class="ooni-btn" href="https://ooni.github.io/documents/OONI-Report-New-blocks-emerge-in-Russia-amid-war-in-Ukraine.pdf">Download in PDF&lt;/a>
+
+&lt;p>Information controls are known to occur during conflicts, and that’s exactly what we’re seeing in Russia following the recent invasion of Ukraine on 24th February 2022.&lt;/p>
+&lt;p>In recent days, &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;probe_cc=RU">OONI network measurement data&lt;/a> collected from Russia shows that many Internet Service Providers (ISPs) have started &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;only=anomalies">blocking&lt;/a> access to several news media websites, as well as to a &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;probe_cc=RU&amp;test_name=web_connectivity&amp;only=anomalies&amp;domain=200rf.com">website&lt;/a> (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine. OONI data also shows that Russian ISPs started &lt;a href="https://explorer.ooni.org/search?since=2022-02-26&amp;until=2022-03-04&amp;failure=false&amp;domain=twitter.com&amp;probe_cc=RU">throttling access to Twitter&lt;/a> on 26th February 2022, and switched to &lt;a href="https://explorer.ooni.org/measurement/20220306T202033Z_webconnectivity_RU_51604_n1_oVoIGdnUmlxCWmyR?input=https%3A%2F%2Ftwitter.com%2F">blocking&lt;/a> it by 4th March 2022 – at which point, they also started &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;domain=www.facebook.com&amp;probe_cc=RU&amp;only=anomalies">blocking access to Facebook&lt;/a>. Censorship in Russia is generally implemented in a &lt;a href="https://www.ndss-symposium.org/ndss-paper/decentralized-control-a-case-study-of-russia/">decentralized&lt;/a> way, as blocks are not observed on all networks, while ISPs adopt a variety of different censorship techniques.&lt;/p></description></item><item><title>Evaluating OONI’s New Measurement Engine in the Context of the Blocking of Women on Web in Spain</title><link>https://ooni.github.io/post/2020-engine-evaluation-spain/</link><pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-engine-evaluation-spain/</guid><description>&lt;p>Reproduction rights site
+&lt;a href="https://www.womenonweb.org">www.womenonweb.org&lt;/a> has been
+blocked in Spain over the last months by several local Internet Service
+Providers (ISPs). Once Spanish hacktivist communities noticed that
+&lt;a href="http://www.womenonweb.org">www.womenonweb.org&lt;/a> was
+inaccessible, they coordinated on running &lt;a href="https://ooni.org/install/">OONI
+Probe&lt;/a> tests to collect
+measurement data that could serve as evidence. The findings of this
+investigation have been published in &lt;a href="https://blog.magma.lavafeld.org/post/women-on-web-blocking/">an excellent
+report&lt;/a>,
+whose writing was coordinated by our former colleague, Vasilis Ververis.&lt;/p>
+&lt;p>We were involved in the technical review of the report. We found their
+methodology particularly interesting. They used the OONI &lt;a href="https://ooni.org/nettest/web-connectivity/">Web
+Connectivity experiment&lt;/a>
+along with OONI&amp;rsquo;s &lt;a href="https://ooni.org/post/2020-iran-sni-blocking/">experimental SNI based blocking
+methodology&lt;/a>,
+and they also performed manual experiments with
+&lt;a href="https://www.openssl.org/">OpenSSL&lt;/a> and
+&lt;a href="https://curl.haxx.se/">cURL&lt;/a>. Because OONI&amp;rsquo;s mission is
+to simplify and automate the collection of censorship evidence, we are
+always interested in learning how we can expand &lt;a href="https://ooni.org/nettest/web-connectivity/">our Web Connectivity
+methodology&lt;/a> to
+automatically gather more data that is useful in specific cases.
+Coincidentally, as part of &lt;a href="https://github.com/ooni/probe-engine/issues/40">rewriting the Web Connectivity
+implementation in Go&lt;/a>, we
+have already written experimental code that combines &lt;a href="https://ooni.org/nettest/web-connectivity/">vanilla Web
+Connectivity&lt;/a>
+with &lt;a href="https://ooni.org/post/2020-iran-sni-blocking/">SNI blocking&lt;/a>
+and other techniques. We therefore asked them to run this experimental
+code with &lt;a href="https://www.womenonweb.org">www.womenonweb.org&lt;/a>
+as a target. Our goal was to evaluate whether our working prototype
+would have allowed them to obtain the same research results, without
+resorting to manually running specifically tailored network experiments.&lt;/p></description></item><item><title>Evidence of Internet Censorship during Catalonia's Independence Referendum</title><link>https://ooni.github.io/post/internet-censorship-catalonia-independence-referendum/</link><pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/internet-censorship-catalonia-independence-referendum/</guid><description>&lt;p>&lt;img alt="Seized referendum site" src="https://ooni.github.io/post/catalonia/seized.png">&lt;/p>
+&lt;p>Image: Catalan Independence Referendum site seized&lt;/p>
+&lt;p>Two days ago, Catalonia held a
+&lt;a href="http://time.com/4951665/catalan-referendum-2017/">referendum&lt;/a> seeking
+independence from Spain. As the world awaits to see what happens next,
+we publish this post to share
+&lt;a href="https://api.ooni.io/files/by_country/ES">evidence&lt;/a> of recent
+censorship events that occurred during and leading up to the referendum.&lt;/p>
+&lt;p>We &lt;strong>confirm the blocking of at least 25 sites related to the Catalan
+referendum&lt;/strong> by means of DNS tampering and HTTP blocking, based on
+&lt;a href="https://explorer.ooni.org/country/ES">OONI Probe network measurements&lt;/a>
+collected from three local networks. OONI data shows that these sites
+were blocked every day from (at least) 25th September 2017 (when the
+testing started) leading up to the referendum day, on 1st October 2017.&lt;/p></description></item></channel></rss>

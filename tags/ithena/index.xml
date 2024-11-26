@@ -1,5 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ithena on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/ithena/</link><description>Recent content in ithena on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/ithena/index.xml" rel="self" type="application/rss+xml"/><item><title>iThena integration of OONI Probe boosts censorship measurement coverage worldwide</title><link>https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/</guid><description>Over the last months, the iThena project integrated OONI Probe into their platform, resulting in a major spike in OONI censorship measurement coverage around the world.
-In this blog post, we’re excited to introduce you to iThena and discuss how they helped support censorship measurement worldwide.
-About iThena
-OONI Probe integration into iThena
-About iThena iThena, developed by the Cyber-Complex Foundation, is a distributed computation and measurement project based on the Berkeley Open Infrastructure for Network Computing (BOINC) platform.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ithena on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/ithena/</link><description>Recent content in Ithena on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/ithena/index.xml" rel="self" type="application/rss+xml"/><item><title>iThena integration of OONI Probe boosts censorship measurement coverage worldwide</title><link>https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/</guid><description>&lt;p>Over the last months, the &lt;a href="https://root.ithena.net/">iThena&lt;/a> project
+&lt;a href="https://root.ithena.net/usr/forum_thread.php?id=151">integrated OONI Probe&lt;/a> into their
+platform, resulting in a &lt;a href="https://twitter.com/OpenObservatory/status/1443944726235856901">major spike&lt;/a>
+in &lt;a href="https://ooni.org/data/">OONI censorship measurement coverage&lt;/a>
+around the world.&lt;/p>
+&lt;p>In this blog post, we’re excited to introduce you to iThena and discuss
+how they helped support censorship measurement worldwide.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/#about-ithena">About iThena&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/#ooni-probe-integration-into-ithena">OONI Probe integration into iThena&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="about-ithena">About iThena&lt;/h1>
+&lt;p>&lt;a href="https://root.ithena.net/">iThena&lt;/a>, developed by the &lt;a href="https://cybercomplex.net/">Cyber-Complex Foundation&lt;/a>, is a distributed computation
+and measurement project based on the &lt;a href="https://boinc.berkeley.edu/">Berkeley Open Infrastructure for Network Computing (BOINC)&lt;/a> platform.
+iThena &lt;a href="https://boinc.berkeley.edu/forum_thread.php?id=13966">aims&lt;/a> to
+generate a dynamic topological model of the Internet, based on
+measurements from distributed devices.&lt;/p></description></item></channel></rss>

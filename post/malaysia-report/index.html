@@ -1,66 +1,171 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>The State of Internet Censorship in Malaysia | OONI</title>
-<link rel=canonical href=https://ooni.org/post/malaysia-report/><meta name=description content="Block page in Malaysia
-A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='initial-scale=1,width=device-width'><title>The State of Internet Censorship in Malaysia | OONI</title>
+<link rel=canonical href=https://ooni.org/post/malaysia-report/><meta name=description content="
+Block page in Malaysia
+A research study by the Open Observatory of Network Interference (OONI) and
+Sinar Project.
 Table of contents
+
+
 Key Findings
+
+
 Introduction
+
+
 Background
+
+
 Network landscape and internet penetration
+
+
 Legal environment
+
+
 Freedom of expression
+
+
 Press freedom
+
+
 Access to information
+
+
 Privacy
+
+
 Censorship and surveillance
+
+
+
+
 Previous cases of internet censorship and surveillance
+
+
 Examining internet censorship in Malaysia
+
+
 Methodology
+
+
 Creation of a Malaysian test list
+
+
 OONI network measurements
-Web connectivity
-HTTP invalid request line"><meta property="og:title" content="The State of Internet Censorship in Malaysia"><meta property="og:description" content="Block page in Malaysia
-A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+
+
+Web connectivity"><meta property="og:title" content="The State of Internet Censorship in Malaysia"><meta property="og:description" content="
+Block page in Malaysia
+A research study by the Open Observatory of Network Interference (OONI) and
+Sinar Project.
 Table of contents
+
+
 Key Findings
+
+
 Introduction
+
+
 Background
+
+
 Network landscape and internet penetration
+
+
 Legal environment
+
+
 Freedom of expression
+
+
 Press freedom
+
+
 Access to information
+
+
 Privacy
+
+
 Censorship and surveillance
+
+
+
+
 Previous cases of internet censorship and surveillance
+
+
 Examining internet censorship in Malaysia
+
+
 Methodology
+
+
 Creation of a Malaysian test list
+
+
 OONI network measurements
-Web connectivity
-HTTP invalid request line"><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/malaysia-report/"><meta property="article:published_time" content="2016-12-20T00:00:00+00:00"><meta property="article:modified_time" content="2016-12-20T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="The State of Internet Censorship in Malaysia"><meta name=twitter:description content="Block page in Malaysia
-A research study by the Open Observatory of Network Interference (OONI) and Sinar Project.
+
+
+Web connectivity"><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/malaysia-report/"><meta property="article:published_time" content="2016-12-20T00:00:00+00:00"><meta property="article:modified_time" content="2016-12-20T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="The State of Internet Censorship in Malaysia"><meta name=twitter:description content="
+Block page in Malaysia
+A research study by the Open Observatory of Network Interference (OONI) and
+Sinar Project.
 Table of contents
+
+
 Key Findings
+
+
 Introduction
+
+
 Background
+
+
 Network landscape and internet penetration
+
+
 Legal environment
+
+
 Freedom of expression
+
+
 Press freedom
+
+
 Access to information
+
+
 Privacy
+
+
 Censorship and surveillance
+
+
+
+
 Previous cases of internet censorship and surveillance
+
+
 Examining internet censorship in Malaysia
+
+
 Methodology
+
+
 Creation of a Malaysian test list
+
+
 OONI network measurements
-Web connectivity
-HTTP invalid request line"><link rel=stylesheet type=text/css href=https://ooni.github.io/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=https://ooni.github.io/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+
+
+Web connectivity"><link rel=stylesheet type=text/css href=/css/bootstrap.min.e2d14d1a1dcdfab34aba5963e76f1aa59cc3291ce469f4336bdbddcea78ab123.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
 <img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
 <img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>The State of Internet Censorship in Malaysia</h1><div class=byline><span class=author>Maria Xynou (OONI), Arturo Filastò (OONI), Khairil Yusof (Sinar Project), Tan Sze Ming (Sinar Project)</span>
-<span class=date>2016-12-20</span></div><p><img src=/post/malaysia-report/block-page.png alt="Malaysian block page"></p><p><em>Block page in Malaysia</em></p><p>A research study by the Open Observatory of Network Interference (OONI) and
-Sinar Project.</p><p><strong>Table of contents</strong></p><ul><li><p><a href=#key-findings>Key Findings</a></p></li><li><p><a href=#introduction>Introduction</a></p></li><li><p><a href=#background>Background</a></p></li><li><p><a href=#network-landscape-and-internet-penetration>Network landscape and internet penetration</a></p></li><li><p><a href=#legal-environment>Legal environment</a></p><ul><li><p><a href=#freedom-of-expression>Freedom of expression</a></p></li><li><p><a href=#press-freedom>Press freedom</a></p></li><li><p><a href=#access-to-information>Access to information</a></p></li><li><p><a href=#privacy>Privacy</a></p></li><li><p><a href=#censorship-and-surveillance>Censorship and surveillance</a></p></li></ul></li><li><p><a href=#previous-cases-of-internet-censorship-and-surveillance>Previous cases of internet censorship and surveillance</a></p></li><li><p><a href=#examining-internet-censorship-in-malaysia>Examining internet censorship in Malaysia</a></p><ul><li><p><a href=#methodology>Methodology</a></p><ul><li><p><a href=#creation-of-a-malaysian-test-list>Creation of a Malaysian test list</a></p></li><li><p><a href=#ooni-network-measurements>OONI network measurements</a></p><ul><li><p><a href=#web-connectivity>Web connectivity</a></p></li><li><p><a href=#http-invalid-request-line>HTTP invalid request line</a></p></li><li><p><a href=#http-header-field-manipulation>HTTP header field manipulation</a></p></li><li><p><a href=#vanilla-tor>Vanilla Tor</a></p></li><li><p><a href=#meek-fronted-requests>Meek Fronted Requests</a></p></li></ul></li></ul></li><li><p><a href=#data-analysis>Data analysis</a></p></li></ul></li><li><p><a href=#findings>Findings</a></p><ul><li><p><a href=#news-media>News Media</a></p></li><li><p><a href=#political-criticism>Political Criticism</a></p></li><li><p><a href=#religion>Religion</a></p></li><li><p><a href=#hosting-and-blogging-platforms>Hosting and Blogging platforms</a></p></li><li><p><a href=#file-sharing>File-sharing</a></p></li><li><p><a href=#online-dating>Online Dating</a></p></li><li><p><a href=#pornography>Pornography</a></p></li><li><p><a href=#gambling>Gambling</a></p></li><li><p><a href=#acknowledgement-of-limitations>Acknowledgement of limitations</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li></ul><p><strong>Country:</strong> Malaysia</p><p><strong>Probed ISPs:</strong> TM Net (AS4788), TM-VADS DC Hosting (AS17971)</p><p><strong>Censorship method:</strong> DNS injection (block pages)</p><p><strong>OONI tests:</strong> Web Connectivity, Vanilla Tor, HTTP invalid request
+<span class=date>2016-12-20</span></div><p><img alt="Malaysian block page" src=/post/malaysia-report/block-page.png></p><p><em>Block page in Malaysia</em></p><p>A research study by the Open Observatory of Network Interference (OONI) and
+Sinar Project.</p><p><strong>Table of contents</strong></p><ul><li><p><a href=/post/malaysia-report/#key-findings>Key Findings</a></p></li><li><p><a href=/post/malaysia-report/#introduction>Introduction</a></p></li><li><p><a href=/post/malaysia-report/#background>Background</a></p></li><li><p><a href=/post/malaysia-report/#network-landscape-and-internet-penetration>Network landscape and internet penetration</a></p></li><li><p><a href=/post/malaysia-report/#legal-environment>Legal environment</a></p><ul><li><p><a href=/post/malaysia-report/#freedom-of-expression>Freedom of expression</a></p></li><li><p><a href=/post/malaysia-report/#press-freedom>Press freedom</a></p></li><li><p><a href=/post/malaysia-report/#access-to-information>Access to information</a></p></li><li><p><a href=/post/malaysia-report/#privacy>Privacy</a></p></li><li><p><a href=/post/malaysia-report/#censorship-and-surveillance>Censorship and surveillance</a></p></li></ul></li><li><p><a href=/post/malaysia-report/#previous-cases-of-internet-censorship-and-surveillance>Previous cases of internet censorship and surveillance</a></p></li><li><p><a href=/post/malaysia-report/#examining-internet-censorship-in-malaysia>Examining internet censorship in Malaysia</a></p><ul><li><p><a href=/post/malaysia-report/#methodology>Methodology</a></p><ul><li><p><a href=/post/malaysia-report/#creation-of-a-malaysian-test-list>Creation of a Malaysian test list</a></p></li><li><p><a href=/post/malaysia-report/#ooni-network-measurements>OONI network measurements</a></p><ul><li><p><a href=/post/malaysia-report/#web-connectivity>Web connectivity</a></p></li><li><p><a href=/post/malaysia-report/#http-invalid-request-line>HTTP invalid request line</a></p></li><li><p><a href=/post/malaysia-report/#http-header-field-manipulation>HTTP header field manipulation</a></p></li><li><p><a href=/post/malaysia-report/#vanilla-tor>Vanilla Tor</a></p></li><li><p><a href=/post/malaysia-report/#meek-fronted-requests>Meek Fronted Requests</a></p></li></ul></li></ul></li><li><p><a href=/post/malaysia-report/#data-analysis>Data analysis</a></p></li></ul></li><li><p><a href=/post/malaysia-report/#findings>Findings</a></p><ul><li><p><a href=/post/malaysia-report/#news-media>News Media</a></p></li><li><p><a href=/post/malaysia-report/#political-criticism>Political Criticism</a></p></li><li><p><a href=/post/malaysia-report/#religion>Religion</a></p></li><li><p><a href=/post/malaysia-report/#hosting-and-blogging-platforms>Hosting and Blogging platforms</a></p></li><li><p><a href=/post/malaysia-report/#file-sharing>File-sharing</a></p></li><li><p><a href=/post/malaysia-report/#online-dating>Online Dating</a></p></li><li><p><a href=/post/malaysia-report/#pornography>Pornography</a></p></li><li><p><a href=/post/malaysia-report/#gambling>Gambling</a></p></li><li><p><a href=/post/malaysia-report/#acknowledgement-of-limitations>Acknowledgement of limitations</a></p></li></ul></li><li><p><a href=/post/malaysia-report/#conclusion>Conclusion</a></p></li></ul><p><strong>Country:</strong> Malaysia</p><p><strong>Probed ISPs:</strong> TM Net (AS4788), TM-VADS DC Hosting (AS17971)</p><p><strong>Censorship method:</strong> DNS injection (block pages)</p><p><strong>OONI tests:</strong> Web Connectivity, Vanilla Tor, HTTP invalid request
 line, HTTP header field manipulation, Meek Fronted Requests test</p><h1 id=key-findings>Key Findings</h1><p>New <a href=https://explorer.ooni.org/country/MY><em>OONI data</em></a>
 published in this report reveals that <strong>39 different websites</strong> were
 blocked in Malaysia by ISPs through the <strong>DNS injection of block
@@ -121,7 +226,7 @@ non-Malay indigenous people of East Malaysia. 22.6% of Malaysia’s
 population is Chinese, while 6.7% is Indian. Ethnicity plays a major
 role in Malaysia, as there are a number of rights and privileges
 accorded to bumiputeras due to racial economic policies in place in
-Malaysia.</p><p>Statistics from the <a href="https://www.statistics.gov.my/index.php?r=column/cthemeByCat&amp;cat=117&amp;bul_id=MDMxdHZjWTk1SjFzTzNkRXYzcVZjdz09&amp;menu_id=L0pheU43NWJwRWVSZklWdzQ4TlhUUT09"><em>2010 census</em></a>
+Malaysia.</p><p>Statistics from the <a href="https://www.statistics.gov.my/index.php?r=column/cthemeByCat&cat=117&bul_id=MDMxdHZjWTk1SjFzTzNkRXYzcVZjdz09&menu_id=L0pheU43NWJwRWVSZklWdzQ4TlhUUT09"><em>2010 census</em></a>
 show a religious makeup of the population at 61% Muslims, 19.8%
 Buddhist, 9.3% Christians and 6.3% Hindu. Religious beliefs mostly
 follow ethnic lines. Article 11 of the
@@ -632,7 +737,7 @@ blogging platforms, online dating, religion, pornography, and gambling.</p><p>Th
 based on DNS injections of block pages.</p><table><thead><tr><th>Blocked websites</th><th>Categories</th><th>First measured</th><th>First blocked</th><th>Last blocked</th><th>Last measured</th></tr></thead><tbody><tr><td><code>http://adultfriendfinder.com</code></td><td>Online Dating</td><td>2016-09-24 3:55:08</td><td>2016-09-24 3:55:08</td><td>2016-11-13 22:39:44</td><td>2016-11-13 22:39:44</td></tr><tr><td><code>http://beeg.com</code></td><td>Pornography</td><td>2016-09-24 3:55:26</td><td>2016-09-24 3:55:26</td><td>2016-11-13 22:39:53</td><td>2016-11-13 22:39:53</td></tr><tr><td><code>http://extratorrent.cc</code></td><td>File-sharing</td><td>2016-11-10 0:02:37</td><td>2016-11-10 0:03:42</td><td>2016-11-13 0:03:34</td><td>2016-11-13 0:03:34</td></tr><tr><td><code>http://jinggo-fotopages.blogspot.my/</code></td><td>Political Criticism</td><td>2016-11-10 1:11:18</td><td>2016-11-10 1:11:18</td><td>2016-11-13 1:18:17</td><td>2016-11-13 1:18:17</td></tr><tr><td><code>http://malaysia-chronicle.com</code></td><td>Political Criticism</td><td>2016-09-24 3:32:58</td><td>2016-09-24 3:32:58</td><td>2016-11-13 22:26:26</td><td>2016-11-13 22:26:26</td></tr><tr><td><code>http://manhub.com</code></td><td>Pornography</td><td>2016-09-24 3:59:53</td><td>2016-09-24 3:59:53</td><td>2016-11-13 22:41:46</td><td>2016-11-13 22:41:46</td></tr><tr><td><code>http://pornhub.com</code></td><td>Pornography</td><td>2016-09-24 4:01:41</td><td>2016-09-24 4:01:41</td><td>2016-11-12 22:42:19</td><td>2016-11-13 22:42:16</td></tr><tr><td><code>http://redtube.com</code></td><td>Pornography</td><td>2016-09-24 4:02:06</td><td>2016-09-24 4:02:06</td><td>2016-11-13 22:42:28</td><td>2016-11-13 22:42:28</td></tr><tr><td><code>http://syedsoutsidethebox.blogspot.my/</code></td><td>Political Criticism</td><td>2016-11-10 1:11:16</td><td>2016-11-10 1:11:16</td><td>2016-11-13 1:18:14</td><td>2016-11-13 1:18:14</td></tr><tr><td><code>http://tabunginsider.blogspot.my/</code></td><td>Political Criticism</td><td>2016-11-10 1:11:13</td><td>2016-11-10 1:11:13</td><td>2016-11-13 1:18:13</td><td>2016-11-13 1:18:13</td></tr><tr><td><code>http://thepiratebay.org</code></td><td>File-sharing</td><td>2016-09-24 4:03:00</td><td>2016-09-24 4:03:00</td><td>2016-11-13 22:42:44</td><td>2016-11-13 22:42:44</td></tr><tr><td><code>http://www.888casino.com</code></td><td>Gambling</td><td>2016-09-24 4:05:18</td><td>2016-09-24 4:05:18</td><td>2016-11-13 0:08:58</td><td>2016-11-13 22:43:49</td></tr><tr><td><code>http://www.89.com</code></td><td>Pornography</td><td>2016-09-24 4:05:19</td><td>2016-09-25 4:05:11</td><td>2016-11-13 22:43:49</td><td>2016-11-13 22:43:49</td></tr><tr><td><code>http://www.ashemaletube.com</code></td><td>Pornography</td><td>2016-09-24 4:07:28</td><td>2016-09-24 4:07:28</td><td>2016-11-13 22:44:57</td><td>2016-11-13 22:44:57</td></tr><tr><td><code>http://www.asiasentinel.com</code></td><td>News Media</td><td>2016-09-24 3:49:08</td><td>2016-09-24 3:49:08</td><td>2016-11-13 22:33:31</td><td>2016-11-13 22:33:31</td></tr><tr><td><code>http://www.belmont.ag</code></td><td>Gambling</td><td>2016-09-24 4:10:13</td><td>2016-09-24 4:10:13</td><td>2016-11-13 22:45:27</td><td>2016-11-13 22:45:27</td></tr><tr><td><code>http://www.betfair.com</code></td><td>Gambling</td><td>2016-09-24 4:10:23</td><td>2016-09-24 4:10:23</td><td>2016-11-13 22:45:29</td><td>2016-11-13 22:45:29</td></tr><tr><td><code>http://www.carnivalcasino.com</code></td><td>Gambling</td><td>2016-09-24 4:13:39</td><td>2016-09-24 4:13:39</td><td>2016-11-12 22:46:31</td><td>2016-11-13 22:46:36</td></tr><tr><td><code>http://www.casinotropez.com</code></td><td>Gambling</td><td>2016-09-24 4:13:41</td><td>2016-09-24 4:13:41</td><td>2016-11-13 22:46:41</td><td>2016-11-13 22:46:41</td></tr><tr><td><code>http://www.clubdicecasino.com</code></td><td>Gambling</td><td>2016-09-24 4:14:34</td><td>2016-09-24 4:14:34</td><td>2016-11-13 22:47:19</td><td>2016-11-13 22:47:19</td></tr><tr><td><code>http://www.europacasino.com</code></td><td>Gambling</td><td>2016-09-24 4:17:45</td><td>2016-09-24 4:17:45</td><td>2016-11-13 22:49:53</td><td>2016-11-13 22:49:53</td></tr><tr><td><code>http://www.goldenrivieracasino.com</code></td><td>Gambling</td><td>2016-09-24 4:20:34</td><td>2016-09-24 4:20:34</td><td>2016-11-13 22:52:00</td><td>2016-11-13 22:52:00</td></tr><tr><td><code>http://www.hustler.com</code></td><td>Pornography</td><td>2016-09-24 4:21:36</td><td>2016-09-24 4:21:36</td><td>2016-11-13 22:52:34</td><td>2016-11-13 22:52:34</td></tr><tr><td><code>http://www.livejasmin.com</code></td><td>Pornography</td><td>2016-09-24 4:32:04</td><td>2016-09-24 4:32:04</td><td>2016-11-13 22:55:28</td><td>2016-11-13 22:55:28</td></tr><tr><td><code>http://www.roxypalace.com</code></td><td>Gambling</td><td>2016-09-24 4:41:19</td><td>2016-09-24 4:41:19</td><td>2016-11-13 23:01:30</td><td>2016-11-13 23:01:30</td></tr><tr><td><code>http://www.sarawakreport.org</code></td><td>News Media</td><td>2016-09-24 3:49:15</td><td>2016-09-24 3:49:15</td><td>2016-11-13 22:33:33</td><td>2016-11-13 22:33:33</td></tr><tr><td><code>http://www.sarawakreport.org/2016/04/the-simple-silver-bullet-solution-to-1mdb-malaysias-financial-woes-sack-najib/</code></td><td>News Media</td><td>2016-09-24 3:51:03</td><td>2016-09-24 3:51:03</td><td>2016-11-13 1:15:58</td><td>2016-11-13 1:15:58</td></tr><tr><td><code>http://www.sarawakreport.org/tag/1mdb</code></td><td>News Media</td><td>2016-09-24 3:51:00</td><td>2016-09-24 3:51:00</td><td>2016-11-13 1:15:57</td><td>2016-11-13 1:15:57</td></tr><tr><td><code>http://www.sex.com</code></td><td>Pornography</td><td>2016-09-24 4:42:12</td><td>2016-09-24 4:42:12</td><td>2016-11-13 23:02:11</td><td>2016-11-13 23:02:11</td></tr><tr><td><code>http://www.spinpalace.com</code></td><td>Gambling</td><td>2016-09-24 4:43:02</td><td>2016-09-24 23:02:44</td><td>2016-11-13 23:02:49</td><td>2016-11-13 23:02:49</td></tr><tr><td><code>http://www.themalaysianinsider.com</code></td><td>News Media</td><td>2016-09-24 3:47:22</td><td>2016-09-24 3:47:22</td><td>2016-11-13 22:32:39</td><td>2016-11-13 22:32:39</td></tr><tr><td><code>http://www.thereligionofpeace.com</code></td><td>Religion</td><td>2016-09-24 3:49:29</td><td>2016-09-24 3:49:29</td><td>2016-11-13 1:14:02</td><td>2016-11-13 1:14:02</td></tr><tr><td><code>http://www.wetplace.com</code></td><td>Pornography</td><td>2016-09-24 4:48:34</td><td>2016-09-24 4:48:34</td><td>2016-11-13 23:05:43</td><td>2016-11-13 23:05:43</td></tr><tr><td><code>http://www.worldsex.com</code></td><td>Pornography</td><td>2016-09-24 4:49:57</td><td>2016-09-24 4:49:57</td><td>2016-11-13 23:06:26</td><td>2016-11-13 23:06:26</td></tr><tr><td><code>http://xhamster.com</code></td><td>Pornography</td><td>2016-09-24 4:50:56</td><td>2016-09-24 4:50:56</td><td>2016-11-13 23:06:59</td><td>2016-11-13 23:06:59</td></tr><tr><td><code>http://xvideos.com</code></td><td>Pornography</td><td>2016-09-24 4:50:56</td><td>2016-09-24 23:06:57</td><td>2016-11-13 0:49:33</td><td>2016-11-13 23:06:59</td></tr><tr><td><code>http://youjizz.com</code></td><td>Pornography</td><td>2016-09-24 4:51:03</td><td>2016-09-24 4:51:03</td><td>2016-11-13 23:07:06</td><td>2016-11-13 23:07:06</td></tr><tr><td><code>http://youporn.com</code></td><td>Pornography</td><td>2016-09-24 4:51:07</td><td>2016-09-24 4:51:07</td><td>2016-11-13 23:07:07</td><td>2016-11-13 23:07:07</td></tr><tr><td><code>https://medium.com</code></td><td>Hosting and Blogging platforms</td><td>2016-09-24 3:49:13</td><td>2016-09-24 3:49:13</td><td>2016-11-13 22:33:33</td><td>2016-11-13 22:33:33</td></tr><tr><td><code>https://thepiratebay.se</code></td><td>File-sharing</td><td>2016-09-24 4:51:47</td><td>2016-09-24 23:07:17</td><td>2016-11-13 23:07:28</td><td>2016-11-13 23:07:28</td></tr><tr><td><code>https://torrentz.eu</code></td><td>File-sharing</td><td>2016-09-24 4:51:49</td><td>2016-09-25 6:06:53</td><td>2016-11-12 23:07:42</td><td>2016-11-13 23:07:29</td></tr></tbody></table><p>The chart below illustrates that porn, gambling and news websites were
 found to be blocked the most. Similarly, torrenting sites and websites
 expressing political criticism also presented relatively high
-percentages <code>of</code> blocking from the sites that were found to be blocked.</p><p><img src=/post/malaysia-report/malaysia-chart.png alt="Malaysia chart"></p><p>Recently, the Malaysian Communications and Multimedia Commission (MCMC)
+percentages <code>of</code> blocking from the sites that were found to be blocked.</p><p><img alt="Malaysia chart" src=/post/malaysia-report/malaysia-chart.png></p><p>Recently, the Malaysian Communications and Multimedia Commission (MCMC)
 <a href=http://english.astroawani.com/malaysia-news/mcmc-blocks-over-5-000-websites-various-offences-jailani-125528><em>announced</em></a>
 the blocking of 5,044 websites for various offenses under the <a href=https://www.unodc.org/res/cld/document/mys/communications_and_multimedia_act_html/Malaysia_Communications_and_Multimedia_Act_1998.pdf><em>Malaysia Communications and Multimedia Act (CMA) 1998</em></a>.
 According to <a href=http://english.astroawani.com/malaysia-news/mcmc-blocks-over-5-000-websites-various-offences-jailani-125528><em>Malaysia’s Deputy Communications and Multimedia Minister</em></a>,

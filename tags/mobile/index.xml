@@ -1,12 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mobile on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/mobile/</link><description>Recent content in mobile on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 17 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>Job Opening: Mobile Developer for OONI Probe</title><link>https://ooni.github.io/post/2021-job-opening-ooni-mobile-developer/</link><pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-job-opening-ooni-mobile-developer/</guid><description>Are you a mobile developer interested in defending human rights on the internet? We have a job opening for you!
-The OONI team (a non-profit fighting internet censorship, originally born out of the Tor Project) is looking for a dedicated mobile developer to work on OONI Probe: a free software app designed to measure internet censorship and network performance.
-The application deadline is Sunday, 31st October 2021.
-Job description If you join our team, you will lead the development of the OONI Probe mobile app, supporting human rights defenders worldwide to investigate and fight internet censorship.</description></item><item><title>Major Revamp: OONI Probe Mobile App 2.0 Launched!</title><link>https://ooni.github.io/post/revamped-ooni-probe-mobile-app/</link><pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/revamped-ooni-probe-mobile-app/</guid><description>Today the Open Observatory of Network Interference (OONI) project is thrilled to announce the release of a major, new OONI Probe mobile app version!
-Are websites and social media apps blocked? Is your network unusually slow?
-Install OONI Probe now on Android or iOS to find out!
-Why run OONI Probe?
-OONI Probe 2.0 Highlights
-Major UI overhaul
-Overview of Test Results
-Enhanced Website Testing
-Test websites of your choice</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mobile on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/mobile/</link><description>Recent content in Mobile on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 17 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>Job Opening: Mobile Developer for OONI Probe</title><link>https://ooni.github.io/post/2021-job-opening-ooni-mobile-developer/</link><pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-job-opening-ooni-mobile-developer/</guid><description>&lt;p>Are you a mobile developer interested in defending human rights on the
+internet? We have a job opening for you!&lt;/p>
+&lt;p>The &lt;a href="https://ooni.org/">OONI&lt;/a> team (a non-profit fighting internet
+censorship, originally born out of the &lt;a href="https://www.torproject.org/">Tor
+Project&lt;/a>) is looking for a dedicated
+&lt;strong>mobile developer&lt;/strong> to work on &lt;a href="https://ooni.org/install/mobile">OONI Probe&lt;/a>: a free software app designed
+to measure internet censorship and network performance.&lt;/p>
+&lt;p>The application deadline is &lt;strong>Sunday, 31st October 2021&lt;/strong>.&lt;/p>
+&lt;h1 id="job-description">Job description&lt;/h1>
+&lt;p>If you join our team, you will lead the development of the &lt;a href="https://ooni.org/install/mobile">OONI Probe mobile app&lt;/a>, supporting human rights
+defenders worldwide to investigate and fight internet censorship.&lt;/p></description></item><item><title>Major Revamp: OONI Probe Mobile App 2.0 Launched!</title><link>https://ooni.github.io/post/revamped-ooni-probe-mobile-app/</link><pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/revamped-ooni-probe-mobile-app/</guid><description>&lt;p>&lt;img alt="OONI Probe: old vs. new" src="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/old-vs-new-app.png">&lt;/p>
+&lt;p>Today the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project is thrilled to announce
+the release of a major, new OONI Probe mobile app version!&lt;/p>
+&lt;p>Are websites and social media apps blocked? Is your network unusually
+slow?&lt;/p>
+&lt;p>Install &lt;strong>OONI Probe&lt;/strong> now on
+&lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android&lt;/a>
+or &lt;a href="https://itunes.apple.com/us/app/id1199566366">iOS&lt;/a> to find
+out!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#why-run-ooni-probe">Why run OONI Probe?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#ooni-probe-2-0-highlights">OONI Probe 2.0 Highlights&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#major-ui-overhaul">Major UI overhaul&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#overview-of-test-results">Overview of Test Results&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#enhanced-website-testing">Enhanced Website Testing&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#test-websites-of-your-choice">Test websites of your choice&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,72 +1,168 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Measuring Internet Censorship in Cuba's ParkNets | OONI</title>
-<link rel=canonical href=https://ooni.org/post/cuba-internet-censorship-2017/><meta name=description content="Image by Arturo Filastò (CC-BY-SA-3.0) A research study by the Open Observatory of Network Interference (OONI)
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='initial-scale=1,width=device-width'><title>Measuring Internet Censorship in Cuba's ParkNets | OONI</title>
+<link rel=canonical href=https://ooni.org/post/cuba-internet-censorship-2017/><meta name=description content="
+  
+  
+  Image by Arturo Filastò (CC-BY-SA-3.0)
+  
+
+
+A research study by the Open Observatory of Network Interference (OONI)
 View the pdf version of the report here.
 Table of contents
+
+
 Key Findings
+
+
 Introduction
+
+
 Background
+
+
 Network landscape and internet penetration
+
+
 ETECSA
+
+
 ParkNets
+
+
 Joven Club
+
+
 StreetNets
+
+
 El Paquete
+
+
 Summary
+
+
+
+
 Measuring Internet Censorship in Cuba
+
+
 Methodology
+
+
 Collection and analysis of OONI Probe network measurements
-Custom tests
-Findings
-Blocked websites
-News Media
-Political Criticism
-Human Rights Issues"><meta property="og:title" content="Measuring Internet Censorship in Cuba's ParkNets"><meta property="og:description" content="Image by Arturo Filastò (CC-BY-SA-3.0) A research study by the Open Observatory of Network Interference (OONI)
+
+
+Custom tests"><meta property="og:title" content="Measuring Internet Censorship in Cuba's ParkNets"><meta property="og:description" content="
+  
+  
+  Image by Arturo Filastò (CC-BY-SA-3.0)
+  
+
+
+A research study by the Open Observatory of Network Interference (OONI)
 View the pdf version of the report here.
 Table of contents
+
+
 Key Findings
+
+
 Introduction
+
+
 Background
+
+
 Network landscape and internet penetration
+
+
 ETECSA
+
+
 ParkNets
+
+
 Joven Club
+
+
 StreetNets
+
+
 El Paquete
+
+
 Summary
+
+
+
+
 Measuring Internet Censorship in Cuba
+
+
 Methodology
+
+
 Collection and analysis of OONI Probe network measurements
-Custom tests
-Findings
-Blocked websites
-News Media
-Political Criticism
-Human Rights Issues"><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/cuba-internet-censorship-2017/"><meta property="article:published_time" content="2017-08-28T00:00:00+00:00"><meta property="article:modified_time" content="2017-08-28T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Measuring Internet Censorship in Cuba's ParkNets"><meta name=twitter:description content="Image by Arturo Filastò (CC-BY-SA-3.0) A research study by the Open Observatory of Network Interference (OONI)
+
+
+Custom tests"><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/cuba-internet-censorship-2017/"><meta property="article:published_time" content="2017-08-28T00:00:00+00:00"><meta property="article:modified_time" content="2017-08-28T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Measuring Internet Censorship in Cuba's ParkNets"><meta name=twitter:description content="
+  
+  
+  Image by Arturo Filastò (CC-BY-SA-3.0)
+  
+
+
+A research study by the Open Observatory of Network Interference (OONI)
 View the pdf version of the report here.
 Table of contents
+
+
 Key Findings
+
+
 Introduction
+
+
 Background
+
+
 Network landscape and internet penetration
+
+
 ETECSA
+
+
 ParkNets
+
+
 Joven Club
+
+
 StreetNets
+
+
 El Paquete
+
+
 Summary
+
+
+
+
 Measuring Internet Censorship in Cuba
+
+
 Methodology
+
+
 Collection and analysis of OONI Probe network measurements
-Custom tests
-Findings
-Blocked websites
-News Media
-Political Criticism
-Human Rights Issues"><link rel=stylesheet type=text/css href=https://ooni.github.io/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=https://ooni.github.io/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+
+
+Custom tests"><link rel=stylesheet type=text/css href=/css/bootstrap.min.e2d14d1a1dcdfab34aba5963e76f1aa59cc3291ce469f4336bdbddcea78ab123.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
 <img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
 <img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Measuring Internet Censorship in Cuba's ParkNets</h1><div class=byline><span class=author>Maria Xynou, Arturo Filastò, Simone Basso</span>
 <span class=date>2017-08-28</span></div><div><img src=/post/cuba-internet-censorship-2017/cu-01.jpg title="Image by Arturo Filastò (CC-BY-SA-3.0)" srcset="/post/cuba-internet-censorship-2017/cu-01@2x.jpg 2x" alt="Image by Arturo Filastò (CC-BY-SA-3.0)">
-<span style=display:inline-block;font-style:italic;padding-bottom:20px>Image by Arturo Filastò (CC-BY-SA-3.0)</span></div><p>A research study by the Open Observatory of Network Interference (OONI)</p><p>View the <strong>pdf</strong> version of the report <a href=/documents/cuba-internet-censorship-2017.pdf>here</a>.</p><p><strong>Table of contents</strong></p><ul><li><p><a href=#key-findings>Key Findings</a></p></li><li><p><a href=#introduction>Introduction</a></p></li><li><p><a href=#background>Background</a></p></li><li><p><a href=#network-landscape-and-internet-penetration>Network landscape and internet penetration</a></p><ul><li><p><a href=#etecsa>ETECSA</a></p></li><li><p><a href=#parknets>ParkNets</a></p></li><li><p><a href=#joven-club>Joven Club</a></p></li><li><p><a href=#streetnets>StreetNets</a></p></li><li><p><a href=#el-paquete>El Paquete</a></p></li><li><p><a href=#summary>Summary</a></p></li></ul></li><li><p><a href=#measuring-internet-censorship-in-cuba>Measuring Internet Censorship in Cuba</a></p><ul><li><p><a href=#methodology>Methodology</a></p><ul><li><p><a href=#collection-and-analysis-of-ooniprobe-network-measurements>Collection and analysis of OONI Probe network measurements</a></p></li><li><p><a href=#custom-tests>Custom tests</a></p></li></ul></li></ul></li><li><p><a href=#findings>Findings</a></p><ul><li><p><a href=#blocked-websites>Blocked websites</a></p><ul><li><p><a href=#news-media>News Media</a></p></li><li><p><a href=#political-criticism>Political Criticism</a></p></li><li><p><a href=#human-rights-issues>Human Rights Issues</a></p></li><li><p><a href=#anonymity-and-circumvention-tools>Anonymity and Circumvention Tools</a></p></li><li><p><a href=#communication-tools>Communication Tools</a></p></li><li><p><a href=#culture>Culture</a></p></li><li><p><a href=#religion>Religion</a></p></li><li><p><a href=#militant>Militant</a></p></li></ul></li><li><p><a href=#skype-blocked>Skype blocked</a></p></li><li><p><a href=#deep-packet-inspection-technology>Deep Packet Inspection technology</a></p></li><li><p><a href=#huawei-equipment-in-cuba>Huawei equipment in Cuba</a></p></li><li><p><a href=#google-app-engine-blocked-by-google>Google App Engine blocked by Google</a></p></li><li><p><a href=#acknowledgement-of-limitations>Acknowledgement of limitations</a></p></li></ul></li><li><p><a href=#conclusion>Conclusion</a></p></li></ul><p><strong>OONI tests:</strong> <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a>,
+<span style=display:inline-block;font-style:italic;padding-bottom:20px>Image by Arturo Filastò (CC-BY-SA-3.0)</span></div><p>A research study by the Open Observatory of Network Interference (OONI)</p><p>View the <strong>pdf</strong> version of the report <a href=/documents/cuba-internet-censorship-2017.pdf>here</a>.</p><p><strong>Table of contents</strong></p><ul><li><p><a href=/post/cuba-internet-censorship-2017/#key-findings>Key Findings</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#introduction>Introduction</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#background>Background</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#network-landscape-and-internet-penetration>Network landscape and internet penetration</a></p><ul><li><p><a href=/post/cuba-internet-censorship-2017/#etecsa>ETECSA</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#parknets>ParkNets</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#joven-club>Joven Club</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#streetnets>StreetNets</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#el-paquete>El Paquete</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#summary>Summary</a></p></li></ul></li><li><p><a href=/post/cuba-internet-censorship-2017/#measuring-internet-censorship-in-cuba>Measuring Internet Censorship in Cuba</a></p><ul><li><p><a href=/post/cuba-internet-censorship-2017/#methodology>Methodology</a></p><ul><li><p><a href=/post/cuba-internet-censorship-2017/#collection-and-analysis-of-ooniprobe-network-measurements>Collection and analysis of OONI Probe network measurements</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#custom-tests>Custom tests</a></p></li></ul></li></ul></li><li><p><a href=/post/cuba-internet-censorship-2017/#findings>Findings</a></p><ul><li><p><a href=/post/cuba-internet-censorship-2017/#blocked-websites>Blocked websites</a></p><ul><li><p><a href=/post/cuba-internet-censorship-2017/#news-media>News Media</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#political-criticism>Political Criticism</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#human-rights-issues>Human Rights Issues</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#anonymity-and-circumvention-tools>Anonymity and Circumvention Tools</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#communication-tools>Communication Tools</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#culture>Culture</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#religion>Religion</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#militant>Militant</a></p></li></ul></li><li><p><a href=/post/cuba-internet-censorship-2017/#skype-blocked>Skype blocked</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#deep-packet-inspection-technology>Deep Packet Inspection technology</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#huawei-equipment-in-cuba>Huawei equipment in Cuba</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#google-app-engine-blocked-by-google>Google App Engine blocked by Google</a></p></li><li><p><a href=/post/cuba-internet-censorship-2017/#acknowledgement-of-limitations>Acknowledgement of limitations</a></p></li></ul></li><li><p><a href=/post/cuba-internet-censorship-2017/#conclusion>Conclusion</a></p></li></ul><p><strong>OONI tests:</strong> <a href=https://ooni.org/nettest/web-connectivity/>Web Connectivity</a>,
 <a href=https://ooni.org/nettest/http-host/>HTTP Host</a>, <a href=https://ooni.org/nettest/http-header-field-manipulation/>HTTP Header Field Manipulation</a>,
 <a href=https://ooni.org/nettest/http-invalid-request-line/>HTTP Invalid Request Line</a>,
 <a href=https://ooni.org/nettest/vanilla-tor/>Vanilla Tor</a>,
@@ -84,7 +180,7 @@ pages. Only the HTTP version of those sites was blocked, potentially
 enabling users to circumvent the censorship by merely accessing them
 over HTTPS.</p><p>Most of the blocked sites have one main thing in common: they <em>express
 criticism</em> towards the Castro regime, directly or indirectly.</p><p>The blocked sites include:</p><ul><li><p>News outlets and blogs expressing political criticism and covering human rights
-issues in Cuba;</p></li><li><p>The <a href="https://explorer.ooni.org/measurement/20170602T204322Z_AS27725_77Dv0jxB6oySsvhkyiBCOwFhH2BV6BD3IhgrP0bPHiLLUPXMXT?input=http:%2F%2Fwww.14ymedio.com%2F">independent news outlet</a> created by <a href="https://www.forbes.com/forbes/welcome/?toURL=https://www.forbes.com/sites/tiffanypham/2014/11/30/how-she-did-it-yoani-sanchez-time-100-most-influential-person-launches-cuban-news-outlet-14ymedio/&amp;refURL=&amp;referrer=#608feccd4d5b">Yoani Sanchez</a>, a prominent Cuban blogger;</p></li><li><p>The <a href="https://explorer.ooni.org/measurement/20170723T204926Z_AS27725_1xHuKtaN92RjPXcI7xnrm9SI1OrwZvvWKUK8filfQt94oyJVIp?input=http:%2F%2Fwww.cubafreepress.org">Cuban Free Press Project</a> which <a href=http://cubafreepress.org/>aims</a> to support journalists and independent writers;</p></li><li><p>A <a href="https://explorer.ooni.org/measurement/20170601T235618Z_AS27725_SpZcfWCu3e17GPv8jpXSOIQucnRNNPolNnG2OODcGQC8H70cbe?input=http:%2F%2Fconexioncubana.net">Cuban online forum</a>;</p></li><li><p>Pro-democracy sites;</p></li><li><p><a href="https://explorer.ooni.org/measurement/20170602T204322Z_AS27725_77Dv0jxB6oySsvhkyiBCOwFhH2BV6BD3IhgrP0bPHiLLUPXMXT?input=http:%2F%2Ffreedomhouse.org%2Fcountry%2Fcuba">Freedom House</a>, which <a href=https://freedomhouse.org/report/freedom-world/2017/cuba>publishes</a> annual reports on press freedom and net freedom;</p></li><li><p>“<a href="https://explorer.ooni.org/measurement/20170602T204322Z_AS27725_77Dv0jxB6oySsvhkyiBCOwFhH2BV6BD3IhgrP0bPHiLLUPXMXT?input=http:%2F%2Fwww.damasdeblanco.com">Ladies in White</a>”: Peaceful opposition <a href=http://www.damasdeblanco.com/>movement</a> led by the wives and female relatives of jailed dissidents;</p></li><li><p><a href="https://explorer.ooni.org/measurement/20170717T213558Z_AS27725_dEvgI4mTUuEHTiTTjSLx6Yb18MVUamp0vcvIKLCkjD72OnyyrI?input=http:%2F%2Fwww.cubasindical.org">Cuba Sindical</a>, which promotes <a href=http://cubasindical.org/>independent trade unions</a>;</p></li><li><p><a href="https://explorer.ooni.org/measurement/20170607T184235Z_AS27725_OItktnzsSSPe1V0nd5d3D8ZAfy9sk0T8VaT5zJyR60y1CKUm5p?input=http:%2F%2Fanonymouse.org">Anonymouse</a>, amongst other web proxies;</p></li><li><p>Anti-Castro groups: <a href="https://explorer.ooni.org/measurement/20170601T235618Z_AS27725_SpZcfWCu3e17GPv8jpXSOIQucnRNNPolNnG2OODcGQC8H70cbe?input=http:%2F%2Fwww.alpha66.org">Alpha 66</a> and “<a href="https://explorer.ooni.org/measurement/20170602T204322Z_AS27725_77Dv0jxB6oySsvhkyiBCOwFhH2BV6BD3IhgrP0bPHiLLUPXMXT?input=http:%2F%2Fwww.hermanos.org">Brothers to the Rescue</a>”.</p></li></ul><p>Interestingly enough though, various other international sites which
+issues in Cuba;</p></li><li><p>The <a href="https://explorer.ooni.org/measurement/20170602T204322Z_AS27725_77Dv0jxB6oySsvhkyiBCOwFhH2BV6BD3IhgrP0bPHiLLUPXMXT?input=http:%2F%2Fwww.14ymedio.com%2F">independent news outlet</a> created by <a href="https://www.forbes.com/forbes/welcome/?toURL=https://www.forbes.com/sites/tiffanypham/2014/11/30/how-she-did-it-yoani-sanchez-time-100-most-influential-person-launches-cuban-news-outlet-14ymedio/&refURL=&referrer=#608feccd4d5b">Yoani Sanchez</a>, a prominent Cuban blogger;</p></li><li><p>The <a href="https://explorer.ooni.org/measurement/20170723T204926Z_AS27725_1xHuKtaN92RjPXcI7xnrm9SI1OrwZvvWKUK8filfQt94oyJVIp?input=http:%2F%2Fwww.cubafreepress.org">Cuban Free Press Project</a> which <a href=http://cubafreepress.org/>aims</a> to support journalists and independent writers;</p></li><li><p>A <a href="https://explorer.ooni.org/measurement/20170601T235618Z_AS27725_SpZcfWCu3e17GPv8jpXSOIQucnRNNPolNnG2OODcGQC8H70cbe?input=http:%2F%2Fconexioncubana.net">Cuban online forum</a>;</p></li><li><p>Pro-democracy sites;</p></li><li><p><a href="https://explorer.ooni.org/measurement/20170602T204322Z_AS27725_77Dv0jxB6oySsvhkyiBCOwFhH2BV6BD3IhgrP0bPHiLLUPXMXT?input=http:%2F%2Ffreedomhouse.org%2Fcountry%2Fcuba">Freedom House</a>, which <a href=https://freedomhouse.org/report/freedom-world/2017/cuba>publishes</a> annual reports on press freedom and net freedom;</p></li><li><p>“<a href="https://explorer.ooni.org/measurement/20170602T204322Z_AS27725_77Dv0jxB6oySsvhkyiBCOwFhH2BV6BD3IhgrP0bPHiLLUPXMXT?input=http:%2F%2Fwww.damasdeblanco.com">Ladies in White</a>”: Peaceful opposition <a href=http://www.damasdeblanco.com/>movement</a> led by the wives and female relatives of jailed dissidents;</p></li><li><p><a href="https://explorer.ooni.org/measurement/20170717T213558Z_AS27725_dEvgI4mTUuEHTiTTjSLx6Yb18MVUamp0vcvIKLCkjD72OnyyrI?input=http:%2F%2Fwww.cubasindical.org">Cuba Sindical</a>, which promotes <a href=http://cubasindical.org/>independent trade unions</a>;</p></li><li><p><a href="https://explorer.ooni.org/measurement/20170607T184235Z_AS27725_OItktnzsSSPe1V0nd5d3D8ZAfy9sk0T8VaT5zJyR60y1CKUm5p?input=http:%2F%2Fanonymouse.org">Anonymouse</a>, amongst other web proxies;</p></li><li><p>Anti-Castro groups: <a href="https://explorer.ooni.org/measurement/20170601T235618Z_AS27725_SpZcfWCu3e17GPv8jpXSOIQucnRNNPolNnG2OODcGQC8H70cbe?input=http:%2F%2Fwww.alpha66.org">Alpha 66</a> and “<a href="https://explorer.ooni.org/measurement/20170602T204322Z_AS27725_77Dv0jxB6oySsvhkyiBCOwFhH2BV6BD3IhgrP0bPHiLLUPXMXT?input=http:%2F%2Fwww.hermanos.org">Brothers to the Rescue</a>”.</p></li></ul><p>Interestingly enough though, various other international sites which
 also express criticism - such as Reporters Without Borders’ <a href=https://rsf.org/en/predator/raul-castro-0>portrait of Cuba’s President</a>,
 presenting him as a “Predator of Press Freedom” - were found to be
 <a href="https://explorer.ooni.org/measurement/20170602T204322Z_AS27725_77Dv0jxB6oySsvhkyiBCOwFhH2BV6BD3IhgrP0bPHiLLUPXMXT?input=https:%2F%2Frsf.org%2Fen%2Fpredator%2Fraul-castro-0">accessible</a>
@@ -129,10 +225,10 @@ for its time. In 1952 though he <a href=http://www.people.fas.harvard.edu/~jidom
 outlawing the Cuban Communist Party, suspending the 1940 Constitution,
 and revoking most political liberties. High unemployment and general
 political dissatisfaction throughout the 1950s resulted in various
-<a href="https://books.google.gr/books?id=094JHT5JtCAC&amp;pg=PA37">organizations competing for public support to bring about political change</a>. The
+<a href="https://books.google.gr/books?id=094JHT5JtCAC&pg=PA37">organizations competing for public support to bring about political change</a>. The
 Cuban Revolution began in 1953, led by Fidel Castro’s 26th July Movement
 and its allies, overthrowing Batista’s dictatorship and forcing him into
-exile on 1st January 1959.</p><p>Castro <a href="https://books.google.gr/books?id=o2SFNdAiB7UC&amp;pg=PA123">legalized the Communist Party and promulgated the Agrarian Reform Law</a>.
+exile on 1st January 1959.</p><p>Castro <a href="https://books.google.gr/books?id=o2SFNdAiB7UC&pg=PA123">legalized the Communist Party and promulgated the Agrarian Reform Law</a>.
 Through a series of laws relating to land reform, passed between 1959 to
 1963, thousands of acres of farmland were expropriated, including those
 of large U.S. landholders. The nationalization of U.S.-citizen-held
@@ -177,7 +273,7 @@ login code and a password, both of which are long strings of numbers.
 ETECSA cards offer 30 minutes, 1 hour, or up to 5 hours of internet
 access. Once connected to a wifi, browsers present the Nauta captive
 portal, which is where users are required to enter the login code and
-password from their ETECSA cards.</p><p><img src=/post/cuba-internet-censorship-2017/cu-04.jpg alt="Nauta captive portal"></p><p>Image: Nauta captive portal</p><p>It’s worth noting that unless users have deleted all of their browser
+password from their ETECSA cards.</p><p><img alt="Nauta captive portal" src=/post/cuba-internet-censorship-2017/cu-04.jpg></p><p>Image: Nauta captive portal</p><p>It’s worth noting that unless users have deleted all of their browser
 cookies, they are unable to login via the Nauta portal. This in itself
 could potentially be viewed as a barrier to accessing the internet for
 users who don’t know how to delete their browser cookies (or who aren’t
@@ -186,7 +282,7 @@ usernames and passwords when they purchase permanent accounts from
 ETECSA, which they can charge and recharge for up to a year at a time.
 Access to the national web (intranet) is available for only <a href=http://www.etecsa.cu/internet_conectividad/internet/>0.10 CUC per hour</a>, while accessing the international web (internet) is more than ten times more expensive, at <a href=http://www.etecsa.cu/internet_conectividad/internet/>1.5 CUC per hour</a>. In addition to internet and/or intranet
 access, permanent accounts also provide Cubans with an @nauta.cu email
-address.</p><p><img src=/post/cuba-internet-censorship-2017/cu-05.jpg alt="ETECSA accounts"></p><p>Source: ETECSA, <a href=http://www.etecsa.cu/internet>http://www.etecsa.cu/internet</a>_conectividad/internet/</p><p>The ETECSA offices in Cuba require a passport to purchase temporary accounts. All foreigners and residents were required to present ID, although they were not linked to the account numbers being issued. Rather, IDs are likely noted to track the volume of purchases, potentially allowing identification of resellers.</p><p>While accounts should officially be purchased from the ETECSA offices,
+address.</p><p><img alt="ETECSA accounts" src=/post/cuba-internet-censorship-2017/cu-05.jpg></p><p>Source: ETECSA, <a href=http://www.etecsa.cu/internet>http://www.etecsa.cu/internet</a>_conectividad/internet/</p><p>The ETECSA offices in Cuba require a passport to purchase temporary accounts. All foreigners and residents were required to present ID, although they were not linked to the account numbers being issued. Rather, IDs are likely noted to track the volume of purchases, potentially allowing identification of resellers.</p><p>While accounts should officially be purchased from the ETECSA offices,
 many temporary accounts are resold on the streets at higher prices. Some
 Cubans stock up on ETECSA cards and sell them at twice the price on the
 streets, usually around public wifi hotspots. When purchased from an
@@ -197,7 +293,7 @@ may not always be close to public wifi hotspots), many (particularly
 tourists) resort to buying the more expensive ETECSA cards sold on the
 streets.</p><p>The table below illustrates the cost of internet access, depending on
 the type of account (temporary or permanent) and the amount of time
-used.</p><p><img src=/post/cuba-internet-censorship-2017/cu-06.png alt="Internet cost"></p><p>Source: ETECSA, <a href=http://www.etecsa.cu/internet>http://www.etecsa.cu/internet</a>_conectividad/internet/</p><p>On average, Cubans <a href=https://www.forbes.com/sites/kenrapoza/2016/04/26/guess-how-much-cubans-earn-per-month/>earn around 25 CUC</a>
+used.</p><p><img alt="Internet cost" src=/post/cuba-internet-censorship-2017/cu-06.png></p><p>Source: ETECSA, <a href=http://www.etecsa.cu/internet>http://www.etecsa.cu/internet</a>_conectividad/internet/</p><p>On average, Cubans <a href=https://www.forbes.com/sites/kenrapoza/2016/04/26/guess-how-much-cubans-earn-per-month/>earn around 25 CUC</a>
 per month. Since only 1 hour of internet use <a href=http://www.etecsa.cu/internet_conectividad/internet/>costs 1.5 CUC</a> (if bought
 from the official ETECSA offices, otherwise it may be more expensive),
 it’s likely that most Cubans restrict their use to the country’s
@@ -264,18 +360,18 @@ internet and Cuba’s intranet. It’s worth emphasizing that the speed of
 the internet at the Joven Club was incredibly fast, in comparison to
 that provided at public wifi hotspots.</p><p>While browsing Cuba’s intranet, we came across
 <a href=https://www.ecured.cu/>EcuRed</a>, which could be viewed as Cuba’s
-version of Wikipedia.</p><p><img src=/post/cuba-internet-censorship-2017/cu-08.jpg alt=EcuRed></p><p>Image: Accessing EcuRed via a computer at Joven Club</p><p>EcuRed, created by Cubans and only available in Spanish, serves as an
+version of Wikipedia.</p><p><img alt=EcuRed src=/post/cuba-internet-censorship-2017/cu-08.jpg></p><p>Image: Accessing EcuRed via a computer at Joven Club</p><p>EcuRed, created by Cubans and only available in Spanish, serves as an
 online encyclopedia which aims to “<a href=https://www.ecured.cu/Lo_que_EcuRed_no_es>create and disseminate knowledge from a decolonizing point of view</a>”. Similarly to
 Wikipedia, EcuRed offers Cubans an interactive space to edit and publish
 open content. Unlike Wikipedia, EcuRed includes some “protected pages”
 that can <a href=https://www.ecured.cu/index.php/EcuRed:Pol%C3%ADticas_de_Moderaci%C3%B3n>only be edited by the platform’s moderators</a>.
 EcuRed’s content falls under a variety of different categories, ranging
 from art, culture and sports to science, history and politics, as
-illustrated below.</p><p><img src=/post/cuba-internet-censorship-2017/cu-09.png alt="EcuRed content categories"></p><p>Source: EcuRed, <code>https://www.ecured.cu/index.php/EcuRed:%C3%81rbol_de_Categor%C3%ADas</code></p><p>It’s worth noting though that most of its content is written from a
+illustrated below.</p><p><img alt="EcuRed content categories" src=/post/cuba-internet-censorship-2017/cu-09.png></p><p>Source: EcuRed, <code>https://www.ecured.cu/index.php/EcuRed:%C3%81rbol_de_Categor%C3%ADas</code></p><p>It’s worth noting though that most of its content is written from a
 Cuban lens.</p><p>Recently, EcuRed shared the <a href=http://ecured.cubava.cu/2017/05/30/los-cien-de-ecured-mayo-de-2017/>100 most read articles</a>
 on its platform. The top 13 articles include specialized topics, like
 chemistry, biology and maths, indicating that EcuRed likely has a
-limited (and specialized) audience.</p><p><img src=/post/cuba-internet-censorship-2017/cu-10.png alt="Top EcuRed articles"></p><p>Source: The hundred of EcuRed (May 2017),<a href=http://ecured.cubava.cu/2017/05/30/los-cien-de-ecured-mayo-de-2017/>http://ecured.cubava.cu/2017/05/30/los-cien-de-ecured-mayo-de-2017/</a></p><p>EcuRed also has a <a href=http://ecured.cubava.cu/>blog</a>, which aims to
+limited (and specialized) audience.</p><p><img alt="Top EcuRed articles" src=/post/cuba-internet-censorship-2017/cu-10.png></p><p>Source: The hundred of EcuRed (May 2017),<a href=http://ecured.cubava.cu/2017/05/30/los-cien-de-ecured-mayo-de-2017/>http://ecured.cubava.cu/2017/05/30/los-cien-de-ecured-mayo-de-2017/</a></p><p>EcuRed also has a <a href=http://ecured.cubava.cu/>blog</a>, which aims to
 “<a href=http://ecured.cubava.cu/%C2%BFquienes-somos/>provide a space for the free expression of all members of the EcuRed
 community</a>”, as well as a
 <a href=http://ecured.cubava.cu/ecuclubs/>social network</a> (called
@@ -295,7 +391,7 @@ by Cubans.</p><p><a href=http://cubava.cu/>Reflejos</a> is another
 which serves as a blog hosting platform. It enables Cubans to publish
 blogs on a variety of topics. The top blogs that the site recommends
 include those of the Ministry of Communications and the EcuRed blog,
-amongst others.</p><p><img src=/post/cuba-internet-censorship-2017/cu-11.png alt=Reflejos></p><p>Source: Reflejos (translated to English), <a href=http://cubava.cu/>http://cubava.cu/</a></p><p>Two years ago, students and employees at the University of Information
+amongst others.</p><p><img alt=Reflejos src=/post/cuba-internet-censorship-2017/cu-11.png></p><p>Source: Reflejos (translated to English), <a href=http://cubava.cu/>http://cubava.cu/</a></p><p>Two years ago, students and employees at the University of Information
 Science
 <a href=https://laredcubana.blogspot.it/2016/07/cubas-intranet-portal-is-now-on-web.html>launched</a>
 a <a href=https://www.redcuba.cu/>digital portal</a> designed to unify all
@@ -719,9 +815,9 @@ in Cuba as well.</p><p>Cuba’s first independent online news outlet (created in
 This site is no longer operational, and (when accessed outside of Cuba)
 its domain redirects to “Havana City Hotels”. The image below, taken
 from the <a href=https://archive.org/>Internet Archive</a>, shows what La Nueva
-Cuba used to look like, when it operated as a news site.</p><p><img src=/post/cuba-internet-censorship-2017/cu-14.png alt="La Nueva Cuba"></p><p>Source: Internet Archive, La Nueva Cuba, <a href=https://web.archive.org/web/20050831051647/http://www.lanuevacuba.com:80/master.htm>https://web.archive.org/web/20050831051647/http://www.lanuevacuba.com:80/master.htm</a></p><p>La Nueva Cuba used to feature articles covering human rights issues,
+Cuba used to look like, when it operated as a news site.</p><p><img alt="La Nueva Cuba" src=/post/cuba-internet-censorship-2017/cu-14.png></p><p>Source: Internet Archive, La Nueva Cuba, <a href=https://web.archive.org/web/20050831051647/http://www.lanuevacuba.com:80/master.htm>https://web.archive.org/web/20050831051647/http://www.lanuevacuba.com:80/master.htm</a></p><p>La Nueva Cuba used to feature articles covering human rights issues,
 such as violence against political dissidents, possibly explaining why
-it was ultimately shut down.</p><p><img src=/post/cuba-internet-censorship-2017/cu-15.png alt="La Nueva Cuba articles"></p><p>Source: Internet Archive, La Nueva Cuba,https://web.archive.org/web/20050831211614/http://www.lanuevacuba.com:80/oposicion-debate.htm</p><p><a href=https://www.forbes.com/sites/tiffanypham/2014/11/30/how-she-did-it-yoani-sanchez-time-100-most-influential-person-launches-cuban-news-outlet-14ymedio/#608feccd4d5b>Yoani Sanchez</a>,
+it was ultimately shut down.</p><p><img alt="La Nueva Cuba articles" src=/post/cuba-internet-censorship-2017/cu-15.png></p><p>Source: Internet Archive, La Nueva Cuba,https://web.archive.org/web/20050831211614/http://www.lanuevacuba.com:80/oposicion-debate.htm</p><p><a href=https://www.forbes.com/sites/tiffanypham/2014/11/30/how-she-did-it-yoani-sanchez-time-100-most-influential-person-launches-cuban-news-outlet-14ymedio/#608feccd4d5b>Yoani Sanchez</a>,
 a Cuban blogger who received international fame for her <a href=https://generacionyen.wordpress.com/>critical portrayal of life in Cuba</a> under
 its current government, co-founded the next independent Cuban news
 outlet: <a href=http://www.14ymedio.com/>14ymedio</a>. In light of limited
@@ -811,7 +907,7 @@ status to Cuba by measuring the protection of political rights and civil
 liberties on a scale of 1-7, where 1 is “Most Free” and 7 is “Least
 Free”. Overall, the country received a score of 15/100, where 0 is
 “Least Free” and 100 is “Most Free”, placing it amongst the “Least Free”
-countries in the world.</p><p><img src=/post/cuba-internet-censorship-2017/cu-16.png alt="Freedom House Cuba Report 2017"></p><p>Source: Freedom House, Cuba 2017 report, <a href=https://freedomhouse.org/report/freedom-world/2017/cuba>https://freedomhouse.org/report/freedom-world/2017/cuba</a></p><p>Freedom House also regularly publishes press releases which cover human
+countries in the world.</p><p><img alt="Freedom House Cuba Report 2017" src=/post/cuba-internet-censorship-2017/cu-16.png></p><p>Source: Freedom House, Cuba 2017 report, <a href=https://freedomhouse.org/report/freedom-world/2017/cuba>https://freedomhouse.org/report/freedom-world/2017/cuba</a></p><p>Freedom House also regularly publishes press releases which cover human
 rights issues in Cuba, such as the <a href=https://freedomhouse.org/article/cuba-arrests-target-human-rights-defenders>crackdown on human rights defenders</a>.
 As part of our study, we found Freedom House’s domain - including its
 reports on Cuba - to be
@@ -827,7 +923,7 @@ and female relatives of imprisoned dissidents have been <a href=https://www.fore
 on the streets, dressed in white clothing and carrying flowers. They are
 united by a <a href=http://www.damasdeblanco.com/actividades/actividades.asp>common goal</a>: to
 march peacefully demanding the freedom of their husbands, parents,
-children, brothers, and nephews.</p><p><img src=/post/cuba-internet-censorship-2017/cu-17.png alt="Las Damas de Blanco"></p><p>Source: Las Damas de Blanco, <a href=http://www.damasdeblanco.com/actividades/actividades.asp>http://www.damasdeblanco.com/actividades/actividades.asp</a></p><p>Despite protesting peacefully, they have been subjected to harassment.
+children, brothers, and nephews.</p><p><img alt="Las Damas de Blanco" src=/post/cuba-internet-censorship-2017/cu-17.png></p><p>Source: Las Damas de Blanco, <a href=http://www.damasdeblanco.com/actividades/actividades.asp>http://www.damasdeblanco.com/actividades/actividades.asp</a></p><p>Despite protesting peacefully, they have been subjected to harassment.
 Recently, for example, it was
 <a href=http://www.huffingtonpost.com/yoani-sanchez/ladies-in-white-attacked_b_504817.html>reported</a>
 that they were attacked by a government sanctioned mob in Havana. Their
@@ -889,7 +985,7 @@ the Diocese of Pinar del Rio, which aims to provide a platform for
 <a href=http://cubanuestra.nu/>Cuba Nuestra</a>, on the other hand, is the blog
 of Swedes, who describe their experiences from living in Cuba (but also
 share stories from life in Sweden).</p><h4 id=religion>Religion</h4><p><a href=http://www.idealpress.com/>IDEAL magazine</a> is a religious site that
-<a href=http://www.idealpress.com/sobreideal#&amp;panel1-3>aims</a> to “promote
+<a href=http://www.idealpress.com/sobreideal#&panel1-3>aims</a> to “promote
 democracy and freedom linked to Christian thought”. To this end, it
 publishes articles, reports, comments, testimonies, poetry and humor in
 relation to Cuba and the Christian faith. As part of this study, we
@@ -929,7 +1025,7 @@ through <a href=https://ooni.org/nettest/http-host/>OONI’s HTTP Host test</a>)
 confirm that Deep Packet Inspection (DPI) technology was used to block
 access to sites and services in Cuba. Through packet captures done on
 the server-side, we found that the request of the client never arrived
-and was RST by the DPI middlebox, as illustrated below.</p><p><img src=/post/cuba-internet-censorship-2017/cu-18.png alt="RST injection"></p><p>Moreover, we found that the connection was also RST (after having served
+and was RST by the DPI middlebox, as illustrated below.</p><p><img alt="RST injection" src=/post/cuba-internet-censorship-2017/cu-18.png></p><p>Moreover, we found that the connection was also RST (after having served
 the injected blockpage) on the client as well.</p><p>To further understand the characteristics of the DPI technology, we
 wrote a test that sends a packet only containing the blocked domain. The
 purpose of this experiment was to understand whether the blocking
@@ -956,7 +1052,7 @@ which is generally a “<a href=https://archive.fo/Wlq6e>unified software suite 
 access the internet - appears to have been written by Chinese
 developers, since its source code contains comments written in Chinese.
 This indicates that ETECSA likely hired Chinese developers to implement
-the portal.</p><p><img src=/post/cuba-internet-censorship-2017/cu-19.png alt="Nauta captive portal containing Chinese comments in the source code"></p><p>Image: ETECSA login page containing Chinese comments in source code</p><p>We also noticed that the server of the captive portal replies with the
+the portal.</p><p><img alt="Nauta captive portal containing Chinese comments in the source code" src=/post/cuba-internet-censorship-2017/cu-19.png></p><p>Image: ETECSA login page containing Chinese comments in source code</p><p>We also noticed that the server of the captive portal replies with the
 following server header: <strong>OpenAS</strong>. This too is <a href=https://archive.fo/gHxX1>associated to Huawei equipment</a>.</p><p>While it’s clear that Cuba is using Huawei access points, it remains
 unclear to us whether and to what extent Huawei equipment is actually
 being used to implement internet censorship in the country.</p><h3 id=google-app-engine-blocked-by-google>Google App Engine blocked by Google</h3><p>To measure the speed and performance of networks in Cuba, we attempted
@@ -1005,7 +1101,7 @@ across Cuba.</p><p>Web proxies, like <a href=http://anonymouse.org/>Anonymouse</
 those found to be blocked, limiting Cubans’ ability to circumvent
 censorship. It’s worth noting though that the <a href=https://www.torproject.org/>Tor anonymity network</a> was found to be
 <a href=https://explorer.ooni.org/measurement/20170607T175300Z_AS27725_XXfB14TYx5szrWoFiokwjWdQZIJQIuEtGWpkfaojBEPdiNsc3u>accessible</a>
-across the country. This is likely due to the fact that <a href="https://metrics.torproject.org/userstats-relay-country.html?start=2017-05-30&amp;end=2017-08-28&amp;country=cu">Cuba has relatively few Tor users</a>.</p><p>Deep Packet Inspection (DPI) technology was found to be blocking sites
+across the country. This is likely due to the fact that <a href="https://metrics.torproject.org/userstats-relay-country.html?start=2017-05-30&end=2017-08-28&country=cu">Cuba has relatively few Tor users</a>.</p><p>Deep Packet Inspection (DPI) technology was found to be blocking sites
 by resetting connections and serving (blank) block pages. Through
 latency measurements, we were also able to confirm that the blocking
 server is most likely located in Havana (and in any case, for sure in

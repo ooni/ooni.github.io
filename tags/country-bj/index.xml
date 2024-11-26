@@ -1,6 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>country-bj on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-bj/</link><description>Recent content in country-bj on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-bj/index.xml" rel="self" type="application/rss+xml"/><item><title>Benin: Social media blocking and Internet blackout amid 2019 elections</title><link>https://ooni.github.io/post/2019-benin-social-media-blocking/</link><pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-benin-social-media-blocking/</guid><description>Two days ago, social media was reportedly blocked and access to the Internet was shutdown in Benin during its 2019 parliamentary elections.
-In this report, the Open Observatory of Network Interference (OONI) and the Center for Applied Internet Data Analysis (CAIDA) teams share OONI, IODA, and RIPE Atlas network measurement data that corroborate and provide insight into these recent censorship events in Benin.
-Background
-Social media blocking
-OONI measurements
-RIPE Atlas measurements</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Bj on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-bj/</link><description>Recent content in Country-Bj on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 30 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-bj/index.xml" rel="self" type="application/rss+xml"/><item><title>Benin: Social media blocking and Internet blackout amid 2019 elections</title><link>https://ooni.github.io/post/2019-benin-social-media-blocking/</link><pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-benin-social-media-blocking/</guid><description>&lt;p>Two days ago, social media was &lt;a href="https://netblocks.org/reports/internet-blocked-in-benin-on-election-day-aAwqknyM">reportedly&lt;/a> blocked and access to the Internet was shutdown in Benin during its 2019 parliamentary elections.&lt;/p>
+&lt;p>In this report, the &lt;a href="https://ooni.io/">Open Observatory of Network Interference (OONI)&lt;/a> and the &lt;a href="https://www.caida.org/">Center for Applied Internet Data Analysis (CAIDA)&lt;/a> teams share &lt;a href="https://api.ooni.io/files/by_country/BJ">OONI&lt;/a>, &lt;a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/BJ&amp;lastView=overview&amp;from=1556385008&amp;until=1556557928">IODA&lt;/a>, and &lt;a href="https://atlas.ripe.net/">RIPE Atlas&lt;/a> network measurement data that corroborate and provide insight into these recent censorship events in Benin.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2019-benin-social-media-blocking/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2019-benin-social-media-blocking/#social-media-blocking">Social media blocking&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2019-benin-social-media-blocking/#ooni-measurements">OONI measurements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2019-benin-social-media-blocking/#ripe-atlas-measurements">RIPE Atlas measurements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2019-benin-social-media-blocking/#internet-blackout">Internet blackout&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2019-benin-social-media-blocking/#about-ioda">About IODA&lt;/a>&lt;/p></description></item></channel></rss>

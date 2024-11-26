@@ -1,22 +1,141 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>elections on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/elections/</link><description>Recent content in elections on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/elections/index.xml" rel="self" type="application/rss+xml"/><item><title>Zambia: Social media blocked amid 2021 general elections</title><link>https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/</guid><description>Recently, on 12th August 2021, general elections were held in Zambia, during which access to popular online social media platforms was reportedly blocked.
-In this report, we share relevant OONI data on the blocking of WhatsApp, Twitter, and Facebook amid Zambia’s 2021 general election.
-Background
-Methods
-Findings
-Blocking of WhatsApp
-Blocking of Twitter and Facebook
-Conclusion
-Acknowledgements
-Background While Zambia hasn’t experienced pervasive forms of internet censorship (such as the blocking of popular social media apps) over the last years, various forms of censorship have been reported in the country.</description></item><item><title>Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election</title><link>https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/</link><pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/</guid><description>Last week, amid its 2021 general election, Uganda was disconnected from the internet entirely. The country experienced a widespread internet blackout that lasted 4 days, starting on the eve of the election (13th January 2021) and ending in the morning of 18th January 2021. In the days leading up to the election, access to major social media platforms and circumvention tools was blocked &amp;ndash; even when the OTT (Over the Top) tax (commonly referred to as the “Social Media Tax”) was paid.</description></item><item><title>Tanzania blocks social media (and Tor?) on election day</title><link>https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/</link><pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/</guid><description>Starting from yesterday (27th October 2020) &amp;ndash; on the eve of Tanzania&amp;rsquo;s 2020 general election &amp;ndash; OONI measurements continue to show the ongoing blocking of social media (and of the Tor circumvention tool) in Tanzania.
-In this report, we share OONI data collected from Tanzania on these blocks, as well as relevant instructions for further OONI Probe testing.
-Methods
-Blocking of social media
-WhatsApp
-Facebook Messenger
-Telegram
-Social media websites</description></item><item><title>Belarus protests: From internet outages to pervasive website censorship</title><link>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</link><pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</guid><description>Image: Block page served in Belarus.
-This report was prepared in collaboration with Human Constanta and the Digital Observers Community Belarus.
-More than 70 websites have been blocked in Belarus over the last weeks, following a controversial presidential election and amid ongoing anti-government protests. Many of the blocked sites include news media and are related to the elections, while several other sites expressing political criticism were blocked as well. At the time of writing, many of these sites remain blocked in Belarus.</description></item><item><title>Burundi blocks social media amid 2020 general election</title><link>https://ooni.github.io/post/2020-burundi-blocks-social-media-amid-election/</link><pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-burundi-blocks-social-media-amid-election/</guid><description>Yesterday, access to social media was reportedly blocked in Burundi amid its 2020 general election.
-The lead-up to the election was marred by violence and unrest, as seven candidates vied to replace Incumbent President Nkurunziza, who has been in power over the last 15 years. Despite widespread deadly protests and a coup attempt, President Nkurunziza won a third term in 2015 following disputed elections. While President Nkurunziza reportedly announced that he would not contest the next elections, he is set to become a “supreme guide to patriotism” as he steps down now in 2020.</description></item><item><title>The Gambia: Internet Shutdown during 2016 Presidential Election</title><link>https://ooni.github.io/post/gambia-internet-shutdown/</link><pubDate>Fri, 09 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/gambia-internet-shutdown/</guid><description>Last week we attempted to perform OONI network measurement tests in the Gambia to examine whether websites were blocked during its 2016 presidential election. But merely a few hours after we connected our probe to perform tests, it stopped working completely.
-We suspected that this was due to an internet shutdown. To confirm this, we referred to third-party data to examine whether a country-wide internet blackout was taking place.
-In this report, we summarize some of our key findings pertaining to the internet shutdown that appears to have occurred in the Gambia on the eve of its 2016 presidential election.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elections on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/elections/</link><description>Recent content in Elections on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/elections/index.xml" rel="self" type="application/rss+xml"/><item><title>Zambia: Social media blocked amid 2021 general elections</title><link>https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/images/zm-whatsapp-measurement.png">
+ &lt;img
+ src="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/images/zm-whatsapp-measurement_hu4701194345777220979.png"
+
+ 
+
+ title="Blocking of WhatsApp"
+ 
+ alt="Blocking of WhatsApp"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Recently, on 12th August 2021, &lt;a href="https://www.elections.org.zm/category/2021-general-election/">general elections&lt;/a>
+were held in Zambia, during which access to popular online social media
+platforms was &lt;a href="https://edition.cnn.com/2021/08/12/africa/zambia-election-social-media-blackout-intl/index.html">reportedly blocked&lt;/a>.&lt;/p>
+&lt;p>In this report, we share relevant &lt;a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;probe_cc=ZM">OONI data&lt;/a>
+on the blocking of
+&lt;a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-08-10&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">WhatsApp&lt;/a>,
+&lt;a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;domain=twitter.com&amp;probe_cc=ZM&amp;only=anomalies">Twitter&lt;/a>,
+and
+&lt;a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;domain=www.facebook.com&amp;probe_cc=ZM&amp;only=anomalies">Facebook&lt;/a>
+amid Zambia’s 2021 general election.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#methods">Methods&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#findings">Findings&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#blocking-of-whatsapp">Blocking of WhatsApp&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#blocking-of-twitter-and-facebook">Blocking of Twitter and Facebook&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#conclusion">Conclusion&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#acknowledgements">Acknowledgements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="background">Background&lt;/h1>
+&lt;p>While Zambia hasn’t experienced pervasive forms of internet censorship
+(such as the blocking of popular social media apps) over the last years,
+various forms of
+&lt;a href="https://ooni.org/post/zambia-election-monitoring/#previous-cases-of-internet-censorship-and-surveillance">censorship&lt;/a>
+have been reported in the country.&lt;/p></description></item><item><title>Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election</title><link>https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/</link><pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/</guid><description>&lt;p>Last week, amid its &lt;a href="https://www.bbc.com/news/world-africa-55573581">2021 general election&lt;/a>, Uganda was
+&lt;a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=-1w&amp;until=now">disconnected&lt;/a>
+from the internet entirely. The country experienced a &lt;a href="https://www.accessnow.org/the-world-is-watching-uganda-elections/">widespread internet blackout that lasted 4 days&lt;/a>,
+starting on the eve of the election (13th January 2021) and ending in
+the morning of 18th January 2021. In the days leading up to the
+election, access to major social media platforms and circumvention tools
+was &lt;a href="https://www.facebook.com/MTNUG/posts/5644233898936144">blocked&lt;/a>
+&amp;ndash; &lt;em>even when the &lt;a href="https://www.mtn.co.ug/product/ott-tax/">OTT (Over the Top) tax&lt;/a> (commonly referred to as
+the “Social Media Tax”) was paid&lt;/em>.&lt;/p></description></item><item><title>Tanzania blocks social media (and Tor?) on election day</title><link>https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/</link><pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image_hu15442670431547280122.png"
+
+ 
+
+ title="WhatsApp blocked in Tanzania on election day"
+ 
+ alt="WhatsApp blocked in Tanzania on election day"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Starting from yesterday (27th October 2020) &amp;ndash; &lt;em>on the eve of
+&lt;a href="https://www.washingtonpost.com/world/africa/tanzania-election-tanzanias-democracy-faces-a-critical-test-in-wednesdays-presidential-election/2020/10/27/b1620b64-17c3-11eb-8bda-814ca56e138b_story.html">Tanzania&amp;rsquo;s 2020 general election&lt;/a>&lt;/em>
+&amp;ndash; OONI measurements continue to
+&lt;a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ&amp;only=anomalies">show&lt;/a>
+the ongoing blocking of social media (and of the
+&lt;a href="https://www.torproject.org/">Tor&lt;/a> circumvention tool) in Tanzania.&lt;/p>
+&lt;p>In this report, we share &lt;a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ&amp;only=anomalies">OONI data collected from Tanzania&lt;/a>
+on these blocks, as well as relevant instructions for further OONI Probe
+testing.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/#methods">Methods&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/#blocking-of-social-media">Blocking of social media&lt;/a>&lt;/p></description></item><item><title>Belarus protests: From internet outages to pervasive website censorship</title><link>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</link><pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/images/by-blockpage.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/images/by-blockpage_hu6980547774342713408.png"
+
+ 
+
+ title="Block page served in Belarus"
+ 
+ alt="Block page served in Belarus"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;strong>Image:&lt;/strong> Block page served in Belarus.&lt;/p>
+&lt;p>&lt;em>This report was prepared in collaboration with &lt;a href="https://humanconstanta.by/">Human Constanta&lt;/a> and the &lt;a href="https://t.me/zabynet">Digital Observers Community Belarus&lt;/a>.&lt;/em>&lt;/p>
+&lt;p>More than 70 websites have been &lt;a href="https://www.hrw.org/news/2020/08/28/belarus-internet-disruptions-online-censorship">blocked&lt;/a>
+in Belarus over the last weeks, following a &lt;a href="https://www.theguardian.com/world/2020/aug/10/its-outrageous-belarus-election-result-sparks-night-of-defiance-and-violence">controversial presidential election&lt;/a>
+and amid &lt;a href="https://time.com/5880593/belarus-protests-lukashenko/">ongoing anti-government protests&lt;/a>. Many
+of the blocked sites include news media and are related to the
+elections, while several other sites expressing political criticism were
+blocked as well. At the time of writing, many of these sites remain
+blocked in Belarus.&lt;/p></description></item><item><title>Burundi blocks social media amid 2020 general election</title><link>https://ooni.github.io/post/2020-burundi-blocks-social-media-amid-election/</link><pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-burundi-blocks-social-media-amid-election/</guid><description>&lt;p>Yesterday, access to &lt;a href="https://www.bbc.com/news/world-africa-52737081">social media was reportedly blocked in Burundi&lt;/a> amid its 2020
+general election.&lt;/p>
+&lt;p>The lead-up to the election was &lt;a href="https://www.aljazeera.com/news/2020/05/lead-up-burundi-election-marred-unrest-200517163130410.html">marred by violence and unrest&lt;/a>,
+as seven candidates vied to replace Incumbent President Nkurunziza, who
+has been in power over the last 15 years. Despite &lt;a href="https://www.theguardian.com/world/2015/may/07/burundi-protests-deaths-man-set-ablaze">widespread deadly protests&lt;/a>
+and a &lt;a href="https://www.bbc.com/news/world-africa-32724083">coup attempt&lt;/a>,
+President Nkurunziza won a third term in 2015 following &lt;a href="https://www.theguardian.com/world/2015/jul/24/burundi-pierre-nkurunziza-wins-third-term-disputed-election">disputed elections&lt;/a>.
+While President Nkurunziza &lt;a href="https://www.dandc.eu/en/article/burundi-will-hold-presidential-parliamentary-and-municipal-elections-2020">reportedly announced&lt;/a>
+that he would not contest the next elections, he is set to become a
+“&lt;a href="https://www.bbc.com/news/world-africa-52682171">supreme guide to patriotism&lt;/a>” as he
+steps down now in 2020.&lt;/p></description></item><item><title>The Gambia: Internet Shutdown during 2016 Presidential Election</title><link>https://ooni.github.io/post/gambia-internet-shutdown/</link><pubDate>Fri, 09 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/gambia-internet-shutdown/</guid><description>&lt;p>Last week we attempted to perform &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI network measurement tests&lt;/a> in the Gambia
+to examine whether websites were blocked during its 2016 presidential election.
+But merely a few hours after we connected our probe to perform tests, it stopped
+working completely.&lt;/p>
+&lt;p>We suspected that this was due to an internet shutdown. To confirm this, we
+referred to third-party data to examine whether a country-wide internet blackout
+was taking place.&lt;/p>
+&lt;p>In this report, we summarize some of our key findings pertaining to the internet
+shutdown that appears to have occurred in the Gambia on the eve of its 2016
+presidential election.&lt;/p></description></item></channel></rss>

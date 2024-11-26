@@ -1,48 +1,406 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://ooni.github.io/support/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/support/ooni-run/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-run/</guid><description>User Guide: OONI Run Last updated: 18th November 2024
-OONI Run is a web platform that you can use to generate links to coordinate OONI Probe website testing. Specifically, you can use OONI Run to create links for:
-Testing websites (of your choice) for censorship; Coordinating website censorship testing with other OONI Probe users. OONI Run links only work with the OONI Probe mobile app. To learn how to use OONI Probe, please refer to our OONI Probe mobile app user guide.</description></item><item><title>Coordinating OONI censorship measurement campaigns</title><link>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</guid><description>Last updated: 21st March 2023
-Internet censorship around the world often emerges during political events, such as elections or protests. The abrupt emergence of new blocks requires rapid response in terms of measurement, particularly if the blocks are short-lived. Such measurement can help with the collection of data that can potentially serve as evidence of internet censorship, supporting the efforts of journalists, researchers, and human rights defenders challenging the blocks.</description></item><item><title>Frequently Asked Questions (FAQ)</title><link>https://ooni.github.io/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/faq/</guid><description>This Frequently Asked Questions (FAQ) section aims to address the questions that we are frequently asked by the community.
-Translations:
-Español, Preguntas frecuentes (FAQ) العربية, Frequently Asked Questions (FAQ) فارسی, Frequently Asked Questions (FAQ) Kiswahili, Maswali Yanayoulizwa Mara kwa Mara (MYM) Русский, Часто задаваемые вопросы Khmer, Frequently Asked Questions (FAQ) by DigitalHub101 Tiếng Việt, Trang Những Câu Hỏi Thường Gặp မြန်မာ, မကြာခဏ မေးမြန်းခံရလေ့ရှိသော မေးခွန်းများ Are there other questions you would like us to address?</description></item><item><title>GitHub: Updating the Citizen Lab test lists</title><link>https://ooni.github.io/support/github-test-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/github-test-lists/</guid><description>This guide is meant for GitHub users and provides information related to updating the Citizen Lab test lists for website censorship testing. If you are not a GitHub user, please refer to our Test Lists Editor.
-By contributing to the Citizen Lab test lists, you can support website censorship testing by OONI Probe users around the world.
-Before getting started, please refer to our documentation to learn all about test lists.</description></item><item><title>Interpreting OONI data</title><link>https://ooni.github.io/support/interpreting-ooni-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/interpreting-ooni-data/</guid><description>This documentation explains how you can interpret OONI data. It’s primarily intended for researchers interested in investigating internet censorship around the world. Knowledge of some internet basics (i.e how the internet works) is required, though you can also refer to the OONI Glossary for the explanation of relevant terms.
-We also recommend referring to the OONI Explorer user guide for accessing OONI data.
-OONI data What is OONI data? Types of OONI Probe tests How to access OONI data?</description></item><item><title>OONI Glossary</title><link>https://ooni.github.io/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/glossary/</guid><description>Last updated: 3rd July 2023
-This glossary contains brief explanations for terms used in OONI apps, methodologies, and research reports.
-Translations:
-Español, OONI Glosario العربية, OONI Glossary فارسی, OONI Glossary Kiswahili, OONI Faharasa Русский, OONI Глоссарий If you would like to see additional terms in this glossary, please open a pull request or send us an email.
-API
-AS
-ASN
-BGP
-Blocklist
-Block page
-Caching
-Circumvention tools
-Client
-Data processing pipeline</description></item><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-outreach-kit/</guid><description>Community engagement is at the heart of OONI’s work, as OONI data on internet censorship depends on people running OONI Probe around the world.
-Interested in engaging your communities with OONI censorship measurement?
-The OONI Outreach Kit includes materials that you are encouraged to use as part of your OONI community engagement efforts.
-The OONI Outreach Kit is translated into Russian, French, Spanish, Swahili, Arabic, Farsi.
-OONI Brochures OONI Probe Flyers and Leaflets OONI Explorer Flyers Internet Censorship Flyers OONI Screencasts OONI Workshop Slides OONI Resources OONI Brochures We provide 2 OONI brochures that include information about using OONI tools and data for investigating internet censorship around the world.</description></item><item><title>User Guide: OONI Explorer</title><link>https://ooni.github.io/support/ooni-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-explorer/</guid><description>Last updated: 15th March 2023
-OONI Explorer is an open data resource on internet censorship around the world.
-This user guide provides step-by-step instructions on how to use OONI Explorer to investigate internet censorship worldwide.
-What you will get from this guide:
-Learn how to use OONI Explorer to:
-Discover blocked websites and apps around the world
-Access measurement data that can serve as evidence of internet censorship
-Generate charts based on aggregate views of OONI data</description></item><item><title>User Guide: OONI Probe Command Line Interface (CLI)</title><link>https://ooni.github.io/support/ooni-probe-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-cli/</guid><description>Last updated: 29th August 2022
-OONI Probe CLI version: 3.9.2
-OONI Probe is free and open source software that you can run to measure internet censorship and other forms of network interference.
-This user guide provides step-by-step instructions on how to install and use the OONI Probe Command Line Interface (CLI).
-You can run OONI Probe CLI on macOS, Debian/Ubuntu Linux, and on Raspberry Pis.
-What you will get from this guide:</description></item><item><title>User Guide: OONI Probe Desktop App</title><link>https://ooni.github.io/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-desktop/</guid><description>Last updated: 25th October 2022
-OONI Probe Desktop version: 3.7.0
-Access the OONI Probe Desktop user guide in other languages: فارسی, Русский, Deutsch, Türkçe, Tiếng Việt, Português
-OONI Probe is a free and open source app that you can use to measure internet censorship and other forms of network interference. This user guide provides step-by-step instructions on how to install, run, and customize your use of the OONI Probe desktop app.</description></item><item><title>User Guide: OONI Probe Mobile App</title><link>https://ooni.github.io/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-mobile/</guid><description>Last updated: 18th November 2024
-OONI Probe Mobile version: 3.7.1, 4.0.0 (for OONI Run section only)
-Access the user guide in other languages: فارسی, Русский, Deutsch, Türkçe, Tiếng Việt, မြန်မာ
-OONI Probe is a free and open source app that you can use to measure internet censorship and other forms of network interference. This user guide provides step-by-step instructions on how to install, run, and customize your use of the OONI Probe mobile app.</description></item><item><title>User Guide: OONI Test Lists Editor</title><link>https://ooni.github.io/support/test-lists-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/test-lists-editor/</guid><description>Last updated: 7th September 2022
-The OONI Test Lists Editor enables the public to review and contribute to the lists of websites (“test lists”) that are tested for censorship by OONI Probe users around the world.
-This user guide provides step-by-step instructions on how to use the Test Lists Editor to review and contribute websites for censorship testing.
-Upon reading this guide, we hope you will feel empowered to contribute to test lists!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/support/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/support/ooni-run/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-run/</guid><description>&lt;h1 id="user-guide-ooni-run">User Guide: OONI Run&lt;/h1>
+&lt;p>&lt;strong>Last updated:&lt;/strong> 18th November 2024&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-run/images/image5.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-run/images/image5_hu5150509959254103312.png"
+
+ 
+
+ title="OONI Run"
+ 
+ alt="OONI Run"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;a href="https://run.ooni.org/">OONI Run&lt;/a> is a web platform that you can use to generate links to coordinate &lt;a href="https://ooni.org/install/mobile">OONI Probe&lt;/a> website testing. Specifically, you can use OONI Run to create links for:&lt;/p>
+&lt;ul>
+&lt;li>Testing websites (of your choice) for censorship;&lt;/li>
+&lt;li>Coordinating website censorship testing with other &lt;a href="https://ooni.org/install/mobile">OONI Probe&lt;/a> users.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>OONI Run links only work with the &lt;a href="https://ooni.org/install/mobile">OONI Probe mobile app&lt;/a>.&lt;/strong> To learn how to use OONI Probe, please refer to our &lt;a href="https://ooni.org/support/ooni-probe-mobile">OONI Probe mobile app user guide&lt;/a>.&lt;/p></description></item><item><title>Coordinating OONI censorship measurement campaigns</title><link>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 21st March 2023&lt;/p>
+&lt;p>Internet censorship around the world often &lt;a href="https://ooni.org/documents/2022-ooni-submission-ohchr-report-internet-shutdowns.pdf">emerges during political events&lt;/a>, such as elections or protests. The abrupt emergence of new blocks requires rapid response in terms of measurement, particularly if the blocks are short-lived. Such measurement can help with the collection of data that can potentially serve as evidence of internet censorship, supporting the efforts of journalists, researchers, and human rights defenders challenging the blocks.&lt;/p>
+&lt;p>Detecting sudden or expected blocks can be achieved through &lt;strong>community coordination&lt;/strong> on censorship measurement.&lt;/p></description></item><item><title>Frequently Asked Questions (FAQ)</title><link>https://ooni.github.io/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/faq/</guid><description>&lt;p>This Frequently Asked Questions (FAQ) section aims to address the
+questions that we are frequently asked by the community.&lt;/p>
+&lt;p>Translations:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Español,&lt;/strong> &lt;a href="https://ooni.github.io/es/support/faq">Preguntas frecuentes (FAQ)&lt;/a>&lt;/li>
+&lt;li>&lt;strong>العربية,&lt;/strong> &lt;a href="https://ooni.github.io/ar/support/faq">Frequently Asked Questions (FAQ)&lt;/a>&lt;/li>
+&lt;li>&lt;strong>فارسی,&lt;/strong> &lt;a href="https://ooni.github.io/fa/support/faq">Frequently Asked Questions (FAQ)&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Kiswahili,&lt;/strong> &lt;a href="https://ooni.github.io/sw/support/faq">Maswali Yanayoulizwa Mara kwa Mara (MYM)&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Русский,&lt;/strong> &lt;a href="https://ooni.github.io/ru/support/faq">Часто задаваемые вопросы&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Khmer,&lt;/strong> &lt;a href="https://digitalhub101.com/ooni/">Frequently Asked Questions (FAQ)&lt;/a> by &lt;a href="https://digitalhub101.com/">DigitalHub101&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Tiếng Việt,&lt;/strong> &lt;a href="https://ooni.github.io/vi/support/faq">Trang Những Câu Hỏi Thường Gặp&lt;/a>&lt;/li>
+&lt;li>&lt;strong>မြန်မာ,&lt;/strong> &lt;a href="https://ooni.github.io/my/support/faq">မကြာခဏ မေးမြန်းခံရလေ့ရှိသော မေးခွန်းများ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Are there other questions you would like us to address? Please &lt;a href="https://ooni.org/about/#contact">let us know&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/faq/#about-ooni">About OONI&lt;/a>&lt;/p></description></item><item><title>GitHub: Updating the Citizen Lab test lists</title><link>https://ooni.github.io/support/github-test-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/github-test-lists/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/support/github-test-lists/images/github-test-lists.png">
+ &lt;img
+ src="https://ooni.github.io/support/github-test-lists/images/github-test-lists_hu5083274700068569116.png"
+
+ 
+
+ title="Citizen Lab test list repo"
+ 
+ alt="Citizen Lab test list repo"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>This guide is meant for &lt;strong>GitHub users&lt;/strong> and provides information related to
+updating the &lt;a href="https://github.com/citizenlab/test-lists">Citizen Lab test lists&lt;/a> for website censorship testing. If
+you are not a GitHub user, please refer to our &lt;a href="https://test-lists.ooni.org/">Test Lists Editor&lt;/a>.&lt;/p>
+&lt;p>By contributing to the &lt;a href="https://github.com/citizenlab/test-lists">Citizen Lab test lists&lt;/a>, you can support website censorship
+testing by &lt;a href="https://ooni.org/install">OONI Probe&lt;/a> users around the world.&lt;/p>
+&lt;p>Before getting started, please refer to our &lt;strong>&lt;a href="https://ooni.org/get-involved/contribute-test-lists">documentation to learn all about test lists&lt;/a>&lt;/strong>.&lt;/p></description></item><item><title>Interpreting OONI data</title><link>https://ooni.github.io/support/interpreting-ooni-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/interpreting-ooni-data/</guid><description>&lt;p>This documentation explains how you can interpret &lt;a href="https://ooni.org/data/">OONI data&lt;/a>. It’s primarily intended for &lt;strong>researchers interested in investigating internet censorship&lt;/strong> around the world. Knowledge of some internet basics (i.e how the internet works) is required, though you can also refer to the &lt;a href="https://ooni.org/support/glossary">OONI Glossary&lt;/a> for the explanation of relevant terms.&lt;/p>
+&lt;p>We also recommend referring to the &lt;a href="https://ooni.org/support/ooni-explorer/">OONI Explorer user guide&lt;/a> for accessing OONI data.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-data">OONI data&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#what-is-ooni-data">What is OONI data?&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#types-of-ooni-probe-tests">Types of OONI Probe tests&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#how-to-access-ooni-data">How to access OONI data?&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-measurement-coverage">OONI measurement coverage&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#interpreting-ooni-data">Interpreting OONI data&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#types-of-test-results">Types of test results&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#confirmed">Confirmed&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#anomalies">Anomalies&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#false-positives">False positives&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#identifying-false-positives">Identifying false positives&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#web-connectivity-measurements">Web Connectivity measurements&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#web-connectivity-experiment">Web Connectivity experiment&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#interpreting-web-connectivity-measurements">Interpreting Web Connectivity measurements&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#dns-queries">DNS queries&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#tcp-connections">TCP connections&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#https-requests">HTTP(s) requests&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#raw-measurement-data">Raw measurement data&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#confirmed-measurements">Confirmed measurements&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#http-block-pages">HTTP block pages&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#dns-tampering">DNS tampering&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#anomalous-measurements">Anomalous measurements&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#dns-anomalies">DNS anomalies&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#tcpip-anomalies">TCP/IP anomalies&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#http-diff">HTTP diff&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#http-failures">HTTP failures&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#key-takeaway">Key Takeaway&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="ooni-data">OONI data&lt;/h2>
+&lt;h3 id="what-is-ooni-data">What is OONI data?&lt;/h3>
+&lt;p>OONI data is &lt;strong>open data on internet censorship&lt;/strong> around the world.&lt;/p></description></item><item><title>OONI Glossary</title><link>https://ooni.github.io/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/glossary/</guid><description>&lt;p>&lt;strong>Last updated&lt;/strong>: 3rd July 2023&lt;/p>
+&lt;p>This glossary contains &lt;em>brief explanations&lt;/em> for terms used in OONI apps,
+methodologies, and research reports.&lt;/p>
+&lt;p>&lt;strong>Translations&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Español,&lt;/strong> &lt;a href="https://ooni.github.io/es/support/glossary">OONI Glosario&lt;/a>&lt;/li>
+&lt;li>&lt;strong>العربية,&lt;/strong> &lt;a href="https://ooni.github.io/ar/support/glossary">OONI Glossary&lt;/a>&lt;/li>
+&lt;li>&lt;strong>فارسی,&lt;/strong> &lt;a href="https://ooni.github.io/fa/support/glossary">OONI Glossary&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Kiswahili,&lt;/strong> &lt;a href="https://ooni.github.io/sw/support/glossary">OONI Faharasa&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Русский,&lt;/strong> &lt;a href="https://ooni.github.io/ru/support/glossary">OONI Глоссарий&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>If you would like to see additional terms in this glossary, please &lt;a href="https://github.com/ooni/ooni.org">open a pull request&lt;/a> or &lt;a href="https://ooni.org/about/#contact">send us an email&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#api">API&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#as">AS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#asn">ASN&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#bgp">BGP&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#blocklist">Blocklist&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#block-page">Block page&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#caching">Caching&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#circumvention-tools">Circumvention tools&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#client">Client&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#data-processing-pipeline">Data processing pipeline&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#dns">DNS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#dns-hijacking">DNS hijacking&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#dns-lookup">DNS lookup&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/support/glossary/#dns-over-https">DNS over HTTPS&lt;/a>&lt;/p></description></item><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-outreach-kit/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-outreach-kit/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu116634532574350516.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
+ 
+
+ title="OONI Outreach Kit"
+ 
+ alt="OONI Outreach Kit"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Community engagement is at the heart of OONI’s work, as &lt;a href="https://ooni.org/data/">OONI data&lt;/a> on internet censorship depends on people running &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> around the world.&lt;/p>
+&lt;p>Interested in engaging your communities with OONI censorship measurement?&lt;/p>
+&lt;p>The OONI Outreach Kit includes &lt;strong>materials that you are encouraged to use&lt;/strong> as part of your OONI community engagement efforts.&lt;/p>
+&lt;p>The OONI Outreach Kit is translated into &lt;a href="https://ooni.org/ru/support/ooni-outreach-kit/">Russian&lt;/a>, &lt;a href="https://ooni.org/fr/support/ooni-outreach-kit/">French&lt;/a>, &lt;a href="https://ooni.org/es/support/ooni-outreach-kit/">Spanish&lt;/a>, &lt;a href="https://ooni.org/sw/support/ooni-outreach-kit/">Swahili&lt;/a>, &lt;a href="https://ooni.org/ar/support/ooni-outreach-kit/">Arabic&lt;/a>, &lt;a href="https://ooni.org/fa/support/ooni-outreach-kit/">Farsi&lt;/a>.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-brochures">OONI Brochures&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-probe-flyers-and-leaflets">OONI Probe Flyers and Leaflets&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-explorer-flyers">OONI Explorer Flyers&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#internet-censorship-flyers">Internet Censorship Flyers&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-screencasts">OONI Screencasts&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-workshop-slides">OONI Workshop Slides&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-resources">OONI Resources&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="ooni-brochures">OONI Brochures&lt;/h2>
+&lt;p>We provide 2 OONI brochures that include information about using OONI tools and data for investigating internet censorship around the world.&lt;/p></description></item><item><title>User Guide: OONI Explorer</title><link>https://ooni.github.io/support/ooni-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-explorer/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 15th March 2023&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-explorer/images/image67.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-explorer/images/image67_hu2358044783254427892.png"
+
+ 
+
+ title="OONI Explorer"
+ 
+ alt="OONI Explorer"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> is an open data resource on internet censorship around the world.&lt;/p>
+&lt;p>This user guide provides &lt;strong>step-by-step instructions&lt;/strong> on how to use OONI Explorer to investigate internet censorship worldwide.&lt;/p>
+&lt;p>&lt;strong>What you will get from this guide:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Learn how to use &lt;strong>&lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a>&lt;/strong> to:&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Discover &lt;strong>blocked websites and apps&lt;/strong> around the world&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Access &lt;strong>measurement data&lt;/strong> that can serve as evidence of internet censorship&lt;/p></description></item><item><title>User Guide: OONI Probe Command Line Interface (CLI)</title><link>https://ooni.github.io/support/ooni-probe-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-cli/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 29th August 2022&lt;/p>
+&lt;p>&lt;strong>OONI Probe CLI version:&lt;/strong> 3.9.2&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-cli/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-cli/images/image1_hu6259562038204200557.png"
+
+ 
+
+ title="OONI Probe CLI"
+ 
+ alt="OONI Probe CLI"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe is &lt;a href="https://github.com/ooni/probe">free and open source software&lt;/a> that you can run to measure internet censorship and other forms of network interference.&lt;/p>
+&lt;p>This user guide provides step-by-step instructions on how to install and use the &lt;a href="https://ooni.org/install/cli">OONI Probe Command Line Interface (CLI)&lt;/a>.&lt;/p>
+&lt;p>You can run OONI Probe CLI on &lt;strong>macOS&lt;/strong>, &lt;strong>Debian/Ubuntu Linux&lt;/strong>, and on &lt;strong>Raspberry Pis&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>What you will get from this guide:&lt;/strong>&lt;/p></description></item><item><title>User Guide: OONI Probe Desktop App</title><link>https://ooni.github.io/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-desktop/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 25th October 2022&lt;/p>
+&lt;p>&lt;strong>OONI Probe Desktop version:&lt;/strong> 3.7.0&lt;/p>
+&lt;p>&lt;strong>Access the OONI Probe Desktop user guide in other languages:&lt;/strong> &lt;a href="https://ooni.github.io/fa/support/ooni-probe-desktop">فارسی&lt;/a>, &lt;a href="https://ooni.github.io/ru/support/ooni-probe-desktop">Русский&lt;/a>, &lt;a href="https://ooni.github.io/de/support/ooni-probe-desktop">Deutsch&lt;/a>, &lt;a href="https://ooni.github.io/tr/support/ooni-probe-desktop">Türkçe&lt;/a>, &lt;a href="https://ooni.github.io/vi/support/ooni-probe-desktop">Tiếng Việt&lt;/a>, &lt;a href="https://ooni.github.io/pt/support/ooni-probe-desktop">Português&lt;/a>&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu8619296333105039821.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu2811019159506606390.png 2x"
+ 
+
+ title="Install OONI Probe Desktop"
+ 
+ alt="Install OONI Probe Desktop"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe is a &lt;a href="https://github.com/ooni/probe">free and open source&lt;/a> app that you can use to measure internet censorship and other forms of network interference. This user guide provides &lt;strong>step-by-step instructions&lt;/strong> on how to install, run, and customize your use of the &lt;a href="https://ooni.github.io/install/desktop/">OONI Probe desktop app&lt;/a>.&lt;/p></description></item><item><title>User Guide: OONI Probe Mobile App</title><link>https://ooni.github.io/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-mobile/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 18th November 2024&lt;/p>
+&lt;p>&lt;strong>OONI Probe Mobile version:&lt;/strong> 3.7.1, 4.0.0 (for OONI Run section only)&lt;/p>
+&lt;p>&lt;strong>Access the user guide in other languages:&lt;/strong> &lt;a href="https://ooni.github.io/fa/support/ooni-probe-mobile">فارسی&lt;/a>, &lt;a href="https://ooni.github.io/ru/support/ooni-probe-mobile">Русский&lt;/a>, &lt;a href="https://ooni.org/de/support/ooni-probe-mobile">Deutsch&lt;/a>, &lt;a href="https://ooni.github.io/tr/support/ooni-probe-mobile">Türkçe&lt;/a>, &lt;a href="https://ooni.github.io/vi/support/ooni-probe-mobile">Tiếng Việt&lt;/a>, &lt;a href="https://ooni.github.io/my/support/ooni-probe-mobile">မြန်မာ&lt;/a>&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-mobile/images/image49.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu9506725050971740468.png"
+
+ 
+
+ title="Measure Internet Censorship"
+ 
+ alt="Measure Internet Censorship"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe is a &lt;a href="https://github.com/ooni/probe">free and open source&lt;/a> app that you can use to measure internet censorship and other forms of network interference. This user guide provides &lt;strong>step-by-step instructions&lt;/strong> on how to install, run, and customize your use of the &lt;a href="https://ooni.org/install/mobile">OONI Probe mobile app&lt;/a>.&lt;/p></description></item><item><title>User Guide: OONI Test Lists Editor</title><link>https://ooni.github.io/support/test-lists-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/test-lists-editor/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 7th September 2022&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/test-lists-editor/images/01.png">
+ &lt;img
+ src="https://ooni.github.io/support/test-lists-editor/images/01_hu3102870722549096828.png"
+
+ 
+
+ title="Test Lists Editor"
+ 
+ alt="Test Lists Editor"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>The &lt;a href="https://test-lists.ooni.org/">OONI Test Lists Editor&lt;/a> enables the public
+to &lt;strong>review and contribute to the lists of websites&lt;/strong> (“&lt;a href="https://ooni.org/get-involved/contribute-test-lists">test lists&lt;/a>”) that are &lt;strong>tested for
+censorship&lt;/strong> by &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> users around the
+world.&lt;/p>
+&lt;p>This user guide provides &lt;strong>step-by-step instructions&lt;/strong> on how to use the
+&lt;a href="https://test-lists.ooni.org/">Test Lists Editor&lt;/a> to review and contribute
+websites for censorship testing.&lt;/p>
+&lt;p>Upon reading this guide, we hope you will feel empowered to contribute to test lists!&lt;/p></description></item></channel></rss>

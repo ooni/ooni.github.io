@@ -1,26 +1,102 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/es/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>es</language><atom:link href="https://ooni.github.io/es/support/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/es/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/support/ooni-outreach-kit/</guid><description>La participación comunitaria es el corazón del trabajo de OONI, pues los datos sobre la censura en internet dependen de las mediciones OONI Probe que ejecutan personas alrededor del mundo.
-¿Estás interesado en sumarte a las comunidades con la medición de la censura de OONI?
-El kit de divulgación incluye materiales que le recomendamos usar como parte de los esfuerzos de participación comunitaria de OONI.
-Folletos de OONI Hoja informativa de OONI Probe Hoja informativa del OONI Explorer Folleto sobre la censura en internet Diapositivas del taller de OONI Recursos de OONI Folletos de OONI Proporcionamos dos folletos de OONI que incluyen información acerca del uso de herramientas y datos de OONI para investigar la censura de Internet alrededor del mundo.</description></item><item><title>OONI Glosario</title><link>https://ooni.github.io/es/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/support/glossary/</guid><description>Este documento fue traducido al español por Katherine Pennacchio y Mariengracia Chirinos.
-Documento original:
-English, OONI Glossary Este glosario contiene breves explicaciones de los términos utilizados en las aplicaciones, metodologías e informes de investigación de OONI.
-Si desea incluir más términos en este glosario, envíenos una solicitud o un correo electrónico.
-API
-AS
-ASN
-BGP
-Lista de bloqueos
-Página bloqueada
-Almacenamiento en caché
-Herramientas para evadir la censura
-Cliente
-Canal de procesamiento de datos</description></item><item><title>Preguntas frecuentes (FAQ)</title><link>https://ooni.github.io/es/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/support/faq/</guid><description>Este documento fue traducido al español por Katherine Pennacchio y Mariengracia Chirinos.
-Documento original:
-English, Frequently Asked Questions (FAQ) Esta sección de preguntas frecuentes pretende responder a las preguntas que con más frecuencia nos plantea la comunidad.
-¿Hay alguna otra pregunta que le gustaría que tratáramos? Háganoslo saber.
-Sobre OONI
-¿Qué es OONI?
-¿Por qué OONI?
-¿Qué hace OONI?
-¿Por qué medir la censura en Internet?
-¿Cómo se financia OONI?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/es/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>es</language><atom:link href="https://ooni.github.io/es/support/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/es/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/support/ooni-outreach-kit/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-outreach-kit/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu116634532574350516.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
+ 
+
+ title="OONI Outreach Kit"
+ 
+ alt="OONI Outreach Kit"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>La participación comunitaria es el corazón del trabajo de OONI, pues los &lt;a href="https://ooni.org/data/">datos sobre la censura en internet&lt;/a> dependen de las mediciones &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> que ejecutan personas alrededor del mundo.&lt;/p>
+&lt;p>¿Estás interesado en sumarte a las comunidades con la medición de la censura de OONI?&lt;/p>
+&lt;p>El kit de divulgación incluye &lt;strong>materiales que le recomendamos usar&lt;/strong> como parte de los esfuerzos de participación comunitaria de OONI.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#folletos-de-ooni">Folletos de OONI&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#hoja-informativa-de-ooni-probe">Hoja informativa de OONI Probe&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#hoja-informativa-del-ooni-explorer">Hoja informativa del OONI Explorer&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#folleto-sobre-la-censura-en-internet">Folleto sobre la censura en internet&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#diapositivas-del-taller-de-ooni">Diapositivas del taller de OONI&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#recursos-de-ooni">Recursos de OONI&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="folletos-de-ooni">Folletos de OONI&lt;/h2>
+&lt;p>Proporcionamos dos folletos de OONI que incluyen información acerca del uso de herramientas y datos de OONI para investigar la censura de Internet alrededor del mundo.&lt;/p></description></item><item><title>OONI Glosario</title><link>https://ooni.github.io/es/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/support/glossary/</guid><description>&lt;p>Este documento fue traducido al español por Katherine Pennacchio y Mariengracia Chirinos.&lt;/p>
+&lt;p>Documento original:&lt;/p>
+&lt;ul>
+&lt;li>English, &lt;a href="https://ooni.org/support/glossary/">OONI Glossary&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Este glosario contiene &lt;em>breves explicaciones&lt;/em> de los términos utilizados en las aplicaciones, metodologías e informes de investigación de OONI.&lt;/p>
+&lt;p>Si desea incluir más términos en este glosario, envíenos &lt;a href="https://github.com/ooni/ooni.org">una solicitud&lt;/a> o un &lt;a href="https://ooni.org/about/#contact">correo electrónico.&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#api">API&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#as">AS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#asn">ASN&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#bgp">BGP&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#lista-de-bloqueos">Lista de bloqueos&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#página-bloqueada">Página bloqueada&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#almacenamiento-en-caché">Almacenamiento en caché&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#herramientas-para-evadir-la-censura">Herramientas para evadir la censura&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#cliente">Cliente&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/glossary/#canal-de-procesamiento-de-datos">Canal de procesamiento de datos&lt;/a>&lt;/p></description></item><item><title>Preguntas frecuentes (FAQ)</title><link>https://ooni.github.io/es/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/support/faq/</guid><description>&lt;p>Este documento fue traducido al español por Katherine Pennacchio y Mariengracia Chirinos.&lt;/p>
+&lt;p>Documento original:&lt;/p>
+&lt;ul>
+&lt;li>English, &lt;a href="https://ooni.org/support/faq/">Frequently Asked Questions (FAQ)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Esta sección de preguntas frecuentes pretende responder a las preguntas que con más frecuencia nos plantea la comunidad.&lt;/p>
+&lt;p>¿Hay alguna otra pregunta que le gustaría que tratáramos? &lt;a href="https://ooni.org/about/#contact">Háganoslo saber&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/faq/#sobre-ooni">Sobre OONI&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/faq/#qué-es-ooni">¿Qué es OONI?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/faq/#por-qué-ooni">¿Por qué OONI?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/faq/#qué-hace-ooni">¿Qué hace OONI?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/faq/#por-qué-medir-la-censura-en-internet">¿Por qué medir la censura en Internet?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/faq/#cómo-se-financia-ooni">¿Cómo se financia OONI?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/es/support/faq/#cuál-es-la-relación-de-ooni-con-el-proyecto-tor">¿Cuál es la relación de OONI con el Proyecto Tor?&lt;/a>&lt;/p></description></item></channel></rss>

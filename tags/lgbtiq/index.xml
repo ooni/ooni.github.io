@@ -1,5 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lgbtiq on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/lgbtiq/</link><description>Recent content in lgbtiq on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/lgbtiq/index.xml" rel="self" type="application/rss+xml"/><item><title>No Access: LGBTIQ Website Censorship in Six Countries</title><link>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</link><pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</guid><description>Today, in collaboration with OutRight Action International and the Citizen Lab, we are excited to share our new research report, “No Access: LGBTIQ Website Censorship in Six Countries”, which examines the blocking of LGBTIQ websites in Indonesia, Malaysia, Iran, Russia, Saudi Arabia, and the United Arab Emirates (UAE).
-READ FULL REPORT
-Annotated Bibliography
-Below we share some of our key research findings.
-Summary of findings We joined forces with OutRight Action International and the Citizen Lab to examine the blocking of LGBTIQ websites in six countries: Indonesia, Malaysia, Iran, Russia, Saudi Arabia, and the United Arab Emirates (UAE).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lgbtiq on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/lgbtiq/</link><description>Recent content in Lgbtiq on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/lgbtiq/index.xml" rel="self" type="application/rss+xml"/><item><title>No Access: LGBTIQ Website Censorship in Six Countries</title><link>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</link><pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover.png">
+ &lt;img
+ src="https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover_hu14604463933570315610.png"
+
+ 
+
+ title="Report cover"
+ 
+ alt="Report cover"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today, in collaboration with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> and the &lt;a href="https://citizenlab.ca/">Citizen Lab&lt;/a>, we are excited to share our new research report, “&lt;strong>No Access: LGBTIQ Website Censorship in Six Countries&lt;/strong>”,
+which examines the blocking of LGBTIQ websites in Indonesia, Malaysia,
+Iran, Russia, Saudi Arabia, and the United Arab Emirates (UAE).&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://ooni.github.io/documents/2021-lgbtiq-website-censorship-report/2021-lgbtiq-website-censorship-report-v2.pdf">READ FULL REPORT&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://ooni.github.io/documents/2021-lgbtiq-website-censorship-report/annotated-bibliography.pdf">Annotated Bibliography&lt;/a>&lt;/p>
+&lt;p>Below we share some of our key research findings.&lt;/p>
+&lt;h1 id="summary-of-findings">Summary of findings&lt;/h1>
+&lt;p>We joined forces with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> and the &lt;a href="https://citizenlab.ca/">Citizen Lab&lt;/a> to examine the blocking of LGBTIQ websites
+in six countries: Indonesia, Malaysia, Iran, Russia, Saudi Arabia, and
+the United Arab Emirates (UAE). We selected these countries because they
+are (a) known to serve &lt;a href="https://ooni.org/support/glossary/#block-page">block pages&lt;/a> (i.e., pages that
+website visitors may see when access is restricted), which enable us to
+automatically confirm the blocking of LGBTIQ websites, and (b) known to
+censor LGBTIQ related content, based on prior research.&lt;/p></description></item></channel></rss>

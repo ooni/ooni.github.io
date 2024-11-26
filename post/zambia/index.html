@@ -1,8 +1,38 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Zambia, a country under Deep Packet Inspection | OONI</title>
-<link rel=canonical href=https://ooni.org/post/zambia/><meta name=description content="&#34;I do not have the details of the blocking of Zambianwatchdog.com, but I would celebrate.&#34; Guy Scott Zambian Vicepresident, Friday 28th June 2013 The following article is a guest blog post by Mr T. an independent researcher and provider of hosting to various grass roots organizations.
-This article summarizes how we discovered that the grass roots online newspaper Zambianwatchdog.com was being blocked inside Zambia. This report provides technical evidence of the unlawful presence of Deep Packet Inspection in the country to monitor the Internet communications and stop users from browsing the website."><meta property="og:title" content="Zambia, a country under Deep Packet Inspection"><meta property="og:description" content="&#34;I do not have the details of the blocking of Zambianwatchdog.com, but I would celebrate.&#34; Guy Scott Zambian Vicepresident, Friday 28th June 2013 The following article is a guest blog post by Mr T. an independent researcher and provider of hosting to various grass roots organizations.
-This article summarizes how we discovered that the grass roots online newspaper Zambianwatchdog.com was being blocked inside Zambia. This report provides technical evidence of the unlawful presence of Deep Packet Inspection in the country to monitor the Internet communications and stop users from browsing the website."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/zambia/"><meta property="article:published_time" content="2013-07-15T00:00:00+00:00"><meta property="article:modified_time" content="2013-07-15T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Zambia, a country under Deep Packet Inspection"><meta name=twitter:description content="&#34;I do not have the details of the blocking of Zambianwatchdog.com, but I would celebrate.&#34; Guy Scott Zambian Vicepresident, Friday 28th June 2013 The following article is a guest blog post by Mr T. an independent researcher and provider of hosting to various grass roots organizations.
-This article summarizes how we discovered that the grass roots online newspaper Zambianwatchdog.com was being blocked inside Zambia. This report provides technical evidence of the unlawful presence of Deep Packet Inspection in the country to monitor the Internet communications and stop users from browsing the website."><link rel=stylesheet type=text/css href=https://ooni.github.io/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=https://ooni.github.io/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='initial-scale=1,width=device-width'><title>Zambia, a country under Deep Packet Inspection | OONI</title>
+<link rel=canonical href=https://ooni.org/post/zambia/><meta name=description content='"I do not have the details of the blocking of Zambianwatchdog.com, but I
+would celebrate."
+                      Guy Scott 
+                      Zambian Vicepresident, Friday 28th June 2013
+
+The following article is a guest blog post by Mr T. an independent researcher
+and provider of hosting to various grass roots organizations.
+This article summarizes how we discovered that the grass roots online newspaper
+Zambianwatchdog.com was being blocked inside Zambia. This report provides
+technical evidence of the unlawful presence of Deep Packet Inspection in the
+country to monitor the Internet communications and stop users from browsing the
+website.'><meta property="og:title" content="Zambia, a country under Deep Packet Inspection"><meta property="og:description" content='"I do not have the details of the blocking of Zambianwatchdog.com, but I
+would celebrate."
+                      Guy Scott 
+                      Zambian Vicepresident, Friday 28th June 2013
+
+The following article is a guest blog post by Mr T. an independent researcher
+and provider of hosting to various grass roots organizations.
+This article summarizes how we discovered that the grass roots online newspaper
+Zambianwatchdog.com was being blocked inside Zambia. This report provides
+technical evidence of the unlawful presence of Deep Packet Inspection in the
+country to monitor the Internet communications and stop users from browsing the
+website.'><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/zambia/"><meta property="article:published_time" content="2013-07-15T00:00:00+00:00"><meta property="article:modified_time" content="2013-07-15T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Zambia, a country under Deep Packet Inspection"><meta name=twitter:description content='"I do not have the details of the blocking of Zambianwatchdog.com, but I
+would celebrate."
+                      Guy Scott 
+                      Zambian Vicepresident, Friday 28th June 2013
+
+The following article is a guest blog post by Mr T. an independent researcher
+and provider of hosting to various grass roots organizations.
+This article summarizes how we discovered that the grass roots online newspaper
+Zambianwatchdog.com was being blocked inside Zambia. This report provides
+technical evidence of the unlawful presence of Deep Packet Inspection in the
+country to monitor the Internet communications and stop users from browsing the
+website.'><link rel=stylesheet type=text/css href=/css/bootstrap.min.e2d14d1a1dcdfab34aba5963e76f1aa59cc3291ce469f4336bdbddcea78ab123.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
 <img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
 <img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Zambia, a country under Deep Packet Inspection</h1><div class=byline><span class=author>Mr T.</span>
 <span class=date>2013-07-15</span></div><pre><code>&quot;I do not have the details of the blocking of Zambianwatchdog.com, but I
@@ -15,13 +45,13 @@ Zambianwatchdog.com was being blocked inside Zambia. This report provides
 technical evidence of the unlawful presence of Deep Packet Inspection in the
 country to monitor the Internet communications and stop users from browsing the
 website.</p><h1 id=the-connection-was-reset>The connection was reset</h1><p>On Monday 24 June 15:30 GMT readers of the website Zambianwatchdog.com from
-inside Zambia were reporting error messages.</p><p><img src=/post/zambia/connection-rst.jpg alt="Connection RST"></p><p>As hosting providers of the website, we initially could not see a significant
+inside Zambia were reporting error messages.</p><p><img alt="Connection RST" src=/post/zambia/connection-rst.jpg></p><p>As hosting providers of the website, we initially could not see a significant
 drop of active connections and we needed to have a close look into the access
 logs of the site. Examining the connection logs to find any pattern that could
 help us to determine the cause of the problem was not a straightforward task as
 we needed to examine several gigabytes of data. It is worth mentioning here
 that Zambian Watchdog ranks 8th overall biggest website in Zambia and probably
-the biggest site after the large portals Facebook, Google or Youtube.</p><p><img src=/post/zambia/alexa-traffic-ranks.png alt="Alexa ranks"></p><p>Our first review of the logs revealed a clear increase of connections reporting
+the biggest site after the large portals Facebook, Google or Youtube.</p><p><img alt="Alexa ranks" src=/post/zambia/alexa-traffic-ranks.png></p><p>Our first review of the logs revealed a clear increase of connections reporting
 status code 200 but with zero bytes were transmitted back to the client.</p><p>The server has large number of logs similar to this one:</p><pre><code>41.72.105.x - - [25/Jun/2013:05:03:58 +0000]  &quot;GET / HTTP/1.1&quot; 200 0 &quot;-&quot; &quot;Mozilla/5.0 (Windows NT 6.1; rv:20.0) Gecko/20100101 Firefox/20.0&quot;
 </code></pre><p>The sample shows that IP address of this connection 41.72.105.x belongs to
 ZAMTEL, the status code of the connection is 200 and zero information was sent
@@ -32,7 +62,7 @@ the last four weeks of connection logs to conclude that there was inexplicable
 increase of connections with status code 200 and zero bytes transmitted
 starting that day.</p><p>We also looked into which readers were affected by this behavior and we
 concluded that the majority of the connections reporting this problem were from
-operators inside Zambia with the exception of MTN.</p><p><img src=/post/zambia/pie-chart.png alt="Pie chart"></p><p>Origin of the dropped connections to the webserver</p><h1 id=who-is-breaking-the-connections>Who is breaking the connections?</h1><p>Four hours after we received the first reports of service outage inside Zambia
+operators inside Zambia with the exception of MTN.</p><p><img alt="Pie chart" src=/post/zambia/pie-chart.png></p><p>Origin of the dropped connections to the webserver</p><h1 id=who-is-breaking-the-connections>Who is breaking the connections?</h1><p>Four hours after we received the first reports of service outage inside Zambia
 we could narrow down the problem to what it was perceived in the server side as
 sudden termination of the connections.</p><p>Comparing the connection logs of different weeks we could determine that
 connections coming from at least these operators AS37146 realtime-as, AS37214
@@ -41,7 +71,7 @@ suffering from some kind disruption.</p><p>In order to determine what kind of in
 capture the network traffic arriving to Zambian Watchdog&rsquo;s server to look for
 any special patters that could help us to understand why most of the readers
 inside Zambia were experiencing connection drops with the exception of readers
-using MTN mobile network.</p><p><img src=/post/zambia/wireshark.png alt=Wireshark>
+using MTN mobile network.</p><p><img alt=Wireshark src=/post/zambia/wireshark.png>
 After reviewing dozen of different packet captures we saw a
 distinctive pattern</p><p>The readers seemed to be able to establish the initial connection with the
 webserver but as soon as they request any content of the website we received
@@ -127,7 +157,7 @@ was released, the government has moved forward in their determination of
 blocking the site and started to block the SSL connections. The Deep Packet
 Inspection gear seems to be monitoring the &ldquo;Server Hello&rdquo; message that is part
 of the SSL negotiation. This message contains the string zambianwatchdog.com
-before the SSL negotiation is completed.</p><p><img src=/post/zambia/ssl-reset.png alt="SSL Reset"></p><p>In order to find out if the government is actively making changes, we deployed
+before the SSL negotiation is completed.</p><p><img alt="SSL Reset" src=/post/zambia/ssl-reset.png></p><p>In order to find out if the government is actively making changes, we deployed
 a new mirror server of the site in the domain <a href=http://zwd.cums.in>http://zwd.cums.in</a>. After a few
 hours the domain has also been blocked and the filtering has been extended to
 the whole /24 network. By extending the filtering the Zambian government has

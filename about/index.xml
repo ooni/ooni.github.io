@@ -1,20 +1,277 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/about/</link><description>Recent content in About on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://ooni.github.io/about/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/about/inform-users-long/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/inform-users-long/</guid><description>GOAL OONI is a project aimed at mapping network anomalies by performing measurements from the vantage point of a users. You may find details on what exactly it is that we measure by reading through our test specifications. The data we collect is then made available to the public for further analysis.
-The goal of this study is to have a better understanding on how the internet works around the world and what is stopping it from working as it should.</description></item><item><title/><link>https://ooni.github.io/about/inform-users-short/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/inform-users-short/</guid><description>WARNING: Running OONI may be against the terms of service of your ISP or legally questionable in your country. By running OONI you will connect to web services which may be banned, and use web censorship circumvention methods such as Tor. The OONI project will publish data submitted by probes, possibly including your IP address or other identifying information. In addition, your use of OONI will be clear to anybody who has access to your computer, and to anybody who can monitor your internet connection (such as your employer, ISP or government).</description></item><item><title/><link>https://ooni.github.io/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/risks/</guid><description>Risks: Things you should know before running OONI Probe Translations:
-Español, Riesgos: Lo que debes saber antes de ejecutar OONI Probe العربية, Risks: Things you should know before running OONI Probe فارسی, Risks: Things you should know before running OONI Probe Kiswahili, Hatari: Vitu unavyotakiwa kuvijua kabla ya kutumia OONI Probe Русский, Риски: что вы должны знать до запуска OONI Probe Français, Risques: Ce que vous devez savoir avant d&amp;rsquo;exécuter OONI Probe မြန်မာ, အန္တရာယ်များ OONI Probe ကို အသုံးမပြုမီ ဤအရာများကို သိထားသင့်သည်။ To our knowledge, no OONI Probe user has ever faced consequences as a result of using our software.</description></item><item><title>OONI Data Policy</title><link>https://ooni.github.io/about/data-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/data-policy/</guid><description>Last modified: October 15, 2024
-Version: 1.6.0
-This Data Policy discloses and explains what data the Open Observatory of Network Interference (OONI) project (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;) collects, processes, stores and publishes relating to the users of its OONI Probe software (&amp;ldquo;you&amp;rdquo; or &amp;ldquo;your&amp;rdquo;). This Data Policy also outlines the data principles that govern OONI&amp;rsquo;s data practices.
-Data Principles
-1. Purpose Limitation
-2. User Safety
-3. User Control
-4. Open By Default</description></item><item><title>OONI Team</title><link>https://ooni.github.io/about/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/team/</guid><description> Arturo Filastò Executive Director &amp;amp; CTO
-Twitter Email PGP Key Maria Xynou Director of Strategic Engagement
-Twitter Email PGP Key Roberta Giassetti Director of Finance &amp;amp; Administration
-Email Jessie Bonisteel Senior Project Manager
-Email Norbel Ambanumben Mobile Developer
-Email PGP Key Mehul Gulati Backend Developer
-Email Maja Komel Frontend Engineer
-Email PGP Key Elizaveta Yachmeneva Community Coordinator
-Twitter Email PGP Key</description></item><item><title>Supporters &amp; Funders</title><link>https://ooni.github.io/about/supporters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/supporters/</guid><description>Supporters are organisations or individuals who believe in OONI&amp;rsquo;s mission and have made significant in-kind donations to OONI in the last year. If you would like to become an OONI supporter, please reach out to us at giving@ooni.org.
-Below we share a list of current and past OONI funders.
-Octopus supporters Dolphin Supporters Seahorse Supporters Starfish Supporters This could be you! Donate now to support internet freedom By donating to OONI, you support: Free and open source software for detecting internet censorship Real-time analysis of internet censorship around the world Open data on internet censorship -- supporting global research and advocacy efforts Research on censorship events worldwide Donate Supporter tiers Octopus Octopuses have three hearts: two pump blood to the gills, while the third pumps it to the rest of the body.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/about/</link><description>Recent content in About on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/about/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/about/inform-users-long/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/inform-users-long/</guid><description>&lt;h1 id="goal">GOAL&lt;/h1>
+&lt;p>OONI is a project aimed at mapping network anomalies by performing measurements
+from the vantage point of a users.
+You may find details on what exactly it is that we measure by reading through
+our &lt;a href="https://github.com/TheTorProject/ooni-spec/tree/master/test-specs">test specifications&lt;/a>.
+The data we collect is then made available to the public for further analysis.&lt;/p>
+&lt;p>The goal of this study is to have a better understanding on how the internet
+works around the world and what is stopping it from working as it should.&lt;/p></description></item><item><title/><link>https://ooni.github.io/about/inform-users-short/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/inform-users-short/</guid><description>&lt;p>WARNING: Running OONI may be against the terms of service of your ISP
+or legally questionable in your country.
+By running OONI you will connect to web services which may be banned, and use
+web censorship circumvention methods such as Tor. The OONI project will publish
+data submitted by probes, possibly including your IP address or other
+identifying information. In addition, your use of OONI will be clear to anybody
+who has access to your computer, and to anybody who can monitor your internet
+connection (such as your employer, ISP or government).&lt;/p></description></item><item><title/><link>https://ooni.github.io/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/risks/</guid><description>&lt;h1 id="risks-things-you-should-know-before-running-ooni-probe">Risks: Things you should know before running OONI Probe&lt;/h1>
+&lt;p>Translations:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Español,&lt;/strong> &lt;a href="https://ooni.github.io/es/about/risks">Riesgos: Lo que debes saber antes de ejecutar OONI Probe&lt;/a>&lt;/li>
+&lt;li>&lt;strong>العربية,&lt;/strong> &lt;a href="https://ooni.github.io/ar/about/risks">Risks: Things you should know before running OONI Probe&lt;/a>&lt;/li>
+&lt;li>&lt;strong>فارسی,&lt;/strong> &lt;a href="https://ooni.github.io/fa/about/risks">Risks: Things you should know before running OONI Probe&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Kiswahili,&lt;/strong> &lt;a href="https://ooni.github.io/sw/about/risks">Hatari: Vitu unavyotakiwa kuvijua kabla ya kutumia OONI Probe&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Русский,&lt;/strong> &lt;a href="https://ooni.github.io/ru/about/risks">Риски: что вы должны знать до запуска OONI Probe&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Français,&lt;/strong> &lt;a href="https://ooni.github.io/fr/about/risks">Risques: Ce que vous devez savoir avant d&amp;rsquo;exécuter OONI Probe&lt;/a>&lt;/li>
+&lt;li>&lt;strong>မြန်မာ,&lt;/strong> &lt;a href="https://ooni.github.io/my/about/risks">အန္တရာယ်များ OONI Probe ကို အသုံးမပြုမီ ဤအရာများကို သိထားသင့်သည်။&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>To our knowledge, no OONI Probe user has ever faced consequences as a result of using our software. Therefore, the potential risks described below are theoretical and quite speculative. If you are running OONI Probe from a &amp;ldquo;high-risk environment&amp;rdquo;, we strongly encourage you to read all of the documentation below.&lt;/p></description></item><item><title>OONI Data Policy</title><link>https://ooni.github.io/about/data-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/data-policy/</guid><description>&lt;p>&lt;strong>Last modified:&lt;/strong> October 15, 2024&lt;/p>
+&lt;p>&lt;strong>Version:&lt;/strong> 1.6.0&lt;/p>
+&lt;p>This Data Policy discloses and explains what data the &lt;a href="https://ooni.org/">Open Observatory of
+Network Interference (OONI) project&lt;/a> (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;)
+collects, processes, stores and publishes relating to the users of
+its OONI Probe software (&amp;ldquo;you&amp;rdquo; or &amp;ldquo;your&amp;rdquo;). This Data Policy also outlines the
+data principles that govern OONI&amp;rsquo;s data practices.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/about/data-policy/#data-principles">Data Principles&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/about/data-policy/#1-purpose-limitation">1. Purpose Limitation&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/about/data-policy/#2-user-safety">2. User Safety&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/about/data-policy/#3-user-control">3. User Control&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/about/data-policy/#4-open-by-default">4. Open By Default&lt;/a>&lt;/p></description></item><item><title>OONI Team</title><link>https://ooni.github.io/about/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/team/</guid><description>&lt;div class="mx-auto max-w-7xl not-prose">
+ &lt;ul role="list"
+ class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;li>
+ &lt;img class="aspect-square w-full rounded-2xl object-cover" src="https://ooni.github.io/about/team/images/arturo.jpg"
+ alt="Arturo Filastò from OONI profile picture">
+ &lt;h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray9">Arturo Filastò&lt;/h3>
+ &lt;p class="text-base leading-7 text-gray6">Executive Director &amp;amp; CTO&lt;/p>
+ &lt;ul role="list" class="mt-6 flex gap-x-6">
+ 
+ &lt;li>
+ &lt;a href="https://twitter.com/hellais" class="text-gray4 hover:text-gray5">
+ &lt;span class="sr-only">Twitter&lt;/span>
+ &lt;svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+ &lt;path
+ d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+ &lt;/svg>
+ &lt;/a>
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;a href="mailto:arturo@ooni.org" class="text-gray4 hover:text-gray5">
+ &lt;span class="sr-only">Email&lt;/span>
+ &lt;svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+ fill="currentColor">
+ &lt;path
+ d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+ &lt;/svg>
+ &lt;/a>
+ &lt;/li>
+ 
+ &lt;li>
+ &lt;a href="https://keyserver.ubuntu.com/pks/lookup?fingerprint=on&amp;op=index&amp;search=0x67EF3966509986E96ACEE84E5D67CD18702287F4"
+ class="text-gray4 hover:text-gray5">
+ &lt;span class="sr-only">PGP Key&lt;/span>
+ &lt;svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+ fill="currentColor">
+ &lt;path
+ d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
+ &lt;/svg>
+ &lt;/a>
+ &lt;/li>
+ 
+ &lt;/ul>
+&lt;/li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;li>
+ &lt;img class="aspect-square w-full rounded-2xl object-cover" src="https://ooni.github.io/about/team/images/maria.jpg"
+ alt="Maria Xynou from OONI profile picture">
+ &lt;h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray9">Maria Xynou&lt;/h3>
+ &lt;p class="text-base leading-7 text-gray6">Director of Strategic Engagement&lt;/p></description></item><item><title>Supporters &amp; Funders</title><link>https://ooni.github.io/about/supporters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/supporters/</guid><description>&lt;p>Supporters are organisations or individuals who believe in &lt;a href="https://ooni.org/about/">OONI&amp;rsquo;s mission&lt;/a> and have made significant in-kind donations to OONI in the last year. If you would like to become an OONI supporter, please reach out to us at
+&lt;a href="mailto:giving@ooni.org">giving@ooni.org&lt;/a>.&lt;/p>
+&lt;p>Below we share a &lt;a href="https://ooni.github.io/about/supporters/#funders">list of current and past OONI funders&lt;/a>.&lt;/p>
+
+
+&lt;div class="mx-auto max-w-7xl px-6 lg:px-8">
+ &lt;h2 class="text-center">Octopus supporters&lt;/h2>
+ &lt;div class="mx-auto mt-10 grid grid-cols-2 items-center gap-x-8 gap-y-10">
+ 
+
+
+
+
+
+
+
+&lt;a href="https://jigsaw.google.com">
+ &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Jigsaw.svg" alt="Jigsaw"
+ style="height: 160px">
+&lt;/a>
+
+
+
+
+
+
+
+
+&lt;a href="https://pantheon.io/">
+ &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Pantheon.svg" alt="Pantheon"
+ style="height: 160px">
+&lt;/a>
+
+
+
+ &lt;/div>
+&lt;/div>
+
+
+&lt;div class="mx-auto max-w-7xl px-6 lg:px-8">
+ &lt;h2 class="text-center">Dolphin Supporters&lt;/h2>
+ &lt;div class="mx-auto mt-10 grid grid-cols-4 items-center gap-x-8 gap-y-10">
+ 
+
+
+
+
+
+
+
+&lt;a href="https://aws.amazon.com/opendata/">
+ &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/AWS%20Open%20Data.png" alt="Amazon AWS Open Data"
+ style="height: 80px">
+&lt;/a>
+
+
+
+
+
+
+
+
+&lt;a href="https://www.luminategroup.com/">
+ &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Luminate.png" alt="Luminate"
+ style="height: 80px">
+&lt;/a>
+
+
+
+ &lt;/div>
+&lt;/div>
+
+
+&lt;div class="mx-auto max-w-7xl px-6 lg:px-8">
+ &lt;h2 class="text-center">Seahorse Supporters&lt;/h2>
+ &lt;div class="mx-auto mt-10 grid grid-cols-5 items-center gap-x-8 gap-y-10">
+ 
+
+
+
+
+
+
+
+&lt;a href="https://www.digitalocean.com/community/pages/hollies-hub-for-good">
+ &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/DigitalOcean.svg" alt="Digital Ocean Hub for Good"
+ style="height: 60px">
+&lt;/a>
+
+
+
+
+
+
+
+
+&lt;a href="https://greenhost.net/">
+ &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Greenhost.svg" alt="Greenhost eclips.is platform"
+ style="height: 40px">
+&lt;/a>
+
+
+
+
+
+
+
+
+&lt;a href="https://www.netlify.com/">
+ &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Netlify.svg" alt="Netlify"
+ style="height: 40px">
+&lt;/a>
+
+
+
+
+
+
+
+
+&lt;a href="https://surfshark.com/">
+ &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Surfshark.svg" alt="Surfshark"
+ style="height: 40px">
+&lt;/a>
+
+
+
+
+
+
+
+
+&lt;a href="https://www.vpncompare.co.uk/">
+ &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/VPNCompare.svg" alt="VPN Compare"
+ style="height: 40px">
+&lt;/a>
+
+
+
+ &lt;/div>
+&lt;/div>
+
+
+&lt;div class="mx-auto max-w-7xl px-6 lg:px-8">
+ &lt;h2 class="text-center">Starfish Supporters&lt;/h2>
+ &lt;div class="mx-auto mt-10 grid grid-cols-6 items-center gap-x-8 gap-y-10">
+ 
+
+
+
+&lt;p>
+ This could be you!
+&lt;/p></description></item></channel></rss>

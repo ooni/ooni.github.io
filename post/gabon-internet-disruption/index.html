@@ -1,11 +1,35 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width"><title>Internet disruption in Gabon amid coup attempt | OONI</title>
-<link rel=canonical href=https://ooni.org/post/gabon-internet-disruption/><meta name=description content="On 7th January 2019, a military coup was attempted in Gabon in a bid to end more than 50 years of rule by President Ali Bongo’s family. The coup attempt was quickly foiled. Security forces reportedly killed two suspects, arrested seven others, and Gabon’s government retained control.
-Meanwhile, a curfew has been imposed and NetBlocks reported that access to the Internet has been shut down.
-In this post, we share data that provides signals of network disruptions in Gabon."><meta property="og:title" content="Internet disruption in Gabon amid coup attempt"><meta property="og:description" content="On 7th January 2019, a military coup was attempted in Gabon in a bid to end more than 50 years of rule by President Ali Bongo’s family. The coup attempt was quickly foiled. Security forces reportedly killed two suspects, arrested seven others, and Gabon’s government retained control.
-Meanwhile, a curfew has been imposed and NetBlocks reported that access to the Internet has been shut down.
-In this post, we share data that provides signals of network disruptions in Gabon."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/gabon-internet-disruption/"><meta property="article:published_time" content="2019-01-09T00:00:00+00:00"><meta property="article:modified_time" content="2019-01-09T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Internet disruption in Gabon amid coup attempt"><meta name=twitter:description content="On 7th January 2019, a military coup was attempted in Gabon in a bid to end more than 50 years of rule by President Ali Bongo’s family. The coup attempt was quickly foiled. Security forces reportedly killed two suspects, arrested seven others, and Gabon’s government retained control.
-Meanwhile, a curfew has been imposed and NetBlocks reported that access to the Internet has been shut down.
-In this post, we share data that provides signals of network disruptions in Gabon."><link rel=stylesheet type=text/css href=https://ooni.github.io/css/bootstrap.min.0fa63041d1adce4ab1b63edefe88157bf5f5a3bd58abf6358e92b68b01d131c0.css><link rel=stylesheet type=text/css href=https://ooni.github.io/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='initial-scale=1,width=device-width'><title>Internet disruption in Gabon amid coup attempt | OONI</title>
+<link rel=canonical href=https://ooni.org/post/gabon-internet-disruption/><meta name=description content="On 7th January 2019, a military coup was attempted in Gabon in a bid to end
+more than 50 years of rule by President Ali Bongo’s family. The coup
+attempt was quickly foiled. Security forces
+reportedly
+killed two suspects, arrested seven others, and Gabon’s government
+retained control.
+Meanwhile, a curfew
+has been imposed and NetBlocks reported
+that access to the Internet has been shut down.
+In this post, we share data that provides signals of network disruptions
+in Gabon."><meta property="og:title" content="Internet disruption in Gabon amid coup attempt"><meta property="og:description" content="On 7th January 2019, a military coup was attempted in Gabon in a bid to end
+more than 50 years of rule by President Ali Bongo’s family. The coup
+attempt was quickly foiled. Security forces
+reportedly
+killed two suspects, arrested seven others, and Gabon’s government
+retained control.
+Meanwhile, a curfew
+has been imposed and NetBlocks reported
+that access to the Internet has been shut down.
+In this post, we share data that provides signals of network disruptions
+in Gabon."><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/gabon-internet-disruption/"><meta property="article:published_time" content="2019-01-09T00:00:00+00:00"><meta property="article:modified_time" content="2019-01-09T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Internet disruption in Gabon amid coup attempt"><meta name=twitter:description content="On 7th January 2019, a military coup was attempted in Gabon in a bid to end
+more than 50 years of rule by President Ali Bongo’s family. The coup
+attempt was quickly foiled. Security forces
+reportedly
+killed two suspects, arrested seven others, and Gabon’s government
+retained control.
+Meanwhile, a curfew
+has been imposed and NetBlocks reported
+that access to the Internet has been shut down.
+In this post, we share data that provides signals of network disruptions
+in Gabon."><link rel=stylesheet type=text/css href=/css/bootstrap.min.e2d14d1a1dcdfab34aba5963e76f1aa59cc3291ce469f4336bdbddcea78ab123.css><link rel=stylesheet type=text/css href=/css/index.min.a73d0006e4d94a4799760881ae0dc944e6c5024aae2ef29b387102b5901c0653.css><link rel=icon type=image/png href=/images/favicon.png><script type=text/javascript src=https://cdn.jsdelivr.net/npm/ooni-run/dist/widgets.js defer></script><script defer src=https://eu.umami.is/script.js data-website-id=6c8fa418-795c-41cc-9840-40c43a88648a domains=ooni.org,ooni.github.io,ooni.netlify.com,openobservatory.github.io></script></head><body><nav class="navbar mb-4" id=navbar><div class=container><div class="d-flex flex-column flex-lg-row"><div class="d-flex justify-content-between align-items-center"><div class=nav-menu-brand><a href=/><img src=/images/logos/ooni-horizontal.svg alt="OONI Logo"></a></div><button class="nav-menu-btn d-lg-none" id=menu-btn aria-label="Toggle the menu">
 <img src=/images/menu-open.svg class="nav-menu-btn-icon nav-menu-btn-icon_open" alt="Open the menu">
 <img src=/images/menu-close.svg class="nav-menu-btn-icon nav-menu-btn-icon_close" alt="Close the menu"></button></div><div class=nav-menu><div class="d-flex flex-column flex-lg-row align-items-start"><div class=nav-menu-item><a href=/about/>About</a></div><div class=nav-menu-item><a href=/nettest/>Tests</a></div><div class=nav-menu-item><a href=/data/>Data</a></div><div class=nav-menu-item><a href=/get-involved/>Get Involved</a></div><div class=nav-menu-item><a href=/reports/>Reports</a></div><div class=nav-menu-item><a href=/blog/>Blog</a></div><div class=nav-menu-item><a href=/donate/>Donate</a></div></div><div class=nav-menu-install><a href=/install/ class="btn explorer-button">Install OONI Probe</a></div></div></div></nav><script type=text/javascript>var navbar=document.getElementById("navbar"),menuBtn=document.getElementById("menu-btn");menuBtn.addEventListener("click",function(){navbar.classList.toggle("navbar_opened")})</script><div class=container><main class="blog-post col"><h1 class=article-title>Internet disruption in Gabon amid coup attempt</h1><div class=byline><span class=author>Philipp Winter, Maria Xynou</span>
 <span class=date>2019-01-09</span></div><p>On 7th January 2019, a <a href=https://www.bbc.com/news/world-africa-46779854>military coup was attempted in Gabon</a> in a bid to end
@@ -31,29 +55,29 @@ reaching the UCSD Network Telescope monitoring an unutilized /8
 address block.</p></li></ul><p>IODA data provides insight into Internet disruptions affecting entire
 countries, as well as the granularity required for identifying
 disruptions only affecting certain networks or regions within countries.</p><p>The following IODA chart clearly shows that access to the Internet was
-disrupted in Gabon at around 7am UTC on 7th January 2019 for 28 hours.</p><p><img src=/post/gabon/ioda-ga-data.png alt="IODA data: Gabon Internet Outage"></p><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), Gabon:
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/GA&amp;lastView=overview&amp;from=1546814820&amp;until=1546977600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/GA&amp;lastView=overview&amp;from=1546814820&amp;until=1546977600</a></p><p>Around 75% of Gabon’s address space appears to have been withdrawn,
+disrupted in Gabon at around 7am UTC on 7th January 2019 for 28 hours.</p><p><img alt="IODA data: Gabon Internet Outage" src=/post/gabon/ioda-ga-data.png></p><p><strong>Source:</strong> Internet Outage Detection and Analysis (IODA), Gabon:
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/GA&lastView=overview&from=1546814820&until=1546977600">https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/GA&amp;lastView=overview&amp;from=1546814820&amp;until=1546977600</a></p><p>Around 75% of Gabon’s address space appears to have been withdrawn,
 while active probing and darknet measurements dropped as well, at around
 the same time. On 8th January 2019 at 11 a.m. UTC, Gabon’s prefixes came
 back online and connectivity recovered. The shutdown lasted for 28
 hours.</p><p>This is not the first time that an Internet outage is observed in Gabon.</p><p>The country recently (11th December 2018)
-<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/GA&amp;lastView=overview&amp;from=1544515260&amp;until=1544601540">experienced</a>
+<a href="https://ioda.caida.org/ioda/dashboard#view=inspect&entity=country/GA&lastView=overview&from=1544515260&until=1544601540">experienced</a>
 a significant Internet outage, affecting more than half of its address
 space. In early September 2016, following the re-election of President
 Ali Bongo and amid clashes between opposition protesters and security
-forces, daily <a href="https://ioda.caida.org/ioda/dashboard/inspect#view=inspect&amp;entity=country/GA&amp;from=1473033600&amp;until=1473638400">Internet outages were detected</a>
+forces, daily <a href="https://ioda.caida.org/ioda/dashboard/inspect#view=inspect&entity=country/GA&from=1473033600&until=1473638400">Internet outages were detected</a>
 by IODA.</p><h1 id=google-traffic-data>Google traffic data</h1><p>Through their <a href=https://transparencyreport.google.com/traffic/overview>Transparency Reports</a>,
 Google shares product traffic data originating from all countries around
 the world. A visible decrease in traffic in a specific region may mean
 that users there cannot access certain Google products or services.
 Since Google services are widely used in most countries around the
 world, Google traffic data can provide strong signals when network
-disruptions occur.</p><p>Similarly to IODA data, <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1546732800000;end:1546905600000;product:1;region:GA&amp;lu=fraction_traffic">Google traffic data</a>
+disruptions occur.</p><p>Similarly to IODA data, <a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1546732800000;end:1546905600000;product:1;region:GA&lu=fraction_traffic">Google traffic data</a>
 also suggests that Gabon is experiencing Internet disruptions.</p><p>The following chart illustrates a drop in Google traffic on 7th January
 2019, with almost no relative traffic originating from Gabon on 8th
-January 2019.</p><p><img src=/post/gabon/google-traffic-ga.png alt="Google Traffic: Gabon"></p><p><strong>Source:</strong> Google Transparency Report, Traffic and disruptions to
+January 2019.</p><p><img alt="Google Traffic: Gabon" src=/post/gabon/google-traffic-ga.png></p><p><strong>Source:</strong> Google Transparency Report, Traffic and disruptions to
 Google, Gabon,
-<a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1546732800000;end:1546905600000;product:1;region:GA&amp;lu=fraction_traffic">https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1546732800000;end:1546905600000;product:1;region:GA&amp;lu=fraction_traffic</a></p><p>At the time of publication of this blog post, the Google Transparency
+<a href="https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1546732800000;end:1546905600000;product:1;region:GA&lu=fraction_traffic">https://transparencyreport.google.com/traffic/overview?fraction_traffic=start:1546732800000;end:1546905600000;product:1;region:GA&amp;lu=fraction_traffic</a></p><p>At the time of publication of this blog post, the Google Transparency
 Reports haven’t been updated with the latest data (limiting our ability
 to evaluate whether connectivity has been restored in Gabon based on
 Google traffic).</p><p>It’s worth highlighting that both Google traffic and IODA charts are

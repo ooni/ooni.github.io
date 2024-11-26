@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>release on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/release/</link><description>Recent content in release on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 07 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/release/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI releases Lepidopter Raspberry Pi distribution</title><link>https://ooni.github.io/post/lepidopter/</link><pubDate>Wed, 07 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/lepidopter/</guid><description>The Open Observatory of Network Interference (OONI) team is happy to announce the beta release of OONI Probe&amp;rsquo;s distribution for Raspberry Pis, caĺled Lepidopter.
-What is Lepidopter Lepidopter is a Raspberry Pi distribution image with all the required dependencies and software packages in place, configured to run network measurement tests via the OONI Probe software. It is developed and designed to require no physical attendance upon first bootstrap but also allows experienced users to further configure it as they wish.</description></item><item><title>OONI releases new Web Connectivity test for detecting online censorship</title><link>https://ooni.github.io/post/web-connectivity/</link><pubDate>Fri, 03 Jun 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/web-connectivity/</guid><description>Today the Open Observatory of Network Interference (OONI) is excited to be releasing a brand new test, called Web Connectivity, which is designed to detect three different types of censorship: DNS tampering, TCP/IP blocking and HTTP blocking.
-Advantages of running Web Connectivity This test allows us to see which websites are blocked and how, more accurately than ever before!
-Previously we relied on running separate (http_request, dns_consistency and tcp_connect) tests with the aim of identifying various forms of censorship.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/release/</link><description>Recent content in Release on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 07 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/release/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI releases Lepidopter Raspberry Pi distribution</title><link>https://ooni.github.io/post/lepidopter/</link><pubDate>Wed, 07 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/lepidopter/</guid><description>&lt;p>The Open Observatory of Network Interference (OONI) team is happy to announce
+the beta release of OONI Probe&amp;rsquo;s distribution for Raspberry Pis, caĺled
+&lt;strong>Lepidopter&lt;/strong>.&lt;/p>
+&lt;h2 id="what-is-lepidopter">What is Lepidopter&lt;/h2>
+&lt;p>Lepidopter is a Raspberry Pi distribution image with all the required
+dependencies and software packages in place, configured to run network
+measurement tests via the
+&lt;a href="https://github.com/TheTorProject/ooni-probe">OONI Probe&lt;/a> software. It is
+developed and designed to require no physical attendance upon first bootstrap
+but also allows experienced users to further configure it as they wish. The
+&lt;a href="https://github.com/TheTorProject/lepidopter">source code&lt;/a> and the building
+scripts of the Lepidopter image are free and open source software.&lt;/p></description></item><item><title>OONI releases new Web Connectivity test for detecting online censorship</title><link>https://ooni.github.io/post/web-connectivity/</link><pubDate>Fri, 03 Jun 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/web-connectivity/</guid><description>&lt;p>Today the Open Observatory of Network Interference (OONI) is excited to be
+releasing a brand new test, called
+&lt;em>&lt;a href="https://ooni.org/nettest/web-connectivity/">Web Connectivity&lt;/a>&lt;/em>,
+which is designed to detect three different types of censorship: &lt;em>DNS
+tampering&lt;/em>, &lt;em>TCP/IP blocking&lt;/em> and &lt;em>HTTP blocking&lt;/em>.&lt;/p>
+&lt;h2 id="advantages-of-running-web-connectivity">Advantages of running Web Connectivity&lt;/h2>
+&lt;p>This test allows us to see which websites are blocked and how, more accurately
+than ever before!&lt;/p>
+&lt;p>Previously we relied on running separate (http_request, dns_consistency and
+tcp_connect) tests with the aim of identifying various forms of censorship. We
+then had to correlate measurements across different tests to identify whether
+and how websites were blocked. This process was not only tedious, but it also
+led to more false positives.&lt;/p></description></item></channel></rss>

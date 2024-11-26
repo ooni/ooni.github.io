@@ -1,40 +1,209 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/ru/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo -- gohugo.io</generator><language>ru</language><lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/ru/index.xml" rel="self" type="application/rss+xml"/><item><title>Казахстан: TLS MITM атаки и блокировка сайтов новостных и правозащитных ресурсов, а также сайтов инструментов по обходу блокировок</title><link>https://ooni.github.io/ru/post/2024-kazakhstan-report/</link><pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/post/2024-kazakhstan-report/</guid><description>В последние годы об интерент-цензуре в Казахстане писали довольно много. В рамках этого исследования, OONI и организация Internet Freedom Kazakhstan (IFKZ) совместно с Евразийским цифровым фондом провели исследование интернет-цензуры в Казахстане за последний год (с июня 2023 года по июнь 2024 года) на основе анализа эмпирических данных в виде сетевых измерений.
-В этом отчете мы делимся результатами измерений OONI и соответствующим правовым контекстом. Мы обнаружили заблокироваными в Казахстане с помощью TLS-вмешательства множество сайтов новостных СМИ, правозащитных организаций и инструментов обхода блокировки.</description></item><item><title>Год военной цензуры в России</title><link>https://ooni.github.io/ru/post/2023-russia-a-year-after-the-conflict/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/post/2023-russia-a-year-after-the-conflict/</guid><description>Ровно год назад в этот день Россия начала военную операцию в Украине. За этим последовало усиление интернет-цензуры: интернет-провайдеры в России начали блокировать доступ к различным местным и международным медиа. В начале марта 2022 года OONI опубликовали отчет, в котором задокументированы эти блокировки, а также блокировка сайта (200rf.com), на котором размещена информация о российских солдатах захваченных и убитых в Украине. OONI также заметил, что российские интернет-провайдеры начали ограничивать доступ к Twitter 26-го февраля 2022 года и перешли на его блокировку к 4-му марта 2022 года,вскоре после этого они также начали блокировать Facebook.</description></item><item><title/><link>https://ooni.github.io/ru/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/about/risks/</guid><description>Риски: что вы должны знать до запуска OONI Probe Оригинальный текст:
-English, Risks: Things you should know before running OONI Probe На русский язык документ переведен Татьяной Болдыревой.
-Насколько нам известно, ни один пользователь OONI Probe никогда не сталкивался с последствиями в результате использования нашего программного обеспечения. Поэтому описанные ниже потенциальные риски являются теоретическими и весьма умозрительными. Если вы используете OONI Probe в «среде повышенного риска», мы настоятельно рекомендуем вам прочитать всю документацию, приведенную ниже.</description></item><item><title>«Часто задаваемые вопросы» (FAQ)</title><link>https://ooni.github.io/ru/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/faq/</guid><description>Этот раздел «Часто задаваемые вопросы» (FAQ) предназначен для ответа на вопросы, которые нам часто задают участники нашего сообщества.
-Оригинал:
-English, Frequently Asked Questions (FAQ) На русский язык документ переведен Татьяной Болдыревой.
-Если есть другие вопросы, на которые вы хотели бы получить ответ, то пожалуйста, свяжитесь с нами.
-Про OONI
-Что такое OONI?
-Почему OONI?
-Что делает OONI?
-Зачем нужно измерять интернет-цензуру?
-Как финансируется OONI?
-Какое отношение имеет OONI к проекту Tor?</description></item><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/ru/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/ooni-outreach-kit/</guid><description>Работа с сообществами это одна из основных задач команды OONI, так как данные OONI об интернет-цензуре зависят от людей, использующих OONI Probe по всему миру.
-Вы хотели бы рассказать о том, как отслеживать цензуру с помощью инструментов OONI вашему сообществу?
-Образовательные материалы OONI включают документы, которые мы просим вас использовать для работы с местными сообществами, проведения тренингов и распространения информации об инструментах OONI.
-Брошюры OONI Информационная брошюра OONI Probe Информационная брошюра OONI Explorer Информационная брошюра об интернет-цензуре Презентация для тренингов OONI Другие ресурсы OONI Брошюры OONI У нас есть 2 брошюры, которые включают информацию об использовании инструментов OONI и открытых данных OONI, которые могут быть использованы для исследования цензуры по всему миру.</description></item><item><title>Глоссарий OONI</title><link>https://ooni.github.io/ru/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/glossary/</guid><description>Дата последнего обновления: 3 июля 2023
-Этот глоссарий содержит краткие пояснения терминов, используемых в приложениях, методологии и исследовательских отчетах OONI.
-Этот документ был переведен на русский Татьяной Болдыревой.
-Оригинальный документ:
-English, OONI Glossary Если вы хотите, чтобы в глоссарий были включены дополнительные термины, пожалуйста, создайте запрос на добавление или отправьте нам письмо.
-API
-AS
-ASN
-BGP
-Блок-лист
-Страница блокировки
-Кэширование
-Инструменты обхода блокировок
-Клиент
-Конвейер обработки данных (Data processing pipeline)</description></item><item><title>Инструкция по использованию приложения OONI Probe Desktop</title><link>https://ooni.github.io/ru/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/ooni-probe-desktop/</guid><description>Последнее обновление: 6 сентября 2022
-Версия OONI Probe Desktop: 3.7.0
-OONI Probe – это бесплатное оупенсорсное приложение, с помощью которого вы можете отслеживать интернет-цензуру и другие формы вмешательства в ваше интернет-соединение. В этом документе содержится пошаговая инструкция по установке, запуску и настройкам OONI Probe desktop app.
-С помощью этой инструкции вы научитесь:
-Использовать OONI Probe Desktop чтобы:
-Проверять блокировки сайтов Тестировать блокировку мессенджеров Проверять блокировки инструментов обхода инернет-цензуры и блокировок, например VPN и Tor Измерять скорость и качество вашего соединения Создавать собственные списки сайтов для тестирования с помощью OONI Probe</description></item><item><title>Инструкция по использованию приложения OONI Probe Mobile</title><link>https://ooni.github.io/ru/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/ooni-probe-mobile/</guid><description>Последнее обновление: 6 сентября 2022
-Версия OONI Probe Mobile: 3.7.1
-OONI Probe – это бесплатное оупенсорсное приложение, с помощью которого вы можете отслеживать интернет-цензуру и другие формы вмешательства в ваше интернет-соединение. В этом документе содержится пошаговая инструкция по установке, запуску и настройкам OONI Probe mobile app.
-С помощью этой инструкции вы научитесь:
-Использовать OONI Probe Mobile чтобы: Проверить блокировки сайтов Протестировать блокировку мессенджеров Проверить блокировки сайтов Тестировать блокировку мессенджеров Создавать собственные списки сайтов для тестирования с помощью OONI Probe Получать доступ к результатам ваших тестов и делиться этими результатами Настраивать приложение OONI Probe Мы надеемся, что после прочтения этой инструкции, вы почувствуете уверенность и желание делиться вашими знаниями об OONI Probe с окружающими!</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/ru/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>ru</language><lastBuildDate>Thu, 19 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/ru/index.xml" rel="self" type="application/rss+xml"/><item><title>Казахстан: TLS MITM атаки и блокировка сайтов новостных и правозащитных ресурсов, а также сайтов инструментов по обходу блокировок</title><link>https://ooni.github.io/ru/post/2024-kazakhstan-report/</link><pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/post/2024-kazakhstan-report/</guid><description>&lt;p>В последние годы об интерент-цензуре в Казахстане &lt;a href="https://freedomhouse.org/country/kazakhstan/freedom-net/2023">писали&lt;/a> довольно много. В рамках этого исследования, &lt;a href="https://ooni.org/">OONI&lt;/a> и организация &lt;a href="https://ifkz.org/en">Internet Freedom Kazakhstan (IFKZ)&lt;/a> совместно с &lt;a href="https://www.digitalrights.asia">Евразийским цифровым фондом&lt;/a> провели исследование интернет-цензуры в Казахстане за последний год (с июня 2023 года по июнь 2024 года) на основе анализа эмпирических данных в виде сетевых измерений.&lt;/p>
+&lt;p>В этом отчете мы делимся результатами измерений OONI и соответствующим правовым контекстом. Мы обнаружили заблокироваными в Казахстане с помощью TLS-вмешательства множество сайтов &lt;a href="https://explorer.ooni.org/search?probe_cc=KZ&amp;test_name=web_connectivity&amp;since=2023-06-01&amp;until=2024-06-01&amp;failure=false&amp;category_code=NEWS&amp;only=anomalies">новостных СМИ&lt;/a>, &lt;a href="https://explorer.ooni.org/chart/mat?test_name=web_connectivity&amp;axis_x=measurement_start_day&amp;since=2023-06-01&amp;until=2024-06-01&amp;time_grain=day&amp;probe_cc=KZ&amp;axis_y=domain&amp;domain=www.ipetitions.com%2Cwww.change.org%2Cegov.press%2Camnesty.org.ru">правозащитных организаций&lt;/a> и &lt;a href="https://explorer.ooni.org/chart/mat?test_name=web_connectivity&amp;axis_x=measurement_start_day&amp;since=2023-06-01&amp;until=2024-06-01&amp;time_grain=day&amp;probe_cc=KZ&amp;axis_y=domain&amp;category_code=ANON">инструментов обхода блокировки&lt;/a>. Мы также задокументировали 7 различных промежуточных сертификатов подписанных четырьмя уникальными корневыми сертификатами (НУЦ РК), которые использовались для проведения атак типа &lt;a href="https://explorer.ooni.org/m/20210808015758.022737_KZ_webconnectivity_3b9213f9ee4f2d06">&amp;ldquo;man-in-the-middle&amp;rdquo; (MITM) в рамках TLS-рукопожатия&lt;/a> в случае подключения к не менее 14 различным доменным именам в не менее чем 19 различных сетях в Казахстане. Более подробная информация представлена ниже.&lt;/p></description></item><item><title>Год военной цензуры в России</title><link>https://ooni.github.io/ru/post/2023-russia-a-year-after-the-conflict/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/post/2023-russia-a-year-after-the-conflict/</guid><description>&lt;p>Ровно год назад в этот день Россия начала &lt;a href="https://www.bbc.com/news/world-60525350">военную операцию в Украине&lt;/a>. За этим последовало усиление интернет-цензуры: интернет-провайдеры в России начали &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocking-of-news-media-websites">блокировать доступ к различным местным и международным медиа&lt;/a>. В начале марта 2022 года OONI опубликовали &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/">отчет&lt;/a>, в котором задокументированы эти блокировки, а также блокировка &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocked-website-about-captured-and-killed-russian-soldiers">сайта&lt;/a> (200rf.com), на котором размещена информация о российских солдатах захваченных и убитых в Украине. OONI также заметил, что российские интернет-провайдеры начали &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-throttled">ограничивать доступ&lt;/a> к Twitter 26-го февраля 2022 года и перешли на его &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-and-facebook-blocked">блокировку&lt;/a> к 4-му марта 2022 года,вскоре после этого они также начали &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;domain=www.facebook.com&amp;probe_cc=RU&amp;only=anomalies">блокировать&lt;/a> Facebook.&lt;/p></description></item><item><title/><link>https://ooni.github.io/ru/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/about/risks/</guid><description>&lt;h1 id="риски-что-вы-должны-знать-до-запуска-ooni-probe">Риски: что вы должны знать до запуска OONI Probe&lt;/h1>
+&lt;p>Оригинальный текст:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>English,&lt;/strong> &lt;a href="https://ooni.github.io/ru/about/risks/">Risks: Things you should know before running OONI Probe&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>На русский язык документ переведен Татьяной Болдыревой.&lt;/p>
+&lt;p>Насколько нам известно, ни один пользователь OONI Probe никогда не сталкивался с последствиями в результате использования нашего программного обеспечения. Поэтому описанные ниже потенциальные риски являются теоретическими и весьма умозрительными. Если вы используете OONI Probe в «среде повышенного риска», мы настоятельно рекомендуем вам прочитать всю документацию, приведенную ниже.&lt;/p></description></item><item><title>«Часто задаваемые вопросы» (FAQ)</title><link>https://ooni.github.io/ru/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/faq/</guid><description>&lt;p>Этот раздел «Часто задаваемые вопросы» (FAQ) предназначен для ответа на вопросы, которые нам часто задают участники нашего сообщества.&lt;/p>
+&lt;p>Оригинал:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>English,&lt;/strong> &lt;a href="https://ooni.org/support/faq/">Frequently Asked Questions (FAQ)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>На русский язык документ переведен Татьяной Болдыревой.&lt;/p>
+&lt;p>Если есть другие вопросы, на которые вы хотели бы получить ответ, то пожалуйста, &lt;a href="https://ooni.org/about/#contact">свяжитесь с нами&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/faq/#про-ooni">Про OONI&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/faq/#что-такое-ooni">Что такое OONI?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/faq/#почему-ooni">Почему OONI?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/faq/#что-делает-ooni">Что делает OONI?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/faq/#зачем-нужно-измерять-интернет-цензуру">Зачем нужно измерять интернет-цензуру?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/faq/#как-финансируется-ooni">Как финансируется OONI?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/faq/#какое-отношение-имеет-ooni-к-проекту-tor">Какое отношение имеет OONI к проекту Tor?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/faq/#где-находится-ooni">Где находится OONI?&lt;/a>&lt;/p></description></item><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/ru/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/ooni-outreach-kit/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-outreach-kit/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu116634532574350516.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
+ 
+
+ title="OONI Outreach Kit"
+ 
+ alt="OONI Outreach Kit"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Работа с сообществами это одна из основных задач команды OONI, так как &lt;a href="https://ooni.org/data/">данные OONI&lt;/a> об интернет-цензуре зависят от людей, использующих &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> по всему миру.&lt;/p>
+&lt;p>Вы хотели бы рассказать о том, как отслеживать цензуру с помощью инструментов OONI вашему сообществу?&lt;/p>
+&lt;p>Образовательные материалы OONI включают &lt;strong>документы, которые мы просим вас использовать&lt;/strong> для работы с местными сообществами, проведения тренингов и распространения информации об инструментах OONI.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#брошюры-ooni">Брошюры OONI&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#информационная-брошюра-ooni-probe">Информационная брошюра OONI Probe&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#информационная-брошюра-ooni-explorer">Информационная брошюра OONI Explorer&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#информационная-брошюра-об-интернет-цензуре">Информационная брошюра об интернет-цензуре&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#презентация-для-тренингов-ooni">Презентация для тренингов OONI&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#другие-ресурсы-ooni">Другие ресурсы OONI&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="брошюры-ooni">Брошюры OONI&lt;/h2>
+&lt;p>У нас есть 2 брошюры, которые включают информацию об использовании инструментов OONI и открытых данных OONI, которые могут быть использованы для исследования цензуры по всему миру.&lt;/p></description></item><item><title>Глоссарий OONI</title><link>https://ooni.github.io/ru/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/glossary/</guid><description>&lt;p>&lt;strong>Дата последнего обновления&lt;/strong>: 3 июля 2023&lt;/p>
+&lt;p>Этот глоссарий содержит &lt;em>краткие пояснения&lt;/em> терминов, используемых в приложениях, методологии и исследовательских отчетах OONI.&lt;/p>
+&lt;p>Этот документ был переведен на русский Татьяной Болдыревой.&lt;/p>
+&lt;p>&lt;strong>Оригинальный документ&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>English, &lt;a href="https://ooni.org/support/glossary/">OONI Glossary&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Если вы хотите, чтобы в глоссарий были включены дополнительные термины, пожалуйста, &lt;a href="https://github.com/ooni/ooni.org">создайте запрос на добавление&lt;/a> или &lt;a href="https://ooni.org/about/#contact">отправьте нам письмо&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#api">API&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#as">AS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#asn">ASN&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#bgp">BGP&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#блок-лист">Блок-лист&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#страница-блокировки">Страница блокировки&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#кэширование">Кэширование&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#инструменты-обхода-блокировок">Инструменты обхода блокировок&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#клиент">Клиент&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#конвейер-обработки-данных-data-processing-pipeline">Конвейер обработки данных (Data processing pipeline)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#dns">DNS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ru/support/glossary/#перехват-dns">Перехват DNS&lt;/a>&lt;/p></description></item><item><title>Инструкция по использованию приложения OONI Probe Desktop</title><link>https://ooni.github.io/ru/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/ooni-probe-desktop/</guid><description>&lt;p>&lt;strong>Последнее обновление:&lt;/strong> 6 сентября 2022&lt;/p>
+&lt;p>&lt;strong>Версия OONI Probe Desktop:&lt;/strong> 3.7.0&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu8619296333105039821.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu2811019159506606390.png 2x"
+ 
+
+ title="Install OONI Probe Desktop"
+ 
+ alt="Install OONI Probe Desktop"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe – это &lt;a href="https://github.com/ooni/probe">бесплатное оупенсорсное приложение&lt;/a>, с помощью которого вы можете отслеживать интернет-цензуру и другие формы вмешательства в ваше интернет-соединение. В этом документе содержится &lt;strong>пошаговая инструкция&lt;/strong> по установке, запуску и настройкам &lt;a href="https://ooni.org/install/desktop">OONI Probe desktop app&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>С помощью этой инструкции вы научитесь:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Использовать OONI Probe Desktop чтобы:&lt;/p>
+&lt;ul>
+&lt;li>Проверять блокировки сайтов&lt;/li>
+&lt;li>Тестировать блокировку мессенджеров&lt;/li>
+&lt;li>Проверять блокировки инструментов обхода инернет-цензуры и блокировок, например VPN и Tor&lt;/li>
+&lt;li>Измерять скорость и качество вашего соединения&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Создавать собственные списки сайтов для тестирования с помощью OONI Probe&lt;/p></description></item><item><title>Инструкция по использованию приложения OONI Probe Mobile</title><link>https://ooni.github.io/ru/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/ooni-probe-mobile/</guid><description>&lt;p>&lt;strong>Последнее обновление:&lt;/strong> 6 сентября 2022&lt;/p>
+&lt;p>&lt;strong>Версия OONI Probe Mobile:&lt;/strong> 3.7.1&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-mobile/images/image49.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu9506725050971740468.png"
+
+ 
+
+ title="Measure Internet Censorship"
+ 
+ alt="Measure Internet Censorship"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe – это &lt;a href="https://github.com/ooni/probe">бесплатное оупенсорсное приложение&lt;/a>, с помощью которого вы можете отслеживать интернет-цензуру и другие формы вмешательства в ваше интернет-соединение. В этом документе содержится &lt;strong>пошаговая инструкция&lt;/strong> по установке, запуску и настройкам &lt;a href="https://ooni.org/install/mobile">OONI Probe mobile app&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>С помощью этой инструкции вы научитесь:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Использовать OONI Probe Mobile чтобы:
+&lt;ul>
+&lt;li>Проверить блокировки сайтов&lt;/li>
+&lt;li>Протестировать блокировку мессенджеров&lt;/li>
+&lt;li>Проверить блокировки сайтов&lt;/li>
+&lt;li>Тестировать блокировку мессенджеров&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Создавать собственные списки сайтов для тестирования с помощью OONI Probe&lt;/li>
+&lt;li>Получать доступ к результатам ваших тестов и делиться этими результатами&lt;/li>
+&lt;li>Настраивать приложение OONI Probe&lt;/li>
+&lt;/ul>
+&lt;p>Мы надеемся, что после прочтения этой инструкции, вы почувствуете уверенность и желание делиться вашими знаниями об OONI Probe с окружающими!&lt;/p></description></item></channel></rss>
