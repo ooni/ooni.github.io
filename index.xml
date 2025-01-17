@@ -3146,14 +3146,14 @@ circumstances though, ISPs map the wrong IP addresses to the wrong host names.
 This is a form of tampering, which OONI can detect by running its DNS
 consistency test.&lt;/p></description></item><item><title>Download OONI Probe Desktop</title><link>https://ooni.github.io/install/desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/install/desktop/</guid><description>&lt;a class="ooni-desktop-btn square-btn"
  id="windows-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.8/OONI-Probe-Setup-3.9.8.exe"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-Setup-3.9.9.exe"
  >Download OONI Probe for Windows&lt;/a>
 
 
 
 &lt;a class="ooni-desktop-btn square-btn"
  id="macos-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.8/OONI-Probe-3.9.8.dmg"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-3.9.9.dmg"
  >Download OONI Probe for macOS&lt;/a>
 
 &lt;p>&lt;a href="https://ooni.github.io/install/all/">Other Platforms &amp;raquo;&lt;/a>&lt;/p>
@@ -3184,7 +3184,7 @@ questions that we are frequently asked by the community.&lt;/p>
 &lt;p>Are there other questions you would like us to address? Please &lt;a href="https://ooni.org/about/#contact">let us know&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/support/faq/#about-ooni">About OONI&lt;/a>&lt;/p></description></item><item><title>Fundación Internet Bolivia</title><link>https://ooni.github.io/partners/fundacion-internet-bolivia.org/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/partners/fundacion-internet-bolivia.org/</guid><description>&lt;p>Fundación Internet Bolivia aims to defend digital rights in Bolivia through the generation of knowledge and the promotion of good practices. Their vision is to achieve free, open and secure Internet access for the Bolivian population.&lt;/p></description></item><item><title>Fundación Karisma</title><link>https://ooni.github.io/partners/karisma-foundation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/partners/karisma-foundation/</guid><description>&lt;p>&lt;a href="https://web.karisma.org.co/">Fundación Karisma&lt;/a> is a Colombian civil society organization that seeks to respond to the threats and opportunities that “technology for development” poses to the exercise of human rights.&lt;/p>
+&lt;p>&lt;a href="https://ooni.github.io/support/faq/#about-ooni">About OONI&lt;/a>&lt;/p></description></item><item><title>Fundación Internet Bolivia</title><link>https://ooni.github.io/partners/fundacion-internet-bolivia.org/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/partners/fundacion-internet-bolivia.org/</guid><description>&lt;p>Fundación Internet Bolivia aims to defend digital rights in Bolivia through the generation of knowledge and the promotion of good practices. Their vision is to achieve free, open and secure Internet access for the Bolivian population.&lt;/p></description></item><item><title>Fundación Karisma</title><link>https://ooni.github.io/partners/karisma-foundation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/partners/karisma-foundation/</guid><description>&lt;p>&lt;a href="https://web.karisma.org.co/">Fundación Karisma&lt;/a> is a Colombian civil society organization that seeks to respond to the threats and opportunities that “technology for development” poses to the exercise of human rights. In 2021, Fundación Karisma launched &lt;a href="https://obi.karisma.org.co/">OBI (Observatorio de Bloqueos de Internet)&lt;/a> project aimed to document and investigate internet censorship in Colombia.&lt;/p>
 &lt;p>In 2019, Fundación Karisma &lt;a href="https://web.karisma.org.co/fundacion-karisma-wins-the-index-censorship-freedom-of-expression-award-2019/">won the Index Censorship Freedom of Expression Award&lt;/a>.&lt;/p></description></item><item><title>GitHub: Updating the Citizen Lab test lists</title><link>https://ooni.github.io/support/github-test-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/github-test-lists/</guid><description>&lt;div>
  &lt;a href="https://ooni.github.io/support/github-test-lists/images/github-test-lists.png">
  &lt;img
@@ -3436,14 +3436,14 @@ and political trends that contributed to the Arab Spring uprisings in
 
 &lt;a class="ooni-desktop-btn square-btn"
  id="windows-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.8/OONI-Probe-Setup-3.9.8.exe"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-Setup-3.9.9.exe"
  >Windows 64-bit&lt;/a>
 
 
 
 &lt;a class="ooni-desktop-btn square-btn"
  id="macos-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.8/OONI-Probe-3.9.8.dmg"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-3.9.9.dmg"
  >macOS&lt;/a>
 
 &lt;hr>
