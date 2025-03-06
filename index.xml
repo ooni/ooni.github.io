@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 04 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Launch: New OONI Probe multiplatform app</title><link>https://ooni.github.io/post/2025-launch-ooniprobe-multiplatform-app/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-launch-ooniprobe-multiplatform-app/</guid><description>&lt;p>We are excited to share that we have launched an &lt;strong>&lt;a href="https://ooni.org/install/mobile">OONI Probe multiplatform app for Android and iOS&lt;/a>&lt;/strong>! This is an important milestone for the long-term sustainability of the OONI Probe apps, as it will enable us to ensure feature parity and to ship new features faster and more effectively across platforms.&lt;/p>
 &lt;p>&lt;strong>Update now&lt;/strong> to the latest version (5.0.3) to start using the new OONI Probe app on &lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android&lt;/a> or &lt;a href="https://apps.apple.com/us/app/ooni-probe/id1199566366">iOS&lt;/a>.&lt;/p>
-&lt;p>&lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> is a free and open source tool that we have built since 2012, designed to &lt;a href="https://ooni.org/nettest/">measure various forms of internet censorship&lt;/a>. To enable communities worldwide to run OONI Probe and contribute measurements (which are published as &lt;a href="https://ooni.org/data/">open data&lt;/a> in real-time), we have made OONI Probe available for &lt;a href="https://ooni.org/install/">both mobile and desktop&lt;/a> platforms. Specifically, OONI Probe is available for &lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android&lt;/a>, &lt;a href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">F-Droid&lt;/a>, &lt;a href="https://itunes.apple.com/us/app/id1199566366">iOS&lt;/a>, &lt;a href="https://ooni.org/install/desktop">Windows&lt;/a>, &lt;a href="https://ooni.org/install/desktop">macOS&lt;/a>, and &lt;a href="https://ooni.org/install/cli/ubuntu-debian/">Linux&lt;/a>.&lt;/p></description></item><item><title>Probe Security Without Identification</title><link>https://ooni.github.io/post/2025-probe-security-without-identification/</link><pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-probe-security-without-identification/</guid><description>&lt;figure class="text-center">&lt;img src="https://ooni.github.io/post/2025-probe-security-without-identification/images/chaum.png"
+&lt;p>&lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> is a free and open source tool that we have built since 2012, designed to &lt;a href="https://ooni.org/nettest/">measure various forms of internet censorship&lt;/a>. To enable communities worldwide to run OONI Probe and contribute measurements (which are published as &lt;a href="https://ooni.org/data/">open data&lt;/a> in real-time), we have made OONI Probe available for &lt;a href="https://ooni.org/install/">both mobile and desktop&lt;/a> platforms. Specifically, OONI Probe is available for &lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android&lt;/a>, &lt;a href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">F-Droid&lt;/a>, &lt;a href="https://itunes.apple.com/us/app/id1199566366">iOS&lt;/a>, &lt;a href="https://ooni.org/install/desktop">Windows&lt;/a>, &lt;a href="https://ooni.org/install/desktop">macOS&lt;/a>, and &lt;a href="https://ooni.org/install/cli/ubuntu-debian/">Linux&lt;/a>.&lt;/p></description></item><item><title>A Legal and Technical Analysis of Internet Censorship in France</title><link>https://ooni.github.io/post/2025-france-report/</link><pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-france-report/</guid><description>&lt;p>&lt;em>This is a guest report by &lt;a href="https://maynier.eu/">Etienne Maynier&lt;/a> and Taziden analyzing Internet censorship in France. You can find a more in-depth legal and technical analysis in French at &lt;a href="https://censxres.fr/">https://censxres.fr/&lt;/a>. This work was done in a personal capacity and doesn&amp;rsquo;t represent the view of their employers.&lt;/em>&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#key-findings">Key Findings&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#legal-basis-for-website-censorship-in-france">Legal Basis for Website Censorship in France&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#judiciary-censorship">Judiciary censorship&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#pornography">Pornography&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#intellectual-property">Intellectual Property&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#illegal-streaming-of-sport-competitions">Illegal Streaming of Sport Competitions&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#administrative-censorship">Administrative censorship&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#terrorism-and-child-sex-abuse-material">Terrorism and Child Sex Abuse Material&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#online-gambling-websites">Online Gambling Websites&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#fraud">Fraud&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#cybercrime">Cybercrime&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#tiktok-censorship-in-new-caledonia--kanaky">TikTok Censorship in New Caledonia / Kanaky&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#european-censorship-of-russian-organizations">European Censorship of Russian Organizations&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#network-measurements---methodology">Network Measurements - Methodology&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#network-measurements---results">Network Measurements - Results&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#intellectual-property-1">Intellectual Property&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#streaming-of-sport-events">Streaming of Sport Events&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#illegal-online-gambling-websites">Illegal online gambling websites&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#european-censorship">European Censorship&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#pornography-websites">Pornography Websites&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#implementation-of-censorship-in-france">Implementation of Censorship in France&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="key-findings">Key Findings&lt;/h2>
+&lt;ul>
+&lt;li>Over the past years, several court orders have requested French Internet Service Providers to block more and more websites, whether for copyright infringement, illegal streaming of sport competitions, or more recently pornography websites. In the same time, several laws have been passed in order to provide legal power to several French administrations to block websites involved in cybercrime or fraud.&lt;/li>
+&lt;li>Our OONI measurements on the four main commercial ISPs networks in the fall of 2024 show that this website censorship is implemented at the DNS resolver level, and that for most censorship cases tested (intellectual property, illegal streaming of sport competition and European censorship of Russian organizations), the application of censorship is very inconsistent among different ISPs.&lt;/li>
+&lt;li>The increasing usage of website censorship to regulate political questions by French courts and lawmakers, combined with a technical implementation that is easy to bypass, create a high risk of escalation towards more complex and invasive censorship in France. Such an escalation would lead to more control and more surveillance over Internet traffic by French authorities and could have damaging implications for freedom of expression and online privacy in France.&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Over the past few years, France has seen a major increase in censorship of internet websites, both with court orders forcing ISPs to block websites, and with new bills passed that grant legal power to national agencies to block websites. In 2024 alone, we have seen French authorities blocking TikTok in Kanaky New Caledonia, new laws permitting to block websites used for cybercrime, a legal decision blocking the Z-library website and a new law forcing pornography websites to check the age of visitors before they can access the content (law that should be applied in the first half of 2025). While the first laws that legalized Internet censorship in France opened important debates in civil society about digital rights and freedom of expression (the &lt;a href="https://fr.wikipedia.org/wiki/Loi_pour_la_confiance_dans_l%27%C3%A9conomie_num%C3%A9rique">Bill for Confidence in the Digital Economy - LCEN&lt;/a> in 2004 and the &lt;a href="https://fr.wikipedia.org/wiki/Haute_Autorit%C3%A9_pour_la_diffusion_des_%C5%93uvres_et_la_protection_des_droits_sur_internet">High Authority for the diffusion of art work and protection of rights on Internet - HADOPI&lt;/a> in 2009), this topic is now rarely addressed by digital rights organizations and is not well known by the general public. Yet, it raises important questions about freedom of expression but also the potential lack of oversight and abuse of these laws to block media or opposition websites. &lt;/p></description></item><item><title>Probe Security Without Identification</title><link>https://ooni.github.io/post/2025-probe-security-without-identification/</link><pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-probe-security-without-identification/</guid><description>&lt;figure class="text-center">&lt;img src="https://ooni.github.io/post/2025-probe-security-without-identification/images/chaum.png"
  alt="Image: In his seminal paper Security without identification: transaction systems to make big brother obsolete, Chaum envisioned users interacting anonymously with various organizations using a single digital wallet, even if those organizations colluded." width="60%">&lt;figcaption>
  &lt;p>&lt;strong>Image&lt;/strong>: In his seminal paper &lt;a href="https://dl.acm.org/doi/10.1145/4372.4373">&lt;em>Security without identification: transaction systems to make big brother obsolete&lt;/em>&lt;/a>, Chaum envisioned users interacting anonymously with various organizations using a single digital wallet, even if those organizations colluded.&lt;/p>
  &lt;/figcaption>
