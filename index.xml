@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>A Legal and Technical Analysis of Internet Censorship in France</title><link>https://ooni.github.io/post/2025-france-report/</link><pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-france-report/</guid><description>&lt;p>&lt;em>This is a guest report by &lt;a href="https://maynier.eu/">Etienne Maynier&lt;/a> and Taziden analyzing Internet censorship in France. You can find a more in-depth legal and technical analysis in French at &lt;a href="https://censxres.fr/">https://censxres.fr/&lt;/a>. This work was done in a personal capacity and doesn&amp;rsquo;t represent the view of their employers.&lt;/em>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 24 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Requirements for OONI’s anonymous credentials system</title><link>https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/</link><pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/images/requirements-for-probe-id.png">
+ &lt;img
+ src="https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/images/requirements-for-probe-id_hu6187359575893999560.png"
+
+ 
+ srcset="https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/images/requirements-for-probe-id_hu18349975670068356577.png 2x"
+ 
+
+ title="Requirements for OONI Probe ID"
+ 
+ alt="Requirements for OONI Probe ID"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>The goal of integrating an anonymous credential system in &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> is to increase trust in &lt;a href="https://ooni.org/data/">OONI measurements&lt;/a> by enriching the data with properties about the probes that collected them, while preserving the privacy of our users.&lt;/p>
+&lt;p>In our &lt;a href="https://ooni.org/post/2025-probe-security-without-identification/">first blog post on the topic&lt;/a>, we explain at a high level what this system is meant to achieve and provide a comprehensive academic literature review of the current state of the art in cryptographic anonymous credential systems.&lt;/p></description></item><item><title>A Legal and Technical Analysis of Internet Censorship in France</title><link>https://ooni.github.io/post/2025-france-report/</link><pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-france-report/</guid><description>&lt;p>&lt;em>This is a guest report by &lt;a href="https://maynier.eu/">Etienne Maynier&lt;/a> and Taziden analyzing Internet censorship in France. You can find a more in-depth legal and technical analysis in French at &lt;a href="https://censxres.fr/">https://censxres.fr/&lt;/a>. This work was done in a personal capacity and doesn&amp;rsquo;t represent the view of their employers.&lt;/em>&lt;/p>
 &lt;nav id="TableOfContents">
  &lt;ul>
  &lt;li>
