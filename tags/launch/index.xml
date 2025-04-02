@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Launch on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/launch/</link><description>Recent content in Launch on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 04 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/launch/index.xml" rel="self" type="application/rss+xml"/><item><title>Launch: New OONI Probe multiplatform app</title><link>https://ooni.github.io/post/2025-launch-ooniprobe-multiplatform-app/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-launch-ooniprobe-multiplatform-app/</guid><description>&lt;p>We are excited to share that we have launched an &lt;strong>&lt;a href="https://ooni.org/install/mobile">OONI Probe multiplatform app for Android and iOS&lt;/a>&lt;/strong>! This is an important milestone for the long-term sustainability of the OONI Probe apps, as it will enable us to ensure feature parity and to ship new features faster and more effectively across platforms.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Launch on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/launch/</link><description>Recent content in Launch on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/launch/index.xml" rel="self" type="application/rss+xml"/><item><title>Launch: New OONI Explorer thematic censorship pages</title><link>https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/</link><pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/images/image-1.png">
+ &lt;img
+ src="https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/images/image-1_hu18045183049061541971.png"
+
+ 
+
+ 
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;strong>Image:&lt;/strong> &lt;a href="https://explorer.ooni.org/social-media">OONI Explorer thematic censorship pages&lt;/a>.&lt;/p>
+&lt;p>Today we are excited to announce the publication of new &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> thematic censorship pages! These new pages include charts and reports documenting the blocking of &lt;strong>&lt;a href="https://explorer.ooni.org/social-media">social media&lt;/a>&lt;/strong>, &lt;strong>&lt;a href="https://explorer.ooni.org/news-media">news media&lt;/a>&lt;/strong>, and &lt;strong>&lt;a href="https://explorer.ooni.org/circumvention">circumvention tools&lt;/a>&lt;/strong> around the world based on OONI data.&lt;/p>
+&lt;p>In this blog post, we share information about the new OONI Explorer thematic censorship pages.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#about-ooni-explorer">About OONI Explorer&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#why-new-thematic-censorship-pages">Why new thematic censorship pages?&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-explorer-thematic-censorship-pages">New OONI Explorer thematic censorship pages&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#blocking-of-social-media-and-instant-messaging-apps">Blocking of Social Media and Instant Messaging Apps&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-news-media">Blocking of News Media&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#reachability-of-circumvention-tools">Reachability of Circumvention Tools&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="about-ooni-explorer">About OONI Explorer&lt;/h2>
+&lt;p>&lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> is the world’s largest &lt;strong>open dataset on internet censorship&lt;/strong>.&lt;/p></description></item><item><title>Launch: New OONI Probe multiplatform app</title><link>https://ooni.github.io/post/2025-launch-ooniprobe-multiplatform-app/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-launch-ooniprobe-multiplatform-app/</guid><description>&lt;p>We are excited to share that we have launched an &lt;strong>&lt;a href="https://ooni.org/install/mobile">OONI Probe multiplatform app for Android and iOS&lt;/a>&lt;/strong>! This is an important milestone for the long-term sustainability of the OONI Probe apps, as it will enable us to ensure feature parity and to ship new features faster and more effectively across platforms.&lt;/p>
 &lt;p>&lt;strong>Update now&lt;/strong> to the latest version (5.0.3) to start using the new OONI Probe app on &lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android&lt;/a> or &lt;a href="https://apps.apple.com/us/app/ooni-probe/id1199566366">iOS&lt;/a>.&lt;/p>
 &lt;p>&lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> is a free and open source tool that we have built since 2012, designed to &lt;a href="https://ooni.org/nettest/">measure various forms of internet censorship&lt;/a>. To enable communities worldwide to run OONI Probe and contribute measurements (which are published as &lt;a href="https://ooni.org/data/">open data&lt;/a> in real-time), we have made OONI Probe available for &lt;a href="https://ooni.org/install/">both mobile and desktop&lt;/a> platforms. Specifically, OONI Probe is available for &lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android&lt;/a>, &lt;a href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">F-Droid&lt;/a>, &lt;a href="https://itunes.apple.com/us/app/id1199566366">iOS&lt;/a>, &lt;a href="https://ooni.org/install/desktop">Windows&lt;/a>, &lt;a href="https://ooni.org/install/desktop">macOS&lt;/a>, and &lt;a href="https://ooni.org/install/cli/ubuntu-debian/">Linux&lt;/a>.&lt;/p></description></item><item><title>Launch: Next generation OONI Run for community-driven censorship testing</title><link>https://ooni.github.io/post/2024-launch-ooni-run-v2/</link><pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-launch-ooni-run-v2/</guid><description>&lt;div>
  &lt;a href="https://ooni.github.io/post/2024-launch-ooni-run-v2/images/image22.png">

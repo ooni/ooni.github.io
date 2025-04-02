@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explorer on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/explorer/</link><description>Recent content in Explorer on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 30 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/explorer/index.xml" rel="self" type="application/rss+xml"/><item><title>Launch: New OONI Censorship Findings platform</title><link>https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/</link><pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/</guid><description>&lt;p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explorer on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/explorer/</link><description>Recent content in Explorer on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/explorer/index.xml" rel="self" type="application/rss+xml"/><item><title>Launch: New OONI Explorer thematic censorship pages</title><link>https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/</link><pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/images/image-1.png">
+ &lt;img
+ src="https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/images/image-1_hu18045183049061541971.png"
+
+ 
+
+ 
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;strong>Image:&lt;/strong> &lt;a href="https://explorer.ooni.org/social-media">OONI Explorer thematic censorship pages&lt;/a>.&lt;/p>
+&lt;p>Today we are excited to announce the publication of new &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> thematic censorship pages! These new pages include charts and reports documenting the blocking of &lt;strong>&lt;a href="https://explorer.ooni.org/social-media">social media&lt;/a>&lt;/strong>, &lt;strong>&lt;a href="https://explorer.ooni.org/news-media">news media&lt;/a>&lt;/strong>, and &lt;strong>&lt;a href="https://explorer.ooni.org/circumvention">circumvention tools&lt;/a>&lt;/strong> around the world based on OONI data.&lt;/p>
+&lt;p>In this blog post, we share information about the new OONI Explorer thematic censorship pages.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#about-ooni-explorer">About OONI Explorer&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#why-new-thematic-censorship-pages">Why new thematic censorship pages?&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-explorer-thematic-censorship-pages">New OONI Explorer thematic censorship pages&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#blocking-of-social-media-and-instant-messaging-apps">Blocking of Social Media and Instant Messaging Apps&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-news-media">Blocking of News Media&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#reachability-of-circumvention-tools">Reachability of Circumvention Tools&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="about-ooni-explorer">About OONI Explorer&lt;/h2>
+&lt;p>&lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> is the world’s largest &lt;strong>open dataset on internet censorship&lt;/strong>.&lt;/p></description></item><item><title>Launch: New OONI Censorship Findings platform</title><link>https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/</link><pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/</guid><description>&lt;p>
 
 
 
