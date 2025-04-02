@@ -684,4 +684,4 @@ were throttled. We also found that access to porn sites appeared to be
 interfered with via in-band TCP packet injections of advertisement and malware
 content, and that the blocking of &lt;a href="https://www.alaraby.co.uk">The New Arab&lt;/a>
 website led to the blocking of specific content (such as images) of other sites
-that are hosted on the same Content Distribution Network (CDN).&lt;/p></description></item></channel></rss>
+that are hosted on the same Content Distribution Network (CDN).&lt;/p></description></item><item><title>Research reports: Blocking of News Media</title><link>https://ooni.github.io/reports/news-media/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/reports/news-media/</guid><description/></item></channel></rss>
