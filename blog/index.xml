@@ -1,1 +1,1569 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog posts on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/blog/</link><description>Recent content in Blog posts on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/blog/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog posts on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/blog/</link><description>Recent content in Blog posts on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Launch: New OONI Explorer thematic censorship pages</title><link>https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/</link><pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/images/image-1.png">
+ &lt;img
+ src="https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/images/image-1_hu18045183049061541971.png"
+
+ 
+
+ 
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;strong>Image:&lt;/strong> &lt;a href="https://explorer.ooni.org/social-media">OONI Explorer thematic censorship pages&lt;/a>.&lt;/p>
+&lt;p>Today we are excited to announce the publication of new &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> thematic censorship pages! These new pages include charts and reports documenting the blocking of &lt;strong>&lt;a href="https://explorer.ooni.org/social-media">social media&lt;/a>&lt;/strong>, &lt;strong>&lt;a href="https://explorer.ooni.org/news-media">news media&lt;/a>&lt;/strong>, and &lt;strong>&lt;a href="https://explorer.ooni.org/circumvention">circumvention tools&lt;/a>&lt;/strong> around the world based on OONI data.&lt;/p>
+&lt;p>In this blog post, we share information about the new OONI Explorer thematic censorship pages.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#about-ooni-explorer">About OONI Explorer&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#why-new-thematic-censorship-pages">Why new thematic censorship pages?&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-explorer-thematic-censorship-pages">New OONI Explorer thematic censorship pages&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#blocking-of-social-media-and-instant-messaging-apps">Blocking of Social Media and Instant Messaging Apps&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-news-media">Blocking of News Media&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#reachability-of-circumvention-tools">Reachability of Circumvention Tools&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="about-ooni-explorer">About OONI Explorer&lt;/h2>
+&lt;p>&lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> is the world’s largest &lt;strong>open dataset on internet censorship&lt;/strong>.&lt;/p></description></item><item><title>Requirements for OONI’s anonymous credentials system</title><link>https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/</link><pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/images/requirements-for-probe-id.png">
+ &lt;img
+ src="https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/images/requirements-for-probe-id_hu6187359575893999560.png"
+
+ 
+ srcset="https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/images/requirements-for-probe-id_hu18349975670068356577.png 2x"
+ 
+
+ title="Requirements for OONI Probe ID"
+ 
+ alt="Requirements for OONI Probe ID"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>The goal of integrating an anonymous credential system in &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> is to increase trust in &lt;a href="https://ooni.org/data/">OONI measurements&lt;/a> by enriching the data with properties about the probes that collected them, while preserving the privacy of our users.&lt;/p>
+&lt;p>In our &lt;a href="https://ooni.org/post/2025-probe-security-without-identification/">first blog post on the topic&lt;/a>, we explain at a high level what this system is meant to achieve and provide a comprehensive academic literature review of the current state of the art in cryptographic anonymous credential systems.&lt;/p></description></item><item><title>Launch: New OONI Probe multiplatform app</title><link>https://ooni.github.io/post/2025-launch-ooniprobe-multiplatform-app/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-launch-ooniprobe-multiplatform-app/</guid><description>&lt;p>We are excited to share that we have launched an &lt;strong>&lt;a href="https://ooni.org/install/mobile">OONI Probe multiplatform app for Android and iOS&lt;/a>&lt;/strong>! This is an important milestone for the long-term sustainability of the OONI Probe apps, as it will enable us to ensure feature parity and to ship new features faster and more effectively across platforms.&lt;/p>
+&lt;p>&lt;strong>Update now&lt;/strong> to the latest version (5.0.3) to start using the new OONI Probe app on &lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android&lt;/a> or &lt;a href="https://apps.apple.com/us/app/ooni-probe/id1199566366">iOS&lt;/a>.&lt;/p>
+&lt;p>&lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> is a free and open source tool that we have built since 2012, designed to &lt;a href="https://ooni.org/nettest/">measure various forms of internet censorship&lt;/a>. To enable communities worldwide to run OONI Probe and contribute measurements (which are published as &lt;a href="https://ooni.org/data/">open data&lt;/a> in real-time), we have made OONI Probe available for &lt;a href="https://ooni.org/install/">both mobile and desktop&lt;/a> platforms. Specifically, OONI Probe is available for &lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android&lt;/a>, &lt;a href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">F-Droid&lt;/a>, &lt;a href="https://itunes.apple.com/us/app/id1199566366">iOS&lt;/a>, &lt;a href="https://ooni.org/install/desktop">Windows&lt;/a>, &lt;a href="https://ooni.org/install/desktop">macOS&lt;/a>, and &lt;a href="https://ooni.org/install/cli/ubuntu-debian/">Linux&lt;/a>.&lt;/p></description></item><item><title>Probe Security Without Identification</title><link>https://ooni.github.io/post/2025-probe-security-without-identification/</link><pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-probe-security-without-identification/</guid><description>&lt;p>Thanks to Toomore Chiang and &lt;a href="https://ooni-research.ocf.tw/">OCF community&lt;/a>, this post is available in &lt;a href="https://ooni-research.ocf.tw/docs/zh-tw/blog/2025/03/2025-probe-security-without-identification/">Mandarin (zh-tw)&lt;/a>.&lt;/p>
+&lt;figure class="text-center">&lt;img src="https://ooni.github.io/post/2025-probe-security-without-identification/images/chaum.png"
+ alt="Image: In his seminal paper Security without identification: transaction systems to make big brother obsolete, Chaum envisioned users interacting anonymously with various organizations using a single digital wallet, even if those organizations colluded." width="60%">&lt;figcaption>
+ &lt;p>&lt;strong>Image&lt;/strong>: In his seminal paper &lt;a href="https://dl.acm.org/doi/10.1145/4372.4373">&lt;em>Security without identification: transaction systems to make big brother obsolete&lt;/em>&lt;/a>, Chaum envisioned users interacting anonymously with various organizations using a single digital wallet, even if those organizations colluded.&lt;/p></description></item><item><title>Year in Review: OONI in 2024</title><link>https://ooni.github.io/post/2024-year-in-review/</link><pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-year-in-review/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2024-year-in-review/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/post/2024-year-in-review/images/image1_hu5156141607790937558.png"
+
+ 
+
+ 
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>As the new year begins, we publish this post to share some OONI highlights from 2024. We also share some of the things we’ll be working on in 2025!&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#new-ooni-foundation">New OONI Foundation&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-tools">OONI tools&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#launched-ooni-run-v2">Launched OONI Run v2&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#creating-an-ooni-probe-multiplatform-app">Creating an OONI Probe multiplatform app&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#presenting-thematic-censorship-findings-on-ooni-explorer">Presenting thematic censorship findings on OONI Explorer&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#ooni-methods">OONI methods&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#new-experiments">New experiments&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#expanding-oonis-testing-model-to-support-richer-testing-input">Expanding OONI’s testing model to support richer testing input&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#advancing-ooni-data-analysis">Advancing OONI data analysis&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#research">Research&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#research-reports">Research reports&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#censorship-findings-reports-on-ooni-explorer">Censorship Findings reports on OONI Explorer&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#community">Community&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-partner-gathering-2024-in-malaysia">OONI Partner Gathering 2024 in Malaysia&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-partnerships">New partnerships&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-partner-workshop-series">OONI partner workshop series&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-community-interviews">New OONI Community Interviews&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#localization">Localization&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-test-lists-editor">OONI Test Lists Editor&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-outreach-kit">OONI Outreach Kit&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#open-measurement-gatherings-omg">Open Measurement Gatherings (OMG)&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-workshops-and-presentations">OONI workshops and presentations&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#ooni-verse">OONI-verse&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#2025">2025&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="new-ooni-foundation">New OONI Foundation&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/post/2024-year-in-review/images/image2.png">
+ &lt;img
+ src="https://ooni.github.io/post/2024-year-in-review/images/image2_hu12150117868504942955.png"
+
+ 
+
+ 
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;strong>Image:&lt;/strong> Notary appointment in Rome, Italy, to establish the Open Observatory of Network Interference Foundation (OONI) ETS in February 2024.&lt;/p></description></item><item><title>Survey: Share your feedback on OONI tools, resources and documentation</title><link>https://ooni.github.io/post/2025-community-survey/</link><pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-community-survey/</guid><description>&lt;p>OONI’s community now includes &lt;a href="https://ooni.org/partners">over 50 organisations&lt;/a> and hundreds of thousands of &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> users all over the world.&lt;/p>
+&lt;p>We are very thankful for your trust in our tools, your support over the years and your contributions to different parts of OONI-verse through collected measurements, localisation projects, and research projects.&lt;/p>
+&lt;p>&lt;strong>With this survey, we want to reflect on our community activities and learn how we can improve upon our outreach, tools and documentation.&lt;/strong>&lt;/p></description></item><item><title>Launch: Next generation OONI Run for community-driven censorship testing</title><link>https://ooni.github.io/post/2024-launch-ooni-run-v2/</link><pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-launch-ooni-run-v2/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2024-launch-ooni-run-v2/images/image22.png">
+ &lt;img
+ src="https://ooni.github.io/post/2024-launch-ooni-run-v2/images/image22_hu17540960861289344737.png"
+
+ 
+
+ 
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;strong>Image:&lt;/strong> OONI Run.&lt;/p>
+&lt;p>Today we are thrilled to announce the &lt;strong>&lt;a href="https://run.ooni.org/">launch of OONI Run v2&lt;/a>&lt;/strong>: the next generation version of OONI Run for community-driven censorship testing.&lt;/p>
+&lt;p>Originally &lt;a href="https://ooni.org/post/ooni-run/">launched&lt;/a> in September 2017, &lt;a href="https://run.ooni.org/">OONI Run&lt;/a> is a platform for creating mobile deep links that you can share with &lt;a href="https://ooni.org/install/mobile">OONI Probe&lt;/a> users to coordinate the testing of websites for censorship. Over the past 7 years, OONI Run has been &lt;a href="https://ooni.org/support/ooni-censorship-measurement-campaigns#examples-of-ooni-censorship-measurement-campaigns">used extensively by community members&lt;/a> in Venezuela, Malaysia, India, and around the world as part of their censorship measurement campaigns aimed at monitoring and rapidly responding to emergent censorship events. To improve the OONI Run platform and better meet community needs, we previously conducted an &lt;a href="https://ooni.org/post/2020-06-09-ooni-run-usability-study-findings/">OONI Run usability study&lt;/a>, through which we documented extensive community feedback.&lt;/p></description></item><item><title>Animation: OONI Partner Gathering 2024</title><link>https://ooni.github.io/post/2024-ooni-partner-gathering-animation/</link><pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-ooni-partner-gathering-animation/</guid><description>&lt;p>Earlier this year, we had the opportunity to host the &lt;strong>OONI Partner Gathering 2024&lt;/strong>: a two-day event in Kuala Lumpur, Malaysia, where we brought our &lt;a href="https://ooni.org/partners">partners&lt;/a> from Asia and the Middle East together to exchange skills and knowledge on internet censorship research. Our goal was to strengthen global and regional collaborations on censorship measurement research and advocacy. We previously published a &lt;a href="https://ooni.org/post/2024-ooni-partner-gathering-report/">report&lt;/a> which shares details about the event and its outcomes.&lt;/p>
+&lt;p>Today, we are excited to share a &lt;strong>new animation&lt;/strong> about the &lt;a href="https://ooni.org/post/2024-ooni-partner-gathering-report/">OONI Partner Gathering 2024&lt;/a>. This animation provides a glimpse into the event, highlighting the importance of community participation in censorship measurement research. Watch the animation below!&lt;/p></description></item><item><title>Job Opening: OONI Backend Developer</title><link>https://ooni.github.io/post/2024-job-opening-ooni-backend-developer/</link><pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-job-opening-ooni-backend-developer/</guid><description>&lt;p>Are you a backend developer interested in defending human rights on the
+internet? We have a job opening for you!&lt;/p>
+&lt;p>The &lt;a href="https://ooni.org/">OONI&lt;/a> team (a non-profit measuring internet censorship
+globally) is looking for a dedicated &lt;strong>Backend Developer&lt;/strong> to work on our
+backend components and infrastructure, and to provide OONI data analysis
+support for our &lt;a href="https://ooni.org/reports/">research&lt;/a> efforts.&lt;/p>
+&lt;h2 id="job-description">Job description&lt;/h2>
+&lt;p>By joining our team, you will work on OONI’s backend components, ensuring the
+stable and reliable performance of our infrastructure in response to the
+growing global coverage of measurements. You will also provide OONI data
+analysis support for OONI &lt;a href="https://ooni.org/reports/">research reports&lt;/a> and in
+support of the research of our &lt;a href="https://ooni.org/partners">partners&lt;/a>.&lt;/p></description></item><item><title>OONI Community Interviews: Chido Musodza</title><link>https://ooni.github.io/post/2024-interview-with-chido-musodza/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-interview-with-chido-musodza/</guid><description>&lt;p>Today we are excited to publish an interview with &lt;strong>Chido Musodza&lt;/strong>, Program Associate, Community Engagement at &lt;a href="https://www.localizationlab.org/">Localization Lab&lt;/a>. Chido is passionate about supporting minority language communities through the localization of open-source technology. Localization, on the one hand, makes tech products more inclusive and on the other hand, empowers the development of minority languages and their presence in digital space.&lt;/p>
+&lt;p>Watch Chido’s interview to learn more about the need for localization and community engagement!&lt;/p></description></item><item><title>OONI Partner Gathering 2024 in Malaysia</title><link>https://ooni.github.io/post/2024-ooni-partner-gathering-report/</link><pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-ooni-partner-gathering-report/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2024-ooni-partner-gathering-report/images/image7.png">
+ &lt;img
+ src="https://ooni.github.io/post/2024-ooni-partner-gathering-report/images/image7_hu2526202348152306765.png"
+
+ 
+
+ title="OONI Partner Gathering 2024"
+ 
+ alt="OONI Partner Gathering 2024"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#background-ooni-partners-and-previous-events">Background: OONI partners and previous events&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#about-the-ooni-partner-gathering-2024">About the OONI Partner Gathering 2024&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#objectives">Objectives&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#why-malaysia">Why Malaysia?&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#sessions">Sessions&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#day-1--8th-may-2024">Day 1 – 8th May 2024&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#day-2--9th-may-2024">Day 2 – 9th May 2024&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#unconference-style-sessions">Unconference style sessions&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#inclusiveness">Inclusiveness&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#partner-feedback">Partner feedback&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#challenges">Challenges&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#needs">Needs&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#outcomes">Outcomes&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;p>We are excited to share that on 8th and 9th May 2024, we hosted an in-person &lt;strong>OONI Partner Gathering in Kuala Lumpur, Malaysia&lt;/strong>. As part of this 2-day event, we brought our &lt;a href="https://ooni.org/partners">partners&lt;/a> (primarily from Asia and the Middle East) together to exchange skills and knowledge and strengthen our collaborations on internet censorship research and advocacy.
+In this report, we share details about the event and its outcomes.&lt;/p></description></item><item><title>OONI Community Interviews: Tawanda Mugari</title><link>https://ooni.github.io/post/2024-interview-with-tawanda-mugari/</link><pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-interview-with-tawanda-mugari/</guid><description>&lt;p>Today we are excited to publish an interview with &lt;strong>Tawanda Mugari, Co-Founder &amp;amp; Geek in Chief of Digital Society of Africa (DSA)&lt;/strong>. Through our &lt;a href="https://ooni.org/partners/digital-society-of-africa/">partnership with DSA&lt;/a>, we have had the opportunity to collaborate on research and training activities across southern Africa. Tawanda is a digital security expert, community leader and trainer who has been part of the OONI community for years. Watch Tawanda’s interview to learn more about his important work!&lt;/p></description></item><item><title>Internet sanctions on Russian media: diverging actions and mixed effects</title><link>https://ooni.github.io/post/2024-eu-sanctions/</link><pubDate>Mon, 25 Mar 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-eu-sanctions/</guid><description>&lt;p>&lt;em>The original post appeared on the blog of &lt;a href="https://www.sidnlabs.nl/en/news-and-blogs/internet-sanctions-on-russian-media-diverging-actions-and-mixed-effects">SIDN Labs&lt;/a>.&lt;/em>&lt;/p>
+&lt;p>As a response to the Russian aggression against Ukraine, the European Union (EU) imposed sanctions on organisations affiliated with the Russian Federation prohibiting them from broadcasting content in the EU, including online distribution. In a collaborative effort with researchers from the University of Illinois Chicago, Open Observatory of Network Interference (OONI), the University of Twente and the University of Amsterdam, we carried out a longitudinal traffic analysis to understand how internet service providers (ISPs) in different EU member states implement these sanctions. We found that the degree of blocking varies widely, both between and within individual EU member states. This raises questions about the effectiveness of the EU sanctions. This blog is a summary of the paper we published last month.&lt;/p></description></item><item><title>Year in Review: OONI in 2023</title><link>https://ooni.github.io/post/2023-year-in-review/</link><pubDate>Fri, 22 Dec 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-year-in-review/</guid><description>&lt;p>As the end of 2023 approaches, we publish this post to share some OONI
+highlights from the last year. We also share some of the things we’ll be
+working on in 2024!&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#new-ooni-non-profit-legal-entity">New OONI non-profit legal entity&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-project-manager">New OONI Project Manager&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-measurement-tools">New OONI measurement tools&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#launched-ooni-probe-web">Launched OONI Probe Web&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#launched-news-media-scan-app-with-deutsche-welle-dw">Launched News Media Scan app with Deutsche Welle (DW)&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#building-ooni-run-v2">Building OONI Run v2&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-explorer-features">New OONI Explorer features&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#censorship-findings-22-reports">Censorship Findings: 22 reports&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#domain-centric-pages">Domain-centric pages&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#network-centric-pages">Network-centric pages&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#user-feedback-reporting-mechanism">User feedback reporting mechanism&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#charts-on-internet-outages">Charts on internet outages&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#research">Research&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-research-reports">OONI research reports&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-reports-for-isoc-pulse-shutdown-timeline">OONI reports for ISOC Pulse shutdown timeline&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#community">Community&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#new-partnerships">New partnerships&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-outreach-kit">New OONI Outreach Kit&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#new-ooni-screencasts-and-documentation">New OONI screencasts and documentation&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#localization">Localization&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-explorer">OONI Explorer&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-run">OONI Run&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-probe">OONI Probe&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-documentation">OONI documentation&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-community-interviews">New OONI Community Interviews&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#ooni-workshops-and-presentations">OONI workshops and presentations&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#ooni-verse">OONI-verse&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#2024">2024&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="new-ooni-non-profit-legal-entity">New OONI non-profit legal entity&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/post/2023-year-in-review/images/image4.png">
+ &lt;img
+ src="https://ooni.github.io/post/2023-year-in-review/images/image4_hu18379814389437255340.png"
+
+ 
+
+ title="OONI Explorer"
+ 
+ alt="OONI Explorer"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI is now a registered NGO in Italy!&lt;/p></description></item><item><title>OONI Community Interviews: Ihueze Nwobilor</title><link>https://ooni.github.io/post/2023-interview-with-ihueze-nwobilor/</link><pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-interview-with-ihueze-nwobilor/</guid><description>&lt;p>Today we are thrilled to publish an interview with &lt;strong>Ihueze Nwobilor&lt;/strong>: Senior Programs Officer with &lt;a href="https://paradigmhq.org/team/ihueze-nwobilor/">Paradigm Initiative&lt;/a>. Through our &lt;a href="https://ooni.org/partners/paradigm-initiative/">partnership with Paradigm Initiative&lt;/a>, we have had the opportunity to collaborate on several research reports examining internet censorship in Nigeria. Ihueze’s work is focused on digital inclusion and on making digital technologies accessible to the under-served communities in numerous African countries, including Kenya, Nigeria, Senegal, South Sudan, Zambia, and Zimbabwe.&lt;/p>
+&lt;p>Since the &lt;a href="https://www.accessnow.org/press-release/nigeria-blocks-twitter-keepiton/">blocking of Twitter in Nigeria in 2021&lt;/a>, Ihueze has become an active &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> user and gained a unique experience of using &lt;a href="https://ooni.org/data/">OONI data&lt;/a> in his advocacy and government engagement work. Through his advocacy and litigation efforts with Paradigm Initiative, the Twitter ban in Nigeria was &lt;a href="https://www.accessnow.org/press-release/ecowas-court-nigeria-unlawful-twitter-ban/">declared unlawful&lt;/a> and access to the platform was restored.&lt;/p></description></item><item><title>Launch: New OONI Censorship Findings platform</title><link>https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/</link><pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/</guid><description>&lt;p>
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/images/ooni-censorship-findings.png">
+ &lt;img
+ src="https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/images/ooni-censorship-findings_hu17962422820562351912.png"
+
+ 
+ srcset="https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/images/ooni-censorship-findings_hu17956862074008836710.png 2x"
+ 
+
+ title="Censorship Findings"
+ 
+ alt="Censorship Findings"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;strong>Image:&lt;/strong> OONI Censorship Findings platform.&lt;/p>
+&lt;p>Today we are thrilled to announce the launch of the OONI &lt;a href="https://explorer.ooni.org/findings">Censorship
+Findings&lt;/a> platform!&lt;/p>
+&lt;p>Internet censorship is frequently being reported around the world, but
+how can we verify such events with empirical evidence?&lt;/p>
+&lt;p>Our &lt;a href="https://explorer.ooni.org/findings">new platform provides short reports&lt;/a> on internet censorship around the world based on OONI&amp;rsquo;s &lt;a href="https://ooni.org/data/">open data&lt;/a>. With the launch of the platform, we are &lt;strong>publishing 20 reports on internet censorship&lt;/strong> that emerged in 2023. In response to emergent censorship events, this
+platform will be updated with new reports on an ongoing basis.&lt;/p></description></item><item><title>Measure all the Things! IMC Hackathon 2023</title><link>https://ooni.github.io/post/imc-hackathon-results-2023/</link><pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/imc-hackathon-results-2023/</guid><description>&lt;p>On 23rd October 2023, right before the &lt;a href="https://conferences.sigcomm.org/imc/2023/">Internet Measurement Conference
+(IMC)&lt;/a> 2023, we
+co-hosted an &lt;strong>internet measurement hackathon&lt;/strong> in collaboration with
+the &lt;a href="https://www.internetsociety.org/">Internet Society
+(ISOC)&lt;/a>,
+&lt;a href="https://www.measurementlab.net/">M-Lab&lt;/a>, &lt;a href="https://censoredplanet.org/">Censored Planet&lt;/a> and
+&lt;a href="https://ioda.inetintel.cc.gatech.edu/">IODA&lt;/a>.&lt;/p>
+&lt;p>In this post we would like to share some of the projects that were
+developed as part of the hackathon. It was great to see how much was
+accomplished in such a short period of time!&lt;/p>
+&lt;p>The day started with an &lt;a href="https://docs.google.com/presentation/d/1DHhGcpCMTbSJE0QKO6ZTSnIPFixLxxBXwZLkqv0wdJA/edit#slide=id.g1723ddbd698_0_18">introduction to the various datasets&lt;/a>
+from OONI&amp;rsquo;s Arturo, Censored Planet&amp;rsquo;s Armin, IODA&amp;rsquo;s Zach, ISOC&amp;rsquo;s Amreesh
+and M-Lab&amp;rsquo;s Lai Yi. Following the brief presentations, the participants
+formed teams to work on some of the specific challenges that &lt;a href="https://docs.google.com/document/d/1bmCwU0ZJCu-xKlIBKqh3rdIJLHZ-vS7UCOfHI-0RxVE/edit#heading=h.nhvc5bssegtl">we had
+proposed&lt;/a>
+or came up with new ones.&lt;/p></description></item><item><title>OONI Community Interviews: Siti Nurliza</title><link>https://ooni.github.io/post/2023-interview-with-siti-nurliza/</link><pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-interview-with-siti-nurliza/</guid><description>&lt;p>Today we are thrilled to publish an interview with Siti Nurliza: a talented data analyst and technologist with &lt;a href="https://sinarproject.org/">Sinar Project&lt;/a>, one of our most dedicated and long-term &lt;a href="https://ooni.org/partners/sinar-project/">partners&lt;/a> who have led OONI censorship measurement efforts in Southeast Asia for more
+than 6 years!&lt;/p>
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DOTjOR7zA2Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe>
+
+&lt;p>&lt;a href="https://sinarproject.org/">Sinar Project&lt;/a> is a civic tech initiative using open technology, open data and policy analysis to systematically make important information public and more accessible to
+the Malaysian people. Over the years, we &lt;a href="https://ooni.org/partners/sinar-project">collaborated&lt;/a> with Sinar Project on measuring and reporting on internet censorship in
+&lt;a href="https://ooni.org/post/malaysia-report/">Malaysia&lt;/a>, &lt;a href="https://ooni.org/post/indonesia-internet-censorship/">Indonesia&lt;/a>,
+&lt;a href="https://ooni.torproject.org/post/thailand-internet-censorship/">Thailand&lt;/a>, and &lt;a href="https://ooni.org/post/myanmar-report/">Myanmar&lt;/a>
+through the use of OONI tools and data.&lt;/p></description></item><item><title>Join us at the IMC 2023 Hackathon on Network Interference using Open Data</title><link>https://ooni.github.io/post/2023-imc-hackathon/</link><pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-imc-hackathon/</guid><description>&lt;p>Are you attending the &lt;a href="https://conferences.sigcomm.org/imc/2023/">Internet Measurement Conference (IMC)
+2023&lt;/a>?&lt;/p>
+&lt;p>Join us at the &lt;strong>&lt;a href="https://conferences.sigcomm.org/imc/2023/hackaton/">IMC Hackathon on Network Interference using Open
+Data&lt;/a>&lt;/strong> on Monday, &lt;strong>23rd
+October 2023&lt;/strong>, in Montreal, Canada. The hackathon is organized by the
+&lt;a href="https://www.internetsociety.org/">Internet Society (ISOC)&lt;/a>, the &lt;a href="https://ooni.org/">Open
+Observatory of Network Interference (OONI)&lt;/a>,
+&lt;a href="https://www.measurementlab.net/">M-Lab&lt;/a> and &lt;a href="https://censoredplanet.org/">Censored
+Planet.&lt;/a>&lt;/p>
+&lt;p>IMC is a yearly academic conference focusing on Internet measurement and
+analysis. The conference is sponsored by ACM SIGCOMM.&lt;/p>
+&lt;p>This IMC Hackathon will be about exploring, analyzing, and visualizing open
+network measurement data with a focus on identifying Internet censorship and
+Internet shutdown events.&lt;/p></description></item><item><title>New OONI Explorer features for investigating internet censorship through open data</title><link>https://ooni.github.io/post/2023-new-explorer-features/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-new-explorer-features/</guid><description>&lt;p>We’re excited to share that &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> includes new features for investigating internet censorship worldwide based on open data.&lt;/p>
+&lt;p>Specifically, these features include:&lt;/p>
+&lt;ul>
+&lt;li>New &lt;a href="https://explorer.ooni.org/domains">domain-centric pages&lt;/a>;&lt;/li>
+&lt;li>New &lt;a href="https://explorer.ooni.org/networks">network-centric pages&lt;/a>;&lt;/li>
+&lt;li>New “internet outage” charts (integrating IODA, Google traffic, and Cloudflare Radar data), available in each &lt;a href="https://explorer.ooni.org/countries">country-specific&lt;/a> and &lt;a href="https://explorer.ooni.org/networks">network-specific&lt;/a> page;&lt;/li>
+&lt;li>New user feedback reporting mechanism, available through the “Verify” button in the banner of each OONI measurement page.&lt;/li>
+&lt;/ul>
+&lt;p>In this blog post, we share information about these new features.&lt;/p></description></item><item><title>Job Opening: OONI Project Manager</title><link>https://ooni.github.io/post/2023-job-opening-ooni-project-manager/</link><pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-job-opening-ooni-project-manager/</guid><description>&lt;p>&lt;strong>This job posting is now closed. Any applications received after 2023-06-28 will not be considered&lt;/strong>&lt;/p>
+&lt;p>Are you a project manager interested in defending human rights on the
+internet? We have a job opening for you!&lt;/p>
+&lt;p>The &lt;a href="https://ooni.org/">OONI&lt;/a> team (a non-profit measuring
+internet censorship globally) is looking for a dedicated &lt;strong>project
+manager&lt;/strong> to help us manage our software development work.&lt;/p>
+&lt;p>We will be reviewing applications on a rolling basis.&lt;/p>
+&lt;h1 id="job-description">Job description&lt;/h1>
+&lt;p>By joining our team, you will help ensure that our software projects are
+on track, supporting a global community that relies on our tools for
+measuring and fighting internet censorship.&lt;/p></description></item><item><title>Introducing OONI Probe Web</title><link>https://ooni.github.io/post/introducing-ooni-probe-web/</link><pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/introducing-ooni-probe-web/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/introducing-ooni-probe-web/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/post/introducing-ooni-probe-web/images/image1_hu8271175250346792258.png"
+
+ 
+
+ title="OONI Explorer"
+ 
+ alt="OONI Explorer"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today, we are excited to announce the launch of &lt;strong>&lt;a href="https://probe-web.ooni.org/">OONI Probe Web&lt;/a>&lt;/strong>: a new browser-based tool for measuring the blocking of websites.&lt;/p>
+&lt;p>We built OONI Probe Web in response to long-term community feedback, requesting a censorship measurement tool that can be run from a browser, without requiring the installation of any software. Our goal is to support rapid response efforts to emergent censorship events.&lt;/p>
+&lt;p>However, please note that OONI Probe Web is experimental, and what can be measured from a browser is very limited in comparison to what can be measured from an app. We therefore hope that the use of OONI Probe Web encourages further use of the &lt;a href="https://ooni.org/install/">OONI Probe app&lt;/a> for more extensive and accurate testing.&lt;/p></description></item><item><title>How we're improving OONI data quality: An analysis of failed measurements</title><link>https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/</link><pubDate>Mon, 13 Mar 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/</guid><description>&lt;p>In this blog post, we manually analyse &lt;code>failed&lt;/code> OONI measurements to assess why they were classified as such, whether they are symptomatic of censorship, and whether they still carry helpful information for researchers. We focus on measurements from three countries (India, Pakistan, and Indonesia) and outline steps on how we will improve overall data quality.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#methodology">Methodology&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#results">Results&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#pakistan">Pakistan&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#india">India&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#indonesia">Indonesia&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#overall">Overall&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#limitations">Limitations&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#conclusions-and-future-work">Conclusions and Future Work&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="background">Background&lt;/h1>
+&lt;p>&lt;a href="https://ooni.org/nettest/web-connectivity/">Web Connectivity&lt;/a> is a network test that determines whether a web resource is accessible from the network where the user runs &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a>. To this end, Web Connectivity measures accessing the resource and compares the measurement results with another measurement performed by a control vantage point. After the measurement, OONI Probe submits a JSON document summarising its findings and the control vantage point findings to the OONI backend. In turn, the &lt;a href="https://github.com/ooni/pipeline/">OONI data processing pipeline&lt;/a> classifies all Web Connectivity measurements into four categories:&lt;/p></description></item><item><title>Year in Review: OONI in 2022</title><link>https://ooni.github.io/post/ooni-in-2022/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2022/</guid><description>&lt;p>As the end of 2022 approaches, we publish this post to share some OONI
+highlights from the last year. We also share some of the things we’ll be
+working on in 2023!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-team">OONI Team&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-probe">OONI Probe&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-ooni-probe-experiments">New OONI Probe experiments&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-test-lists-editor">New Test Lists Editor&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-run-improvements">OONI Run improvements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-probe-web-prototype">OONI Probe Web prototype&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-data">OONI data&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#1-billion-measurements">1 billion measurements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-ooni-measurement-aggregation-toolkit-mat">New OONI Measurement Aggregation Toolkit (MAT)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-circumvention-tool-reachability-dashboard">New Circumvention Tool Reachability Dashboard&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#advancing-ooni-data-analysis">Advancing OONI data analysis&lt;/a>&lt;/p></description></item><item><title>OONI Community Video</title><link>https://ooni.github.io/post/ooni-community-video/</link><pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-community-video/</guid><description>&lt;p>We are happy to celebrate OONI&amp;rsquo;s 10th anniversary together with our
+amazing community, who have been at the heart of our work over the past
+decade.&lt;/p>
+&lt;p>Today, we are excited to share a &lt;strong>new video with OONI community
+members&lt;/strong>, where they discuss how OONI has been useful to their work,
+while sharing what they would like to see OONI do in the future.&lt;/p>
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zrclQ2QZjVo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe>
+
+&lt;h2 id="featured-community-members-and-partners">Featured community members and partners&lt;/h2>
+&lt;h3 id="andrés-azpúrua-venezuela-inteligentehttpsveinteligenteorg">Andrés Azpúrua, &lt;a href="https://veinteligente.org/">Venezuela Inteligente&lt;/a>&lt;/h3>
+&lt;p>Andrés is the co-founder and Director of Venezuela Inteligente, a
+non-profit organization that aims to facilitate information,
+communication and collaboration between citizens and civil society
+organizations to create impact from a non-partisan perspective. They
+promote, facilitate and develop digital tools, improving access to
+information, collaboration and responsiveness, empowering organizations,
+activists and citizens. They fight for the rights of Venezuelans online
+and offline.&lt;/p></description></item><item><title>Highlights: 10 Years of OONI</title><link>https://ooni.github.io/post/highlights-10-years-of-ooni/</link><pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/highlights-10-years-of-ooni/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/highlights-10-years-of-ooni/images/01.png">
+ &lt;img
+ src="https://ooni.github.io/post/highlights-10-years-of-ooni/images/01_hu11060568953675838338.png"
+
+ 
+ srcset="https://ooni.github.io/post/highlights-10-years-of-ooni/images/01_hu2671249911654719631.png 2x"
+ 
+
+ 
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today is OONI’s 10th anniversary!&lt;/p>
+&lt;p>As of today, 10 years ago, the first OONI measurement was published.
+Today, 10 years later, &lt;a href="https://explorer.ooni.org/">more than a billion OONI measurements&lt;/a> have been published, shedding
+light on &lt;a href="https://ooni.org/reports/">internet censorship&lt;/a> worldwide.&lt;/p>
+&lt;p>In this post, we share some &lt;strong>OONI highlights from the past 10 years&lt;/strong>,
+as well as some of our future plans.&lt;/p>
+&lt;p>You can start off by getting a glimpse of “OONI in 10 years” through the
+following animation, which shares some highlights from the past decade.&lt;/p></description></item><item><title>Join the 10th Ooniversary Events!</title><link>https://ooni.github.io/post/10th-ooniversary-events/</link><pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/10th-ooniversary-events/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary.jpg">
+ &lt;img
+ src="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary_hu6664003398305905779.jpg"
+
+ 
+ srcset="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary_hu9430410147315059057.jpg 2x"
+ 
+
+ title="10th Ooniversary"
+ 
+ alt="10th Ooniversary"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;a class="youtube-subscribe" href="https://www.youtube.com/c/OONIorg?sub_confirmation=1">
+Subscribe on YouTube
+&lt;/a>
+
+&lt;p>You’re invited to join us for the celebration of OONI’s 10th
+anniversary!&lt;/p>
+&lt;p>To share OONI highlights from the last 10 years, as well as how
+community members have used OONI tools and data as part of their work,
+we’ll be hosting &lt;strong>2 live-streamed events&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>OONI Highlights&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Date and time: &lt;strong>5th December 2022 at 14:00 UTC&lt;/strong> (1 hour event)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Location: Live-streamed on &lt;a href="https://www.youtube.com/watch?v=f4D4gq9TBMg">OONI YouTube channel&lt;/a>&lt;/p></description></item><item><title>Survey: Help shape OONI’s strategic priorities</title><link>https://ooni.github.io/post/2022-survey-ooni-strategic-priorities/</link><pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-survey-ooni-strategic-priorities/</guid><description>&lt;p>OONI will celebrate its 10th anniversary on 5th December 2022!&lt;/p>
+&lt;p>This is a time for celebration, but also a time for reflection: What
+worked well? What should we improve? What should we do differently going
+forward?&lt;/p>
+&lt;p>The OONI community has been at the heart of our work over the past
+decade, and so we invite our community to help shape OONI’s strategic
+priorities for the future.&lt;/p>
+&lt;p>Please take a few minutes to &lt;strong>complete our survey&lt;/strong>:
+&lt;a href="https://ooni.typeform.com/2022-survey">https://ooni.typeform.com/2022-survey&lt;/a>&lt;/p></description></item><item><title>New online OONI training course launched by Advocacy Assembly</title><link>https://ooni.github.io/post/2022-ooni-training-course-advocacy-assembly/</link><pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-ooni-training-course-advocacy-assembly/</guid><description>&lt;p>We are excited to share that a &lt;strong>free, online OONI training course&lt;/strong>
+(“Measuring Internet Censorship with OONI tools”) has been launched
+today on Small Media’s &lt;a href="https://advocacyassembly.org/">Advocacy Assembly&lt;/a> platform!&lt;/p>
+&lt;p>Through this course, you will learn how to &lt;strong>measure internet
+censorship&lt;/strong> through the use of &lt;a href="https://ooni.org/install/">OONI tools&lt;/a>. You will also learn how to access
+and interpret real-time &lt;a href="https://ooni.org/data">OONI data&lt;/a> on internet
+censorship around the world.&lt;/p>
+&lt;p>Today, the course is available in
+&lt;strong>&lt;a href="https://advocacyassembly.org/en/courses/63/#/chapter/1/lesson/1">English&lt;/a>,
+&lt;a href="https://advocacyassembly.org/ar/courses/63/#/chapter/1/lesson/1">Arabic&lt;/a>,
+&lt;a href="https://advocacyassembly.org/es/courses/63/#/chapter/1/lesson/1">Spanish&lt;/a>,
+and
+&lt;a href="https://advocacyassembly.org/fa/courses/63/#/chapter/1/lesson/1">Farsi&lt;/a>&lt;/strong>.
+Over the next months, the course will also be available in French,
+Swahili, Portuguese and Russian.&lt;/p></description></item><item><title>New Test Lists Editor: Contribute websites for censorship testing</title><link>https://ooni.github.io/post/2022-test-lists-editor/</link><pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-test-lists-editor/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2022-test-lists-editor/images/01.png">
+ &lt;img
+ src="https://ooni.github.io/post/2022-test-lists-editor/images/01_hu3102870722549096828.png"
+
+ 
+
+ title="Test Lists Editor"
+ 
+ alt="Test Lists Editor"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today the Open Observatory of Network Interference (OONI) team is
+excited to announce the public launch of our new &lt;strong>&lt;a href="https://test-lists.ooni.org/">Test Lists Editor&lt;/a>&lt;/strong>!&lt;/p>
+&lt;p>This platform enables the public to &lt;strong>review and contribute to the lists
+of websites&lt;/strong> (“&lt;a href="https://ooni.org/get-involved/contribute-test-lists">test lists&lt;/a>”) that are
+&lt;strong>tested for censorship&lt;/strong> by &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a>
+users around the world.&lt;/p>
+&lt;p>Help the internet freedom community discover website blocks around the
+world by contributing through the new &lt;a href="https://test-lists.ooni.org/">Test Lists Editor&lt;/a>!&lt;/p></description></item><item><title>OONI’s submission for the OHCHR report on internet shutdowns and human rights</title><link>https://ooni.github.io/post/2022-ooni-submission-ohchr-report-internet-shutdowns/</link><pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-ooni-submission-ohchr-report-internet-shutdowns/</guid><description>&lt;p>Currently, the &lt;a href="https://www.ohchr.org/en/hr-bodies/hrc/regular-sessions/session50/regular-session">50th session of the UN Human Rights Council&lt;/a> is taking place.&lt;/p>
+&lt;p>In response to the UN High Commissioner for Human Rights’s &lt;a href="https://www.ohchr.org/en/calls-for-input/calls-input/call-comments-report-internet-shutdowns-and-human-rights-fiftieth">call for submissions&lt;/a>
+in support of the &lt;a href="https://www.ohchr.org/en/hr-bodies/hrc/regular-sessions/session50/list-reports">OHCHR report on internet shutdowns and human rights&lt;/a>
+to the 50th session of the Human Rights Council in June 2022, the OONI team provided a submission with relevant
+information on the &lt;strong>occurrence of mandated disruptions of access to
+social media and messaging platforms over the past 5 years&lt;/strong> based on
+empirical OONI network measurement data.&lt;/p></description></item><item><title>Job Opening: OONI Community Coordinator</title><link>https://ooni.github.io/post/2022-job-opening-ooni-community-coordinator/</link><pubDate>Fri, 13 May 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-job-opening-ooni-community-coordinator/</guid><description>&lt;p>Are you passionate about defending human rights on the internet? Are you
+extremely organized and enjoy supporting communities around the world?
+We have a job opening for you!&lt;/p>
+&lt;p>The &lt;a href="https://ooni.org/">OONI&lt;/a> team (a non-profit fighting internet
+censorship) is looking for a dedicated &lt;strong>community coordinator&lt;/strong> to help
+grow and support the OONI community around the world.&lt;/p>
+&lt;p>The application deadline is &lt;strong>Sunday, 12th June 2022&lt;/strong>.&lt;/p>
+&lt;h1 id="job-description">Job description&lt;/h1>
+&lt;p>By joining our team, you will support our
+&lt;a href="https://ooni.org/partners">partners&lt;/a> and global community of human
+rights defenders to measure and fight internet censorship. Our community
+is at the heart of our work, and you will play an important role in
+helping to ensure that our tools meet the needs of our community.&lt;/p></description></item><item><title>New Launch: OONI Measurement Aggregation Toolkit (MAT)</title><link>https://ooni.github.io/post/2022-ooni-mat/</link><pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-ooni-mat/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2022-ooni-mat/images/01.png">
+ &lt;img
+ src="https://ooni.github.io/post/2022-ooni-mat/images/01_hu12525868713435091778.png"
+
+ 
+ srcset="https://ooni.github.io/post/2022-ooni-mat/images/01_hu11932821530926714788.png 2x"
+ 
+
+ title="MAT"
+ 
+ alt="MAT"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today the Open Observatory of Network Interference (OONI) team is
+thrilled to announce the public launch of the &lt;strong>&lt;a href="https://explorer.ooni.org/chart/mat">OONI Measurement Aggregation Toolkit (MAT)&lt;/a>&lt;/strong>!&lt;/p>
+&lt;p>The &lt;a href="https://explorer.ooni.org/chart/mat">MAT&lt;/a> is a tool that enables
+you to &lt;strong>create your own custom charts based on aggregate views of
+real-time OONI data&lt;/strong> collected from around the world.&lt;/p>
+&lt;p>Use the MAT to &lt;strong>track internet censorship worldwide&lt;/strong> based on
+real-time OONI data!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2022-ooni-mat/#about-the-mat">About the MAT&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2022-ooni-mat/#what-is-ooni-data">What is OONI data?&lt;/a>&lt;/p></description></item><item><title>Year in Review: OONI in 2021</title><link>https://ooni.github.io/post/ooni-in-2021/</link><pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2021/</guid><description>&lt;p>In light of the ongoing global &lt;a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">COVID-19 pandemic&lt;/a>,
+2021 continued to be a challenging year for everyone.&lt;/p>
+&lt;p>Yet, several exciting things happened in the censorship measurement
+world. In this post, we share some OONI highlights from 2021, as well as
+some upcoming OONI projects for 2022!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#ooni-probe">OONI Probe&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#automated-ooni-probe-testing">Automated OONI Probe testing&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#new-debian-package-for-ooni-probe">New Debian package for OONI Probe&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#new-ooni-probe-command-line-interface-for-linux-and-macos">New OONI Probe Command Line Interface for Linux and macOS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2021/#new-ooni-probe-experimental-card">New OONI Probe Experimental card&lt;/a>&lt;/p></description></item><item><title>iThena integration of OONI Probe boosts censorship measurement coverage worldwide</title><link>https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/</link><pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/</guid><description>&lt;p>Over the last months, the &lt;a href="https://root.ithena.net/">iThena&lt;/a> project
+&lt;a href="https://root.ithena.net/usr/forum_thread.php?id=151">integrated OONI Probe&lt;/a> into their
+platform, resulting in a &lt;a href="https://twitter.com/OpenObservatory/status/1443944726235856901">major spike&lt;/a>
+in &lt;a href="https://ooni.org/data/">OONI censorship measurement coverage&lt;/a>
+around the world.&lt;/p>
+&lt;p>In this blog post, we’re excited to introduce you to iThena and discuss
+how they helped support censorship measurement worldwide.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/#about-ithena">About iThena&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/#ooni-probe-integration-into-ithena">OONI Probe integration into iThena&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="about-ithena">About iThena&lt;/h1>
+&lt;p>&lt;a href="https://root.ithena.net/">iThena&lt;/a>, developed by the &lt;a href="https://cybercomplex.net/">Cyber-Complex Foundation&lt;/a>, is a distributed computation
+and measurement project based on the &lt;a href="https://boinc.berkeley.edu/">Berkeley Open Infrastructure for Network Computing (BOINC)&lt;/a> platform.
+iThena &lt;a href="https://boinc.berkeley.edu/forum_thread.php?id=13966">aims&lt;/a> to
+generate a dynamic topological model of the Internet, based on
+measurements from distributed devices.&lt;/p></description></item><item><title>[Event Report] India, Let's Build the List</title><link>https://ooni.github.io/post/2021-event-india-test-list/</link><pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-event-india-test-list/</guid><description>&lt;hr>
+&lt;p>This is a &lt;strong>guest post by &lt;a href="https://thebachchaoproject.org/">The Bachchao Project&lt;/a>&lt;/strong>, originally published
+&lt;a href="https://thebachchaoproject.org/event-report-india-lets-build-the-list/">here&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;p>The &lt;a href="https://thebachchaoproject.org/">Bachchao Project&lt;/a> in partnership with &lt;a href="https://ooni.org/">OONI&lt;/a> hosted an online event on 9th and
+10th October 2021 to update the &lt;a href="https://github.com/citizenlab/test-lists/blob/master/lists/in.csv">Citizen Lab test list for India&lt;/a>. The event,
+which was called “India, Lets build the list”, was organised to help strengthen
+community based monitoring of internet censorship in India. The event allowed
+experts from different fields to contribute to a curated &lt;a href="https://github.com/citizenlab/test-lists/blob/master/lists/in.csv">list of websites&lt;/a> that
+are relevant to India and which are regularly tested for censorship by
+volunteers in India.&lt;/p></description></item><item><title>Why Collaboration and Transparency is Key to Internet Measurement</title><link>https://ooni.github.io/post/2021-internet-measurements-collaboration-transparency/</link><pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-internet-measurements-collaboration-transparency/</guid><description>&lt;hr>
+&lt;p>This post was originally published on the &lt;a href="https://pulse.internetsociety.org/blog/internet-measurements-collaboration-and-transparency">Internet Society Pulse blog&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;p>With Internet shutdowns, disruptions and censorship events on the increase
+around the world, tracking where such events are happening and gathering
+evidence to help in the fight against them is becoming more and more
+important.&lt;/p>
+&lt;p>Tracking these events is crucial because of the impact they have on society and
+the economy. When social media apps are blocked, for example, freedom of
+speech, access to information, and movement-building is hampered. When access
+to the Internet is shut down completely, people may not have access to vital
+services or be able to work and study.&lt;/p></description></item><item><title>Job Opening: Mobile Developer for OONI Probe</title><link>https://ooni.github.io/post/2021-job-opening-ooni-mobile-developer/</link><pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-job-opening-ooni-mobile-developer/</guid><description>&lt;p>Are you a mobile developer interested in defending human rights on the
+internet? We have a job opening for you!&lt;/p>
+&lt;p>The &lt;a href="https://ooni.org/">OONI&lt;/a> team (a non-profit fighting internet
+censorship, originally born out of the &lt;a href="https://www.torproject.org/">Tor
+Project&lt;/a>) is looking for a dedicated
+&lt;strong>mobile developer&lt;/strong> to work on &lt;a href="https://ooni.org/install/mobile">OONI Probe&lt;/a>: a free software app designed
+to measure internet censorship and network performance.&lt;/p>
+&lt;p>The application deadline is &lt;strong>Sunday, 31st October 2021&lt;/strong>.&lt;/p>
+&lt;h1 id="job-description">Job description&lt;/h1>
+&lt;p>If you join our team, you will lead the development of the &lt;a href="https://ooni.org/install/mobile">OONI Probe mobile app&lt;/a>, supporting human rights
+defenders worldwide to investigate and fight internet censorship.&lt;/p></description></item><item><title>A brief introduction to OONI</title><link>https://ooni.github.io/post/brief-introduction-to-ooni/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/brief-introduction-to-ooni/</guid><description>&lt;p>This is gentle introduction to OONI that does not require readers to have a technical background.&lt;/p>
+&lt;p>If you are familiar with how the Internet works and how it can be censored you can skip &lt;a href="https://ooni.github.io/post/brief-introduction-to-ooni/#the-basics">The basics&lt;/a>.&lt;/p>
+&lt;p>For frequently asked questions and answers, please refer to the &lt;a href="https://ooni.org/support/faq/">OONI FAQ&lt;/a>.&lt;/p>
+&lt;h2 id="the-basics">The basics&lt;/h2>
+&lt;p>You might be connecting to the &lt;a href="https://en.wikipedia.org/wiki/Internet">Internet&lt;/a>
+from a &lt;a href="https://en.wikipedia.org/wiki/Local_area_network">local network&lt;/a>
+or using an &lt;a href="https://ooni.org/support/glossary/#isp">Internet Service Provider&lt;/a> (ISP).&lt;/p>
+&lt;p>ISPs are usually not connected to each other. Rather they connect to large
+&lt;a href="https://en.wikipedia.org/wiki/Tier_1_network">carriers&lt;/a> or simply to a &lt;a href="https://en.wikipedia.org/wiki/Tier_2_network">bigger ISP&lt;/a>.&lt;/p></description></item><item><title>Accessing OONI data</title><link>https://ooni.github.io/post/mining-ooni-data/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/mining-ooni-data/</guid><description>&lt;p>This page has moved to: &lt;a href="https://docs.ooni.org/data/">https://docs.ooni.org/data/&lt;/a>&lt;/p></description></item><item><title>OONI Partner Training 2021</title><link>https://ooni.github.io/post/ooni-partner-training-2021/</link><pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-partner-training-2021/</guid><description>&lt;p>Over the last week, we had the pleasure to host &lt;strong>two 3-day OONI Partner
+Training events&lt;/strong> for our &lt;a href="https://ooni.org/partners">partners&lt;/a> in
+Africa, Latin America, the Middle East, and Asia. As part of these
+events, our goal was to share OONI-specific knowledge and skills, and to
+collect feedback to better serve community needs.&lt;/p>
+&lt;p>In this post, we share information about the training events.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-training-2021/#about">About&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-training-2021/#sessions">Sessions&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-training-2021/#session-1-information-controls-around-the-world-day-1">Session 1: Information Controls Around the World (Day 1)&lt;/a>&lt;/p></description></item><item><title>Making the OONI Probe Android app more resilient</title><link>https://ooni.github.io/post/making-ooni-probe-android-more-resilient/</link><pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/making-ooni-probe-android-more-resilient/</guid><description>&lt;p>We recently made &lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">OONI Probe Android&lt;/a>
+more robust against accidental or deliberate blocking of our backend
+services. Specifically, we implemented support for specifying a proxy
+that speaks with OONI’s backend services. We also improved the build
+process to influence the TLS Client Hello fingerprint, which helps with
+avoiding accidental blocking.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/making-ooni-probe-android-more-resilient/#adding-support-for-a-proxy">Adding support for a proxy&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/making-ooni-probe-android-more-resilient/#changing-our-android-tls-fingerprint">Changing our Android TLS fingerprint&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/making-ooni-probe-android-more-resilient/#future-improvements">Future improvements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="adding-support-for-a-proxy">Adding support for a proxy&lt;/h1>
+&lt;p>Since late 2020, community members have been reporting specific OONI
+Probe Android failures. The symptom is that all tests fail with the “all
+available probe services failed” error. This issue has been publicly
+documented, for example, in
+&lt;a href="https://github.com/ooni/probe/issues/1324">ooni/probe#1324&lt;/a>. The
+following screenshot shows what a user would see under this specific
+error condition.&lt;/p></description></item><item><title>Year in Review: OONI in 2020</title><link>https://ooni.github.io/post/ooni-in-2020/</link><pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2020/</guid><description>&lt;p>In light of the global &lt;a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">COVID-19 pandemic&lt;/a>,
+2020 has been a challenging year for everyone.&lt;/p>
+&lt;p>Yet, several exciting things happened in the censorship measurement
+world. In this post, we share some OONI highlights from 2020, as well as
+some upcoming OONI projects for 2021!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#ooni-probe">OONI Probe&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#new-ooni-probe-desktop-app-for-windows-and-macos">New OONI Probe Desktop App for Windows and macOS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#new-ooni-probe-measurement-engine">New OONI Probe measurement engine&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#ooni-run-usability-study">OONI Run usability study&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#measurement-methodologies">Measurement methodologies&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#new-circumvention-tool-tests">New circumvention tool tests&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2020/#new-experiments">New experiments&lt;/a>&lt;/p></description></item><item><title>Investigating Encrypted DNS Blocking in India</title><link>https://ooni.github.io/post/2020-encrypted-dns-blocking-india/</link><pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-encrypted-dns-blocking-india/</guid><description>&lt;p>In October 2020, we collaborated with Divyank Katira and Gurshabad Grover,
+researchers at the &lt;a href="https://cis-india.org/">Centre for Internet &amp;amp; Society, India&lt;/a>,
+to implement and evaluate a new OONI experiment focused on detecting DNS censorship.&lt;/p>
+&lt;p>This new OONI experiment, called &lt;a href="https://github.com/ooni/probe-engine/tree/v0.19.0/experiment/dnscheck">dnscheck&lt;/a>,
+focuses on detecting the blocking of encrypted DNS
+transports such as &lt;a href="https://en.wikipedia.org/wiki/DNS_over_TLS">DNS over TLS&lt;/a>
+and &lt;a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">DNS over HTTPS&lt;/a>. Its
+methodology improves upon the measurement methodology OONI previously used to measure
+&lt;a href="https://ooni.org/post/2020-iran-dot">DoT blocking in Iran&lt;/a>.&lt;/p>
+&lt;p>The implementation, &lt;a href="https://github.com/ooni/probe-engine/pull/950">written by Divyank Katira&lt;/a>, is currently only available
+to users of the &lt;a href="https://github.com/ooni/probe-engine/tree/v0.19.0#building-miniooni">miniooni&lt;/a>
+research client. We are however &lt;a href="https://github.com/ooni/probe/issues/1262">planning on promoting the dsncheck experiment
+as a first class experiment&lt;/a> that will run
+by default as part of the &amp;ldquo;websites&amp;rdquo; experiments group.&lt;/p></description></item><item><title>OONI Probe ASN Incident Report</title><link>https://ooni.github.io/post/2020-ooni-probe-asn-incident-report/</link><pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-ooni-probe-asn-incident-report/</guid><description>&lt;p>Last week we &lt;a href="https://github.com/ooni/explorer/issues/495">noticed&lt;/a>
+that some OONI measurements were available on &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> under a report ID containing a
+valid &lt;a href="https://ooni.org/support/glossary/#asn">Autonomous System Number (ASN)&lt;/a>, even though the raw
+JSON data contained zero as the ASN (i.e. encoded as &lt;code>AS0&lt;/code>). We
+initially thought that this was caused by a bug in our API code, but it
+actually turned out to be an &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a>
+bug in our &lt;a href="https://github.com/ooni/probe-engine">probe engine&lt;/a> (which
+powers the OONI Probe apps).&lt;/p>
+&lt;p>Please &lt;strong>&lt;a href="https://ooni.org/install/mobile">update your OONI Probe mobile app to the latest version (2.7.0)&lt;/a>&lt;/strong>, which fixes this bug.
+If you are an OONI Probe desktop app user and prefer not to share your
+network ASN, please refrain from running tests until we have released a
+fix for OONI Probe desktop (&lt;a href="https://github.com/ooni/explorer/issues/495#issuecomment-705518245">hopefully this will be possible next week&lt;/a>).&lt;/p></description></item><item><title>Internet Measurement Village 2020: Slides &amp; Video Recordings</title><link>https://ooni.github.io/post/2020-imv-slides-recordings/</link><pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-imv-slides-recordings/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-imv-slides-recordings/images/imv2020-banner.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-imv-slides-recordings/images/imv2020-banner_hu311103607854719990.png"
+
+ 
+ srcset="https://ooni.github.io/post/2020-imv-slides-recordings/images/imv2020-banner_hu495236815503009730.png 2x"
+ 
+
+ title="Internet Measurement Village 2020"
+ 
+ alt="Internet Measurement Village 2020"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Over the last month, between 10th June 2020 to 3rd July 2020, we
+organized and hosted the &lt;strong>&lt;a href="https://ooni.org/post/2020-internet-measurement-village/">Internet Measurement Village (IMV) 2020&lt;/a>&lt;/strong>, an
+online community event aimed at sharing skills, knowledge, and resources
+on internet measurement, in defense of a free and open internet.&lt;/p>
+&lt;p>As all the IMV sessions were live-streamed and will continue to live on
+the &lt;a href="https://www.youtube.com/c/OONIorg">OONI YouTube channel&lt;/a>, we hope
+that these recordings will serve as a valuable resource on internet
+measurement for the internet freedom community.&lt;/p></description></item><item><title>Support the OTF: Support a Free and Open Internet</title><link>https://ooni.github.io/post/2020-support-otf/</link><pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-support-otf/</guid><description>&lt;p>Over the last month, the &lt;a href="https://www.opentech.fund/">Open Technology Fund (OTF)&lt;/a> &amp;ndash; &lt;em>one of the main funders of free
+censorship circumvention and privacy-enhancing technologies that human
+rights defenders worldwide rely on&lt;/em> &amp;ndash; has been under threat, following
+the &lt;a href="https://edition.cnn.com/2020/06/17/media/us-agency-for-global-media-michael-pack/index.html">ousting of its leadership&lt;/a>.&lt;/p>
+&lt;p>We previously published a &lt;a href="https://ooni.org/post/2020-06-19-save-internet-freedom-support-the-open-technology-fund/">statement in support of the OTF&lt;/a>,
+explaining &lt;strong>why we think the OTF is essential for internet freedom&lt;/strong>
+and encouraging the public to &lt;a href="https://saveinternetfreedom.tech/">sign the letter to congress&lt;/a>.&lt;/p>
+&lt;p>In this post, we share our experience working with the OTF, and discuss
+how they have played a crucial role in supporting the fight against
+internet censorship worldwide.&lt;/p></description></item><item><title>Azərbaycan: OONI Probe Test üçün çağırış</title><link>https://ooni.github.io/post/2020-azerbaijan-ooni-probe-testing/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-azerbaijan-ooni-probe-testing/</guid><description>&lt;hr>
+&lt;p>This is a &lt;strong>guest post by Arzu Geybullayeva&lt;/strong> (&lt;a href="https://www.az-netwatch.org/">Azerbaijan Internet Watch&lt;/a>), originally published
+&lt;a href="https://www.facebook.com/arzu.geybullayeva/posts/10101500262414261">here&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;p>&lt;a href="https://www.az-netwatch.org/">Azerbaijan Internet Watch&lt;/a> Azərbaycanda
+internet senzurasını izləyir və bu çərçəvədə aşkar etdiyi pozuntuları öz
+səhifəsində sənədləşdirir. Bu barədə daha ətraflı məlumatı
+&lt;a href="https://www.az-netwatch.org/about/">buradan&lt;/a> əldə edə bilərsiniz.&lt;/p>
+&lt;p>Layihənin bir vacib cəhətlərindən biri də ölkədə bloklanan veb
+səhifələri izləmək ve bu bloklamaların necə baş verdiyini araşdırmaqdır.
+Bu barədə isə daha ətraflı
+&lt;a href="https://www.az-netwatch.org/news/how-websites-are-blocked-in-azerbaijan/">buradan&lt;/a>
+və &lt;a href="https://www.az-netwatch.org/technical-analysis/measuring-website-blocks-in-azerbaijan-ooni-forensics/">buradan&lt;/a>
+məlumat əldə edə bilərsiniz.&lt;/p>
+&lt;p>Gördüyünüz kimi, bu testleri aparmaq üçün Azerbaijan Internet Watch
+&lt;a href="https://ooni.org/">OONI&lt;/a> ilə əməkdaşlıq edir. OONI dünyada internet
+senzurasının şəffaflığını artırmağı hədəfləyən layihədir.&lt;/p></description></item><item><title>Save Internet Freedom: Support the Open Technology Fund</title><link>https://ooni.github.io/post/2020-06-19-save-internet-freedom-support-the-open-technology-fund/</link><pubDate>Fri, 19 Jun 2020 16:48:11 +0000</pubDate><guid>https://ooni.github.io/post/2020-06-19-save-internet-freedom-support-the-open-technology-fund/</guid><description>&lt;p>Last Wednesday was &lt;a href="https://edition.cnn.com/2020/06/17/media/us-agency-for-global-media-michael-pack/index.html">dubbed&lt;/a> as a “Wednesday night massacre”, following the firing of the directors of four organizations overseen by the &lt;a href="https://www.usagm.gov/">US Agency for Global Media (USAGM)&lt;/a>: Radio Free Asia, Radio Free Europe/Radio Liberty, Middle East Broadcasting, and the Open Technology Fund (OTF).&lt;/p>
+&lt;p>Out of these four organizations, we would like to draw your attention to the &lt;a href="https://www.opentech.fund/">OTF&lt;/a>, not only because they have been a long-term funder of our project but, more importantly, because they have been essential in creating the internet freedom community as we know it.&lt;/p></description></item><item><title>OONI Run Usability Study: Findings</title><link>https://ooni.github.io/post/2020-06-09-ooni-run-usability-study-findings/</link><pubDate>Tue, 09 Jun 2020 09:38:02 +0000</pubDate><guid>https://ooni.github.io/post/2020-06-09-ooni-run-usability-study-findings/</guid><description>&lt;p>&lt;img src="https://ooni.github.io/images/uploads/dscf7168.jpg">&lt;/p>
+&lt;p>&lt;a href="https://ooni.org/post/ooni-run/">OONI Run&lt;/a> is a platform (&lt;a href="https://ooni.org/post/ooni-run/">launched&lt;/a> in September 2017) that you can use to generate mobile deep links and widget code to coordinate &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> testing. To enable community members to more effectively use&lt;a href="https://run.ooni.org/"> OONI Run&lt;/a>, we researched its limitations and collected structured community feedback through an &lt;a href="https://ooni.org/post/2020-ooni-run-survey-and-interviews/">OONI Run usability study&lt;/a>.&lt;/p>
+&lt;p>This report outlines the objectives, personas, assumptions, and methods of this study.&lt;/p>
+&lt;p>We also share the outcomes based on the analysis of information collected through our &lt;a href="https://ooni.typeform.com/to/r9c5ee">survey&lt;/a> and interviews with community members, as well as some of the next steps towards improving OONI Run.&lt;/p></description></item><item><title>Join the online Internet Measurement Village 2020</title><link>https://ooni.github.io/post/2020-internet-measurement-village/</link><pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-internet-measurement-village/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-internet-measurement-village/images/imv2020-banner.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-internet-measurement-village/images/imv2020-banner_hu9743658825744276811.png"
+
+ 
+ srcset="https://ooni.github.io/post/2020-internet-measurement-village/images/imv2020-banner_hu5501900478008247774.png 2x"
+ 
+
+ title="Internet Measurement Village 2020"
+ 
+ alt="Internet Measurement Village 2020"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;a class="youtube-subscribe" href="https://www.youtube.com/c/OONIorg?sub_confirmation=1">
+Subscribe on YouTube
+&lt;/a>
+
+&lt;p>We are excited to bring the first online Internet Measurement Village to
+you this month.&lt;/p>
+&lt;p>Interested in learning all about Internet measurement and how to detect
+Internet censorship? Curious to explore open datasets on Internet
+censorship and Internet outages? Eager to learn how advocates are
+pushing back against Internet shutdowns and defending a free and open
+Internet?&lt;/p>
+&lt;p>Join us for the online Internet Measurement Village, &lt;strong>starting on
+Wednesday, 10th June 2020 and ending on Friday, 3rd July 2020&lt;/strong>.&lt;/p></description></item><item><title>OONI Run Survey &amp; Interviews: Share your feedback</title><link>https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/</link><pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/images/ooni-run.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/images/ooni-run_hu17043667162593774499.png"
+
+ 
+
+ title="OONI Run"
+ 
+ alt="OONI Run"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;a href="https://ooni.org/post/ooni-run/">OONI Run&lt;/a> is a platform that you can
+use to generate mobile deep links and widget code to coordinate &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> testing.&lt;/p>
+&lt;p>Researchers and human rights defenders around the world have used &lt;a href="https://run.ooni.org/">OONI Run&lt;/a> to coordinate OONI Probe censorship
+measurement campaigns, particularly leading up to and during political
+events (such as elections and protests).&lt;/p>
+&lt;p>We’re excited to hear more about your experience with OONI Run so that
+we can improve it.&lt;/p></description></item><item><title>Launched: New OONI Probe Desktop App for Windows and macOS</title><link>https://ooni.github.io/post/2020-ooni-probe-desktop-app/</link><pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-ooni-probe-desktop-app/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-ooni-probe-desktop-app/images/desktop-feature.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-ooni-probe-desktop-app/images/desktop-feature_hu15263499433944027071.png"
+
+ 
+
+ title="OONI Probe desktop app"
+ 
+ alt="OONI Probe desktop app"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today, OONI is thrilled to announce the public launch of the &lt;strong>new OONI
+Probe desktop app&lt;/strong> that you can download and install on &lt;strong>Windows&lt;/strong> and
+&lt;strong>macOS&lt;/strong> to measure internet censorship and network performance.&lt;/p>
+&lt;a class="ooni-btn" href="https://ooni.org/install/desktop">Install OONI Probe Desktop app&lt;/a>
+
+&lt;p>By running the tests in the new OONI Probe desktop app, you can measure:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Blocking of &lt;a href="https://ooni.org/nettest/web-connectivity/">websites&lt;/a>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Blocking of &lt;a href="https://ooni.org/nettest/whatsapp/">WhatsApp&lt;/a>, &lt;a href="https://ooni.org/nettest/facebook-messenger/">Facebook Messenger&lt;/a>, and
+&lt;a href="https://ooni.org/nettest/telegram/">Telegram&lt;/a>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Blocking of &lt;a href="https://ooni.org/nettest/tor/">Tor&lt;/a> and
+&lt;a href="https://ooni.org/nettest/psiphon/">Psiphon&lt;/a>;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Presence of systems (“&lt;a href="https://ooni.org/nettest/http-invalid-request-line/">middleboxes&lt;/a>”)
+that could potentially be responsible for censorship and/or surveillance;&lt;/p></description></item><item><title>Building a smart URL list system: Policy for URL prioritization</title><link>https://ooni.github.io/post/ooni-smart-url-list-system/</link><pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-smart-url-list-system/</guid><description>&lt;p>To improve the monitoring of website censorship around the world, OONI
+aims to create a smart URL list system, while ensuring, to the extent
+possible, the safety of the URL lists themselves by running them through
+the usual &lt;a href="https://github.com/citizenlab/test-lists">Citizen Lab URL review process&lt;/a>. This will help
+ensure smarter test target selection and by extension, it will enable us
+&amp;ndash; and the broader internet freedom community &amp;ndash; to more effectively
+monitor, analyze, and respond to cases of website censorship around the
+world.&lt;/p></description></item><item><title>Let's measure the accessibility of COVID-19 websites around the world</title><link>https://ooni.github.io/post/covid-19-ooni-measurement/</link><pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/covid-19-ooni-measurement/</guid><description>&lt;p>Ensuring a free and open internet during an emergency, like the current
+&lt;a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen">COVID-19 pandemic&lt;/a>,
+is more important than ever. However, access to information related to
+the coronavirus pandemic has already been censored by certain
+governments. &lt;a href="https://citizenlab.ca/2020/03/censored-contagion-how-information-on-the-coronavirus-is-managed-on-chinese-social-media/">China censored information on the coronavirus&lt;/a>
+on Chinese social media platforms, while &lt;a href="https://vesinfiltro.com/noticias/bloqueado_portal_coronavirus_AN">Venezuela’s state-owned CANTV blocked access to a coronavirus information portal&lt;/a>
+last week.&lt;/p>
+&lt;p>We therefore invite you to participate in a measurement campaign to
+check if COVID-19 sites are accessible in your country (and on the
+network you’re using) and to &lt;a href="https://explorer.ooni.org/">share relevant measurement data&lt;/a> with the world.&lt;/p></description></item><item><title>Year in Review: OONI in 2019</title><link>https://ooni.github.io/post/ooni-in-2019/</link><pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2019/</guid><description>&lt;p>As the new decade begins, we publish this post to share some OONI
+highlights from 2019. We also share some thoughts for 2020.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#new-apps">New Apps&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#revamped-ooni-probe-mobile-app">Revamped OONI Probe Mobile App&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#new-ooni-probe-desktop-app">New OONI Probe Desktop App&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#near-real-time-publication-of-ooni-measurements">Near real-time publication of OONI measurements&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#revamped-ooni-explorer">Revamped OONI Explorer&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#ooni-postgresql-metadb">OONI PostgreSQL MetaDB&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#improved-measurements">Improved measurements&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#new-ooni-probe-tests">New OONI Probe tests&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#new-ooni-probe-measurement-engine">New OONI Probe measurement engine&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#community">Community&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#new-partnerships">New partnerships&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#research-publications">Research publications&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#ooni-workshops-and-presentations">OONI workshops and presentations&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#community-resources">Community resources&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2019/#ooni-verse">OONI-verse&lt;/a>&lt;/p></description></item><item><title>OONI Highlights: 2017-2019</title><link>https://ooni.github.io/post/ooni-highlights-2017-2019/</link><pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-highlights-2017-2019/</guid><description>&lt;p>&lt;em>This post was originally published on the &lt;a href="https://www.opentech.fund/news/ooni-highlights-2017-2019/">OTF website&lt;/a>.&lt;/em>&lt;/p>
+&lt;p>Back in 2012, the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> was born with &lt;a href="https://www.opentech.fund/results/supported-projects/ooni-open-observatory-of-network-interference/">OTF support&lt;/a>
+to create the first open methodologies that would enable anyone around
+the world to measure internet censorship and other forms of network
+interference.&lt;/p>
+&lt;p>Today, OONI comprises a global community that runs its censorship
+measurement software (&lt;a href="https://ooni.org/install/">OONI Probe&lt;/a>) in
+&lt;a href="https://explorer.ooni.org/">more than 200 countries every month&lt;/a>.
+Millions of measurements have been collected from tens of thousands of
+networks in 236 countries since 2012, all of which are openly published
+on &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> &amp;ndash; arguably the largest
+publicly available resource on internet censorship to date.&lt;/p></description></item><item><title>Call to Action: Let’s measure the blocking of LGBTQI websites around the world!</title><link>https://ooni.github.io/post/2019-measure-blocking-lgbtqi-sites/</link><pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-measure-blocking-lgbtqi-sites/</guid><description>&lt;p>&lt;img alt="Grindr blocked in Iran" src="https://ooni.github.io/post/lgbtqi-site-testing/confirmed-blocked-measurement.png">&lt;/p>
+&lt;p>LGBTQI websites are blocked in several countries around the world, such
+as
+&lt;a href="https://sinarproject.org/digital-rights/updates/online-lgbt-censorship-malaysia">Malaysia&lt;/a>
+and
+&lt;a href="https://ooni.org/post/indonesia-internet-censorship/#lgbt">Indonesia&lt;/a>.
+This includes popular dating apps and sites, like
+&lt;a href="https://www.grindr.com/">grindr&lt;/a>, which is blocked in
+&lt;a href="https://www.amnesty.org/en/latest/news/2019/05/lebanon-ban-on-gay-dating-app-grindr-a-blow-for-sexual-rights-and-freedom/">Lebanon&lt;/a>
+and
+&lt;a href="https://ooni.org/post/iran-internet-censorship/#human-rights-issues">Iran&lt;/a>.&lt;/p>
+&lt;p>How can we track the blocking of LGBTQI sites around the world?&lt;/p>
+&lt;p>We have teamed up with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> &amp;ndash; a leading international LGBTQI human rights organization &amp;ndash; to investigate the blocking of LGBTQI sites worldwide.&lt;/p>
+&lt;p>We invite you to contribute to this research!&lt;/p></description></item><item><title>Next Generation OONI Explorer Launched!</title><link>https://ooni.github.io/post/next-generation-ooni-explorer/</link><pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/next-generation-ooni-explorer/</guid><description>&lt;p>&lt;img alt="Next Generation OONI Explorer" src="https://ooni.github.io/post/2019-explorer-revamp/explorer-revamped.png">&lt;/p>
+&lt;p>Today the Open Observatory of Network Interference (OONI) team is
+thrilled to announce the public launch of the revamped, &lt;strong>&lt;a href="https://explorer.ooni.org/">next generation OONI Explorer&lt;/a>&lt;/strong>!&lt;/p>
+&lt;p>&lt;strong>OONI Explorer is an open data resource on internet censorship around
+the world.&lt;/strong> This new platform offers access to millions of censorship
+measurements collected from 233 countries since 2012.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#about-ooni-explorer">About OONI Explorer&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#why-use-ooni-explorer">Why use OONI Explorer?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#who-is-ooni-explorer-for">Who is OONI Explorer for?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#ooni-explorer-2-0">OONI Explorer 2.0&lt;/a>&lt;/p></description></item><item><title>OONI Software Development Guidelines</title><link>https://ooni.github.io/post/ooni-software-development-guidelines/</link><pubDate>Sat, 23 Feb 2019 01:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-software-development-guidelines/</guid><description>&lt;p>&lt;img src="https://ooni.github.io/post/ooni-software-development-guidelines/QuattroEngineer.png">&lt;/p>
+&lt;p>The goal of this document is to explain and explicit some of the best practices relevant to software development that we follow at the Open Observatory of Network Interference (OONI).&lt;/p>
+&lt;p>By following these development guidelines we aim to produce &lt;strong>higher quality code&lt;/strong>, which contains &lt;strong>less defects&lt;/strong> and allows us to iterate more quickly &lt;strong>delivering greater value&lt;/strong> to our end &lt;strong>users is a shorter amount of time&lt;/strong>!&lt;/p>
+&lt;h2 id="version-control">Version control&lt;/h2>
+&lt;p>Also known as: “How I Learned to Stop Worrying and Love the &lt;strong>Git&lt;/strong>!”&lt;/p></description></item><item><title>OONI Probe Android 2.0.0 Incident Report</title><link>https://ooni.github.io/post/ooni-probe-android-200-incident/</link><pubDate>Fri, 22 Feb 2019 23:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-probe-android-200-incident/</guid><description>&lt;p>The first public release of OONI Probe Android 2.0.0 (since 2.0.0-alpha.7) included a very serious bug: we lost measurements and collected measurements that we shouldn’t have. As soon as the problem was identified, we quickly released a fix (OONI Probe Android 2.0.1). All measurements that should not have been uploaded have been deleted and we are working on a new OONI Probe release (OONI Probe Mobile 2.1.0) that will allow you to manually re-upload measurements. No other OONI Probe platforms (&lt;a href="https://itunes.apple.com/us/app/id1199566366">iOS&lt;/a>, [macOS](&lt;a href="https://ooni.io/install/OONI">https://ooni.io/install/OONI&lt;/a> Probe), [Linux](&lt;a href="https://ooni.io/install/OONI">https://ooni.io/install/OONI&lt;/a> Probe), &lt;a href="https://ooni.io/install/lepidopter/">Lepidopter&lt;/a>) were affected.&lt;/p></description></item><item><title>Year in Review: OONI in 2018</title><link>https://ooni.github.io/post/ooni-in-2018/</link><pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2018/</guid><description>&lt;p>As the new year begins, we publish this post to share some OONI
+highlights from 2018. We also share some of the exciting new projects
+we’ll be launching in 2019!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#new-partnerships">New partnerships&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#research-publications">Research publications&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#dev-work-behind-the-scenes">Dev work behind the scenes&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#revamped-ooni-probe-mobile-app">Revamped OONI Probe mobile app&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#revamped-ooni-explorer">Revamped OONI Explorer&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#new-ooni-probe-desktop-apps">New OONI Probe desktop apps&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#probe-orchestration">Probe Orchestration&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#ooni-workshops-and-presentations">OONI workshops and presentations&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#videos">Videos&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#expanding-ooni-verse">Expanding OONI-verse&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="new-partnerships">New partnerships&lt;/h1>
+&lt;p>Our network of partners grew significantly in 2018!&lt;/p></description></item><item><title>Major Revamp: OONI Probe Mobile App 2.0 Launched!</title><link>https://ooni.github.io/post/revamped-ooni-probe-mobile-app/</link><pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/revamped-ooni-probe-mobile-app/</guid><description>&lt;p>&lt;img alt="OONI Probe: old vs. new" src="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/old-vs-new-app.png">&lt;/p>
+&lt;p>Today the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project is thrilled to announce
+the release of a major, new OONI Probe mobile app version!&lt;/p>
+&lt;p>Are websites and social media apps blocked? Is your network unusually
+slow?&lt;/p>
+&lt;p>Install &lt;strong>OONI Probe&lt;/strong> now on
+&lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">Android&lt;/a>
+or &lt;a href="https://itunes.apple.com/us/app/id1199566366">iOS&lt;/a> to find
+out!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#why-run-ooni-probe">Why run OONI Probe?&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#ooni-probe-2-0-highlights">OONI Probe 2.0 Highlights&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#major-ui-overhaul">Major UI overhaul&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#overview-of-test-results">Overview of Test Results&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#enhanced-website-testing">Enhanced Website Testing&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/#test-websites-of-your-choice">Test websites of your choice&lt;/a>&lt;/p></description></item><item><title>Do you use OONI Probe? We want your feedback!</title><link>https://ooni.github.io/post/ooniprobe-ux-survey-and-interviews/</link><pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooniprobe-ux-survey-and-interviews/</guid><description>&lt;p>&lt;strong>&lt;a href="https://ooniuxteam.typeform.com/to/a1P0cn">Survey&lt;/a>&lt;/strong> (self-hosted &lt;a href="https://storm.torproject.org/shared/VpAFK13fdAozTGTolFd2EsT1CkLY8-YlBLbRERy5EwI">mirror&lt;/a>)&lt;/p>
+&lt;p>Since last year’s &lt;a href="https://ooni.org/post/ooni-mobile-app/">launch of the OONI Probe mobile apps&lt;/a>, tens of
+thousands of people have been &lt;a href="https://api.ooni.io/stats">measuring internet censorship in around 200 countries&lt;/a> every month. But &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> is far from perfect.&lt;/p>
+&lt;p>We’re excited to hear more about your experience with the apps so that
+we can improve them.&lt;/p>
+&lt;p>We invite you to complete our survey and/or participate in an interview
+to provide feedback.&lt;/p>
+&lt;h1 id="survey">Survey&lt;/h1>
+&lt;p>We’d love to hear your thoughts on the &lt;em>current&lt;/em> OONI Probe mobile apps.&lt;/p></description></item><item><title>OONI Community Interviews: Julie Owono</title><link>https://ooni.github.io/post/ooni-community-interviews-julie-owono/</link><pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-community-interviews-julie-owono/</guid><description>&lt;p>If you’ve met &lt;a href="https://twitter.com/JulieOwono">Julie Owono&lt;/a>, you’ll probably agree that her passion and
+determination for defending digital rights is one of the things that
+stands out about her.&lt;/p>
+&lt;p>In her capacity as the Executive Director of &lt;a href="https://internetwithoutborders.org/">Internet Sans Frontières&lt;/a> (Internet Without
+Borders), Julie has spearheaded advocacy efforts in defense of online
+freedoms in many West African countries. Notably, Julie led campaigns
+against internet shutdowns in Cameroon, as well as in Togo and Chad.
+Over the last two years, Julie has championed OONI community engagement
+in West Africa and used OONI data as part of campaigns.&lt;/p></description></item><item><title>OONI at RightsCon 2018</title><link>https://ooni.github.io/post/ooni-rightscon-2018/</link><pubDate>Fri, 11 May 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-rightscon-2018/</guid><description>&lt;p>&lt;img alt="RightsCon 2018" src="https://ooni.github.io/post/events/rightscon-2018.png">&lt;/p>
+&lt;p>We are excited to participate at
+&lt;a href="https://www.rightscon.org/">RightsCon&lt;/a> next week: the world’s leading
+event on human rights in the digital age. Annually hosted by &lt;a href="https://www.accessnow.org/">Access Now&lt;/a>, this three-day conference will take
+place in Toronto between 16th-18th May 2018.&lt;/p>
+&lt;p>Over the last years, RightsCon has provided us the opportunity to
+participate in critical discussions in the digital rights field, meet
+many fascinating people and organizations, and to form new coalitions.
+We therefore look forward to participating at RightsCon and are eager to
+meet many new faces!&lt;/p></description></item><item><title>OONI Community Interviews: Moses Karanja</title><link>https://ooni.github.io/post/ooni-community-interviews-moses-karanja/</link><pubDate>Wed, 09 May 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-community-interviews-moses-karanja/</guid><description>&lt;p>We first met &lt;a href="https://moseskaranja.com/">Moses Karanja&lt;/a> several years
+ago at the &lt;a href="https://citizenlab.ca/summerinstitute/">Citizen Lab Summer Institute&lt;/a>. He’s a Kenyan
+information controls researcher, having previously worked with
+Strathmore University Law School research centre,
+&lt;a href="http://cipit.org/">CIPIT&lt;/a>. Currently, he’s a PhD student at the
+University of Toronto.&lt;/p>
+&lt;p>Over the last years, Moses has championed OONI community engagement
+across Africa. Thanks to his tireless efforts, communities in many
+African countries are now running &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> and using &lt;a href="https://ooni.org/data/">OONI data&lt;/a> to examine internet censorship
+and other forms of network interference. We have worked with Moses on a
+number of research reports and are grateful for his commitment to
+defending a free and open internet.&lt;/p></description></item><item><title>ParkNet: Short Documentary on Internet Censorship in Cuba</title><link>https://ooni.github.io/post/parknet-short-documentary-cuba/</link><pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/parknet-short-documentary-cuba/</guid><description>&lt;p>Last year we had the opportunity to travel to Cuba to explore its internet
+landscape. We spent most of our time hopping from one public WiFi hotspot to
+another, measuring networks in Havana, Santa Clara, and Santiago de Cuba. You
+might remember that we published a &lt;a href="https://ooni.org/post/cuba-internet-censorship-2017/">research report&lt;/a> on our findings.&lt;/p>
+&lt;p>Today we publish a &lt;strong>short documentary (“ParkNet”)&lt;/strong> on our study of internet
+censorship in Cuba.&lt;/p>
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QslsL84jx4E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe>
+
+&lt;p>“ParkNet” is a term that we coined to refer to parks that serve as public WiFi
+hotspots in Cuba. You can also access the internet from many other public
+spaces, but we found parks to be particularly interesting due to the sort of
+collective experience that they offer when &amp;ldquo;visiting” the internet.&lt;/p></description></item><item><title>OONI's recent participation at events in Africa, India, and Europe</title><link>https://ooni.github.io/post/ooni-in-africa-india-europe-conferences/</link><pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-africa-india-europe-conferences/</guid><description>&lt;p>&lt;img alt="Quattro" src="https://ooni.github.io/post/2018-conferences/quattro.jpg">&lt;/p>
+&lt;p>Over the last months, the OONI team had the opportunity to host
+workshops, give presentations, and participate in discussions at the
+following conferences and events:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="http://www.students.uct.ac.za/event/internet-censorship-measurements">Seminar at the University of Cape Town&lt;/a> (South Africa)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://globalnetpolicy.org/event/research-methods-africa/">Internet Policy in Africa: Research Methods for Advocacy workshop&lt;/a> (Uganda)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://nullcon.net/website/">Nullcon 2018&lt;/a> (India)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://internetfreedomfestival.org/">Internet Freedom Festival (IFF) 2018&lt;/a> (Spain)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2018Rome">Tor Meeting&lt;/a> (Italy)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>These events provided us a great opportunity to meet many fascinating
+people from various communities, learn about their work, form new
+collaborations, and collect feedback for the improvement of our tools
+and methodologies.&lt;/p></description></item><item><title>Investigating Internet Blackouts from the Edge of the network: OONI's new upcoming methodology</title><link>https://ooni.github.io/post/investigating-internet-blackouts/</link><pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/investigating-internet-blackouts/</guid><description>&lt;p>&lt;strong>The OONI team is creating a new methodology aimed at automatically
+detecting and examining internet blackouts.&lt;/strong> Learn all about our
+methodology &lt;strong>&lt;a href="https://ooni.github.io/post/investigating-internet-blackouts/Investigating-Internet-Blackouts-Methodology-2018-03.pdf">here&lt;/a>&lt;/strong>.&lt;/p>
+&lt;hr>
+&lt;p>Imagine a day where the internet is shut down completely. You have to
+work, check the news, and communicate with your friends and family. All
+of a sudden, you can’t do any of that, because there simply is no
+internet. It feels like a strange form of time travel has taken place:
+you’re thrown several decades into the past, into a world without
+internet, but in one which has learned to heavily rely on it. And
+sometimes, you remain in that world for several days (or
+&lt;a href="https://qz.com/964927/caemroons-internet-shutdown-is-over-after-93-days/">months&lt;/a>,
+in the case of the anglophone region of Cameroon). None of this makes
+sense, and there’s no clear justification for it either.&lt;/p></description></item><item><title>Year in Review: OONI in 2017</title><link>https://ooni.github.io/post/ooni-in-2017/</link><pubDate>Sat, 30 Dec 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2017/</guid><description>&lt;p>As the end of 2017 approaches, we publish this blog to share some OONI
+highlights from the last year. We also share some of the things we’ll be working
+on in 2018!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2017/#ooni-probe-mobile-apps">OONI Probe mobile apps&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2017/#speed-and-performance-tests">Speed and performance tests&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2017/#ooni-run">OONI Run&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2017/#ooni-api">OONI API&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2017/#ooni-partner-gathering">OONI Partner Gathering&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2017/#research-reports">Research reports&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2017/#ooni-in-2018">OONI in 2018&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="ooni-probe-mobile-apps">OONI Probe mobile apps&lt;/h1>
+&lt;p>&lt;img alt="OONI Probe mobile app" src="https://ooni.github.io/post/ooni-2017/01.jpg">&lt;/p>
+&lt;p>In February 2017, measuring internet censorship with &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI Probe&lt;/a> suddenly became
+easier than ever before! With the &lt;a href="https://ooni.org/post/ooni-mobile-app/">launch of the OONI Probe mobile apps&lt;/a>, hundreds
+of thousands of people from around the world started testing their networks for
+censorship. Thanks to their testing, millions of measurements have been
+collected (and &lt;a href="https://explorer.ooni.org/world/">published&lt;/a>) from thousands of local vantage points in more than
+200 countries, shedding light on numerous &lt;a href="https://ooni.org/post/">cases of internet censorship&lt;/a>.&lt;/p></description></item><item><title>OONI at the 34th Chaos Communication Congress (34C3)</title><link>https://ooni.github.io/post/ooni-34c3/</link><pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-34c3/</guid><description>&lt;p>Next week the &lt;a href="https://ooni.org/">OONI&lt;/a> team will be
+attending the &lt;a href="https://events.ccc.de/congress/2017/wiki/index.php/Main_Page">34th Chaos Communication Congress (34C3)&lt;/a>:
+Europe’s largest hacker conference on technology, society, and utopia.
+Are you going? We hope to see you there!&lt;/p>
+&lt;h1 id="ooni-lecture">OONI lecture&lt;/h1>
+&lt;p>OONI&amp;rsquo;s founder and project lead, Arturo Filastò, will be &lt;a href="https://events.ccc.de/congress/2017/Fahrplan/events/8923.html">presenting
+OONI at 34C3&lt;/a>.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Lecture&lt;/th>
+ &lt;th>OONI: Lets Fight Internet Censorship Together!&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Day&lt;/td>
+ &lt;td>&lt;a href="https://events.ccc.de/congress/2017/Fahrplan/events/8923.html">29th December 2017&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Time&lt;/td>
+ &lt;td>&lt;a href="https://events.ccc.de/congress/2017/Fahrplan/events/8923.html">14:30&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Room&lt;/td>
+ &lt;td>&lt;a href="https://events.ccc.de/congress/2017/Fahrplan/events/8923.html">Saal Borg&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>Attend the lecture to learn all about OONI, recent censorship findings
+from around the world, and how you can join the fight against internet
+censorship.&lt;/p></description></item><item><title>OONI at LAVITS and Primavera Hacker 2017</title><link>https://ooni.github.io/post/ooni-lavits-phacker-2017/</link><pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-lavits-phacker-2017/</guid><description>&lt;p>Earlier this month we had the opportunity to present OONI at two conferences in Chile: LAVITS and Primavera Hacker.&lt;/p>
+&lt;h2 id="lavits">LAVITS&lt;/h2>
+&lt;p>&lt;a href="http://lavits.org">LAVITS&lt;/a> is a Latin American network of surveillance
+technology and society studies that organizes international symposiums since
+2009. It features publications, talks and workshops related to
+surveillance and technology, internet censorship, resistance and counter
+surveillance, identification, biometrics, protection of personal data and
+privacy. The fifth series of the &lt;a href="http://lavits2017.datosprotegidos.org/">LAVITS symposium&lt;/a> took place in Santiago, Chile from 29th November to 1st December 2017.&lt;/p></description></item><item><title>Identifying cases of DNS misconfiguration: Not quite censorship</title><link>https://ooni.github.io/post/not-quite-network-censorship/</link><pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/not-quite-network-censorship/</guid><description>&lt;p>&lt;strong>Country:&lt;/strong> Brazil, worldwide&lt;/p>
+&lt;p>&lt;strong>OONI tests:&lt;/strong> &lt;a href="https://ooni.org/nettest/web-connectivity/">Web Connectivity&lt;/a>,
+&lt;a href="https://ooni.org/nettest/http-requests/">HTTP requests&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Probed ISPs:&lt;/strong> &lt;a href="https://stat.ripe.net/AS1916">AS1916&lt;/a> (Associação Rede Nacional de Ensino e Pesquisa),
+&lt;a href="https://stat.ripe.net/AS262650">AS262650&lt;/a> (Kyatera Informatica Ltda),
+&lt;a href="https://stat.ripe.net/AS2715">AS2715&lt;/a> (Fundacao de Amparo a Pesquisa/RJ),
+&lt;a href="https://stat.ripe.net/AS27699">AS27699&lt;/a> (TELEFÔNICA BRASIL S.A),
+&lt;a href="https://stat.ripe.net/AS28573">AS28573&lt;/a> (CLARO S.A.),
+&lt;a href="https://stat.ripe.net/AS52873">AS52873&lt;/a> (SOFTDADOS CONECTIVIDADE),
+&lt;a href="https://stat.ripe.net/AS7738">AS7738&lt;/a> (Telemar Norte Leste S.A.),
+&lt;a href="https://stat.ripe.net/AS8167">AS8167&lt;/a> (Brasil Telecom S/A - Filial Distrito Federal)&lt;/p>
+&lt;p>&lt;strong>Measurement period:&lt;/strong> July 2016 — November 2017&lt;/p>
+&lt;p>&lt;strong>Website inaccessibility reasons:&lt;/strong> IPv6 or DNS misconfiguration&lt;/p>
+&lt;p>We recently noticed that &lt;a href="http://pernambuco.com">pernambuco.com&lt;/a>, a
+regional news portal, has not been reachable from several networks in Brazil for quite some
+time. By looking at &lt;a href="https://ooni.github.io/post/not-quite-network-censorship/measurements.br.pernambuco.csv">OONI data&lt;/a>, we found that the site was not reachable and that it presented signs of &lt;a href="https://explorer.ooni.org/measurement/s3YPvS70pxtUQXG5qLv8z2wfafZ98eUzCmxcbYkvSRELpYS2mBWksZCacvAr5GqS?input=http:%2F%2Fwww.pernambuco.com%2Fdiario">DNS-based
+blocking&lt;/a>
+due to empty DNS responses that is usually a symptom of potential internet censorship. But upon further analysis, we found a number of DNS
+misconfigurations of the nameservers hosting the domain in question. A
+&lt;a href="https://en.wikipedia.org/wiki/Name_server">nameserver&lt;/a> is a function of a DNS server that implements a
+network service for providing responses to queries against a directory service.
+In this article we present an analysis of possible DNS misconfigurations that
+may have caused &lt;code>pernambuco.com&lt;/code> to be inaccessible. We also provide some
+solutions to resolve DNS misconfiguration for &lt;code>pernambuco.com&lt;/code> and other sites potentially affected in Brazil and worldwide.&lt;/p></description></item><item><title>Writing a modern cross-platform desktop app</title><link>https://ooni.github.io/post/writing-a-modern-cross-platform-desktop-app/</link><pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/writing-a-modern-cross-platform-desktop-app/</guid><description>&lt;p>The goal of this article is to outline some of the architecture &amp;amp; design considerations made while thinking about how we would implement the OONI Probe desktop apps. This is the result of research and experimentation with a variety of different libraries and approaches. For each part of the technical stack we will outline the rationale leading to our choices.&lt;/p>
+&lt;h1 id="requirements--design-goals">Requirements &amp;amp; design goals&lt;/h1>
+&lt;p>Our primary goal with the OONI Probe desktop apps is to enable &lt;strong>Windows&lt;/strong> and &lt;strong>macOS&lt;/strong> desktop users to run &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI Probe&lt;/a> network measurement tests without knowledge of the command line. These tests will use the &lt;strong>&lt;a href="https://github.com/measurement-kit">Measurement Kit&lt;/a>&lt;/strong> implementation of OONI tests.&lt;/p></description></item><item><title>OONI Team Meeting: Montreal 2017</title><link>https://ooni.github.io/post/ooni-team-meeting-montreal-2017/</link><pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-team-meeting-montreal-2017/</guid><description>&lt;p>&lt;img alt="OONI team meeting in Montreal" src="https://ooni.github.io/post/montreal-meeting/ooni-team.jpg">&lt;/p>
+&lt;p>Last week, right before the &lt;a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2017Montreal">Tor meeting&lt;/a>,
+the OONI team gathered in Montreal for a 4-day meeting to reflect,
+regroup, hack, and plan.&lt;/p>
+&lt;p>This post shares information from our meeting and future plans with the
+broader community. All session notes are available on
+&lt;a href="https://github.com/OpenObservatory/gatherings/tree/master/internal/2017-10-montreal">GitHub&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#summary-what-ooni-is-working-on">Summary: What OONI is working on&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#sessions">Sessions&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#day-1-7th-october-2017">Day 1 - 7th October 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#day-2-8th-october-2017">Day 2 - 8th October 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#day-3-9th-october-2017">Day 3 - 9th October 2017&lt;/a>&lt;/p></description></item><item><title>OONI Run: Let's fight internet censorship together!</title><link>https://ooni.github.io/post/ooni-run/</link><pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-run/</guid><description>&lt;p>&lt;img alt="OONI Run" src="https://ooni.github.io/post/ooni-run/ooni-run.png">&lt;/p>
+&lt;p>Today we released &lt;strong>&lt;a href="https://run.ooni.org/">OONI Run&lt;/a>&lt;/strong>, a website linked to an exciting new OONI Probe mobile app feature that enables you to:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Engage your friends (and the world) to run censorship measurement tests&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Monitor the blocking of &lt;em>your&lt;/em> website around the world&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>OONI Run includes a variety of &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI Probe software tests&lt;/a>designed to:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Test the &lt;a href="https://ooni.org/nettest/web-connectivity/">blocking of websites&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Find &lt;a href="https://ooni.org/nettest/http-invalid-request-line/">middleboxes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Measure the &lt;a href="https://ooni.org/nettest/ndt/">speed and performance&lt;/a> of networks&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Measure &lt;a href="https://ooni.org/nettest/dash/">video streaming performance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>By choosing the tests that interest you and the sites you want to test, generate a link via &lt;a href="https://run.ooni.org/">OONI Run&lt;/a> and share it. Alternatively, embed the widget code to monitor the accessibility of your site. The global OONI Probe community can then respond!&lt;/p></description></item><item><title>OONI Partner Gathering 2017</title><link>https://ooni.github.io/post/ooni-partner-gathering-2017/</link><pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-partner-gathering-2017/</guid><description>&lt;p>&lt;img alt="OONI Partner Gathering" src="https://ooni.github.io/post/ooni-partner-gathering-2017/01.jpg">&lt;/p>
+&lt;p>Two weeks ago we hosted the &lt;em>first OONI Partner Gathering&lt;/em> in Toronto,
+Canada. This report provides an overview of the event, partner needs and
+challenges, and future goals to address them.&lt;/p>
+&lt;p>View the &lt;strong>pdf&lt;/strong> version of the report &lt;a href="https://ooni.github.io/documents/ooni-partner-gathering-2017.pdf">here&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#about">About&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#objectives">Objectives&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#sessions">Sessions&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#day-1-10th-july-2017">Day 1 - 10th July 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#day-2-11th-july-2017">Day 2 - 11th July 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#inclusiveness">Inclusiveness&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#challenges-and-needs">Challenges and needs&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#future-goals-and-priorities">Future goals and priorities&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#outcomes">Outcomes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#acknowledgements">Acknowledgements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="about">About&lt;/h1>
+&lt;p>Over the last year, the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project has had the opportunity
+to collaborate with various digital rights organizations in Latin
+America, Africa, the Middle East, and Asia. We joined forces to
+collaborate on the study of internet censorship by collecting &lt;a href="https://explorer.ooni.org/world/">network measurements&lt;/a> from local
+vantage points, reviewing and creating &lt;a href="https://github.com/citizenlab/test-lists/tree/master/lists">censorship measurement resources&lt;/a>,
+and by publishing findings through &lt;a href="https://ooni.org/post/">research reports&lt;/a>.&lt;/p></description></item><item><title>OONI at the CryptoRave 2017</title><link>https://ooni.github.io/post/ooni-cryptorave-2017/</link><pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-cryptorave-2017/</guid><description>&lt;p>&lt;a href="https://cryptorave.org/">CryptoRave&lt;/a> is a free, non-commercial and
+collectively funded 48 hour event featuring talks, workshops and activities
+related to security, privacy, anonymity, hacking and freedom of expression that
+attracts more that 2,500 people mainly from South America. The event took place
+in São Paulo, Brazil on 5th and 6th May 2017.&lt;/p>
+&lt;p>A number of people attended the OONI
+&lt;a href="https://cpa.cryptorave.org/pt-BR/CR2017/public/events/43">presentation&lt;/a> and
+&lt;a href="https://cpa.cryptorave.org/pt-BR/CR2017/public/events/112">workshop&lt;/a>
+(&amp;ldquo;Listatona&amp;rdquo;) that was co-organized with &lt;a href="https://www.codingrights.org/">Coding Rights&lt;/a>.
+During the workshop participants were able to
+better understand OONI&amp;rsquo;s testing methodology, and how OONI Probe performs
+network measurements. Participants provided useful feedback regarding
+&lt;a href="https://ooni.org/get-involved/contribute-test-lists/">test-lists&lt;/a>
+and URLs from diverse sources from South America.&lt;/p></description></item><item><title>OONI at the Internet Freedom Festival &amp; RightsCon 2017</title><link>https://ooni.github.io/post/ooni-iff-rightscon/</link><pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-iff-rightscon/</guid><description>&lt;p>Over the last month the &lt;a href="https://ooni.org/">OONI&lt;/a> team joined the internet
+freedom community at the following events:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://internetfreedomfestival.org/vietnam-cyber-dialogue/">Vietnam Cyber Dialogue (VCD)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://internetfreedomfestival.org/">Internet Freedom Festival (IFF)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.accessnow.org/iran-cyber-dialogue-rightscon-brussels-2017-timely-impactful/">Iran Cyber Dialogue (ICD)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.rightscon.org/">RightsCon 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://www.journalismfestival.com/">International Journalism Festival (IJF)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>These events provided us with the opportunity to engage with community members,
+create new friendships, learn about new projects, and to share skills and
+knowledge. We also had the opportunity to facilitate sessions that allowed us to
+collect feedback for the improvement of our
+&lt;a href="https://github.com/TheTorProject/ooni-probe">software&lt;/a> and research
+methodologies.&lt;/p></description></item><item><title>Examining internet blackouts through public data sources</title><link>https://ooni.github.io/post/examining-internet-blackouts/</link><pubDate>Tue, 28 Mar 2017 16:39:00 +0000</pubDate><guid>https://ooni.github.io/post/examining-internet-blackouts/</guid><description>&lt;p>Pulling the plug on the internet is one of the ways that governments around the
+world attempt to exert control over the flow of information.&lt;/p>
+&lt;p>While the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project has developed numerous &lt;a href="https://github.com/TheTorProject/ooni-probe">software tests&lt;/a> for examining different
+forms of internet censorship (such as the blocking of websites, instant
+messaging apps, and censorship circumvention tools), we currently do not have
+tests that are designed to examine internet blackouts, when the internet as a
+whole is rendered inaccessible within a location.&lt;/p></description></item><item><title>New OONI Probe Mobile App: Measure Internet Censorship &amp; Performance</title><link>https://ooni.github.io/post/ooni-mobile-app/</link><pubDate>Thu, 09 Feb 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-mobile-app/</guid><description>&lt;p>&lt;img alt="OONI mobile app" src="https://ooni.github.io/post/ooni-mobile-app/ooni-mobile-app.jpg">&lt;/p>
+&lt;p>Today the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project is thrilled to
+announce the release of a new mobile app (“&lt;strong>OONI Probe - Measure Internet
+Censorship &amp;amp; Performance&lt;/strong>”) that can now be installed on &lt;strong>Android&lt;/strong> and &lt;strong>iOS&lt;/strong> for
+testing Internet censorship and network performance.&lt;/p>
+&lt;div class="row pb-3 pt-4">
+		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
+			&lt;img alt="Download ooniprobe for Android"
+				src="https://ooni.github.io/install/play-store-badge.png"
+				srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
+		&lt;/a>
+
+		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://itunes.apple.com/us/app/id1199566366">
+			&lt;img alt="Download ooniprobe for iOS"
+				src="https://ooni.github.io/install/app-store-badge.png"
+				srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
+		&lt;/a>
+
+		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
+			&lt;img alt="Download ooniprobe for Android (F-Droid)"
+				src="https://ooni.github.io/install/fdroid-badge.png"
+				srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
+		&lt;/a>
+&lt;/div>
+
+&lt;p>By running the tests included in OONI’s mobile app, you can monitor:&lt;/p></description></item><item><title>New OONI tests examine the blocking of WhatsApp and Facebook Messenger</title><link>https://ooni.github.io/post/whatsapp-and-facebook-tests/</link><pubDate>Thu, 15 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/whatsapp-and-facebook-tests/</guid><description>&lt;p>Today the &lt;a href="https://ooni.org/">Open Observatory of Network Interference
+(OONI)&lt;/a> project is excited to announce the release
+of &lt;em>two&lt;/em> new software tests which are designed to examine the blocking of
+&lt;strong>WhatsApp&lt;/strong> and &lt;strong>Facebook Messenger&lt;/strong>. You can now run these tests to monitor the
+accessibility of these apps across time, and to collect data that can serve as
+evidence when/if they are blocked.&lt;/p>
+&lt;h1 id="whatsapp-test">WhatsApp test&lt;/h1>
+&lt;p>Many of our users have asked us to develop a test to examine the accessibility
+of WhatsApp, especially in light of it being &lt;a href="https://ooni.org/post/brazil-whatsapp-block/">blocked&lt;/a> by various governments
+around the world during elections, protests, and other political events.&lt;/p></description></item><item><title>OONI releases new Web UI: Run censorship tests from your web browser!</title><link>https://ooni.github.io/post/web-ui-post/</link><pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/web-ui-post/</guid><description>&lt;p>&lt;img alt="Image" src="https://ooni.github.io/post/wui-screenshots/wui-01.png">&lt;/p>
+&lt;p>Today we are excited to announce the beta release of our &lt;em>new&lt;/em> web-based user interface
+(WUI) that enables OONI Probe users to run censorship tests from a web browser!&lt;/p>
+&lt;p>Whether you’re running OONI Probe from your desktop or a Raspberry Pi, you can
+now easily choose which tests you want to run through OONI’s web UI and run them
+with the click of a button. These &lt;a href="https://ooni.org/nettest/">tests&lt;/a>
+are designed to examine the following:&lt;/p></description></item><item><title>OONI releases Lepidopter Raspberry Pi distribution</title><link>https://ooni.github.io/post/lepidopter/</link><pubDate>Wed, 07 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/lepidopter/</guid><description>&lt;p>The Open Observatory of Network Interference (OONI) team is happy to announce
+the beta release of OONI Probe&amp;rsquo;s distribution for Raspberry Pis, caĺled
+&lt;strong>Lepidopter&lt;/strong>.&lt;/p>
+&lt;h2 id="what-is-lepidopter">What is Lepidopter&lt;/h2>
+&lt;p>Lepidopter is a Raspberry Pi distribution image with all the required
+dependencies and software packages in place, configured to run network
+measurement tests via the
+&lt;a href="https://github.com/TheTorProject/ooni-probe">OONI Probe&lt;/a> software. It is
+developed and designed to require no physical attendance upon first bootstrap
+but also allows experienced users to further configure it as they wish. The
+&lt;a href="https://github.com/TheTorProject/lepidopter">source code&lt;/a> and the building
+scripts of the Lepidopter image are free and open source software.&lt;/p></description></item><item><title>OONI-dev meeting and hackathon 2016</title><link>https://ooni.github.io/post/ooni-dev-and-hackathon-2016/</link><pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-dev-and-hackathon-2016/</guid><description>&lt;p>Oonitarians are spread out across the globe, and OONI’s core team is no
+exception. We recently met in Berlin to hack on &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI’s software&lt;/a>, work on our
+roadmap, and to have all those discussions that are more fruitful to have in
+person than on IRC. We also held a &lt;a href="https://ooni.org/post/berlin-hackathon-2016/">hackathon&lt;/a> to engage new individuals with our project!&lt;/p>
+&lt;p>Below we document some of the things that we worked on as part of our OONI-dev
+meeting and hackathon.&lt;/p></description></item><item><title>OONI Hackathon: Join us to explore internet censorship!</title><link>https://ooni.github.io/post/berlin-hackathon-2016/</link><pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/berlin-hackathon-2016/</guid><description>&lt;p>&lt;img alt="HACKOONI16" src="https://ooni.github.io/post/berlin-hackathon/ooni-berlin-hackathon.png">&lt;/p>
+&lt;p>Interested in exploring (and exposing) internet censorship? Join the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> hackathon in Berlin!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>When?&lt;/strong> Friday, &lt;strong>11th November&lt;/strong> &amp;amp; Saturday, &lt;strong>12th November&lt;/strong> 2016&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Where?&lt;/strong> The &lt;strong>OnionSpace&lt;/strong> (&lt;a href="http://www.openstreetmap.org/?mlat=52.54965&amp;mlon=13.3700#map=19/52.54974/13.37001">Gottschedstraße 4, 13357 Berlin, Germany&lt;/a>)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>What time?&lt;/strong> 10am onwards&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Who?&lt;/strong> Software developers, data analysts, academics, journalists,
+bloggers, lawyers, activists, and all those who don’t go by any
+particular label, but are curious enough to join! We only have one rule:
+&lt;strong>Be excellent to each other&lt;/strong>.&lt;/p></description></item><item><title>OONI releases new Web Connectivity test for detecting online censorship</title><link>https://ooni.github.io/post/web-connectivity/</link><pubDate>Fri, 03 Jun 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/web-connectivity/</guid><description>&lt;p>Today the Open Observatory of Network Interference (OONI) is excited to be
+releasing a brand new test, called
+&lt;em>&lt;a href="https://ooni.org/nettest/web-connectivity/">Web Connectivity&lt;/a>&lt;/em>,
+which is designed to detect three different types of censorship: &lt;em>DNS
+tampering&lt;/em>, &lt;em>TCP/IP blocking&lt;/em> and &lt;em>HTTP blocking&lt;/em>.&lt;/p>
+&lt;h2 id="advantages-of-running-web-connectivity">Advantages of running Web Connectivity&lt;/h2>
+&lt;p>This test allows us to see which websites are blocked and how, more accurately
+than ever before!&lt;/p>
+&lt;p>Previously we relied on running separate (http_request, dns_consistency and
+tcp_connect) tests with the aim of identifying various forms of censorship. We
+then had to correlate measurements across different tests to identify whether
+and how websites were blocked. This process was not only tedious, but it also
+led to more false positives.&lt;/p></description></item></channel></rss>
