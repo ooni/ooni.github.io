@@ -2937,24 +2937,21 @@ Project, and the Thai Netizen Network.&lt;/p>
 announce the release of a new mobile app (“&lt;strong>OONI Probe - Measure Internet
 Censorship &amp;amp; Performance&lt;/strong>”) that can now be installed on &lt;strong>Android&lt;/strong> and &lt;strong>iOS&lt;/strong> for
 testing Internet censorship and network performance.&lt;/p>
-&lt;div class="row pb-3 pt-4">
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
-			&lt;img alt="Download ooniprobe for Android"
-				src="https://ooni.github.io/install/play-store-badge.png"
-				srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
-		&lt;/a>
+&lt;div class="flex gap-6 mb-6 justify-around [&amp;_img]:h-[49px] [&amp;_img]:hover:opacity-80">
+	&lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
+		&lt;img alt="Download ooniprobe for Android" src="https://ooni.github.io/install/play-store-badge.png"
+			srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
+	&lt;/a>
 
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://itunes.apple.com/us/app/id1199566366">
-			&lt;img alt="Download ooniprobe for iOS"
-				src="https://ooni.github.io/install/app-store-badge.png"
-				srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
-		&lt;/a>
+	&lt;a href="https://itunes.apple.com/us/app/id1199566366">
+		&lt;img alt="Download ooniprobe for iOS" src="https://ooni.github.io/install/app-store-badge.png"
+			srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
+	&lt;/a>
 
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
-			&lt;img alt="Download ooniprobe for Android (F-Droid)"
-				src="https://ooni.github.io/install/fdroid-badge.png"
-				srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
-		&lt;/a>
+	&lt;a href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
+		&lt;img alt="Download ooniprobe for Android (F-Droid)" src="https://ooni.github.io/install/fdroid-badge.png"
+			srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
+	&lt;/a>
 &lt;/div>
 
 &lt;p>By running the tests included in OONI’s mobile app, you can monitor:&lt;/p></description></item><item><title>Kenya: Censorship-free internet?</title><link>https://ooni.github.io/post/kenya-study/</link><pubDate>Tue, 27 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/kenya-study/</guid><description>&lt;p>Over the last five months we ran &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI tests&lt;/a> in Kenya almost every day to examine
@@ -3374,14 +3371,14 @@ to be reliable with one that is tested for tampering.&lt;/p>
 others, run DNS resolvers which map IP addresses to host names. In certain
 circumstances though, ISPs map the wrong IP addresses to the wrong host names.
 This is a form of tampering, which OONI can detect by running its DNS
-consistency test.&lt;/p></description></item><item><title>Download OONI Probe Desktop</title><link>https://ooni.github.io/install/desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/install/desktop/</guid><description>&lt;a class="ooni-desktop-btn square-btn"
+consistency test.&lt;/p></description></item><item><title>Download OONI Probe Desktop</title><link>https://ooni.github.io/install/desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/install/desktop/</guid><description>&lt;a class="ooni-desktop-btn square-btn mx-4"
  id="windows-download"
  href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-Setup-3.9.9.exe"
  >Download OONI Probe for Windows&lt;/a>
 
 
 
-&lt;a class="ooni-desktop-btn square-btn"
+&lt;a class="ooni-desktop-btn square-btn mx-4"
  id="macos-download"
  href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-3.9.9.dmg"
  >Download OONI Probe for macOS&lt;/a>
@@ -3534,24 +3531,21 @@ sudo apt-get install ooniprobe-cli
 &lt;li>Start automatic daily run&lt;/li>
 &lt;/ol>
 &lt;pre tabindex="0">&lt;code>ooniprobe autorun start
-&lt;/code>&lt;/pre></description></item><item><title>Install OONI Probe Mobile</title><link>https://ooni.github.io/install/mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/install/mobile/</guid><description>&lt;div class="row pb-3 pt-4">
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
-			&lt;img alt="Download ooniprobe for Android"
-				src="https://ooni.github.io/install/play-store-badge.png"
-				srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
-		&lt;/a>
+&lt;/code>&lt;/pre></description></item><item><title>Install OONI Probe Mobile</title><link>https://ooni.github.io/install/mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/install/mobile/</guid><description>&lt;div class="flex gap-6 mb-6 justify-around [&amp;_img]:h-[49px] [&amp;_img]:hover:opacity-80">
+	&lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
+		&lt;img alt="Download ooniprobe for Android" src="https://ooni.github.io/install/play-store-badge.png"
+			srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
+	&lt;/a>
 
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://itunes.apple.com/us/app/id1199566366">
-			&lt;img alt="Download ooniprobe for iOS"
-				src="https://ooni.github.io/install/app-store-badge.png"
-				srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
-		&lt;/a>
+	&lt;a href="https://itunes.apple.com/us/app/id1199566366">
+		&lt;img alt="Download ooniprobe for iOS" src="https://ooni.github.io/install/app-store-badge.png"
+			srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
+	&lt;/a>
 
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
-			&lt;img alt="Download ooniprobe for Android (F-Droid)"
-				src="https://ooni.github.io/install/fdroid-badge.png"
-				srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
-		&lt;/a>
+	&lt;a href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
+		&lt;img alt="Download ooniprobe for Android (F-Droid)" src="https://ooni.github.io/install/fdroid-badge.png"
+			srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
+	&lt;/a>
 &lt;/div>
 
 &lt;p>&lt;a href="https://ooni.github.io/install/all/">Other Platforms &amp;raquo;&lt;/a>&lt;/p>
@@ -3664,38 +3658,35 @@ and political trends that contributed to the Arab Spring uprisings in
 2011 and still inform people&amp;rsquo;s protests today.&lt;/p></description></item><item><title>Measure internet censorship</title><link>https://ooni.github.io/install/all/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/install/all/</guid><description>&lt;h1 id="download-ooni-probe-desktop">Download OONI Probe Desktop&lt;/h1>
 
 
-&lt;a class="ooni-desktop-btn square-btn"
+&lt;a class="ooni-desktop-btn square-btn mx-4"
  id="windows-download"
  href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-Setup-3.9.9.exe"
  >Windows 64-bit&lt;/a>
 
 
 
-&lt;a class="ooni-desktop-btn square-btn"
+&lt;a class="ooni-desktop-btn square-btn mx-4"
  id="macos-download"
  href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-3.9.9.dmg"
  >macOS&lt;/a>
 
 &lt;hr>
 &lt;h1 id="install-ooni-probe-mobile">Install OONI Probe Mobile&lt;/h1>
-&lt;div class="row pb-3 pt-4">
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
-			&lt;img alt="Download ooniprobe for Android"
-				src="https://ooni.github.io/install/play-store-badge.png"
-				srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
-		&lt;/a>
+&lt;div class="flex gap-6 mb-6 justify-around [&amp;_img]:h-[49px] [&amp;_img]:hover:opacity-80">
+	&lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
+		&lt;img alt="Download ooniprobe for Android" src="https://ooni.github.io/install/play-store-badge.png"
+			srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
+	&lt;/a>
 
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://itunes.apple.com/us/app/id1199566366">
-			&lt;img alt="Download ooniprobe for iOS"
-				src="https://ooni.github.io/install/app-store-badge.png"
-				srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
-		&lt;/a>
+	&lt;a href="https://itunes.apple.com/us/app/id1199566366">
+		&lt;img alt="Download ooniprobe for iOS" src="https://ooni.github.io/install/app-store-badge.png"
+			srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
+	&lt;/a>
 
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
-			&lt;img alt="Download ooniprobe for Android (F-Droid)"
-				src="https://ooni.github.io/install/fdroid-badge.png"
-				srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
-		&lt;/a>
+	&lt;a href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
+		&lt;img alt="Download ooniprobe for Android (F-Droid)" src="https://ooni.github.io/install/fdroid-badge.png"
+			srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
+	&lt;/a>
 &lt;/div>
 
 &lt;hr>
@@ -3903,7 +3894,7 @@ methodologies, and research reports.&lt;/p>
 &lt;/ul>
 &lt;h2 id="what-is-the-ooni-partnership-program">What is the OONI Partnership Program?&lt;/h2>
 &lt;p>The OONI Partnership Program is a collaboration between the OONI team and groups or
-organizations around the world on the study of internet censorship. Such groups/organizations generally include &lt;strong>digital rights organizations&lt;/strong>.&lt;/p></description></item><item><title>OONI Team</title><link>https://ooni.github.io/about/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/team/</guid><description>&lt;div class="mx-auto max-w-7xl not-prose">
+organizations around the world on the study of internet censorship. Such groups/organizations generally include &lt;strong>digital rights organizations&lt;/strong>.&lt;/p></description></item><item><title>OONI Team</title><link>https://ooni.github.io/about/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/team/</guid><description>&lt;div class="mx-auto max-w-4xl not-prose mt-16">
  &lt;ul role="list"
  class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
  

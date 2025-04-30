@@ -40,24 +40,21 @@ that could potentially be responsible for censorship and/or surveillance;&lt;/p>
 announce the release of a new mobile app (“&lt;strong>OONI Probe - Measure Internet
 Censorship &amp;amp; Performance&lt;/strong>”) that can now be installed on &lt;strong>Android&lt;/strong> and &lt;strong>iOS&lt;/strong> for
 testing Internet censorship and network performance.&lt;/p>
-&lt;div class="row pb-3 pt-4">
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
-			&lt;img alt="Download ooniprobe for Android"
-				src="https://ooni.github.io/install/play-store-badge.png"
-				srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
-		&lt;/a>
+&lt;div class="flex gap-6 mb-6 justify-around [&amp;_img]:h-[49px] [&amp;_img]:hover:opacity-80">
+	&lt;a href="https://play.google.com/store/apps/details?id=org.openobservatory.ooniprobe">
+		&lt;img alt="Download ooniprobe for Android" src="https://ooni.github.io/install/play-store-badge.png"
+			srcset="https://ooni.github.io/install/play-store-badge.png 1x, https://ooni.github.io/install/play-store-badge@2x.png 2x">
+	&lt;/a>
 
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://itunes.apple.com/us/app/id1199566366">
-			&lt;img alt="Download ooniprobe for iOS"
-				src="https://ooni.github.io/install/app-store-badge.png"
-				srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
-		&lt;/a>
+	&lt;a href="https://itunes.apple.com/us/app/id1199566366">
+		&lt;img alt="Download ooniprobe for iOS" src="https://ooni.github.io/install/app-store-badge.png"
+			srcset="https://ooni.github.io/install/app-store-badge.png 1x, https://ooni.github.io/install/app-store-badge@2x.png 2x">
+	&lt;/a>
 
-		&lt;a class="app-store-badge col-md-12 col-lg-4" href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
-			&lt;img alt="Download ooniprobe for Android (F-Droid)"
-				src="https://ooni.github.io/install/fdroid-badge.png"
-				srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
-		&lt;/a>
+	&lt;a href="https://f-droid.org/repository/browse/?fdid=org.openobservatory.ooniprobe">
+		&lt;img alt="Download ooniprobe for Android (F-Droid)" src="https://ooni.github.io/install/fdroid-badge.png"
+			srcset="https://ooni.github.io/install/fdroid-badge.png 1x, https://ooni.github.io/install/fdroid-badge@2x.png 2x">
+	&lt;/a>
 &lt;/div>
 
 &lt;p>By running the tests included in OONI’s mobile app, you can monitor:&lt;/p></description></item></channel></rss>
