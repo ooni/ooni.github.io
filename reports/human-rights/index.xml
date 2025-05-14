@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Research reports: Blocking of Human Rights Websites on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/reports/human-rights/</link><description>Recent content in Research reports: Blocking of Human Rights Websites on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/reports/human-rights/index.xml" rel="self" type="application/rss+xml"/><item><title>A Legal and Technical Analysis of Internet Censorship in France</title><link>https://ooni.github.io/post/2025-france-report/</link><pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-france-report/</guid><description>&lt;p>&lt;em>This is a guest report by &lt;a href="https://maynier.eu/">Etienne Maynier&lt;/a> and Taziden analyzing Internet censorship in France. You can find a more in-depth legal and technical analysis in French at &lt;a href="https://censxres.fr/">https://censxres.fr/&lt;/a>. This work was done in a personal capacity and doesn&amp;rsquo;t represent the view of their employers.&lt;/em>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Research reports: Blocking of Human Rights Websites on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/reports/human-rights/</link><description>Recent content in Research reports: Blocking of Human Rights Websites on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/reports/human-rights/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI Analysis of Telegram Blocking in Kenya During the 2023 and 2024 KCSE Exams</title><link>https://ooni.github.io/post/2025-kenya-blocked-telegram-kcse-exams/</link><pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-kenya-blocked-telegram-kcse-exams/</guid><description>&lt;p>This report supported a &lt;strong>&lt;a href="https://blog.bake.co.ke/wp-content/uploads/2025/05/HCCHRPET.276.2025-ICJ-v-CA-Internet-Shutdown-Case.pdf">petition&lt;/a>&lt;/strong> filed at the High Court of Kenya in May 2025, challenging the unlawful disruption of internet access in Kenya. OONI data is used as evidence in support of this landmark public interest case. Learn more &lt;a href="https://blog.bake.co.ke/2025/05/14/bake-6-other-organizations-challenge-internet-shutdowns-in-kenya-in-landmark-public-interest-case/">here&lt;/a>.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#summary-of-findings">Summary of Findings&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#2023-kcse-exams-blocking-of-telegram">2023 KCSE exams: Blocking of Telegram&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#2024-kcse-exams-blocking-of-telegram">2024 KCSE exams: Blocking of Telegram&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#about-ooni">About OONI&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#oonis-internet-measurement-methodology">OONI’s Internet Measurement Methodology&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#telegram-experiment">Telegram experiment&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#web-connectivity-experiment">Web Connectivity experiment&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#data-analysis">Data analysis&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#acknowledgement-of-limitations">Acknowledgement of limitations&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#ooni-measurements-from-kenya">OONI measurements from Kenya&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#findings-blocking-of-telegram-in-kenya-during-2023-and-2024-kcse-exams">Findings: Blocking of Telegram in Kenya during 2023 and 2024 KCSE exams&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#2023-kcse-exams-blocking-of-telegram-in-kenya">2023 KCSE exams: Blocking of Telegram in Kenya&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#blocking-of-telegram-website">Blocking of Telegram website&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-telegram-web">Blocking of Telegram Web&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-telegram-app-endpoints">Blocking of Telegram app endpoints&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#2024-kcse-exams-blocking-of-telegram-in-kenya">2024 KCSE exams: Blocking of Telegram in Kenya&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#blocking-of-telegram-website-1">Blocking of Telegram website&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-telegram-app-endpoints-1">Blocking of Telegram app endpoints&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-telegram-web-1">Blocking of Telegram Web&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Access to Telegram was blocked in Kenya during the Kenya Certificate of Secondary Education (KCSE) national exams in both &lt;a href="https://explorer.ooni.org/findings/228466228201">November 2023&lt;/a> and &lt;a href="https://explorer.ooni.org/findings/20313562200">November 2024&lt;/a>. This report provides an analysis by the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI) Foundation&lt;/a> on these blocks.&lt;/p></description></item><item><title>A Legal and Technical Analysis of Internet Censorship in France</title><link>https://ooni.github.io/post/2025-france-report/</link><pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-france-report/</guid><description>&lt;p>&lt;em>This is a guest report by &lt;a href="https://maynier.eu/">Etienne Maynier&lt;/a> and Taziden analyzing Internet censorship in France. You can find a more in-depth legal and technical analysis in French at &lt;a href="https://censxres.fr/">https://censxres.fr/&lt;/a>. This work was done in a personal capacity and doesn&amp;rsquo;t represent the view of their employers.&lt;/em>&lt;/p>
 &lt;nav id="TableOfContents">
  &lt;ul>
  &lt;li>
