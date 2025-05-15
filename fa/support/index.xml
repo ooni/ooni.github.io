@@ -6,7 +6,7 @@
  
  srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
  
-
+ 
  title="عُدة التوعية لـ OONI"
  
  alt="عُدة التوعية لـ OONI"
@@ -39,7 +39,7 @@
  
  srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu2811019159506606390.png 2x"
  
-
+ 
  title="Install OONI Probe Desktop"
  
  alt="Install OONI Probe Desktop"
@@ -70,7 +70,7 @@
  src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu9506725050971740468.png"
 
  
-
+ 
  title="Measure Internet Censorship"
  
  alt="Measure Internet Censorship"
@@ -117,47 +117,15 @@
 &lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%DA%86%D8%B1%D8%A7-%D9%85%D8%A7-%D8%B3%D8%A7%D9%86%D8%B3%D9%88%D8%B1-%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D8%B1%D8%A7-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%DB%8C-%DA%A9%D9%86%DB%8C%D9%85">چرا ما سانسور اینترنت را بررسی می کنیم؟&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%A8%D9%88%D8%AF%D8%AC%D9%87-%D8%A7%D9%88%D9%88%D9%86%DB%8C-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF">بودجه اوونی چگونه تامین می شود؟&lt;/a>&lt;/p></description></item><item><title>واژهنامه اوونی (OONI)</title><link>https://ooni.github.io/fa/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/glossary/</guid><description>&lt;h1 id="واژهنامه-اوونی-ooni">واژهنامه اوونی (OONI)&lt;/h1>
-&lt;p>این سند توسط &lt;a href="https://www.miaan.org/">Miaan Group&lt;/a> ترجمه شده است.&lt;/p>
-&lt;p>اصل سند (به زبان انگلیسی): &lt;a href="https://ooni.org/support/glossary/">Glossary OONI&lt;/a>&lt;/p>
-&lt;p>این واژهنامه حاوی &lt;em>توضیحات مختصری&lt;/em> برای واژگان مورد استفاده در اپلیکیشنها وگزارشهای تحقیقاتی اوونی (OONI) است.&lt;/p>
-&lt;p>اگر میخواهید اصطلاحات بیشتری را در این واژهنامه ببینید، لطفا &lt;a href="https://github.com/ooni/ooni.org">درخواست پیشنهادات&lt;/a> را باز کنید یا برای ما &lt;a href="https://ooni.org/about/#contact">ایمیل ارسال کنید&lt;/a>.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#api">API&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#as">AS&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#asn">ASN&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#bgp">BGP&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#blocklist">Blocklist&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#block-page">Block page&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#caching">Caching&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#circumvention-tools">Circumvention tools&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#client">Client&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#data-processing-pipeline">Data processing pipeline&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#dns">DNS&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#dns-hijacking">DNS hijacking&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/fa/support/glossary/#dns-lookup">DNS lookup&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%A8%D9%88%D8%AF%D8%AC%D9%87-%D8%A7%D9%88%D9%88%D9%86%DB%8C-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF">بودجه اوونی چگونه تامین می شود؟&lt;/a>&lt;/p></description></item><item><title>واژهنامه اوونی (OONI)</title><link>https://ooni.github.io/fa/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/glossary/</guid><description>&lt;h1 id="واژهنامه-اوونی-ooni" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#%d9%88%d8%a7%da%98%d9%87%d9%86%d8%a7%d9%85%d9%87-%d8%a7%d9%88%d9%88%d9%86%db%8c-ooni">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ واژهنامه اوونی (OONI)
+&lt;/h1>
+&lt;p>این سند توسط &lt;a href="https://www.miaan.org/">Miaan Group&lt;/a> ترجمه شده است.&lt;/p></description></item></channel></rss>

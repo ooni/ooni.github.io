@@ -1,29 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/about/</link><description>Recent content in About on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/about/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/about/inform-users-long/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/inform-users-long/</guid><description>&lt;h1 id="goal">GOAL&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/about/</link><description>Recent content in About on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/about/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/about/inform-users-long/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/inform-users-long/</guid><description>&lt;h1 id="goal" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#goal">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ GOAL
+&lt;/h1>
 &lt;p>OONI is a project aimed at mapping network anomalies by performing measurements
 from the vantage point of a users.
 You may find details on what exactly it is that we measure by reading through
 our &lt;a href="https://github.com/TheTorProject/ooni-spec/tree/master/test-specs">test specifications&lt;/a>.
-The data we collect is then made available to the public for further analysis.&lt;/p>
-&lt;p>The goal of this study is to have a better understanding on how the internet
-works around the world and what is stopping it from working as it should.&lt;/p></description></item><item><title/><link>https://ooni.github.io/about/inform-users-short/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/inform-users-short/</guid><description>&lt;p>WARNING: Running OONI may be against the terms of service of your ISP
+The data we collect is then made available to the public for further analysis.&lt;/p></description></item><item><title/><link>https://ooni.github.io/about/inform-users-short/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/inform-users-short/</guid><description>&lt;p>WARNING: Running OONI may be against the terms of service of your ISP
 or legally questionable in your country.
 By running OONI you will connect to web services which may be banned, and use
 web censorship circumvention methods such as Tor. The OONI project will publish
 data submitted by probes, possibly including your IP address or other
 identifying information. In addition, your use of OONI will be clear to anybody
 who has access to your computer, and to anybody who can monitor your internet
-connection (such as your employer, ISP or government).&lt;/p></description></item><item><title/><link>https://ooni.github.io/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/risks/</guid><description>&lt;h1 id="risks-things-you-should-know-before-running-ooni-probe">Risks: Things you should know before running OONI Probe&lt;/h1>
-&lt;p>Translations:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Español,&lt;/strong> &lt;a href="https://ooni.github.io/es/about/risks">Riesgos: Lo que debes saber antes de ejecutar OONI Probe&lt;/a>&lt;/li>
-&lt;li>&lt;strong>العربية,&lt;/strong> &lt;a href="https://ooni.github.io/ar/about/risks">Risks: Things you should know before running OONI Probe&lt;/a>&lt;/li>
-&lt;li>&lt;strong>فارسی,&lt;/strong> &lt;a href="https://ooni.github.io/fa/about/risks">Risks: Things you should know before running OONI Probe&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Kiswahili,&lt;/strong> &lt;a href="https://ooni.github.io/sw/about/risks">Hatari: Vitu unavyotakiwa kuvijua kabla ya kutumia OONI Probe&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Русский,&lt;/strong> &lt;a href="https://ooni.github.io/ru/about/risks">Риски: что вы должны знать до запуска OONI Probe&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Français,&lt;/strong> &lt;a href="https://ooni.github.io/fr/about/risks">Risques: Ce que vous devez savoir avant d&amp;rsquo;exécuter OONI Probe&lt;/a>&lt;/li>
-&lt;li>&lt;strong>မြန်မာ,&lt;/strong> &lt;a href="https://ooni.github.io/my/about/risks">အန္တရာယ်များ OONI Probe ကို အသုံးမပြုမီ ဤအရာများကို သိထားသင့်သည်။&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>To our knowledge, no OONI Probe user has ever faced consequences as a result of using our software. Therefore, the potential risks described below are theoretical and quite speculative. If you are running OONI Probe from a &amp;ldquo;high-risk environment&amp;rdquo;, we strongly encourage you to read all of the documentation below.&lt;/p></description></item><item><title>OONI Data Policy</title><link>https://ooni.github.io/about/data-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/data-policy/</guid><description>&lt;p>&lt;strong>Last modified:&lt;/strong> October 15, 2024&lt;/p>
+connection (such as your employer, ISP or government).&lt;/p></description></item><item><title/><link>https://ooni.github.io/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/risks/</guid><description>&lt;h1 id="risks-things-you-should-know-before-running-ooni-probe" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#risks-things-you-should-know-before-running-ooni-probe">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Risks: Things you should know before running OONI Probe
+&lt;/h1>
+&lt;p>Translations:&lt;/p></description></item><item><title>OONI Data Policy</title><link>https://ooni.github.io/about/data-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/data-policy/</guid><description>&lt;p>&lt;strong>Last modified:&lt;/strong> October 15, 2024&lt;/p>
 &lt;p>&lt;strong>Version:&lt;/strong> 1.6.0&lt;/p>
 &lt;p>This Data Policy discloses and explains what data the &lt;a href="https://ooni.org/">Open Observatory of
 Network Interference (OONI) project&lt;/a> (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;)
@@ -135,10 +143,18 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p>
  alt="Maria Xynou from OONI profile picture">
  &lt;h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray9">Maria Xynou&lt;/h3>
  &lt;p class="text-base leading-7 text-gray6">Director of Strategic Engagement&lt;/p></description></item><item><title>Privacy Policy</title><link>https://ooni.github.io/about/privacy-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/privacy-policy/</guid><description>&lt;p>&lt;strong>Last modified:&lt;/strong> October 23, 2024&lt;/p>
-&lt;h3 id="controller">CONTROLLER&lt;/h3>
-&lt;p>The controller for the processing of your data is OONI ETS (hereinafter referred to as “&lt;strong>we&lt;/strong>”).&lt;/p>
-&lt;p>If you have any question you can write us at our address Via Ostiense 131L, 00154 Roma (RM), Italy, or to the email &lt;a href="mailto:contact@openobservatory.org">contact@openobservatory.org&lt;/a>.&lt;/p>
-&lt;p>We hereby inform you that we will process your data lawfully and fairly in full respect of your rights and, in particular, your privacy, according to Regulation (EU) 2016/679 (hereinafter “&lt;strong>Regulation&lt;/strong>”) and other applicable laws and regulations.&lt;/p></description></item><item><title>Supporters &amp; Funders</title><link>https://ooni.github.io/about/supporters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/supporters/</guid><description>&lt;p>Supporters are organisations or individuals who believe in &lt;a href="https://ooni.org/about/">OONI&amp;rsquo;s mission&lt;/a> and have made significant in-kind donations to OONI in the last year. If you would like to become an OONI supporter, please reach out to us at
+&lt;h3 id="controller" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#controller">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ CONTROLLER
+&lt;/h3>
+&lt;p>The controller for the processing of your data is OONI ETS (hereinafter referred to as “&lt;strong>we&lt;/strong>”).&lt;/p></description></item><item><title>Supporters &amp; Funders</title><link>https://ooni.github.io/about/supporters/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/supporters/</guid><description>&lt;p>Supporters are organisations or individuals who believe in &lt;a href="https://ooni.org/about/">OONI&amp;rsquo;s mission&lt;/a> and have made significant in-kind donations to OONI in the last year. If you would like to become an OONI supporter, please reach out to us at
 &lt;a href="mailto:giving@ooni.org">giving@ooni.org&lt;/a>.&lt;/p>
 &lt;p>Below we share a &lt;a href="https://ooni.github.io/about/supporters/#funders">list of current and past OONI funders&lt;/a>.&lt;/p>
 

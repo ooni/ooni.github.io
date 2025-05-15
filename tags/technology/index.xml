@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Technology on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/technology/</link><description>Recent content in Technology on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/technology/index.xml" rel="self" type="application/rss+xml"/><item><title>A brief introduction to OONI</title><link>https://ooni.github.io/post/brief-introduction-to-ooni/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/brief-introduction-to-ooni/</guid><description>&lt;p>This is gentle introduction to OONI that does not require readers to have a technical background.&lt;/p>
 &lt;p>If you are familiar with how the Internet works and how it can be censored you can skip &lt;a href="https://ooni.github.io/post/brief-introduction-to-ooni/#the-basics">The basics&lt;/a>.&lt;/p>
 &lt;p>For frequently asked questions and answers, please refer to the &lt;a href="https://ooni.org/support/faq/">OONI FAQ&lt;/a>.&lt;/p>
-&lt;h2 id="the-basics">The basics&lt;/h2>
+&lt;h2 id="the-basics" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#the-basics">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ The basics
+&lt;/h2>
 &lt;p>You might be connecting to the &lt;a href="https://en.wikipedia.org/wiki/Internet">Internet&lt;/a>
 from a &lt;a href="https://en.wikipedia.org/wiki/Local_area_network">local network&lt;/a>
-or using an &lt;a href="https://ooni.org/support/glossary/#isp">Internet Service Provider&lt;/a> (ISP).&lt;/p>
-&lt;p>ISPs are usually not connected to each other. Rather they connect to large
-&lt;a href="https://en.wikipedia.org/wiki/Tier_1_network">carriers&lt;/a> or simply to a &lt;a href="https://en.wikipedia.org/wiki/Tier_2_network">bigger ISP&lt;/a>.&lt;/p></description></item><item><title>Accessing OONI data</title><link>https://ooni.github.io/post/mining-ooni-data/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/mining-ooni-data/</guid><description>&lt;p>This page has moved to: &lt;a href="https://docs.ooni.org/data/">https://docs.ooni.org/data/&lt;/a>&lt;/p></description></item><item><title>OONI Software Development Guidelines</title><link>https://ooni.github.io/post/ooni-software-development-guidelines/</link><pubDate>Sat, 23 Feb 2019 01:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-software-development-guidelines/</guid><description>&lt;p>&lt;img src="https://ooni.github.io/post/ooni-software-development-guidelines/QuattroEngineer.png">&lt;/p>
+or using an &lt;a href="https://ooni.org/support/glossary/#isp">Internet Service Provider&lt;/a> (ISP).&lt;/p></description></item><item><title>Accessing OONI data</title><link>https://ooni.github.io/post/mining-ooni-data/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/mining-ooni-data/</guid><description>&lt;p>This page has moved to: &lt;a href="https://docs.ooni.org/data/">https://docs.ooni.org/data/&lt;/a>&lt;/p></description></item><item><title>OONI Software Development Guidelines</title><link>https://ooni.github.io/post/ooni-software-development-guidelines/</link><pubDate>Sat, 23 Feb 2019 01:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-software-development-guidelines/</guid><description>&lt;p>&lt;img src="https://ooni.github.io/post/ooni-software-development-guidelines/QuattroEngineer.png">&lt;/p>
 &lt;p>The goal of this document is to explain and explicit some of the best practices relevant to software development that we follow at the Open Observatory of Network Interference (OONI).&lt;/p>
 &lt;p>By following these development guidelines we aim to produce &lt;strong>higher quality code&lt;/strong>, which contains &lt;strong>less defects&lt;/strong> and allows us to iterate more quickly &lt;strong>delivering greater value&lt;/strong> to our end &lt;strong>users is a shorter amount of time&lt;/strong>!&lt;/p>
-&lt;h2 id="version-control">Version control&lt;/h2>
+&lt;h2 id="version-control" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#version-control">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Version control
+&lt;/h2>
 &lt;p>Also known as: “How I Learned to Stop Worrying and Love the &lt;strong>Git&lt;/strong>!”&lt;/p></description></item><item><title>Iran Protests: DPI blocking of Instagram (Part 2)</title><link>https://ooni.github.io/post/2018-iran-protests-pt2/</link><pubDate>Wed, 14 Feb 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2018-iran-protests-pt2/</guid><description>&lt;p>In early January 2018, OONI published a &lt;a href="https://ooni.github.io/post/2018-iran-protests/">post&lt;/a>
 reporting on the blocking of Telegram and Instagram amidst protests in Iran. We
 have since been analyzing RIPE data and other network measurements collected
@@ -17,5 +35,15 @@ from Iran in an attempt to better understand the blockages. Upon further
 analysis, we found that Instagram was in fact blocked (during the Iran
 protests) through the use of Deep Packet Inspection (DPI) technology which
 targeted the TLS protocol. And it was configured in an interesting way.&lt;/p></description></item><item><title>Writing a modern cross-platform desktop app</title><link>https://ooni.github.io/post/writing-a-modern-cross-platform-desktop-app/</link><pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/writing-a-modern-cross-platform-desktop-app/</guid><description>&lt;p>The goal of this article is to outline some of the architecture &amp;amp; design considerations made while thinking about how we would implement the OONI Probe desktop apps. This is the result of research and experimentation with a variety of different libraries and approaches. For each part of the technical stack we will outline the rationale leading to our choices.&lt;/p>
-&lt;h1 id="requirements--design-goals">Requirements &amp;amp; design goals&lt;/h1>
+&lt;h1 id="requirements--design-goals" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#requirements--design-goals">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Requirements &amp;amp; design goals
+&lt;/h1>
 &lt;p>Our primary goal with the OONI Probe desktop apps is to enable &lt;strong>Windows&lt;/strong> and &lt;strong>macOS&lt;/strong> desktop users to run &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI Probe&lt;/a> network measurement tests without knowledge of the command line. These tests will use the &lt;strong>&lt;a href="https://github.com/measurement-kit">Measurement Kit&lt;/a>&lt;/strong> implementation of OONI tests.&lt;/p></description></item></channel></rss>

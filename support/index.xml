@@ -1,39 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/support/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/support/ooni-run/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-run/</guid><description>&lt;h1 id="user-guide-ooni-run">User Guide: OONI Run&lt;/h1>
-&lt;p>&lt;strong>Last updated:&lt;/strong> 18th November 2024&lt;/p>
-
-
-
-
-
-
-
-
-
-
-
-&lt;div>
- &lt;a href="https://ooni.github.io/support/ooni-run/images/image5.png">
- &lt;img
- src="https://ooni.github.io/support/ooni-run/images/image5_hu5150509959254103312.png"
-
- 
-
- title="OONI Run"
- 
- alt="OONI Run"
- 
- />
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/support/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/support/ooni-run/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-run/</guid><description>&lt;h1 id="user-guide-ooni-run" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#user-guide-ooni-run">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
  &lt;/a>
- 
-&lt;/div>
-
-
-&lt;p>&lt;a href="https://run.ooni.org/">OONI Run&lt;/a> is a web platform that you can use to generate links to coordinate &lt;a href="https://ooni.org/install/mobile">OONI Probe&lt;/a> website testing. Specifically, you can use OONI Run to create links for:&lt;/p>
-&lt;ul>
-&lt;li>Testing websites (of your choice) for censorship;&lt;/li>
-&lt;li>Coordinating website censorship testing with other &lt;a href="https://ooni.org/install/mobile">OONI Probe&lt;/a> users.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>OONI Run links only work with the &lt;a href="https://ooni.org/install/mobile">OONI Probe mobile app&lt;/a>.&lt;/strong> To learn how to use OONI Probe, please refer to our &lt;a href="https://ooni.org/support/ooni-probe-mobile">OONI Probe mobile app user guide&lt;/a>.&lt;/p></description></item><item><title>Coordinating OONI censorship measurement campaigns</title><link>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 21st March 2023&lt;/p>
+ User Guide: OONI Run
+&lt;/h1>
+&lt;p>&lt;strong>Last updated:&lt;/strong> 18th November 2024&lt;/p></description></item><item><title>Coordinating OONI censorship measurement campaigns</title><link>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 21st March 2023&lt;/p>
 &lt;p>Internet censorship around the world often &lt;a href="https://ooni.org/documents/2022-ooni-submission-ohchr-report-internet-shutdowns.pdf">emerges during political events&lt;/a>, such as elections or protests. The abrupt emergence of new blocks requires rapid response in terms of measurement, particularly if the blocks are short-lived. Such measurement can help with the collection of data that can potentially serve as evidence of internet censorship, supporting the efforts of journalists, researchers, and human rights defenders challenging the blocks.&lt;/p>
 &lt;p>Detecting sudden or expected blocks can be achieved through &lt;strong>community coordination&lt;/strong> on censorship measurement.&lt;/p></description></item><item><title>Frequently Asked Questions (FAQ)</title><link>https://ooni.github.io/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/faq/</guid><description>&lt;p>This Frequently Asked Questions (FAQ) section aims to address the
 questions that we are frequently asked by the community.&lt;/p>
@@ -57,7 +33,7 @@ questions that we are frequently asked by the community.&lt;/p>
  src="https://ooni.github.io/support/github-test-lists/images/github-test-lists_hu5083274700068569116.png"
 
  
-
+ 
  title="Citizen Lab test list repo"
  
  alt="Citizen Lab test list repo"
@@ -135,8 +111,28 @@ testing by &lt;a href="https://ooni.org/install">OONI Probe&lt;/a> users around 
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="ooni-data">OONI data&lt;/h2>
-&lt;h3 id="what-is-ooni-data">What is OONI data?&lt;/h3>
+&lt;h2 id="ooni-data" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#ooni-data">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ OONI data
+&lt;/h2>
+&lt;h3 id="what-is-ooni-data" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#what-is-ooni-data">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ What is OONI data?
+&lt;/h3>
 &lt;p>OONI data is &lt;strong>open data on internet censorship&lt;/strong> around the world.&lt;/p></description></item><item><title>OONI Glossary</title><link>https://ooni.github.io/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/glossary/</guid><description>&lt;p>&lt;strong>Last updated&lt;/strong>: 3rd July 2023&lt;/p>
 &lt;p>This glossary contains &lt;em>brief explanations&lt;/em> for terms used in OONI apps,
 methodologies, and research reports.&lt;/p>
@@ -198,7 +194,7 @@ methodologies, and research reports.&lt;/p>
  
  srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
  
-
+ 
  title="OONI Outreach Kit"
  
  alt="OONI Outreach Kit"
@@ -229,7 +225,17 @@ methodologies, and research reports.&lt;/p>
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="ooni-brochures">OONI Brochures&lt;/h2>
+&lt;h2 id="ooni-brochures" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#ooni-brochures">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ OONI Brochures
+&lt;/h2>
 &lt;p>We provide 2 OONI brochures that include information about using OONI tools and data for investigating internet censorship around the world.&lt;/p></description></item><item><title>User Guide: OONI Explorer</title><link>https://ooni.github.io/support/ooni-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-explorer/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 15th March 2023&lt;/p>
 
 
@@ -248,7 +254,7 @@ methodologies, and research reports.&lt;/p>
  src="https://ooni.github.io/support/ooni-explorer/images/image67_hu2358044783254427892.png"
 
  
-
+ 
  title="OONI Explorer"
  
  alt="OONI Explorer"
@@ -289,7 +295,7 @@ methodologies, and research reports.&lt;/p>
  src="https://ooni.github.io/support/ooni-probe-cli/images/image1_hu6259562038204200557.png"
 
  
-
+ 
  title="OONI Probe CLI"
  
  alt="OONI Probe CLI"
@@ -325,7 +331,7 @@ methodologies, and research reports.&lt;/p>
  
  srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu2811019159506606390.png 2x"
  
-
+ 
  title="Install OONI Probe Desktop"
  
  alt="Install OONI Probe Desktop"
@@ -336,9 +342,9 @@ methodologies, and research reports.&lt;/p>
 &lt;/div>
 
 
-&lt;p>OONI Probe is a &lt;a href="https://github.com/ooni/probe">free and open source&lt;/a> app that you can use to measure internet censorship and other forms of network interference. This user guide provides &lt;strong>step-by-step instructions&lt;/strong> on how to install, run, and customize your use of the &lt;a href="https://ooni.github.io/install/desktop/">OONI Probe desktop app&lt;/a>.&lt;/p></description></item><item><title>User Guide: OONI Probe Mobile App</title><link>https://ooni.github.io/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-mobile/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 18th November 2024&lt;/p>
-&lt;p>&lt;strong>OONI Probe Mobile version:&lt;/strong> 3.7.1, 4.0.0 (for OONI Run section only)&lt;/p>
-&lt;p>&lt;strong>Access the user guide in other languages:&lt;/strong> &lt;a href="https://ooni.github.io/fa/support/ooni-probe-mobile">فارسی&lt;/a>, &lt;a href="https://ooni.github.io/ru/support/ooni-probe-mobile">Русский&lt;/a>, &lt;a href="https://ooni.org/de/support/ooni-probe-mobile">Deutsch&lt;/a>, &lt;a href="https://ooni.github.io/tr/support/ooni-probe-mobile">Türkçe&lt;/a>, &lt;a href="https://ooni.github.io/vi/support/ooni-probe-mobile">Tiếng Việt&lt;/a>, &lt;a href="https://ooni.github.io/my/support/ooni-probe-mobile">မြန်မာ&lt;/a>&lt;/p>
+&lt;p>OONI Probe is a &lt;a href="https://github.com/ooni/probe">free and open source&lt;/a> app that you can use to measure internet censorship and other forms of network interference. This user guide provides &lt;strong>step-by-step instructions&lt;/strong> on how to install, run, and customize your use of the &lt;a href="https://ooni.github.io/install/desktop/">OONI Probe desktop app&lt;/a>.&lt;/p></description></item><item><title>User Guide: OONI Probe Mobile App</title><link>https://ooni.github.io/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-probe-mobile/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 15th April 2025&lt;/p>
+&lt;p>&lt;strong>OONI Probe Mobile version:&lt;/strong> 5.0.5&lt;/p>
+&lt;p>&lt;strong>Access the user guide in other languages:&lt;/strong> &lt;a href="https://ooni.github.io/fa/support/ooni-probe-mobile">فارسی&lt;/a>, &lt;a href="https://ooni.github.io/ru/support/ooni-probe-mobile">Русский&lt;/a>, &lt;a href="https://ooni.github.io/de/support/ooni-probe-mobile">Deutsch&lt;/a>, &lt;a href="https://ooni.github.io/tr/support/ooni-probe-mobile">Türkçe&lt;/a>, &lt;a href="https://ooni.github.io/vi/support/ooni-probe-mobile">Tiếng Việt&lt;/a>, &lt;a href="https://ooni.github.io/my/support/ooni-probe-mobile">မြန်မာ&lt;/a>&lt;/p>
 
 
 
@@ -356,7 +362,7 @@ methodologies, and research reports.&lt;/p>
  src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu9506725050971740468.png"
 
  
-
+ 
  title="Measure Internet Censorship"
  
  alt="Measure Internet Censorship"
@@ -367,7 +373,8 @@ methodologies, and research reports.&lt;/p>
 &lt;/div>
 
 
-&lt;p>OONI Probe is a &lt;a href="https://github.com/ooni/probe">free and open source&lt;/a> app that you can use to measure internet censorship and other forms of network interference. This user guide provides &lt;strong>step-by-step instructions&lt;/strong> on how to install, run, and customize your use of the &lt;a href="https://ooni.org/install/mobile">OONI Probe mobile app&lt;/a>.&lt;/p></description></item><item><title>User Guide: OONI Test Lists Editor</title><link>https://ooni.github.io/support/test-lists-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/test-lists-editor/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 7th September 2022&lt;/p>
+&lt;p>OONI Probe is a &lt;a href="https://github.com/ooni/probe">free and open source&lt;/a> app that you can use to measure internet censorship and other forms of network interference. This user guide provides &lt;strong>step-by-step instructions&lt;/strong> on how to install, run, and customize your use of the &lt;a href="https://ooni.org/install/mobile">OONI Probe mobile app&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>What you will get from this guide:&lt;/strong>&lt;/p></description></item><item><title>User Guide: OONI Test Lists Editor</title><link>https://ooni.github.io/support/test-lists-editor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/test-lists-editor/</guid><description>&lt;p>&lt;strong>Last updated:&lt;/strong> 7th September 2022&lt;/p>
 
 
 
@@ -385,7 +392,7 @@ methodologies, and research reports.&lt;/p>
  src="https://ooni.github.io/support/test-lists-editor/images/01_hu3102870722549096828.png"
 
  
-
+ 
  title="Test Lists Editor"
  
  alt="Test Lists Editor"

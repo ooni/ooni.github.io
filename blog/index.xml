@@ -4,7 +4,7 @@
  src="https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/images/image-1_hu18045183049061541971.png"
 
  
-
+ 
  
  
  />
@@ -38,7 +38,17 @@
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="about-ooni-explorer">About OONI Explorer&lt;/h2>
+&lt;h2 id="about-ooni-explorer" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about-ooni-explorer">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About OONI Explorer
+&lt;/h2>
 &lt;p>&lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> is the world’s largest &lt;strong>open dataset on internet censorship&lt;/strong>.&lt;/p></description></item><item><title>Requirements for OONI’s anonymous credentials system</title><link>https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/</link><pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/</guid><description>&lt;div>
  &lt;a href="https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/images/requirements-for-probe-id.png">
  &lt;img
@@ -47,7 +57,7 @@
  
  srcset="https://ooni.github.io/post/2025-requirements-for-oonis-anonymous-credentials/images/requirements-for-probe-id_hu18349975670068356577.png 2x"
  
-
+ 
  title="Requirements for OONI Probe ID"
  
  alt="Requirements for OONI Probe ID"
@@ -70,7 +80,7 @@
  src="https://ooni.github.io/post/2024-year-in-review/images/image1_hu5156141607790937558.png"
 
  
-
+ 
  
  
  />
@@ -128,7 +138,17 @@
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="new-ooni-foundation">New OONI Foundation&lt;/h2>
+&lt;h2 id="new-ooni-foundation" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#new-ooni-foundation">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ New OONI Foundation
+&lt;/h2>
 
 
 
@@ -146,7 +166,7 @@
  src="https://ooni.github.io/post/2024-year-in-review/images/image2_hu12150117868504942955.png"
 
  
-
+ 
  
  
  />
@@ -163,7 +183,7 @@
  src="https://ooni.github.io/post/2024-launch-ooni-run-v2/images/image22_hu17540960861289344737.png"
 
  
-
+ 
  
  
  />
@@ -181,7 +201,17 @@ internet? We have a job opening for you!&lt;/p>
 globally) is looking for a dedicated &lt;strong>Backend Developer&lt;/strong> to work on our
 backend components and infrastructure, and to provide OONI data analysis
 support for our &lt;a href="https://ooni.org/reports/">research&lt;/a> efforts.&lt;/p>
-&lt;h2 id="job-description">Job description&lt;/h2>
+&lt;h2 id="job-description" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#job-description">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Job description
+&lt;/h2>
 &lt;p>By joining our team, you will work on OONI’s backend components, ensuring the
 stable and reliable performance of our infrastructure in response to the
 growing global coverage of measurements. You will also provide OONI data
@@ -193,7 +223,7 @@ support of the research of our &lt;a href="https://ooni.org/partners">partners&l
  src="https://ooni.github.io/post/2024-ooni-partner-gathering-report/images/image7_hu2526202348152306765.png"
 
  
-
+ 
  title="OONI Partner Gathering 2024"
  
  alt="OONI Partner Gathering 2024"
@@ -293,7 +323,17 @@ working on in 2024!&lt;/p>
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="new-ooni-non-profit-legal-entity">New OONI non-profit legal entity&lt;/h2>
+&lt;h2 id="new-ooni-non-profit-legal-entity" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#new-ooni-non-profit-legal-entity">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ New OONI non-profit legal entity
+&lt;/h2>
 
 
 
@@ -311,7 +351,7 @@ working on in 2024!&lt;/p>
  src="https://ooni.github.io/post/2023-year-in-review/images/image4_hu18379814389437255340.png"
 
  
-
+ 
  title="OONI Explorer"
  
  alt="OONI Explorer"
@@ -342,7 +382,7 @@ working on in 2024!&lt;/p>
  
  srcset="https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/images/ooni-censorship-findings_hu17956862074008836710.png 2x"
  
-
+ 
  title="Censorship Findings"
  
  alt="Censorship Findings"
@@ -410,7 +450,17 @@ internet? We have a job opening for you!&lt;/p>
 internet censorship globally) is looking for a dedicated &lt;strong>project
 manager&lt;/strong> to help us manage our software development work.&lt;/p>
 &lt;p>We will be reviewing applications on a rolling basis.&lt;/p>
-&lt;h1 id="job-description">Job description&lt;/h1>
+&lt;h1 id="job-description" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#job-description">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Job description
+&lt;/h1>
 &lt;p>By joining our team, you will help ensure that our software projects are
 on track, supporting a global community that relies on our tools for
 measuring and fighting internet censorship.&lt;/p></description></item><item><title>Introducing OONI Probe Web</title><link>https://ooni.github.io/post/introducing-ooni-probe-web/</link><pubDate>Mon, 20 Mar 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/introducing-ooni-probe-web/</guid><description>&lt;div>
@@ -419,7 +469,7 @@ measuring and fighting internet censorship.&lt;/p></description></item><item><ti
  src="https://ooni.github.io/post/introducing-ooni-probe-web/images/image1_hu8271175250346792258.png"
 
  
-
+ 
  title="OONI Explorer"
  
  alt="OONI Explorer"
@@ -464,7 +514,17 @@ measuring and fighting internet censorship.&lt;/p></description></item><item><ti
 &lt;p>&lt;a href="https://ooni.github.io/post/improving-data-quality-analysis-of-failed-measurements/#conclusions-and-future-work">Conclusions and Future Work&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="background">Background&lt;/h1>
+&lt;h1 id="background" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#background">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Background
+&lt;/h1>
 &lt;p>&lt;a href="https://ooni.org/nettest/web-connectivity/">Web Connectivity&lt;/a> is a network test that determines whether a web resource is accessible from the network where the user runs &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a>. To this end, Web Connectivity measures accessing the resource and compares the measurement results with another measurement performed by a control vantage point. After the measurement, OONI Probe submits a JSON document summarising its findings and the control vantage point findings to the OONI backend. In turn, the &lt;a href="https://github.com/ooni/pipeline/">OONI data processing pipeline&lt;/a> classifies all Web Connectivity measurements into four categories:&lt;/p></description></item><item><title>Year in Review: OONI in 2022</title><link>https://ooni.github.io/post/ooni-in-2022/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2022/</guid><description>&lt;p>As the end of 2022 approaches, we publish this post to share some OONI
 highlights from the last year. We also share some of the things we’ll be
 working on in 2023!&lt;/p>
@@ -510,8 +570,28 @@ members&lt;/strong>, where they discuss how OONI has been useful to their work,
 while sharing what they would like to see OONI do in the future.&lt;/p>
 &lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zrclQ2QZjVo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>&lt;/iframe>
 
-&lt;h2 id="featured-community-members-and-partners">Featured community members and partners&lt;/h2>
-&lt;h3 id="andrés-azpúrua-venezuela-inteligentehttpsveinteligenteorg">Andrés Azpúrua, &lt;a href="https://veinteligente.org/">Venezuela Inteligente&lt;/a>&lt;/h3>
+&lt;h2 id="featured-community-members-and-partners" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#featured-community-members-and-partners">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Featured community members and partners
+&lt;/h2>
+&lt;h3 id="andrés-azpúrua-venezuela-inteligentehttpsveinteligenteorg" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#andr%c3%a9s-azp%c3%barua-venezuela-inteligentehttpsveinteligenteorg">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Andrés Azpúrua, &lt;a href="https://veinteligente.org/">Venezuela Inteligente&lt;/a>
+&lt;/h3>
 &lt;p>Andrés is the co-founder and Director of Venezuela Inteligente, a
 non-profit organization that aims to facilitate information,
 communication and collaboration between citizens and civil society
@@ -527,7 +607,7 @@ and offline.&lt;/p></description></item><item><title>Highlights: 10 Years of OON
  
  srcset="https://ooni.github.io/post/highlights-10-years-of-ooni/images/01_hu2671249911654719631.png 2x"
  
-
+ 
  
  
  />
@@ -551,7 +631,7 @@ following animation, which shares some highlights from the past decade.&lt;/p></
  
  srcset="https://ooni.github.io/post/10th-ooniversary-events/images/ooniversary_hu9430410147315059057.jpg 2x"
  
-
+ 
  title="10th Ooniversary"
  
  alt="10th Ooniversary"
@@ -607,7 +687,7 @@ Swahili, Portuguese and Russian.&lt;/p></description></item><item><title>New Tes
  src="https://ooni.github.io/post/2022-test-lists-editor/images/01_hu3102870722549096828.png"
 
  
-
+ 
  title="Test Lists Editor"
  
  alt="Test Lists Editor"
@@ -638,7 +718,17 @@ We have a job opening for you!&lt;/p>
 censorship) is looking for a dedicated &lt;strong>community coordinator&lt;/strong> to help
 grow and support the OONI community around the world.&lt;/p>
 &lt;p>The application deadline is &lt;strong>Sunday, 12th June 2022&lt;/strong>.&lt;/p>
-&lt;h1 id="job-description">Job description&lt;/h1>
+&lt;h1 id="job-description" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#job-description">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Job description
+&lt;/h1>
 &lt;p>By joining our team, you will support our
 &lt;a href="https://ooni.org/partners">partners&lt;/a> and global community of human
 rights defenders to measure and fight internet censorship. Our community
@@ -651,7 +741,7 @@ helping to ensure that our tools meet the needs of our community.&lt;/p></descri
  
  srcset="https://ooni.github.io/post/2022-ooni-mat/images/01_hu11932821530926714788.png 2x"
  
-
+ 
  title="MAT"
  
  alt="MAT"
@@ -708,7 +798,17 @@ how they helped support censorship measurement worldwide.&lt;/p>
 &lt;p>&lt;a href="https://ooni.github.io/post/2021-ithena-boosts-ooni-measurement-coverage/#ooni-probe-integration-into-ithena">OONI Probe integration into iThena&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="about-ithena">About iThena&lt;/h1>
+&lt;h1 id="about-ithena" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about-ithena">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About iThena
+&lt;/h1>
 &lt;p>&lt;a href="https://root.ithena.net/">iThena&lt;/a>, developed by the &lt;a href="https://cybercomplex.net/">Cyber-Complex Foundation&lt;/a>, is a distributed computation
 and measurement project based on the &lt;a href="https://boinc.berkeley.edu/">Berkeley Open Infrastructure for Network Computing (BOINC)&lt;/a> platform.
 iThena &lt;a href="https://boinc.berkeley.edu/forum_thread.php?id=13966">aims&lt;/a> to
@@ -742,17 +842,35 @@ Project&lt;/a>) is looking for a dedicated
 &lt;strong>mobile developer&lt;/strong> to work on &lt;a href="https://ooni.org/install/mobile">OONI Probe&lt;/a>: a free software app designed
 to measure internet censorship and network performance.&lt;/p>
 &lt;p>The application deadline is &lt;strong>Sunday, 31st October 2021&lt;/strong>.&lt;/p>
-&lt;h1 id="job-description">Job description&lt;/h1>
+&lt;h1 id="job-description" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#job-description">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Job description
+&lt;/h1>
 &lt;p>If you join our team, you will lead the development of the &lt;a href="https://ooni.org/install/mobile">OONI Probe mobile app&lt;/a>, supporting human rights
 defenders worldwide to investigate and fight internet censorship.&lt;/p></description></item><item><title>A brief introduction to OONI</title><link>https://ooni.github.io/post/brief-introduction-to-ooni/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/brief-introduction-to-ooni/</guid><description>&lt;p>This is gentle introduction to OONI that does not require readers to have a technical background.&lt;/p>
 &lt;p>If you are familiar with how the Internet works and how it can be censored you can skip &lt;a href="https://ooni.github.io/post/brief-introduction-to-ooni/#the-basics">The basics&lt;/a>.&lt;/p>
 &lt;p>For frequently asked questions and answers, please refer to the &lt;a href="https://ooni.org/support/faq/">OONI FAQ&lt;/a>.&lt;/p>
-&lt;h2 id="the-basics">The basics&lt;/h2>
+&lt;h2 id="the-basics" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#the-basics">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ The basics
+&lt;/h2>
 &lt;p>You might be connecting to the &lt;a href="https://en.wikipedia.org/wiki/Internet">Internet&lt;/a>
 from a &lt;a href="https://en.wikipedia.org/wiki/Local_area_network">local network&lt;/a>
-or using an &lt;a href="https://ooni.org/support/glossary/#isp">Internet Service Provider&lt;/a> (ISP).&lt;/p>
-&lt;p>ISPs are usually not connected to each other. Rather they connect to large
-&lt;a href="https://en.wikipedia.org/wiki/Tier_1_network">carriers&lt;/a> or simply to a &lt;a href="https://en.wikipedia.org/wiki/Tier_2_network">bigger ISP&lt;/a>.&lt;/p></description></item><item><title>Accessing OONI data</title><link>https://ooni.github.io/post/mining-ooni-data/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/mining-ooni-data/</guid><description>&lt;p>This page has moved to: &lt;a href="https://docs.ooni.org/data/">https://docs.ooni.org/data/&lt;/a>&lt;/p></description></item><item><title>OONI Partner Training 2021</title><link>https://ooni.github.io/post/ooni-partner-training-2021/</link><pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-partner-training-2021/</guid><description>&lt;p>Over the last week, we had the pleasure to host &lt;strong>two 3-day OONI Partner
+or using an &lt;a href="https://ooni.org/support/glossary/#isp">Internet Service Provider&lt;/a> (ISP).&lt;/p></description></item><item><title>Accessing OONI data</title><link>https://ooni.github.io/post/mining-ooni-data/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/mining-ooni-data/</guid><description>&lt;p>This page has moved to: &lt;a href="https://docs.ooni.org/data/">https://docs.ooni.org/data/&lt;/a>&lt;/p></description></item><item><title>OONI Partner Training 2021</title><link>https://ooni.github.io/post/ooni-partner-training-2021/</link><pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-partner-training-2021/</guid><description>&lt;p>Over the last week, we had the pleasure to host &lt;strong>two 3-day OONI Partner
 Training events&lt;/strong> for our &lt;a href="https://ooni.org/partners">partners&lt;/a> in
 Africa, Latin America, the Middle East, and Asia. As part of these
 events, our goal was to share OONI-specific knowledge and skills, and to
@@ -783,7 +901,17 @@ avoiding accidental blocking.&lt;/p>
 &lt;p>&lt;a href="https://ooni.github.io/post/making-ooni-probe-android-more-resilient/#future-improvements">Future improvements&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="adding-support-for-a-proxy">Adding support for a proxy&lt;/h1>
+&lt;h1 id="adding-support-for-a-proxy" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#adding-support-for-a-proxy">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Adding support for a proxy
+&lt;/h1>
 &lt;p>Since late 2020, community members have been reporting specific OONI
 Probe Android failures. The symptom is that all tests fail with the “all
 available probe services failed” error. This issue has been publicly
@@ -849,7 +977,7 @@ fix for OONI Probe desktop (&lt;a href="https://github.com/ooni/explorer/issues/
  
  srcset="https://ooni.github.io/post/2020-imv-slides-recordings/images/imv2020-banner_hu495236815503009730.png 2x"
  
-
+ 
  title="Internet Measurement Village 2020"
  
  alt="Internet Measurement Village 2020"
@@ -904,7 +1032,7 @@ senzurasının şəffaflığını artırmağı hədəfləyən layihədir.&lt;/p>
  
  srcset="https://ooni.github.io/post/2020-internet-measurement-village/images/imv2020-banner_hu5501900478008247774.png 2x"
  
-
+ 
  title="Internet Measurement Village 2020"
  
  alt="Internet Measurement Village 2020"
@@ -933,7 +1061,7 @@ Wednesday, 10th June 2020 and ending on Friday, 3rd July 2020&lt;/strong>.&lt;/p
  src="https://ooni.github.io/post/2020-ooni-run-survey-and-interviews/images/ooni-run_hu17043667162593774499.png"
 
  
-
+ 
  title="OONI Run"
  
  alt="OONI Run"
@@ -956,7 +1084,7 @@ we can improve it.&lt;/p></description></item><item><title>Launched: New OONI Pr
  src="https://ooni.github.io/post/2020-ooni-probe-desktop-app/images/desktop-feature_hu15263499433944027071.png"
 
  
-
+ 
  title="OONI Probe desktop app"
  
  alt="OONI Probe desktop app"
@@ -1103,7 +1231,17 @@ measurements collected from 233 countries since 2012.&lt;/p>
 &lt;p>&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#ooni-explorer-2-0">OONI Explorer 2.0&lt;/a>&lt;/p></description></item><item><title>OONI Software Development Guidelines</title><link>https://ooni.github.io/post/ooni-software-development-guidelines/</link><pubDate>Sat, 23 Feb 2019 01:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-software-development-guidelines/</guid><description>&lt;p>&lt;img src="https://ooni.github.io/post/ooni-software-development-guidelines/QuattroEngineer.png">&lt;/p>
 &lt;p>The goal of this document is to explain and explicit some of the best practices relevant to software development that we follow at the Open Observatory of Network Interference (OONI).&lt;/p>
 &lt;p>By following these development guidelines we aim to produce &lt;strong>higher quality code&lt;/strong>, which contains &lt;strong>less defects&lt;/strong> and allows us to iterate more quickly &lt;strong>delivering greater value&lt;/strong> to our end &lt;strong>users is a shorter amount of time&lt;/strong>!&lt;/p>
-&lt;h2 id="version-control">Version control&lt;/h2>
+&lt;h2 id="version-control" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#version-control">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Version control
+&lt;/h2>
 &lt;p>Also known as: “How I Learned to Stop Worrying and Love the &lt;strong>Git&lt;/strong>!”&lt;/p></description></item><item><title>OONI Probe Android 2.0.0 Incident Report</title><link>https://ooni.github.io/post/ooni-probe-android-200-incident/</link><pubDate>Fri, 22 Feb 2019 23:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-probe-android-200-incident/</guid><description>&lt;p>The first public release of OONI Probe Android 2.0.0 (since 2.0.0-alpha.7) included a very serious bug: we lost measurements and collected measurements that we shouldn’t have. As soon as the problem was identified, we quickly released a fix (OONI Probe Android 2.0.1). All measurements that should not have been uploaded have been deleted and we are working on a new OONI Probe release (OONI Probe Mobile 2.1.0) that will allow you to manually re-upload measurements. No other OONI Probe platforms (&lt;a href="https://itunes.apple.com/us/app/id1199566366">iOS&lt;/a>, [macOS](&lt;a href="https://ooni.io/install/OONI">https://ooni.io/install/OONI&lt;/a> Probe), [Linux](&lt;a href="https://ooni.io/install/OONI">https://ooni.io/install/OONI&lt;/a> Probe), &lt;a href="https://ooni.io/install/lepidopter/">Lepidopter&lt;/a>) were affected.&lt;/p></description></item><item><title>Year in Review: OONI in 2018</title><link>https://ooni.github.io/post/ooni-in-2018/</link><pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2018/</guid><description>&lt;p>As the new year begins, we publish this post to share some OONI
 highlights from 2018. We also share some of the exciting new projects
 we’ll be launching in 2019!&lt;/p>
@@ -1141,7 +1279,17 @@ we’ll be launching in 2019!&lt;/p>
 &lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2018/#expanding-ooni-verse">Expanding OONI-verse&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="new-partnerships">New partnerships&lt;/h1>
+&lt;h1 id="new-partnerships" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#new-partnerships">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ New partnerships
+&lt;/h1>
 &lt;p>Our network of partners grew significantly in 2018!&lt;/p></description></item><item><title>Major Revamp: OONI Probe Mobile App 2.0 Launched!</title><link>https://ooni.github.io/post/revamped-ooni-probe-mobile-app/</link><pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/revamped-ooni-probe-mobile-app/</guid><description>&lt;p>&lt;img alt="OONI Probe: old vs. new" src="https://ooni.github.io/post/revamped-ooni-probe-mobile-app/old-vs-new-app.png">&lt;/p>
 &lt;p>Today the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project is thrilled to announce
 the release of a major, new OONI Probe mobile app version!&lt;/p>
@@ -1175,7 +1323,17 @@ thousands of people have been &lt;a href="https://api.ooni.io/stats">measuring i
 we can improve them.&lt;/p>
 &lt;p>We invite you to complete our survey and/or participate in an interview
 to provide feedback.&lt;/p>
-&lt;h1 id="survey">Survey&lt;/h1>
+&lt;h1 id="survey" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#survey">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Survey
+&lt;/h1>
 &lt;p>We’d love to hear your thoughts on the &lt;em>current&lt;/em> OONI Probe mobile apps.&lt;/p></description></item><item><title>OONI Community Interviews: Julie Owono</title><link>https://ooni.github.io/post/ooni-community-interviews-julie-owono/</link><pubDate>Wed, 23 May 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-community-interviews-julie-owono/</guid><description>&lt;p>If you’ve met &lt;a href="https://twitter.com/JulieOwono">Julie Owono&lt;/a>, you’ll probably agree that her passion and
 determination for defending digital rights is one of the things that
 stands out about her.&lt;/p>
@@ -1278,46 +1436,45 @@ on in 2018!&lt;/p>
 &lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2017/#ooni-in-2018">OONI in 2018&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="ooni-probe-mobile-apps">OONI Probe mobile apps&lt;/h1>
-&lt;p>&lt;img alt="OONI Probe mobile app" src="https://ooni.github.io/post/ooni-2017/01.jpg">&lt;/p>
-&lt;p>In February 2017, measuring internet censorship with &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI Probe&lt;/a> suddenly became
-easier than ever before! With the &lt;a href="https://ooni.org/post/ooni-mobile-app/">launch of the OONI Probe mobile apps&lt;/a>, hundreds
-of thousands of people from around the world started testing their networks for
-censorship. Thanks to their testing, millions of measurements have been
-collected (and &lt;a href="https://explorer.ooni.org/world/">published&lt;/a>) from thousands of local vantage points in more than
-200 countries, shedding light on numerous &lt;a href="https://ooni.org/post/">cases of internet censorship&lt;/a>.&lt;/p></description></item><item><title>OONI at the 34th Chaos Communication Congress (34C3)</title><link>https://ooni.github.io/post/ooni-34c3/</link><pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-34c3/</guid><description>&lt;p>Next week the &lt;a href="https://ooni.org/">OONI&lt;/a> team will be
+&lt;h1 id="ooni-probe-mobile-apps" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#ooni-probe-mobile-apps">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ OONI Probe mobile apps
+&lt;/h1>
+&lt;p>&lt;img alt="OONI Probe mobile app" src="https://ooni.github.io/post/ooni-2017/01.jpg">&lt;/p></description></item><item><title>OONI at the 34th Chaos Communication Congress (34C3)</title><link>https://ooni.github.io/post/ooni-34c3/</link><pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-34c3/</guid><description>&lt;p>Next week the &lt;a href="https://ooni.org/">OONI&lt;/a> team will be
 attending the &lt;a href="https://events.ccc.de/congress/2017/wiki/index.php/Main_Page">34th Chaos Communication Congress (34C3)&lt;/a>:
 Europe’s largest hacker conference on technology, society, and utopia.
 Are you going? We hope to see you there!&lt;/p>
-&lt;h1 id="ooni-lecture">OONI lecture&lt;/h1>
+&lt;h1 id="ooni-lecture" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#ooni-lecture">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ OONI lecture
+&lt;/h1>
 &lt;p>OONI&amp;rsquo;s founder and project lead, Arturo Filastò, will be &lt;a href="https://events.ccc.de/congress/2017/Fahrplan/events/8923.html">presenting
-OONI at 34C3&lt;/a>.&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Lecture&lt;/th>
- &lt;th>OONI: Lets Fight Internet Censorship Together!&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>Day&lt;/td>
- &lt;td>&lt;a href="https://events.ccc.de/congress/2017/Fahrplan/events/8923.html">29th December 2017&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Time&lt;/td>
- &lt;td>&lt;a href="https://events.ccc.de/congress/2017/Fahrplan/events/8923.html">14:30&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Room&lt;/td>
- &lt;td>&lt;a href="https://events.ccc.de/congress/2017/Fahrplan/events/8923.html">Saal Borg&lt;/a>&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table>
-&lt;p>Attend the lecture to learn all about OONI, recent censorship findings
-from around the world, and how you can join the fight against internet
-censorship.&lt;/p></description></item><item><title>OONI at LAVITS and Primavera Hacker 2017</title><link>https://ooni.github.io/post/ooni-lavits-phacker-2017/</link><pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-lavits-phacker-2017/</guid><description>&lt;p>Earlier this month we had the opportunity to present OONI at two conferences in Chile: LAVITS and Primavera Hacker.&lt;/p>
-&lt;h2 id="lavits">LAVITS&lt;/h2>
+OONI at 34C3&lt;/a>.&lt;/p></description></item><item><title>OONI at LAVITS and Primavera Hacker 2017</title><link>https://ooni.github.io/post/ooni-lavits-phacker-2017/</link><pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-lavits-phacker-2017/</guid><description>&lt;p>Earlier this month we had the opportunity to present OONI at two conferences in Chile: LAVITS and Primavera Hacker.&lt;/p>
+&lt;h2 id="lavits" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#lavits">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ LAVITS
+&lt;/h2>
 &lt;p>&lt;a href="http://lavits.org">LAVITS&lt;/a> is a Latin American network of surveillance
 technology and society studies that organizes international symposiums since
 2009. It features publications, talks and workshops related to
@@ -1347,7 +1504,17 @@ network service for providing responses to queries against a directory service.
 In this article we present an analysis of possible DNS misconfigurations that
 may have caused &lt;code>pernambuco.com&lt;/code> to be inaccessible. We also provide some
 solutions to resolve DNS misconfiguration for &lt;code>pernambuco.com&lt;/code> and other sites potentially affected in Brazil and worldwide.&lt;/p></description></item><item><title>Writing a modern cross-platform desktop app</title><link>https://ooni.github.io/post/writing-a-modern-cross-platform-desktop-app/</link><pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/writing-a-modern-cross-platform-desktop-app/</guid><description>&lt;p>The goal of this article is to outline some of the architecture &amp;amp; design considerations made while thinking about how we would implement the OONI Probe desktop apps. This is the result of research and experimentation with a variety of different libraries and approaches. For each part of the technical stack we will outline the rationale leading to our choices.&lt;/p>
-&lt;h1 id="requirements--design-goals">Requirements &amp;amp; design goals&lt;/h1>
+&lt;h1 id="requirements--design-goals" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#requirements--design-goals">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Requirements &amp;amp; design goals
+&lt;/h1>
 &lt;p>Our primary goal with the OONI Probe desktop apps is to enable &lt;strong>Windows&lt;/strong> and &lt;strong>macOS&lt;/strong> desktop users to run &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI Probe&lt;/a> network measurement tests without knowledge of the command line. These tests will use the &lt;strong>&lt;a href="https://github.com/measurement-kit">Measurement Kit&lt;/a>&lt;/strong> implementation of OONI tests.&lt;/p></description></item><item><title>OONI Team Meeting: Montreal 2017</title><link>https://ooni.github.io/post/ooni-team-meeting-montreal-2017/</link><pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-team-meeting-montreal-2017/</guid><description>&lt;p>&lt;img alt="OONI team meeting in Montreal" src="https://ooni.github.io/post/montreal-meeting/ooni-team.jpg">&lt;/p>
 &lt;p>Last week, right before the &lt;a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2017Montreal">Tor meeting&lt;/a>,
 the OONI team gathered in Montreal for a 4-day meeting to reflect,
@@ -1433,7 +1600,17 @@ challenges, and future goals to address them.&lt;/p>
 &lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#acknowledgements">Acknowledgements&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="about">About&lt;/h1>
+&lt;h1 id="about" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About
+&lt;/h1>
 &lt;p>Over the last year, the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project has had the opportunity
 to collaborate with various digital rights organizations in Latin
 America, Africa, the Middle East, and Asia. We joined forces to
@@ -1510,7 +1687,17 @@ of &lt;em>two&lt;/em> new software tests which are designed to examine the block
 &lt;strong>WhatsApp&lt;/strong> and &lt;strong>Facebook Messenger&lt;/strong>. You can now run these tests to monitor the
 accessibility of these apps across time, and to collect data that can serve as
 evidence when/if they are blocked.&lt;/p>
-&lt;h1 id="whatsapp-test">WhatsApp test&lt;/h1>
+&lt;h1 id="whatsapp-test" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#whatsapp-test">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ WhatsApp test
+&lt;/h1>
 &lt;p>Many of our users have asked us to develop a test to examine the accessibility
 of WhatsApp, especially in light of it being &lt;a href="https://ooni.org/post/brazil-whatsapp-block/">blocked&lt;/a> by various governments
 around the world during elections, protests, and other political events.&lt;/p></description></item><item><title>OONI releases new Web UI: Run censorship tests from your web browser!</title><link>https://ooni.github.io/post/web-ui-post/</link><pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/web-ui-post/</guid><description>&lt;p>&lt;img alt="Image" src="https://ooni.github.io/post/wui-screenshots/wui-01.png">&lt;/p>
@@ -1522,7 +1709,17 @@ with the click of a button. These &lt;a href="https://ooni.org/nettest/">tests&l
 are designed to examine the following:&lt;/p></description></item><item><title>OONI releases Lepidopter Raspberry Pi distribution</title><link>https://ooni.github.io/post/lepidopter/</link><pubDate>Wed, 07 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/lepidopter/</guid><description>&lt;p>The Open Observatory of Network Interference (OONI) team is happy to announce
 the beta release of OONI Probe&amp;rsquo;s distribution for Raspberry Pis, caĺled
 &lt;strong>Lepidopter&lt;/strong>.&lt;/p>
-&lt;h2 id="what-is-lepidopter">What is Lepidopter&lt;/h2>
+&lt;h2 id="what-is-lepidopter" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#what-is-lepidopter">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ What is Lepidopter
+&lt;/h2>
 &lt;p>Lepidopter is a Raspberry Pi distribution image with all the required
 dependencies and software packages in place, configured to run network
 measurement tests via the
@@ -1556,11 +1753,16 @@ releasing a brand new test, called
 &lt;em>&lt;a href="https://ooni.org/nettest/web-connectivity/">Web Connectivity&lt;/a>&lt;/em>,
 which is designed to detect three different types of censorship: &lt;em>DNS
 tampering&lt;/em>, &lt;em>TCP/IP blocking&lt;/em> and &lt;em>HTTP blocking&lt;/em>.&lt;/p>
-&lt;h2 id="advantages-of-running-web-connectivity">Advantages of running Web Connectivity&lt;/h2>
+&lt;h2 id="advantages-of-running-web-connectivity" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#advantages-of-running-web-connectivity">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Advantages of running Web Connectivity
+&lt;/h2>
 &lt;p>This test allows us to see which websites are blocked and how, more accurately
-than ever before!&lt;/p>
-&lt;p>Previously we relied on running separate (http_request, dns_consistency and
-tcp_connect) tests with the aim of identifying various forms of censorship. We
-then had to correlate measurements across different tests to identify whether
-and how websites were blocked. This process was not only tedious, but it also
-led to more false positives.&lt;/p></description></item></channel></rss>
+than ever before!&lt;/p></description></item></channel></rss>

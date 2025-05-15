@@ -1,32 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Msg on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/msg/</link><description>Recent content in Msg on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/msg/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/msg/2017-08-23-angola-elections/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2017-08-23-angola-elections/</guid><description>&lt;h1 id="angolan-legislative-election-2017">Angolan Legislative Election 2017&lt;/h1>
-&lt;p>Election day is an important day, but so are the days following an election.&lt;/p>
-&lt;p>You can actively examine whether and to what extent online information is accessible in Angola. By running OONI Probe, you can examine:&lt;/p>
-&lt;ul>
-&lt;li>Whether websites are blocked;&lt;/li>
-&lt;li>Whether systems that could be responsible for censorship or surveillance are present in your network;&lt;/li>
-&lt;li>Net neutrality violations.&lt;/li>
-&lt;/ul>
-&lt;p>Increasing transparency of information controls during political events is important! By running OONI Probe, you can do just that.&lt;/p></description></item><item><title/><link>https://ooni.github.io/msg/2017-09-06-togo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2017-09-06-togo/</guid><description>&lt;h1 id="facebook-and-whatsapp-blocked-in-togo">Facebook and WhatsApp blocked in Togo?&lt;/h1>
-&lt;p>Today, 6th September 2017, we heard that Facebook and WhatsApp are inaccessible in Togo.&lt;/p>
-&lt;p>Run OONI Probe to collect data showing whether and how they (and other sites) are blocked!&lt;/p></description></item><item><title/><link>https://ooni.github.io/msg/2018-01-belarus-test-blocking-of-charter97-org/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2018-01-belarus-test-blocking-of-charter97-org/</guid><description>&lt;h1 id="belarus-test-blocking-of-charter97org">Belarus: Test blocking of charter97.org&lt;/h1>
-&lt;p>Reporters Without Borders reported the blocking of news outlet charter97.org in Belarus: &lt;a href="https://rsf.org/en/news/blocking-leading-belarusian-news-website-seen-test-eu">https://rsf.org/en/news/blocking-leading-belarusian-news-website-seen-test-eu&lt;/a>&lt;/p>
-&lt;p>You can test this site with OONI Probe to examine whether and how it is being blocked. In addition to network measurement data, you will also receive relevant circumvention advice.&lt;/p>
-&lt;p>Simply &lt;a href="https://run.ooni.io/nettest?tn=web_connectivity&amp;ta=%7B%22urls%22%3A%5B%22https%3A%2F%2Fcharter97.org%22%5D%7D&amp;mv=1.2.0">click on this link&lt;/a> (&amp;amp; open it with your OONI Probe mobile app) to test charter97.org with OONI Probe.&lt;/p>
-&lt;p>To view the results:&lt;/p></description></item><item><title/><link>https://ooni.github.io/msg/2018-07-19-ux-survey/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2018-07-19-ux-survey/</guid><description>&lt;h1 id="help-us-improve-ooni-probe">Help us improve OONI Probe&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Msg on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/msg/</link><description>Recent content in Msg on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/msg/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/msg/2017-08-23-angola-elections/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2017-08-23-angola-elections/</guid><description>&lt;h1 id="angolan-legislative-election-2017" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#angolan-legislative-election-2017">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Angolan Legislative Election 2017
+&lt;/h1>
+&lt;p>Election day is an important day, but so are the days following an election.&lt;/p></description></item><item><title/><link>https://ooni.github.io/msg/2017-09-06-togo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2017-09-06-togo/</guid><description>&lt;h1 id="facebook-and-whatsapp-blocked-in-togo" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#facebook-and-whatsapp-blocked-in-togo">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Facebook and WhatsApp blocked in Togo?
+&lt;/h1>
+&lt;p>Today, 6th September 2017, we heard that Facebook and WhatsApp are inaccessible in Togo.&lt;/p></description></item><item><title/><link>https://ooni.github.io/msg/2018-01-belarus-test-blocking-of-charter97-org/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2018-01-belarus-test-blocking-of-charter97-org/</guid><description>&lt;h1 id="belarus-test-blocking-of-charter97org" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#belarus-test-blocking-of-charter97org">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Belarus: Test blocking of charter97.org
+&lt;/h1>
+&lt;p>Reporters Without Borders reported the blocking of news outlet charter97.org in Belarus: &lt;a href="https://rsf.org/en/news/blocking-leading-belarusian-news-website-seen-test-eu">https://rsf.org/en/news/blocking-leading-belarusian-news-website-seen-test-eu&lt;/a>&lt;/p></description></item><item><title/><link>https://ooni.github.io/msg/2018-07-19-ux-survey/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2018-07-19-ux-survey/</guid><description>&lt;h1 id="help-us-improve-ooni-probe" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#help-us-improve-ooni-probe">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Help us improve OONI Probe
+&lt;/h1>
 &lt;p>Thanks for using OONI Probe! We&amp;rsquo;re excited to hear more about your experience with OONI Probe so that
-we can improve it.&lt;/p>
-&lt;p>Please take a few minutes to complete our survey:
-&lt;a href="https://ooniuxteam.typeform.com/to/a1P0cn">https://ooniuxteam.typeform.com/to/a1P0cn&lt;/a>&lt;/p>
-&lt;p>Alternatively, you can fill out the survey using Tor&amp;rsquo;s self-hosted
-version of it:
-&lt;a href="https://storm.torproject.org/shared/VpAFK13fdAozTGTolFd2EsT1CkLY8-YlBLbRERy5EwI">https://storm.torproject.org/shared/VpAFK13fdAozTGTolFd2EsT1CkLY8-YlBLbRERy5EwI&lt;/a>&lt;/p>
-&lt;p>Thank you!&lt;/p></description></item><item><title/><link>https://ooni.github.io/msg/2020-01-16-wikipedia-turkey/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2020-01-16-wikipedia-turkey/</guid><description>&lt;h1 id="document-the-unblocking-of-wikipedia">Document the unblocking of Wikipedia&lt;/h1>
-&lt;p>Wikipedia is reportedly unblocked in Turkey, after having been blocked for more than 2 years.&lt;/p>
-&lt;p>Document this important development by testing Wikipedia domains with OONI Probe:&lt;/p>
-&lt;h2 id="1---open-your-browser-and-type-httpsooniorgget-involvedrun">1 - Open your browser and type &lt;code>https://ooni.org/get-involved/run&lt;/code>&lt;/h2>
-&lt;p>&lt;img alt="Open in browser" src="https://ooni.github.io/msg/2020-01-16-wikipedia-turkey/browser.png">&lt;/p>
-&lt;h2 id="2---tap-on-the-wikipedia-button-and-open-with-the-ooni-probe-app">2 - Tap on the &lt;strong>Wikipedia button&lt;/strong> and open with the OONI Probe app&lt;/h2>
-&lt;p>&lt;img alt="Open with OONI Probe" src="https://ooni.github.io/msg/2020-01-16-wikipedia-turkey/open-with-ooni-probe.png">&lt;/p>
-&lt;h2 id="3---tap-run">3 - Tap &lt;strong>Run&lt;/strong>&lt;/h2>
-&lt;p>&lt;img alt="Test Wikipedia domains" src="https://ooni.github.io/msg/2020-01-16-wikipedia-turkey/run.png">&lt;/p>
-&lt;p>The results will automatically get published here: &lt;a href="https://explorer.ooni.org/search?until=2020-01-17&amp;domain=www.wikipedia.org&amp;probe_cc=TR">https://explorer.ooni.org/search?until=2020-01-17&amp;domain=www.wikipedia.org&amp;probe_cc=TR&lt;/a>&lt;/p></description></item></channel></rss>
+we can improve it.&lt;/p></description></item><item><title/><link>https://ooni.github.io/msg/2020-01-16-wikipedia-turkey/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/msg/2020-01-16-wikipedia-turkey/</guid><description>&lt;h1 id="document-the-unblocking-of-wikipedia" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#document-the-unblocking-of-wikipedia">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Document the unblocking of Wikipedia
+&lt;/h1>
+&lt;p>Wikipedia is reportedly unblocked in Turkey, after having been blocked for more than 2 years.&lt;/p></description></item></channel></rss>

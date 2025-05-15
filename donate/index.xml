@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Donate on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/donate/</link><description>Recent content in Donate on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/donate/index.xml" rel="self" type="application/rss+xml"/><item><title>Other ways to donate to OONI</title><link>https://ooni.github.io/donate/other/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/donate/other/</guid><description>&lt;p>Thank you for your interest in supporting the OONI-verse!&lt;/p>
-&lt;h2 id="bank-transfer--sepa">Bank Transfer / SEPA&lt;/h2>
-&lt;p>You can donate to OONI by doing a wire transfer to the following bank information:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Beneficiary Name&lt;/strong>: Open Observatory of Network Interference (OONI)&lt;/li>
-&lt;li>&lt;strong>Beneficiary Address&lt;/strong>: Via Ostiense 131L, 00154, Rome, Italy&lt;/li>
-&lt;li>&lt;strong>Bank Name&lt;/strong>: Banca di Credito Cooperativo di roma (BCC Rome)&lt;/li>
-&lt;li>&lt;strong>Bank Street&lt;/strong>: Piazza Nicosia, 31 Rome 00186 Italy&lt;/li>
-&lt;li>&lt;strong>IBAN&lt;/strong>: IT85B0832703221000000005814&lt;/li>
-&lt;li>&lt;strong>SWIFT Code&lt;/strong>: ICRAITRRROM&lt;/li>
-&lt;/ul>
-&lt;p>If you require a donation receipt, please send us an email to
-&lt;code>giving@ooni.org&lt;/code> with &amp;lsquo;Donation receipt&amp;rsquo; in the subject line.&lt;/p></description></item><item><title>Thanks for donating to OONI!</title><link>https://ooni.github.io/donate/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/donate/thanks/</guid><description>&lt;p>Your donation means a lot to us, and it will help us support a global community fighting internet censorship.&lt;/p>
+&lt;h2 id="bank-transfer--sepa" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#bank-transfer--sepa">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Bank Transfer / SEPA
+&lt;/h2>
+&lt;p>You can donate to OONI by doing a wire transfer to the following bank information:&lt;/p></description></item><item><title>Thanks for donating to OONI!</title><link>https://ooni.github.io/donate/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/donate/thanks/</guid><description>&lt;p>Your donation means a lot to us, and it will help us support a global community fighting internet censorship.&lt;/p>
 &lt;p>To stay informed about OONI&amp;rsquo;s work, you can &lt;a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk">subscribe to the ooni-talk mailing list&lt;/a>, follow us on &lt;a href="https://twitter.com/openobservatory">Twitter&lt;/a>, and join us on the &lt;a href="https://slack.ooni.org/">OONI Slack channel&lt;/a>.&lt;/p></description></item></channel></rss>

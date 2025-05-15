@@ -47,7 +47,17 @@
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;h2 id="introduction" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#introduction">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Introduction
+&lt;/h2>
 &lt;p>Access to Telegram was blocked in Kenya during the Kenya Certificate of Secondary Education (KCSE) national exams in both &lt;a href="https://explorer.ooni.org/findings/228466228201">November 2023&lt;/a> and &lt;a href="https://explorer.ooni.org/findings/20313562200">November 2024&lt;/a>. This report provides an analysis by the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI) Foundation&lt;/a> on these blocks.&lt;/p></description></item><item><title>Senegal: Social media blocks and network outages amid political unrest</title><link>https://ooni.github.io/post/2023-senegal-social-media-blocks/</link><pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-senegal-social-media-blocks/</guid><description>&lt;p>Violent protests &lt;a href="https://www.aljazeera.com/gallery/2023/6/4/death-toll-mounts-as-unrest-flares-in-senegal">erupted&lt;/a> in Senegal on 1st June 2023 over the sentencing of opposition leader Ousmane Sonko. On the same day, &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=SN&amp;since=2023-05-10&amp;until=2023-06-30&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=whatsapp">OONI data&lt;/a> collected from Senegal showed that ISPs started blocking access to several instant messaging apps and social media platforms (which were also &lt;a href="https://www.bbc.com/news/world-africa-65788534">reported&lt;/a> by several news outlets). Those blocks appear to have been in place for a week (until 7th June 2023). Meanwhile, Cloudflare observed &lt;a href="https://radar.cloudflare.com/as37649?dateStart=2023-06-03&amp;dateEnd=2023-06-10">three disruptions&lt;/a> to traffic from AS37649 (Free/Tigo), and two disruptions at Sudatel Senegal during this period. Following the &lt;a href="https://www.aljazeera.com/news/2023/7/30/senegals-ousmane-sonko-charged-with-fomenting-insurrection">arrest&lt;/a> of Ousmane Sonko on 28th July 2023, the Senegalese Ministry of Communication, Telecommunications and the Digital Economy issued another shutdown order on 31st July 2023 to cut off mobile internet access.&lt;/p></description></item><item><title>Brazil: OONI data on the blocking of Telegram</title><link>https://ooni.github.io/post/2023-brazil-telegram/</link><pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-brazil-telegram/</guid><description>&lt;p>Encontre a versão em português do relatório localizada pela &lt;a href="https://codingrights.org/">Coding Rights&lt;/a> aqui: &lt;a href="https://codingrights.org/library-item/brasil-dados-da-ooni-sobre-o-bloqueio-do-telegram/">https://codingrights.org/library-item/brasil-dados-da-ooni-sobre-o-bloqueio-do-telegram/&lt;/a>&lt;/p>
 &lt;p>Two days ago, on 26th April 2023, Brazil started &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=BR&amp;since=2023-03-29&amp;until=2023-04-29&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=telegram">blocking&lt;/a> access to Telegram.&lt;/p>
 &lt;p>On the same day, a federal judge in Brazil &lt;a href="https://www.dw.com/en/brazil-court-orders-temporary-suspension-of-telegram-over-neo-nazi-probe/a-65446224">reportedly&lt;/a> ordered the temporary suspension of Telegram in response to the messaging service’s alleged failure to share all information on neo-Nazi chat groups requested by the police. This information was &lt;a href="https://www.nytimes.com/2023/04/26/briefing/brazil-telegram-ban.html">reportedly&lt;/a> requested as part of a school attacks inquiry, as Brazilian authorities investigate neo-Nazi groups that are believed to have used Telegram to incite school attacks. However, Telegram’s CEO &lt;a href="https://www.washingtonpost.com/business/2023/04/27/telegram-brazil-block/2ec1c1de-e554-11ed-9696-8e874fd710b8_story.html">claims&lt;/a> (&lt;a href="https://web.telegram.org/z/#-1006503122">on his Telegram channel&lt;/a>) that it’s impossible for them to comply with the order, as the judge requested data that is not feasible for them to obtain.&lt;/p></description></item><item><title>Ethiopia: Ongoing blocking of social media</title><link>https://ooni.github.io/post/2023-ethiopia-blocks-social-media/</link><pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-ethiopia-blocks-social-media/</guid><description>&lt;p>On 9th February 2023, amid church split tensions and calls for
@@ -73,7 +83,17 @@ and
 &lt;li>&lt;strong>Potential blocking of Instant Messaging Apps&lt;/strong>: Apart from this finding period, we found no confirmed blocking in Facebook Messengers, Signal, and Telegram. In spite of this, Facebook Messenger found a large volume of anomalies during the test, which could be a sign of possible blocking. WhatsApp also detected a sign of potential blockings.&lt;/li>
 &lt;li>&lt;strong>Circumvention Tools&lt;/strong>: Circumvention tools appear to be blocked after the coup. As part of this study, Psiphon and Tor circumvention tools were detected accessible across the local networks.&lt;/li>
 &lt;/ul>
-&lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
+&lt;h2 id="table-of-contents" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#table-of-contents">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Table of Contents
+&lt;/h2>
 &lt;p>&lt;strong>&lt;a href="https://ooni.github.io/post/2022-state-of-internet-censorship-myanmar/#introduction">Introduction&lt;/a>&lt;/strong>&lt;/p></description></item><item><title>Technical multi-stakeholder report on Internet shutdowns: The case of Iran amid autumn 2022 protests</title><link>https://ooni.github.io/post/2022-iran-technical-multistakeholder-report/</link><pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-iran-technical-multistakeholder-report/</guid><description>&lt;ul>
 &lt;li>&lt;strong>Coordinators:&lt;/strong> OONI, ISOC&lt;/li>
 &lt;li>&lt;strong>Contributors:&lt;/strong> &lt;a href="https://ooni.org/">OONI&lt;/a>, &lt;a href="https://ioda.inetintel.cc.gatech.edu/">IODA&lt;/a>, &lt;a href="https://www.measurementlab.net/">Measurement Lab (M-Lab)&lt;/a>, &lt;a href="https://www.cloudflare.com/">Cloudflare&lt;/a>, &lt;a href="https://www.kentik.com/">Kentik&lt;/a>, &lt;a href="https://censoredplanet.org/">Censored Planet&lt;/a>, &lt;a href="https://www.internetsociety.org/">ISOC&lt;/a>, &lt;a href="https://www.article19.org/">Article19&lt;/a>&lt;/li>
@@ -96,7 +116,7 @@ technical expertise.&lt;/p></description></item><item><title>Iran blocks social 
  src="https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/images/01_hu6429735702460217004.png"
 
  
-
+ 
  title="Signal blocked in Iran"
  
  alt="Signal blocked in Iran"
@@ -127,7 +147,7 @@ can be circumvented through the use of &lt;a href="https://support.signal.org/hc
  src="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/images/zm-whatsapp-measurement_hu4701194345777220979.png"
 
  
-
+ 
  title="Blocking of WhatsApp"
  
  alt="Blocking of WhatsApp"
@@ -173,7 +193,17 @@ amid Zambia’s 2021 general election.&lt;/p>
 &lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#acknowledgements">Acknowledgements&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="background">Background&lt;/h1>
+&lt;h1 id="background" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#background">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Background
+&lt;/h1>
 &lt;p>While Zambia hasn’t experienced pervasive forms of internet censorship
 (such as the blocking of popular social media apps) over the last years,
 various forms of
@@ -229,7 +259,17 @@ have been reported in the country.&lt;/p></description></item><item><title>Media
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="key-findings">Key Findings&lt;/h2>
+&lt;h2 id="key-findings" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#key-findings">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Key Findings
+&lt;/h2>
 &lt;p>As part of our analysis of &lt;a href="https://explorer.ooni.org/search?since=2021-05-16&amp;probe_cc=AZ">OONI measurements collected from Azerbaijan&lt;/a> between January 2020 to May 2021, we found:&lt;/p></description></item><item><title>Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election</title><link>https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/</link><pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/</guid><description>&lt;p>Last week, amid its &lt;a href="https://www.bbc.com/news/world-africa-55573581">2021 general election&lt;/a>, Uganda was
 &lt;a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=-1w&amp;until=now">disconnected&lt;/a>
 from the internet entirely. The country experienced a &lt;a href="https://www.accessnow.org/the-world-is-watching-uganda-elections/">widespread internet blackout that lasted 4 days&lt;/a>,
@@ -244,7 +284,7 @@ the “Social Media Tax”) was paid&lt;/em>.&lt;/p></description></item><item><
  src="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image_hu15442670431547280122.png"
 
  
-
+ 
  title="WhatsApp blocked in Tanzania on election day"
  
  alt="WhatsApp blocked in Tanzania on election day"

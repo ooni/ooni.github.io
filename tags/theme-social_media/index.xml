@@ -47,7 +47,17 @@
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;h2 id="introduction" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#introduction">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Introduction
+&lt;/h2>
 &lt;p>Access to Telegram was blocked in Kenya during the Kenya Certificate of Secondary Education (KCSE) national exams in both &lt;a href="https://explorer.ooni.org/findings/228466228201">November 2023&lt;/a> and &lt;a href="https://explorer.ooni.org/findings/20313562200">November 2024&lt;/a>. This report provides an analysis by the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI) Foundation&lt;/a> on these blocks.&lt;/p></description></item><item><title>Tanzania: Surge in online LGBTIQ censorship and other targeted blocks</title><link>https://ooni.github.io/post/2024-tanzania-lgbtiq-censorship-and-other-targeted-blocks/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-tanzania-lgbtiq-censorship-and-other-targeted-blocks/</guid><description>&lt;p>This report documents the blocking of LGBTIQ websites and other targeted blocks in Tanzania based on the analysis of &lt;a href="https://explorer.ooni.org/chart/mat?test_name=web_connectivity&amp;axis_x=measurement_start_day&amp;since=2023-12-01&amp;until=2024-01-31&amp;time_grain=day&amp;probe_cc=TZ">OONI data&lt;/a>.&lt;/p>
 &lt;a class="ooni-btn" href="https://ooni.github.io/documents/2024-tz-report-en.pdf">Download in PDF&lt;/a>
 
@@ -85,7 +95,17 @@
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="key-findings">Key Findings&lt;/h2>
+&lt;h2 id="key-findings" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#key-findings">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Key Findings
+&lt;/h2>
 &lt;p>Our analysis of &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=TZ&amp;since=2023-12-01&amp;until=2024-01-31&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=web_connectivity">OONI data&lt;/a> collected from Tanzania over the last year (between 1st January 2023 to 31st January 2024) reveals the &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=TZ&amp;since=2023-12-01&amp;until=2024-01-31&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;axis_y=domain&amp;test_name=web_connectivity&amp;category_code=LGBT">extensive blocking of LGBTIQ sites&lt;/a>, which correlates with the &lt;a href="https://www.ohchr.org/en/press-releases/2018/11/bachelet-tanzania-has-duty-protect-not-further-endanger-lgbt-people">escalating discrimination and crackdown on LGBTIQ communities&lt;/a> in Tanzania in recent years. Many other blocks identified as part of this study appear to be targeted in nature, as they involve very specific websites, while other (more popular) sites from the same category (e.g. social media, human rights) were found accessible.&lt;/p></description></item><item><title>Senegal: Social media blocks and network outages amid political unrest</title><link>https://ooni.github.io/post/2023-senegal-social-media-blocks/</link><pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-senegal-social-media-blocks/</guid><description>&lt;p>Violent protests &lt;a href="https://www.aljazeera.com/gallery/2023/6/4/death-toll-mounts-as-unrest-flares-in-senegal">erupted&lt;/a> in Senegal on 1st June 2023 over the sentencing of opposition leader Ousmane Sonko. On the same day, &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=SN&amp;since=2023-05-10&amp;until=2023-06-30&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=whatsapp">OONI data&lt;/a> collected from Senegal showed that ISPs started blocking access to several instant messaging apps and social media platforms (which were also &lt;a href="https://www.bbc.com/news/world-africa-65788534">reported&lt;/a> by several news outlets). Those blocks appear to have been in place for a week (until 7th June 2023). Meanwhile, Cloudflare observed &lt;a href="https://radar.cloudflare.com/as37649?dateStart=2023-06-03&amp;dateEnd=2023-06-10">three disruptions&lt;/a> to traffic from AS37649 (Free/Tigo), and two disruptions at Sudatel Senegal during this period. Following the &lt;a href="https://www.aljazeera.com/news/2023/7/30/senegals-ousmane-sonko-charged-with-fomenting-insurrection">arrest&lt;/a> of Ousmane Sonko on 28th July 2023, the Senegalese Ministry of Communication, Telecommunications and the Digital Economy issued another shutdown order on 31st July 2023 to cut off mobile internet access.&lt;/p></description></item><item><title>OONI measurements show ongoing internet censorship in Azerbaijan</title><link>https://ooni.github.io/post/2023-azerbaijan-internet-censorship/</link><pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-azerbaijan-internet-censorship/</guid><description>&lt;p>Azerbaijan is known to block access to independent news media websites – we previously &lt;a href="https://ooni.org/post/2021-azerbaijan/">reported&lt;/a> on this in July 2021. At the time, we analyzed OONI measurements collected from Azerbaijan between January 2020 to May 2021 and found that ISPs in Azerbaijan were &lt;a href="https://ooni.org/post/2021-azerbaijan/#blocked-news-media-websites">blocking access to several independent news media&lt;/a> and &lt;a href="https://ooni.org/post/2021-azerbaijan/#blocked-circumvention-tool-sites">circumvention tool sites&lt;/a>. We also found that amid the &lt;a href="https://www.bbc.com/news/world-europe-54324772">2020 Nagorno-Karabakh war&lt;/a>, ISPs in Azerbaijan &lt;a href="https://ooni.org/post/2021-azerbaijan/#blocking-of-social-media-amid-2020-nagorno-karabakh-war">temporarily blocked access to social media&lt;/a> services, and &lt;a href="https://ooni.org/post/2021-azerbaijan/#tor-and-psiphon">attempted to block&lt;/a> access to &lt;a href="https://www.torproject.org/">Tor&lt;/a> and &lt;a href="https://psiphon.ca/">Psiphon&lt;/a>.&lt;/p></description></item><item><title>How Internet censorship changed in Russia during the 1st year of military conflict in Ukraine</title><link>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</guid><description>&lt;a class="ooni-btn" href="https://ooni.github.io/documents/russia-military-conflict-en.pdf">Download in PDF&lt;/a>
 
 &lt;p>As of today, last year, Russia started its &lt;a href="https://www.bbc.com/news/world-60525350">military operation in Ukraine&lt;/a>. This was followed by increased levels of internet censorship, as Internet Service Providers (ISPs) in Russia started &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocking-of-news-media-websites">blocking access to several news media websites&lt;/a>. In early March 2022, OONI published a &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/">report&lt;/a> documenting these blocks, as well as the &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocked-website-about-captured-and-killed-russian-soldiers">blocking of a site&lt;/a> (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine. OONI also reported that Russian ISPs started &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-throttled">throttling access to Twitter&lt;/a> on 26th February 2022, and switched to &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-and-facebook-blocked">blocking&lt;/a> it by 4th March 2022 – at which point, they also started &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;domain=www.facebook.com&amp;probe_cc=RU&amp;only=anomalies">blocking access to Facebook&lt;/a>.&lt;/p></description></item><item><title>Ethiopia: Ongoing blocking of social media</title><link>https://ooni.github.io/post/2023-ethiopia-blocks-social-media/</link><pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-ethiopia-blocks-social-media/</guid><description>&lt;p>On 9th February 2023, amid church split tensions and calls for
@@ -170,7 +190,7 @@ to 30th April 2021&lt;/strong>.&lt;/p></description></item><item><title>Zambia: 
  src="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/images/zm-whatsapp-measurement_hu4701194345777220979.png"
 
  
-
+ 
  title="Blocking of WhatsApp"
  
  alt="Blocking of WhatsApp"
@@ -216,7 +236,17 @@ amid Zambia’s 2021 general election.&lt;/p>
 &lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#acknowledgements">Acknowledgements&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="background">Background&lt;/h1>
+&lt;h1 id="background" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#background">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Background
+&lt;/h1>
 &lt;p>While Zambia hasn’t experienced pervasive forms of internet censorship
 (such as the blocking of popular social media apps) over the last years,
 various forms of
@@ -272,7 +302,17 @@ have been reported in the country.&lt;/p></description></item><item><title>Media
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="key-findings">Key Findings&lt;/h2>
+&lt;h2 id="key-findings" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#key-findings">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Key Findings
+&lt;/h2>
 &lt;p>As part of our analysis of &lt;a href="https://explorer.ooni.org/search?since=2021-05-16&amp;probe_cc=AZ">OONI measurements collected from Azerbaijan&lt;/a> between January 2020 to May 2021, we found:&lt;/p></description></item><item><title>Myanmar: Data on internet blocks and internet outages following military coup</title><link>https://ooni.github.io/post/2021-myanmar-internet-blocks-and-outages/</link><pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-myanmar-internet-blocks-and-outages/</guid><description>&lt;p>On 1st February 2021, the military in Myanmar carried out a &lt;a href="https://www.bbc.com/news/world-asia-55882489">coup d’etat&lt;/a>, seizing power
 and detaining the country’s State Counsellor (equivalent to a prime
 minister) and other democratically elected leaders.&lt;/p>
@@ -298,7 +338,7 @@ the “Social Media Tax”) was paid&lt;/em>.&lt;/p></description></item><item><
  src="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image_hu15442670431547280122.png"
 
  
-
+ 
  title="WhatsApp blocked in Tanzania on election day"
  
  alt="WhatsApp blocked in Tanzania on election day"

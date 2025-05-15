@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nettest on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/nettest/</link><description>Recent content in Nettest on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 24 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/nettest/index.xml" rel="self" type="application/rss+xml"/><item><title>DASH Streaming Test</title><link>https://ooni.github.io/nettest/dash/</link><pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/dash/</guid><description>&lt;h1 id="dash-streaming-test">DASH Streaming Test&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nettest on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/nettest/</link><description>Recent content in Nettest on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 24 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/nettest/index.xml" rel="self" type="application/rss+xml"/><item><title>DASH Streaming Test</title><link>https://ooni.github.io/nettest/dash/</link><pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/dash/</guid><description>&lt;h1 id="dash-streaming-test" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#dash-streaming-test">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ DASH Streaming Test
+&lt;/h1>
 &lt;p>DASH is designed to measure the &lt;em>quality&lt;/em> of tested networks by emulating a
 video streaming. This test is called DASH because it uses the DASH
-(&lt;a href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">Dynamic Adaptive Streaming over HTTP&lt;/a>) streaming technique.&lt;/p>
-&lt;p>Running this test can be useful to understand the baseline streaming
-performance of a specific network connection. It measures video-related
-metrics as well as network metrics that are key to understand the reason of
-performance issues.&lt;/p></description></item><item><title>DNS consistency</title><link>https://ooni.github.io/nettest/dns-consistency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/dns-consistency/</guid><description>&lt;p>This test compares the DNS query results from a DNS resolver which is considered
+(&lt;a href="https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP">Dynamic Adaptive Streaming over HTTP&lt;/a>) streaming technique.&lt;/p></description></item><item><title>DNS consistency</title><link>https://ooni.github.io/nettest/dns-consistency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/dns-consistency/</guid><description>&lt;p>This test compares the DNS query results from a DNS resolver which is considered
 to be reliable with one that is tested for tampering.&lt;/p>
 &lt;p>The domain name system (DNS) is what is responsible for transforming a host name
 (e.g. torproject.org) into an IP address (e.g. 38.229.72.16). ISPs, amongst
@@ -100,38 +106,65 @@ the speed and performance of networks by connecting to M-Lab servers close to
 the user, and by subsequently uploading and downloading random data. In doing
 so, NDT collects TCP/IP low level information that is useful to examining and
 characterizing the quality of the network path between the user and the mLab
-server.&lt;/p></description></item><item><title>Psiphon</title><link>https://ooni.github.io/nettest/psiphon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/psiphon/</guid><description>&lt;h2 id="about-psiphon">About Psiphon&lt;/h2>
+server.&lt;/p></description></item><item><title>Psiphon</title><link>https://ooni.github.io/nettest/psiphon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/psiphon/</guid><description>&lt;h2 id="about-psiphon" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about-psiphon">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About Psiphon
+&lt;/h2>
 &lt;p>&lt;a href="https://psiphon.ca/">Psiphon&lt;/a> is a free and open source tool that utilizes VPN, SSH, and HTTP proxy
 technology for censorship circumvention. The &lt;a href="https://psiphon.ca/en/download.html">Psiphon VPN&lt;/a> essentially serves as a
 tunnel that enables you to circumvent censorship because you access resources on
-the internet through the non-censored tunnel that Psiphon provides.&lt;/p>
-&lt;p>In an attempt to limit censorship circumvention, some governments have &lt;a href="https://ooni.org/post/iran-internet-censorship/#anonymity-and-circumvention-tools">blocked&lt;/a>
-access to Psiphon. OONI has therefore developed an &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> test that anyone
-can run to measure the reachability of the Psiphon app.&lt;/p></description></item><item><title>RiseupVPN</title><link>https://ooni.github.io/nettest/riseupvpn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/riseupvpn/</guid><description>&lt;h2 id="about-riseupvpn">About RiseupVPN&lt;/h2>
-&lt;p>&lt;a href="https://riseup.net/vpn">RiseupVPN&lt;/a> is a non-commercial, donation-based VPN service. It offers simple-to-use clients to secure your internet traffic against surveillance and to circumvent internet censorship. RiseupVPN doesn&amp;rsquo;t log any user data and doesn&amp;rsquo;t require registration. The software is based on &lt;a href="https://leap.se/">LEAP VPN&lt;/a>, an open source VPN solution, and is run by the &lt;a href="https://riseup.net/about-us">Riseup collective&lt;/a> which has been offering privacy-preserving online services for activists for more than 20 years.&lt;/p>
-&lt;h2 id="riseupvpn-test">RiseupVPN test&lt;/h2>
-&lt;p>The &lt;strong>RiseupVPN test&lt;/strong>, contributed by the &lt;a href="https://leap.se/">LEAP collective&lt;/a>, provides an automated way of examining whether RiseupVPN works in a tested network.&lt;/p></description></item><item><title>Signal test</title><link>https://ooni.github.io/nettest/signal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/signal/</guid><description>&lt;h2 id="about-signal">About Signal&lt;/h2>
-&lt;p>&lt;a href="https://signal.org/">Signal&lt;/a> is a free and open source messaging app for encrypted voice calls and instant messages.&lt;/p>
-&lt;p>Signal provides security by encrypting communications in transit (end-to-end encryption) and by ensuring that past communications are secure even if encryption keys are stolen (forward secrecy). Several applications, such as WhatsApp, use the Signal protocol for encryption.&lt;/p>
-&lt;h2 id="signal-test">Signal test&lt;/h2>
-&lt;p>The &lt;strong>OONI Probe Signal test&lt;/strong> is designed to measure the reachability of the Signal messaging app within a tested network.&lt;/p></description></item><item><title>Telegram test</title><link>https://ooni.github.io/nettest/telegram/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/telegram/</guid><description>&lt;p>This test is designed to examine the reachability of Telegram&amp;rsquo;s app and web
+the internet through the non-censored tunnel that Psiphon provides.&lt;/p></description></item><item><title>RiseupVPN</title><link>https://ooni.github.io/nettest/riseupvpn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/riseupvpn/</guid><description>&lt;h2 id="about-riseupvpn" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about-riseupvpn">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About RiseupVPN
+&lt;/h2>
+&lt;p>&lt;a href="https://riseup.net/vpn">RiseupVPN&lt;/a> is a non-commercial, donation-based VPN service. It offers simple-to-use clients to secure your internet traffic against surveillance and to circumvent internet censorship. RiseupVPN doesn&amp;rsquo;t log any user data and doesn&amp;rsquo;t require registration. The software is based on &lt;a href="https://leap.se/">LEAP VPN&lt;/a>, an open source VPN solution, and is run by the &lt;a href="https://riseup.net/about-us">Riseup collective&lt;/a> which has been offering privacy-preserving online services for activists for more than 20 years.&lt;/p></description></item><item><title>Signal test</title><link>https://ooni.github.io/nettest/signal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/signal/</guid><description>&lt;h2 id="about-signal" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about-signal">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About Signal
+&lt;/h2>
+&lt;p>&lt;a href="https://signal.org/">Signal&lt;/a> is a free and open source messaging app for encrypted voice calls and instant messages.&lt;/p></description></item><item><title>Telegram test</title><link>https://ooni.github.io/nettest/telegram/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/telegram/</guid><description>&lt;p>This test is designed to examine the reachability of Telegram&amp;rsquo;s app and web
 version within a tested network.&lt;/p>
 &lt;p>More specifically, this test attempts to perform an HTTP POST request, and
 establish a TCP connection to Telegram’s access points (DCs), as well as an
 HTTPS GET request to Telegram&amp;rsquo;s web version (&lt;code>web.telegram.org&lt;/code>) over the
 vantage point of the user. The test is triggered as blocking when connections
 to &lt;em>all&lt;/em> access points defined in the &lt;a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/telegram.py#L16-L22">test&lt;/a>
-fail.&lt;/p></description></item><item><title>Tor</title><link>https://ooni.github.io/nettest/tor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/tor/</guid><description>&lt;h2 id="about-tor">About Tor&lt;/h2>
+fail.&lt;/p></description></item><item><title>Tor</title><link>https://ooni.github.io/nettest/tor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/tor/</guid><description>&lt;h2 id="about-tor" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about-tor">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About Tor
+&lt;/h2>
 &lt;p>The &lt;a href="https://www.torproject.org/">Tor network&lt;/a>, which is free and open source, provides its users with online
 anonymity, privacy, and censorship circumvention. Tor software is designed to
 bounce communications around a distributed network of relays run by volunteers
 around the world, thereby hiding its users’ IP addresses and enabling them to
-circumvent online tracking and internet censorship.&lt;/p>
-&lt;p>In an attempt to limit online anonymity and circumvention, some governments have
-&lt;a href="https://ooni.org/post/iran-internet-censorship/#anonymity-and-circumvention-tools">blocked&lt;/a> access to Tor. The Tor Project has therefore created &lt;a href="https://bridges.torproject.org/">Tor bridges&lt;/a>,
-enabling the circumvention of Tor blocking. &lt;a href="https://www.torproject.org/download/">Tor Browser&lt;/a> &amp;ndash; the main way that Tor
-is used by millions of users around the world &amp;ndash; is shipped with a set of public
-bridges (called &lt;a href="https://bridges.torproject.org/bridges?transport=obfs4">obfs4&lt;/a>) that users in censored environments can enable.&lt;/p></description></item><item><title>Tor Bridge Reachability</title><link>https://ooni.github.io/nettest/tor-bridge-reachability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/tor-bridge-reachability/</guid><description>&lt;p>This test examines whether &lt;strong>&lt;a href="https://bridges.torproject.org/">Tor bridges&lt;/a>&lt;/strong>
+circumvent online tracking and internet censorship.&lt;/p></description></item><item><title>Tor Bridge Reachability</title><link>https://ooni.github.io/nettest/tor-bridge-reachability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/tor-bridge-reachability/</guid><description>&lt;p>This test examines whether &lt;strong>&lt;a href="https://bridges.torproject.org/">Tor bridges&lt;/a>&lt;/strong>
 work in tested networks.&lt;/p>
 &lt;p>&lt;a href="https://www.torproject.org/">Tor&lt;/a> is free and open source software which
 enables online anonymity and censorship circumvention. It was designed to bounce
@@ -140,16 +173,19 @@ the world, thus hiding users&amp;rsquo; IP address and circumventing online trac
 censorship. However, Internet Service Providers (ISPs) in various countries
 around the world are often ordered by their governments to block users&amp;rsquo; access
 to Tor. As a result, Tor bridges were developed to enable users to connect to
-the Tor network in countries where such access is blocked.&lt;/p></description></item><item><title>Tor Snowflake</title><link>https://ooni.github.io/nettest/tor-snowflake/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/tor-snowflake/</guid><description>&lt;h2 id="about-tor-snowflake">About Tor Snowflake&lt;/h2>
+the Tor network in countries where such access is blocked.&lt;/p></description></item><item><title>Tor Snowflake</title><link>https://ooni.github.io/nettest/tor-snowflake/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/tor-snowflake/</guid><description>&lt;h2 id="about-tor-snowflake" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about-tor-snowflake">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About Tor Snowflake
+&lt;/h2>
 &lt;p>The &lt;a href="https://www.torproject.org/">Tor network&lt;/a>, which is free and open source, provides its users with online
-anonymity, privacy, and censorship circumvention.&lt;/p>
-&lt;p>In an attempt to limit online anonymity and circumvention, some governments have
-&lt;a href="https://ooni.org/post/iran-internet-censorship/#anonymity-and-circumvention-tools">blocked&lt;/a> access to Tor. The Tor Project therefore created &lt;a href="https://gitlab.torproject.org/legacy/trac/-/wikis/doc/PluggableTransports">pluggable transports&lt;/a>
-to help users (who can&amp;rsquo;t access the Tor network) circumvent Tor blocking.&lt;/p>
-&lt;p>&lt;a href="https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/wikis/home">Snowflake&lt;/a> is a pluggable transport that proxies traffic through temporary
-proxies using &lt;a href="https://webrtc.org/">WebRTC&lt;/a>, a peer-to-peer protocol with built-in NAT punching. You
-can run a proxy by installing the &lt;a href="https://snowflake.torproject.org/">Snowflake&lt;/a> browser extension on &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/">Firefox&lt;/a> or
-&lt;a href="https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie">Chrome&lt;/a>. In doing so, you will help Tor users circumvent censorship.&lt;/p></description></item><item><title>Vanilla Tor</title><link>https://ooni.github.io/nettest/vanilla-tor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/vanilla-tor/</guid><description>&lt;p>This test measures the reachability of the &lt;a href="https://www.torproject.org/">Tor network&lt;/a> (which is designed for online anonymity
+anonymity, privacy, and censorship circumvention.&lt;/p></description></item><item><title>Vanilla Tor</title><link>https://ooni.github.io/nettest/vanilla-tor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/nettest/vanilla-tor/</guid><description>&lt;p>This test measures the reachability of the &lt;a href="https://www.torproject.org/">Tor network&lt;/a> (which is designed for online anonymity
 and censorship circumvention).&lt;/p>
 &lt;p>The Vanilla Tor test attempts to start a connection to the Tor network. If the
 test successfully bootstraps a connection within a predefined amount of seconds (300 by default),

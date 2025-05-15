@@ -2,13 +2,18 @@
 &lt;p>Image: Catalan Independence Referendum site seized&lt;/p>
 &lt;p>&lt;strong>Note:&lt;/strong> This post was originally published &lt;a href="https://ooni.github.io/es/post/internet-censorship-catalonia-independence-referendum/">here&lt;/a> on 3rd October 2017. Below we provide a Spanish translation from the community.&lt;/p>
 &lt;p>Hace dos días, Cataluña celebró un &lt;a href="http://time.com/4951665/catalan-referendum-2017/">referéndum de independencia&lt;/a> de España. Mientras el mundo espera a ver qué ocurre a continuación, publicamos este artículo para compartir &lt;a href="https://api.ooni.io/files/by_country/ES">evidencias&lt;/a> de eventos recientes de censura que ocurrieron poco antes y durante el referéndum.&lt;/p>
-&lt;p>Confirmamos el bloqueo de al menos 25 sitios web relacionados con el referéndum catalán mediante las técnicas de &amp;ldquo;DNS tampering&amp;rdquo; (manipulación de DNS) y &amp;ldquo;HTTP blocking&amp;rdquo; (bloqueo de HTTP), basado en medidas recogidas por &amp;ldquo;&lt;a href="https://explorer.ooni.org/country/ES">OONI Probe network&lt;/a>&amp;rdquo; (red de sondas de OONI) desde tres redes locales. Los datos de OONI muestran que estos sitios fueron bloqueados cada día desde (al menos) el 25 de septiembre de 2017 (cuando la prueba comenzó) hasta el día del referéndum, el 1 de octubre de 2017.&lt;/p></description></item><item><title/><link>https://ooni.github.io/es/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/about/risks/</guid><description>&lt;h1 id="riesgos-lo-que-debes-saber-antes-de-ejecutar-ooni-probe">Riesgos: Lo que debes saber antes de ejecutar OONI Probe&lt;/h1>
-&lt;p>&lt;strong>Note:&lt;/strong> This document was translated by &lt;a href="https://www.derechosdigitales.org/">Derechos Digitales&lt;/a> (&lt;a href="https://ooni.github.io/es/about/risks/">view the english version&lt;/a>).&lt;/p>
-&lt;p>Según nuestro conocimiento, ningún usuario de OONI Probe ha sufrido consecuencias
-como resultado del uso de nuestro software. Por lo tanto, los riesgos
-potenciales descritos a continuación son teóricos y especulativos. Si estás
-ejecutando OONI Probe en un entorno de alto riesgo, enfáticamente te recomendamos
-a leer toda la documentación a continuación.&lt;/p></description></item><item><title/><link>https://ooni.github.io/es/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/support/ooni-outreach-kit/</guid><description>&lt;div>
+&lt;p>Confirmamos el bloqueo de al menos 25 sitios web relacionados con el referéndum catalán mediante las técnicas de &amp;ldquo;DNS tampering&amp;rdquo; (manipulación de DNS) y &amp;ldquo;HTTP blocking&amp;rdquo; (bloqueo de HTTP), basado en medidas recogidas por &amp;ldquo;&lt;a href="https://explorer.ooni.org/country/ES">OONI Probe network&lt;/a>&amp;rdquo; (red de sondas de OONI) desde tres redes locales. Los datos de OONI muestran que estos sitios fueron bloqueados cada día desde (al menos) el 25 de septiembre de 2017 (cuando la prueba comenzó) hasta el día del referéndum, el 1 de octubre de 2017.&lt;/p></description></item><item><title/><link>https://ooni.github.io/es/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/about/risks/</guid><description>&lt;h1 id="riesgos-lo-que-debes-saber-antes-de-ejecutar-ooni-probe" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#riesgos-lo-que-debes-saber-antes-de-ejecutar-ooni-probe">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Riesgos: Lo que debes saber antes de ejecutar OONI Probe
+&lt;/h1>
+&lt;p>&lt;strong>Note:&lt;/strong> This document was translated by &lt;a href="https://www.derechosdigitales.org/">Derechos Digitales&lt;/a> (&lt;a href="https://ooni.github.io/es/about/risks/">view the english version&lt;/a>).&lt;/p></description></item><item><title/><link>https://ooni.github.io/es/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/support/ooni-outreach-kit/</guid><description>&lt;div>
  &lt;a href="https://ooni.github.io/support/ooni-outreach-kit/images/image1.png">
  &lt;img
  src="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu116634532574350516.png"
@@ -16,7 +21,7 @@ a leer toda la documentación a continuación.&lt;/p></description></item><item>
  
  srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
  
-
+ 
  title="OONI Outreach Kit"
  
  alt="OONI Outreach Kit"
@@ -45,7 +50,17 @@ a leer toda la documentación a continuación.&lt;/p></description></item><item>
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="folletos-de-ooni">Folletos de OONI&lt;/h2>
+&lt;h2 id="folletos-de-ooni" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#folletos-de-ooni">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Folletos de OONI
+&lt;/h2>
 &lt;p>Proporcionamos dos folletos de OONI que incluyen información acerca del uso de herramientas y datos de OONI para investigar la censura de Internet alrededor del mundo.&lt;/p></description></item><item><title>OONI Glosario</title><link>https://ooni.github.io/es/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/es/support/glossary/</guid><description>&lt;p>Este documento fue traducido al español por Katherine Pennacchio y Mariengracia Chirinos.&lt;/p>
 &lt;p>Documento original:&lt;/p>
 &lt;ul>

@@ -2,13 +2,18 @@
 &lt;p>Уже через неделю после начала конфликта интернет-провайдеры в России &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocking-of-news-media-websites">начали блокировать&lt;/a> доступ к нескольким иностранным новостным сайтам (таким как &lt;a href="https://explorer.ooni.org/search?since=2022-02-03&amp;until=2022-03-07&amp;failure=false&amp;domain=www.bbc.com&amp;probe_cc=RU&amp;only=anomalies">BBC&lt;/a> и &lt;a href="https://explorer.ooni.org/search?since=2022-02-03&amp;until=2022-03-07&amp;failure=false&amp;domain=www.dw.com&amp;probe_cc=RU&amp;only=anomalies">Deutsche Welle&lt;/a>) и независимым российским новостным сайтам (таким как &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#meduza">Meduza&lt;/a> и &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#new-times">New Times&lt;/a>). В течение первого года цензура независимых новостных СМИ в России стала повсеместной. В нашем предыдущем отчете мы &lt;a href="https://ooni.org/post/2023-russia-a-year-after-the-conflict/#blocked-websites">подтвердили блокировку 139 доменов новостных СМИ&lt;/a> в России.&lt;/p></description></item><item><title>Казахстан: TLS MITM атаки и блокировка сайтов новостных и правозащитных ресурсов, а также сайтов инструментов по обходу блокировок</title><link>https://ooni.github.io/ru/post/2024-kazakhstan-report/</link><pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/post/2024-kazakhstan-report/</guid><description>&lt;p>В последние годы об интерент-цензуре в Казахстане &lt;a href="https://freedomhouse.org/country/kazakhstan/freedom-net/2023">писали&lt;/a> довольно много. В рамках этого исследования, &lt;a href="https://ooni.org/">OONI&lt;/a> и организация &lt;a href="https://ifkz.org/en">Internet Freedom Kazakhstan (IFKZ)&lt;/a> совместно с &lt;a href="https://www.digitalrights.asia">Евразийским цифровым фондом&lt;/a> провели исследование интернет-цензуры в Казахстане за последний год (с июня 2023 года по июнь 2024 года) на основе анализа эмпирических данных в виде сетевых измерений.&lt;/p>
 &lt;p>В этом отчете мы делимся результатами измерений OONI и соответствующим правовым контекстом. Мы обнаружили заблокироваными в Казахстане с помощью TLS-вмешательства множество сайтов &lt;a href="https://explorer.ooni.org/search?probe_cc=KZ&amp;test_name=web_connectivity&amp;since=2023-06-01&amp;until=2024-06-01&amp;failure=false&amp;category_code=NEWS&amp;only=anomalies">новостных СМИ&lt;/a>, &lt;a href="https://explorer.ooni.org/chart/mat?test_name=web_connectivity&amp;axis_x=measurement_start_day&amp;since=2023-06-01&amp;until=2024-06-01&amp;time_grain=day&amp;probe_cc=KZ&amp;axis_y=domain&amp;domain=www.ipetitions.com%2Cwww.change.org%2Cegov.press%2Camnesty.org.ru">правозащитных организаций&lt;/a> и &lt;a href="https://explorer.ooni.org/chart/mat?test_name=web_connectivity&amp;axis_x=measurement_start_day&amp;since=2023-06-01&amp;until=2024-06-01&amp;time_grain=day&amp;probe_cc=KZ&amp;axis_y=domain&amp;category_code=ANON">инструментов обхода блокировки&lt;/a>. Мы также задокументировали 7 различных промежуточных сертификатов подписанных четырьмя уникальными корневыми сертификатами (НУЦ РК), которые использовались для проведения атак типа &lt;a href="https://explorer.ooni.org/m/20210808015758.022737_KZ_webconnectivity_3b9213f9ee4f2d06">&amp;ldquo;man-in-the-middle&amp;rdquo; (MITM) в рамках TLS-рукопожатия&lt;/a> в случае подключения к не менее 14 различным доменным именам в не менее чем 19 различных сетях в Казахстане. Более подробная информация представлена ниже.&lt;/p></description></item><item><title>Год военной цензуры в России</title><link>https://ooni.github.io/ru/post/2023-russia-a-year-after-the-conflict/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/post/2023-russia-a-year-after-the-conflict/</guid><description>&lt;a class="ooni-btn" href="https://ooni.github.io/documents/russia-military-conflict-ru.pdf">Скачать в PDF&lt;/a>
 
-&lt;p>Ровно год назад в этот день Россия начала &lt;a href="https://www.bbc.com/news/world-60525350">военную операцию в Украине&lt;/a>. За этим последовало усиление интернет-цензуры: интернет-провайдеры в России начали &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocking-of-news-media-websites">блокировать доступ к различным местным и международным медиа&lt;/a>. В начале марта 2022 года OONI опубликовали &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/">отчет&lt;/a>, в котором задокументированы эти блокировки, а также блокировка &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocked-website-about-captured-and-killed-russian-soldiers">сайта&lt;/a> (200rf.com), на котором размещена информация о российских солдатах захваченных и убитых в Украине. OONI также заметил, что российские интернет-провайдеры начали &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-throttled">ограничивать доступ&lt;/a> к Twitter 26-го февраля 2022 года и перешли на его &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-and-facebook-blocked">блокировку&lt;/a> к 4-му марта 2022 года,вскоре после этого они также начали &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;domain=www.facebook.com&amp;probe_cc=RU&amp;only=anomalies">блокировать&lt;/a> Facebook.&lt;/p></description></item><item><title/><link>https://ooni.github.io/ru/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/about/risks/</guid><description>&lt;h1 id="риски-что-вы-должны-знать-до-запуска-ooni-probe">Риски: что вы должны знать до запуска OONI Probe&lt;/h1>
-&lt;p>Оригинальный текст:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>English,&lt;/strong> &lt;a href="https://ooni.github.io/ru/about/risks/">Risks: Things you should know before running OONI Probe&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>На русский язык документ переведен Татьяной Болдыревой.&lt;/p>
-&lt;p>Насколько нам известно, ни один пользователь OONI Probe никогда не сталкивался с последствиями в результате использования нашего программного обеспечения. Поэтому описанные ниже потенциальные риски являются теоретическими и весьма умозрительными. Если вы используете OONI Probe в «среде повышенного риска», мы настоятельно рекомендуем вам прочитать всю документацию, приведенную ниже.&lt;/p></description></item><item><title>«Часто задаваемые вопросы» (FAQ)</title><link>https://ooni.github.io/ru/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/faq/</guid><description>&lt;p>Этот раздел «Часто задаваемые вопросы» (FAQ) предназначен для ответа на вопросы, которые нам часто задают участники нашего сообщества.&lt;/p>
+&lt;p>Ровно год назад в этот день Россия начала &lt;a href="https://www.bbc.com/news/world-60525350">военную операцию в Украине&lt;/a>. За этим последовало усиление интернет-цензуры: интернет-провайдеры в России начали &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocking-of-news-media-websites">блокировать доступ к различным местным и международным медиа&lt;/a>. В начале марта 2022 года OONI опубликовали &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/">отчет&lt;/a>, в котором задокументированы эти блокировки, а также блокировка &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocked-website-about-captured-and-killed-russian-soldiers">сайта&lt;/a> (200rf.com), на котором размещена информация о российских солдатах захваченных и убитых в Украине. OONI также заметил, что российские интернет-провайдеры начали &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-throttled">ограничивать доступ&lt;/a> к Twitter 26-го февраля 2022 года и перешли на его &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-and-facebook-blocked">блокировку&lt;/a> к 4-му марта 2022 года,вскоре после этого они также начали &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;domain=www.facebook.com&amp;probe_cc=RU&amp;only=anomalies">блокировать&lt;/a> Facebook.&lt;/p></description></item><item><title/><link>https://ooni.github.io/ru/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/about/risks/</guid><description>&lt;h1 id="риски-что-вы-должны-знать-до-запуска-ooni-probe" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#%d1%80%d0%b8%d1%81%d0%ba%d0%b8-%d1%87%d1%82%d0%be-%d0%b2%d1%8b-%d0%b4%d0%be%d0%bb%d0%b6%d0%bd%d1%8b-%d0%b7%d0%bd%d0%b0%d1%82%d1%8c-%d0%b4%d0%be-%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba%d0%b0-ooni-probe">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Риски: что вы должны знать до запуска OONI Probe
+&lt;/h1>
+&lt;p>Оригинальный текст:&lt;/p></description></item><item><title>«Часто задаваемые вопросы» (FAQ)</title><link>https://ooni.github.io/ru/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/faq/</guid><description>&lt;p>Этот раздел «Часто задаваемые вопросы» (FAQ) предназначен для ответа на вопросы, которые нам часто задают участники нашего сообщества.&lt;/p>
 &lt;p>Оригинал:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>English,&lt;/strong> &lt;a href="https://ooni.org/support/faq/">Frequently Asked Questions (FAQ)&lt;/a>&lt;/li>
@@ -46,7 +51,7 @@
  
  srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
  
-
+ 
  title="OONI Outreach Kit"
  
  alt="OONI Outreach Kit"
@@ -75,7 +80,17 @@
  &lt;/ul>
 &lt;/nav>
 
-&lt;h2 id="брошюры-ooni">Брошюры OONI&lt;/h2>
+&lt;h2 id="брошюры-ooni" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#%d0%b1%d1%80%d0%be%d1%88%d1%8e%d1%80%d1%8b-ooni">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Брошюры OONI
+&lt;/h2>
 &lt;p>У нас есть 2 брошюры, которые включают информацию об использовании инструментов OONI и открытых данных OONI, которые могут быть использованы для исследования цензуры по всему миру.&lt;/p></description></item><item><title>Глоссарий OONI</title><link>https://ooni.github.io/ru/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ru/support/glossary/</guid><description>&lt;p>&lt;strong>Дата последнего обновления&lt;/strong>: 3 июля 2023&lt;/p>
 &lt;p>Этот глоссарий содержит &lt;em>краткие пояснения&lt;/em> терминов, используемых в приложениях, методологии и исследовательских отчетах OONI.&lt;/p>
 &lt;p>Этот документ был переведен на русский Татьяной Болдыревой.&lt;/p>
@@ -140,7 +155,7 @@
  
  srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu2811019159506606390.png 2x"
  
-
+ 
  title="Install OONI Probe Desktop"
  
  alt="Install OONI Probe Desktop"
@@ -183,7 +198,7 @@
  src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu9506725050971740468.png"
 
  
-
+ 
  title="Measure Internet Censorship"
  
  alt="Measure Internet Censorship"

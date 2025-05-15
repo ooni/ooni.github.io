@@ -23,7 +23,7 @@ targeted the TLS protocol. And it was configured in an interesting way.">
     
       
         
-          <link rel="stylesheet" href="/css/tailwind.b55f4c4c0f897b96c9cbed996f17b2e7bfdc4b76a4891eb7db0c64d7e071a823.css" integrity="sha256-tV9MTA&#43;Je5bJy&#43;2Zbxey57/cS3akiR632wxk1&#43;BxqCM=" crossorigin="anonymous">
+          <link rel="stylesheet" href="/css/tailwind.7cc78857b8f8d2663923ee3914521c9825d6b1a9aee868aad035e1422e315c32.css" integrity="sha256-fMeIV7j40mY5I&#43;45FFIcmCXWsamu6Giq0DXhQi4xXDI=" crossorigin="anonymous">
         
       
     
@@ -50,7 +50,8 @@ have since been analyzing RIPE data and other network measurements collected
 from Iran in an attempt to better understand the blockages. Upon further
 analysis, we found that Instagram was in fact blocked (during the Iran
 protests) through the use of Deep Packet Inspection (DPI) technology which
-targeted the TLS protocol. And it was configured in an interesting way.</p><h2 id=tls-is-fun>TLS is fun</h2><p>First, most Iranian RIPE Atlas probes
+targeted the TLS protocol. And it was configured in an interesting way.</p><h2 id=tls-is-fun class="group flex flex-row flex-wrap items-center"><a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href=#tls-is-fun><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 24 24"><g><path d="M22.394531 1.605469c-2.144531-2.140625-5.632812-2.140625-7.773437.0L11.230469 4.996094 12.796875 6.5625 16.1875 3.171875c1.277344-1.28125 3.359375-1.277344 4.640625.0 1.28125 1.28125 1.277344 3.363281.0 4.644531l-5.089844 5.085938C15.121094 13.523438 14.296875 13.863281 13.417969 13.863281c-.875.0-1.699219-.339843-2.320313-.960937000000001L9.53125 14.46875c1.039062 1.035156 2.417969 1.609375 3.886719 1.609375S16.265625 15.503906 17.304688 14.46875l5.089843-5.089844c2.140625-2.144531 2.140625-5.628906.0-7.773437zm0 0"/><path d="M7.8125 20.828125c-1.277344 1.28125-3.359375 1.28125-4.640625.0s-1.28125-3.363281.0-4.644531l5.089844-5.085938c1.277343-1.28125 3.359375-1.28125 4.640625.0L14.46875 9.53125c-2.144531-2.140625-5.632812-2.140625-7.773438.0L1.605469 14.621094c-2.140625 2.140625-2.140625 5.628906.0 7.773437C2.679688 23.464844 4.085938 24 5.492188 24 6.902344 24 8.308594 23.464844 9.378906 22.394531L12.769531 19l-1.5625-1.5625zm0 0"/></g></svg>
+</a>TLS is fun</h2><p>First, most Iranian RIPE Atlas probes
 <a href=https://atlas.ripe.net/measurements/10692435/>failed to do TLS handshake</a>
 with Instagram, but TCP connection was established with reasonable TTC
 (time-to-connect).</p><p>Second, IP addresses that were collected using Iranian DNS resolvers were
@@ -126,7 +127,8 @@ passed to inspection with all the performance implications of alike deployment.<
 that a network congestion (or shutdown) might have taken place during the
 event. The amount of RIPE Atlas probes going offline in that time-frame makes me
 think so. The quantitative analysis of the collected data is yet to be done.</p><p>You can get sample python code doing server-side packet manipulation in
-<a href=/post/2018-iran-protests/nfq.py><code>nfq.py</code></a>.</p><h2 id=improving-ooni-dns-heuristics>Improving OONI DNS heuristics</h2><p>OONI data <a href=/post/2018-iran-protests/#blocking-of-instagram>confirmed the blocking of Instagram</a>
+<a href=/post/2018-iran-protests/nfq.py><code>nfq.py</code></a>.</p><h2 id=improving-ooni-dns-heuristics class="group flex flex-row flex-wrap items-center"><a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href=#improving-ooni-dns-heuristics><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 24 24"><g><path d="M22.394531 1.605469c-2.144531-2.140625-5.632812-2.140625-7.773437.0L11.230469 4.996094 12.796875 6.5625 16.1875 3.171875c1.277344-1.28125 3.359375-1.277344 4.640625.0 1.28125 1.28125 1.277344 3.363281.0 4.644531l-5.089844 5.085938C15.121094 13.523438 14.296875 13.863281 13.417969 13.863281c-.875.0-1.699219-.339843-2.320313-.960937000000001L9.53125 14.46875c1.039062 1.035156 2.417969 1.609375 3.886719 1.609375S16.265625 15.503906 17.304688 14.46875l5.089843-5.089844c2.140625-2.144531 2.140625-5.628906.0-7.773437zm0 0"/><path d="M7.8125 20.828125c-1.277344 1.28125-3.359375 1.28125-4.640625.0s-1.28125-3.363281.0-4.644531l5.089844-5.085938c1.277343-1.28125 3.359375-1.28125 4.640625.0L14.46875 9.53125c-2.144531-2.140625-5.632812-2.140625-7.773438.0L1.605469 14.621094c-2.140625 2.140625-2.140625 5.628906.0 7.773437C2.679688 23.464844 4.085938 24 5.492188 24 6.902344 24 8.308594 23.464844 9.378906 22.394531L12.769531 19l-1.5625-1.5625zm0 0"/></g></svg>
+</a>Improving OONI DNS heuristics</h2><p>OONI data <a href=/post/2018-iran-protests/#blocking-of-instagram>confirmed the blocking of Instagram</a>
 during the latest protests in Iran, but the means of censorship was
 misidentified. It looked like Instagram was blocked by means of DNS tampering,
 but upon further analysis, that appears to have been a false positive because:</p><ul><li>control measurement successfully connects to all the IP:port network endpoints
