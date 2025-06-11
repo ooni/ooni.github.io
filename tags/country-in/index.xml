@@ -1,2 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-In" on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-in/</link><description>Recent content in Country-In" on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-in/index.xml" rel="self" type="application/rss+xml"/><item><title>Measuring HTTP/3 censorship with OONI Probe</title><link>https://ooni.github.io/post/2022-http3-measurements-paper/</link><pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-http3-measurements-paper/</guid><description>&lt;p>Last year, QUIC emerged as a new internet protocol for creating reliable connections and encrypting communications between clients over the new HTTP/3 protocol. Observing the emergence and growing deployment of HTTP/3, we want to enable &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> to measure HTTP/3 censorship and monitor how censors respond and adapt to technical innovation.&lt;/p>
-&lt;p>We therefore added HTTP/3 support (in early 2021) into &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> (through our &lt;a href="https://github.com/ooni/spec/blob/master/nettests/ts-027-urlgetter.md">urlgetter&lt;/a> research tool) to conduct measurements in &lt;strong>China, Iran, India and Kazakhstan to investigate the state of HTTP/3 censorship&lt;/strong> in these countries.&lt;/p></description></item></channel></rss>
+&lt;p>We therefore added HTTP/3 support (in early 2021) into &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> (through our &lt;a href="https://github.com/ooni/spec/blob/master/nettests/ts-027-urlgetter.md">urlgetter&lt;/a> research tool) to conduct measurements in &lt;strong>China, Iran, India and Kazakhstan to investigate the state of HTTP/3 censorship&lt;/strong> in these countries.&lt;/p></description></item></channel></rss>egional
+and in-country networks that monitor network interference and
+restrictions to the freedom of expression online in Southeast Asia and Hong Kong (China) in
+collaboration with national digital rights
+&lt;a href="https://imap.sinarproject.org/partners">partners&lt;/a> in these countries.&lt;/p></description></item><item><title>iMAP 2023: State of Internet Censorship in 10 countries</title><link>https://ooni.github.io/post/2023-imap-10-research-reports-southeast-asia/</link><pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-imap-10-research-reports-southeast-asia/</guid><description>&lt;p>On 13th October 2023, our long-term partner, &lt;a href="https://ooni.org/partners/sinar-project/">Sinar Project&lt;/a>, published &lt;strong>&lt;a href="https://imap.sinarproject.org/reports/2023">10 new research reports&lt;/a>&lt;/strong> on
+internet censorship in Southeast Asia and Hong Kong (China) in collaboration with their &lt;a href="https://imap.sinarproject.org/">Internet Monitoring and Action Project (iMAP)&lt;/a> partners. These reports are based on &lt;a href="https://ooni.org/data">OONI data&lt;/a> collected between July 2022 to June 2023 from 10 countries: Cambodia, Hong Kong, India, Indonesia, Malaysia, Myanmar, Philippines, Thailand, Timor-Leste and Vietnam.&lt;/p>
+&lt;p>&lt;a href="https://imap.sinarproject.org/about">Internet Monitoring Action Project (iMAP)&lt;/a> aims to establish regional
+and in-country networks that monitor network interference and
+restrictions to the freedom of expression online in Southeast Asia and Hong Kong (China) in
+collaboration with national digital rights
+&lt;a href="https://imap.sinarproject.org/partners">partners&lt;/a> in these countries.&lt;/p></description></item><item><title>[Event Report] India, Let's Build the List</title><link>https://ooni.github.io/post/2021-event-india-test-list/</link><pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-event-india-test-list/</guid><description>&lt;hr>
+&lt;p>This is a &lt;strong>guest post by &lt;a href="https://thebachchaoproject.org/">The Bachchao Project&lt;/a>&lt;/strong>, originally published
+&lt;a href="https://thebachchaoproject.org/event-report-india-lets-build-the-list/">here&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;p>The &lt;a href="https://thebachchaoproject.org/">Bachchao Project&lt;/a> in partnership with &lt;a href="https://ooni.org/">OONI&lt;/a> hosted an online event on 9th and
+10th October 2021 to update the &lt;a href="https://github.com/citizenlab/test-lists/blob/master/lists/in.csv">Citizen Lab test list for India&lt;/a>. The event,
+which was called “India, Lets build the list”, was organised to help strengthen
+community based monitoring of internet censorship in India. The event allowed
+experts from different fields to contribute to a curated &lt;a href="https://github.com/citizenlab/test-lists/blob/master/lists/in.csv">list of websites&lt;/a> that
+are relevant to India and which are regularly tested for censorship by
+volunteers in India.&lt;/p></description></item><item><title>Investigating Encrypted DNS Blocking in India</title><link>https://ooni.github.io/post/2020-encrypted-dns-blocking-india/</link><pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-encrypted-dns-blocking-india/</guid><description>&lt;p>In October 2020, we collaborated with Divyank Katira and Gurshabad Grover,
+researchers at the &lt;a href="https://cis-india.org/">Centre for Internet &amp;amp; Society, India&lt;/a>,
+to implement and evaluate a new OONI experiment focused on detecting DNS censorship.&lt;/p>
+&lt;p>This new OONI experiment, called &lt;a href="https://github.com/ooni/probe-engine/tree/v0.19.0/experiment/dnscheck">dnscheck&lt;/a>,
+focuses on detecting the blocking of encrypted DNS
+transports such as &lt;a href="https://en.wikipedia.org/wiki/DNS_over_TLS">DNS over TLS&lt;/a>
+and &lt;a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">DNS over HTTPS&lt;/a>. Its
+methodology improves upon the measurement methodology OONI previously used to measure
+&lt;a href="https://ooni.org/post/2020-iran-dot">DoT blocking in Iran&lt;/a>.&lt;/p>
+&lt;p>The implementation, &lt;a href="https://github.com/ooni/probe-engine/pull/950">written by Divyank Katira&lt;/a>, is currently only available
+to users of the &lt;a href="https://github.com/ooni/probe-engine/tree/v0.19.0#building-miniooni">miniooni&lt;/a>
+research client. We are however &lt;a href="https://github.com/ooni/probe/issues/1262">planning on promoting the dsncheck experiment
+as a first class experiment&lt;/a> that will run
+by default as part of the &amp;ldquo;websites&amp;rdquo; experiments group.&lt;/p></description></item><item><title>Investigating TLS blocking in India</title><link>https://ooni.github.io/post/2020-tls-blocking-india/</link><pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-tls-blocking-india/</guid><description>&lt;p>This report investigates Transport Layer Security
+(&lt;a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS&lt;/a>)-based
+blocking in India. &lt;a href="https://cis-india.org/internet-governance/blog/reliance-jio-is-using-sni-inspection-to-block-websites">Previous
+research&lt;/a>
+by the &lt;a href="https://cis-india.org/">Centre for Internet &amp;amp;
+Society, India&lt;/a> (CIS) has already
+exposed TLS blocking based on the value of the &lt;a href="https://en.wikipedia.org/wiki/Server_Name_Indication">SNI
+field&lt;/a>.
+OONI has also &lt;a href="https://ooni.org/post/2020-iran-sni-blocking/">implemented and started
+testing&lt;/a>
+SNI-based TLS blocking measurements.&lt;/p>
+&lt;p>Recently, the Magma Project
+&lt;a href="https://blog.magma.lavafeld.org/post/women-on-web-blocking/">documented&lt;/a>
+cases where CIS India and OONI&amp;rsquo;s methodologies could be improved. They
+specifically found that blocking sometimes appears to depend not only on
+the value of the SNI field but also on the address of the web server
+being used. These findings were later confirmed by OONI measurements in
+&lt;a href="https://ooni.org/post/2020-engine-evaluation-spain">Spain&lt;/a>
+and &lt;a href="https://ooni.org/post/2020-iran-dot/">Iran&lt;/a> through
+the use of an extended measurement methodology.&lt;/p></description></item></channel></rss>
