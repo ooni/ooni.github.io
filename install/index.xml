@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Install OONI Probe on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/install/</link><description>Recent content in Install OONI Probe on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/install/index.xml" rel="self" type="application/rss+xml"/><item><title>Download OONI Probe Desktop</title><link>https://ooni.github.io/install/desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/install/desktop/</guid><description>&lt;a class="ooni-desktop-btn square-btn mx-4"
  id="windows-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-Setup-3.9.9.exe"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.10.0/OONI-Probe-Setup-3.10.0.exe"
  >Download OONI Probe for Windows&lt;/a>
 
 
 
 &lt;a class="ooni-desktop-btn square-btn mx-4"
  id="macos-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-3.9.9.dmg"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.10.0/OONI-Probe-3.10.0.dmg"
  >Download OONI Probe for macOS&lt;/a>
 
 &lt;p>&lt;a href="https://ooni.github.io/install/all/">Other Platforms &amp;raquo;&lt;/a>&lt;/p>
@@ -82,14 +82,14 @@ sudo apt-get install ooniprobe-cli
 
 &lt;a class="ooni-desktop-btn square-btn mx-4"
  id="windows-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-Setup-3.9.9.exe"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.10.0/OONI-Probe-Setup-3.10.0.exe"
  >Windows 64-bit&lt;/a>
 
 
 
 &lt;a class="ooni-desktop-btn square-btn mx-4"
  id="macos-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-3.9.9.dmg"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.10.0/OONI-Probe-3.10.0.dmg"
  >macOS&lt;/a>
 
 &lt;hr>

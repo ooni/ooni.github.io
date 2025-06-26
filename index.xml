@@ -3797,14 +3797,14 @@ circumstances though, ISPs map the wrong IP addresses to the wrong host names.
 This is a form of tampering, which OONI can detect by running its DNS
 consistency test.&lt;/p></description></item><item><title>Download OONI Probe Desktop</title><link>https://ooni.github.io/install/desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/install/desktop/</guid><description>&lt;a class="ooni-desktop-btn square-btn mx-4"
  id="windows-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-Setup-3.9.9.exe"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.10.0/OONI-Probe-Setup-3.10.0.exe"
  >Download OONI Probe for Windows&lt;/a>
 
 
 
 &lt;a class="ooni-desktop-btn square-btn mx-4"
  id="macos-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-3.9.9.dmg"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.10.0/OONI-Probe-3.10.0.dmg"
  >Download OONI Probe for macOS&lt;/a>
 
 &lt;p>&lt;a href="https://ooni.github.io/install/all/">Other Platforms &amp;raquo;&lt;/a>&lt;/p>
@@ -4114,14 +4114,14 @@ and political trends that contributed to the Arab Spring uprisings in
 
 &lt;a class="ooni-desktop-btn square-btn mx-4"
  id="windows-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-Setup-3.9.9.exe"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.10.0/OONI-Probe-Setup-3.10.0.exe"
  >Windows 64-bit&lt;/a>
 
 
 
 &lt;a class="ooni-desktop-btn square-btn mx-4"
  id="macos-download"
- href="https://github.com/ooni/probe-desktop/releases/download/v3.9.9/OONI-Probe-3.9.9.dmg"
+ href="https://github.com/ooni/probe-desktop/releases/download/v3.10.0/OONI-Probe-3.10.0.dmg"
  >macOS&lt;/a>
 
 &lt;hr>
