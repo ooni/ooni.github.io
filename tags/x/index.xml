@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>X on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/x/</link><description>Recent content in X on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/x/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI Analysis on the Blocking of the X Social Media Platform in Tanzania</title><link>https://ooni.github.io/post/2025-tanzania-blocked-twitter/</link><pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-tanzania-blocked-twitter/</guid><description>&lt;p>This report supports a petition filed at the High Court of Tanzania in August 2025 by &lt;a href="https://tmc.co.tz/">Tech &amp;amp; Media Convergency (TMC)&lt;/a>, challenging the blocking of the X social media platform in Tanzania. &lt;strong>OONI data is used as evidence in support of this landmark public interest case&lt;/strong>.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#summary-of-findings">Summary of Findings&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#about-ooni">About OONI&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#oonis-internet-measurement-methodology">OONI’s Internet Measurement Methodology&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#web-connectivity-experiment">Web Connectivity experiment&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#data-analysis">Data analysis&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#ooni-measurements-from-tanzania">OONI measurements from Tanzania&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#findings-blocking-of-x-social-media-platform-in-tanzania">Findings: Blocking of X social media platform in Tanzania&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#blocking-of-x-in-tanzania">Blocking of X in Tanzania&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#network-variances">Network variances&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#airtel-tanzania-as37133">Airtel Tanzania (AS37133)&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#vodacom-tanzania-ltd-as36908">Vodacom Tanzania Ltd (AS36908)&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#tanzania-telecommunications-co-ltd-as33765">Tanzania Telecommunications Co. Ltd (AS33765)&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#zanzibar-connections-company-limited-as327714">Zanzibar Connections Company Limited (AS327714)&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#a-note-on-ip-based-blocking">A note on IP-based blocking&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="introduction" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#introduction">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Introduction
+&lt;/h2>
+&lt;p>Access to the &lt;a href="https://x.com/">X&lt;/a> social media platform (formerly known as Twitter) has &lt;a href="https://www.bbc.com/news/articles/cx2e1y02w21o">reportedly been blocked&lt;/a> on networks in Tanzania since May 2025. This document provides an Expert Opinion by the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI) Foundation&lt;/a> on this block.&lt;/p></description></item></channel></rss>
