@@ -26,9 +26,13 @@
 &lt;/ol>
 &lt;pre tabindex="0">&lt;code>sudo gpg --no-default-keyring --keyserver hkp://keyserver.ubuntu.com --keyring /etc/apt/keyrings/ooni-apt-keyring.gpg --recv-keys &amp;#39;B5A08F01796E7F521861B449372D1FF271F2DD50&amp;#39;
 &lt;/code>&lt;/pre>&lt;p>You can choose how to fetch OONI Probe:&lt;/p>
-&lt;p>2.A) Using HTTP. This is the recommended option.&lt;/p>
+&lt;ol start="2">
+&lt;li>A) Using HTTP. This is the recommended option.&lt;/li>
+&lt;/ol>
 &lt;pre tabindex="0">&lt;code>echo &amp;#34;deb [signed-by=/etc/apt/keyrings/ooni-apt-keyring.gpg] https://deb.ooni.org/ unstable main&amp;#34; | sudo tee /etc/apt/sources.list.d/ooniprobe.list
-&lt;/code>&lt;/pre>&lt;p>2.B) Using Tor. This is an alternative option in case the HTTP repository is not reachable. This requires running the tor daemon on your system.&lt;/p>
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>B) Using Tor. This is an alternative option in case the HTTP repository is not reachable. This requires running the tor daemon on your system.&lt;/li>
+&lt;/ol>
 &lt;pre tabindex="0">&lt;code>sudo apt-get install tor apt-transport-tor
 echo &amp;#34;deb [signed-by=/etc/apt/keyrings/ooni-apt-keyring.gpg] tor+http://deb.ooni.org/ unstable main&amp;#34; | sudo tee /etc/apt/sources.list.d/ooniprobe.list
 &lt;/code>&lt;/pre>&lt;ol start="3">
