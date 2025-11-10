@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Ss on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-ss/</link><description>Recent content in Country-Ss on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-ss/index.xml" rel="self" type="application/rss+xml"/><item><title>South Sudan: Measuring Internet Censorship in the World's Youngest Nation</title><link>https://ooni.github.io/post/south-sudan-censorship/</link><pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/south-sudan-censorship/</guid><description>&lt;p>&lt;img alt="South Sudan flag" src="https://ooni.github.io/post/south-sudan/ss-flag.png">&lt;/p>
+&lt;p>&lt;em>Image by &lt;a href="https://en.wikipedia.org/wiki/File:Flag_map_of_South_Sudan.svg">Mandavi&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Established in July 2011, South Sudan is the youngest country in the
+world. But the transition to independence from Sudan has been far from
+smooth, as the country experiences an ongoing civil war. Even though
+&lt;a href="http://www.intgovforum.org/multilingual/es/system/files/filedepot/78/paradigmhq-digital_rights_in_africa_report_2017.pdf">internet penetration levels remain quite low&lt;/a>, two media websites and two independent blogs were &lt;a href="https://cpj.org/2017/07/south-sudan-authorities-block-access-to-at-least-f.php">reportedly blocked&lt;/a>
+last year.&lt;/p>
+&lt;p>This report is a joint research effort by the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> and South
+Sudan’s &lt;a href="http://tahurid.jovanjulien.com/">The Advocates for Human Rights and Democracy (TAHURID)&lt;/a>. We examine internet
+censorship in South Sudan through the collection and analysis of
+&lt;a href="https://api.ooni.io/files/by_country/SS">network measurements&lt;/a>.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Ng on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-ng/</link><description>Recent content in Country-Ng on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-ng/index.xml" rel="self" type="application/rss+xml"/><item><title>Nigeria’s 2019 elections through the lens of network measurements</title><link>https://ooni.github.io/post/2019-nigeria-internet-censorship/</link><pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-nigeria-internet-censorship/</guid><description>&lt;p>Censorship events are increasingly being reported during political
+events in Africa (and elsewhere around the world). A few examples
+include the &lt;a href="https://ooni.org/post/mali-disruptions-amid-2018-election/">social media disruptions in Mali&lt;/a>
+amid its 2018 presidential election, the &lt;a href="https://ooni.org/post/uganda-social-media-blocked/">blocking of social media in Uganda&lt;/a>
+during its 2016 general elections, and the complete &lt;a href="https://ooni.org/post/gambia-internet-shutdown/">internet blackout in The Gambia&lt;/a>
+during its 2016 presidential election.&lt;/p>
+&lt;p>Leading up to and during Nigeria’s 2019 general elections, we
+collaborated with our local partner, &lt;a href="https://paradigmhq.org/">Paradigm Initiative&lt;/a>, on measuring networks in the
+country to monitor potential censorship events.&lt;/p></description></item><item><title>Nigeria: Measuring Internet Censorship</title><link>https://ooni.github.io/post/nigeria-internet-censorship/</link><pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/nigeria-internet-censorship/</guid><description>&lt;p>Last October, Nigeria’s National Communications Commission (NCC)
+&lt;a href="https://pinigeria.org/president-buharis-secret-war-on-free-speech/">reportedly ordered&lt;/a>
+the blocking of 21 websites. In response, we collaborated with Nigeria’s
+&lt;a href="https://pinigeria.org/">Paradigm Initiative&lt;/a> to test those websites
+and collect network measurement data that can shed light on whether and
+how they’re blocked.&lt;/p>
+&lt;p>Our findings are included in a joint research report that we published today
+with Paradigm Initiative. The full report, titled &lt;strong>“Tightening the Noose on
+Freedom of Expression: Status of Internet Freedom in Nigeria 2018”&lt;/strong>, can be
+&lt;strong>&lt;a href="https://ooni.github.io/documents/nigeria-report.pdf">downloaded here&lt;/a>&lt;/strong>. A summary of the report
+is available &lt;strong>&lt;a href="https://ooni.github.io/documents/nigeria-report-summary.pdf">here&lt;/a>&lt;/strong>.&lt;/p></description></item></channel></rss>

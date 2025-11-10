@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Belarus on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/belarus/</link><description>Recent content in Belarus on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/belarus/index.xml" rel="self" type="application/rss+xml"/><item><title>Investigating Internet shutdowns through Mozilla telemetry</title><link>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</link><pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</guid><description>&lt;p>More than &lt;a href="https://data.firefox.com/dashboard/user-activity">200 million users&lt;/a> worldwide use
+the &lt;a href="https://www.mozilla.org/en-US/firefox/new/">Firefox&lt;/a> web browser
+(developed by Mozilla) every month.&lt;/p>
+&lt;p>If access to the Internet is shut down in a country, Mozilla should
+expect to see a dramatic drop in Firefox usage from that country. Given
+how &lt;a href="https://data.firefox.com/dashboard/user-activity">widespread&lt;/a> the
+use of Firefox is around the world, could Mozilla telemetry be a
+valuable resource for the Internet freedom community to investigate
+Internet shutdowns?&lt;/p>
+&lt;p>To explore this question, the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> and &lt;a href="https://ioda.caida.org/">Internet Outage Detection and Analysis (IODA)&lt;/a> teams joined forces to analyze a
+dataset of potential outage signals gathered through regular Mozilla
+telemetry, access to which was provided by Mozilla as part of a relevant
+research project to validate assumptions about the data.&lt;/p></description></item><item><title>Belarus protests: From internet outages to pervasive website censorship</title><link>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</link><pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/images/by-blockpage.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/images/by-blockpage_hu6980547774342713408.png"
+
+ 
+ 
+ title="Block page served in Belarus"
+ 
+ alt="Block page served in Belarus"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;strong>Image:&lt;/strong> Block page served in Belarus.&lt;/p>
+&lt;p>&lt;em>This report was prepared in collaboration with &lt;a href="https://humanconstanta.by/">Human Constanta&lt;/a> and the &lt;a href="https://t.me/zabynet">Digital Observers Community Belarus&lt;/a>.&lt;/em>&lt;/p>
+&lt;p>More than 70 websites have been &lt;a href="https://www.hrw.org/news/2020/08/28/belarus-internet-disruptions-online-censorship">blocked&lt;/a>
+in Belarus over the last weeks, following a &lt;a href="https://www.theguardian.com/world/2020/aug/10/its-outrageous-belarus-election-result-sparks-night-of-defiance-and-violence">controversial presidential election&lt;/a>
+and amid &lt;a href="https://time.com/5880593/belarus-protests-lukashenko/">ongoing anti-government protests&lt;/a>. Many
+of the blocked sites include news media and are related to the
+elections, while several other sites expressing political criticism were
+blocked as well. At the time of writing, many of these sites remain
+blocked in Belarus.&lt;/p></description></item><item><title>urandom.pcap: Belarus (finally) bans Tor</title><link>https://ooni.github.io/post/belarus-fries-onion/</link><pubDate>Thu, 08 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/belarus-fries-onion/</guid><description>&lt;p>&lt;strong>Country:&lt;/strong> Belarus&lt;/p>
+&lt;p>&lt;strong>Probed ISPs:&lt;/strong> Beltelecom (&lt;a href="https://stat.ripe.net/AS6697">AS 6697&lt;/a>)&lt;/p>
+&lt;p>&lt;strong>Censorship method:&lt;/strong> TCP injections&lt;/p>
+&lt;p>We have recently heard of &lt;a href="https://metrics.torproject.org/userstats-relay-country.html?start=2016-09-07&amp;end=2016-12-06&amp;country=by&amp;events=points">network anomalies in Belarus&lt;/a>.
+Tor has been finally blocked in December 2016, although it had been explicitly
+declared that Tor should be blocked &lt;a href="https://meduza.io/en/news/2015/02/25/belarus-bans-tor">since February 2015&lt;/a>.&lt;/p>
+&lt;p>&lt;img alt="Directly connected users from Belarus" src="https://ooni.github.io/post/belarus-fries-onion/userstats-relay-country-by-2016-09-07-2016-12-06-points.png">&lt;/p>
+&lt;p>An anonymous cypherpunk has helped to gather some evidence regarding Tor
+being blocked in Belarus. It&amp;rsquo;s neither a complete study nor an in-depth
+research and it&amp;rsquo;s unclear if any other further evidence will be gathered, so we
+decided to share current knowledge as-is:&lt;/p></description></item></channel></rss>

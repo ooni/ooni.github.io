@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/events/</link><description>Recent content in Events on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 25 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/events/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI Partner Gathering 2024 in Malaysia</title><link>https://ooni.github.io/post/2024-ooni-partner-gathering-report/</link><pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-ooni-partner-gathering-report/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2024-ooni-partner-gathering-report/images/image7.png">
+ &lt;img
+ src="https://ooni.github.io/post/2024-ooni-partner-gathering-report/images/image7_hu2526202348152306765.png"
+
+ 
+ 
+ title="OONI Partner Gathering 2024"
+ 
+ alt="OONI Partner Gathering 2024"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#background-ooni-partners-and-previous-events">Background: OONI partners and previous events&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#about-the-ooni-partner-gathering-2024">About the OONI Partner Gathering 2024&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#objectives">Objectives&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#why-malaysia">Why Malaysia?&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#sessions">Sessions&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#day-1--8th-may-2024">Day 1 – 8th May 2024&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#day-2--9th-may-2024">Day 2 – 9th May 2024&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#unconference-style-sessions">Unconference style sessions&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#inclusiveness">Inclusiveness&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#partner-feedback">Partner feedback&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#challenges">Challenges&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#needs">Needs&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#outcomes">Outcomes&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;p>We are excited to share that on 8th and 9th May 2024, we hosted an in-person &lt;strong>OONI Partner Gathering in Kuala Lumpur, Malaysia&lt;/strong>. As part of this 2-day event, we brought our &lt;a href="https://ooni.org/partners">partners&lt;/a> (primarily from Asia and the Middle East) together to exchange skills and knowledge and strengthen our collaborations on internet censorship research and advocacy.
+In this report, we share details about the event and its outcomes.&lt;/p></description></item><item><title>Measure all the Things! IMC Hackathon 2023</title><link>https://ooni.github.io/post/imc-hackathon-results-2023/</link><pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/imc-hackathon-results-2023/</guid><description>&lt;p>On 23rd October 2023, right before the &lt;a href="https://conferences.sigcomm.org/imc/2023/">Internet Measurement Conference
+(IMC)&lt;/a> 2023, we
+co-hosted an &lt;strong>internet measurement hackathon&lt;/strong> in collaboration with
+the &lt;a href="https://www.internetsociety.org/">Internet Society
+(ISOC)&lt;/a>,
+&lt;a href="https://www.measurementlab.net/">M-Lab&lt;/a>, &lt;a href="https://censoredplanet.org/">Censored Planet&lt;/a> and
+&lt;a href="https://ioda.inetintel.cc.gatech.edu/">IODA&lt;/a>.&lt;/p>
+&lt;p>In this post we would like to share some of the projects that were
+developed as part of the hackathon. It was great to see how much was
+accomplished in such a short period of time!&lt;/p>
+&lt;p>The day started with an &lt;a href="https://docs.google.com/presentation/d/1DHhGcpCMTbSJE0QKO6ZTSnIPFixLxxBXwZLkqv0wdJA/edit#slide=id.g1723ddbd698_0_18">introduction to the various datasets&lt;/a>
+from OONI&amp;rsquo;s Arturo, Censored Planet&amp;rsquo;s Armin, IODA&amp;rsquo;s Zach, ISOC&amp;rsquo;s Amreesh
+and M-Lab&amp;rsquo;s Lai Yi. Following the brief presentations, the participants
+formed teams to work on some of the specific challenges that &lt;a href="https://docs.google.com/document/d/1bmCwU0ZJCu-xKlIBKqh3rdIJLHZ-vS7UCOfHI-0RxVE/edit#heading=h.nhvc5bssegtl">we had
+proposed&lt;/a>
+or came up with new ones.&lt;/p></description></item><item><title>Join us at the IMC 2023 Hackathon on Network Interference using Open Data</title><link>https://ooni.github.io/post/2023-imc-hackathon/</link><pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-imc-hackathon/</guid><description>&lt;p>Are you attending the &lt;a href="https://conferences.sigcomm.org/imc/2023/">Internet Measurement Conference (IMC)
+2023&lt;/a>?&lt;/p>
+&lt;p>Join us at the &lt;strong>&lt;a href="https://conferences.sigcomm.org/imc/2023/hackaton/">IMC Hackathon on Network Interference using Open
+Data&lt;/a>&lt;/strong> on Monday, &lt;strong>23rd
+October 2023&lt;/strong>, in Montreal, Canada. The hackathon is organized by the
+&lt;a href="https://www.internetsociety.org/">Internet Society (ISOC)&lt;/a>, the &lt;a href="https://ooni.org/">Open
+Observatory of Network Interference (OONI)&lt;/a>,
+&lt;a href="https://www.measurementlab.net/">M-Lab&lt;/a> and &lt;a href="https://censoredplanet.org/">Censored
+Planet.&lt;/a>&lt;/p>
+&lt;p>IMC is a yearly academic conference focusing on Internet measurement and
+analysis. The conference is sponsored by ACM SIGCOMM.&lt;/p>
+&lt;p>This IMC Hackathon will be about exploring, analyzing, and visualizing open
+network measurement data with a focus on identifying Internet censorship and
+Internet shutdown events.&lt;/p></description></item><item><title>OONI Partner Training 2021</title><link>https://ooni.github.io/post/ooni-partner-training-2021/</link><pubDate>Wed, 07 Jul 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-partner-training-2021/</guid><description>&lt;p>Over the last week, we had the pleasure to host &lt;strong>two 3-day OONI Partner
+Training events&lt;/strong> for our &lt;a href="https://ooni.org/partners">partners&lt;/a> in
+Africa, Latin America, the Middle East, and Asia. As part of these
+events, our goal was to share OONI-specific knowledge and skills, and to
+collect feedback to better serve community needs.&lt;/p>
+&lt;p>In this post, we share information about the training events.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-training-2021/#about">About&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-training-2021/#sessions">Sessions&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-training-2021/#session-1-information-controls-around-the-world-day-1">Session 1: Information Controls Around the World (Day 1)&lt;/a>&lt;/p></description></item><item><title>OONI at RightsCon 2018</title><link>https://ooni.github.io/post/ooni-rightscon-2018/</link><pubDate>Fri, 11 May 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-rightscon-2018/</guid><description>&lt;p>&lt;img alt="RightsCon 2018" src="https://ooni.github.io/post/events/rightscon-2018.png">&lt;/p>
+&lt;p>We are excited to participate at
+&lt;a href="https://www.rightscon.org/">RightsCon&lt;/a> next week: the world’s leading
+event on human rights in the digital age. Annually hosted by &lt;a href="https://www.accessnow.org/">Access Now&lt;/a>, this three-day conference will take
+place in Toronto between 16th-18th May 2018.&lt;/p>
+&lt;p>Over the last years, RightsCon has provided us the opportunity to
+participate in critical discussions in the digital rights field, meet
+many fascinating people and organizations, and to form new coalitions.
+We therefore look forward to participating at RightsCon and are eager to
+meet many new faces!&lt;/p></description></item><item><title>OONI's recent participation at events in Africa, India, and Europe</title><link>https://ooni.github.io/post/ooni-in-africa-india-europe-conferences/</link><pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-africa-india-europe-conferences/</guid><description>&lt;p>&lt;img alt="Quattro" src="https://ooni.github.io/post/2018-conferences/quattro.jpg">&lt;/p>
+&lt;p>Over the last months, the OONI team had the opportunity to host
+workshops, give presentations, and participate in discussions at the
+following conferences and events:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="http://www.students.uct.ac.za/event/internet-censorship-measurements">Seminar at the University of Cape Town&lt;/a> (South Africa)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://globalnetpolicy.org/event/research-methods-africa/">Internet Policy in Africa: Research Methods for Advocacy workshop&lt;/a> (Uganda)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://nullcon.net/website/">Nullcon 2018&lt;/a> (India)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://internetfreedomfestival.org/">Internet Freedom Festival (IFF) 2018&lt;/a> (Spain)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2018Rome">Tor Meeting&lt;/a> (Italy)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>These events provided us a great opportunity to meet many fascinating
+people from various communities, learn about their work, form new
+collaborations, and collect feedback for the improvement of our tools
+and methodologies.&lt;/p></description></item><item><title>OONI at the 34th Chaos Communication Congress (34C3)</title><link>https://ooni.github.io/post/ooni-34c3/</link><pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-34c3/</guid><description>&lt;p>Next week the &lt;a href="https://ooni.org/">OONI&lt;/a> team will be
+attending the &lt;a href="https://events.ccc.de/congress/2017/wiki/index.php/Main_Page">34th Chaos Communication Congress (34C3)&lt;/a>:
+Europe’s largest hacker conference on technology, society, and utopia.
+Are you going? We hope to see you there!&lt;/p>
+&lt;h1 id="ooni-lecture" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#ooni-lecture">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ OONI lecture
+&lt;/h1>
+&lt;p>OONI&amp;rsquo;s founder and project lead, Arturo Filastò, will be &lt;a href="https://events.ccc.de/congress/2017/Fahrplan/events/8923.html">presenting
+OONI at 34C3&lt;/a>.&lt;/p></description></item><item><title>OONI at LAVITS and Primavera Hacker 2017</title><link>https://ooni.github.io/post/ooni-lavits-phacker-2017/</link><pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-lavits-phacker-2017/</guid><description>&lt;p>Earlier this month we had the opportunity to present OONI at two conferences in Chile: LAVITS and Primavera Hacker.&lt;/p>
+&lt;h2 id="lavits" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#lavits">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ LAVITS
+&lt;/h2>
+&lt;p>&lt;a href="http://lavits.org">LAVITS&lt;/a> is a Latin American network of surveillance
+technology and society studies that organizes international symposiums since
+2009. It features publications, talks and workshops related to
+surveillance and technology, internet censorship, resistance and counter
+surveillance, identification, biometrics, protection of personal data and
+privacy. The fifth series of the &lt;a href="http://lavits2017.datosprotegidos.org/">LAVITS symposium&lt;/a> took place in Santiago, Chile from 29th November to 1st December 2017.&lt;/p></description></item><item><title>OONI Team Meeting: Montreal 2017</title><link>https://ooni.github.io/post/ooni-team-meeting-montreal-2017/</link><pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-team-meeting-montreal-2017/</guid><description>&lt;p>&lt;img alt="OONI team meeting in Montreal" src="https://ooni.github.io/post/montreal-meeting/ooni-team.jpg">&lt;/p>
+&lt;p>Last week, right before the &lt;a href="https://trac.torproject.org/projects/tor/wiki/org/meetings/2017Montreal">Tor meeting&lt;/a>,
+the OONI team gathered in Montreal for a 4-day meeting to reflect,
+regroup, hack, and plan.&lt;/p>
+&lt;p>This post shares information from our meeting and future plans with the
+broader community. All session notes are available on
+&lt;a href="https://github.com/OpenObservatory/gatherings/tree/master/internal/2017-10-montreal">GitHub&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#summary-what-ooni-is-working-on">Summary: What OONI is working on&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#sessions">Sessions&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#day-1-7th-october-2017">Day 1 - 7th October 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#day-2-8th-october-2017">Day 2 - 8th October 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-team-meeting-montreal-2017/#day-3-9th-october-2017">Day 3 - 9th October 2017&lt;/a>&lt;/p></description></item><item><title>OONI Partner Gathering 2017</title><link>https://ooni.github.io/post/ooni-partner-gathering-2017/</link><pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-partner-gathering-2017/</guid><description>&lt;p>&lt;img alt="OONI Partner Gathering" src="https://ooni.github.io/post/ooni-partner-gathering-2017/01.jpg">&lt;/p>
+&lt;p>Two weeks ago we hosted the &lt;em>first OONI Partner Gathering&lt;/em> in Toronto,
+Canada. This report provides an overview of the event, partner needs and
+challenges, and future goals to address them.&lt;/p>
+&lt;p>View the &lt;strong>pdf&lt;/strong> version of the report &lt;a href="https://ooni.github.io/documents/ooni-partner-gathering-2017.pdf">here&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#about">About&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#objectives">Objectives&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#sessions">Sessions&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#day-1-10th-july-2017">Day 1 - 10th July 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#day-2-11th-july-2017">Day 2 - 11th July 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#inclusiveness">Inclusiveness&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#challenges-and-needs">Challenges and needs&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#future-goals-and-priorities">Future goals and priorities&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#outcomes">Outcomes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-partner-gathering-2017/#acknowledgements">Acknowledgements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="about" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About
+&lt;/h1>
+&lt;p>Over the last year, the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project has had the opportunity
+to collaborate with various digital rights organizations in Latin
+America, Africa, the Middle East, and Asia. We joined forces to
+collaborate on the study of internet censorship by collecting &lt;a href="https://explorer.ooni.org/world/">network measurements&lt;/a> from local
+vantage points, reviewing and creating &lt;a href="https://github.com/citizenlab/test-lists/tree/master/lists">censorship measurement resources&lt;/a>,
+and by publishing findings through &lt;a href="https://ooni.org/post/">research reports&lt;/a>.&lt;/p></description></item><item><title>OONI at the CryptoRave 2017</title><link>https://ooni.github.io/post/ooni-cryptorave-2017/</link><pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-cryptorave-2017/</guid><description>&lt;p>&lt;a href="https://cryptorave.org/">CryptoRave&lt;/a> is a free, non-commercial and
+collectively funded 48 hour event featuring talks, workshops and activities
+related to security, privacy, anonymity, hacking and freedom of expression that
+attracts more that 2,500 people mainly from South America. The event took place
+in São Paulo, Brazil on 5th and 6th May 2017.&lt;/p>
+&lt;p>A number of people attended the OONI
+&lt;a href="https://cpa.cryptorave.org/pt-BR/CR2017/public/events/43">presentation&lt;/a> and
+&lt;a href="https://cpa.cryptorave.org/pt-BR/CR2017/public/events/112">workshop&lt;/a>
+(&amp;ldquo;Listatona&amp;rdquo;) that was co-organized with &lt;a href="https://www.codingrights.org/">Coding Rights&lt;/a>.
+During the workshop participants were able to
+better understand OONI&amp;rsquo;s testing methodology, and how OONI Probe performs
+network measurements. Participants provided useful feedback regarding
+&lt;a href="https://ooni.org/get-involved/contribute-test-lists/">test-lists&lt;/a>
+and URLs from diverse sources from South America.&lt;/p></description></item><item><title>OONI at the Internet Freedom Festival &amp; RightsCon 2017</title><link>https://ooni.github.io/post/ooni-iff-rightscon/</link><pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-iff-rightscon/</guid><description>&lt;p>Over the last month the &lt;a href="https://ooni.org/">OONI&lt;/a> team joined the internet
+freedom community at the following events:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://internetfreedomfestival.org/vietnam-cyber-dialogue/">Vietnam Cyber Dialogue (VCD)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://internetfreedomfestival.org/">Internet Freedom Festival (IFF)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.accessnow.org/iran-cyber-dialogue-rightscon-brussels-2017-timely-impactful/">Iran Cyber Dialogue (ICD)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.rightscon.org/">RightsCon 2017&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://www.journalismfestival.com/">International Journalism Festival (IJF)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>These events provided us with the opportunity to engage with community members,
+create new friendships, learn about new projects, and to share skills and
+knowledge. We also had the opportunity to facilitate sessions that allowed us to
+collect feedback for the improvement of our
+&lt;a href="https://github.com/TheTorProject/ooni-probe">software&lt;/a> and research
+methodologies.&lt;/p></description></item><item><title>OONI-dev meeting and hackathon 2016</title><link>https://ooni.github.io/post/ooni-dev-and-hackathon-2016/</link><pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-dev-and-hackathon-2016/</guid><description>&lt;p>Oonitarians are spread out across the globe, and OONI’s core team is no
+exception. We recently met in Berlin to hack on &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI’s software&lt;/a>, work on our
+roadmap, and to have all those discussions that are more fruitful to have in
+person than on IRC. We also held a &lt;a href="https://ooni.org/post/berlin-hackathon-2016/">hackathon&lt;/a> to engage new individuals with our project!&lt;/p>
+&lt;p>Below we document some of the things that we worked on as part of our OONI-dev
+meeting and hackathon.&lt;/p></description></item><item><title>OONI Hackathon: Join us to explore internet censorship!</title><link>https://ooni.github.io/post/berlin-hackathon-2016/</link><pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/berlin-hackathon-2016/</guid><description>&lt;p>&lt;img alt="HACKOONI16" src="https://ooni.github.io/post/berlin-hackathon/ooni-berlin-hackathon.png">&lt;/p>
+&lt;p>Interested in exploring (and exposing) internet censorship? Join the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> hackathon in Berlin!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>When?&lt;/strong> Friday, &lt;strong>11th November&lt;/strong> &amp;amp; Saturday, &lt;strong>12th November&lt;/strong> 2016&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Where?&lt;/strong> The &lt;strong>OnionSpace&lt;/strong> (&lt;a href="http://www.openstreetmap.org/?mlat=52.54965&amp;mlon=13.3700#map=19/52.54974/13.37001">Gottschedstraße 4, 13357 Berlin, Germany&lt;/a>)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>What time?&lt;/strong> 10am onwards&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Who?&lt;/strong> Software developers, data analysts, academics, journalists,
+bloggers, lawyers, activists, and all those who don’t go by any
+particular label, but are curious enough to join! We only have one rule:
+&lt;strong>Be excellent to each other&lt;/strong>.&lt;/p></description></item></channel></rss>

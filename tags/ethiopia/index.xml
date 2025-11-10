@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ethiopia on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/ethiopia/</link><description>Recent content in Ethiopia on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/ethiopia/index.xml" rel="self" type="application/rss+xml"/><item><title>Ethiopia: Ongoing blocking of social media</title><link>https://ooni.github.io/post/2023-ethiopia-blocks-social-media/</link><pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-ethiopia-blocks-social-media/</guid><description>&lt;p>On 9th February 2023, amid church split tensions and calls for
+anti-government protests, access to social media platforms (TikTok,
+Facebook, Telegram) was &lt;a href="https://www.washingtonpost.com/world/ethiopias-social-media-blocked-amid-church-split-tensions/2023/02/10/15781c44-a93d-11ed-b2a3-edb05ee0e313_story.html">reportedly blocked&lt;/a>
+in Ethiopia. Access Now also published a
+&lt;a href="https://www.accessnow.org/ethiopia-social-media-protest/">statement&lt;/a>
+urging authorities in Ethiopia to stop blocking access to social media.&lt;/p>
+&lt;p>OONI data collected from Ethiopia provides signals of these blocks.
+Specifically, OONI data shows the ongoing blocking of
+&lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=ET&amp;test_name=web_connectivity&amp;domain=www.facebook.com&amp;since=2023-01-11&amp;until=2023-02-15&amp;axis_x=measurement_start_day">Facebook&lt;/a>
+and
+&lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=ET&amp;test_name=telegram&amp;since=2023-01-11&amp;until=2023-02-15&amp;axis_x=measurement_start_day">Telegram&lt;/a>
+(since 9th February 2023) and
+&lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=ET&amp;test_name=web_connectivity&amp;domain=www.youtube.com&amp;since=2023-01-11&amp;until=2023-02-15&amp;axis_x=measurement_start_day">YouTube&lt;/a>
+(since 10th February 2023).&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2023-ethiopia-blocks-social-media/#blocking-of-facebook">Blocking of Facebook&lt;/a>&lt;/p></description></item><item><title>Ethiopia: From internet blackouts to the blocking of WhatsApp and Telegram</title><link>https://ooni.github.io/post/ethiopia-whatsapp-telegram/</link><pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ethiopia-whatsapp-telegram/</guid><description>&lt;p>Communication access in Ethiopia has significantly been disrupted over the last week. Internet access and Short Message Services (SMS) were &lt;a href="https://web.archive.org/save/https://twitter.com/addisstandard/status/1139127606211727360">disconnected&lt;/a> intermittently across the country.&lt;/p>
+&lt;p>During the first half of the week, internet connectivity was &lt;a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/ET&amp;lastView=overview&amp;from=1560166834&amp;until=now">shut down completely&lt;/a>. After access was restored, both &lt;a href="https://explorer.ooni.io/measurement/20190615T215418Z_AS24757_NKzIEujAd7rEN95SsIZnraLm1yjqdU79EqczVKFLUzsOJh4DLE">WhatsApp&lt;/a> and &lt;a href="https://explorer.ooni.io/measurement/20190615T222820Z_AS24757_4flsDD8gZDpmh2jr60nmgLuGGymkNsRA8HOejGDOFZZDEWr6EP">Telegram&lt;/a> were blocked. A few days ago, Ethio Telecom (the only telecom in the country) &lt;a href="https://web.archive.org/web/20190619122350/https:/twitter.com/ethiotelecom_/status/1141013304762146817">published a notice&lt;/a>, acknowledging the internet disruptions, but came short on details about the extent of communication disruptions or why they occurred in the first place.&lt;/p></description></item><item><title>Ethiopia: Verifying the unblocking of websites</title><link>https://ooni.github.io/post/ethiopia-unblocking/</link><pubDate>Fri, 29 Jun 2018 19:49:00 +0000</pubDate><guid>https://ooni.github.io/post/ethiopia-unblocking/</guid><description>&lt;p>&lt;img alt="Rally at Meskel Square" src="https://ooni.github.io/post/ethiopia-unblocking/cover.jpg">
+Pro PM Abiy Ahmed Rally at Meskel Square, June 2018 - Photo by Berhan Taye&lt;/p>
+&lt;p>On 22nd June 2018, the Ethiopian government &lt;a href="http://www.africanews.com/2018/06/23/ethiopia-unblocks-264-websites-and-tv-channels/">reported&lt;/a> that it had unblocked 264 websites. This (great) news was also &lt;a href="https://ethsat.com/2018/06/ethiopia-unblocks-264-websites-including-esat/">reported by ESAT&lt;/a>, a major Ethiopian media website that was &lt;a href="https://explorer.ooni.io/measurement/20160817T192345Z_AS24757_vkmTFvmkOUzdotRJrOUrieRB5bqhrEUjem5G2ZnQqDbfRByV2U?input=http:%2F%2Fethsat.com">blocked&lt;/a> over the last years.&lt;/p>
+&lt;p>Today, &lt;a href="https://ooni.github.io/">OONI&lt;/a> and &lt;a href="https://www.accessnow.org/">Access Now&lt;/a> publish new research based on the testing of sites that were previously &lt;a href="https://ooni.github.io/post/ethiopia-report/#websites-blocked">found to be blocked&lt;/a>, in an attempt to examine whether they have in fact been unblocked in recent days.&lt;/p></description></item><item><title>Ethiopia: Evidence of social media blocking and internet censorship</title><link>https://ooni.github.io/post/ethiopia-report/</link><pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ethiopia-report/</guid><description>&lt;p>&lt;img alt="Ethiopia image" src="https://ooni.github.io/post/ethiopia-report/et-05.png">&lt;/p>
+&lt;p>&lt;em>Youth in Addis trying to get Wi-Fi Connection. Credit Addis Fortune Newspaper&lt;/em>&lt;/p>
+&lt;p>Recently we published a &lt;a href="https://ooni.org/post/ethiopia-internet-shutdown-amidst-recent-protests/">post&lt;/a> about what appeared to be a possible internet
+shutdown in Ethiopia during a wave of ongoing protests by ethnic groups. Today,
+in collaboration with &lt;a href="https://www.amnesty.org/">Amnesty International&lt;/a> we are releasing a report that
+includes evidence of recent censorship events during Ethiopia’s political
+upheaval.&lt;/p>
+&lt;p>See the &lt;a href="https://ooni.github.io/post/ethiopia-report/amharic-translation.pdf">Amharic translation&lt;/a> of the report. Translated by Wolete Mariam.&lt;/p>
+&lt;p>View the &lt;strong>pdf&lt;/strong> version of the report &lt;a href="https://ooni.github.io/documents/Ethiopia-Offline-evidence-of.pdf">here&lt;/a>.&lt;/p></description></item><item><title>Ethiopia: Internet Shutdown Amidst Recent Protests?</title><link>https://ooni.github.io/post/ethiopia-internet-shutdown-amidst-recent-protests/</link><pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ethiopia-internet-shutdown-amidst-recent-protests/</guid><description>&lt;p>Nearly 100 deaths and thousands of arrests have been
+&lt;a href="http://www.bbc.com/news/world-africa-37015055">reported&lt;/a> in Ethiopia over the
+last days, as part of protests against the marginalization and persecution of
+the Oromos and Amharas, Ethiopia’s two largest ethnic groups. But the attacks
+and arrests may not have been the only forms of retribution carried out by the
+Ethiopian government in its crackdown against protesters.&lt;/p>
+&lt;p>Last weekend, the internet was
+&lt;a href="http://www.bbc.com/news/world-africa-36940906">reportedly&lt;/a> shut down in the
+country.&lt;/p>
+&lt;p>In an attempt to understand whether the internet was in fact shut down, we
+looked at some public sources of data that contain information about internet
+traffic. Such data provides strong indicators that the internet was most likely
+shut down during the Ethiopian protests last weekend, though it remains unclear
+if this occurred in all regions and/or on all types of networks across the
+country.&lt;/p></description></item></channel></rss>

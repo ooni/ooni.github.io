@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lgbtqi on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/lgbtqi/</link><description>Recent content in Lgbtqi on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/lgbtqi/index.xml" rel="self" type="application/rss+xml"/><item><title>Call to Action: Let’s measure the blocking of LGBTQI websites around the world!</title><link>https://ooni.github.io/post/2019-measure-blocking-lgbtqi-sites/</link><pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-measure-blocking-lgbtqi-sites/</guid><description>&lt;p>&lt;img alt="Grindr blocked in Iran" src="https://ooni.github.io/post/lgbtqi-site-testing/confirmed-blocked-measurement.png">&lt;/p>
+&lt;p>LGBTQI websites are blocked in several countries around the world, such
+as
+&lt;a href="https://sinarproject.org/digital-rights/updates/online-lgbt-censorship-malaysia">Malaysia&lt;/a>
+and
+&lt;a href="https://ooni.org/post/indonesia-internet-censorship/#lgbt">Indonesia&lt;/a>.
+This includes popular dating apps and sites, like
+&lt;a href="https://www.grindr.com/">grindr&lt;/a>, which is blocked in
+&lt;a href="https://www.amnesty.org/en/latest/news/2019/05/lebanon-ban-on-gay-dating-app-grindr-a-blow-for-sexual-rights-and-freedom/">Lebanon&lt;/a>
+and
+&lt;a href="https://ooni.org/post/iran-internet-censorship/#human-rights-issues">Iran&lt;/a>.&lt;/p>
+&lt;p>How can we track the blocking of LGBTQI sites around the world?&lt;/p>
+&lt;p>We have teamed up with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> &amp;ndash; a leading international LGBTQI human rights organization &amp;ndash; to investigate the blocking of LGBTQI sites worldwide.&lt;/p>
+&lt;p>We invite you to contribute to this research!&lt;/p></description></item></channel></rss>

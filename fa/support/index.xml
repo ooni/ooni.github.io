@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Support on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/fa/support/</link><description>Recent content in Support on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>fa</language><atom:link href="https://ooni.github.io/fa/support/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://ooni.github.io/fa/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/ooni-outreach-kit/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-outreach-kit/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu116634532574350516.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
+ 
+ 
+ title="عُدة التوعية لـ OONI"
+ 
+ alt="عُدة التوعية لـ OONI"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>حیات اونی و ارزش آن به فعالیت بیشتر کاربران آن گره خورده است. زیرا هرچه کاربران بیشتری در سراسر جهان از اونی پراب استفاده و آن را &lt;a href="https://ooni.org/install/">اجرا کنند&lt;/a>، اطلاعات اونی درباره سانسور &lt;a href="https://ooni.org/data">اینترنت&lt;/a> بیشتر و دقیق‌تر خواهد بود.
+اگر شما هم علاقه‌مند هستید تا افراد بیشتری را به عضویت در جامعه کاربران اونی دعوت و تشویق کنید، این بسته معرفی و ترویج،‌ بهترین ابزار برای شماست.&lt;/p></description></item><item><title>راهنمای کاربر: برنامه دسکتاپ OONI Probe</title><link>https://ooni.github.io/fa/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/ooni-probe-desktop/</guid><description>&lt;p>**آخرین به‌روز‌رسانی: ** 18 اکتبر 2022&lt;/p>
+&lt;p>&lt;strong>نسخه دسکتاپ OONI Probe:&lt;/strong> 3.7.0&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu8619296333105039821.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu2811019159506606390.png 2x"
+ 
+ 
+ title="Install OONI Probe Desktop"
+ 
+ alt="Install OONI Probe Desktop"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe یک &lt;a href="https://github.com/ooni/probe">برنامه رایگان و منبع‌باز&lt;/a> است که می‌توانید از آن برای اندازه‌گیری سانسور اینترنت و سایر انواع تداخل در شبکه استفاده کنید. این راهنمای کاربری، &lt;strong>دستورالعمل‌های گام به گام&lt;/strong> در مورد نحوه نصب، اجرا و تنظیمات استفاده از &lt;a href="https://ooni.github.io/install/desktop">برنامه دسکتاپ OONI Probe&lt;/a> را ارائه می‌دهد.&lt;/p>
+&lt;p>&lt;strong>آنچه در این راهنما کسب خواهید کرد:&lt;/strong>&lt;/p></description></item><item><title>راهنمای کاربری: برنامه موبایل OONI Probe</title><link>https://ooni.github.io/fa/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/ooni-probe-mobile/</guid><description>&lt;p>**آخرین به‌روز‌رسانی: ** 19 اکتبر 2022
+&lt;strong>نسخه موبایل OONI Probe:&lt;/strong> 3.7.1&lt;/p>
+
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-probe-mobile/images/image49.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu9506725050971740468.png"
+
+ 
+ 
+ title="Measure Internet Censorship"
+ 
+ alt="Measure Internet Censorship"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>OONI Probe یک &lt;a href="https://github.com/ooni/probe">برنامه رایگان و منبع باز&lt;/a> است که می‌توانید از آن برای اندازه‌گیری سانسور اینترنت و سایر انواع تداخل در شبکه استفاده کنید. این راهنمای کاربری &lt;strong>دستورالعمل‌های گام به گام&lt;/strong> در مورد نحوه نصب، اجرا و تنظیمات &lt;a href="https://ooni.org/install/mobile">برنامه موبایل OONI Probe&lt;/a> را ارائه می‌دهد.&lt;/p>
+&lt;p>&lt;strong>آنچه از این راهنما خواهید آموخت:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>یاد می‌گیرید که چگونه OONI Probe موبایل را اجرا کنید:
+&lt;ul>
+&lt;li>تست مسدودیت وبسایت‌ها&lt;/li>
+&lt;li>تست مسدودیت پیام‌رسان‌ها&lt;/li>
+&lt;li>ابزارهای دور زدن سانسور را تست کنید&lt;/li>
+&lt;li>سرعت و عملکرد شبکه خود را اندازه‌گیری کنید&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>تست OONI Probe را برای وب‌سایت‌های مورد نظر خود سفارشی‌سازی کنید&lt;/li>
+&lt;li>نحوه دسترسی و به اشتراک‌گذاری نتایج تست OONI Probe خود را یاد می‌گیرید&lt;/li>
+&lt;li>تنظیمات برنامه OONI Probe خود را پیکربندی کنید&lt;/li>
+&lt;/ul>
+&lt;p>با خواندن این راهنما امیدواریم احساس توانمندی در به اشتراک‌گذاری دانش و مهارت‌های OONI Probe خود با دیگران را کسب کنید!&lt;/p></description></item><item><title>سوالات متداول</title><link>https://ooni.github.io/fa/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/faq/</guid><description>&lt;p>این سند توسط &lt;a href="https://www.miaan.org/">Miaan Group&lt;/a> ترجمه شده است.&lt;/p>
+&lt;p>اصل سند (به زبان انگلیسی): &lt;a href="https://ooni.org/support/faq/">Frequently Asked Questions (FAQ)&lt;/a>&lt;/p>
+&lt;p>این بخش سوالات متداول با هدف رسیدگی به سوالاتی است که غالبا توسط جامعه از ما پرسیده می شود.&lt;/p>
+&lt;p>آیا سوالات دیگری وجود دارد که مایل هستید به آنها بپردازیم؟ &lt;a href="https://ooni.org/about/#contact">لطفااجازه دهید تا ما بدانیم&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%A7%D9%88%D9%88%D9%86%DB%8C-ooni">درباره اوونی OONI&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%A7%D9%88%D9%88%D9%86%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA">اوونی چیست؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%DA%86%D8%B1%D8%A7-%D8%A7%D9%88%D9%88%D9%86%DB%8C">چرا اوونی؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%A7%D9%88%D9%88%D9%86%DB%8C-%DA%86%D9%87-%D9%85%DB%8C-%DA%A9%D9%86%D8%AF">اوونی چه می کند؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%DA%86%D8%B1%D8%A7-%D9%85%D8%A7-%D8%B3%D8%A7%D9%86%D8%B3%D9%88%D8%B1-%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D8%B1%D8%A7-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%85%DB%8C-%DA%A9%D9%86%DB%8C%D9%85">چرا ما سانسور اینترنت را بررسی می کنیم؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.org/fa/support/faq/#%D8%A8%D9%88%D8%AF%D8%AC%D9%87-%D8%A7%D9%88%D9%88%D9%86%DB%8C-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF">بودجه اوونی چگونه تامین می شود؟&lt;/a>&lt;/p></description></item><item><title>واژهنامه اوونی (OONI)</title><link>https://ooni.github.io/fa/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/fa/support/glossary/</guid><description>&lt;h1 id="واژهنامه-اوونی-ooni" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#%d9%88%d8%a7%da%98%d9%87%d9%86%d8%a7%d9%85%d9%87-%d8%a7%d9%88%d9%88%d9%86%db%8c-ooni">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ واژهنامه اوونی (OONI)
+&lt;/h1>
+&lt;p>این سند توسط &lt;a href="https://www.miaan.org/">Miaan Group&lt;/a> ترجمه شده است.&lt;/p></description></item></channel></rss>

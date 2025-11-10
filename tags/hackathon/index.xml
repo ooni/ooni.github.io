@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hackathon on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/hackathon/</link><description>Recent content in Hackathon on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 24 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/hackathon/index.xml" rel="self" type="application/rss+xml"/><item><title>Measure all the Things! IMC Hackathon 2023</title><link>https://ooni.github.io/post/imc-hackathon-results-2023/</link><pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/imc-hackathon-results-2023/</guid><description>&lt;p>On 23rd October 2023, right before the &lt;a href="https://conferences.sigcomm.org/imc/2023/">Internet Measurement Conference
+(IMC)&lt;/a> 2023, we
+co-hosted an &lt;strong>internet measurement hackathon&lt;/strong> in collaboration with
+the &lt;a href="https://www.internetsociety.org/">Internet Society
+(ISOC)&lt;/a>,
+&lt;a href="https://www.measurementlab.net/">M-Lab&lt;/a>, &lt;a href="https://censoredplanet.org/">Censored Planet&lt;/a> and
+&lt;a href="https://ioda.inetintel.cc.gatech.edu/">IODA&lt;/a>.&lt;/p>
+&lt;p>In this post we would like to share some of the projects that were
+developed as part of the hackathon. It was great to see how much was
+accomplished in such a short period of time!&lt;/p>
+&lt;p>The day started with an &lt;a href="https://docs.google.com/presentation/d/1DHhGcpCMTbSJE0QKO6ZTSnIPFixLxxBXwZLkqv0wdJA/edit#slide=id.g1723ddbd698_0_18">introduction to the various datasets&lt;/a>
+from OONI&amp;rsquo;s Arturo, Censored Planet&amp;rsquo;s Armin, IODA&amp;rsquo;s Zach, ISOC&amp;rsquo;s Amreesh
+and M-Lab&amp;rsquo;s Lai Yi. Following the brief presentations, the participants
+formed teams to work on some of the specific challenges that &lt;a href="https://docs.google.com/document/d/1bmCwU0ZJCu-xKlIBKqh3rdIJLHZ-vS7UCOfHI-0RxVE/edit#heading=h.nhvc5bssegtl">we had
+proposed&lt;/a>
+or came up with new ones.&lt;/p></description></item><item><title>Join us at the IMC 2023 Hackathon on Network Interference using Open Data</title><link>https://ooni.github.io/post/2023-imc-hackathon/</link><pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-imc-hackathon/</guid><description>&lt;p>Are you attending the &lt;a href="https://conferences.sigcomm.org/imc/2023/">Internet Measurement Conference (IMC)
+2023&lt;/a>?&lt;/p>
+&lt;p>Join us at the &lt;strong>&lt;a href="https://conferences.sigcomm.org/imc/2023/hackaton/">IMC Hackathon on Network Interference using Open
+Data&lt;/a>&lt;/strong> on Monday, &lt;strong>23rd
+October 2023&lt;/strong>, in Montreal, Canada. The hackathon is organized by the
+&lt;a href="https://www.internetsociety.org/">Internet Society (ISOC)&lt;/a>, the &lt;a href="https://ooni.org/">Open
+Observatory of Network Interference (OONI)&lt;/a>,
+&lt;a href="https://www.measurementlab.net/">M-Lab&lt;/a> and &lt;a href="https://censoredplanet.org/">Censored
+Planet.&lt;/a>&lt;/p>
+&lt;p>IMC is a yearly academic conference focusing on Internet measurement and
+analysis. The conference is sponsored by ACM SIGCOMM.&lt;/p>
+&lt;p>This IMC Hackathon will be about exploring, analyzing, and visualizing open
+network measurement data with a focus on identifying Internet censorship and
+Internet shutdown events.&lt;/p></description></item><item><title>OONI-dev meeting and hackathon 2016</title><link>https://ooni.github.io/post/ooni-dev-and-hackathon-2016/</link><pubDate>Tue, 22 Nov 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-dev-and-hackathon-2016/</guid><description>&lt;p>Oonitarians are spread out across the globe, and OONI’s core team is no
+exception. We recently met in Berlin to hack on &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI’s software&lt;/a>, work on our
+roadmap, and to have all those discussions that are more fruitful to have in
+person than on IRC. We also held a &lt;a href="https://ooni.org/post/berlin-hackathon-2016/">hackathon&lt;/a> to engage new individuals with our project!&lt;/p>
+&lt;p>Below we document some of the things that we worked on as part of our OONI-dev
+meeting and hackathon.&lt;/p></description></item><item><title>OONI Hackathon: Join us to explore internet censorship!</title><link>https://ooni.github.io/post/berlin-hackathon-2016/</link><pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/berlin-hackathon-2016/</guid><description>&lt;p>&lt;img alt="HACKOONI16" src="https://ooni.github.io/post/berlin-hackathon/ooni-berlin-hackathon.png">&lt;/p>
+&lt;p>Interested in exploring (and exposing) internet censorship? Join the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> hackathon in Berlin!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>When?&lt;/strong> Friday, &lt;strong>11th November&lt;/strong> &amp;amp; Saturday, &lt;strong>12th November&lt;/strong> 2016&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Where?&lt;/strong> The &lt;strong>OnionSpace&lt;/strong> (&lt;a href="http://www.openstreetmap.org/?mlat=52.54965&amp;mlon=13.3700#map=19/52.54974/13.37001">Gottschedstraße 4, 13357 Berlin, Germany&lt;/a>)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>What time?&lt;/strong> 10am onwards&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Who?&lt;/strong> Software developers, data analysts, academics, journalists,
+bloggers, lawyers, activists, and all those who don’t go by any
+particular label, but are curious enough to join! We only have one rule:
+&lt;strong>Be excellent to each other&lt;/strong>.&lt;/p></description></item></channel></rss>

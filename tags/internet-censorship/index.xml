@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Internet Censorship on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/internet-censorship/</link><description>Recent content in Internet Censorship on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/internet-censorship/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI Run: Let's fight internet censorship together!</title><link>https://ooni.github.io/post/ooni-run/</link><pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-run/</guid><description>&lt;p>&lt;img alt="OONI Run" src="https://ooni.github.io/post/ooni-run/ooni-run.png">&lt;/p>
+&lt;p>Today we released &lt;strong>&lt;a href="https://run.ooni.org/">OONI Run&lt;/a>&lt;/strong>, a website linked to an exciting new OONI Probe mobile app feature that enables you to:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Engage your friends (and the world) to run censorship measurement tests&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Monitor the blocking of &lt;em>your&lt;/em> website around the world&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>OONI Run includes a variety of &lt;a href="https://github.com/TheTorProject/ooni-probe">OONI Probe software tests&lt;/a>designed to:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Test the &lt;a href="https://ooni.org/nettest/web-connectivity/">blocking of websites&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Find &lt;a href="https://ooni.org/nettest/http-invalid-request-line/">middleboxes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Measure the &lt;a href="https://ooni.org/nettest/ndt/">speed and performance&lt;/a> of networks&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Measure &lt;a href="https://ooni.org/nettest/dash/">video streaming performance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>By choosing the tests that interest you and the sites you want to test, generate a link via &lt;a href="https://run.ooni.org/">OONI Run&lt;/a> and share it. Alternatively, embed the widget code to monitor the accessibility of your site. The global OONI Probe community can then respond!&lt;/p></description></item></channel></rss>

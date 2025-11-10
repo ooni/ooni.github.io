@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mozilla-Telemetry on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/mozilla-telemetry/</link><description>Recent content in Mozilla-Telemetry on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 08 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/mozilla-telemetry/index.xml" rel="self" type="application/rss+xml"/><item><title>Investigating Internet shutdowns through Mozilla telemetry</title><link>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</link><pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</guid><description>&lt;p>More than &lt;a href="https://data.firefox.com/dashboard/user-activity">200 million users&lt;/a> worldwide use
+the &lt;a href="https://www.mozilla.org/en-US/firefox/new/">Firefox&lt;/a> web browser
+(developed by Mozilla) every month.&lt;/p>
+&lt;p>If access to the Internet is shut down in a country, Mozilla should
+expect to see a dramatic drop in Firefox usage from that country. Given
+how &lt;a href="https://data.firefox.com/dashboard/user-activity">widespread&lt;/a> the
+use of Firefox is around the world, could Mozilla telemetry be a
+valuable resource for the Internet freedom community to investigate
+Internet shutdowns?&lt;/p>
+&lt;p>To explore this question, the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> and &lt;a href="https://ioda.caida.org/">Internet Outage Detection and Analysis (IODA)&lt;/a> teams joined forces to analyze a
+dataset of potential outage signals gathered through regular Mozilla
+telemetry, access to which was provided by Mozilla as part of a relevant
+research project to validate assumptions about the data.&lt;/p></description></item></channel></rss>

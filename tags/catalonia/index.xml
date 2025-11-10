@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Catalonia on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/catalonia/</link><description>Recent content in Catalonia on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/catalonia/index.xml" rel="self" type="application/rss+xml"/><item><title>Evidence of Internet Censorship during Catalonia's Independence Referendum</title><link>https://ooni.github.io/post/internet-censorship-catalonia-independence-referendum/</link><pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/internet-censorship-catalonia-independence-referendum/</guid><description>&lt;p>&lt;img alt="Seized referendum site" src="https://ooni.github.io/post/catalonia/seized.png">&lt;/p>
+&lt;p>Image: Catalan Independence Referendum site seized&lt;/p>
+&lt;p>Two days ago, Catalonia held a
+&lt;a href="http://time.com/4951665/catalan-referendum-2017/">referendum&lt;/a> seeking
+independence from Spain. As the world awaits to see what happens next,
+we publish this post to share
+&lt;a href="https://api.ooni.io/files/by_country/ES">evidence&lt;/a> of recent
+censorship events that occurred during and leading up to the referendum.&lt;/p>
+&lt;p>We &lt;strong>confirm the blocking of at least 25 sites related to the Catalan
+referendum&lt;/strong> by means of DNS tampering and HTTP blocking, based on
+&lt;a href="https://explorer.ooni.org/country/ES">OONI Probe network measurements&lt;/a>
+collected from three local networks. OONI data shows that these sites
+were blocked every day from (at least) 25th September 2017 (when the
+testing started) leading up to the referendum day, on 1st October 2017.&lt;/p></description></item></channel></rss>

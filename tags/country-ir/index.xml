@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Ir on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-ir/</link><description>Recent content in Country-Ir on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 29 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-ir/index.xml" rel="self" type="application/rss+xml"/><item><title>Technical multi-stakeholder report on Internet shutdowns: The case of Iran amid autumn 2022 protests</title><link>https://ooni.github.io/post/2022-iran-technical-multistakeholder-report/</link><pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-iran-technical-multistakeholder-report/</guid><description>&lt;ul>
+&lt;li>&lt;strong>Coordinators:&lt;/strong> OONI, ISOC&lt;/li>
+&lt;li>&lt;strong>Contributors:&lt;/strong> &lt;a href="https://ooni.org/">OONI&lt;/a>, &lt;a href="https://ioda.inetintel.cc.gatech.edu/">IODA&lt;/a>, &lt;a href="https://www.measurementlab.net/">Measurement Lab (M-Lab)&lt;/a>, &lt;a href="https://www.cloudflare.com/">Cloudflare&lt;/a>, &lt;a href="https://www.kentik.com/">Kentik&lt;/a>, &lt;a href="https://censoredplanet.org/">Censored Planet&lt;/a>, &lt;a href="https://www.internetsociety.org/">ISOC&lt;/a>, &lt;a href="https://www.article19.org/">Article19&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Facilitators:&lt;/strong> European Commission, United States&lt;/li>
+&lt;/ul>
+&lt;a class="ooni-btn" href="https://ooni.github.io/documents/OONI-Iran-multi-stakeholder-report.pdf">Download in PDF&lt;/a>
+
+&lt;p>This report shares empirical technical findings on the recent Internet
+shutdown events that emerged in Iran following the death of Jhina
+(Mahsa) Amini in September 2022. The report is intended to be the first
+among a series of multi-stakeholder reports aimed at shedding light on
+what is becoming a widespread and increasingly sophisticated practice of
+certain governments around the world. The stakeholders participating in
+the report share a concern about the global trend in Internet shutdowns,
+but are contributing to the analysis only on the basis of their
+technical expertise.&lt;/p></description></item><item><title>Iran blocks social media, app stores and encrypted DNS amid Mahsa Amini protests</title><link>https://ooni.github.io/post/2022-iran-blocks-social-media-mahsa-amini-protests/</link><pubDate>Sun, 25 Sep 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-iran-blocks-social-media-mahsa-amini-protests/</guid><description>&lt;p>Protests &lt;a href="https://www.theguardian.com/world/2022/sep/17/iran-protests-death-kurdish-woman-mahsaa-amini-morality-police">erupted&lt;/a> in Iran over the last week following the death of Mahsa Amini, a 22-year-old Kurdish woman who was reportedly beaten to death by Iran’s morality police for allegedly violating strict hijab rules. Amid the &lt;a href="https://www.bbc.com/news/world-middle-east-62994003">ongoing protests&lt;/a>, which have &lt;a href="https://iranhr.net/fa/articles/5496/">reportedly&lt;/a> resulted in at least 31 civilian deaths, Iranian authorities &lt;a href="https://www.theguardian.com/world/2022/sep/22/iran-blocks-capitals-internet-access-as-amini-protests-grow">cracked down on the internet&lt;/a> in an attempt to curb dissent.&lt;/p>
+&lt;p>Over the past week, Iran experienced &lt;a href="https://ioda.inetintel.cc.gatech.edu/country/IR?from=1663279200&amp;until=1664143140">severe mobile network outages&lt;/a>, in addition to increased levels of internet censorship. In this report, we share &lt;a href="https://explorer.ooni.org/search?since=2022-08-22&amp;until=2022-09-25&amp;probe_cc=IR&amp;test_name=web_connectivity&amp;failure=false">OONI network measurement findings from Iran&lt;/a> on the blocking of WhatsApp, Instagram, Linkedin, Skype, Google Play Store, Apple App Store, and encrypted DNS (DNS over HTTPS). We also share &lt;a href="https://ioda.inetintel.cc.gatech.edu/country/IR?from=1663279200&amp;until=1664143140">IODA&lt;/a> and &lt;a href="https://radar.cloudflare.com/asn/44244?date_filter=last_7_days">Cloudflare Radar&lt;/a> data on mobile network outages over the last few days.&lt;/p></description></item><item><title>Measuring DoT/DoH Blocking Using OONI Probe: A Preliminary Study</title><link>https://ooni.github.io/post/2022-doh-dot-paper-dnsprivacy21/</link><pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-doh-dot-paper-dnsprivacy21/</guid><description>&lt;p>When you enter a URL such as &lt;code>https://example.com/&lt;/code>, under the
+hood, your web browser resolves the &lt;code>example.com&lt;/code> domain to one or
+more IP addresses using the Domain Name System (DNS), a set of
+federated servers and protocols providing this name-to-IP-address
+mapping. For example, as of 2022-06-16, &lt;code>example.com&lt;/code> resolves to
+the &lt;code>93.184.216.34&lt;/code> (IPv4) and &lt;code>2606:2800:220:1:248:1893:25c8:1946&lt;/code>
+(IPv6) addresses. Once it knows the IP addresses for the domain,
+the browser then uses them to fetch the requested webpage. Conceptually,
+the browser tries the IP addresses in sequence until it finds one
+that works. If no returned IP address works, the request fails.
+Therefore, domain name lookups are key to browsing and, incidentally,
+are also key to website censorship and surveillance.&lt;/p></description></item><item><title>Measuring HTTP/3 censorship with OONI Probe</title><link>https://ooni.github.io/post/2022-http3-measurements-paper/</link><pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-http3-measurements-paper/</guid><description>&lt;p>Last year, QUIC emerged as a new internet protocol for creating reliable connections and encrypting communications between clients over the new HTTP/3 protocol. Observing the emergence and growing deployment of HTTP/3, we want to enable &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> to measure HTTP/3 censorship and monitor how censors respond and adapt to technical innovation.&lt;/p>
+&lt;p>We therefore added HTTP/3 support (in early 2021) into &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> (through our &lt;a href="https://github.com/ooni/spec/blob/master/nettests/ts-027-urlgetter.md">urlgetter&lt;/a> research tool) to conduct measurements in &lt;strong>China, Iran, India and Kazakhstan to investigate the state of HTTP/3 censorship&lt;/strong> in these countries.&lt;/p></description></item><item><title>Investigating Internet shutdowns through Mozilla telemetry</title><link>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</link><pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</guid><description>&lt;p>More than &lt;a href="https://data.firefox.com/dashboard/user-activity">200 million users&lt;/a> worldwide use
+the &lt;a href="https://www.mozilla.org/en-US/firefox/new/">Firefox&lt;/a> web browser
+(developed by Mozilla) every month.&lt;/p>
+&lt;p>If access to the Internet is shut down in a country, Mozilla should
+expect to see a dramatic drop in Firefox usage from that country. Given
+how &lt;a href="https://data.firefox.com/dashboard/user-activity">widespread&lt;/a> the
+use of Firefox is around the world, could Mozilla telemetry be a
+valuable resource for the Internet freedom community to investigate
+Internet shutdowns?&lt;/p>
+&lt;p>To explore this question, the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> and &lt;a href="https://ioda.caida.org/">Internet Outage Detection and Analysis (IODA)&lt;/a> teams joined forces to analyze a
+dataset of potential outage signals gathered through regular Mozilla
+telemetry, access to which was provided by Mozilla as part of a relevant
+research project to validate assumptions about the data.&lt;/p></description></item><item><title>How countries attempt to block Signal Private Messenger App around the world</title><link>https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/</link><pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/images/01.png">
+ &lt;img
+ src="https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/images/01_hu6429735702460217004.png"
+
+ 
+ 
+ title="Signal blocked in Iran"
+ 
+ alt="Signal blocked in Iran"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;a href="https://signal.org/">Signal Private Messenger&lt;/a>, commonly used by
+human rights defenders worldwide, is widely considered the
+state-of-the-art app for private and secure communications. But as its
+&lt;a href="https://edition.cnn.com/2021/01/12/tech/signal-growth-whatsapp-confusion/index.html">popularity surged&lt;/a>
+recently, we have started to observe its
+&lt;a href="https://explorer.ooni.org/search?until=2021-09-29&amp;since=2021-08-30&amp;test_name=signal&amp;only=anomalies">blocking&lt;/a>
+in several countries.&lt;/p>
+&lt;p>In this report, we share our analysis of &lt;a href="https://explorer.ooni.org/search?until=2021-09-29&amp;since=2021-08-30&amp;test_name=signal&amp;only=anomalies">OONI network measurement data&lt;/a>
+on the blocking of the Signal Private Messenger app in &lt;strong>Iran, China,
+Cuba, and Uzbekistan&lt;/strong>.&lt;/p>
+&lt;p>Currently, circumvention is &lt;a href="https://github.com/signalapp/Signal-Android/blob/83b9fbac11868833925f9395364b8167a1c6615a/app/src/main/java/org/thoughtcrime/securesms/push/SignalServiceNetworkAccess.java#L53">enabled by default&lt;/a>
+for Signal users in Iran, Egypt, Oman, Qatar, and the UAE. If Signal
+users in other countries are unable to use the app, they can enable the
+“Censorship Circumvention” setting on iOS. On Android, Signal blocking
+can be circumvented through the use of &lt;a href="https://support.signal.org/hc/en-us/articles/360056052052-Proxy-Support">Signal TLS proxies&lt;/a>.&lt;/p></description></item><item><title>No Access: LGBTIQ Website Censorship in Six Countries</title><link>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</link><pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover.png">
+ &lt;img
+ src="https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover_hu14604463933570315610.png"
+
+ 
+ 
+ title="Report cover"
+ 
+ alt="Report cover"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today, in collaboration with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> and the &lt;a href="https://citizenlab.ca/">Citizen Lab&lt;/a>, we are excited to share our new research report, “&lt;strong>No Access: LGBTIQ Website Censorship in Six Countries&lt;/strong>”,
+which examines the blocking of LGBTIQ websites in Indonesia, Malaysia,
+Iran, Russia, Saudi Arabia, and the United Arab Emirates (UAE).&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://ooni.github.io/documents/2021-lgbtiq-website-censorship-report/2021-lgbtiq-website-censorship-report-v2.pdf">READ FULL REPORT&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://ooni.github.io/documents/2021-lgbtiq-website-censorship-report/annotated-bibliography.pdf">Annotated Bibliography&lt;/a>&lt;/p>
+&lt;p>Below we share some of our key research findings.&lt;/p>
+&lt;h1 id="summary-of-findings" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#summary-of-findings">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Summary of findings
+&lt;/h1>
+&lt;p>We joined forces with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> and the &lt;a href="https://citizenlab.ca/">Citizen Lab&lt;/a> to examine the blocking of LGBTIQ websites
+in six countries: Indonesia, Malaysia, Iran, Russia, Saudi Arabia, and
+the United Arab Emirates (UAE). We selected these countries because they
+are (a) known to serve &lt;a href="https://ooni.org/support/glossary/#block-page">block pages&lt;/a> (i.e., pages that
+website visitors may see when access is restricted), which enable us to
+automatically confirm the blocking of LGBTIQ websites, and (b) known to
+censor LGBTIQ related content, based on prior research.&lt;/p></description></item><item><title>DNS over TLS blocked in Iran</title><link>https://ooni.github.io/post/2020-iran-dot/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-iran-dot/</guid><description>&lt;p>&lt;a href="https://tools.ietf.org/html/rfc7858">DNS over TLS&lt;/a> (DoT) is a network protocol that
+allows one to use &lt;a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS&lt;/a> over
+&lt;a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS&lt;/a> (i.e. with encryption
+and authentication of the remote DNS server).&lt;/p>
+&lt;p>We investigated whether DoT works in Iran by gathering a list of 31
+well-known DoT endpoints and running experiments from four distinct
+Iranian mobile and fixed-line Internet Service Providers (ISPs):
+&lt;a href="https://ipinfo.io/AS197207">MCI&lt;/a>, &lt;a href="https://ipinfo.io/AS58224">TCI&lt;/a>,
+&lt;a href="https://ipinfo.io/AS44244">Irancell&lt;/a>, and &lt;a href="https://ipinfo.io/AS31549">Shatel&lt;/a>.&lt;/p>
+&lt;p>We discovered that:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>57% of the endpoints are blocked on a least one ISP;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>the blocking is not implemented uniformly across ISPs;&lt;/p></description></item><item><title>Measuring SNI based blocking in Iran</title><link>https://ooni.github.io/post/2020-iran-sni-blocking/</link><pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-iran-sni-blocking/</guid><description>&lt;p>In this blog post we start evaluating &lt;a href="https://github.com/ooni/spec/blob/adf9537c43ef848b96792f8dea99fbd7f93fe608/nettests/ts-024-sni-blocking.md">OONI&amp;rsquo;s new SNI blocking
+experiment&lt;/a>.
+To this end, we will use measurements performed in Iran, where the
+blocking technique measured by this experiment is deployed.&lt;/p>
+&lt;p>OONI&amp;rsquo;s SNI blocking experiment discovers cases where &lt;a href="https://tls.ulfheim.net/">a Client Hello
+packet&lt;/a> carrying a specific SNI
+triggers blocking. In this context, SNI means &lt;a href="https://en.wikipedia.org/wiki/Server_Name_Indication">Server Name
+Indication&lt;/a>.
+It is an extension to the &lt;a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">Transport Layer
+Security&lt;/a>
+(TLS) protocol that allows a client to specify the domain name that it
+wants an HTTP server to serve. This extension is used in many TLS use
+cases. For example, when you access
+&lt;a href="https://www.google.com">https://www.google.com&lt;/a> with your
+browser, the code will send a Client Hello packet containing the string
+&lt;code>www.google.com&lt;/code> in the SNI extension.&lt;/p></description></item><item><title>Iran temporarily blocks the Farsi language edition of Wikipedia</title><link>https://ooni.github.io/post/2020-iran-blocks-farsi-wikipedia/</link><pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-iran-blocks-farsi-wikipedia/</guid><description>&lt;p>Over the last days, between 2nd to 3rd March 2020, &lt;a href="https://explorer.ooni.org/search?probe_cc=IR&amp;until=2020-03-04&amp;domain=fa.wikipedia.org&amp;test_name=web_connectivity">OONI measurements&lt;/a>
+collected from 6 different networks in Iran showed that access to the
+Farsi edition of Wikipedia (fa.wikipedia.org) was temporarily
+&lt;a href="https://explorer.ooni.org/measurement/20200302T194052Z_AS197207_islb8RlGpTL7QYRJW5YqbATYCtS17SkETdmEPpkCQJbeSVtUf7?input=https%3A%2F%2Ffa.wikipedia.org%2F">blocked&lt;/a>
+by means of &lt;strong>DNS tampering&lt;/strong> and &lt;strong>SNI filtering&lt;/strong>.&lt;/p>
+&lt;p>In this post, we share relevant OONI data.&lt;/p>
+&lt;h1 id="blocking-of-farsi-wikipedia-and-wikinews" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#blocking-of-farsi-wikipedia-and-wikinews">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Blocking of Farsi Wikipedia and Wikinews
+&lt;/h1>
+&lt;p>In the past, Iran mainly &lt;a href="https://repository.upenn.edu/cgi/viewcontent.cgi?article=1003&amp;context=iranmediaprogram">blocked the HTTP version of specific Wikipedia articles&lt;/a>.
+But over the last years, this probably wasn’t very noticeable because
+Wikipedia used &lt;a href="https://ooni.org/support/glossary/#https">HTTPS&lt;/a> with
+HSTS enabled, meaning that Iranian internet users could easily access
+the censored pages.&lt;/p></description></item><item><title>Iran’s nation-wide Internet blackout: Measurement data and technical observations</title><link>https://ooni.github.io/post/2019-iran-internet-blackout/</link><pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-iran-internet-blackout/</guid><description>&lt;p>Over the last week, Iran experienced a nation-wide Internet blackout.&lt;/p>
+&lt;p>Most Iranians were barred from connecting to the global Internet and the
+outside world, but they had access to Iran’s national Intranet: the
+domestic network that hosts Iranian websites and services—all under the
+government’s watch.&lt;/p>
+&lt;p>This major Internet blackout was rolled out on 16th November 2019, right
+after &lt;a href="https://www.aljazeera.com/news/2019/11/iran-protests-600-words-191118060831036.html">protests erupted&lt;/a>
+across multiple cities in Iran. The protests (against economic
+mismanagement and government corruption) were
+&lt;a href="https://www.nytimes.com/2019/11/15/world/middleeast/iran-gasoline-prices-rations.html">sparked&lt;/a>
+by the government’s abrupt announcement to increase the price of fuel
+(as much as
+&lt;a href="https://edition.cnn.com/2019/11/20/middleeast/iran-fuel-protests-intl/index.html">300%&lt;/a>)
+and to impose a strict rationing system. According to Amnesty
+International, &lt;a href="https://www.amnesty.org/en/latest/news/2019/11/iran-more-than-100-protesters-believed-to-be-killed-as-top-officials-give-green-light-to-crush-protests/">more than 100 protesters are believed to have been killed&lt;/a>
+over the last week, but this figure has been
+&lt;a href="https://www.aljazeera.com/news/2019/11/iran-blasts-amnesty-protest-toll-calling-disinformation-191120195212119.html">disputed&lt;/a>
+by Iranian authorities. Amid the protests—which began on 15th November
+2019 and are ongoing—access to the Internet was &lt;a href="https://www.wired.com/story/iran-internet-shutoff/">reportedly shutdown&lt;/a>.&lt;/p></description></item><item><title>On the blocking of abortion rights websites: Women on Waves &amp; Women on Web</title><link>https://ooni.github.io/post/2019-blocking-abortion-rights-websites-women-on-waves-web/</link><pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-blocking-abortion-rights-websites-women-on-waves-web/</guid><description>&lt;p>&lt;img alt="Cover image" src="https://ooni.github.io/post/2019-blocking-abortion-rights-websites-women-on-waves-web/wow-cover-image.png">&lt;/p>
+&lt;p>&lt;strong>Image:&lt;/strong> By Clarote (Coding Rights)&lt;/p>
+&lt;hr>
+&lt;p>Read the &lt;a href="https://medium.com/codingrights/brasil-bloqueia-women-on-waves-site-que-traz-informa%C3%A7%C3%B5es-sobre-aborto-seguro-91cd6ae64ba3">Portuguese version&lt;/a> by Coding Rights.&lt;/p>
+&lt;p>View the report&amp;rsquo;s &lt;a href="https://theintercept.com/2019/12/12/net-claro-e-vivo-bloqueiam-site-aborto-seguro/">press coverage&lt;/a> by The Intercept.&lt;/p>
+&lt;hr>
+&lt;p>As abortion remains partially or totally
+&lt;a href="https://reproductiverights.org/worldabortionlaws">criminalized&lt;/a> in
+numerous countries, the fight to promote sexual and reproductive rights,
+as well as women&amp;rsquo;s health, also relies on access to information. But
+recently, we were told that the website of the abortion rights
+non-governmental organization womeonwaves.org, which provides
+reproductive health services and education to women in countries with
+restrictive abortion laws, was inaccessible in Brazil.&lt;/p></description></item><item><title>Iran Protests: DPI blocking of Instagram (Part 2)</title><link>https://ooni.github.io/post/2018-iran-protests-pt2/</link><pubDate>Wed, 14 Feb 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2018-iran-protests-pt2/</guid><description>&lt;p>In early January 2018, OONI published a &lt;a href="https://ooni.github.io/post/2018-iran-protests/">post&lt;/a>
+reporting on the blocking of Telegram and Instagram amidst protests in Iran. We
+have since been analyzing RIPE data and other network measurements collected
+from Iran in an attempt to better understand the blockages. Upon further
+analysis, we found that Instagram was in fact blocked (during the Iran
+protests) through the use of Deep Packet Inspection (DPI) technology which
+targeted the TLS protocol. And it was configured in an interesting way.&lt;/p></description></item><item><title>Iran Protests: OONI data confirms censorship events (Part 1)</title><link>https://ooni.github.io/post/2018-iran-protests/</link><pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2018-iran-protests/</guid><description>&lt;p>At this point, you have probably read all about the
+&lt;a href="https://www.theguardian.com/world/2018/jan/02/iran-protests-how-did-they-start-and-where-are-they-heading">major anti-government protests&lt;/a>
+that erupted across Iran over the last week. You may have even read about how services like
+&lt;a href="https://motherboard.vice.com/en_us/article/wjpxjy/iran-is-blocking-the-internet-to-shut-down-protests">Telegram and Instagram were blocked&lt;/a>,
+reportedly as part of a government attempt to stifle the unrest.&lt;/p>
+&lt;p>We publish this post to share &lt;a href="https://api.ooni.io/files/by_country/IR">OONI network measurement data&lt;/a>
+collected from Iran between 28th December 2017 (when the protests started) to
+2nd January 2018. OONI data confirms the blocking of Telegram, Instagram, and
+Facebook Messenger amidst Iran’s protests and reveals how blocks were
+implemented.&lt;/p></description></item><item><title>Internet Censorship in Iran: Network Measurement Findings from 2014-2017</title><link>https://ooni.github.io/post/iran-internet-censorship/</link><pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/iran-internet-censorship/</guid><description>&lt;p>&lt;img alt="Iran block page" src="https://ooni.github.io/post/iran/blockpage.png">&lt;/p>
+&lt;p>Image: Blockpage in Iran&lt;/p>
+&lt;p>A research study by the Open Observatory of Network Interference (OONI),
+ASL19, ARTICLE 19, and Small Media.&lt;/p>
+&lt;p>&lt;strong>Table of contents&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#key-findings">Key Findings&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#introduction">Introduction&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#background">Background&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#network-landscape">Network landscape&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#internet-use">Internet use&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#legal-environment">Legal environment&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#reported-cases-of-internet-censorship">Reported cases of internet censorship&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#methodology-measuring-internet-censorship-in-iran">Methodology: Measuring internet censorship in Iran&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#review-of-the-citizen-labs-test-list-for-iran">Review of the Citizen Lab&amp;rsquo;s test list for Iran&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#ooni-network-measurement-testing">OONI network measurement testing&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#web-connectivity">Web Connectivity&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#http-invalid-request-line">HTTP Invalid Request Line&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#http-header-field-manipulation">HTTP Header Field Manipulation&lt;/a>&lt;/p></description></item></channel></rss>

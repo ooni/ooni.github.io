@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zambia on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/zambia/</link><description>Recent content in Zambia on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/zambia/index.xml" rel="self" type="application/rss+xml"/><item><title>Zambia: Social media blocked amid 2021 general elections</title><link>https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/</link><pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/images/zm-whatsapp-measurement.png">
+ &lt;img
+ src="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/images/zm-whatsapp-measurement_hu4701194345777220979.png"
+
+ 
+ 
+ title="Blocking of WhatsApp"
+ 
+ alt="Blocking of WhatsApp"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Recently, on 12th August 2021, &lt;a href="https://www.elections.org.zm/category/2021-general-election/">general elections&lt;/a>
+were held in Zambia, during which access to popular online social media
+platforms was &lt;a href="https://edition.cnn.com/2021/08/12/africa/zambia-election-social-media-blackout-intl/index.html">reportedly blocked&lt;/a>.&lt;/p>
+&lt;p>In this report, we share relevant &lt;a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;probe_cc=ZM">OONI data&lt;/a>
+on the blocking of
+&lt;a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-08-10&amp;probe_cc=ZM&amp;test_name=whatsapp&amp;only=anomalies">WhatsApp&lt;/a>,
+&lt;a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;domain=twitter.com&amp;probe_cc=ZM&amp;only=anomalies">Twitter&lt;/a>,
+and
+&lt;a href="https://explorer.ooni.org/search?until=2021-08-20&amp;since=2021-07-21&amp;domain=www.facebook.com&amp;probe_cc=ZM&amp;only=anomalies">Facebook&lt;/a>
+amid Zambia’s 2021 general election.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#methods">Methods&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#findings">Findings&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#blocking-of-whatsapp">Blocking of WhatsApp&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#blocking-of-twitter-and-facebook">Blocking of Twitter and Facebook&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#conclusion">Conclusion&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/2021-zambia-social-media-blocks-amid-elections/#acknowledgements">Acknowledgements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="background" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#background">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Background
+&lt;/h1>
+&lt;p>While Zambia hasn’t experienced pervasive forms of internet censorship
+(such as the blocking of popular social media apps) over the last years,
+various forms of
+&lt;a href="https://ooni.org/post/zambia-election-monitoring/#previous-cases-of-internet-censorship-and-surveillance">censorship&lt;/a>
+have been reported in the country.&lt;/p></description></item><item><title>Zambia: Internet censorship during the 2016 general elections?</title><link>https://ooni.github.io/post/zambia-election-monitoring/</link><pubDate>Tue, 11 Oct 2016 10:52:00 +0000</pubDate><guid>https://ooni.github.io/post/zambia-election-monitoring/</guid><description>&lt;p>&lt;img alt="Zambia flag" src="https://ooni.github.io/post/zambia-election-monitoring/zambia-flag.png">&lt;/p>
+&lt;p>A research study by the Open Observatory of Network Interference
+(OONI) and Strathmore University’s Centre for Intellectual Property
+and Information Technology Law (CIPIT).&lt;/p>
+&lt;p>&lt;strong>Table of contents&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#key-findings">&lt;em>Key Findings&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#introduction">&lt;em>Introduction&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#background">&lt;em>Background&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#network-landscape-and-internet-penetration">&lt;em>Network landscape and internet
+penetration&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#legal-environment">&lt;em>Legal environment&lt;/em>&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#freedom-of-expression">&lt;em>Freedom of expression&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#press-freedom">&lt;em>Press freedom&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#access-to-information">&lt;em>Access to information&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#privacy">&lt;em>Privacy&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#censorship-and-surveillance">&lt;em>Censorship and surveillance&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#previous-cases-of-internet-censorship-and-surveillance">&lt;em>Previous cases of internet censorship and
+surveillance&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#zambia-s-2016-general-elections-and-constitutional-referendum">&lt;em>Zambia’s 2016 general elections and constitutional
+referendum&lt;/em>&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/zambia-election-monitoring/#examining-internet-censorship-during-zambia-s-2016-general-elections">&lt;em>Examining internet censorship during Zambia’s 2016 general
+elections&lt;/em>&lt;/a>&lt;/p></description></item><item><title>Zambia, a country under Deep Packet Inspection</title><link>https://ooni.github.io/post/zambia/</link><pubDate>Mon, 15 Jul 2013 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/zambia/</guid><description>&lt;pre>&lt;code>&amp;quot;I do not have the details of the blocking of Zambianwatchdog.com, but I
+would celebrate.&amp;quot;
+ Guy Scott 
+ Zambian Vicepresident, Friday 28th June 2013
+&lt;/code>&lt;/pre>
+&lt;p>The following article is a guest blog post by Mr T. an independent researcher
+and provider of hosting to various grass roots organizations.&lt;/p>
+&lt;p>This article summarizes how we discovered that the grass roots online newspaper
+Zambianwatchdog.com was being blocked inside Zambia. This report provides
+technical evidence of the unlawful presence of Deep Packet Inspection in the
+country to monitor the Internet communications and stop users from browsing the
+website.&lt;/p></description></item></channel></rss>

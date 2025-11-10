@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Uz on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-uz/</link><description>Recent content in Country-Uz on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-uz/index.xml" rel="self" type="application/rss+xml"/><item><title>How countries attempt to block Signal Private Messenger App around the world</title><link>https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/</link><pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/images/01.png">
+ &lt;img
+ src="https://ooni.github.io/post/2021-how-signal-private-messenger-blocked-around-the-world/images/01_hu6429735702460217004.png"
+
+ 
+ 
+ title="Signal blocked in Iran"
+ 
+ alt="Signal blocked in Iran"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;a href="https://signal.org/">Signal Private Messenger&lt;/a>, commonly used by
+human rights defenders worldwide, is widely considered the
+state-of-the-art app for private and secure communications. But as its
+&lt;a href="https://edition.cnn.com/2021/01/12/tech/signal-growth-whatsapp-confusion/index.html">popularity surged&lt;/a>
+recently, we have started to observe its
+&lt;a href="https://explorer.ooni.org/search?until=2021-09-29&amp;since=2021-08-30&amp;test_name=signal&amp;only=anomalies">blocking&lt;/a>
+in several countries.&lt;/p>
+&lt;p>In this report, we share our analysis of &lt;a href="https://explorer.ooni.org/search?until=2021-09-29&amp;since=2021-08-30&amp;test_name=signal&amp;only=anomalies">OONI network measurement data&lt;/a>
+on the blocking of the Signal Private Messenger app in &lt;strong>Iran, China,
+Cuba, and Uzbekistan&lt;/strong>.&lt;/p>
+&lt;p>Currently, circumvention is &lt;a href="https://github.com/signalapp/Signal-Android/blob/83b9fbac11868833925f9395364b8167a1c6615a/app/src/main/java/org/thoughtcrime/securesms/push/SignalServiceNetworkAccess.java#L53">enabled by default&lt;/a>
+for Signal users in Iran, Egypt, Oman, Qatar, and the UAE. If Signal
+users in other countries are unable to use the app, they can enable the
+“Censorship Circumvention” setting on iOS. On Android, Signal blocking
+can be circumvented through the use of &lt;a href="https://support.signal.org/hc/en-us/articles/360056052052-Proxy-Support">Signal TLS proxies&lt;/a>.&lt;/p></description></item><item><title>Tab-Tab, Come in! Bypassing Internet blocking to categorize DPI devices</title><link>https://ooni.github.io/post/tab-tab-come-in/</link><pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/tab-tab-come-in/</guid><description>Analysis of censorship in Turkmenistan and Uzbekistan</description></item></channel></rss>

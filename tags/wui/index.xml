@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wui on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/wui/</link><description>Recent content in Wui on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 13 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/wui/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI releases new Web UI: Run censorship tests from your web browser!</title><link>https://ooni.github.io/post/web-ui-post/</link><pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/web-ui-post/</guid><description>&lt;p>&lt;img alt="Image" src="https://ooni.github.io/post/wui-screenshots/wui-01.png">&lt;/p>
+&lt;p>Today we are excited to announce the beta release of our &lt;em>new&lt;/em> web-based user interface
+(WUI) that enables OONI Probe users to run censorship tests from a web browser!&lt;/p>
+&lt;p>Whether you’re running OONI Probe from your desktop or a Raspberry Pi, you can
+now easily choose which tests you want to run through OONI’s web UI and run them
+with the click of a button. These &lt;a href="https://ooni.org/nettest/">tests&lt;/a>
+are designed to examine the following:&lt;/p></description></item></channel></rss>

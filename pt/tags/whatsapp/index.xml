@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Whatsapp on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/pt/tags/whatsapp/</link><description>Recent content in Whatsapp on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Fri, 06 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/pt/tags/whatsapp/index.xml" rel="self" type="application/rss+xml"/><item><title>WhatsApp bloqueado (outra vez) no Brasil</title><link>https://ooni.github.io/pt/post/brazil-whatsapp-block/</link><pubDate>Fri, 06 May 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/pt/post/brazil-whatsapp-block/</guid><description>&lt;p>&lt;strong>Pais:&lt;/strong> Brasil&lt;/p>
+&lt;p>&lt;strong>ISPs investigados:&lt;/strong> Tim mobile (AS 26615), Oi landline (AS 7738)&lt;/p>
+&lt;p>&lt;strong>Método de censura:&lt;/strong> DNS Hijacking&lt;/p>
+&lt;p>&lt;strong>OONI testes:&lt;/strong> HTTP Requests, DNS Consistency&lt;/p>
+&lt;p>&lt;strong>Periodo da medição:&lt;/strong> 2016-05-02 - 2016-05-03&lt;/p>
+&lt;p>&lt;strong>Translation by:&lt;/strong> Kornelia Friesch&lt;/p>
+&lt;hr>
+&lt;p>Desde que o
+[WhatsApp implantou a codificação end-to-end (end-to-end encryption)]
+(&lt;a href="https://www.whatsapp.com/security/">https://www.whatsapp.com/security/&lt;/a>) para proteger a privacidade e segurança
+dos, em nível mundial, um bilhão de usuários, manifestaram-se, alguns casos de
+censura ordenados por governos irritando-se pelo fato de não terem mais acesso
+à comunicação privada dos cidadãos. Com a codificação end-to-end pelo protocolo
+Signal, se torna-se impossível para o WhatsApp decifrar os dados do usuário. Ou
+seja, mesmo se quisesse entregar os dados não podería – sendo isso o que
+precisamente faz a comunicação pelo WhatsApp mais segura. Já em Dezembro do
+ano passado um juiz no Brasil [ordenou o bloqueio do WhatsApp por 48 horas]
+(&lt;a href="https://www.theguardian.com/technology/2015/dec/17/whatsapp-blocked-brazil-48-hours-facebook">https://www.theguardian.com/technology/2015/dec/17/whatsapp-blocked-brazil-48-hours-facebook&lt;/a>)
+, sancionando desta forma a rejeição de entrega de dados pelo WhatsApp durante
+uma investigação de crimes. No início desta semana aconteceu outro incidente de
+bloqueio por [ordem judicial no Brasil]
+(&lt;a href="https://www.theguardian.com/technology/2016/may/02/brazil-whatsapp-block-72-hours">https://www.theguardian.com/technology/2016/may/02/brazil-whatsapp-block-72-hours&lt;/a>)
+, desta vez por 72 horas, penalizando novamente desta forma outra vez a
+rejeição da empresa de entregar dados durante uma investigação sobre tráfico de
+drogas. Nos dois casos, a ordem de bloqueio de WhatsApp se efetuou em menos de
+24 horas, gerando um enorme descontenamento na população brasileira, da qual
+[mais de cem milhões de pessoas]
+(&lt;a href="http://www.theglobeandmail.com/technology/tech-news/whatsapp-comes-down-how-brazilians-are-coping-without-their-social-mediafixes/article27799710/">http://www.theglobeandmail.com/technology/tech-news/whatsapp-comes-down-how-brazilians-are-coping-without-their-social-mediafixes/article27799710/&lt;/a>)
+(91% dos usuários de celular) dependem desse serviço na sua comunicação
+cotidiana deles.&lt;/p></description></item></channel></rss>

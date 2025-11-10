@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blackout on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/blackout/</link><description>Recent content in Blackout on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 11 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/blackout/index.xml" rel="self" type="application/rss+xml"/><item><title>A multi-perspective view of Internet censorship in Myanmar</title><link>https://ooni.github.io/post/2021-multiperspective-view-internet-censorship-myanmar/</link><pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-multiperspective-view-internet-censorship-myanmar/</guid><description>&lt;p>In the wake of a &lt;a href="https://www.bbc.com/news/world-asia-55882489">military coup&lt;/a> in February 2021,
+Myanmar experienced unprecedented levels of internet censorship.&lt;/p>
+&lt;p>In response, we collaborated with CAIDA’s &lt;a href="https://ooni.org/partners/ioda/">Internet Outage Detection and Analysis (IODA)&lt;/a> team and
+&lt;a href="https://ooni.org/partners/mido/">Myanmar ICT for Development Organization (MIDO)&lt;/a> on publishing a &lt;a href="https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/">research report&lt;/a>
+which documents a &lt;a href="https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#internet-outages">series of nightly internet outages&lt;/a>
+and the
+&lt;a href="https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#findings">blocking&lt;/a>
+of social media, Wikipedia, and circumvention tool sites in Myanmar
+following the military coup.&lt;/p>
+&lt;p>In the months that followed, we continued to examine internet censorship
+in Myanmar quite closely. We collaborated with
+&lt;a href="https://ioda.caida.org/">IODA&lt;/a>, &lt;a href="https://www.kentik.com/">Kentik&lt;/a>,
+and other researchers from &lt;a href="https://ucsd.edu/">UC San Diego&lt;/a> and the
+&lt;a href="https://umich.edu/">University of Michigan&lt;/a> to expand our analysis.
+We used diverse datasets and measurement methods to offer a holistic
+view into the censorship events in Myanmar that occurred since the coup
+and show how internet censorship &lt;em>evolved&lt;/em> between &lt;strong>1st February 2021
+to 30th April 2021&lt;/strong>.&lt;/p></description></item><item><title>Investigating Internet shutdowns through Mozilla telemetry</title><link>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</link><pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</guid><description>&lt;p>More than &lt;a href="https://data.firefox.com/dashboard/user-activity">200 million users&lt;/a> worldwide use
+the &lt;a href="https://www.mozilla.org/en-US/firefox/new/">Firefox&lt;/a> web browser
+(developed by Mozilla) every month.&lt;/p>
+&lt;p>If access to the Internet is shut down in a country, Mozilla should
+expect to see a dramatic drop in Firefox usage from that country. Given
+how &lt;a href="https://data.firefox.com/dashboard/user-activity">widespread&lt;/a> the
+use of Firefox is around the world, could Mozilla telemetry be a
+valuable resource for the Internet freedom community to investigate
+Internet shutdowns?&lt;/p>
+&lt;p>To explore this question, the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> and &lt;a href="https://ioda.caida.org/">Internet Outage Detection and Analysis (IODA)&lt;/a> teams joined forces to analyze a
+dataset of potential outage signals gathered through regular Mozilla
+telemetry, access to which was provided by Mozilla as part of a relevant
+research project to validate assumptions about the data.&lt;/p></description></item><item><title>Myanmar: Data on internet blocks and internet outages following military coup</title><link>https://ooni.github.io/post/2021-myanmar-internet-blocks-and-outages/</link><pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-myanmar-internet-blocks-and-outages/</guid><description>&lt;p>On 1st February 2021, the military in Myanmar carried out a &lt;a href="https://www.bbc.com/news/world-asia-55882489">coup d’etat&lt;/a>, seizing power
+and detaining the country’s State Counsellor (equivalent to a prime
+minister) and other democratically elected leaders.&lt;/p>
+&lt;p>A few days after the coup, ISPs in Myanmar started &lt;a href="https://www.reuters.com/article/us-myanmar-politics-facebook-idUSKBN2A32ZE">blocking access to Facebook services&lt;/a>.
+On 5th February 2021, they started &lt;a href="https://edition.cnn.com/2021/02/05/tech/myanmar-blocks-twitter-instagram/index.html">blocking access to Twitter and Instagram&lt;/a>
+as well. On 6th February 2021, access to &lt;a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1612437274&amp;until=1612782874">the internet was shut down entirely for nearly 30 hours&lt;/a>.
+When internet connectivity was restored, social media blocks remained in
+place and they are currently ongoing. Since 15th February 2021, access
+to the internet has been &lt;a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1613219264&amp;until=1614774464">shut down every night&lt;/a>
+(between around 1am to 9am local time) in Myanmar. More recently, some
+ISPs in Myanmar appear to have started &lt;a href="https://explorer.ooni.org/search?since=2021-02-01&amp;probe_cc=MM&amp;test_name=web_connectivity&amp;domain=www.wikipedia.org&amp;until=2021-03-05">blocking access to Wikipedia&lt;/a>
+as well.&lt;/p></description></item><item><title>Uganda: Data on internet blocks and nationwide internet outage amid 2021 general election</title><link>https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/</link><pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-uganda-general-election-blocks-and-outage/</guid><description>&lt;p>Last week, amid its &lt;a href="https://www.bbc.com/news/world-africa-55573581">2021 general election&lt;/a>, Uganda was
+&lt;a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/UG&amp;lastView=overview&amp;from=-1w&amp;until=now">disconnected&lt;/a>
+from the internet entirely. The country experienced a &lt;a href="https://www.accessnow.org/the-world-is-watching-uganda-elections/">widespread internet blackout that lasted 4 days&lt;/a>,
+starting on the eve of the election (13th January 2021) and ending in
+the morning of 18th January 2021. In the days leading up to the
+election, access to major social media platforms and circumvention tools
+was &lt;a href="https://www.facebook.com/MTNUG/posts/5644233898936144">blocked&lt;/a>
+&amp;ndash; &lt;em>even when the &lt;a href="https://www.mtn.co.ug/product/ott-tax/">OTT (Over the Top) tax&lt;/a> (commonly referred to as
+the “Social Media Tax”) was paid&lt;/em>.&lt;/p></description></item><item><title>Internet disruption in Gabon amid coup attempt</title><link>https://ooni.github.io/post/gabon-internet-disruption/</link><pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/gabon-internet-disruption/</guid><description>&lt;p>On 7th January 2019, a &lt;a href="https://www.bbc.com/news/world-africa-46779854">military coup was attempted in Gabon&lt;/a> in a bid to end
+more than 50 years of rule by President Ali Bongo’s family. The coup
+attempt was quickly foiled. Security forces
+&lt;a href="https://www.aljazeera.com/news/2019/01/gabon-coup-attempt-foiled-190107131011483.html">reportedly&lt;/a>
+killed two suspects, arrested seven others, and Gabon’s government
+retained control.&lt;/p>
+&lt;p>Meanwhile, a &lt;a href="https://www.aljazeera.com/news/2019/01/gabon-coup-attempt-foiled-190107131011483.html">curfew&lt;/a>
+has been imposed and &lt;a href="https://netblocks.org/reports/evidence-of-gabon-full-internet-shutdown-coup-attempt-dQ8oo18n">NetBlocks reported&lt;/a>
+that access to the Internet has been shut down.&lt;/p>
+&lt;p>In this post, we share data that provides signals of network disruptions
+in Gabon.&lt;/p></description></item><item><title>Examining internet blackouts through public data sources</title><link>https://ooni.github.io/post/examining-internet-blackouts/</link><pubDate>Tue, 28 Mar 2017 16:39:00 +0000</pubDate><guid>https://ooni.github.io/post/examining-internet-blackouts/</guid><description>&lt;p>Pulling the plug on the internet is one of the ways that governments around the
+world attempt to exert control over the flow of information.&lt;/p>
+&lt;p>While the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> project has developed numerous &lt;a href="https://github.com/TheTorProject/ooni-probe">software tests&lt;/a> for examining different
+forms of internet censorship (such as the blocking of websites, instant
+messaging apps, and censorship circumvention tools), we currently do not have
+tests that are designed to examine internet blackouts, when the internet as a
+whole is rendered inaccessible within a location.&lt;/p></description></item></channel></rss>

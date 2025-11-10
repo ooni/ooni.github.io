@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spain on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/spain/</link><description>Recent content in Spain on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/spain/index.xml" rel="self" type="application/rss+xml"/><item><title>Evaluating OONI’s New Measurement Engine in the Context of the Blocking of Women on Web in Spain</title><link>https://ooni.github.io/post/2020-engine-evaluation-spain/</link><pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-engine-evaluation-spain/</guid><description>&lt;p>Reproduction rights site
+&lt;a href="https://www.womenonweb.org">www.womenonweb.org&lt;/a> has been
+blocked in Spain over the last months by several local Internet Service
+Providers (ISPs). Once Spanish hacktivist communities noticed that
+&lt;a href="http://www.womenonweb.org">www.womenonweb.org&lt;/a> was
+inaccessible, they coordinated on running &lt;a href="https://ooni.org/install/">OONI
+Probe&lt;/a> tests to collect
+measurement data that could serve as evidence. The findings of this
+investigation have been published in &lt;a href="https://blog.magma.lavafeld.org/post/women-on-web-blocking/">an excellent
+report&lt;/a>,
+whose writing was coordinated by our former colleague, Vasilis Ververis.&lt;/p>
+&lt;p>We were involved in the technical review of the report. We found their
+methodology particularly interesting. They used the OONI &lt;a href="https://ooni.org/nettest/web-connectivity/">Web
+Connectivity experiment&lt;/a>
+along with OONI&amp;rsquo;s &lt;a href="https://ooni.org/post/2020-iran-sni-blocking/">experimental SNI based blocking
+methodology&lt;/a>,
+and they also performed manual experiments with
+&lt;a href="https://www.openssl.org/">OpenSSL&lt;/a> and
+&lt;a href="https://curl.haxx.se/">cURL&lt;/a>. Because OONI&amp;rsquo;s mission is
+to simplify and automate the collection of censorship evidence, we are
+always interested in learning how we can expand &lt;a href="https://ooni.org/nettest/web-connectivity/">our Web Connectivity
+methodology&lt;/a> to
+automatically gather more data that is useful in specific cases.
+Coincidentally, as part of &lt;a href="https://github.com/ooni/probe-engine/issues/40">rewriting the Web Connectivity
+implementation in Go&lt;/a>, we
+have already written experimental code that combines &lt;a href="https://ooni.org/nettest/web-connectivity/">vanilla Web
+Connectivity&lt;/a>
+with &lt;a href="https://ooni.org/post/2020-iran-sni-blocking/">SNI blocking&lt;/a>
+and other techniques. We therefore asked them to run this experimental
+code with &lt;a href="https://www.womenonweb.org">www.womenonweb.org&lt;/a>
+as a target. Our goal was to evaluate whether our working prototype
+would have allowed them to obtain the same research results, without
+resorting to manually running specifically tailored network experiments.&lt;/p></description></item></channel></rss>

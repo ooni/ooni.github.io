@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2022 on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/2022/</link><description>Recent content in 2022 on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/2022/index.xml" rel="self" type="application/rss+xml"/><item><title>Year in Review: OONI in 2022</title><link>https://ooni.github.io/post/ooni-in-2022/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ooni-in-2022/</guid><description>&lt;p>As the end of 2022 approaches, we publish this post to share some OONI
+highlights from the last year. We also share some of the things we’ll be
+working on in 2023!&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-team">OONI Team&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-probe">OONI Probe&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-ooni-probe-experiments">New OONI Probe experiments&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-test-lists-editor">New Test Lists Editor&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-run-improvements">OONI Run improvements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-probe-web-prototype">OONI Probe Web prototype&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#ooni-data">OONI data&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#1-billion-measurements">1 billion measurements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-ooni-measurement-aggregation-toolkit-mat">New OONI Measurement Aggregation Toolkit (MAT)&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#new-circumvention-tool-reachability-dashboard">New Circumvention Tool Reachability Dashboard&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/ooni-in-2022/#advancing-ooni-data-analysis">Advancing OONI data analysis&lt;/a>&lt;/p></description></item></channel></rss>

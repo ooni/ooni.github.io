@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tls-Blocking on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/tls-blocking/</link><description>Recent content in Tls-Blocking on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 08 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/tls-blocking/index.xml" rel="self" type="application/rss+xml"/><item><title>Investigating TLS blocking in India</title><link>https://ooni.github.io/post/2020-tls-blocking-india/</link><pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-tls-blocking-india/</guid><description>&lt;p>This report investigates Transport Layer Security
+(&lt;a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS&lt;/a>)-based
+blocking in India. &lt;a href="https://cis-india.org/internet-governance/blog/reliance-jio-is-using-sni-inspection-to-block-websites">Previous
+research&lt;/a>
+by the &lt;a href="https://cis-india.org/">Centre for Internet &amp;amp;
+Society, India&lt;/a> (CIS) has already
+exposed TLS blocking based on the value of the &lt;a href="https://en.wikipedia.org/wiki/Server_Name_Indication">SNI
+field&lt;/a>.
+OONI has also &lt;a href="https://ooni.org/post/2020-iran-sni-blocking/">implemented and started
+testing&lt;/a>
+SNI-based TLS blocking measurements.&lt;/p>
+&lt;p>Recently, the Magma Project
+&lt;a href="https://blog.magma.lavafeld.org/post/women-on-web-blocking/">documented&lt;/a>
+cases where CIS India and OONI&amp;rsquo;s methodologies could be improved. They
+specifically found that blocking sometimes appears to depend not only on
+the value of the SNI field but also on the address of the web server
+being used. These findings were later confirmed by OONI measurements in
+&lt;a href="https://ooni.org/post/2020-engine-evaluation-spain">Spain&lt;/a>
+and &lt;a href="https://ooni.org/post/2020-iran-dot/">Iran&lt;/a> through
+the use of an extended measurement methodology.&lt;/p></description></item><item><title>DNS over TLS blocked in Iran</title><link>https://ooni.github.io/post/2020-iran-dot/</link><pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-iran-dot/</guid><description>&lt;p>&lt;a href="https://tools.ietf.org/html/rfc7858">DNS over TLS&lt;/a> (DoT) is a network protocol that
+allows one to use &lt;a href="https://en.wikipedia.org/wiki/Domain_Name_System">DNS&lt;/a> over
+&lt;a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS&lt;/a> (i.e. with encryption
+and authentication of the remote DNS server).&lt;/p>
+&lt;p>We investigated whether DoT works in Iran by gathering a list of 31
+well-known DoT endpoints and running experiments from four distinct
+Iranian mobile and fixed-line Internet Service Providers (ISPs):
+&lt;a href="https://ipinfo.io/AS197207">MCI&lt;/a>, &lt;a href="https://ipinfo.io/AS58224">TCI&lt;/a>,
+&lt;a href="https://ipinfo.io/AS44244">Irancell&lt;/a>, and &lt;a href="https://ipinfo.io/AS31549">Shatel&lt;/a>.&lt;/p>
+&lt;p>We discovered that:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>57% of the endpoints are blocked on a least one ISP;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>the blocking is not implemented uniformly across ISPs;&lt;/p></description></item></channel></rss>

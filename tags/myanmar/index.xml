@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Myanmar on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/myanmar/</link><description>Recent content in Myanmar on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 23 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/myanmar/index.xml" rel="self" type="application/rss+xml"/><item><title>iMAP State of Internet Censorship Report 2022 - Myanmar</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-myanmar/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-myanmar/</guid><description>&lt;p>&lt;a href="https://imap.sinarproject.org/reports/2022/imap-state-of-internet-censorship-country-report-2022-myanmar/2022-myanmar-translation">မြန်မာဘာသာသို့ ပြန်ဆိုပါသည်။&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Blocking of independent New Media&lt;/strong>. 112 out of 2,130 websites were detected 1,473 confirmed blocking counts through 6 local vantages under DNS level interference and HTTP level interference. There were 11 out of 31 websites’ categories from OONI were found as confirmed blocking. Among 11 categories, News Media was experiential as the highest confirmed blocking measurement, following to pornography to the second largest blocking counts. Interestingly, within 117 government websites, OONI detects 15 websites were blocked from 2 vantage points of 2 ISPs.&lt;/li>
+&lt;li>&lt;strong>Sign of internet outages:&lt;/strong> IODA and Google Traffic data indicate that no major internet connectivity outages have been reported between January 1, 2022, and June 30, 2022. However, on May 16, 2022, and May 20, 2022, there were alerts regarding an Internet disruption and a possible internet outage.&lt;/li>
+&lt;li>&lt;strong>Potential blocking of Instant Messaging Apps&lt;/strong>: Apart from this finding period, we found no confirmed blocking in Facebook Messengers, Signal, and Telegram. In spite of this, Facebook Messenger found a large volume of anomalies during the test, which could be a sign of possible blocking. WhatsApp also detected a sign of potential blockings.&lt;/li>
+&lt;li>&lt;strong>Circumvention Tools&lt;/strong>: Circumvention tools appear to be blocked after the coup. As part of this study, Psiphon and Tor circumvention tools were detected accessible across the local networks.&lt;/li>
+&lt;/ul>
+&lt;h2 id="table-of-contents" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#table-of-contents">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Table of Contents
+&lt;/h2>
+&lt;p>&lt;strong>&lt;a href="https://ooni.github.io/post/2022-state-of-internet-censorship-myanmar/#introduction">Introduction&lt;/a>&lt;/strong>&lt;/p></description></item><item><title>A multi-perspective view of Internet censorship in Myanmar</title><link>https://ooni.github.io/post/2021-multiperspective-view-internet-censorship-myanmar/</link><pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-multiperspective-view-internet-censorship-myanmar/</guid><description>&lt;p>In the wake of a &lt;a href="https://www.bbc.com/news/world-asia-55882489">military coup&lt;/a> in February 2021,
+Myanmar experienced unprecedented levels of internet censorship.&lt;/p>
+&lt;p>In response, we collaborated with CAIDA’s &lt;a href="https://ooni.org/partners/ioda/">Internet Outage Detection and Analysis (IODA)&lt;/a> team and
+&lt;a href="https://ooni.org/partners/mido/">Myanmar ICT for Development Organization (MIDO)&lt;/a> on publishing a &lt;a href="https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/">research report&lt;/a>
+which documents a &lt;a href="https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#internet-outages">series of nightly internet outages&lt;/a>
+and the
+&lt;a href="https://ooni.org/post/2021-myanmar-internet-blocks-and-outages/#findings">blocking&lt;/a>
+of social media, Wikipedia, and circumvention tool sites in Myanmar
+following the military coup.&lt;/p>
+&lt;p>In the months that followed, we continued to examine internet censorship
+in Myanmar quite closely. We collaborated with
+&lt;a href="https://ioda.caida.org/">IODA&lt;/a>, &lt;a href="https://www.kentik.com/">Kentik&lt;/a>,
+and other researchers from &lt;a href="https://ucsd.edu/">UC San Diego&lt;/a> and the
+&lt;a href="https://umich.edu/">University of Michigan&lt;/a> to expand our analysis.
+We used diverse datasets and measurement methods to offer a holistic
+view into the censorship events in Myanmar that occurred since the coup
+and show how internet censorship &lt;em>evolved&lt;/em> between &lt;strong>1st February 2021
+to 30th April 2021&lt;/strong>.&lt;/p></description></item><item><title>Investigating Internet shutdowns through Mozilla telemetry</title><link>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</link><pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-investigating-internet-shutdowns-mozilla-telemetry/</guid><description>&lt;p>More than &lt;a href="https://data.firefox.com/dashboard/user-activity">200 million users&lt;/a> worldwide use
+the &lt;a href="https://www.mozilla.org/en-US/firefox/new/">Firefox&lt;/a> web browser
+(developed by Mozilla) every month.&lt;/p>
+&lt;p>If access to the Internet is shut down in a country, Mozilla should
+expect to see a dramatic drop in Firefox usage from that country. Given
+how &lt;a href="https://data.firefox.com/dashboard/user-activity">widespread&lt;/a> the
+use of Firefox is around the world, could Mozilla telemetry be a
+valuable resource for the Internet freedom community to investigate
+Internet shutdowns?&lt;/p>
+&lt;p>To explore this question, the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a> and &lt;a href="https://ioda.caida.org/">Internet Outage Detection and Analysis (IODA)&lt;/a> teams joined forces to analyze a
+dataset of potential outage signals gathered through regular Mozilla
+telemetry, access to which was provided by Mozilla as part of a relevant
+research project to validate assumptions about the data.&lt;/p></description></item><item><title>Myanmar: Data on internet blocks and internet outages following military coup</title><link>https://ooni.github.io/post/2021-myanmar-internet-blocks-and-outages/</link><pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-myanmar-internet-blocks-and-outages/</guid><description>&lt;p>On 1st February 2021, the military in Myanmar carried out a &lt;a href="https://www.bbc.com/news/world-asia-55882489">coup d’etat&lt;/a>, seizing power
+and detaining the country’s State Counsellor (equivalent to a prime
+minister) and other democratically elected leaders.&lt;/p>
+&lt;p>A few days after the coup, ISPs in Myanmar started &lt;a href="https://www.reuters.com/article/us-myanmar-politics-facebook-idUSKBN2A32ZE">blocking access to Facebook services&lt;/a>.
+On 5th February 2021, they started &lt;a href="https://edition.cnn.com/2021/02/05/tech/myanmar-blocks-twitter-instagram/index.html">blocking access to Twitter and Instagram&lt;/a>
+as well. On 6th February 2021, access to &lt;a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1612437274&amp;until=1612782874">the internet was shut down entirely for nearly 30 hours&lt;/a>.
+When internet connectivity was restored, social media blocks remained in
+place and they are currently ongoing. Since 15th February 2021, access
+to the internet has been &lt;a href="https://ioda.caida.org/ioda/dashboard#view=inspect&amp;entity=country/MM&amp;lastView=overview&amp;from=1613219264&amp;until=1614774464">shut down every night&lt;/a>
+(between around 1am to 9am local time) in Myanmar. More recently, some
+ISPs in Myanmar appear to have started &lt;a href="https://explorer.ooni.org/search?since=2021-02-01&amp;probe_cc=MM&amp;test_name=web_connectivity&amp;domain=www.wikipedia.org&amp;until=2021-03-05">blocking access to Wikipedia&lt;/a>
+as well.&lt;/p></description></item><item><title>Myanmar blocks “fake news” websites amid COVID-19 pandemic</title><link>https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/</link><pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/images/mm-blockpage-3.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-myanmar-blocks-websites-amid-covid19/images/mm-blockpage-3_hu15627163551353397360.png"
+
+ 
+ 
+ title="Block page served in Myanmar"
+ 
+ alt="Block page served in Myanmar"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>In March 2020, Internet Service Providers (ISPs) in Myanmar received a
+directive from the Ministry of Transport and Communications to &lt;a href="https://www.telenor.com.mm/en/article/blocking-230-websites-myanmar-based-directive-authorities">block 230 websites&lt;/a>,
+most of which contain adult content. However, 67 of these sites were
+blocked on the grounds of spreading “fake news”. The list of these 230
+websites has not been published.&lt;/p>
+&lt;p>In an attempt to potentially identify the newly blocked websites, we
+analyzed &lt;a href="https://explorer.ooni.org/country/MM">OONI network measurements collected from Myanmar&lt;/a> over the last months,
+between 1st January 2020 to 9th April 2020.&lt;/p></description></item><item><title>The State of Internet Censorship in Myanmar</title><link>https://ooni.github.io/post/myanmar-report/</link><pubDate>Wed, 29 Mar 2017 13:31:00 +0000</pubDate><guid>https://ooni.github.io/post/myanmar-report/</guid><description>&lt;p>&lt;img alt="Myanmar" src="https://ooni.github.io/post/myanmar/myanmar-flag.png">&lt;/p>
+&lt;p>A research study by the Open Observatory of Network Interference (OONI),
+Sinar Project, and the Myanmar ICT for Development Organization (MIDO).&lt;/p>
+&lt;p>&lt;strong>Table of contents&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#key-findings">Key Findings&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#introduction">Introduction&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#network-landscape-and-internet-penetration">Network landscape and internet penetration&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#legal-environment">Legal environment&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#freedom-of-expression">Freedom of expression&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#press-freedom">Press freedom&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#access-to-information">Access to information&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#privacy">Privacy&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#censorship-and-surveillance">Censorship and surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#reported-cases-of-internet-censorship-and-surveillance">Reported cases of internet censorship and surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#examining-internet-censorship-in-myanmar">Examining internet censorship in Myanmar&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#methodology">Methodology&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/myanmar-report/#review-of-the-citizen-labs-test-list-for-myanmar">Review of the Citizen Lab&amp;rsquo;s test list for Myanmar&lt;/a>&lt;/p></description></item></channel></rss>

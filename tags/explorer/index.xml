@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Explorer on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/explorer/</link><description>Recent content in Explorer on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/explorer/index.xml" rel="self" type="application/rss+xml"/><item><title>Launch: New OONI Explorer thematic censorship pages</title><link>https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/</link><pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/images/image-1.png">
+ &lt;img
+ src="https://ooni.github.io/post/2025-ooni-explorer-thematic-censorship-pages/images/image-1_hu18045183049061541971.png"
+
+ 
+ 
+ 
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;strong>Image:&lt;/strong> &lt;a href="https://explorer.ooni.org/social-media">OONI Explorer thematic censorship pages&lt;/a>.&lt;/p>
+&lt;p>Today we are excited to announce the publication of new &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> thematic censorship pages! These new pages include charts and reports documenting the blocking of &lt;strong>&lt;a href="https://explorer.ooni.org/social-media">social media&lt;/a>&lt;/strong>, &lt;strong>&lt;a href="https://explorer.ooni.org/news-media">news media&lt;/a>&lt;/strong>, and &lt;strong>&lt;a href="https://explorer.ooni.org/circumvention">circumvention tools&lt;/a>&lt;/strong> around the world based on OONI data.&lt;/p>
+&lt;p>In this blog post, we share information about the new OONI Explorer thematic censorship pages.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#about-ooni-explorer">About OONI Explorer&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#why-new-thematic-censorship-pages">Why new thematic censorship pages?&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#new-ooni-explorer-thematic-censorship-pages">New OONI Explorer thematic censorship pages&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#blocking-of-social-media-and-instant-messaging-apps">Blocking of Social Media and Instant Messaging Apps&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-news-media">Blocking of News Media&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#reachability-of-circumvention-tools">Reachability of Circumvention Tools&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="about-ooni-explorer" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#about-ooni-explorer">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ About OONI Explorer
+&lt;/h2>
+&lt;p>&lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> is the world’s largest &lt;strong>open dataset on internet censorship&lt;/strong>.&lt;/p></description></item><item><title>Launch: New OONI Censorship Findings platform</title><link>https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/</link><pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/</guid><description>&lt;p>
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/images/ooni-censorship-findings.png">
+ &lt;img
+ src="https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/images/ooni-censorship-findings_hu17962422820562351912.png"
+
+ 
+ srcset="https://ooni.github.io/post/2023-launch-ooni-censorship-findings-platform/images/ooni-censorship-findings_hu17956862074008836710.png 2x"
+ 
+ 
+ title="Censorship Findings"
+ 
+ alt="Censorship Findings"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;strong>Image:&lt;/strong> OONI Censorship Findings platform.&lt;/p>
+&lt;p>Today we are thrilled to announce the launch of the OONI &lt;a href="https://explorer.ooni.org/findings">Censorship
+Findings&lt;/a> platform!&lt;/p>
+&lt;p>Internet censorship is frequently being reported around the world, but
+how can we verify such events with empirical evidence?&lt;/p>
+&lt;p>Our &lt;a href="https://explorer.ooni.org/findings">new platform provides short reports&lt;/a> on internet censorship around the world based on OONI&amp;rsquo;s &lt;a href="https://ooni.org/data/">open data&lt;/a>. With the launch of the platform, we are &lt;strong>publishing 20 reports on internet censorship&lt;/strong> that emerged in 2023. In response to emergent censorship events, this
+platform will be updated with new reports on an ongoing basis.&lt;/p></description></item><item><title>New OONI Explorer features for investigating internet censorship through open data</title><link>https://ooni.github.io/post/2023-new-explorer-features/</link><pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-new-explorer-features/</guid><description>&lt;p>We’re excited to share that &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> includes new features for investigating internet censorship worldwide based on open data.&lt;/p>
+&lt;p>Specifically, these features include:&lt;/p>
+&lt;ul>
+&lt;li>New &lt;a href="https://explorer.ooni.org/domains">domain-centric pages&lt;/a>;&lt;/li>
+&lt;li>New &lt;a href="https://explorer.ooni.org/networks">network-centric pages&lt;/a>;&lt;/li>
+&lt;li>New “internet outage” charts (integrating IODA, Google traffic, and Cloudflare Radar data), available in each &lt;a href="https://explorer.ooni.org/countries">country-specific&lt;/a> and &lt;a href="https://explorer.ooni.org/networks">network-specific&lt;/a> page;&lt;/li>
+&lt;li>New user feedback reporting mechanism, available through the “Verify” button in the banner of each OONI measurement page.&lt;/li>
+&lt;/ul>
+&lt;p>In this blog post, we share information about these new features.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Ga on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-ga/</link><description>Recent content in Country-Ga on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 09 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-ga/index.xml" rel="self" type="application/rss+xml"/><item><title>Internet disruption in Gabon amid coup attempt</title><link>https://ooni.github.io/post/gabon-internet-disruption/</link><pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/gabon-internet-disruption/</guid><description>&lt;p>On 7th January 2019, a &lt;a href="https://www.bbc.com/news/world-africa-46779854">military coup was attempted in Gabon&lt;/a> in a bid to end
+more than 50 years of rule by President Ali Bongo’s family. The coup
+attempt was quickly foiled. Security forces
+&lt;a href="https://www.aljazeera.com/news/2019/01/gabon-coup-attempt-foiled-190107131011483.html">reportedly&lt;/a>
+killed two suspects, arrested seven others, and Gabon’s government
+retained control.&lt;/p>
+&lt;p>Meanwhile, a &lt;a href="https://www.aljazeera.com/news/2019/01/gabon-coup-attempt-foiled-190107131011483.html">curfew&lt;/a>
+has been imposed and &lt;a href="https://netblocks.org/reports/evidence-of-gabon-full-internet-shutdown-coup-attempt-dQ8oo18n">NetBlocks reported&lt;/a>
+that access to the Internet has been shut down.&lt;/p>
+&lt;p>In this post, we share data that provides signals of network disruptions
+in Gabon.&lt;/p></description></item></channel></rss>

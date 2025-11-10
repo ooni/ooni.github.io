@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Social-Media on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/social-media/</link><description>Recent content in Social-Media on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 17 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/social-media/index.xml" rel="self" type="application/rss+xml"/><item><title>How Uganda blocked social media, again</title><link>https://ooni.github.io/post/uganda-social-media-blocked/</link><pubDate>Tue, 17 May 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/uganda-social-media-blocked/</guid><description>&lt;p>&lt;strong>Country:&lt;/strong> Uganda&lt;/p>
+&lt;p>&lt;strong>Probed ISPs:&lt;/strong> Orange (AS36991), SMILE (AS37122)&lt;/p>
+&lt;p>&lt;strong>Censorship method:&lt;/strong> IP blocking&lt;/p>
+&lt;p>&lt;strong>OONI tests:&lt;/strong> HTTP Requests&lt;/p>
+&lt;p>&lt;strong>Measurement period:&lt;/strong> 2016-05-12&lt;/p>
+&lt;p>Last Wednesday, the Ugandan Communications Commission (UCC)
+&lt;a href="https://freedomhouse.org/article/uganda-social-media-ordered-blocked-museveni-inauguration">ordered&lt;/a>
+ISPs to block access to social media leading up to the (fifth) inauguration of
+President Yoweri Museveni, who has governed the country since 1986. Authorities
+argued that the blocking was ordered for “security purposes”, but the move
+directly harms political opposition, which has &lt;a href="https://advox.globalvoices.org/2016/05/11/social-media-blocked-in-uganda-ahead-of-president-musevenis-inauguration/">relied
+on&lt;/a>
+social media to organize a “defiance campaign” of protests.&lt;/p></description></item></channel></rss>

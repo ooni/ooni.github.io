@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asn on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/asn/</link><description>Recent content in Asn on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/asn/index.xml" rel="self" type="application/rss+xml"/><item><title>OONI Probe ASN Incident Report</title><link>https://ooni.github.io/post/2020-ooni-probe-asn-incident-report/</link><pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-ooni-probe-asn-incident-report/</guid><description>&lt;p>Last week we &lt;a href="https://github.com/ooni/explorer/issues/495">noticed&lt;/a>
+that some OONI measurements were available on &lt;a href="https://explorer.ooni.org/">OONI Explorer&lt;/a> under a report ID containing a
+valid &lt;a href="https://ooni.org/support/glossary/#asn">Autonomous System Number (ASN)&lt;/a>, even though the raw
+JSON data contained zero as the ASN (i.e. encoded as &lt;code>AS0&lt;/code>). We
+initially thought that this was caused by a bug in our API code, but it
+actually turned out to be an &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a>
+bug in our &lt;a href="https://github.com/ooni/probe-engine">probe engine&lt;/a> (which
+powers the OONI Probe apps).&lt;/p>
+&lt;p>Please &lt;strong>&lt;a href="https://ooni.org/install/mobile">update your OONI Probe mobile app to the latest version (2.7.0)&lt;/a>&lt;/strong>, which fixes this bug.
+If you are an OONI Probe desktop app user and prefer not to share your
+network ASN, please refrain from running tests until we have released a
+fix for OONI Probe desktop (&lt;a href="https://github.com/ooni/explorer/issues/495#issuecomment-705518245">hopefully this will be possible next week&lt;/a>).&lt;/p></description></item></channel></rss>

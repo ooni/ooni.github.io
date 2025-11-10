@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Theme-Human_rights on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/theme-human_rights/</link><description>Recent content in Theme-Human_rights on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 31 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/theme-human_rights/index.xml" rel="self" type="application/rss+xml"/><item><title>The Longest Silence: Internet Shutdowns During Bangladesh’s 2024 Uprising</title><link>https://ooni.github.io/post/2025-bangladesh-report/</link><pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-bangladesh-report/</guid><description>&lt;p>This study was conducted by &lt;a href="https://digitallyright.org/">Digitally Right&lt;/a> in collaboration with the &lt;a href="https://ooni.org/">Open Observatory of Network Interference (OONI)&lt;/a>. Key contributors include Tohidul Islam Raso from Digitally Right and Maria Xynou from OONI. Suhadha Afrin, a Tech Policy Fellow at Digitally Right and journalist at Prothom Alo, also contributed to the research and documentation for this report. The research has been reviewed by Miraj Ahmed Chowdhury from Digitally Right.&lt;/p>
+&lt;p>We are equally grateful to Digitally Right&amp;rsquo;s Network Measurement Fellows across Bangladesh, whose work in tracking disruptions and documenting censorship during the protests helped verify and strengthen the findings of this report. We also thank the journalists whose extensive coverage of the shutdowns provided a vital foundation for this report and the individuals affiliated with operators and service provider organizations who provided interviews and shared relevant information that informed this analysis.&lt;/p></description></item><item><title>A Legal and Technical Analysis of Internet Censorship in France</title><link>https://ooni.github.io/post/2025-france-report/</link><pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-france-report/</guid><description>&lt;p>&lt;em>This is a guest report by &lt;a href="https://maynier.eu/">Etienne Maynier&lt;/a> and Taziden analyzing Internet censorship in France. You can find a more in-depth legal and technical analysis in French at &lt;a href="https://censxres.fr/">https://censxres.fr/&lt;/a>. This work was done in a personal capacity and doesn&amp;rsquo;t represent the view of their employers.&lt;/em>&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#key-findings">Key Findings&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#legal-basis-for-website-censorship-in-france">Legal Basis for Website Censorship in France&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#judiciary-censorship">Judiciary censorship&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#pornography">Pornography&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#intellectual-property">Intellectual Property&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#illegal-streaming-of-sport-competitions">Illegal Streaming of Sport Competitions&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#administrative-censorship">Administrative censorship&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#terrorism-and-child-sex-abuse-material">Terrorism and Child Sex Abuse Material&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#online-gambling-websites">Online Gambling Websites&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#fraud">Fraud&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#cybercrime">Cybercrime&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#tiktok-censorship-in-new-caledonia--kanaky">TikTok Censorship in New Caledonia / Kanaky&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#european-censorship-of-russian-organizations">European Censorship of Russian Organizations&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#network-measurements---methodology">Network Measurements - Methodology&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#network-measurements---results">Network Measurements - Results&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#intellectual-property-1">Intellectual Property&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#streaming-of-sport-events">Streaming of Sport Events&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#illegal-online-gambling-websites">Illegal online gambling websites&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#european-censorship">European Censorship&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#pornography-websites">Pornography Websites&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#implementation-of-censorship-in-france">Implementation of Censorship in France&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="key-findings" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#key-findings">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Key Findings
+&lt;/h2>
+&lt;ul>
+&lt;li>Over the past years, several court orders have requested French Internet Service Providers to block more and more websites, whether for copyright infringement, illegal streaming of sport competitions, or more recently pornography websites. In the same time, several laws have been passed in order to provide legal power to several French administrations to block websites involved in cybercrime or fraud.&lt;/li>
+&lt;li>Our OONI measurements on the four main commercial ISPs networks in the fall of 2024 show that this website censorship is implemented at the DNS resolver level, and that for most censorship cases tested (intellectual property, illegal streaming of sport competition and European censorship of Russian organizations), the application of censorship is very inconsistent among different ISPs.&lt;/li>
+&lt;li>The increasing usage of website censorship to regulate political questions by French courts and lawmakers, combined with a technical implementation that is easy to bypass, create a high risk of escalation towards more complex and invasive censorship in France. Such an escalation would lead to more control and more surveillance over Internet traffic by French authorities and could have damaging implications for freedom of expression and online privacy in France.&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#introduction">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Introduction
+&lt;/h2>
+&lt;p>Over the past few years, France has seen a major increase in censorship of internet websites, both with court orders forcing ISPs to block websites, and with new bills passed that grant legal power to national agencies to block websites. In 2024 alone, we have seen French authorities blocking TikTok in Kanaky New Caledonia, new laws permitting to block websites used for cybercrime, a legal decision blocking the Z-library website and a new law forcing pornography websites to check the age of visitors before they can access the content (law that should be applied in the first half of 2025). While the first laws that legalized Internet censorship in France opened important debates in civil society about digital rights and freedom of expression (the &lt;a href="https://fr.wikipedia.org/wiki/Loi_pour_la_confiance_dans_l%27%C3%A9conomie_num%C3%A9rique">Bill for Confidence in the Digital Economy - LCEN&lt;/a> in 2004 and the &lt;a href="https://fr.wikipedia.org/wiki/Haute_Autorit%C3%A9_pour_la_diffusion_des_%C5%93uvres_et_la_protection_des_droits_sur_internet">High Authority for the diffusion of art work and protection of rights on Internet - HADOPI&lt;/a> in 2009), this topic is now rarely addressed by digital rights organizations and is not well known by the general public. Yet, it raises important questions about freedom of expression but also the potential lack of oversight and abuse of these laws to block media or opposition websites. &lt;/p></description></item><item><title>Censorship Chronicles: The systematic suppression of independent media in Russia</title><link>https://ooni.github.io/post/2024-russia-report/</link><pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-russia-report/</guid><description>&lt;p>Nearly three years ago, when Russia launched its military operation in Ukraine, it also initiated a parallel campaign: a censorship war targeting independent news media within the country.&lt;/p>
+&lt;p>Merely a week after the conflict started, Internet Service Providers (ISPs) in Russia &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocking-of-news-media-websites">started blocking&lt;/a> access to several foreign news media websites (such as &lt;a href="https://explorer.ooni.org/search?since=2022-02-03&amp;until=2022-03-07&amp;failure=false&amp;domain=www.bbc.com&amp;probe_cc=RU&amp;only=anomalies">BBC&lt;/a> and &lt;a href="https://explorer.ooni.org/search?since=2022-02-03&amp;until=2022-03-07&amp;failure=false&amp;domain=www.dw.com&amp;probe_cc=RU&amp;only=anomalies">Deutsche Welle&lt;/a>) and independent Russian news media websites (such as &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#meduza">Meduza&lt;/a> and &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#new-times">New Times&lt;/a>). Within a year, independent news media censorship in Russia had become pervasive. In our previous report, we &lt;a href="https://ooni.org/post/2023-russia-a-year-after-the-conflict/#blocked-websites">confirmed the blocking of 139 news media domains&lt;/a> in Russia.&lt;/p></description></item><item><title>Kazakhstan: TLS MITM attacks and blocking of news media, human rights, and circumvention tool sites</title><link>https://ooni.github.io/post/2024-kazakhstan-report/</link><pubDate>Thu, 19 Sep 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-kazakhstan-report/</guid><description>&lt;p>In recent years, internet censorship in Kazakhstan has been &lt;a href="https://freedomhouse.org/country/kazakhstan/freedom-net/2023">reported&lt;/a> quite extensively. As part of this study, &lt;a href="https://ooni.org/">OONI&lt;/a>, &lt;a href="https://ifkz.org/en">Internet Freedom Kazakhstan (IFKZ)&lt;/a>, and &lt;a href="https://www.digitalrights.asia">Eurasian Digital Foundation&lt;/a> collaborated to investigate internet censorship in Kazakhstan over the past year (between June 2023 to June 2024) through the analysis of empirical network measurement data.&lt;/p>
+&lt;p>In this report, we share OONI censorship measurement findings and relevant legal context. We found numerous &lt;a href="https://explorer.ooni.org/search?probe_cc=KZ&amp;test_name=web_connectivity&amp;since=2023-06-01&amp;until=2024-06-01&amp;failure=false&amp;category_code=NEWS&amp;only=anomalies">news media&lt;/a>, &lt;a href="https://explorer.ooni.org/chart/mat?test_name=web_connectivity&amp;axis_x=measurement_start_day&amp;since=2023-06-01&amp;until=2024-06-01&amp;time_grain=day&amp;probe_cc=KZ&amp;axis_y=domain&amp;domain=www.ipetitions.com%2Cwww.change.org%2Cegov.press%2Camnesty.org.ru">human rights&lt;/a>, and &lt;a href="https://explorer.ooni.org/chart/mat?test_name=web_connectivity&amp;axis_x=measurement_start_day&amp;since=2023-06-01&amp;until=2024-06-01&amp;time_grain=day&amp;probe_cc=KZ&amp;axis_y=domain&amp;category_code=ANON">circumvention tool websites blocked&lt;/a> in Kazakhstan by means of TLS interference. We also found 7 distinct intermediate certificates signed by 4 distinct root CAs being used to carry out TLS man-in-the-middle (MITM) attacks, targeting at least 14 distinct domain names on at least 19 different networks in Kazakhstan. We share more details below.&lt;/p></description></item><item><title>Tanzania: Surge in online LGBTIQ censorship and other targeted blocks</title><link>https://ooni.github.io/post/2024-tanzania-lgbtiq-censorship-and-other-targeted-blocks/</link><pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2024-tanzania-lgbtiq-censorship-and-other-targeted-blocks/</guid><description>&lt;p>This report documents the blocking of LGBTIQ websites and other targeted blocks in Tanzania based on the analysis of &lt;a href="https://explorer.ooni.org/chart/mat?test_name=web_connectivity&amp;axis_x=measurement_start_day&amp;since=2023-12-01&amp;until=2024-01-31&amp;time_grain=day&amp;probe_cc=TZ">OONI data&lt;/a>.&lt;/p>
+&lt;a class="ooni-btn" href="https://ooni.github.io/documents/2024-tz-report-en.pdf">Download in PDF&lt;/a>
+
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#key-findings">Key Findings&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#methods">Methods&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#acknowledgement-of-limitations">Acknowledgement of limitations&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#findings">Findings&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#blocking-of-lgbtiq-websites">Blocking of LGBTIQ websites&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#lgbtiq-social-networks">LGBTIQ social networks&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#lgbtiq-rights">LGBTIQ rights&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#lgbtiq-news-and-culture">LGBTIQ news and culture&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#lgbtiq-suicide-prevention">LGBTIQ suicide prevention&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#blocking-of-websites-that-support-human-rights">Blocking of websites that support human rights&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-online-dating-websites">Blocking of online dating websites&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-clubhouse-and-4chan">Blocking of Clubhouse and 4chan&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-protonvpn">Blocking of ProtonVPN&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="key-findings" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#key-findings">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Key Findings
+&lt;/h2>
+&lt;p>Our analysis of &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=TZ&amp;since=2023-12-01&amp;until=2024-01-31&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=web_connectivity">OONI data&lt;/a> collected from Tanzania over the last year (between 1st January 2023 to 31st January 2024) reveals the &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=TZ&amp;since=2023-12-01&amp;until=2024-01-31&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;axis_y=domain&amp;test_name=web_connectivity&amp;category_code=LGBT">extensive blocking of LGBTIQ sites&lt;/a>, which correlates with the &lt;a href="https://www.ohchr.org/en/press-releases/2018/11/bachelet-tanzania-has-duty-protect-not-further-endanger-lgbt-people">escalating discrimination and crackdown on LGBTIQ communities&lt;/a> in Tanzania in recent years. Many other blocks identified as part of this study appear to be targeted in nature, as they involve very specific websites, while other (more popular) sites from the same category (e.g. social media, human rights) were found accessible.&lt;/p></description></item><item><title>Grindr blocked in Jordan: Shrinking LGBTQ spaces</title><link>https://ooni.github.io/post/2023-jordan-blocks-grindr/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-jordan-blocks-grindr/</guid><description>&lt;p>Jordan recently &lt;a href="https://explorer.ooni.org/m/20230808211935.881250_JO_webconnectivity_6b7549126aabe25d">blocked&lt;/a> access to &lt;a href="https://www.grindr.com/">Grindr&lt;/a> — the world’s largest social networking app for gay, bi, trans, and queer people — adding to the list of social media apps banned in the country, including &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=JO&amp;since=2023-08-13&amp;until=2023-09-13&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=web_connectivity&amp;domain=www.tiktok.com">TikTok&lt;/a> and &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=JO&amp;since=2023-08-13&amp;until=2023-09-13&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=web_connectivity&amp;domain=www.clubhouse.com">Clubhouse&lt;/a>.&lt;/p>
+&lt;p>&lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=JO&amp;since=2023-08-01&amp;until=2023-09-10&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=web_connectivity&amp;domain=www.grindr.com">OONI network measurement data&lt;/a> collected from Jordan suggests that ISPs started blocking access to Grindr on August 8th 2023, and that the block &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=JO&amp;since=2023-08-01&amp;until=2023-09-21&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=web_connectivity&amp;domain=www.grindr.com">remains ongoing&lt;/a>.&lt;/p>
+&lt;p>This report shares &lt;a href="https://explorer.ooni.org/chart/mat?probe_cc=JO&amp;since=2023-08-01&amp;until=2023-09-10&amp;time_grain=day&amp;axis_x=measurement_start_day&amp;test_name=web_connectivity&amp;domain=www.grindr.com">OONI data&lt;/a> on the blocking of Grindr in Jordan.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#background">Background&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#methods">Methods&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#blocking-of-grindr-in-jordan">Blocking of Grindr in Jordan&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#ooni-findings">OONI findings&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#impact-of-the-block">Impact of the block&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#acknowledgements">Acknowledgements&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="background" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#background">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Background
+&lt;/h2>
+&lt;p>Jordan is one of the few Middle Eastern countries where consensual same-sex sexual acts are not criminalised. Previously, the colonial-era &lt;a href="https://database.ilga.org/api/downloader/download/1/JO%20-%20LEG%20-%20Criminal%20Code%20Bill%20(1936)%20-%20OR-OFF(en).pdf">Criminal Code Bill (1936)&lt;/a> banned same-sex relations, but this was repealed in 1951 with the enactment of the country’s &lt;a href="https://database.ilga.org/api/downloader/download/1/JO%20-%20LEG%20-%20Penal%20Code%20(1951)%20-%20TR(en).pdf">Penal Code&lt;/a>. While homosexual conduct is technically legal in Jordan, the General Iftaa Department issued a &lt;a href="https://database.ilga.org/api/downloader/download/1/JO%20-%20JUD%20-%20Fatwa%203670%20on%20Sexual%20Relations%20from%20an%20Islamic%20Perspective%20(2021)%20-%20OR(ar).pdf">religious ruling&lt;/a> (Fatwa) in December 2021, declaring that &amp;ldquo;homosexuality is illegal under Islamic law&amp;rdquo;. Such religious rulings are not legally binding, but the General Iftaa Department acts in an advisory capacity to government branches and courts.&lt;/p></description></item><item><title>How Internet censorship changed in Russia during the 1st year of military conflict in Ukraine</title><link>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</link><pubDate>Fri, 24 Feb 2023 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2023-russia-a-year-after-the-conflict/</guid><description>&lt;a class="ooni-btn" href="https://ooni.github.io/documents/russia-military-conflict-en.pdf">Download in PDF&lt;/a>
+
+&lt;p>As of today, last year, Russia started its &lt;a href="https://www.bbc.com/news/world-60525350">military operation in Ukraine&lt;/a>. This was followed by increased levels of internet censorship, as Internet Service Providers (ISPs) in Russia started &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocking-of-news-media-websites">blocking access to several news media websites&lt;/a>. In early March 2022, OONI published a &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/">report&lt;/a> documenting these blocks, as well as the &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#blocked-website-about-captured-and-killed-russian-soldiers">blocking of a site&lt;/a> (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine. OONI also reported that Russian ISPs started &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-throttled">throttling access to Twitter&lt;/a> on 26th February 2022, and switched to &lt;a href="https://ooni.org/post/2022-russia-blocks-amid-ru-ua-conflict/#twitter-and-facebook-blocked">blocking&lt;/a> it by 4th March 2022 – at which point, they also started &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;until=2022-03-07&amp;failure=false&amp;domain=www.facebook.com&amp;probe_cc=RU&amp;only=anomalies">blocking access to Facebook&lt;/a>.&lt;/p></description></item><item><title>iMAP State of Internet Censorship Report 2022 - Hong Kong</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-hong-kong/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-hong-kong/</guid><description>&lt;p>Hong Kong, a place geographically conjunct to the soil of Mainland China, has been previously known as a free society, endured and still enduring multiple historical occasions. Once, there was no nationwide internet censorship until the latest development that local authorities and Beijing forcefully implemented the Hong Kong national security law in late June 2020. Currently, at least four websites are known to be censored, and a few ongoing discussions among pro-Beijing parties and the government to put censorship up on instant messaging and social platforms.&lt;/p></description></item><item><title>iMAP State of Internet Censorship Report 2022 - Indonesia</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-indonesia/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-indonesia/</guid><description>&lt;ul>
+&lt;li>
+&lt;p>In July 2014, Regulation of the Minister of Communications and Informatics Number 19 of 2014 on the Handling of Negative Internet Sites came into force as part of the regulator&amp;rsquo;s programme for Healthy and Safe Internet (INSAN or Internet Sehat dan Aman). The law mandated ISPs to block any internet content that is deemed to carry &amp;ldquo;negative&amp;rdquo; elements such as pornography, hoaxes, or SARA conflicts.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>As of September 2022, the Indonesian Ministry of Information and Communication (Kominfo) has blocked over 1,000,000 websites through TrustPositif,&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> a filtering application that has been operational since 2010 per Ministerial Regulation No 19 of 2014.&lt;/p></description></item><item><title>iMAP State of Internet Censorship Report 2022 - Malaysia</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-malaysia/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-malaysia/</guid><description>&lt;p>It is a codified guarantee that the internet will not be censored except for illegal, obscene and indecent content, while in reality the extent of censorship and its implementation are wider than projected and remain to be explored.&lt;/p>
+&lt;hr>
+&lt;p>&lt;a href="https://imap.sinarproject.org/reports/2022/imap-state-of-internet-censorship-country-report-2022-malaysia/2022-malaysia-translation">Diterjemah ke dalam bahasa Melayu&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The Ministry of Communications and Multimedia (MCMC) do not publish list of blocked sites, however statements were released from time to time to announce the number of sites blocked. It was revealed that 2,195 websites promoting online gambling were blocked as of March 2021.&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> Between 2020 to July 2021, 960 phishing sites were blocked.&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> From 2018 to September 2021, 4,068 pornography sites were blocked by MCMC.&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/p></description></item><item><title>iMAP State of Internet Censorship Report 2022 - Thailand</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-thailand/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-thailand/</guid><description>&lt;p>Thailand, a country situated on the mainland of Southeast Asia, was under military junta for five years from 2014 to 2019. Upon the general election in 2019, the country has been nominally a parliamentary constitutional monarchy, although with lèse-majesté laws continuing to be invoked especially with regard to internet censorship. Adding the COVID-19 pandemic into the picture, the Thai government introduced Regulation 29 to curb fake news, which led to reported incidences of internet censorship.&lt;/p></description></item><item><title>iMAP State of Internet Censorship Report 2022 - Vietnam</title><link>https://ooni.github.io/post/2022-state-of-internet-censorship-vietnam/</link><pubDate>Fri, 23 Dec 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-state-of-internet-censorship-vietnam/</guid><description>&lt;p>Swedish Ambassador to Vietnam Pereric Högberg affirmed that Vietnam is making good use of opportunities from the internet, being one of the leading countries in Southeast Asia in terms of internet connection and development&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. Vietnam is not limited to using the Internet and social networks&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>. However, there are still websites with controlled access in Vietnam.&lt;/p>
+&lt;hr>
+&lt;p>&lt;a href="https://imap.sinarproject.org/reports/2022/imap-state-of-internet-censorship-country-report-2022-vietnam/2022-vietnam-translation">Dịch sang tiếng Việt&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Under the authoritarian political system, freedom of assembly, association, expression, press and religion, as well as civil society activism, is tightly restricted and controlled by the party despite legislation recognising civil and political rights in the Constitution.&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> Certain contents and topics related to curtailing political opposition, unfavourable to the party, corruption, and human rights issues are censored in various ways.&lt;/p></description></item><item><title>No Access: LGBTIQ Website Censorship in Six Countries</title><link>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</link><pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover.png">
+ &lt;img
+ src="https://ooni.github.io/post/2021-no-access-lgbtiq-website-censorship-six-countries/images/report-cover_hu14604463933570315610.png"
+
+ 
+ 
+ title="Report cover"
+ 
+ alt="Report cover"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>Today, in collaboration with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> and the &lt;a href="https://citizenlab.ca/">Citizen Lab&lt;/a>, we are excited to share our new research report, “&lt;strong>No Access: LGBTIQ Website Censorship in Six Countries&lt;/strong>”,
+which examines the blocking of LGBTIQ websites in Indonesia, Malaysia,
+Iran, Russia, Saudi Arabia, and the United Arab Emirates (UAE).&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://ooni.github.io/documents/2021-lgbtiq-website-censorship-report/2021-lgbtiq-website-censorship-report-v2.pdf">READ FULL REPORT&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>&lt;a href="https://ooni.github.io/documents/2021-lgbtiq-website-censorship-report/annotated-bibliography.pdf">Annotated Bibliography&lt;/a>&lt;/p>
+&lt;p>Below we share some of our key research findings.&lt;/p>
+&lt;h1 id="summary-of-findings" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#summary-of-findings">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ Summary of findings
+&lt;/h1>
+&lt;p>We joined forces with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> and the &lt;a href="https://citizenlab.ca/">Citizen Lab&lt;/a> to examine the blocking of LGBTIQ websites
+in six countries: Indonesia, Malaysia, Iran, Russia, Saudi Arabia, and
+the United Arab Emirates (UAE). We selected these countries because they
+are (a) known to serve &lt;a href="https://ooni.org/support/glossary/#block-page">block pages&lt;/a> (i.e., pages that
+website visitors may see when access is restricted), which enable us to
+automatically confirm the blocking of LGBTIQ websites, and (b) known to
+censor LGBTIQ related content, based on prior research.&lt;/p></description></item><item><title>Belarus protests: From internet outages to pervasive website censorship</title><link>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</link><pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/images/by-blockpage.png">
+ &lt;img
+ src="https://ooni.github.io/post/2020-belarus-internet-outages-website-censorship/images/by-blockpage_hu6980547774342713408.png"
+
+ 
+ 
+ title="Block page served in Belarus"
+ 
+ alt="Block page served in Belarus"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>&lt;strong>Image:&lt;/strong> Block page served in Belarus.&lt;/p>
+&lt;p>&lt;em>This report was prepared in collaboration with &lt;a href="https://humanconstanta.by/">Human Constanta&lt;/a> and the &lt;a href="https://t.me/zabynet">Digital Observers Community Belarus&lt;/a>.&lt;/em>&lt;/p>
+&lt;p>More than 70 websites have been &lt;a href="https://www.hrw.org/news/2020/08/28/belarus-internet-disruptions-online-censorship">blocked&lt;/a>
+in Belarus over the last weeks, following a &lt;a href="https://www.theguardian.com/world/2020/aug/10/its-outrageous-belarus-election-result-sparks-night-of-defiance-and-violence">controversial presidential election&lt;/a>
+and amid &lt;a href="https://time.com/5880593/belarus-protests-lukashenko/">ongoing anti-government protests&lt;/a>. Many
+of the blocked sites include news media and are related to the
+elections, while several other sites expressing political criticism were
+blocked as well. At the time of writing, many of these sites remain
+blocked in Belarus.&lt;/p></description></item><item><title>Evaluating OONI’s New Measurement Engine in the Context of the Blocking of Women on Web in Spain</title><link>https://ooni.github.io/post/2020-engine-evaluation-spain/</link><pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-engine-evaluation-spain/</guid><description>&lt;p>Reproduction rights site
+&lt;a href="https://www.womenonweb.org">www.womenonweb.org&lt;/a> has been
+blocked in Spain over the last months by several local Internet Service
+Providers (ISPs). Once Spanish hacktivist communities noticed that
+&lt;a href="http://www.womenonweb.org">www.womenonweb.org&lt;/a> was
+inaccessible, they coordinated on running &lt;a href="https://ooni.org/install/">OONI
+Probe&lt;/a> tests to collect
+measurement data that could serve as evidence. The findings of this
+investigation have been published in &lt;a href="https://blog.magma.lavafeld.org/post/women-on-web-blocking/">an excellent
+report&lt;/a>,
+whose writing was coordinated by our former colleague, Vasilis Ververis.&lt;/p>
+&lt;p>We were involved in the technical review of the report. We found their
+methodology particularly interesting. They used the OONI &lt;a href="https://ooni.org/nettest/web-connectivity/">Web
+Connectivity experiment&lt;/a>
+along with OONI&amp;rsquo;s &lt;a href="https://ooni.org/post/2020-iran-sni-blocking/">experimental SNI based blocking
+methodology&lt;/a>,
+and they also performed manual experiments with
+&lt;a href="https://www.openssl.org/">OpenSSL&lt;/a> and
+&lt;a href="https://curl.haxx.se/">cURL&lt;/a>. Because OONI&amp;rsquo;s mission is
+to simplify and automate the collection of censorship evidence, we are
+always interested in learning how we can expand &lt;a href="https://ooni.org/nettest/web-connectivity/">our Web Connectivity
+methodology&lt;/a> to
+automatically gather more data that is useful in specific cases.
+Coincidentally, as part of &lt;a href="https://github.com/ooni/probe-engine/issues/40">rewriting the Web Connectivity
+implementation in Go&lt;/a>, we
+have already written experimental code that combines &lt;a href="https://ooni.org/nettest/web-connectivity/">vanilla Web
+Connectivity&lt;/a>
+with &lt;a href="https://ooni.org/post/2020-iran-sni-blocking/">SNI blocking&lt;/a>
+and other techniques. We therefore asked them to run this experimental
+code with &lt;a href="https://www.womenonweb.org">www.womenonweb.org&lt;/a>
+as a target. Our goal was to evaluate whether our working prototype
+would have allowed them to obtain the same research results, without
+resorting to manually running specifically tailored network experiments.&lt;/p></description></item><item><title>Call to Action: Let’s measure the blocking of LGBTQI websites around the world!</title><link>https://ooni.github.io/post/2019-measure-blocking-lgbtqi-sites/</link><pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-measure-blocking-lgbtqi-sites/</guid><description>&lt;p>&lt;img alt="Grindr blocked in Iran" src="https://ooni.github.io/post/lgbtqi-site-testing/confirmed-blocked-measurement.png">&lt;/p>
+&lt;p>LGBTQI websites are blocked in several countries around the world, such
+as
+&lt;a href="https://sinarproject.org/digital-rights/updates/online-lgbt-censorship-malaysia">Malaysia&lt;/a>
+and
+&lt;a href="https://ooni.org/post/indonesia-internet-censorship/#lgbt">Indonesia&lt;/a>.
+This includes popular dating apps and sites, like
+&lt;a href="https://www.grindr.com/">grindr&lt;/a>, which is blocked in
+&lt;a href="https://www.amnesty.org/en/latest/news/2019/05/lebanon-ban-on-gay-dating-app-grindr-a-blow-for-sexual-rights-and-freedom/">Lebanon&lt;/a>
+and
+&lt;a href="https://ooni.org/post/iran-internet-censorship/#human-rights-issues">Iran&lt;/a>.&lt;/p>
+&lt;p>How can we track the blocking of LGBTQI sites around the world?&lt;/p>
+&lt;p>We have teamed up with &lt;a href="https://outrightinternational.org/">OutRight Action International&lt;/a> &amp;ndash; a leading international LGBTQI human rights organization &amp;ndash; to investigate the blocking of LGBTQI sites worldwide.&lt;/p>
+&lt;p>We invite you to contribute to this research!&lt;/p></description></item><item><title>On the blocking of abortion rights websites: Women on Waves &amp; Women on Web</title><link>https://ooni.github.io/post/2019-blocking-abortion-rights-websites-women-on-waves-web/</link><pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2019-blocking-abortion-rights-websites-women-on-waves-web/</guid><description>&lt;p>&lt;img alt="Cover image" src="https://ooni.github.io/post/2019-blocking-abortion-rights-websites-women-on-waves-web/wow-cover-image.png">&lt;/p>
+&lt;p>&lt;strong>Image:&lt;/strong> By Clarote (Coding Rights)&lt;/p>
+&lt;hr>
+&lt;p>Read the &lt;a href="https://medium.com/codingrights/brasil-bloqueia-women-on-waves-site-que-traz-informa%C3%A7%C3%B5es-sobre-aborto-seguro-91cd6ae64ba3">Portuguese version&lt;/a> by Coding Rights.&lt;/p>
+&lt;p>View the report&amp;rsquo;s &lt;a href="https://theintercept.com/2019/12/12/net-claro-e-vivo-bloqueiam-site-aborto-seguro/">press coverage&lt;/a> by The Intercept.&lt;/p>
+&lt;hr>
+&lt;p>As abortion remains partially or totally
+&lt;a href="https://reproductiverights.org/worldabortionlaws">criminalized&lt;/a> in
+numerous countries, the fight to promote sexual and reproductive rights,
+as well as women&amp;rsquo;s health, also relies on access to information. But
+recently, we were told that the website of the abortion rights
+non-governmental organization womeonwaves.org, which provides
+reproductive health services and education to women in countries with
+restrictive abortion laws, was inaccessible in Brazil.&lt;/p></description></item><item><title>Ethiopia: Verifying the unblocking of websites</title><link>https://ooni.github.io/post/ethiopia-unblocking/</link><pubDate>Fri, 29 Jun 2018 19:49:00 +0000</pubDate><guid>https://ooni.github.io/post/ethiopia-unblocking/</guid><description>&lt;p>&lt;img alt="Rally at Meskel Square" src="https://ooni.github.io/post/ethiopia-unblocking/cover.jpg">
+Pro PM Abiy Ahmed Rally at Meskel Square, June 2018 - Photo by Berhan Taye&lt;/p>
+&lt;p>On 22nd June 2018, the Ethiopian government &lt;a href="http://www.africanews.com/2018/06/23/ethiopia-unblocks-264-websites-and-tv-channels/">reported&lt;/a> that it had unblocked 264 websites. This (great) news was also &lt;a href="https://ethsat.com/2018/06/ethiopia-unblocks-264-websites-including-esat/">reported by ESAT&lt;/a>, a major Ethiopian media website that was &lt;a href="https://explorer.ooni.io/measurement/20160817T192345Z_AS24757_vkmTFvmkOUzdotRJrOUrieRB5bqhrEUjem5G2ZnQqDbfRByV2U?input=http:%2F%2Fethsat.com">blocked&lt;/a> over the last years.&lt;/p>
+&lt;p>Today, &lt;a href="https://ooni.github.io/">OONI&lt;/a> and &lt;a href="https://www.accessnow.org/">Access Now&lt;/a> publish new research based on the testing of sites that were previously &lt;a href="https://ooni.github.io/post/ethiopia-report/#websites-blocked">found to be blocked&lt;/a>, in an attempt to examine whether they have in fact been unblocked in recent days.&lt;/p></description></item><item><title>Internet Censorship in Pakistan: Findings from 2014-2017</title><link>https://ooni.github.io/post/pakistan-internet-censorship/</link><pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/pakistan-internet-censorship/</guid><description>&lt;p>&lt;img alt="Pakistan" src="https://ooni.github.io/post/pakistan/pakistan.jpg">&lt;/p>
+&lt;p>Islamabad: Political dissent in Pakistan under threat, government
+censors online content - PC: Haroon Baloch&lt;/p>
+&lt;p>A research study by the Open Observatory of Network Interference (OONI)
+and Bytes for All Pakistan.&lt;/p>
+&lt;p>&lt;strong>Table of contents&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#key-findings">Key Findings&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#introduction">Introduction&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#network-landscape-and-internet-penetration">Network landscape and internet penetration&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#legal-environment">Legal environment&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#freedom-of-expression">Freedom of expression&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#press-freedom">Press freedom&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#access-to-information">Access to information&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#privacy-and-digital-surveillance">Privacy and digital surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#censorship">Censorship&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#reported-cases-of-internet-censorship-and-surveillance">Reported cases of internet censorship and surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/pakistan-internet-censorship/#methodology-measuring-internet-censorship-in-pakistan">Methodology: Measuring internet censorship in Pakistan&lt;/a>&lt;/p></description></item><item><title>Internet Censorship in Iran: Network Measurement Findings from 2014-2017</title><link>https://ooni.github.io/post/iran-internet-censorship/</link><pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/iran-internet-censorship/</guid><description>&lt;p>&lt;img alt="Iran block page" src="https://ooni.github.io/post/iran/blockpage.png">&lt;/p>
+&lt;p>Image: Blockpage in Iran&lt;/p>
+&lt;p>A research study by the Open Observatory of Network Interference (OONI),
+ASL19, ARTICLE 19, and Small Media.&lt;/p>
+&lt;p>&lt;strong>Table of contents&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#key-findings">Key Findings&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#introduction">Introduction&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#background">Background&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#network-landscape">Network landscape&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#internet-use">Internet use&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#legal-environment">Legal environment&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#reported-cases-of-internet-censorship">Reported cases of internet censorship&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#methodology-measuring-internet-censorship-in-iran">Methodology: Measuring internet censorship in Iran&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#review-of-the-citizen-labs-test-list-for-iran">Review of the Citizen Lab&amp;rsquo;s test list for Iran&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#ooni-network-measurement-testing">OONI network measurement testing&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#web-connectivity">Web Connectivity&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#http-invalid-request-line">HTTP Invalid Request Line&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/iran-internet-censorship/#http-header-field-manipulation">HTTP Header Field Manipulation&lt;/a>&lt;/p></description></item><item><title>Measuring Internet Censorship in Cuba's ParkNets</title><link>https://ooni.github.io/post/cuba-internet-censorship-2017/</link><pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/cuba-internet-censorship-2017/</guid><description>&lt;div>
+ &lt;img
+ src="https://ooni.github.io/post/cuba-internet-censorship-2017/cu-01.jpg"
+ title="Image by Arturo Filastò (CC-BY-SA-3.0)"
+ srcset="https://ooni.github.io/post/cuba-internet-censorship-2017/cu-01@2x.jpg 2x"
+ 
+ alt="Image by Arturo Filastò (CC-BY-SA-3.0)"
+ 
+ />
+ 
+ &lt;span style="display: inline-block;font-style: italic;padding-bottom: 20px">Image by Arturo Filastò (CC-BY-SA-3.0)&lt;/span>
+ 
+&lt;/div>
+
+&lt;p>A research study by the Open Observatory of Network Interference (OONI)&lt;/p>
+&lt;p>View the &lt;strong>pdf&lt;/strong> version of the report &lt;a href="https://ooni.github.io/documents/cuba-internet-censorship-2017.pdf">here&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Table of contents&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#key-findings">Key Findings&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#introduction">Introduction&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#network-landscape-and-internet-penetration">Network landscape and internet penetration&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#etecsa">ETECSA&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#parknets">ParkNets&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#joven-club">Joven Club&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#streetnets">StreetNets&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#el-paquete">El Paquete&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#summary">Summary&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#measuring-internet-censorship-in-cuba">Measuring Internet Censorship in Cuba&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#methodology">Methodology&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#collection-and-analysis-of-ooniprobe-network-measurements">Collection and analysis of OONI Probe network measurements&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/cuba-internet-censorship-2017/#custom-tests">Custom tests&lt;/a>&lt;/p></description></item><item><title>The State of Internet Censorship in Indonesia</title><link>https://ooni.github.io/post/indonesia-internet-censorship/</link><pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/indonesia-internet-censorship/</guid><description>&lt;p>&lt;img alt="Indonesian block page" src="https://ooni.github.io/post/indonesia/indonesian-blockpage.png">&lt;/p>
+&lt;p>&lt;em>Image: Block page in Indonesia&lt;/em>&lt;/p>
+&lt;p>A research study by the Open Observatory of Network Interference (OONI) and Sinar
+Project.&lt;/p>
+&lt;p>&lt;strong>Table of contents&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#key-findings">Key Findings&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#introduction">Introduction&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#background">Background&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#network-landscape-and-internet-penetration">Network landscape and internet penetration&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#legal-environment">Legal environment&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#freedom-of-expression">Freedom of expression&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#press-freedom">Press freedom&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#access-to-information">Access to information&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#privacy">Privacy&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#censorship-and-surveillance">Censorship and surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#reported-cases-of-internet-censorship-and-surveillance">Reported cases of internet censorship and surveillance&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#examining-internet-censorship-in-indonesia">Examining internet censorship in Indonesia&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#methodology">Methodology&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#collection-of-ooniprobe-network-measurements">Collection of OONI Probe network measurements&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#web-connectivity">Web Connectivity&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/post/indonesia-internet-censorship/#http-invalid-request-line">HTTP Invalid Request Line&lt;/a>&lt;/p></description></item><item><title>Ethiopia: Evidence of social media blocking and internet censorship</title><link>https://ooni.github.io/post/ethiopia-report/</link><pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/ethiopia-report/</guid><description>&lt;p>&lt;img alt="Ethiopia image" src="https://ooni.github.io/post/ethiopia-report/et-05.png">&lt;/p>
+&lt;p>&lt;em>Youth in Addis trying to get Wi-Fi Connection. Credit Addis Fortune Newspaper&lt;/em>&lt;/p>
+&lt;p>Recently we published a &lt;a href="https://ooni.org/post/ethiopia-internet-shutdown-amidst-recent-protests/">post&lt;/a> about what appeared to be a possible internet
+shutdown in Ethiopia during a wave of ongoing protests by ethnic groups. Today,
+in collaboration with &lt;a href="https://www.amnesty.org/">Amnesty International&lt;/a> we are releasing a report that
+includes evidence of recent censorship events during Ethiopia’s political
+upheaval.&lt;/p>
+&lt;p>See the &lt;a href="https://ooni.github.io/post/ethiopia-report/amharic-translation.pdf">Amharic translation&lt;/a> of the report. Translated by Wolete Mariam.&lt;/p>
+&lt;p>View the &lt;strong>pdf&lt;/strong> version of the report &lt;a href="https://ooni.github.io/documents/Ethiopia-Offline-evidence-of.pdf">here&lt;/a>.&lt;/p></description></item><item><title>Research reports: Blocking of Human Rights Websites</title><link>https://ooni.github.io/reports/human-rights/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/reports/human-rights/</guid><description/></item></channel></rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DNS on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/dns/</link><description>Recent content in DNS on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 17 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/dns/index.xml" rel="self" type="application/rss+xml"/><item><title>Measuring DoT/DoH Blocking Using OONI Probe: A Preliminary Study</title><link>https://ooni.github.io/post/2022-doh-dot-paper-dnsprivacy21/</link><pubDate>Fri, 17 Jun 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-doh-dot-paper-dnsprivacy21/</guid><description>&lt;p>When you enter a URL such as &lt;code>https://example.com/&lt;/code>, under the
+hood, your web browser resolves the &lt;code>example.com&lt;/code> domain to one or
+more IP addresses using the Domain Name System (DNS), a set of
+federated servers and protocols providing this name-to-IP-address
+mapping. For example, as of 2022-06-16, &lt;code>example.com&lt;/code> resolves to
+the &lt;code>93.184.216.34&lt;/code> (IPv4) and &lt;code>2606:2800:220:1:248:1893:25c8:1946&lt;/code>
+(IPv6) addresses. Once it knows the IP addresses for the domain,
+the browser then uses them to fetch the requested webpage. Conceptually,
+the browser tries the IP addresses in sequence until it finds one
+that works. If no returned IP address works, the request fails.
+Therefore, domain name lookups are key to browsing and, incidentally,
+are also key to website censorship and surveillance.&lt;/p></description></item><item><title>Iran Protests: DPI blocking of Instagram (Part 2)</title><link>https://ooni.github.io/post/2018-iran-protests-pt2/</link><pubDate>Wed, 14 Feb 2018 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2018-iran-protests-pt2/</guid><description>&lt;p>In early January 2018, OONI published a &lt;a href="https://ooni.github.io/post/2018-iran-protests/">post&lt;/a>
+reporting on the blocking of Telegram and Instagram amidst protests in Iran. We
+have since been analyzing RIPE data and other network measurements collected
+from Iran in an attempt to better understand the blockages. Upon further
+analysis, we found that Instagram was in fact blocked (during the Iran
+protests) through the use of Deep Packet Inspection (DPI) technology which
+targeted the TLS protocol. And it was configured in an interesting way.&lt;/p></description></item><item><title>Identifying cases of DNS misconfiguration: Not quite censorship</title><link>https://ooni.github.io/post/not-quite-network-censorship/</link><pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/not-quite-network-censorship/</guid><description>&lt;p>&lt;strong>Country:&lt;/strong> Brazil, worldwide&lt;/p>
+&lt;p>&lt;strong>OONI tests:&lt;/strong> &lt;a href="https://ooni.org/nettest/web-connectivity/">Web Connectivity&lt;/a>,
+&lt;a href="https://ooni.org/nettest/http-requests/">HTTP requests&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Probed ISPs:&lt;/strong> &lt;a href="https://stat.ripe.net/AS1916">AS1916&lt;/a> (Associação Rede Nacional de Ensino e Pesquisa),
+&lt;a href="https://stat.ripe.net/AS262650">AS262650&lt;/a> (Kyatera Informatica Ltda),
+&lt;a href="https://stat.ripe.net/AS2715">AS2715&lt;/a> (Fundacao de Amparo a Pesquisa/RJ),
+&lt;a href="https://stat.ripe.net/AS27699">AS27699&lt;/a> (TELEFÔNICA BRASIL S.A),
+&lt;a href="https://stat.ripe.net/AS28573">AS28573&lt;/a> (CLARO S.A.),
+&lt;a href="https://stat.ripe.net/AS52873">AS52873&lt;/a> (SOFTDADOS CONECTIVIDADE),
+&lt;a href="https://stat.ripe.net/AS7738">AS7738&lt;/a> (Telemar Norte Leste S.A.),
+&lt;a href="https://stat.ripe.net/AS8167">AS8167&lt;/a> (Brasil Telecom S/A - Filial Distrito Federal)&lt;/p>
+&lt;p>&lt;strong>Measurement period:&lt;/strong> July 2016 — November 2017&lt;/p>
+&lt;p>&lt;strong>Website inaccessibility reasons:&lt;/strong> IPv6 or DNS misconfiguration&lt;/p>
+&lt;p>We recently noticed that &lt;a href="http://pernambuco.com">pernambuco.com&lt;/a>, a
+regional news portal, has not been reachable from several networks in Brazil for quite some
+time. By looking at &lt;a href="https://ooni.github.io/post/not-quite-network-censorship/measurements.br.pernambuco.csv">OONI data&lt;/a>, we found that the site was not reachable and that it presented signs of &lt;a href="https://explorer.ooni.org/measurement/s3YPvS70pxtUQXG5qLv8z2wfafZ98eUzCmxcbYkvSRELpYS2mBWksZCacvAr5GqS?input=http:%2F%2Fwww.pernambuco.com%2Fdiario">DNS-based
+blocking&lt;/a>
+due to empty DNS responses that is usually a symptom of potential internet censorship. But upon further analysis, we found a number of DNS
+misconfigurations of the nameservers hosting the domain in question. A
+&lt;a href="https://en.wikipedia.org/wiki/Name_server">nameserver&lt;/a> is a function of a DNS server that implements a
+network service for providing responses to queries against a directory service.
+In this article we present an analysis of possible DNS misconfigurations that
+may have caused &lt;code>pernambuco.com&lt;/code> to be inaccessible. We also provide some
+solutions to resolve DNS misconfiguration for &lt;code>pernambuco.com&lt;/code> and other sites potentially affected in Brazil and worldwide.&lt;/p></description></item></channel></rss>

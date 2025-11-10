@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/ar/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>ar</language><lastBuildDate>Thu, 26 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/ar/index.xml" rel="self" type="application/rss+xml"/><item><title>مصر تحجب بي بي سي والحرة: التوسع في الرقابة على الإعلام وسط الاضطرابات السياسية</title><link>https://ooni.github.io/ar/post/2019-egypt-blocks-bbc-and-alhurra/</link><pubDate>Thu, 26 Sep 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ar/post/2019-egypt-blocks-bbc-and-alhurra/</guid><description>&lt;p>في نهاية الأسبوع الماضي ،&lt;a href="https://www.bbc.com/news/world-middle-east-49786367"> اندلعت الاحتجاجات في مصر رداً&lt;/a> على مزاعم الفساد ضد حكومة الرئيس عبد الفتاح السيسي.&lt;/p>
+&lt;p>كانت الاحتجاجات نادرة منذ تولي الرئيس السيسي السلطة في عام 2014 ، ولكن وسط سياسات التقشف الاقتصادي وادعاءات الفساد الأخيرة ، خرج مئات المصريين إلى الشوارع. &lt;a href="https://netblocks.org/reports/facebook-messenger-social-media-and-news-sites-disrupted-in-egypt-amid-protests-eA1Jd7Bp">أفيد لاحقًا&lt;/a> أن موقع بي بي سي و موقع الحرة الإخباري الذي تموله الولايات المتحدة كانا من بين الخدمات التي حُجبت. &lt;a href="https://cpj.org/2019/09/egypt-authorities-arrest-3-journalists-block-websi.php">وذكر رئيس المجلس الأعلى لتنظيم الإعلام والصحافة &lt;/a>في مصر أن بي بي سي ومواقع الأخبار الأخرى ربما حُجبت بسبب تغطيتها &amp;ldquo;غير الدقيقة&amp;rdquo; للاحتجاجات.&lt;/p></description></item><item><title/><link>https://ooni.github.io/ar/about/risks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ar/about/risks/</guid><description>&lt;h1 id="المخاطر-ما-تنبغي-معرفته-قبل-تشغيل-مسبار-ooni-probe" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#%d8%a7%d9%84%d9%85%d8%ae%d8%a7%d8%b7%d8%b1-%d9%85%d8%a7-%d8%aa%d9%86%d8%a8%d8%ba%d9%8a-%d9%85%d8%b9%d8%b1%d9%81%d8%aa%d9%87-%d9%82%d8%a8%d9%84-%d8%aa%d8%b4%d8%ba%d9%8a%d9%84-%d9%85%d8%b3%d8%a8%d8%a7%d8%b1-ooni-probe">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ المخاطر: ما تنبغي معرفته قبل تشغيل مسبار OONI Probe
+&lt;/h1>
+&lt;p>قام أحمد غربية بترجمة هذه الوثيقة إلى العربية.&lt;/p></description></item><item><title/><link>https://ooni.github.io/ar/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ar/support/ooni-outreach-kit/</guid><description>&lt;div>
+ &lt;a href="https://ooni.github.io/support/ooni-outreach-kit/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu116634532574350516.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu3784889537597123014.png 2x"
+ 
+ 
+ title="عُدة التوعية لـ OONI"
+ 
+ alt="عُدة التوعية لـ OONI"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+&lt;p>إن دعم المجتمع هو في صميم عمل OONI، إذ أن &lt;a href="https://ooni.org/data/">بيانات OONI&lt;/a> على الانترنت تعتمد على تشغيل الأفراد &lt;a href="https://ooni.org/install/">OONI Probe&lt;/a> في جميع أنحاء العالم.&lt;/p>
+&lt;p>هل لديك اهتمام بجعل مجتمعاتك مساهِمة في قياسات OONI حول الرقابة ؟&lt;/p>
+&lt;p>تتضمن عُدة التوعية لـ OONI &lt;strong>أدوات نشجعك على استخدامها&lt;/strong> لكونها جزءا من جهود دعمك مجتمع OONI.&lt;/p>
+&lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>
+ &lt;ul>
+ &lt;li>&lt;a href="#كتيبات-ooni">كُتيْبات OONI&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#صحيفة-وقائع-ooni-probe">صحيفة وقائع OONI Probe&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#صحيفة-وقائع-ooni-explorer">صحيفة وقائع OONI Explorer&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#منشور-الرقابة-على-الانترنت">منشور الرقابة على الانترنت&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#شرائح-ورشة-عمل-ooni">شرائح ورشة عمل OONI&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#موارد-ooni">موارد OONI&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;/ul>
+&lt;/nav>
+
+&lt;h2 id="كتيبات-ooni" class="group flex flex-row flex-wrap items-center">
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#%d9%83%d8%aa%d9%8a%d8%a8%d8%a7%d8%aa-ooni">
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
+ &lt;g>
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/>
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/>
+ &lt;/g>
+ &lt;/svg>
+ &lt;/a>
+ كُتيْبات OONI
+&lt;/h2>
+&lt;p>إننا نوفر لك كُتيبي OONI اثنين يتضمنان معلومات حول استخدام أدوات OONI وكذا البيانات لأجل التحقيق في الرقابة على الانترنت في جميع أنحاء العالم.&lt;/p></description></item><item><title>إجابات أسئلة شائعة</title><link>https://ooni.github.io/ar/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ar/support/faq/</guid><description>&lt;p>قام أحمد غربية بترجمة هذه الوثيقة إلى العربية.&lt;/p>
+&lt;p>المستند الأصلي (باللغة الإنجليزية):&lt;a href="https://ooni.org/support/faq/">Frequently Asked Questions (FAQ)&lt;/a>&lt;/p>
+&lt;p>في هذا القسم إجابات أسئلة تصلنا من المهتمين بالمشروع.&lt;/p>
+&lt;p>إن كانت لديكم أسئلة أخرى &lt;a href="https://ooni.org/about/#contact">فراسلونا&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#عن-ooni">عن OONI&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#ما-ooni">ما OONI؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#فيمَ-يفيد-ooni">فيمَ يفيد OONI؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#ماذا-تنجزون-بمشروع-ooni">ماذا تنجزون بمشروع OONI؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#لماذا-نتحسَّسُ-الرقابة-على-الإنترنت">لماذا نتحسَّسُ الرقابة على الإنترنت؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#كيف-يُموَّل-ooni">كيف يُموَّل OONI؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#ما-علاقة-ooni-بمشروع-tor">ما علاقة OONI بمشروع Tor؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#أين-مقرّ-ooni">أين مقرّ OONI؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#ما-الوضع-القانوني-لمشروع-ooni">ما الوضع القانوني لمشروع OONI؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#كيف-يمكنني-الانخراط">كيف يمكنني الانخراط؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#ooni-probe">OONI Probe&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#ما-ooni-probe">ما OONI Probe؟&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/faq/#لا-توجد-رقابة-على-الإنترنت-حيث-أقيم،-فماذا-يدفعني-إلى-تشغيل-ooni-probe">لا توجد رقابة على الإنترنت حيث أقيم، فماذا يدفعني إلى تشغيل OONI Probe؟&lt;/a>&lt;/p></description></item><item><title>معجم OONI</title><link>https://ooni.github.io/ar/support/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/ar/support/glossary/</guid><description>&lt;p>قام أحمد غربية بترجمة هذه الوثيقة إلى العربية.&lt;/p>
+&lt;p>المستند الأصلي (باللغة الإنجليزية):&lt;a href="https://ooni.org/support/glossary/">Glossary OONI&lt;/a>&lt;/p>
+&lt;p>يضم هذا المعجم &lt;em>شروحًا موجزة&lt;/em> لمعاني الألفاظ المستخدمة في تطبيقات مشروع OONI و منهجيته و تقارير نتائجه.&lt;/p>
+&lt;p>إذا أردتم اقتراح ألفاظ لزيادتها على المعجم &lt;a href="https://github.com/ooni/ooni.org">فافتحوا طلب دمج&lt;/a> أو اكتبوا إلينا &lt;a href="https://ooni.org/about/#contact">بالبريد الإلكتروني&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#api-application-programming-interface">API&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#as-autonomous-system">AS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#asn-autonomous-system-number">ASN&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#bgp-border-gateway-protocol">BGP&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#blocklist">Blocklist&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#block-page">Block page&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#caching">Caching&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#circumvention-tools">Circumvention tools&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#client">Client&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#data-processing-pipeline">Data processing pipeline&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#dns-domain-name-system">DNS&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#dns-hijacking">DNS hijacking&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#dns-lookup">DNS lookup&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#dns-query">DNS query&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#dns-resolver">DNS resolver&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#dns-spoofing">DNS spoofing&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://ooni.github.io/ar/support/glossary/#dns-tampering">DNS tampering&lt;/a>&lt;/p></description></item></channel></rss>

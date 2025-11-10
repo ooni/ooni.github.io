@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CDN on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/cdn/</link><description>Recent content in CDN on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 24 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/cdn/index.xml" rel="self" type="application/rss+xml"/><item><title>Identifying cases of DNS misconfiguration: Not quite censorship</title><link>https://ooni.github.io/post/not-quite-network-censorship/</link><pubDate>Fri, 24 Nov 2017 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/not-quite-network-censorship/</guid><description>&lt;p>&lt;strong>Country:&lt;/strong> Brazil, worldwide&lt;/p>
+&lt;p>&lt;strong>OONI tests:&lt;/strong> &lt;a href="https://ooni.org/nettest/web-connectivity/">Web Connectivity&lt;/a>,
+&lt;a href="https://ooni.org/nettest/http-requests/">HTTP requests&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Probed ISPs:&lt;/strong> &lt;a href="https://stat.ripe.net/AS1916">AS1916&lt;/a> (Associação Rede Nacional de Ensino e Pesquisa),
+&lt;a href="https://stat.ripe.net/AS262650">AS262650&lt;/a> (Kyatera Informatica Ltda),
+&lt;a href="https://stat.ripe.net/AS2715">AS2715&lt;/a> (Fundacao de Amparo a Pesquisa/RJ),
+&lt;a href="https://stat.ripe.net/AS27699">AS27699&lt;/a> (TELEFÔNICA BRASIL S.A),
+&lt;a href="https://stat.ripe.net/AS28573">AS28573&lt;/a> (CLARO S.A.),
+&lt;a href="https://stat.ripe.net/AS52873">AS52873&lt;/a> (SOFTDADOS CONECTIVIDADE),
+&lt;a href="https://stat.ripe.net/AS7738">AS7738&lt;/a> (Telemar Norte Leste S.A.),
+&lt;a href="https://stat.ripe.net/AS8167">AS8167&lt;/a> (Brasil Telecom S/A - Filial Distrito Federal)&lt;/p>
+&lt;p>&lt;strong>Measurement period:&lt;/strong> July 2016 — November 2017&lt;/p>
+&lt;p>&lt;strong>Website inaccessibility reasons:&lt;/strong> IPv6 or DNS misconfiguration&lt;/p>
+&lt;p>We recently noticed that &lt;a href="http://pernambuco.com">pernambuco.com&lt;/a>, a
+regional news portal, has not been reachable from several networks in Brazil for quite some
+time. By looking at &lt;a href="https://ooni.github.io/post/not-quite-network-censorship/measurements.br.pernambuco.csv">OONI data&lt;/a>, we found that the site was not reachable and that it presented signs of &lt;a href="https://explorer.ooni.org/measurement/s3YPvS70pxtUQXG5qLv8z2wfafZ98eUzCmxcbYkvSRELpYS2mBWksZCacvAr5GqS?input=http:%2F%2Fwww.pernambuco.com%2Fdiario">DNS-based
+blocking&lt;/a>
+due to empty DNS responses that is usually a symptom of potential internet censorship. But upon further analysis, we found a number of DNS
+misconfigurations of the nameservers hosting the domain in question. A
+&lt;a href="https://en.wikipedia.org/wiki/Name_server">nameserver&lt;/a> is a function of a DNS server that implements a
+network service for providing responses to queries against a directory service.
+In this article we present an analysis of possible DNS misconfigurations that
+may have caused &lt;code>pernambuco.com&lt;/code> to be inaccessible. We also provide some
+solutions to resolve DNS misconfiguration for &lt;code>pernambuco.com&lt;/code> and other sites potentially affected in Brazil and worldwide.&lt;/p></description></item></channel></rss>
