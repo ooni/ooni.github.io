@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Donate on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/donate/</link><description>Recent content in Donate on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/donate/index.xml" rel="self" type="application/rss+xml"/><item><title>Other ways to donate to OONI</title><link>https://ooni.github.io/donate/other/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/donate/other/</guid><description>&lt;p>Thank you for your interest in supporting the OONI-verse!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Donate on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/donate/</link><description>Recent content in Donate on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><atom:link href="https://ooni.github.io/donate/index.xml" rel="self" type="application/rss+xml"/><item><title>Other ways to donate to OONI</title><link>https://ooni.github.io/donate/other/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/donate/other/</guid><description>&lt;p>Thank you for your interest in supporting &lt;a href="https://ooni.org/about/">OONI&amp;rsquo;s mission&lt;/a>. We deeply appreciate your support.&lt;/p>
 &lt;h2 id="bank-transfer--sepa" class="group flex flex-row flex-wrap items-center">
  &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#bank-transfer--sepa">
  &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1">
@@ -10,5 +10,14 @@
  &lt;/a>
  Bank Transfer / SEPA
 &lt;/h2>
-&lt;p>You can donate to OONI by doing a wire transfer to the following bank information:&lt;/p></description></item><item><title>Thanks for donating to OONI!</title><link>https://ooni.github.io/donate/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/donate/thanks/</guid><description>&lt;p>Your donation means a lot to us, and it will help us support a global community fighting internet censorship.&lt;/p>
-&lt;p>To stay informed about OONI&amp;rsquo;s work, you can &lt;a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk">subscribe to the ooni-talk mailing list&lt;/a>, follow us on &lt;a href="https://twitter.com/openobservatory">Twitter&lt;/a>, and join us on the &lt;a href="https://slack.ooni.org/">OONI Slack channel&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>You can donate to OONI by doing a wire transfer to the following bank information:&lt;/p></description></item><item><title>Thank you for donating to OONI!</title><link>https://ooni.github.io/donate/thanks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/donate/thanks/</guid><description>&lt;p>Thank you for supporting OONI. Your donation means a lot to us &amp;ndash; it will help us support a global community fighting internet censorship and defend internet freedom.&lt;/p>
+&lt;p>To stay informed about OONI&amp;rsquo;s work, you can &lt;strong>&lt;a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk">subscribe to our mailing list&lt;/a>&lt;/strong>, join us on the &lt;strong>&lt;a href="https://slack.ooni.org/">OONI Slack channel&lt;/a>&lt;/strong>, and &lt;strong>follow us on social media&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://twitter.com/openobservatory">Twitter/X&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mastodon.social/@ooni">Mastodon&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bsky.app/profile/ooni.org">Bluesky&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.instagram.com/openobservatory/">Instagram&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://facebook.com/ooni.org">Facebook&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/c/OONIorg">YouTube&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Thanks again for your support! We are deeply grateful.&lt;/p></description></item></channel></rss>
