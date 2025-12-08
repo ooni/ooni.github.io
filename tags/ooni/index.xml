@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ooni on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/ooni/</link><description>Recent content in Ooni on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/ooni/index.xml" rel="self" type="application/rss+xml"/><item><title>Survey: How useful are the new OONI resources to you?</title><link>https://ooni.github.io/post/2025-ooni-survey/</link><pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-ooni-survey/</guid><description>&lt;p>To better support the internet freedom community in monitoring and responding to censorship events, we’ve introduced several major enhancements over the past few years, including:&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ooni on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/ooni/</link><description>Recent content in Ooni on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/ooni/index.xml" rel="self" type="application/rss+xml"/><item><title>Protect Our Internet. Document Censorship – Support OONI Today.</title><link>https://ooni.github.io/post/2025-fundraising-campaign/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-fundraising-campaign/</guid><description>&lt;p>
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;a href="https://ooni.github.io/post/2025-fundraising-campaign/images/image1.png">
+ &lt;img
+ src="https://ooni.github.io/post/2025-fundraising-campaign/images/image1_hu14331611037618868395.png"
+
+ 
+ srcset="https://ooni.github.io/post/2025-fundraising-campaign/images/image1_hu14578661500087729493.png 2x"
+ 
+ 
+ title="OONI Fundraising Campaign"
+ 
+ alt="OONI Fundraising Campaign"
+ 
+ />
+ &lt;/a>
+ 
+&lt;/div>
+
+
+Image designed by &lt;a href="https://www.robotina.it/">Robotina&lt;/a>.&lt;/p>
+&lt;p>Today, we are launching &lt;strong>&lt;a href="https://ooni.org/donate/">OONI’s end-of-year fundraising campaign&lt;/a>&lt;/strong>. This year, the need to document internet censorship is more important than ever.&lt;/p>
+&lt;p>Around the world, access to online information is &lt;a href="https://ooni.org/reports/">increasingly blocked&lt;/a> – often during events such as protests and elections – limiting people’s ability to communicate and access independent reporting during critical moments.&lt;/p>
+&lt;p>Throughout the year, we observed many cases of online restrictions. Major social media platforms were blocked in countries such as &lt;a href="https://explorer.ooni.org/findings/167838678600">Togo&lt;/a>, &lt;a href="https://explorer.ooni.org/findings/393608039300">Cameroon&lt;/a>, and &lt;a href="https://ooni.org/post/2025-tanzania-blocked-twitter/">Tanzania&lt;/a>. Messaging apps like Telegram and WhatsApp faced blocks in &lt;a href="https://explorer.ooni.org/findings/224470320900">Kenya&lt;/a>, &lt;a href="https://explorer.ooni.org/findings/382823169800">Vietnam&lt;/a>, &lt;a href="https://explorer.ooni.org/findings/284032502800">Nepal&lt;/a>, and &lt;a href="https://explorer.ooni.org/findings/273244099200">Iran&lt;/a>. And more independent news media websites were recently blocked in &lt;a href="https://explorer.ooni.org/findings/667455800">India&lt;/a>, &lt;a href="https://explorer.ooni.org/findings/99431807200">Egypt&lt;/a>, and &lt;a href="https://explorer.ooni.org/findings/101531332700">Jordan&lt;/a>.&lt;/p></description></item><item><title>Survey: How useful are the new OONI resources to you?</title><link>https://ooni.github.io/post/2025-ooni-survey/</link><pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-ooni-survey/</guid><description>&lt;p>To better support the internet freedom community in monitoring and responding to censorship events, we’ve introduced several major enhancements over the past few years, including:&lt;/p>
 &lt;ul>
 &lt;li>New &lt;a href="https://explorer.ooni.org/findings">OONI Explorer Censorship Findings&lt;/a> platform&lt;/li>
 &lt;li>New &lt;a href="https://ooni.org/post/2025-ooni-explorer-thematic-censorship-pages/">OONI Explorer thematic censorship pages&lt;/a>&lt;/li>
