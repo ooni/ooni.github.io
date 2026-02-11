@@ -4850,7 +4850,7 @@ version within a tested network.&lt;/p>
 establish a TCP connection to Telegram’s access points (DCs), as well as an
 HTTPS GET request to Telegram&amp;rsquo;s web version (&lt;code>web.telegram.org&lt;/code>) over the
 vantage point of the user. The test is triggered as blocking when connections
-to &lt;em>all&lt;/em> access points defined in the &lt;a href="https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/telegram.py#L16-L22">test&lt;/a>
+to &lt;em>all&lt;/em> access points defined in the &lt;a href="https://github.com/ooni/probe-cli/blob/112452a3c6c76843e21ac347f449068840df78f9/internal/experiment/telegram/telegram.go#L89-L97">test&lt;/a>
 fail.&lt;/p></description></item><item><title>Test Lists: Contribute websites for censorship testing</title><link>https://ooni.github.io/get-involved/contribute-test-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/get-involved/contribute-test-lists/</guid><description>&lt;p>Censorship findings are only as interesting as the sites and services that you test.&lt;/p>
 &lt;p>You can contribute websites for censorship testing through the following platforms:&lt;/p>
 &lt;ul>

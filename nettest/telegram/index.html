@@ -55,7 +55,7 @@ version within a tested network.</p><p>More specifically, this test attempts to 
 establish a TCP connection to Telegram’s access points (DCs), as well as an
 HTTPS GET request to Telegram&rsquo;s web version (<code>web.telegram.org</code>) over the
 vantage point of the user. The test is triggered as blocking when connections
-to <em>all</em> access points defined in the <a href=https://github.com/TheTorProject/ooni-probe/blob/master/ooni/nettests/blocking/telegram.py#L16-L22>test</a>
+to <em>all</em> access points defined in the <a href=https://github.com/ooni/probe-cli/blob/112452a3c6c76843e21ac347f449068840df78f9/internal/experiment/telegram/telegram.go#L89-L97>test</a>
 fail.</p><p>Based on this methodology Telegram’s <em>app</em> is likely blocked if any of the
 following apply:</p><ul><li><p>TCP connections to all the tested Telegram access points fail</p></li><li><p>HTTP POST requests to Telegram&rsquo;s access points do <em>not</em> send back a
 response to OONI&rsquo;s servers.</p></li></ul><p>Telegram&rsquo;s <em>web version</em> is likely blocked if the following applies:</p><ul><li>HTTPS GET request to <code>web.telegram.org</code> do <em>not</em> send back a consistent
