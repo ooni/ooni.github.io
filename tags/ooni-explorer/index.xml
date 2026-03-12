@@ -1,51 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ooni-Explorer on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/ooni-explorer/</link><description>Recent content in Ooni-Explorer on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/ooni-explorer/index.xml" rel="self" type="application/rss+xml"/><item><title>New Launch: OONI Measurement Aggregation Toolkit (MAT)</title><link>https://ooni.github.io/post/2022-ooni-mat/</link><pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-ooni-mat/</guid><description>&lt;div>
- &lt;a href="https://ooni.github.io/post/2022-ooni-mat/images/01.png">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ooni-Explorer on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/ooni-explorer/</link><description>Recent content in Ooni-Explorer on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/ooni-explorer/index.xml" rel="self" type="application/rss+xml"/><item><title>New Launch: OONI Measurement Aggregation Toolkit (MAT)</title><link>https://ooni.github.io/post/2022-ooni-mat/</link><pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-ooni-mat/</guid><description>&lt;div&gt;
+ &lt;a href="https://ooni.github.io/post/2022-ooni-mat/images/01.png"&gt;
  &lt;img
- src="https://ooni.github.io/post/2022-ooni-mat/images/01_hu12525868713435091778.png"
+ src="https://ooni.github.io/post/2022-ooni-mat/images/01_hu_6996766ac8893a5.png"
 
  
- srcset="https://ooni.github.io/post/2022-ooni-mat/images/01_hu11932821530926714788.png 2x"
+ srcset="https://ooni.github.io/post/2022-ooni-mat/images/01_hu_cb741d805260d3fb.png 2x"
  
  
  title="MAT"
  
  alt="MAT"
  
- />
- &lt;/a>
+ /&gt;
+ &lt;/a&gt;
  
-&lt;/div>
+&lt;/div&gt;
 
 
-&lt;p>Today the Open Observatory of Network Interference (OONI) team is
-thrilled to announce the public launch of the &lt;strong>&lt;a href="https://explorer.ooni.org/chart/mat">OONI Measurement Aggregation Toolkit (MAT)&lt;/a>&lt;/strong>!&lt;/p>
-&lt;p>The &lt;a href="https://explorer.ooni.org/chart/mat">MAT&lt;/a> is a tool that enables
-you to &lt;strong>create your own custom charts based on aggregate views of
-real-time OONI data&lt;/strong> collected from around the world.&lt;/p>
-&lt;p>Use the MAT to &lt;strong>track internet censorship worldwide&lt;/strong> based on
-real-time OONI data!&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/post/2022-ooni-mat/#about-the-mat">About the MAT&lt;/a>&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/post/2022-ooni-mat/#what-is-ooni-data">What is OONI data?&lt;/a>&lt;/p></description></item><item><title>Next Generation OONI Explorer Launched!</title><link>https://ooni.github.io/post/next-generation-ooni-explorer/</link><pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/next-generation-ooni-explorer/</guid><description>&lt;p>&lt;img alt="Next Generation OONI Explorer" src="https://ooni.github.io/post/2019-explorer-revamp/explorer-revamped.png">&lt;/p>
-&lt;p>Today the Open Observatory of Network Interference (OONI) team is
-thrilled to announce the public launch of the revamped, &lt;strong>&lt;a href="https://explorer.ooni.org/">next generation OONI Explorer&lt;/a>&lt;/strong>!&lt;/p>
-&lt;p>&lt;strong>OONI Explorer is an open data resource on internet censorship around
-the world.&lt;/strong> This new platform offers access to millions of censorship
-measurements collected from 233 countries since 2012.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#about-ooni-explorer">About OONI Explorer&lt;/a>&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#why-use-ooni-explorer">Why use OONI Explorer?&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#who-is-ooni-explorer-for">Who is OONI Explorer for?&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#ooni-explorer-2-0">OONI Explorer 2.0&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p&gt;Today the Open Observatory of Network Interference (OONI) team is
+thrilled to announce the public launch of the &lt;strong&gt;&lt;a href="https://explorer.ooni.org/chart/mat"&gt;OONI Measurement Aggregation Toolkit (MAT)&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://explorer.ooni.org/chart/mat"&gt;MAT&lt;/a&gt; is a tool that enables
+you to &lt;strong&gt;create your own custom charts based on aggregate views of
+real-time OONI data&lt;/strong&gt; collected from around the world.&lt;/p&gt;
+&lt;p&gt;Use the MAT to &lt;strong&gt;track internet censorship worldwide&lt;/strong&gt; based on
+real-time OONI data!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ooni.github.io/post/2022-ooni-mat/#about-the-mat"&gt;About the MAT&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ooni.github.io/post/2022-ooni-mat/#what-is-ooni-data"&gt;What is OONI data?&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Next Generation OONI Explorer Launched!</title><link>https://ooni.github.io/post/next-generation-ooni-explorer/</link><pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/next-generation-ooni-explorer/</guid><description>&lt;p&gt;&lt;img src="https://ooni.github.io/post/2019-explorer-revamp/explorer-revamped.png" alt="Next Generation OONI Explorer"&gt;&lt;/p&gt;
+&lt;p&gt;Today the Open Observatory of Network Interference (OONI) team is
+thrilled to announce the public launch of the revamped, &lt;strong&gt;&lt;a href="https://explorer.ooni.org/"&gt;next generation OONI Explorer&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OONI Explorer is an open data resource on internet censorship around
+the world.&lt;/strong&gt; This new platform offers access to millions of censorship
+measurements collected from 233 countries since 2012.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#about-ooni-explorer"&gt;About OONI Explorer&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#why-use-ooni-explorer"&gt;Why use OONI Explorer?&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#who-is-ooni-explorer-for"&gt;Who is OONI Explorer for?&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ooni.github.io/post/next-generation-ooni-explorer/#ooni-explorer-2-0"&gt;OONI Explorer 2.0&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

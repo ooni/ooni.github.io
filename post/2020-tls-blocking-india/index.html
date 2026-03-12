@@ -1,5 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='initial-scale=1,width=device-width'><title>Investigating TLS blocking in India | OONI</title>
-<link rel=canonical href=https://ooni.org/post/2020-tls-blocking-india/><meta name=description content="We ran experimental TLS blocking measurements in India"><meta property="og:title" content="Investigating TLS blocking in India"><meta property="og:description" content="We ran experimental TLS blocking measurements in India"><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/2020-tls-blocking-india/"><meta property="og:image" content="https://ooni.github.io/post/2020-tls-blocking-india/images/figure1_hu14213436627724040114.png"><meta property="article:published_time" content="2020-07-08T00:00:00+00:00"><meta property="article:modified_time" content="2020-07-08T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.github.io/post/2020-tls-blocking-india/images/figure1.png"><meta name=twitter:title content="Investigating TLS blocking in India"><meta name=twitter:description content="We ran experimental TLS blocking measurements in India">
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content='initial-scale=1,width=device-width'><title>Investigating TLS blocking in India | OONI</title><link rel=canonical href=https://ooni.org/post/2020-tls-blocking-india/><meta name=description content="We ran experimental TLS blocking measurements in India"><meta property="og:title" content="Investigating TLS blocking in India"><meta property="og:description" content="We ran experimental TLS blocking measurements in India"><meta property="og:type" content="article"><meta property="og:url" content="https://ooni.github.io/post/2020-tls-blocking-india/"><meta property="og:image" content="https://ooni.github.io/post/2020-tls-blocking-india/images/figure1_hu_9c8ae07c425b1a8d.png"><meta property="article:published_time" content="2020-07-08T00:00:00+00:00"><meta property="article:modified_time" content="2020-07-08T00:00:00+00:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://ooni.github.io/post/2020-tls-blocking-india/images/figure1.png"><meta name=twitter:title content="Investigating TLS blocking in India"><meta name=twitter:description content="We ran experimental TLS blocking measurements in India">
   
     
     
@@ -19,7 +18,9 @@
 </a><a href=/blog/ class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-white hover:border-white hover:text-gray2">Blog
 </a><a href=/donate/ class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-white hover:border-white hover:text-gray2">Donate</a></div></div><div class="hidden lg:ml-6 lg:flex lg:items-center"><a href=/install/ class="rounded-md bg-transparent px-3.5 py-2.5 text-sm font-semibold text-white hover:text-ooniblue shadow-sm ring-2 ring-inset ring-white hover:bg-white">Install OONI Probe</a></div><div class="mr-2 flex items-center lg:hidden"><button type=button class="relative inline-flex items-center justify-center rounded-md p-2 text-gray4 hover:bg-gray1 hover:text-gray5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo5" aria-controls=mobile-menu id=mobile-menu-btn aria-expanded=false>
 <span class="absolute -inset-0.5"></span>
-<span class=sr-only>Open main menu</span><svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg><svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></button></div></div></div><div class="lg:hidden hidden" id=mobile-menu><div class="space-y-1 pb-3 pt-2"><a href=/about/ class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium border-transparent text-white hover:border-white hover:text-gray2">About
+<span class=sr-only>Open main menu</span>
+<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+<svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg></button></div></div></div><div class="lg:hidden hidden" id=mobile-menu><div class="space-y-1 pb-3 pt-2"><a href=/about/ class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium border-transparent text-white hover:border-white hover:text-gray2">About
 </a><a href=/nettest/ class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium border-transparent text-white hover:border-white hover:text-gray2">Tests
 </a><a href=/data/ class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium border-transparent text-white hover:border-white hover:text-gray2">Data
 </a><a href=/get-involved/ class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium border-transparent text-white hover:border-white hover:text-gray2">Get Involved
@@ -215,7 +216,7 @@ except that sni_check does not check whether the helper website being
 used (<code>example.org</code>) is actually reachable. This is not an issue because
 we know it was reachable while we were running these manual experiments.
 The following diagram shows the interactions that occur when performing
-this experiment with <code>blocked.com</code> as its input.</p><p><img alt="Description of the sni_check experiment" src=/post/2020-tls-blocking-india/images/figure1.png></p><p><strong>Figure 1</strong>: description of the sni_check experiment.</p><p>We use <code>example.org</code> as a test helper. The first step is to use Google&rsquo;s
+this experiment with <code>blocked.com</code> as its input.</p><p><img src=/post/2020-tls-blocking-india/images/figure1.png alt="Description of the sni\_check experiment"></p><p><strong>Figure 1</strong>: description of the sni_check experiment.</p><p>We use <code>example.org</code> as a test helper. The first step is to use Google&rsquo;s
 <a href=https://en.wikipedia.org/wiki/DNS_over_HTTPS>DNS over
 HTTPS</a> (DoH)
 resolver, to map <code>example.org</code> to its IP address. Once we know the IP
@@ -235,7 +236,7 @@ handles the <code>example.org</code> domain.</p><h3 id=dns_check class="group fl
 </a>dns_check</h3><p>The second experiment is called <code>dns_check</code>. It is conceptually similar
 to <a href=https://github.com/ooni/spec/blob/master/nettests/ts-002-dns-consistency.md>the dns_consistency OONI
 experiment</a>.
-The following diagram illustrates the <code>dns_check</code> experiment.</p><p><img alt="Description of the dns_check experiment" src=/post/2020-tls-blocking-india/images/figure2.png></p><p><strong>Figure 2</strong>: description of the dns_check experiment.</p><p>We basically resolve the same domain (e.g. <code>blocked.com</code>) using the system
+The following diagram illustrates the <code>dns_check</code> experiment.</p><p><img src=/post/2020-tls-blocking-india/images/figure2.png alt="Description of the dns\_check experiment"></p><p><strong>Figure 2</strong>: description of the dns_check experiment.</p><p>We basically resolve the same domain (e.g. <code>blocked.com</code>) using the system
 resolver (i.e. the resolver configured on the system where OONI is
 running) as well using a <a href=https://en.wikipedia.org/wiki/DNS_over_HTTPS>DNS over
 HTTPS</a> (DoH)
@@ -254,7 +255,7 @@ trusted DoH resolver. As we will see in the following sections, we will
 then use the IP addresses from both lists to perform further checks.</p><h3 id=system_resolver_validation class="group flex flex-row flex-wrap items-center"><a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href=#system_resolver_validation><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 24 24"><g><path d="M22.394531 1.605469c-2.144531-2.140625-5.632812-2.140625-7.773437.0L11.230469 4.996094 12.796875 6.5625 16.1875 3.171875c1.277344-1.28125 3.359375-1.277344 4.640625.0 1.28125 1.28125 1.277344 3.363281.0 4.644531l-5.089844 5.085938C15.121094 13.523438 14.296875 13.863281 13.417969 13.863281c-.875.0-1.699219-.339843-2.320313-.960937000000001L9.53125 14.46875c1.039062 1.035156 2.417969 1.609375 3.886719 1.609375S16.265625 15.503906 17.304688 14.46875l5.089843-5.089844c2.140625-2.144531 2.140625-5.628906.0-7.773437zm0 0"/><path d="M7.8125 20.828125c-1.277344 1.28125-3.359375 1.28125-4.640625.0s-1.28125-3.363281.0-4.644531l5.089844-5.085938c1.277343-1.28125 3.359375-1.28125 4.640625.0L14.46875 9.53125c-2.144531-2.140625-5.632812-2.140625-7.773438.0L1.605469 14.621094c-2.140625 2.140625-2.140625 5.628906.0 7.773437C2.679688 23.464844 4.085938 24 5.492188 24 6.902344 24 8.308594 23.464844 9.378906 22.394531L12.769531 19l-1.5625-1.5625zm0 0"/></g></svg>
 </a>system_resolver_validation</h3><p>The third experiment we discuss is called <code>system_resolver_validation</code>.
 This experiment is roughly a subset of the <a href=https://ooni.org/nettest/web-connectivity/>OONI&rsquo;s Web Connectivity
-experiment</a>.</p><p><img alt="Description of the system_resolver_validation experiment" src=/post/2020-tls-blocking-india/images/figure3.png></p><p><strong>Figure 3</strong>: description of the system_resolver_validation experiment.</p><p>It is called <code>system_resolver_validation</code> because we use the IP
+experiment</a>.</p><p><img src=/post/2020-tls-blocking-india/images/figure3.png alt="Description of the system\_resolver\_validation experiment"></p><p><strong>Figure 3</strong>: description of the system_resolver_validation experiment.</p><p>It is called <code>system_resolver_validation</code> because we use the IP
 addresses collected by the system resolver in the previous step to
 access the target website using HTTPS, and verify that the IP address
 indeed serves the target website. We connect on port <code>443</code> and, if we are
@@ -309,7 +310,7 @@ occurred. Because the set of error codes specified by SOCKS5 is rather
 limited, the same error code may actually map to a variety of error
 conditions. In our experience, two most frequent errors we have seen in
 this context are <code>0x01</code> (&ldquo;general failure&rdquo;) and <code>0x05</code> (&ldquo;connection
-refused&rdquo;).</p><p><img alt="Description of the psiphon_check experiment" src=/post/2020-tls-blocking-india/images/figure4.png></p><p><strong>Figure 3</strong>: description of the psiphon_check experiment.</p><p>In the context of this report, we will use the results of the Psiphon
+refused&rdquo;).</p><p><img src=/post/2020-tls-blocking-india/images/figure4.png alt="Description of the psiphon\_check experiment"></p><p><strong>Figure 3</strong>: description of the psiphon_check experiment.</p><p>In the context of this report, we will use the results of the Psiphon
 experiment to attempt to access the same domain from another vantage
 point. This will give us further confidence of whether errors in
 connecting to a website could be caused by interference by the local ISP
@@ -353,30 +354,30 @@ using specific SNIs.</p><p>As mentioned above, the <code>eof_error</code> result
 was closed during the TLS handshake, likely because some middlebox
 rejected the provided SNI. The following JSON snippet shows a
 <a href=https://explorer.ooni.org/measurement/20200519T080507Z_AS45609_RnakXZPQFjEaLZDn64vWuoslK8KVtfhLHJkywOCzRsYzK78RLk>measurement</a>
-for collegehumor.com from Bharti Airtel:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
+for collegehumor.com from Bharti Airtel:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;network_events&#34;</span>: [
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;93.184.216.34:443&#34;</span>,        <span style=color:#75715e>// (1)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.3199562</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.3199562</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_start&#34;</span>,    <span style=color:#75715e>// (2)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.3199999</span>
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.3199999</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;write&#34;</span>,                  <span style=color:#75715e>// (3)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>286</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>286</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.3213545</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,                <span style=color:#75715e>// (4)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;read&#34;</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;read&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.382416</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
@@ -428,7 +429,7 @@ unique</a>,
 and <a href=https://gist.github.com/bassosimone/d354508447e9a1d0fc2d6857767cdca6#file-sni_blocking_cert_fingerprint-sh>computed its
 fingerprint</a>.
 In all cases, we received the following <a href=https://en.wikipedia.org/wiki/X.509>X.509
-certificate</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>Certificate:
+certificate</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-bash data-lang=bash><span style=display:flex><span>Certificate:
 </span></span><span style=display:flex><span>    Data:
 </span></span><span style=display:flex><span>        Version: <span style=color:#ae81ff>3</span> <span style=color:#f92672>(</span>0x2<span style=color:#f92672>)</span>
 </span></span><span style=display:flex><span>        Serial Number:
@@ -485,7 +486,7 @@ measurement</a>
 using OONI Probe 1.2 that timed out when attempting to connect to
 <code>collegehumor.com</code> on port <code>443</code> from the <a href=https://ipinfo.io/AS36086>Telx ISP</a> in the United States in
 2015. However, we also
-<a href="https://transparencyreport.google.com/https/certificates?hl=en&cert_search_auth=&cert_search_cert=&cert_search=include_subdomains:false;domain:collegehumor.com&lu=cert_search">found</a>
+<a href="https://transparencyreport.google.com/https/certificates?hl=en&amp;cert_search_auth=&amp;cert_search_cert=&amp;cert_search=include_subdomains:false;domain:collegehumor.com&amp;lu=cert_search">found</a>
 that <a href=https://transparencyreport.google.com/https/certificates/n%2BcofU0GqxQZKyhwSOyronS4gYsHeCEjdPaBA0FlrME%3D>records of an X.509 certificate for this website exist in the
 Certificate Transparency
 Log</a>.</p><p>We concluded that <code>collegehumor.com</code> was quite likely not reachable on
@@ -501,7 +502,7 @@ DNS resolution using the resolver configured in the operating system.
 The ISP owning the resolver is indicated in the <em>Resolver</em> column. The
 table has been computed using a script <a href=https://gist.github.com/bassosimone/d354508447e9a1d0fc2d6857767cdca6#file-bogons_results-py>published at
 GitHub</a>.
-We then manually annotated IP addresses with their <a href=https://en.wikipedia.org/wiki/Autonomous_system_(Internet)>autonomous
+We then manually annotated IP addresses with their <a href=https://en.wikipedia.org/wiki/Autonomous_system_%28Internet%29>autonomous
 system</a>
 number (ASN) and network name.</p><table><thead><tr><th>ISP</th><th>Resolver</th><th>Domain</th><th>Failure</th><th>IP</th><th>IP Network</th><th>Count</th></tr></thead><tbody><tr><td>ACT Fibernet</td><td>ACT Fibernet</td><td><code>collegehumor.com</code></td><td><code>null</code></td><td><code>202.83.21.15</code></td><td>ACT Fibernet</td><td>1</td></tr><tr><td>ACT Fibernet</td><td>ACT Fibernet</td><td><code>collegehumor.com</code></td><td><code>null</code></td><td><code>49.205.75.6</code></td><td>ACT Fibernet</td><td>1</td></tr><tr><td>ACT Fibernet</td><td>ACT Fibernet</td><td><code>pornhub.com</code></td><td><code>null</code></td><td><code>202.83.21.15</code></td><td>ACT Fibernet</td><td>1</td></tr><tr><td>ACT Fibernet</td><td>ACT Fibernet</td><td><code>pornhub.com</code></td><td><code>null</code></td><td><code>49.205.75.6</code></td><td>ACT Fibernet</td><td>1</td></tr><tr><td>Bharti Airtel</td><td>Bharti Airtel</td><td><code>collegehumor.com</code></td><td><code>dns_nxdomain_error</code></td><td></td><td></td><td>3</td></tr><tr><td>Bharti Airtel</td><td>Bharti Airtel</td><td><code>pornhub.com</code></td><td><code>dns_nxdomain_error</code></td><td></td><td></td><td>3</td></tr><tr><td>Reliance Jio</td><td>Reliance Jio</td><td><code>collegehumor.com</code></td><td><code>null</code></td><td><code>52.8.26.172</code></td><td>AMAZON</td><td>1</td></tr><tr><td>Reliance Jio</td><td>Reliance Jio</td><td><code>collegehumor.com</code></td><td><code>null</code></td><td><code>54.193.47.52</code></td><td>AMAZON</td><td>1</td></tr><tr><td>Reliance Jio</td><td>Reliance Jio</td><td><code>pornhub.com</code></td><td><code>null</code></td><td><code>66.254.114.41</code></td><td>SWIFTMILL</td><td>1</td></tr></tbody></table><p><strong>Table 3.</strong> Results of resolving specific domains using the system&rsquo;s
 default resolver.</p><p>Let us compare the above table with a similar table, where we show the
@@ -537,33 +538,33 @@ using the HTTPS protocol.</p><p>Of course, the table does not include Bharti Air
 Bharti Airtel&rsquo;s resolver told us that the domains we were looking for do
 not exist.</p><p>The following snippet shows the recorded
 <a href=https://explorer.ooni.org/measurement/20200511T163755Z_AS24309_aYTZ16a6lIKdVxHBD51kGsdjBb5t1vlAUN5iLF2McmwJxPmp38>measurement</a>
-for pornhub.com from ACT Fibernet:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
+for pornhub.com from ACT Fibernet:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
 </span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;www.pornhub.com 49.205.75.6&#34;</span>                   <span style=color:#75715e>// (1)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    ],
+</span></span></span><span style=display:flex><span>    ],
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;network_events&#34;</span>: [
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;49.205.75.6:443&#34;</span>,                 <span style=color:#75715e>// (2)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.002680552</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.002680552</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_start&#34;</span>,           <span style=color:#75715e>// (3)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.00271161</span>
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.00271161</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;write&#34;</span>,                         <span style=color:#75715e>// (4)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>285</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>285</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.003049326</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,                       <span style=color:#75715e>// (5)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;read&#34;</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;read&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.005205896</span>
 </span></span><span style=display:flex><span>      }
 </span></span><span style=display:flex><span>    ]
@@ -586,33 +587,33 @@ misconfigured cache.</p><p>The same could of course be said for <code>collegehum
 on ACT Fibernet. Because the IP address is suspicious, it may either be
 blocking or a misconfigured cache.</p><p>The following snippet shows a <code>collegehumor.com</code>
 <a href=https://explorer.ooni.org/measurement/20200514T090849Z_AS55836_lrjnVphrogat2vgKJzOvwMOlzut94sAoCnrVXEeTZFRqijOTUK>measurement</a>
-inside Reliance Jio:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
+inside Reliance Jio:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
 </span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;collegehumor.com 52.8.26.172 54.193.47.52&#34;</span>     <span style=color:#75715e>// (1)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    ],
+</span></span></span><span style=display:flex><span>    ],
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;network_events&#34;</span>: [
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;52.8.26.172:443&#34;</span>,                 <span style=color:#75715e>// (2)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0405582</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0405582</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_start&#34;</span>,           <span style=color:#75715e>// (3)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0406031</span>
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0406031</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;write&#34;</span>,                         <span style=color:#75715e>// (4)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>286</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;num_bytes&#34;</span>: <span style=color:#ae81ff>286</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.0418597</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;generic_timeout_error&#34;</span>,           <span style=color:#75715e>// (5)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_done&#34;</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;tls_handshake_done&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>10.0432773</span>
 </span></span><span style=display:flex><span>      }
 </span></span><span style=display:flex><span>    ]
@@ -655,7 +656,7 @@ consistently with what we observed from other ISPs. We will further
 investigate this behavior as part of our future work.</p><p>The failure we see for <code>pornhub.com</code>, instead, is more suspicious. The
 following is a relevant snippet of the JSON
 <a href=https://explorer.ooni.org/measurement/20200514T090719Z_AS55836_G4LeqeqNc3bM3BAX3KDGCEFZdbFZZBlbS523YKlIo9Jn5wD7bI>measurement</a>
-archived at OONI&rsquo;s S3:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
+archived at OONI&rsquo;s S3:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
 </span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;pornhub.com 66.254.114.41&#34;</span>
@@ -735,24 +736,24 @@ reachable. The failure for <code>collegehumor.com</code> matches the following
 pattern (the full
 <a href=https://explorer.ooni.org/measurement/20200511T164245Z_AS24309_ZSXOkWQRZwpp8PWIcLOpRIiUp0ah1CKeAZJxEpMQhtTE2I9rKl>measurement</a>
 can of course be accessed on <a href=https://explorer.ooni.org/>OONI
-Explorer</a>):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
+Explorer</a>):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
 </span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;collegehumor.com 52.8.26.172 54.193.47.52&#34;</span>  <span style=color:#75715e>// (1)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    ],
+</span></span></span><span style=display:flex><span>    ],
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;network_events&#34;</span>: [
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;generic_timeout_error&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;52.8.26.172:443&#34;</span>,              <span style=color:#75715e>// (2)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>30.001980387</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>30.001980387</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;generic_timeout_error&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;operation&#34;</span>: <span style=color:#e6db74>&#34;connect&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;address&#34;</span>: <span style=color:#e6db74>&#34;54.193.47.52:443&#34;</span>,             <span style=color:#75715e>// (3)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>60.002742623</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>60.002742623</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;proto&#34;</span>: <span style=color:#e6db74>&#34;tcp&#34;</span>
 </span></span><span style=display:flex><span>      }
 </span></span><span style=display:flex><span>    ]
@@ -772,7 +773,7 @@ with a connection timeout when using
 from vantage points in which it should be censored (e.g. Vodafone Italy
 and Google Cloud).</p><p>In Bharti Airtel <code>collegehumor.com:443</code> is also failing with a connect
 timeout as expected, as shown by the following
-<a href=https://explorer.ooni.org/measurement/20200519T080633Z_AS45609_9oEmuDI0dbCRUq3GDp2e9pfGERbC4F9uHyw4NHOtBCd3uQ4HFn>measurement</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
+<a href=https://explorer.ooni.org/measurement/20200519T080633Z_AS45609_9oEmuDI0dbCRUq3GDp2e9pfGERbC4F9uHyw4NHOtBCd3uQ4HFn>measurement</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
 </span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;collegehumor.com 52.8.26.172 54.193.47.52&#34;</span>
@@ -811,7 +812,7 @@ when discussing <code>sni_check</code> measurements for Bharti Airtel. Yet, in o
 specific instance, we were able to perform a handshake for <code>pornhub.com</code>,
 only to be redirected to <code>www.pornhub.com</code>, for which the TLS handshake
 failed with <code>eof_error</code>. The following is the relevant snippet of the
-<a href=https://explorer.ooni.org/measurement/20200514T091743Z_AS45609_6XhCx0CFPprL06fprzU9okAyUJqWKodJ8Rv0gVZl40E9aw4hSK>measurement</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
+<a href=https://explorer.ooni.org/measurement/20200514T091743Z_AS45609_6XhCx0CFPprL06fprzU9okAyUJqWKodJ8Rv0gVZl40E9aw4hSK>measurement</a>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-JSON data-lang=JSON><span style=display:flex><span>{
 </span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;test_keys&#34;</span>: {
 </span></span><span style=display:flex><span>    <span style=color:#f92672>&#34;dns_cache&#34;</span>: [
 </span></span><span style=display:flex><span>      <span style=color:#e6db74>&#34;pornhub.com 66.254.114.41&#34;</span>
@@ -866,7 +867,7 @@ failed with <code>eof_error</code>. The following is the relevant snippet of the
 </span></span><span style=display:flex><span>        ],
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;cipher_suite&#34;</span>: <span style=color:#e6db74>&#34;TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#66d9ef>null</span>,                <span style=color:#75715e>// (1)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;negotiated_protocol&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;negotiated_protocol&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.4989724</span>
 </span></span><span style=display:flex><span>      },
 </span></span><span style=display:flex><span>      {
@@ -876,7 +877,7 @@ failed with <code>eof_error</code>. The following is the relevant snippet of the
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;peer_certificates&#34;</span>: <span style=color:#66d9ef>null</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;cipher_suite&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;failure&#34;</span>: <span style=color:#e6db74>&#34;eof_error&#34;</span>,         <span style=color:#75715e>// (2)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#f92672>&#34;negotiated_protocol&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+</span></span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;negotiated_protocol&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
 </span></span><span style=display:flex><span>        <span style=color:#f92672>&#34;t&#34;</span>: <span style=color:#ae81ff>0.956141</span>
 </span></span><span style=display:flex><span>      }
 </span></span><span style=display:flex><span>    ]
@@ -967,18 +968,19 @@ the SNI being, e.g., <code>example.org</code>. It would also be interesting to
 determine whether the blocking depends on the TLS version and other TLS
 options.</p></main></div><script>document.addEventListener("DOMContentLoaded",function(){const e=new URLSearchParams(window.location.search).get("enable-embedded-view");if(e){const e=document.getElementById("main-navbar");e.classList.add("hidden");const t=document.getElementById("main-footer");t.classList.add("hidden")}})</script><footer id=main-footer class=bg-blue9 aria-labelledby=footer-heading><h2 id=footer-heading class=sr-only>Footer</h2><div class="mx-auto px-6 pb-8 pt-16 lg:px-8"><div class="xl:grid xl:grid-cols-3 xl:gap-8"><div class=space-y-8><img src=/images/logos/ooni-horizontal.svg class=h-7 alt="OONI Logo"><p class="text-sm leading-6 text-gray3">Global community measuring internet censorship around the
 world.</p><div class="flex space-x-6"><a rel=me class="text-gray5 hover:text-gray4" href=https://x.com/OpenObservatory><span class=sr-only>X</span>
-<svg class="h-6 w-6" fill="currentcolor" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg>
 </a><a rel=me class="text-gray5 hover:text-gray4" href=https://mastodon.social/@ooni><span class=sr-only>Mastodon</span>
-<svg class="h-6 w-6" viewBox="0 0 232 248" fill="currentcolor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M165.107 188.625c31.008-3.702 58.006-22.808 61.4-40.265 5.346-27.5 4.905-67.1093 4.905-67.1093.0-53.6854-35.173-69.4214-35.173-69.4214C178.504 3.684 148.051.258667 116.412.0H115.635C83.9962.258667 53.5628 3.684 35.8268 11.8293c0 0-35.174653 15.736-35.174653 69.4214C.652147 84.5053.635326 87.9285.617814 91.4921.56918 101.389.515222 112.37.801481 123.831 2.07881 176.332 10.4268 228.075 58.9682 240.923 81.3495 246.847 100.565 248.087 116.041 247.236 144.107 245.68 159.861 237.22 159.861 237.22L158.936 216.857S138.88 223.181 116.356 222.411C94.0402 221.645 70.4815 220.004 66.8722 192.605 66.5388 190.199 66.3722 187.625 66.3722 184.923 66.3722 184.923 88.2788 190.277 116.041 191.549 133.018 192.328 148.937 190.555 165.107 188.625zm24.816-38.205V85.4155C189.923 72.1302 186.54 61.5728 179.747 53.7622 172.739 45.9515 163.563 41.9475 152.174 41.9475c-13.18.0-23.16 5.0653-29.758 15.1973L116 67.8982l-6.414-10.7534c-6.599-10.132-16.5791-15.1973-29.7578-15.1973C68.4375 41.9475 59.2615 45.9515 52.2549 53.7622c-6.7947 7.8106-10.1774 18.368-10.1774 31.6533V150.42H67.8309V87.3262c0-13.3 5.5959-20.0507 16.7893-20.0507C96.9962 67.2755 103.2 75.2835 103.2 91.1182V125.653h25.602V91.1182c0-15.8347 6.202-23.8427 18.578-23.8427C158.574 67.2755 164.17 74.0262 164.17 87.3262V150.42h25.753z"/></svg>
+<svg class="h-6 w-6" viewBox="0 0 232 248" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M165.107 188.625c31.008-3.702 58.006-22.808 61.4-40.265 5.346-27.5 4.905-67.1093 4.905-67.1093.0-53.6854-35.173-69.4214-35.173-69.4214C178.504 3.684 148.051.258667 116.412.0H115.635C83.9962.258667 53.5628 3.684 35.8268 11.8293c0 0-35.174653 15.736-35.174653 69.4214C.652147 84.5053.635326 87.9285.617814 91.4921.56918 101.389.515222 112.37.801481 123.831 2.07881 176.332 10.4268 228.075 58.9682 240.923 81.3495 246.847 100.565 248.087 116.041 247.236 144.107 245.68 159.861 237.22 159.861 237.22L158.936 216.857S138.88 223.181 116.356 222.411C94.0402 221.645 70.4815 220.004 66.8722 192.605 66.5388 190.199 66.3722 187.625 66.3722 184.923 66.3722 184.923 88.2788 190.277 116.041 191.549 133.018 192.328 148.937 190.555 165.107 188.625zm24.816-38.205V85.4155C189.923 72.1302 186.54 61.5728 179.747 53.7622 172.739 45.9515 163.563 41.9475 152.174 41.9475c-13.18.0-23.16 5.0653-29.758 15.1973L116 67.8982l-6.414-10.7534c-6.599-10.132-16.5791-15.1973-29.7578-15.1973C68.4375 41.9475 59.2615 45.9515 52.2549 53.7622c-6.7947 7.8106-10.1774 18.368-10.1774 31.6533V150.42H67.8309V87.3262c0-13.3 5.5959-20.0507 16.7893-20.0507C96.9962 67.2755 103.2 75.2835 103.2 91.1182V125.653h25.602V91.1182c0-15.8347 6.202-23.8427 18.578-23.8427C158.574 67.2755 164.17 74.0262 164.17 87.3262V150.42h25.753z"/></svg>
 </a><a rel=me class="text-gray5 hover:text-gray4" href=https://bsky.app/profile/ooni.org><span class=sr-only>Bluesky</span>
-<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentcolor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908.0 3.08.0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741.0 01-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478.0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z" stroke-width="1"/></svg>
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908.0 3.08.0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741.0 01-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478.0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z" stroke-width="1"/></svg>
 </a><a href=https://facebook.com/ooni.org class="text-gray5 hover:text-gray4"><span class=sr-only>Facebook</span>
-<svg class="h-6 w-6" fill="currentcolor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094.0 2.238.195 2.238.195v2.46h-1.26c-1.243.0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/></svg>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094.0 2.238.195 2.238.195v2.46h-1.26c-1.243.0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/></svg>
 </a><a href=https://www.instagram.com/openobservatory/ class="text-gray5 hover:text-gray4"><span class=sr-only>Instagram</span>
-<svg class="h-6 w-6" fill="currentcolor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43.0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902.0 011.772 1.153 4.902 4.902.0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902.0 01-1.153 1.772 4.902 4.902.0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643.0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902.0 01-1.772-1.153A4.902 4.902.0 012.525 18.55c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902.0 011.153-1.772A4.902 4.902.0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456.0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597.0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097.0 00-.748-1.15 3.098 3.098.0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135.0 110 10.27 5.135 5.135.0 010-10.27zm0 1.802a3.333 3.333.0 100 6.666 3.333 3.333.0 000-6.666zm5.338-3.205a1.2 1.2.0 110 2.4 1.2 1.2.0 010-2.4z" clip-rule="evenodd"/></svg>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43.0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902.0 011.772 1.153 4.902 4.902.0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902.0 01-1.153 1.772 4.902 4.902.0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643.0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902.0 01-1.772-1.153A4.902 4.902.0 012.525 18.55c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902.0 011.153-1.772A4.902 4.902.0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456.0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597.0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097.0 00-.748-1.15 3.098 3.098.0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135.0 110 10.27 5.135 5.135.0 010-10.27zm0 1.802a3.333 3.333.0 100 6.666 3.333 3.333.0 000-6.666zm5.338-3.205a1.2 1.2.0 110 2.4 1.2 1.2.0 010-2.4z" clip-rule="evenodd"/></svg>
 </a><a href=https://www.youtube.com/c/OONIorg class="text-gray5 hover:text-gray4"><span class=sr-only>YouTube</span>
-<svg class="h-6 w-6" fill="currentcolor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504.0 01-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255.0-7.814-.419a2.505 2.505.0 01-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507.0 011.768-1.768C5.744 5 11.998 5 11.998 5s6.255.0 7.814.418zM15.194 12 10 15V9l5.194 3z" clip-rule="evenodd"/></svg>
-</a><a href=https://github.com/ooni class="text-gray5 hover:text-gray4"><span class=sr-only>GitHub</span><svg class="h-6 w-6" fill="currentcolor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483.0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951.0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65.0.0.84-.27 2.75 1.026A9.564 9.564.0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688.0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855.0 1.338-.012 2.419-.012 2.747.0.268.18.58.688.482A10.019 10.019.0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg></a></div></div><div class="mt-16 grid grid-cols-3 gap-8 xl:col-span-2 xl:mt-0 [&_li]:my-2 [&_ul]:space-y-4 [&_ul]:my-2"><div><h3 class="text-sm font-semibold leading-6 text-white">About</h3><ul role=list><li><a href=/about class="text-sm leading-6 text-gray3 hover:text-white">About OONI</a></li><li><a href=/partners class="text-sm leading-6 text-gray3 hover:text-white">OONI
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504.0 01-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255.0-7.814-.419a2.505 2.505.0 01-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507.0 011.768-1.768C5.744 5 11.998 5 11.998 5s6.255.0 7.814.418zM15.194 12 10 15V9l5.194 3z" clip-rule="evenodd"/></svg>
+</a><a href=https://github.com/ooni class="text-gray5 hover:text-gray4"><span class=sr-only>GitHub</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483.0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951.0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65.0.0.84-.27 2.75 1.026A9.564 9.564.0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688.0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855.0 1.338-.012 2.419-.012 2.747.0.268.18.58.688.482A10.019 10.019.0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg></a></div></div><div class="mt-16 grid grid-cols-3 gap-8 xl:col-span-2 xl:mt-0 [&_li]:my-2 [&_ul]:space-y-4 [&_ul]:my-2"><div><h3 class="text-sm font-semibold leading-6 text-white">About</h3><ul role=list><li><a href=/about class="text-sm leading-6 text-gray3 hover:text-white">About OONI</a></li><li><a href=/partners class="text-sm leading-6 text-gray3 hover:text-white">OONI
 Partners</a></li><li><a href=/about/data-policy class="text-sm leading-6 text-gray3 hover:text-white">Data
 Policy</a></li><li><a href=/about/privacy-policy class="text-sm leading-6 text-gray3 hover:text-white">Privacy Policy</a></li><li><a href=https://github.com/ooni/license/tree/master/data class="text-sm leading-6 text-gray3 hover:text-white">Data License</a></li><li><a href=https://ooni.org/about/#contact class="text-sm leading-6 text-gray3 hover:text-white">Contact</a></li></ul></div><div><h3 class="text-sm font-semibold leading-6 text-white">OONI Probe</h3><ul role=list><li><a href=/install/ class="text-sm leading-6 text-gray3 hover:text-white">Install</a></li><li><a href=/nettest/ class="text-sm leading-6 text-gray3 hover:text-white">Tests</a></li><li><a href=https://github.com/ooni/ class="text-sm leading-6 text-gray3 hover:text-white">Source Code</a></li><li><a href=https://api.ooni.io/ class="text-sm leading-6 text-gray3 hover:text-white">API</a></li></ul></div><div><h3 class="text-sm font-semibold leading-6 text-white">Updates</h3><ul role=list><li><a href=/post class="text-sm leading-6 text-gray3 hover:text-white">Blog</a></li><li><a href=https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk class="text-sm leading-6 text-gray3 hover:text-white">Mailing List</a></li><li><a href=https://slack.ooni.org/ class="text-sm leading-6 text-gray3 hover:text-white">Slack</a></li></ul></div></div></div><div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24"><p class="text-xs leading-5 text-gray4">&copy; 2026 Open Observatory of Network Interference
 (OONI).

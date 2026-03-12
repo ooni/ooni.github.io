@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tanzania on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/tanzania/</link><description>Recent content in Tanzania on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/tanzania/index.xml" rel="self" type="application/rss+xml"/><item><title>Tanzania blocks social media (and Tor?) on election day</title><link>https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/</link><pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/</guid><description>&lt;div>
- &lt;a href="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image.png">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tanzania on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/tanzania/</link><description>Recent content in Tanzania on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/tanzania/index.xml" rel="self" type="application/rss+xml"/><item><title>Tanzania blocks social media (and Tor?) on election day</title><link>https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/</link><pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/</guid><description>&lt;div&gt;
+ &lt;a href="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image.png"&gt;
  &lt;img
- src="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image_hu15442670431547280122.png"
+ src="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/images/tz-image_hu_99a737ecd7c9f9c8.png"
 
  
  
@@ -9,24 +9,24 @@
  
  alt="WhatsApp blocked in Tanzania on election day"
  
- />
- &lt;/a>
+ /&gt;
+ &lt;/a&gt;
  
-&lt;/div>
+&lt;/div&gt;
 
 
-&lt;p>Starting from yesterday (27th October 2020) &amp;ndash; &lt;em>on the eve of
-&lt;a href="https://www.washingtonpost.com/world/africa/tanzania-election-tanzanias-democracy-faces-a-critical-test-in-wednesdays-presidential-election/2020/10/27/b1620b64-17c3-11eb-8bda-814ca56e138b_story.html">Tanzania&amp;rsquo;s 2020 general election&lt;/a>&lt;/em>
+&lt;p&gt;Starting from yesterday (27th October 2020) &amp;ndash; &lt;em&gt;on the eve of
+&lt;a href="https://www.washingtonpost.com/world/africa/tanzania-election-tanzanias-democracy-faces-a-critical-test-in-wednesdays-presidential-election/2020/10/27/b1620b64-17c3-11eb-8bda-814ca56e138b_story.html"&gt;Tanzania&amp;rsquo;s 2020 general election&lt;/a&gt;&lt;/em&gt;
 &amp;ndash; OONI measurements continue to
-&lt;a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ&amp;only=anomalies">show&lt;/a>
+&lt;a href="https://explorer.ooni.org/search?until=2020-10-29&amp;amp;since=2020-09-28&amp;amp;probe_cc=TZ&amp;amp;only=anomalies"&gt;show&lt;/a&gt;
 the ongoing blocking of social media (and of the
-&lt;a href="https://www.torproject.org/">Tor&lt;/a> circumvention tool) in Tanzania.&lt;/p>
-&lt;p>In this report, we share &lt;a href="https://explorer.ooni.org/search?until=2020-10-29&amp;since=2020-09-28&amp;probe_cc=TZ&amp;only=anomalies">OONI data collected from Tanzania&lt;/a>
+&lt;a href="https://www.torproject.org/"&gt;Tor&lt;/a&gt; circumvention tool) in Tanzania.&lt;/p&gt;
+&lt;p&gt;In this report, we share &lt;a href="https://explorer.ooni.org/search?until=2020-10-29&amp;amp;since=2020-09-28&amp;amp;probe_cc=TZ&amp;amp;only=anomalies"&gt;OONI data collected from Tanzania&lt;/a&gt;
 on these blocks, as well as relevant instructions for further OONI Probe
-testing.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/#methods">Methods&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/#blocking-of-social-media">Blocking of social media&lt;/a>&lt;/p></description></item></channel></rss>
+testing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/#methods"&gt;Methods&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ooni.github.io/post/2020-tanzania-blocks-social-media-tor-election-day/#blocking-of-social-media"&gt;Blocking of social media&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/de/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>de</language><atom:link href="https://ooni.github.io/de/index.xml" rel="self" type="application/rss+xml"/><item><title>Benutzerhandbuch: OONI Probe Desktop App</title><link>https://ooni.github.io/de/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/de/support/ooni-probe-desktop/</guid><description>&lt;p>&lt;strong>Zuletzt aktualisiert:&lt;/strong> 6 September 2022&lt;/p>
-&lt;p>&lt;strong>OONI Probe Desktop Version:&lt;/strong> 3.7.0&lt;/p>
-&lt;p>Wir sind Curtis Baltimore sehr dankbar für die Übersetzung dieses Dokuments.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/de/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>de</language><atom:link href="https://ooni.github.io/de/index.xml" rel="self" type="application/rss+xml"/><item><title>Benutzerhandbuch: OONI Probe Desktop App</title><link>https://ooni.github.io/de/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/de/support/ooni-probe-desktop/</guid><description>&lt;p&gt;&lt;strong&gt;Zuletzt aktualisiert:&lt;/strong&gt; 6 September 2022&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OONI Probe Desktop Version:&lt;/strong&gt; 3.7.0&lt;/p&gt;
+&lt;p&gt;Wir sind Curtis Baltimore sehr dankbar für die Übersetzung dieses Dokuments.&lt;/p&gt;
 
 
 
@@ -12,35 +12,32 @@
 
 
 
-&lt;div>
- &lt;a href="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop.png">
+&lt;div&gt;
+ &lt;a href="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop.png"&gt;
  &lt;img
- src="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu8619296333105039821.png"
+ src="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu_eee611fdd3be2199.png"
 
  
- srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu2811019159506606390.png 2x"
+ srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu_5352959d260779ba.png 2x"
  
  
  title="Install OONI Probe Desktop"
  
  alt="Install OONI Probe Desktop"
  
- />
- &lt;/a>
+ /&gt;
+ &lt;/a&gt;
  
-&lt;/div>
+&lt;/div&gt;
 
 
-&lt;p>OONI Probe ist eine &lt;a href="https://github.com/ooni/probe">freie und quelloffene&lt;/a> Anwendung, mit der du Internet-Zensur und andere Formen von Netzwerkstörungen messen kannst. Dieses Benutzerhandbuch enthält &lt;strong>Schritt-für-Schritt-Anweisungen&lt;/strong> zur Installation, Ausführung und Anpassung der &lt;a href="https://ooni.org/install/desktop">OONI Probe Desktop App&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>Was dir dieses Handbuch bietet:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Erfahre, wie du OONI Probe Desktop verwenden kannst, um:&lt;/p></description></item><item><title>Handbuch: OONI Probe Mobile App</title><link>https://ooni.github.io/de/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/de/support/ooni-probe-mobile/</guid><description>&lt;p>&lt;strong>Zuletzt aktualisiert:&lt;/strong> 6 September 2022&lt;/p>
-&lt;p>&lt;strong>OONI Probe Mobile Version:&lt;/strong> 3.7.1&lt;/p>
-&lt;p>Wir sind Curtis Baltimore sehr dankbar für die Übersetzung dieses Dokuments.&lt;/p>
-
-
-
+&lt;p&gt;OONI Probe ist eine &lt;a href="https://github.com/ooni/probe"&gt;freie und quelloffene&lt;/a&gt; Anwendung, mit der du Internet-Zensur und andere Formen von Netzwerkstörungen messen kannst. Dieses Benutzerhandbuch enthält &lt;strong&gt;Schritt-für-Schritt-Anweisungen&lt;/strong&gt; zur Installation, Ausführung und Anpassung der &lt;a href="https://ooni.org/install/desktop"&gt;OONI Probe Desktop App&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Was dir dieses Handbuch bietet:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Erfahre, wie du OONI Probe Desktop verwenden kannst, um:&lt;/p&gt;</description></item><item><title>Handbuch: OONI Probe Mobile App</title><link>https://ooni.github.io/de/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/de/support/ooni-probe-mobile/</guid><description>&lt;p&gt;&lt;strong&gt;Zuletzt aktualisiert:&lt;/strong&gt; 6 September 2022&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OONI Probe Mobile Version:&lt;/strong&gt; 3.7.1&lt;/p&gt;
+&lt;p&gt;Wir sind Curtis Baltimore sehr dankbar für die Übersetzung dieses Dokuments.&lt;/p&gt;
 
 
 
@@ -49,10 +46,13 @@
 
 
 
-&lt;div>
- &lt;a href="https://ooni.github.io/support/ooni-probe-mobile/images/image49.png">
+
+
+
+&lt;div&gt;
+ &lt;a href="https://ooni.github.io/support/ooni-probe-mobile/images/image49.png"&gt;
  &lt;img
- src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu9506725050971740468.png"
+ src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu_68a13dfbbd92e6a1.png"
 
  
  
@@ -60,25 +60,25 @@
  
  alt="Measure Internet Censorship"
  
- />
- &lt;/a>
+ /&gt;
+ &lt;/a&gt;
  
-&lt;/div>
+&lt;/div&gt;
 
 
-&lt;p>OONI Probe ist eine &lt;a href="https://github.com/ooni/probe">kostenlose und quelloffene&lt;/a> App, mit der du Internet-Zensur und andere Formen von Netzwerkstörungen messen kannst. Dieses Benutzerhandbuch enthält &lt;strong>Schritt-für-Schritt-Anweisungen&lt;/strong> zur Installation, Ausführung und Anpassung der &lt;a href="https://ooni.org/install/mobile">OONI Probe Mobile App&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>Was dir dieses Handbuch bietet:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Erfahre, wie du OONI Probe Mobile verwenden kannst, um:
-&lt;ul>
-&lt;li>die Blockierung von Webseiten zu testen&lt;/li>
-&lt;li>die Blockierung von Instant Messaging-Apps zu testen&lt;/li>
-&lt;li>die Blockierung von Umgehungstools zu testen&lt;/li>
-&lt;li>die Geschwindigkeit und Performance deines Netzwerks zu testen&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>deine OONI-Probe-Tests an Websites deiner Wahl anzupassen&lt;/li>
-&lt;li>Erfahre, wie du auf deine OONI-Probe-Testergebnisse zugreifen und sie weitergeben kannst&lt;/li>
-&lt;li>Konfiguriere die Einstellungen deiner OONI Probe App&lt;/li>
-&lt;/ul>
-&lt;p>Wir hoffen, dass du dich nach der Lektüre dieses Leitfadens motiviert fühlst, dein Wissen und deine Fähigkeiten über OONI Probe mit anderen zu teilen!&lt;/p></description></item></channel></rss>
+&lt;p&gt;OONI Probe ist eine &lt;a href="https://github.com/ooni/probe"&gt;kostenlose und quelloffene&lt;/a&gt; App, mit der du Internet-Zensur und andere Formen von Netzwerkstörungen messen kannst. Dieses Benutzerhandbuch enthält &lt;strong&gt;Schritt-für-Schritt-Anweisungen&lt;/strong&gt; zur Installation, Ausführung und Anpassung der &lt;a href="https://ooni.org/install/mobile"&gt;OONI Probe Mobile App&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Was dir dieses Handbuch bietet:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Erfahre, wie du OONI Probe Mobile verwenden kannst, um:
+&lt;ul&gt;
+&lt;li&gt;die Blockierung von Webseiten zu testen&lt;/li&gt;
+&lt;li&gt;die Blockierung von Instant Messaging-Apps zu testen&lt;/li&gt;
+&lt;li&gt;die Blockierung von Umgehungstools zu testen&lt;/li&gt;
+&lt;li&gt;die Geschwindigkeit und Performance deines Netzwerks zu testen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;deine OONI-Probe-Tests an Websites deiner Wahl anzupassen&lt;/li&gt;
+&lt;li&gt;Erfahre, wie du auf deine OONI-Probe-Testergebnisse zugreifen und sie weitergeben kannst&lt;/li&gt;
+&lt;li&gt;Konfiguriere die Einstellungen deiner OONI Probe App&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wir hoffen, dass du dich nach der Lektüre dieses Leitfadens motiviert fühlst, dein Wissen und deine Fähigkeiten über OONI Probe mit anderen zu teilen!&lt;/p&gt;</description></item></channel></rss>
