@@ -31,7 +31,14 @@ connection (such as your employer, ISP or government).&lt;/p&gt;</description></
  &lt;/a&gt;
  Risks: Things you should know before running OONI Probe
 &lt;/h1&gt;
-&lt;p&gt;Translations:&lt;/p&gt;</description></item><item><title>OONI Data Policy</title><link>https://ooni.github.io/about/data-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/data-policy/</guid><description>&lt;p&gt;&lt;strong&gt;Last modified:&lt;/strong&gt; October 15, 2024&lt;/p&gt;
+&lt;p&gt;Translations:&lt;/p&gt;</description></item><item><title>Citations &amp; Press</title><link>https://ooni.github.io/about/citations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/citations/</guid><description>&lt;p&gt;Since 2012, OONI&amp;rsquo;s work has been featured in major global and local news media outlets. OONI data is regularly cited by academic researchers, international organizations, and advocacy groups worldwide. This page highlights OONI&amp;rsquo;s press coverage and citations in research and advocacy publications.&lt;/p&gt;</description></item><item><title>Contact</title><link>https://ooni.github.io/about/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/contact/</guid><description>&lt;p&gt;You can contact the OONI team by sending an email to &lt;strong&gt;&lt;a href="mailto:contact@ooni.org"&gt;contact@ooni.org&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Encrypted emails can be sent using the &lt;a href="https://keyserver.ubuntu.com/pks/lookup?fingerprint=on&amp;amp;op=index&amp;amp;search=0x4C15DDA996C6C0CF48BD33096B2943F00CB177B7"&gt;following PGP key&lt;/a&gt;:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;pub 4096R/6B2943F00CB177B7 2016-03-23
+Key fingerprint = 4C15 DDA9 96C6 C0CF 48BD 3309 6B29 43F0 0CB1 77B7
+uid [ultimate] OONI - Open Observatory of Network Interference
+sub 4096R/8EBD2087374399AB 2016-03-23
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you would like to report a bug, please contact &lt;strong&gt;&lt;a href="team@ooni.org"&gt;team@ooni.org&lt;/a&gt;&lt;/strong&gt;. For donor-related questions, contact &lt;strong&gt;&lt;a href="mailto:giving@ooni.org"&gt;giving@ooni.org&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Join us on &lt;strong&gt;&lt;a href="https://slack.ooni.org/"&gt;Slack&lt;/a&gt;&lt;/strong&gt; or IRC (&lt;strong&gt;&lt;a href="https://webchat.oftc.net/?channels=%23ooni"&gt;#ooni@irc.oftc.net&lt;/a&gt;&lt;/strong&gt;) to participate in community discussions, and sign-up for the &lt;strong&gt;&lt;a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-talk"&gt;ooni-talk&lt;/a&gt;&lt;/strong&gt; mailing list to receive updates.&lt;/p&gt;</description></item><item><title>OONI Data Policy</title><link>https://ooni.github.io/about/data-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/data-policy/</guid><description>&lt;p&gt;&lt;strong&gt;Last modified:&lt;/strong&gt; October 15, 2024&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Version:&lt;/strong&gt; 1.6.0&lt;/p&gt;
 &lt;p&gt;This Data Policy discloses and explains what data the &lt;a href="https://ooni.org/"&gt;Open Observatory of
 Network Interference (OONI) project&lt;/a&gt; (&amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;)
@@ -52,9 +59,9 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://ooni.github.io/about/data-policy/#3-user-control"&gt;3. User Control&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/about/data-policy/#4-open-by-default"&gt;4. Open By Default&lt;/a&gt;&lt;/p&gt;</description></item><item><title>OONI Team</title><link>https://ooni.github.io/about/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/team/</guid><description>&lt;div class="mx-auto max-w-4xl not-prose mt-16"&gt;
+&lt;p&gt;&lt;a href="https://ooni.github.io/about/data-policy/#4-open-by-default"&gt;4. Open By Default&lt;/a&gt;&lt;/p&gt;</description></item><item><title>OONI Team</title><link>https://ooni.github.io/about/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/about/team/</guid><description>&lt;div class="not-prose mt-6"&gt;
  &lt;ul role="list"
- class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"&gt;
+ class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"&gt;
  
 
 
@@ -159,9 +166,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 &lt;p&gt;Below we share a &lt;a href="https://ooni.github.io/about/supporters/#funders"&gt;list of current and past OONI funders&lt;/a&gt;.&lt;/p&gt;
 
 
-&lt;div class="mx-auto max-w-7xl px-6 lg:px-8"&gt;
- &lt;h2 class="text-center"&gt;Octopus supporters&lt;/h2&gt;
- &lt;div class="mx-auto mt-10 grid grid-cols-2 items-center gap-x-8 gap-y-10"&gt;
+&lt;div class="not-prose mb-10"&gt;
+ &lt;h3 class="mb-5 border-t-2 border-ooniblue pt-1 text-sm font-bold uppercase tracking-widest text-ooniblue"&gt;
+ Octopus supporters
+ &lt;/h3&gt;
+ &lt;div class="grid grid-cols-1 sm:grid-cols-2 gap-4"&gt;
  
 
 
@@ -169,10 +178,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 
 
 
-
-&lt;a href="https://jigsaw.google.com"&gt;
- &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Jigsaw.svg" alt="Jigsaw"
- style="height: 160px"&gt;
+&lt;a href="https://jigsaw.google.com" target="_blank" rel="noopener noreferrer"
+ class="group flex flex-col items-center justify-center gap-3 rounded-xl border border-gray2 bg-white px-6 py-8 shadow-sm transition-all duration-150 hover:border-ooniblue hover:shadow-md"&gt;
+ &lt;img class="w-full object-contain transition-opacity duration-150 group-hover:opacity-90"
+ src="https://ooni.github.io/about/supporters/images/Jigsaw.svg" alt="Jigsaw"
+ style="height: 160px; max-height: 160px;" /&gt;
 &lt;/a&gt;
 
 
@@ -181,10 +191,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 
 
 
-
-&lt;a href="https://pantheon.io/"&gt;
- &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Pantheon.svg" alt="Pantheon"
- style="height: 160px"&gt;
+&lt;a href="https://pantheon.io/" target="_blank" rel="noopener noreferrer"
+ class="group flex flex-col items-center justify-center gap-3 rounded-xl border border-gray2 bg-white px-6 py-8 shadow-sm transition-all duration-150 hover:border-ooniblue hover:shadow-md"&gt;
+ &lt;img class="w-full object-contain transition-opacity duration-150 group-hover:opacity-90"
+ src="https://ooni.github.io/about/supporters/images/Pantheon.svg" alt="Pantheon"
+ style="height: 160px; max-height: 160px;" /&gt;
 &lt;/a&gt;
 
 
@@ -193,9 +204,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 &lt;/div&gt;
 
 
-&lt;div class="mx-auto max-w-7xl px-6 lg:px-8"&gt;
- &lt;h2 class="text-center"&gt;Dolphin Supporters&lt;/h2&gt;
- &lt;div class="mx-auto mt-10 grid grid-cols-4 items-center gap-x-8 gap-y-10"&gt;
+&lt;div class="not-prose mb-10"&gt;
+ &lt;h3 class="mb-5 border-t-2 border-ooniblue pt-1 text-sm font-bold uppercase tracking-widest text-ooniblue"&gt;
+ Dolphin Supporters
+ &lt;/h3&gt;
+ &lt;div class="grid grid-cols-2 sm:grid-cols-4 gap-4"&gt;
  
 
 
@@ -203,10 +216,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 
 
 
-
-&lt;a href="https://aws.amazon.com/opendata/"&gt;
- &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/AWS%20Open%20Data.png" alt="Amazon AWS Open Data"
- style="height: 80px"&gt;
+&lt;a href="https://aws.amazon.com/opendata/" target="_blank" rel="noopener noreferrer"
+ class="group flex flex-col items-center justify-center gap-3 rounded-xl border border-gray2 bg-white px-6 py-8 shadow-sm transition-all duration-150 hover:border-ooniblue hover:shadow-md"&gt;
+ &lt;img class="w-full object-contain transition-opacity duration-150 group-hover:opacity-90"
+ src="https://ooni.github.io/about/supporters/images/AWS%20Open%20Data.png" alt="Amazon AWS Open Data"
+ style="height: 80px; max-height: 80px;" /&gt;
 &lt;/a&gt;
 
 
@@ -215,10 +229,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 
 
 
-
-&lt;a href="https://www.luminategroup.com/"&gt;
- &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Luminate.png" alt="Luminate"
- style="height: 80px"&gt;
+&lt;a href="https://www.luminategroup.com/" target="_blank" rel="noopener noreferrer"
+ class="group flex flex-col items-center justify-center gap-3 rounded-xl border border-gray2 bg-white px-6 py-8 shadow-sm transition-all duration-150 hover:border-ooniblue hover:shadow-md"&gt;
+ &lt;img class="w-full object-contain transition-opacity duration-150 group-hover:opacity-90"
+ src="https://ooni.github.io/about/supporters/images/Luminate.png" alt="Luminate"
+ style="height: 80px; max-height: 80px;" /&gt;
 &lt;/a&gt;
 
 
@@ -227,9 +242,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 &lt;/div&gt;
 
 
-&lt;div class="mx-auto max-w-7xl px-6 lg:px-8"&gt;
- &lt;h2 class="text-center"&gt;Seahorse Supporters&lt;/h2&gt;
- &lt;div class="mx-auto mt-10 grid grid-cols-5 items-center gap-x-8 gap-y-10"&gt;
+&lt;div class="not-prose mb-10"&gt;
+ &lt;h3 class="mb-5 border-t-2 border-ooniblue pt-1 text-sm font-bold uppercase tracking-widest text-ooniblue"&gt;
+ Seahorse Supporters
+ &lt;/h3&gt;
+ &lt;div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4"&gt;
  
 
 
@@ -237,10 +254,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 
 
 
-
-&lt;a href="https://www.digitalocean.com/community/pages/hollies-hub-for-good"&gt;
- &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/DigitalOcean.svg" alt="Digital Ocean Hub for Good"
- style="height: 60px"&gt;
+&lt;a href="https://www.digitalocean.com/community/pages/hollies-hub-for-good" target="_blank" rel="noopener noreferrer"
+ class="group flex flex-col items-center justify-center gap-3 rounded-xl border border-gray2 bg-white px-6 py-8 shadow-sm transition-all duration-150 hover:border-ooniblue hover:shadow-md"&gt;
+ &lt;img class="w-full object-contain transition-opacity duration-150 group-hover:opacity-90"
+ src="https://ooni.github.io/about/supporters/images/DigitalOcean.svg" alt="Digital Ocean Hub for Good"
+ style="height: 60px; max-height: 60px;" /&gt;
 &lt;/a&gt;
 
 
@@ -249,10 +267,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 
 
 
-
-&lt;a href="https://greenhost.net/"&gt;
- &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Greenhost.svg" alt="Greenhost eclips.is platform"
- style="height: 40px"&gt;
+&lt;a href="https://greenhost.net/" target="_blank" rel="noopener noreferrer"
+ class="group flex flex-col items-center justify-center gap-3 rounded-xl border border-gray2 bg-white px-6 py-8 shadow-sm transition-all duration-150 hover:border-ooniblue hover:shadow-md"&gt;
+ &lt;img class="w-full object-contain transition-opacity duration-150 group-hover:opacity-90"
+ src="https://ooni.github.io/about/supporters/images/Greenhost.svg" alt="Greenhost eclips.is platform"
+ style="height: 40px; max-height: 40px;" /&gt;
 &lt;/a&gt;
 
 
@@ -261,10 +280,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 
 
 
-
-&lt;a href="https://www.netlify.com/"&gt;
- &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Netlify.svg" alt="Netlify"
- style="height: 40px"&gt;
+&lt;a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer"
+ class="group flex flex-col items-center justify-center gap-3 rounded-xl border border-gray2 bg-white px-6 py-8 shadow-sm transition-all duration-150 hover:border-ooniblue hover:shadow-md"&gt;
+ &lt;img class="w-full object-contain transition-opacity duration-150 group-hover:opacity-90"
+ src="https://ooni.github.io/about/supporters/images/Netlify.svg" alt="Netlify"
+ style="height: 40px; max-height: 40px;" /&gt;
 &lt;/a&gt;
 
 
@@ -273,10 +293,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 
 
 
-
-&lt;a href="https://surfshark.com/"&gt;
- &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/Surfshark.svg" alt="Surfshark"
- style="height: 40px"&gt;
+&lt;a href="https://surfshark.com/" target="_blank" rel="noopener noreferrer"
+ class="group flex flex-col items-center justify-center gap-3 rounded-xl border border-gray2 bg-white px-6 py-8 shadow-sm transition-all duration-150 hover:border-ooniblue hover:shadow-md"&gt;
+ &lt;img class="w-full object-contain transition-opacity duration-150 group-hover:opacity-90"
+ src="https://ooni.github.io/about/supporters/images/Surfshark.svg" alt="Surfshark"
+ style="height: 40px; max-height: 40px;" /&gt;
 &lt;/a&gt;
 
 
@@ -285,10 +306,11 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 
 
 
-
-&lt;a href="https://www.vpncompare.co.uk/"&gt;
- &lt;img class="col-span-1 w-full object-contain" src="https://ooni.github.io/about/supporters/images/VPNCompare.svg" alt="VPN Compare"
- style="height: 40px"&gt;
+&lt;a href="https://www.vpncompare.co.uk/" target="_blank" rel="noopener noreferrer"
+ class="group flex flex-col items-center justify-center gap-3 rounded-xl border border-gray2 bg-white px-6 py-8 shadow-sm transition-all duration-150 hover:border-ooniblue hover:shadow-md"&gt;
+ &lt;img class="w-full object-contain transition-opacity duration-150 group-hover:opacity-90"
+ src="https://ooni.github.io/about/supporters/images/VPNCompare.svg" alt="VPN Compare"
+ style="height: 40px; max-height: 40px;" /&gt;
 &lt;/a&gt;
 
 
@@ -297,13 +319,31 @@ data principles that govern OONI&amp;rsquo;s data practices.&lt;/p&gt;
 &lt;/div&gt;
 
 
-&lt;div class="mx-auto max-w-7xl px-6 lg:px-8"&gt;
- &lt;h2 class="text-center"&gt;Starfish Supporters&lt;/h2&gt;
- &lt;div class="mx-auto mt-10 grid grid-cols-6 items-center gap-x-8 gap-y-10"&gt;
+&lt;div class="not-prose mb-10"&gt;
+ &lt;h3 class="mb-5 border-t-2 border-ooniblue pt-1 text-sm font-bold uppercase tracking-widest text-ooniblue"&gt;
+ Starfish Supporters
+ &lt;/h3&gt;
+ &lt;div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"&gt;
  
 
 
 
-&lt;p&gt;
- This could be you!
+&lt;div class="flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-gray3 bg-gray0 px-6 py-8 text-center"&gt;
+ &lt;span class="text-sm font-semibold text-ooniblue"&gt;This could be you!&lt;/span&gt;
+ &lt;a href="https://ooni.github.io/donate/" class="text-xs text-gray5 transition-colors hover:text-ooniblue"&gt;Donate to get listed →&lt;/a&gt;
+&lt;/div&gt;
+
+
+ &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&lt;div class="bg-gray0 px-6 py-6 mt-6 ring-1 ring-white/10 sm:rounded-3xl not-prose"&gt;
+ &lt;div class="mx-auto max-w-7xl py-6 px-6 lg:flex lg:items-center lg:justify-between lg:px-8"&gt;
+ &lt;div&gt;
+ &lt;h2 class="text-3xl font-bold tracking-tight text-gray9 sm:text-4xl"&gt;Donate now to support internet freedom&lt;/h2&gt;
+ &lt;p class="mb-6 font-bold"&gt;
+ By donating to OONI, you support:
 &lt;/p&gt;</description></item></channel></rss>
