@@ -11,8 +11,7 @@
 &lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; 18th November 2024&lt;/p&gt;</description></item><item><title>Coordinating OONI censorship measurement campaigns</title><link>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-censorship-measurement-campaigns/</guid><description>&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; 21st March 2023&lt;/p&gt;
 &lt;p&gt;Internet censorship around the world often &lt;a href="https://ooni.org/documents/2022-ooni-submission-ohchr-report-internet-shutdowns.pdf"&gt;emerges during political events&lt;/a&gt;, such as elections or protests. The abrupt emergence of new blocks requires rapid response in terms of measurement, particularly if the blocks are short-lived. Such measurement can help with the collection of data that can potentially serve as evidence of internet censorship, supporting the efforts of journalists, researchers, and human rights defenders challenging the blocks.&lt;/p&gt;
-&lt;p&gt;Detecting sudden or expected blocks can be achieved through &lt;strong&gt;community coordination&lt;/strong&gt; on censorship measurement.&lt;/p&gt;</description></item><item><title>Frequently Asked Questions (FAQ)</title><link>https://ooni.github.io/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/faq/</guid><description>&lt;p&gt;This Frequently Asked Questions (FAQ) section aims to address the
-questions that we are frequently asked by the community.&lt;/p&gt;
+&lt;p&gt;Detecting sudden or expected blocks can be achieved through &lt;strong&gt;community coordination&lt;/strong&gt; on censorship measurement.&lt;/p&gt;</description></item><item><title>Frequently Asked Questions (FAQ)</title><link>https://ooni.github.io/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/faq/</guid><description>&lt;p&gt;This Frequently Asked Questions (FAQ) section aims to address the questions that we are frequently asked by the community.&lt;/p&gt;
 &lt;p&gt;Translations:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Español,&lt;/strong&gt; &lt;a href="https://ooni.github.io/es/support/faq"&gt;Preguntas frecuentes (FAQ)&lt;/a&gt;&lt;/li&gt;
@@ -24,10 +23,7 @@ questions that we are frequently asked by the community.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Tiếng Việt,&lt;/strong&gt; &lt;a href="https://ooni.github.io/vi/support/faq"&gt;Trang Những Câu Hỏi Thường Gặp&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;မြန်မာ,&lt;/strong&gt; &lt;a href="https://ooni.github.io/my/support/faq"&gt;မကြာခဏ မေးမြန်းခံရလေ့ရှိသော မေးခွန်းများ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Are there other questions you would like us to address? Please &lt;a href="https://ooni.org/about/#contact"&gt;let us know&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/faq/#about-ooni"&gt;About OONI&lt;/a&gt;&lt;/p&gt;</description></item><item><title>GitHub: Updating the Citizen Lab test lists</title><link>https://ooni.github.io/support/github-test-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/github-test-lists/</guid><description>&lt;div&gt;
+&lt;p&gt;Are there other questions you would like us to address? Please &lt;a href="https://ooni.org/about/#contact"&gt;let us know&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>GitHub: Updating the Citizen Lab test lists</title><link>https://ooni.github.io/support/github-test-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/github-test-lists/</guid><description>&lt;div&gt;
  &lt;a href="https://ooni.github.io/support/github-test-lists/images/github-test-lists.png"&gt;
  &lt;img
  src="https://ooni.github.io/support/github-test-lists/images/github-test-lists_hu_872f287b6aa14a56.png"
@@ -144,49 +140,7 @@ methodologies, and research reports.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Kiswahili,&lt;/strong&gt; &lt;a href="https://ooni.github.io/sw/support/glossary"&gt;OONI Faharasa&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Русский,&lt;/strong&gt; &lt;a href="https://ooni.github.io/ru/support/glossary"&gt;OONI Глоссарий&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you would like to see additional terms in this glossary, please &lt;a href="https://github.com/ooni/ooni.org"&gt;open a pull request&lt;/a&gt; or &lt;a href="https://ooni.org/about/#contact"&gt;send us an email&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#api"&gt;API&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#as"&gt;AS&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#asn"&gt;ASN&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#bgp"&gt;BGP&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#blocklist"&gt;Blocklist&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#block-page"&gt;Block page&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#caching"&gt;Caching&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#circumvention-tools"&gt;Circumvention tools&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#client"&gt;Client&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#data-processing-pipeline"&gt;Data processing pipeline&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#dns"&gt;DNS&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#dns-hijacking"&gt;DNS hijacking&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#dns-lookup"&gt;DNS lookup&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://ooni.github.io/support/glossary/#dns-over-https"&gt;DNS over HTTPS&lt;/a&gt;&lt;/p&gt;</description></item><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-outreach-kit/</guid><description>&lt;div&gt;
+&lt;p&gt;If you would like to see additional terms in this glossary, please &lt;a href="https://github.com/ooni/ooni.org"&gt;open a pull request&lt;/a&gt; or &lt;a href="https://ooni.org/about/#contact"&gt;send us an email&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>OONI Outreach Kit</title><link>https://ooni.github.io/support/ooni-outreach-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-outreach-kit/</guid><description>&lt;div&gt;
  &lt;a href="https://ooni.github.io/support/ooni-outreach-kit/images/image1.png"&gt;
  &lt;img
  src="https://ooni.github.io/support/ooni-outreach-kit/images/image1_hu_93fae33066139f61.png"
@@ -236,7 +190,7 @@ methodologies, and research reports.&lt;/p&gt;
  &lt;/a&gt;
  OONI Brochures
 &lt;/h2&gt;
-&lt;p&gt;We provide 2 OONI brochures that include information about using OONI tools and data for investigating internet censorship around the world.&lt;/p&gt;</description></item><item><title>User Guide: OONI Explorer</title><link>https://ooni.github.io/support/ooni-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-explorer/</guid><description>&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; 15th March 2023&lt;/p&gt;
+&lt;p&gt;We provide 2 OONI brochures that include information about using OONI tools and data for investigating internet censorship around the world.&lt;/p&gt;</description></item><item><title>Resources</title><link>https://ooni.github.io/support/resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/resources/</guid><description/></item><item><title>User Guide: OONI Explorer</title><link>https://ooni.github.io/support/ooni-explorer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/support/ooni-explorer/</guid><description>&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; 15th March 2023&lt;/p&gt;
 
 
 
