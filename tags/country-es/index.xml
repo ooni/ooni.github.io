@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Es on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-es/</link><description>Recent content in Country-Es on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-es/index.xml" rel="self" type="application/rss+xml"/><item><title>New blocks emerge in Russia amid war in Ukraine: An OONI network measurement analysis</title><link>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</guid><description>&lt;a class="ooni-btn" href="https://ooni.github.io/documents/OONI-Report-New-blocks-emerge-in-Russia-amid-war-in-Ukraine.pdf"&gt;Download in PDF&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Country-Es on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/country-es/</link><description>Recent content in Country-Es on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/country-es/index.xml" rel="self" type="application/rss+xml"/><item><title>Abortion Access Denied: Investigating the Global Censorship of Women on Web</title><link>https://ooni.github.io/post/2026-women-on-web-blocked/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2026-women-on-web-blocked/</guid><description>&lt;div&gt;
+ &lt;a href="https://ooni.github.io/post/2026-women-on-web-blocked/images/image11.png"&gt;
+ &lt;img
+ src="https://ooni.github.io/post/2026-women-on-web-blocked/images/image11_hu_dec0e73f681a00d8.png"
+
+ 
+ 
+ 
+ 
+ /&gt;
+ &lt;/a&gt;
+ 
+&lt;/div&gt;
+
+
+&lt;p&gt;This report documents the blocking of Women on Web domains around the world based on OONI data.&lt;/p&gt;
+&lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#key-findings"&gt;Key Findings&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#self-managed-abortion-with-pills"&gt;Self-Managed Abortion with Pills&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#legal-status-of-abortion-globally"&gt;Legal Status of Abortion Globally&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#methods"&gt;Methods&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#updated-the-citizen-lab-test-lists"&gt;Updated the Citizen Lab test lists&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#ooni-data-analysis"&gt;OONI data analysis&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#acknowledgement-of-limitations"&gt;Acknowledgement of limitations&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#findings"&gt;Findings&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#summary-of-findings"&gt;Summary of Findings&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#iran"&gt;Iran&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#türkiye"&gt;Türkiye&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#philippines"&gt;Philippines&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#south-korea"&gt;South Korea&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#spain"&gt;Spain&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#kuwait"&gt;Kuwait&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#argentina"&gt;Argentina&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#corporate-firewall-blocks"&gt;Corporate firewall blocks&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#poland"&gt;Poland&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#kenya"&gt;Kenya&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#pakistan"&gt;Pakistan&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#georgia"&gt;Georgia&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#censorship-beyond-website-blockages-social-media-and-search-engine-suppression"&gt;Censorship beyond website blockages: Social Media and Search Engine Suppression&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#women-on-webs-response-to-website-censorship-building-digital-resilience-and-the-a-line"&gt;Women on Web’s Response to Website Censorship: Building Digital Resilience and The A-Line&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#conclusion"&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#acknowledgements"&gt;Acknowledgements&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#glossary"&gt;Glossary&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id="key-findings" class="group flex flex-row flex-wrap items-center"&gt;
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#key-findings"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1"&gt;
+ &lt;g&gt;
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/&gt;
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/&gt;
+ &lt;/g&gt;
+ &lt;/svg&gt;
+ &lt;/a&gt;
+ Key Findings
+&lt;/h2&gt;
+&lt;p&gt;Our &lt;a href="https://github.com/ooni/backend/issues/989"&gt;analysis&lt;/a&gt; of &lt;a href="https://ooni.org/data"&gt;OONI data&lt;/a&gt; collected globally from 1st November 2025 to 1st April 2026 reveals the &lt;strong&gt;blocking of Women on Web domains in 7 countries&lt;/strong&gt;: Iran, Türkiye, the Philippines, South Korea, Spain, Kuwait, and Argentina.&lt;/p&gt;</description></item><item><title>New blocks emerge in Russia amid war in Ukraine: An OONI network measurement analysis</title><link>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</link><pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2022-russia-blocks-amid-ru-ua-conflict/</guid><description>&lt;a class="ooni-btn" href="https://ooni.github.io/documents/OONI-Report-New-blocks-emerge-in-Russia-amid-war-in-Ukraine.pdf"&gt;Download in PDF&lt;/a&gt;
 
 &lt;p&gt;Information controls are known to occur during conflicts, and that’s exactly what we’re seeing in Russia following the recent invasion of Ukraine on 24th February 2022.&lt;/p&gt;
 &lt;p&gt;In recent days, &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;amp;until=2022-03-07&amp;amp;failure=false&amp;amp;probe_cc=RU"&gt;OONI network measurement data&lt;/a&gt; collected from Russia shows that many Internet Service Providers (ISPs) have started &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;amp;until=2022-03-07&amp;amp;failure=false&amp;amp;probe_cc=RU&amp;amp;test_name=web_connectivity&amp;amp;only=anomalies"&gt;blocking&lt;/a&gt; access to several news media websites, as well as to a &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;amp;until=2022-03-07&amp;amp;failure=false&amp;amp;probe_cc=RU&amp;amp;test_name=web_connectivity&amp;amp;only=anomalies&amp;amp;domain=200rf.com"&gt;website&lt;/a&gt; (200rf.com) that shares information about captured and killed Russian soldiers in Ukraine. OONI data also shows that Russian ISPs started &lt;a href="https://explorer.ooni.org/search?since=2022-02-26&amp;amp;until=2022-03-04&amp;amp;failure=false&amp;amp;domain=twitter.com&amp;amp;probe_cc=RU"&gt;throttling access to Twitter&lt;/a&gt; on 26th February 2022, and switched to &lt;a href="https://explorer.ooni.org/measurement/20220306T202033Z_webconnectivity_RU_51604_n1_oVoIGdnUmlxCWmyR?input=https%3A%2F%2Ftwitter.com%2F"&gt;blocking&lt;/a&gt; it by 4th March 2022 – at which point, they also started &lt;a href="https://explorer.ooni.org/search?since=2022-02-04&amp;amp;until=2022-03-07&amp;amp;failure=false&amp;amp;domain=www.facebook.com&amp;amp;probe_cc=RU&amp;amp;only=anomalies"&gt;blocking access to Facebook&lt;/a&gt;. Censorship in Russia is generally implemented in a &lt;a href="https://www.ndss-symposium.org/ndss-paper/decentralized-control-a-case-study-of-russia/"&gt;decentralized&lt;/a&gt; way, as blocks are not observed on all networks, while ISPs adopt a variety of different censorship techniques.&lt;/p&gt;</description></item><item><title>Evaluating OONI’s New Measurement Engine in the Context of the Blocking of Women on Web in Spain</title><link>https://ooni.github.io/post/2020-engine-evaluation-spain/</link><pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2020-engine-evaluation-spain/</guid><description>&lt;p&gt;Reproduction rights site

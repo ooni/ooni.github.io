@@ -1,4 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Theme-Human_rights on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/theme-human_rights/</link><description>Recent content in Theme-Human_rights on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/theme-human_rights/index.xml" rel="self" type="application/rss+xml"/><item><title>How Internet Censorship Impacts the Women’s Rights Movement in Iran: Insights from OONI Data and Activist Interviews</title><link>https://ooni.github.io/post/2025-iran-censorship-womens-rights/</link><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-iran-censorship-womens-rights/</guid><description>&lt;p&gt;Women’s rights are &lt;a href="https://iranhumanrights.org/2025/03/gender-apartheid-in-iran-is-crushing-womens-lives-and-futures/"&gt;severely restricted&lt;/a&gt; in Iran. Three years ago, the &lt;a href="https://www.ohchr.org/en/stories/2025/04/justice-and-accountability-woman-life-freedom-protests"&gt;Women, Life, Freedom movement&lt;/a&gt; – and widespread protests – erupted in Iran following the death of 22-year-old Mahsa Jina Amini in police custody in September 2022. But according to the UN, the &lt;a href="https://news.un.org/en/story/2024/09/1154306"&gt;repression of women in Iran has intensified&lt;/a&gt; in recent years, despite the mass protests.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Theme-Human_rights on OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/tags/theme-human_rights/</link><description>Recent content in Theme-Human_rights on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://ooni.github.io/tags/theme-human_rights/index.xml" rel="self" type="application/rss+xml"/><item><title>Abortion Access Denied: Investigating the Global Censorship of Women on Web</title><link>https://ooni.github.io/post/2026-women-on-web-blocked/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2026-women-on-web-blocked/</guid><description>&lt;div&gt;
+ &lt;a href="https://ooni.github.io/post/2026-women-on-web-blocked/images/image11.png"&gt;
+ &lt;img
+ src="https://ooni.github.io/post/2026-women-on-web-blocked/images/image11_hu_dec0e73f681a00d8.png"
+
+ 
+ 
+ 
+ 
+ /&gt;
+ &lt;/a&gt;
+ 
+&lt;/div&gt;
+
+
+&lt;p&gt;This report documents the blocking of Women on Web domains around the world based on OONI data.&lt;/p&gt;
+&lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#key-findings"&gt;Key Findings&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#background"&gt;Background&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#self-managed-abortion-with-pills"&gt;Self-Managed Abortion with Pills&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#legal-status-of-abortion-globally"&gt;Legal Status of Abortion Globally&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#methods"&gt;Methods&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#updated-the-citizen-lab-test-lists"&gt;Updated the Citizen Lab test lists&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#ooni-data-analysis"&gt;OONI data analysis&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#acknowledgement-of-limitations"&gt;Acknowledgement of limitations&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#findings"&gt;Findings&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#summary-of-findings"&gt;Summary of Findings&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#iran"&gt;Iran&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#türkiye"&gt;Türkiye&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#philippines"&gt;Philippines&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#south-korea"&gt;South Korea&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#spain"&gt;Spain&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#kuwait"&gt;Kuwait&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#argentina"&gt;Argentina&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#corporate-firewall-blocks"&gt;Corporate firewall blocks&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#poland"&gt;Poland&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#kenya"&gt;Kenya&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#pakistan"&gt;Pakistan&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#georgia"&gt;Georgia&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#censorship-beyond-website-blockages-social-media-and-search-engine-suppression"&gt;Censorship beyond website blockages: Social Media and Search Engine Suppression&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#women-on-webs-response-to-website-censorship-building-digital-resilience-and-the-a-line"&gt;Women on Web’s Response to Website Censorship: Building Digital Resilience and The A-Line&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#conclusion"&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#acknowledgements"&gt;Acknowledgements&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#glossary"&gt;Glossary&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h2 id="key-findings" class="group flex flex-row flex-wrap items-center"&gt;
+ &lt;a class="md:invisible group-hover:visible -ms-[24px] w-[24px]" href="#key-findings"&gt;
+ &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px" viewBox="0 0 24 24" version="1.1"&gt;
+ &lt;g&gt;
+ &lt;path d="M 22.394531 1.605469 C 20.25 -0.535156 16.761719 -0.535156 14.621094 1.605469 L 11.230469 4.996094 L 12.796875 6.5625 L 16.1875 3.171875 C 17.464844 1.890625 19.546875 1.894531 20.828125 3.171875 C 22.109375 4.453125 22.105469 6.535156 20.828125 7.816406 L 15.738281 12.902344 C 15.121094 13.523438 14.296875 13.863281 13.417969 13.863281 C 12.542969 13.863281 11.71875 13.523438 11.097656 12.902344 L 9.53125 14.46875 C 10.570312 15.503906 11.949219 16.078125 13.417969 16.078125 C 14.886719 16.078125 16.265625 15.503906 17.304688 14.46875 L 22.394531 9.378906 C 24.535156 7.234375 24.535156 3.75 22.394531 1.605469 Z M 22.394531 1.605469 "/&gt;
+ &lt;path d="M 7.8125 20.828125 C 6.535156 22.109375 4.453125 22.109375 3.171875 20.828125 C 1.890625 19.546875 1.890625 17.464844 3.171875 16.183594 L 8.261719 11.097656 C 9.539062 9.816406 11.621094 9.816406 12.902344 11.097656 L 14.46875 9.53125 C 12.324219 7.390625 8.835938 7.390625 6.695312 9.53125 L 1.605469 14.621094 C -0.535156 16.761719 -0.535156 20.25 1.605469 22.394531 C 2.679688 23.464844 4.085938 24 5.492188 24 C 6.902344 24 8.308594 23.464844 9.378906 22.394531 L 12.769531 19 L 11.207031 17.4375 Z M 7.8125 20.828125 "/&gt;
+ &lt;/g&gt;
+ &lt;/svg&gt;
+ &lt;/a&gt;
+ Key Findings
+&lt;/h2&gt;
+&lt;p&gt;Our &lt;a href="https://github.com/ooni/backend/issues/989"&gt;analysis&lt;/a&gt; of &lt;a href="https://ooni.org/data"&gt;OONI data&lt;/a&gt; collected globally from 1st November 2025 to 1st April 2026 reveals the &lt;strong&gt;blocking of Women on Web domains in 7 countries&lt;/strong&gt;: Iran, Türkiye, the Philippines, South Korea, Spain, Kuwait, and Argentina.&lt;/p&gt;</description></item><item><title>How Internet Censorship Impacts the Women’s Rights Movement in Iran: Insights from OONI Data and Activist Interviews</title><link>https://ooni.github.io/post/2025-iran-censorship-womens-rights/</link><pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-iran-censorship-womens-rights/</guid><description>&lt;p&gt;Women’s rights are &lt;a href="https://iranhumanrights.org/2025/03/gender-apartheid-in-iran-is-crushing-womens-lives-and-futures/"&gt;severely restricted&lt;/a&gt; in Iran. Three years ago, the &lt;a href="https://www.ohchr.org/en/stories/2025/04/justice-and-accountability-woman-life-freedom-protests"&gt;Women, Life, Freedom movement&lt;/a&gt; – and widespread protests – erupted in Iran following the death of 22-year-old Mahsa Jina Amini in police custody in September 2022. But according to the UN, the &lt;a href="https://news.un.org/en/story/2024/09/1154306"&gt;repression of women in Iran has intensified&lt;/a&gt; in recent years, despite the mass protests.&lt;/p&gt;
 &lt;p&gt;Access to information is also &lt;a href="https://explorer.ooni.org/country/IR"&gt;severely restricted&lt;/a&gt; in Iran, and women’s rights websites are no exception. OONI data &lt;a href="https://ooni.org/post/iran-internet-censorship/#human-rights-issues"&gt;shows&lt;/a&gt; that access to women’s rights websites have been blocked in Iran since at least 2014.&lt;/p&gt;</description></item><item><title>The Longest Silence: Internet Shutdowns During Bangladesh’s 2024 Uprising</title><link>https://ooni.github.io/post/2025-bangladesh-report/</link><pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-bangladesh-report/</guid><description>&lt;p&gt;This study was conducted by &lt;a href="https://digitallyright.org/"&gt;Digitally Right&lt;/a&gt; in collaboration with the &lt;a href="https://ooni.org/"&gt;Open Observatory of Network Interference (OONI)&lt;/a&gt;. Key contributors include Tohidul Islam Raso from Digitally Right and Maria Xynou from OONI. Suhadha Afrin, a Tech Policy Fellow at Digitally Right and journalist at Prothom Alo, also contributed to the research and documentation for this report. The research has been reviewed by Miraj Ahmed Chowdhury from Digitally Right.&lt;/p&gt;
 &lt;p&gt;We are equally grateful to Digitally Right&amp;rsquo;s Network Measurement Fellows across Bangladesh, whose work in tracking disruptions and documenting censorship during the protests helped verify and strengthen the findings of this report. We also thank the journalists whose extensive coverage of the shutdowns provided a vital foundation for this report and the individuals affiliated with operators and service provider organizations who provided interviews and shared relevant information that informed this analysis.&lt;/p&gt;</description></item><item><title>A Legal and Technical Analysis of Internet Censorship in France</title><link>https://ooni.github.io/post/2025-france-report/</link><pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate><guid>https://ooni.github.io/post/2025-france-report/</guid><description>&lt;p&gt;&lt;em&gt;This is a guest report by &lt;a href="https://maynier.eu/"&gt;Etienne Maynier&lt;/a&gt; and Taziden analyzing Internet censorship in France. You can find a more in-depth legal and technical analysis in French at &lt;a href="https://censxres.fr/"&gt;https://censxres.fr/&lt;/a&gt;. This work was done in a personal capacity and doesn&amp;rsquo;t represent the view of their employers.&lt;/em&gt;&lt;/p&gt;
 &lt;nav id="TableOfContents"&gt;
