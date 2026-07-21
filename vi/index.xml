@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OONI: Open Observatory of Network Interference</title><link>https://ooni.github.io/vi/</link><description>Recent content on OONI: Open Observatory of Network Interference</description><generator>Hugo</generator><language>vi</language><atom:link href="https://ooni.github.io/vi/index.xml" rel="self" type="application/rss+xml"/><item><title>Cẩm Nang Sử Dụng: Ứng dụng Di động OONI Probe</title><link>https://ooni.github.io/vi/support/ooni-probe-mobile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/vi/support/ooni-probe-mobile/</guid><description>&lt;p&gt;&lt;strong&gt;Cập nhật lần chót:&lt;/strong&gt; 6 tháng Chín 2022&lt;/p&gt;
+&lt;p&gt;Tài liệu này được dịch sang tiếng Việt bởi Nathan Tran.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OONI Probe Mobile phiên bản:&lt;/strong&gt; 3.7.1&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;a href="https://ooni.github.io/support/ooni-probe-mobile/images/image49.png"&gt;
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-mobile/images/image49_hu_68a13dfbbd92e6a1.png"
+
+ 
+ 
+ title="Measure Internet Censorship"
+ 
+ alt="Measure Internet Censorship"
+ 
+ /&gt;
+ &lt;/a&gt;
+ 
+&lt;/div&gt;
+
+
+&lt;p&gt;OONI Probe là một ứng dụng &lt;a href="https://github.com/ooni/probe"&gt;nguồn mở và miễn phí&lt;/a&gt; bạn dùng để đo lường kiểm duyệt internet và những hình thái can thiệp mạng khác. Cẩm nang sử dụng này cung cấp &lt;strong&gt;hướng dẫn từng bước một&lt;/strong&gt; cách cài đặt, chạy, và tùy chỉnh việc dùng &lt;a href="https://ooni.org/install/mobile"&gt;ứng dụng di động OONI Probe&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Cẩm Nang Sử Dụng: Ứng Dụng OONI Probe Desktop</title><link>https://ooni.github.io/vi/support/ooni-probe-desktop/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/vi/support/ooni-probe-desktop/</guid><description>&lt;p&gt;&lt;strong&gt;Cập nhật lần chót:&lt;/strong&gt; 6 tháng Chín 2022&lt;/p&gt;
+&lt;p&gt;Tài liệu này được dịch sang tiếng Việt bởi Nathan Tran.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OONI Probe Desktop phiên bản:&lt;/strong&gt; 3.7.0&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;a href="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop.png"&gt;
+ &lt;img
+ src="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu_eee611fdd3be2199.png"
+
+ 
+ srcset="https://ooni.github.io/support/ooni-probe-desktop/images/install-desktop_hu_5352959d260779ba.png 2x"
+ 
+ 
+ title="Install OONI Probe Desktop"
+ 
+ alt="Install OONI Probe Desktop"
+ 
+ /&gt;
+ &lt;/a&gt;
+ 
+&lt;/div&gt;
+
+
+&lt;p&gt;OONI Probe là một ứng dụng &lt;a href="https://github.com/ooni/probe"&gt;nguồn mở và miễn phí&lt;/a&gt; bạn dùng để đo lường kiểm duyệt internet và những hình thái can thiệp mạng khác. Cẩm nang sử dụng này cung cấp &lt;strong&gt;hướng dẫn từng bước một&lt;/strong&gt; cách cài đặt, chạy, và tùy chỉnh việc dùng &lt;a href="https://ooni.org/install/desktop"&gt;ứng dụng OONI Probe Desktop&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Trang Những Câu Hỏi Thường Gặp</title><link>https://ooni.github.io/vi/support/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ooni.github.io/vi/support/faq/</guid><description>&lt;p&gt;Trang Những Câu Hỏi Thường Gặp (FAQ – Frequently Asked Questions) nhằm để trả lời các câu hỏi thường được nêu ra trong cộng đồng.&lt;/p&gt;
+&lt;p&gt;Oringinal file in &lt;strong&gt;English&lt;/strong&gt;, &lt;a href="https://ooni.github.io/vi/support/faq/"&gt;Frequently Asked Questions (FAQ)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tài liệu này được dịch sang tiếng Việt bởi Nathan Tran.&lt;/p&gt;
+&lt;p&gt;Nếu có những câu hỏi nào khác bạn muốn được trả lời xin &lt;a href="https://ooni.org/about/contact"&gt;liên lạc với chúng tôi&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
